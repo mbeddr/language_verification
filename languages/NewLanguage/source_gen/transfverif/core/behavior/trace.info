@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="AbstractApplier_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="transfverif.core.behavior.AbstractApplier_BehaviorDescriptor" />
+    </file>
+    <file name="AbstractMatcher_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="transfverif.core.behavior.AbstractMatcher_BehaviorDescriptor" />
+    </file>
+    <file name="AnyMatchClass_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="transfverif.core.behavior.AnyMatchClass_BehaviorDescriptor" />
+    </file>
+    <file name="ApplyAttributeString_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="transfverif.core.behavior.ApplyAttributeString_BehaviorDescriptor" />
+    </file>
+    <file name="ApplyAttributeValue_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="transfverif.core.behavior.ApplyAttributeValue_BehaviorDescriptor" />
+    </file>
+    <file name="ApplyAttribute_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="transfverif.core.behavior.ApplyAttribute_BehaviorDescriptor" />
+    </file>
+    <file name="ApplyClass_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="transfverif.core.behavior.ApplyClass_BehaviorDescriptor" />
+    </file>
+    <file name="ApplyLink_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="transfverif.core.behavior.ApplyLink_BehaviorDescriptor" />
+    </file>
+    <file name="AttributeRef_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="transfverif.core.behavior.AttributeRef_BehaviorDescriptor" />
+    </file>
+    <file name="BackwardLink_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="transfverif.core.behavior.BackwardLink_BehaviorDescriptor" />
+    </file>
+    <file name="Concat_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="transfverif.core.behavior.Concat_BehaviorDescriptor" />
+    </file>
+    <file name="DirectMatchLink_BehaviorDescriptor.java">
+      <unit at="13,0,25,0" name="transfverif.core.behavior.DirectMatchLink_BehaviorDescriptor" />
+    </file>
+    <file name="ExistsMatchClass_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="transfverif.core.behavior.ExistsMatchClass_BehaviorDescriptor" />
+    </file>
+    <file name="IndirectMatchLink_BehaviorDescriptor.java">
+      <unit at="11,0,20,0" name="transfverif.core.behavior.IndirectMatchLink_BehaviorDescriptor" />
+    </file>
+    <file name="MatchAttributeValue_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="transfverif.core.behavior.MatchAttributeValue_BehaviorDescriptor" />
+    </file>
+    <file name="MatchAttribute_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="transfverif.core.behavior.MatchAttribute_BehaviorDescriptor" />
+    </file>
+    <file name="MatchLink_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="transfverif.core.behavior.MatchLink_BehaviorDescriptor" />
+    </file>
+    <file name="MatchModel_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="transfverif.core.behavior.MatchModel_BehaviorDescriptor" />
+    </file>
+    <file name="StringAtom_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="transfverif.core.behavior.StringAtom_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

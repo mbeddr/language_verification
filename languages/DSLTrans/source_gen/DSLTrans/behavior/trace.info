@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="ApplyModel_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="DSLTrans.behavior.ApplyModel_BehaviorDescriptor" />
+    </file>
+    <file name="IndirectApplyLink_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="DSLTrans.behavior.IndirectApplyLink_BehaviorDescriptor" />
+    </file>
+    <file name="Layer_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="DSLTrans.behavior.Layer_BehaviorDescriptor" />
+    </file>
+    <file name="MatchModel_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="DSLTrans.behavior.MatchModel_BehaviorDescriptor" />
+    </file>
+    <file name="PreviousLayer_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="DSLTrans.behavior.PreviousLayer_BehaviorDescriptor" />
+    </file>
+    <file name="Rule_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="DSLTrans.behavior.Rule_BehaviorDescriptor" />
+    </file>
+    <file name="Transformation_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="DSLTrans.behavior.Transformation_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

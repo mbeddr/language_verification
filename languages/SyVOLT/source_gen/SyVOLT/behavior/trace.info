@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="ContractSet_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="SyVOLT.behavior.ContractSet_BehaviorDescriptor" />
+    </file>
+    <file name="Contract_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="SyVOLT.behavior.Contract_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
