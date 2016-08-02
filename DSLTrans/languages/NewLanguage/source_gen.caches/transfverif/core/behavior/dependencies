@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="transfverif.core.behavior.AbstractApplier_BehaviorDescriptor" file="AbstractApplier_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.AbstractMatcher_BehaviorDescriptor" file="AbstractMatcher_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.AnyMatchClass_BehaviorDescriptor" file="AnyMatchClass_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.MatchClass_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.ApplyAttributeString_BehaviorDescriptor" file="ApplyAttributeString_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.ApplyAttributeValue_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.ApplyAttributeValue_BehaviorDescriptor" file="ApplyAttributeValue_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.ApplyAttribute_BehaviorDescriptor" file="ApplyAttribute_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.ApplyClass_BehaviorDescriptor" file="ApplyClass_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.Class_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.ApplyLink_BehaviorDescriptor" file="ApplyLink_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.Link_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.AttributeRef_BehaviorDescriptor" file="AttributeRef_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.ApplyAttributeValue_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.BackwardLink_BehaviorDescriptor" file="BackwardLink_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.Link_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.Class_BehaviorDescriptor" file="Class_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.Concat_BehaviorDescriptor" file="Concat_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.ApplyAttributeValue_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.DirectMatchLink_BehaviorDescriptor" file="DirectMatchLink_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.MatchLink_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.ExistsMatchClass_BehaviorDescriptor" file="ExistsMatchClass_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.MatchClass_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.IndirectMatchLink_BehaviorDescriptor" file="IndirectMatchLink_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.MatchLink_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.Link_BehaviorDescriptor" file="Link_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.MatchAttributeString_BehaviorDescriptor" file="MatchAttributeString_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.MatchAttributeValue_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.MatchAttributeValue_BehaviorDescriptor" file="MatchAttributeValue_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.MatchAttribute_BehaviorDescriptor" file="MatchAttribute_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.MatchClass_BehaviorDescriptor" file="MatchClass_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.Class_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.MatchLink_BehaviorDescriptor" file="MatchLink_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="transfverif.core.behavior.Link_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.StringAtom_BehaviorDescriptor" file="StringAtom_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.StringLiteralAtom_BehaviorDescriptor" file="StringLiteralAtom_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.StringAtom_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.StringVariableAtom_BehaviorDescriptor" file="StringVariableAtom_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.StringAtom_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+</dependenciesRoot>
+
