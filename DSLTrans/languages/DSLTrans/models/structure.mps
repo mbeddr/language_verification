@@ -119,7 +119,13 @@
     <node concept="1TJgyj" id="3ky2qXA$ttF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rules" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ky2qXA$trv" resolve="Rule" />
+    </node>
+    <node concept="1TJgyj" id="3QsrawRf7Ny" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="previousSource" />
+      <ref role="20lvS9" node="3ky2qXA$ttC" resolve="Layer" />
     </node>
   </node>
   <node concept="1TIwiD" id="55KrseX0pIK">

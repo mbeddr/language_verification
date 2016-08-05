@@ -46,6 +46,9 @@
     <file name="IndirectMatchLink_BehaviorDescriptor.java">
       <unit at="12,0,21,0" name="transfverif.core.behavior.IndirectMatchLink_BehaviorDescriptor" />
     </file>
+    <file name="LinkType_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="transfverif.core.behavior.LinkType_BehaviorDescriptor" />
+    </file>
     <file name="Link_BehaviorDescriptor.java">
       <unit at="11,0,14,0" name="transfverif.core.behavior.Link_BehaviorDescriptor" />
     </file>

@@ -10,7 +10,7 @@ import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class DirectMatchLink_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements MatchLink_BehaviorDescriptor {
+public class DirectMatchLink_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements MatchLink_BehaviorDescriptor, LinkType_BehaviorDescriptor {
 
   @Override
   public String getConceptFqName() {

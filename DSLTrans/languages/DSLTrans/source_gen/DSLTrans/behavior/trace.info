@@ -4,9 +4,6 @@
     <file name="ApplyModel_BehaviorDescriptor.java">
       <unit at="12,0,21,0" name="DSLTrans.behavior.ApplyModel_BehaviorDescriptor" />
     </file>
-    <file name="IndirectApplyLink_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="DSLTrans.behavior.IndirectApplyLink_BehaviorDescriptor" />
-    </file>
     <file name="Layer_BehaviorDescriptor.java">
       <unit at="14,0,26,0" name="DSLTrans.behavior.Layer_BehaviorDescriptor" />
     </file>

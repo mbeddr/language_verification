@@ -7,6 +7,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -17,18 +18,25 @@ public class MatchAttributeString_Editor extends DefaultNodeEditor {
     return this.createCollection_739xr6_a(editorContext, node);
   }
   private EditorCell createCollection_739xr6_a(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
     editorCell.setCellId("Collection_739xr6_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefNode_739xr6_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_739xr6_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_739xr6_b0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefNode_739xr6_a0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new MatchAttributeString_Editor.atomSingleRoleHandler_739xr6_a0(node, MetaAdapterFactory.getContainmentLink(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26545b555L, 0x61d4bac5f384b743L, "atom"), editorContext);
+  private EditorCell createConstant_739xr6_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(String)");
+    editorCell.setCellId("Constant_739xr6_a0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNode_739xr6_b0(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new MatchAttributeString_Editor.atomSingleRoleHandler_739xr6_b0(node, MetaAdapterFactory.getContainmentLink(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26545b555L, 0x61d4bac5f384b743L, "atom"), editorContext);
     return provider.createCell();
   }
-  private class atomSingleRoleHandler_739xr6_a0 extends SingleRoleCellProvider {
-    public atomSingleRoleHandler_739xr6_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class atomSingleRoleHandler_739xr6_b0 extends SingleRoleCellProvider {
+    public atomSingleRoleHandler_739xr6_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
