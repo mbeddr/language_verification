@@ -11,115 +11,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="9,0,35,0" name="transfverif.core.constraints.ConstraintsAspectDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:5839fc8d-e87f-4cc0-b0c0-91be42b15039(transfverif.core.constraints)/2796321687635932678">
-    <file name="ApplyLink_Constraints.java">
-      <node id="2796321687635932678" at="29,34,30,98" concept="8" />
-      <node id="2796321687635932678" at="33,98,34,135" concept="5" />
-      <node id="2796321687635932678" at="37,44,38,20" concept="6" />
-      <node id="2796321687635932678" at="45,44,46,24" concept="6" />
-      <node id="6217950678929733504" at="49,128,50,200" concept="6" />
-      <node id="2796321687635932678" at="53,63,54,57" concept="6" />
-      <node id="2796321687635932718" at="58,13,59,242" concept="5" />
-      <node id="2796321687635990986" at="61,52,62,341" concept="6" />
-      <node id="2796321687635932678" at="72,44,73,20" concept="6" />
-      <node id="2796321687635932678" at="80,44,81,24" concept="6" />
-      <node id="6217950678929734324" at="84,128,85,200" concept="6" />
-      <node id="2796321687635932678" at="88,63,89,57" concept="6" />
-      <node id="2796321687635993733" at="93,13,94,242" concept="5" />
-      <node id="2796321687635993751" at="96,52,97,341" concept="6" />
-      <node id="2796321687635932678" at="104,7,105,22" concept="6" />
-      <node id="2796321687635932678" at="107,0,108,0" concept="7" trace="breakingNode_4qg67_a0a2a0a0a1a0b0a1a1" />
-      <node id="2796321687635932678" at="108,0,109,0" concept="7" trace="breakingNode_4qg67_a0a2a0a0a1a0b0a2a1" />
-      <node id="2796321687635932678" at="29,0,32,0" concept="1" trace="ApplyLink_Constraints#()V" />
-      <node id="2796321687635988940" at="61,0,64,0" concept="4" trace="getName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="2796321687635993745" at="96,0,99,0" concept="4" trace="getName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="2796321687635932678" at="36,0,40,0" concept="4" trace="hasOwnScopeProvider#()Z" />
-      <node id="2796321687635932678" at="44,0,48,0" concept="4" trace="hasPresentation#()Z" />
-      <node id="2796321687635932678" at="48,0,52,0" concept="4" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
-      <node id="2796321687635932678" at="52,0,56,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="2796321687635932678" at="71,0,75,0" concept="4" trace="hasOwnScopeProvider#()Z" />
-      <node id="2796321687635932678" at="79,0,83,0" concept="4" trace="hasPresentation#()Z" />
-      <node id="2796321687635932678" at="83,0,87,0" concept="4" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
-      <node id="2796321687635932678" at="87,0,91,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="2796321687635964196" at="59,242,64,16" concept="6" />
-      <node id="2796321687635993740" at="94,242,99,16" concept="6" />
-      <node id="2796321687635932678" at="57,122,65,13" concept="0" />
-      <node id="2796321687635932678" at="92,122,100,13" concept="0" />
-      <node id="2796321687635932678" at="56,0,67,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="2796321687635932678" at="91,0,102,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="2796321687635932678" at="42,56,67,10" concept="6" />
-      <node id="2796321687635932678" at="77,56,102,10" concept="6" />
-      <node id="2796321687635932678" at="40,0,69,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="2796321687635932678" at="75,0,104,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="2796321687635932678" at="34,135,69,7" concept="2" />
-      <node id="2796321687635932678" at="69,7,104,7" concept="2" />
-      <node id="2796321687635932678" at="32,0,107,0" concept="4" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
-      <scope id="2796321687635932678" at="29,34,30,98" />
-      <scope id="2796321687635932678" at="37,44,38,20" />
-      <scope id="2796321687635932678" at="45,44,46,24" />
-      <scope id="6217950678929731113" at="49,128,50,200" />
-      <scope id="2796321687635932678" at="53,63,54,57" />
-      <scope id="2796321687635988946" at="61,52,62,341" />
-      <scope id="2796321687635932678" at="72,44,73,20" />
-      <scope id="2796321687635932678" at="80,44,81,24" />
-      <scope id="6217950678929734082" at="84,128,85,200" />
-      <scope id="2796321687635932678" at="88,63,89,57" />
-      <scope id="2796321687635993750" at="96,52,97,341" />
-      <scope id="2796321687635932678" at="29,0,32,0" />
-      <scope id="2796321687635988940" at="61,0,64,0">
-        <var name="child" id="2796321687635988944" />
-      </scope>
-      <scope id="2796321687635993745" at="96,0,99,0">
-        <var name="child" id="2796321687635993748" />
-      </scope>
-      <scope id="2796321687635932678" at="36,0,40,0" />
-      <scope id="2796321687635932678" at="44,0,48,0" />
-      <scope id="2796321687635932678" at="48,0,52,0">
-        <var name="_context" id="2796321687635932678" />
-        <var name="operationContext" id="2796321687635932678" />
-      </scope>
-      <scope id="2796321687635932678" at="52,0,56,0" />
-      <scope id="2796321687635932678" at="71,0,75,0" />
-      <scope id="2796321687635932678" at="79,0,83,0" />
-      <scope id="2796321687635932678" at="83,0,87,0">
-        <var name="_context" id="2796321687635932678" />
-        <var name="operationContext" id="2796321687635932678" />
-      </scope>
-      <scope id="2796321687635932678" at="87,0,91,0" />
-      <scope id="2796321687635932690" at="58,13,64,16">
-        <var name="classes" id="2796321687635932716" />
-      </scope>
-      <scope id="2796321687635993681" at="93,13,99,16">
-        <var name="classes" id="2796321687635993734" />
-      </scope>
-      <scope id="2796321687635932678" at="57,122,65,13" />
-      <scope id="2796321687635932678" at="92,122,100,13" />
-      <scope id="2796321687635932678" at="56,0,67,0">
-        <var name="_context" id="2796321687635932678" />
-        <var name="operationContext" id="2796321687635932678" />
-      </scope>
-      <scope id="2796321687635932678" at="91,0,102,0">
-        <var name="_context" id="2796321687635932678" />
-        <var name="operationContext" id="2796321687635932678" />
-      </scope>
-      <scope id="2796321687635932678" at="42,56,67,10" />
-      <scope id="2796321687635932678" at="77,56,102,10" />
-      <scope id="2796321687635932678" at="40,0,69,0" />
-      <scope id="2796321687635932678" at="75,0,104,0" />
-      <scope id="2796321687635932678" at="33,98,105,22">
-        <var name="references" id="2796321687635932678" />
-      </scope>
-      <scope id="2796321687635932678" at="32,0,107,0" />
-      <unit id="2796321687635988928" at="60,25,64,15" name="transfverif.core.constraints.ApplyLink_Constraints$3" />
-      <unit id="2796321687635993743" at="95,25,99,15" name="transfverif.core.constraints.ApplyLink_Constraints$4" />
-      <unit id="2796321687635932678" at="43,19,67,9" name="transfverif.core.constraints.ApplyLink_Constraints$2" />
-      <unit id="2796321687635932678" at="78,19,102,9" name="transfverif.core.constraints.ApplyLink_Constraints$3" />
-      <unit id="2796321687635932678" at="35,128,69,5" name="transfverif.core.constraints.ApplyLink_Constraints$1" />
-      <unit id="2796321687635932678" at="70,128,104,5" name="transfverif.core.constraints.ApplyLink_Constraints$2" />
-      <unit id="2796321687635932678" at="28,0,110,0" name="transfverif.core.constraints.ApplyLink_Constraints" />
+      <unit at="9,0,29,0" name="transfverif.core.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:5839fc8d-e87f-4cc0-b0c0-91be42b15039(transfverif.core.constraints)/2796321687635997934">
@@ -228,15 +120,6 @@
       <unit id="2796321687635997934" at="35,128,69,5" name="transfverif.core.constraints.BackwardLink_Constraints$1" />
       <unit id="2796321687635997934" at="70,128,104,5" name="transfverif.core.constraints.BackwardLink_Constraints$2" />
       <unit id="2796321687635997934" at="28,0,110,0" name="transfverif.core.constraints.BackwardLink_Constraints" />
-    </file>
-  </root>
-  <root nodeRef="r:5839fc8d-e87f-4cc0-b0c0-91be42b15039(transfverif.core.constraints)/2796321687636004988">
-    <file name="DirectMatchLink_Constraints.java">
-      <node id="2796321687636004988" at="9,40,10,98" concept="8" />
-      <node id="2796321687636004988" at="9,0,12,0" concept="1" trace="DirectMatchLink_Constraints#()V" />
-      <scope id="2796321687636004988" at="9,40,10,98" />
-      <scope id="2796321687636004988" at="9,0,12,0" />
-      <unit id="2796321687636004988" at="8,0,13,0" name="transfverif.core.constraints.DirectMatchLink_Constraints" />
     </file>
   </root>
   <root nodeRef="r:5839fc8d-e87f-4cc0-b0c0-91be42b15039(transfverif.core.constraints)/2796321687636006154">
@@ -353,13 +236,112 @@
       <unit id="2796321687636006154" at="31,0,117,0" name="transfverif.core.constraints.MatchLink_Constraints" />
     </file>
   </root>
-  <root nodeRef="r:5839fc8d-e87f-4cc0-b0c0-91be42b15039(transfverif.core.constraints)/2796321687636008005">
-    <file name="IndirectMatchLink_Constraints.java">
-      <node id="2796321687636008005" at="9,42,10,98" concept="8" />
-      <node id="2796321687636008005" at="9,0,12,0" concept="1" trace="IndirectMatchLink_Constraints#()V" />
-      <scope id="2796321687636008005" at="9,42,10,98" />
-      <scope id="2796321687636008005" at="9,0,12,0" />
-      <unit id="2796321687636008005" at="8,0,13,0" name="transfverif.core.constraints.IndirectMatchLink_Constraints" />
+  <root nodeRef="r:5839fc8d-e87f-4cc0-b0c0-91be42b15039(transfverif.core.constraints)/4439542802417910358">
+    <file name="ApplyLink_Constraints.java">
+      <node id="4439542802417910358" at="29,34,30,98" concept="8" />
+      <node id="4439542802417910358" at="33,98,34,135" concept="5" />
+      <node id="4439542802417910358" at="37,44,38,20" concept="6" />
+      <node id="4439542802417910358" at="45,44,46,24" concept="6" />
+      <node id="4439542802417913512" at="49,128,50,200" concept="6" />
+      <node id="4439542802417910358" at="53,63,54,57" concept="6" />
+      <node id="4439542802417911859" at="58,13,59,242" concept="5" />
+      <node id="4439542802417911877" at="61,52,62,341" concept="6" />
+      <node id="4439542802417910358" at="72,44,73,20" concept="6" />
+      <node id="4439542802417910358" at="80,44,81,24" concept="6" />
+      <node id="4439542802417913899" at="84,128,85,200" concept="6" />
+      <node id="4439542802417910358" at="88,63,89,57" concept="6" />
+      <node id="4439542802417912501" at="93,13,94,242" concept="5" />
+      <node id="4439542802417912519" at="96,52,97,341" concept="6" />
+      <node id="4439542802417910358" at="104,7,105,22" concept="6" />
+      <node id="4439542802417910358" at="107,0,108,0" concept="7" trace="breakingNode_4qg67_a0a2a0a0a1a0b0a1a1" />
+      <node id="4439542802417910358" at="108,0,109,0" concept="7" trace="breakingNode_4qg67_a0a2a0a0a1a0b0a2a1" />
+      <node id="4439542802417910358" at="29,0,32,0" concept="1" trace="ApplyLink_Constraints#()V" />
+      <node id="4439542802417911871" at="61,0,64,0" concept="4" trace="getName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4439542802417912513" at="96,0,99,0" concept="4" trace="getName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4439542802417910358" at="36,0,40,0" concept="4" trace="hasOwnScopeProvider#()Z" />
+      <node id="4439542802417910358" at="44,0,48,0" concept="4" trace="hasPresentation#()Z" />
+      <node id="4439542802417910358" at="48,0,52,0" concept="4" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="4439542802417910358" at="52,0,56,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4439542802417910358" at="71,0,75,0" concept="4" trace="hasOwnScopeProvider#()Z" />
+      <node id="4439542802417910358" at="79,0,83,0" concept="4" trace="hasPresentation#()Z" />
+      <node id="4439542802417910358" at="83,0,87,0" concept="4" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="4439542802417910358" at="87,0,91,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="4439542802417911866" at="59,242,64,16" concept="6" />
+      <node id="4439542802417912508" at="94,242,99,16" concept="6" />
+      <node id="4439542802417910358" at="57,122,65,13" concept="0" />
+      <node id="4439542802417910358" at="92,122,100,13" concept="0" />
+      <node id="4439542802417910358" at="56,0,67,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4439542802417910358" at="91,0,102,0" concept="4" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="4439542802417910358" at="42,56,67,10" concept="6" />
+      <node id="4439542802417910358" at="77,56,102,10" concept="6" />
+      <node id="4439542802417910358" at="40,0,69,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4439542802417910358" at="75,0,104,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="4439542802417910358" at="34,135,69,7" concept="2" />
+      <node id="4439542802417910358" at="69,7,104,7" concept="2" />
+      <node id="4439542802417910358" at="32,0,107,0" concept="4" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="4439542802417910358" at="29,34,30,98" />
+      <scope id="4439542802417910358" at="37,44,38,20" />
+      <scope id="4439542802417910358" at="45,44,46,24" />
+      <scope id="4439542802417913273" at="49,128,50,200" />
+      <scope id="4439542802417910358" at="53,63,54,57" />
+      <scope id="4439542802417911876" at="61,52,62,341" />
+      <scope id="4439542802417910358" at="72,44,73,20" />
+      <scope id="4439542802417910358" at="80,44,81,24" />
+      <scope id="4439542802417913660" at="84,128,85,200" />
+      <scope id="4439542802417910358" at="88,63,89,57" />
+      <scope id="4439542802417912518" at="96,52,97,341" />
+      <scope id="4439542802417910358" at="29,0,32,0" />
+      <scope id="4439542802417911871" at="61,0,64,0">
+        <var name="child" id="4439542802417911874" />
+      </scope>
+      <scope id="4439542802417912513" at="96,0,99,0">
+        <var name="child" id="4439542802417912516" />
+      </scope>
+      <scope id="4439542802417910358" at="36,0,40,0" />
+      <scope id="4439542802417910358" at="44,0,48,0" />
+      <scope id="4439542802417910358" at="48,0,52,0">
+        <var name="_context" id="4439542802417910358" />
+        <var name="operationContext" id="4439542802417910358" />
+      </scope>
+      <scope id="4439542802417910358" at="52,0,56,0" />
+      <scope id="4439542802417910358" at="71,0,75,0" />
+      <scope id="4439542802417910358" at="79,0,83,0" />
+      <scope id="4439542802417910358" at="83,0,87,0">
+        <var name="_context" id="4439542802417910358" />
+        <var name="operationContext" id="4439542802417910358" />
+      </scope>
+      <scope id="4439542802417910358" at="87,0,91,0" />
+      <scope id="4439542802417910368" at="58,13,64,16">
+        <var name="classes" id="4439542802417911860" />
+      </scope>
+      <scope id="4439542802417910394" at="93,13,99,16">
+        <var name="classes" id="4439542802417912502" />
+      </scope>
+      <scope id="4439542802417910358" at="57,122,65,13" />
+      <scope id="4439542802417910358" at="92,122,100,13" />
+      <scope id="4439542802417910358" at="56,0,67,0">
+        <var name="_context" id="4439542802417910358" />
+        <var name="operationContext" id="4439542802417910358" />
+      </scope>
+      <scope id="4439542802417910358" at="91,0,102,0">
+        <var name="_context" id="4439542802417910358" />
+        <var name="operationContext" id="4439542802417910358" />
+      </scope>
+      <scope id="4439542802417910358" at="42,56,67,10" />
+      <scope id="4439542802417910358" at="77,56,102,10" />
+      <scope id="4439542802417910358" at="40,0,69,0" />
+      <scope id="4439542802417910358" at="75,0,104,0" />
+      <scope id="4439542802417910358" at="33,98,105,22">
+        <var name="references" id="4439542802417910358" />
+      </scope>
+      <scope id="4439542802417910358" at="32,0,107,0" />
+      <unit id="4439542802417911869" at="60,25,64,15" name="transfverif.core.constraints.ApplyLink_Constraints$3" />
+      <unit id="4439542802417912511" at="95,25,99,15" name="transfverif.core.constraints.ApplyLink_Constraints$4" />
+      <unit id="4439542802417910358" at="43,19,67,9" name="transfverif.core.constraints.ApplyLink_Constraints$2" />
+      <unit id="4439542802417910358" at="78,19,102,9" name="transfverif.core.constraints.ApplyLink_Constraints$3" />
+      <unit id="4439542802417910358" at="35,128,69,5" name="transfverif.core.constraints.ApplyLink_Constraints$1" />
+      <unit id="4439542802417910358" at="70,128,104,5" name="transfverif.core.constraints.ApplyLink_Constraints$2" />
+      <unit id="4439542802417910358" at="28,0,110,0" name="transfverif.core.constraints.ApplyLink_Constraints" />
     </file>
   </root>
   <root nodeRef="r:5839fc8d-e87f-4cc0-b0c0-91be42b15039(transfverif.core.constraints)/6217950678929786759">

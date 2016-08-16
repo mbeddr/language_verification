@@ -1,11 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <root>
-    <file name="ContractSet_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="SyVOLT.behavior.ContractSet_BehaviorDescriptor" />
+    <file name="AndContractFormula_BehaviorDescriptor.java">
+      <unit at="13,0,25,0" name="SyVOLT.behavior.AndContractFormula_BehaviorDescriptor" />
     </file>
-    <file name="Contract_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="SyVOLT.behavior.Contract_BehaviorDescriptor" />
+    <file name="AtomicContract_BehaviorDescriptor.java">
+      <unit at="13,0,25,0" name="SyVOLT.behavior.AtomicContract_BehaviorDescriptor" />
+    </file>
+    <file name="BinaryContractFormula_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="SyVOLT.behavior.BinaryContractFormula_BehaviorDescriptor" />
+    </file>
+    <file name="ContractFormula_BehaviorDescriptor.java">
+      <unit at="12,0,15,0" name="SyVOLT.behavior.ContractFormula_BehaviorDescriptor" />
+    </file>
+    <file name="ContractSet_BehaviorDescriptor.java">
+      <unit at="14,0,26,0" name="SyVOLT.behavior.ContractSet_BehaviorDescriptor" />
+    </file>
+    <file name="ImplicationContractFormula_BehaviorDescriptor.java">
+      <unit at="13,0,25,0" name="SyVOLT.behavior.ImplicationContractFormula_BehaviorDescriptor" />
+    </file>
+    <file name="IndirectApplyLink_BehaviorDescriptor.java">
+      <unit at="13,0,22,0" name="SyVOLT.behavior.IndirectApplyLink_BehaviorDescriptor" />
+    </file>
+    <file name="NotContractFormula_BehaviorDescriptor.java">
+      <unit at="13,0,25,0" name="SyVOLT.behavior.NotContractFormula_BehaviorDescriptor" />
+    </file>
+    <file name="OrContractFormula_BehaviorDescriptor.java">
+      <unit at="13,0,25,0" name="SyVOLT.behavior.OrContractFormula_BehaviorDescriptor" />
+    </file>
+    <file name="PostCondition_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="SyVOLT.behavior.PostCondition_BehaviorDescriptor" />
+    </file>
+    <file name="PreCondition_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="SyVOLT.behavior.PreCondition_BehaviorDescriptor" />
+    </file>
+    <file name="SameElement_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="SyVOLT.behavior.SameElement_BehaviorDescriptor" />
+    </file>
+    <file name="SamePostElement_BehaviorDescriptor.java">
+      <unit at="13,0,22,0" name="SyVOLT.behavior.SamePostElement_BehaviorDescriptor" />
+    </file>
+    <file name="SamePreElement_BehaviorDescriptor.java">
+      <unit at="13,0,22,0" name="SyVOLT.behavior.SamePreElement_BehaviorDescriptor" />
+    </file>
+    <file name="UnaryContractFormula_BehaviorDescriptor.java">
+      <unit at="11,0,14,0" name="SyVOLT.behavior.UnaryContractFormula_BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

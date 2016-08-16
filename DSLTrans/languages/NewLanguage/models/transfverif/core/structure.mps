@@ -64,7 +64,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="applyLinks" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3ky2qXA$tty" resolve="ApplyLink" />
+      <ref role="20lvS9" node="3ky2qXA$tty" resolve="DirectApplyLink" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ky2qXA$tr_">
@@ -88,7 +88,8 @@
     <property role="1pbfSe" value="1682710274" />
     <property role="TrG5h" value="DirectMatchLink" />
     <property role="3GE5qa" value="Links" />
-    <property role="34LRSv" value="Direct" />
+    <property role="34LRSv" value="Direct Match" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2rexW9_i9kR" role="PzmwI">
       <ref role="PrY4T" node="2rexW9_i8R$" resolve="MatchLink" />
     </node>
@@ -100,18 +101,20 @@
     <property role="1pbfSe" value="1682710261" />
     <property role="TrG5h" value="IndirectMatchLink" />
     <property role="3GE5qa" value="Links" />
-    <property role="34LRSv" value="Indirect" />
+    <property role="34LRSv" value="Indirect Match" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2rexW9_i9kU" role="PzmwI">
       <ref role="PrY4T" node="2rexW9_i8R$" resolve="MatchLink" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ky2qXA$tty">
     <property role="1pbfSe" value="1682710255" />
-    <property role="TrG5h" value="ApplyLink" />
+    <property role="TrG5h" value="DirectApplyLink" />
     <property role="3GE5qa" value="Links" />
-    <property role="34LRSv" value="Apply" />
-    <node concept="PrWs8" id="5paAjb8vTqV" role="PzmwI">
-      <ref role="PrY4T" node="2rexW9_i8QQ" resolve="Link" />
+    <property role="34LRSv" value="Direct Apply" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3QsrawRgL3L" role="PzmwI">
+      <ref role="PrY4T" node="3QsrawRgGyC" resolve="ApplyLink" />
     </node>
     <node concept="PrWs8" id="3QsrawRfIwl" role="PzmwI">
       <ref role="PrY4T" node="3QsrawRfIw0" resolve="LinkType" />
@@ -122,6 +125,7 @@
     <property role="TrG5h" value="BackwardLink" />
     <property role="3GE5qa" value="Links" />
     <property role="34LRSv" value="Back" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2rexW9_idkd" role="PzmwI">
       <ref role="PrY4T" node="2rexW9_i8QQ" resolve="Link" />
     </node>
@@ -355,6 +359,14 @@
     <node concept="1TJgyi" id="3QsrawRfIw3" role="1TKVEl">
       <property role="TrG5h" value="typeName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3QsrawRgGyC">
+    <property role="1pbfSe" value="1960785232" />
+    <property role="3GE5qa" value="Links" />
+    <property role="TrG5h" value="ApplyLink" />
+    <node concept="PrWs8" id="3QsrawRgGyD" role="PrDN$">
+      <ref role="PrY4T" node="2rexW9_i8QQ" resolve="Link" />
     </node>
   </node>
 </model>

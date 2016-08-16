@@ -59,13 +59,8 @@
   </dependency>
   <dependency className="transfverif.core.behavior.ApplyLink_BehaviorDescriptor" file="ApplyLink_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="transfverif.core.behavior.LinkType_BehaviorDescriptor" />
     <classNode dependClassName="transfverif.core.behavior.Link_BehaviorDescriptor" />
     <classNode extendsClassName="java.lang.Cloneable" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="transfverif.core.behavior.AttributeRef_BehaviorDescriptor" file="AttributeRef_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
@@ -91,6 +86,16 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="transfverif.core.behavior.ApplyAttributeValue_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="transfverif.core.behavior.DirectApplyLink_BehaviorDescriptor" file="DirectApplyLink_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.LinkType_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.Link_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="transfverif.core.behavior.DirectMatchLink_BehaviorDescriptor" file="DirectMatchLink_BehaviorDescriptor.java">

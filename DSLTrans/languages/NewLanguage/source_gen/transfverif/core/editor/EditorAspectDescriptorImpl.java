@@ -27,9 +27,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e5L, "transfverif.core.structure.ApplyClass"))) {
         return Collections.<ConceptEditor>singletonList(new ApplyClass_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d762L, "transfverif.core.structure.ApplyLink"))) {
-        return Collections.<ConceptEditor>singletonList(new ApplyLink_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b66eL, "transfverif.core.structure.AttributeRef"))) {
         return Collections.<ConceptEditor>singletonList(new AttributeRef_Editor());
       }
@@ -38,6 +35,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b66fL, "transfverif.core.structure.Concat"))) {
         return Collections.<ConceptEditor>singletonList(new Concat_Editor());
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d762L, "transfverif.core.structure.DirectApplyLink"))) {
+        return Collections.<ConceptEditor>singletonList(new DirectApplyLink_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d74fL, "transfverif.core.structure.DirectMatchLink"))) {
         return Collections.<ConceptEditor>singletonList(new DirectMatchLink_Editor());

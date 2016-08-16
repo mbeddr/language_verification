@@ -1,18 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="SyVOLT.behavior.AndContractFormula_BehaviorDescriptor" file="AndContractFormula_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.BinaryContractFormula_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.AtomicContract_BehaviorDescriptor" file="AtomicContract_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.ContractFormula_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.BinaryContractFormula_BehaviorDescriptor" file="BinaryContractFormula_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.ContractFormula_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.ContractFormula_BehaviorDescriptor" file="ContractFormula_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+  </dependency>
   <dependency className="SyVOLT.behavior.ContractSet_BehaviorDescriptor" file="ContractSet_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="SyVOLT.behavior.Contract_BehaviorDescriptor" file="Contract_BehaviorDescriptor.java">
+  <dependency className="SyVOLT.behavior.ImplicationContractFormula_BehaviorDescriptor" file="ImplicationContractFormula_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.BinaryContractFormula_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.IndirectApplyLink_BehaviorDescriptor" file="IndirectApplyLink_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.ApplyLink_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.NotContractFormula_BehaviorDescriptor" file="NotContractFormula_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.UnaryContractFormula_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.OrContractFormula_BehaviorDescriptor" file="OrContractFormula_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.BinaryContractFormula_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.PostCondition_BehaviorDescriptor" file="PostCondition_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.AbstractApplier_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.PreCondition_BehaviorDescriptor" file="PreCondition_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="transfverif.core.behavior.AbstractMatcher_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.SameElement_BehaviorDescriptor" file="SameElement_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.SamePostElement_BehaviorDescriptor" file="SamePostElement_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.SameElement_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.ApplyLink_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.SamePreElement_BehaviorDescriptor" file="SamePreElement_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.SameElement_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="transfverif.core.behavior.MatchLink_BehaviorDescriptor" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="SyVOLT.behavior.UnaryContractFormula_BehaviorDescriptor" file="UnaryContractFormula_BehaviorDescriptor.java">
+    <classNode dependClassName="SyVOLT.behavior.ContractFormula_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
+    <classNode extendsClassName="java.lang.Cloneable" />
   </dependency>
 </dependenciesRoot>
 

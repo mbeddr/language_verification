@@ -12,16 +12,19 @@ import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import com.mbeddr.core.base.editor.HorizLineCell;
 import java.awt.Color;
-import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -51,16 +54,19 @@ public class Rule_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_z0m96w_b0");
     editorCell.addEditorCell(this.createCustom_z0m96w_a1a(editorContext, node));
     editorCell.addEditorCell(this.createCustom_z0m96w_b1a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_z0m96w_c1a(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_z0m96w_c1a(editorContext, node));
     editorCell.addEditorCell(this.createCustom_z0m96w_d1a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_z0m96w_e1a(editorContext, node));
-    editorCell.addEditorCell(this.createCustom_z0m96w_f1a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_z0m96w_g1a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_z0m96w_h1a(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_z0m96w_i1a(editorContext, node));
-    editorCell.addEditorCell(this.createCustom_z0m96w_j1a(editorContext, node));
-    editorCell.addEditorCell(this.createCustom_z0m96w_k1a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_z0m96w_l1a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_z0m96w_e1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_z0m96w_f1a(editorContext, node));
+    editorCell.addEditorCell(this.createCustom_z0m96w_g1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_z0m96w_h1a(editorContext, node));
+    editorCell.addEditorCell(this.createCustom_z0m96w_i1a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_z0m96w_j1a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_z0m96w_k1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_z0m96w_l1a(editorContext, node));
+    editorCell.addEditorCell(this.createCustom_z0m96w_m1a(editorContext, node));
+    editorCell.addEditorCell(this.createCustom_z0m96w_n1a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_z0m96w_o1a(editorContext, node));
     return editorCell;
   }
   private EditorCell createCustom_z0m96w_a1a(final EditorContext editorContext, final SNode node) {
@@ -83,12 +89,60 @@ public class Rule_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Custom_z0m96w_b1a");
     return editorCell;
   }
-  private EditorCell createRefNode_z0m96w_c1a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Rule_Editor.matchModelSingleRoleHandler_z0m96w_c1a(node, MetaAdapterFactory.getContainmentLink(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x352209af6691d6dfL, 0x61d4bac5f384b65bL, "matchModel"), editorContext);
+  private EditorCell createCollection_z0m96w_c1a(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
+    editorCell.setCellId("Collection_z0m96w_c1a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.BACKGROUND_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.LIGHT_BLUE));
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_z0m96w_a2b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_z0m96w_b2b0(editorContext, node));
+    return editorCell;
+  }
+  private EditorCell createConstant_z0m96w_a2b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Rule Name: ");
+    editorCell.setCellId("Constant_z0m96w_a2b0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_z0m96w_b2b0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("name");
+    provider.setNoTargetText("<no name>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_name");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createCustom_z0m96w_d1a(final EditorContext editorContext, final SNode node) {
+    AbstractCellProvider provider = new _FunctionTypes._return_P0_E0<HorizLineCell>() {
+      public HorizLineCell invoke() {
+        return new HorizLineCell(node, Color.GRAY, 2);
+      }
+    }.invoke();
+    EditorCell editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("Custom_z0m96w_d1a");
+    return editorCell;
+  }
+  private EditorCell createConstant_z0m96w_e1a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    editorCell.setCellId("Constant_z0m96w_e1a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNode_z0m96w_f1a(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Rule_Editor.matchModelSingleRoleHandler_z0m96w_f1a(node, MetaAdapterFactory.getContainmentLink(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x352209af6691d6dfL, 0x61d4bac5f384b65bL, "matchModel"), editorContext);
     return provider.createCell();
   }
-  private class matchModelSingleRoleHandler_z0m96w_c1a extends SingleRoleCellProvider {
-    public matchModelSingleRoleHandler_z0m96w_c1a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class matchModelSingleRoleHandler_z0m96w_f1a extends SingleRoleCellProvider {
+    public matchModelSingleRoleHandler_z0m96w_f1a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -113,22 +167,22 @@ public class Rule_Editor extends DefaultNodeEditor {
       return "<no matchModel>";
     }
   }
-  private EditorCell createCustom_z0m96w_d1a(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustom_z0m96w_g1a(final EditorContext editorContext, final SNode node) {
     AbstractCellProvider provider = new _FunctionTypes._return_P0_E0<HorizLineCell>() {
       public HorizLineCell invoke() {
         return new HorizLineCell(node, Color.GRAY, 2);
       }
     }.invoke();
     EditorCell editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("Custom_z0m96w_d1a");
+    editorCell.setCellId("Custom_z0m96w_g1a");
     return editorCell;
   }
-  private EditorCell createRefNode_z0m96w_e1a(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new Rule_Editor.applyModelSingleRoleHandler_z0m96w_e1a(node, MetaAdapterFactory.getContainmentLink(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x352209af6691d6dfL, 0x61d4bac5f384b65dL, "applyModel"), editorContext);
+  private EditorCell createRefNode_z0m96w_h1a(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Rule_Editor.applyModelSingleRoleHandler_z0m96w_h1a(node, MetaAdapterFactory.getContainmentLink(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x352209af6691d6dfL, 0x61d4bac5f384b65dL, "applyModel"), editorContext);
     return provider.createCell();
   }
-  private class applyModelSingleRoleHandler_z0m96w_e1a extends SingleRoleCellProvider {
-    public applyModelSingleRoleHandler_z0m96w_e1a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+  private class applyModelSingleRoleHandler_z0m96w_h1a extends SingleRoleCellProvider {
+    public applyModelSingleRoleHandler_z0m96w_h1a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(ownerNode, containmentLink, context);
     }
     protected EditorCell createChildCell(SNode child) {
@@ -153,43 +207,43 @@ public class Rule_Editor extends DefaultNodeEditor {
       return "<no applyModel>";
     }
   }
-  private EditorCell createCustom_z0m96w_f1a(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustom_z0m96w_i1a(final EditorContext editorContext, final SNode node) {
     AbstractCellProvider provider = new _FunctionTypes._return_P0_E0<HorizLineCell>() {
       public HorizLineCell invoke() {
         return new HorizLineCell(node, Color.GRAY, 2);
       }
     }.invoke();
     EditorCell editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("Custom_z0m96w_f1a");
+    editorCell.setCellId("Custom_z0m96w_i1a");
     return editorCell;
   }
-  private EditorCell createConstant_z0m96w_g1a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_z0m96w_j1a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Backward Links");
-    editorCell.setCellId("Constant_z0m96w_g1a");
+    editorCell.setCellId("Constant_z0m96w_j1a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.BACKGROUND_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.yellow));
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_z0m96w_h1a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_z0m96w_k1a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_z0m96w_h1a");
+    editorCell.setCellId("Constant_z0m96w_k1a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_SIZE, 0, 6);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNodeList_z0m96w_i1a(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Rule_Editor.backwardLinksListHandler_z0m96w_i1a(node, "backwardLinks", editorContext);
+  private EditorCell createRefNodeList_z0m96w_l1a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Rule_Editor.backwardLinksListHandler_z0m96w_l1a(node, "backwardLinks", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_backwardLinks");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class backwardLinksListHandler_z0m96w_i1a extends RefNodeListHandler {
-    public backwardLinksListHandler_z0m96w_i1a(SNode ownerNode, String childRole, EditorContext context) {
+  private static class backwardLinksListHandler_z0m96w_l1a extends RefNodeListHandler {
+    public backwardLinksListHandler_z0m96w_l1a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -220,29 +274,29 @@ public class Rule_Editor extends DefaultNodeEditor {
       }
     }
   }
-  private EditorCell createCustom_z0m96w_j1a(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustom_z0m96w_m1a(final EditorContext editorContext, final SNode node) {
     AbstractCellProvider provider = new _FunctionTypes._return_P0_E0<HorizLineCell>() {
       public HorizLineCell invoke() {
         return new HorizLineCell(node, Color.GRAY, 2);
       }
     }.invoke();
     EditorCell editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("Custom_z0m96w_j1a");
+    editorCell.setCellId("Custom_z0m96w_m1a");
     return editorCell;
   }
-  private EditorCell createCustom_z0m96w_k1a(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustom_z0m96w_n1a(final EditorContext editorContext, final SNode node) {
     AbstractCellProvider provider = new _FunctionTypes._return_P0_E0<HorizLineCell>() {
       public HorizLineCell invoke() {
         return new HorizLineCell(node, Color.GRAY, 2);
       }
     }.invoke();
     EditorCell editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("Custom_z0m96w_k1a");
+    editorCell.setCellId("Custom_z0m96w_n1a");
     return editorCell;
   }
-  private EditorCell createConstant_z0m96w_l1a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_z0m96w_o1a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_z0m96w_l1a");
+    editorCell.setCellId("Constant_z0m96w_o1a");
     editorCell.setDefaultText("");
     return editorCell;
   }

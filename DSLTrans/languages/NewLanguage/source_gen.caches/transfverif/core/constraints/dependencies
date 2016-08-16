@@ -88,18 +88,8 @@
     <classNode dependClassName="transfverif.core.constraints.ApplyLink_Constraints" />
     <classNode dependClassName="transfverif.core.constraints.AttributeRef_Constraints" />
     <classNode dependClassName="transfverif.core.constraints.BackwardLink_Constraints" />
-    <classNode dependClassName="transfverif.core.constraints.DirectMatchLink_Constraints" />
-    <classNode dependClassName="transfverif.core.constraints.IndirectMatchLink_Constraints" />
     <classNode dependClassName="transfverif.core.constraints.MatchLink_Constraints" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
-  </dependency>
-  <dependency className="transfverif.core.constraints.DirectMatchLink_Constraints" file="DirectMatchLink_Constraints.java">
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
-  </dependency>
-  <dependency className="transfverif.core.constraints.IndirectMatchLink_Constraints" file="IndirectMatchLink_Constraints.java">
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="transfverif.core.constraints.MatchLink_Constraints" file="MatchLink_Constraints.java">
     <classNode dependClassName="java.lang.Iterable" />

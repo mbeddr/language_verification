@@ -11,23 +11,17 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
   }
   public ConstraintsDescriptor getDescriptor(SConceptId conceptId) {
     long id = conceptId.getIdValue();
-    if (id == 0x352209af6691d762L) {
-      return new ApplyLink_Constraints();
-    }
     if (id == 0x352209af6691d76dL) {
       return new BackwardLink_Constraints();
-    }
-    if (id == 0x352209af6691d74fL) {
-      return new DirectMatchLink_Constraints();
     }
     if (id == 0x26ce87c265488de4L) {
       return new MatchLink_Constraints();
     }
-    if (id == 0x352209af6691d75cL) {
-      return new IndirectMatchLink_Constraints();
-    }
     if (id == 0x61d4bac5f384b66eL) {
       return new AttributeRef_Constraints();
+    }
+    if (id == 0x3d9c6ca83742c8a8L) {
+      return new ApplyLink_Constraints();
     }
     return new BaseConstraintsDescriptor(conceptId);
   }
