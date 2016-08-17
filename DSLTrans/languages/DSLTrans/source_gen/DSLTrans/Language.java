@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import DSLTrans.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7(DSLTrans)";
@@ -49,6 +50,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new DSLTrans.structure.StructureAspectDescriptor();
+    }
+    if (aspectClass == TextGenAspectDescriptor.class) {
+      return (T) new DSLTrans.textGen.TextGenAspectDescriptor();
     }
     return super.createAspect(aspectClass);
   }

@@ -47,6 +47,7 @@
     <property role="1pbfSe" value="1682710386" />
     <property role="TrG5h" value="Rule" />
     <property role="3GE5qa" value="Elements" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ky2qXA$trw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
