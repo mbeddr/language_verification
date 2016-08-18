@@ -87,6 +87,7 @@
     <property role="1pbfSe" value="1431925630" />
     <property role="TrG5h" value="AtomicContract" />
     <property role="3GE5qa" value="Elements" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3QsrawRgGyf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

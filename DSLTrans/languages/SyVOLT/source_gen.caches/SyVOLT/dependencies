@@ -3,6 +3,7 @@
   <dependency className="SyVOLT.Language" file="Language.java">
     <classNode dependClassName="SyVOLT.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="SyVOLT.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="SyVOLT.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -14,6 +15,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
   </dependency>
 </dependenciesRoot>

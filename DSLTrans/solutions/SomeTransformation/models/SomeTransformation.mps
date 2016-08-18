@@ -201,5 +201,15 @@
       <ref role="13xwDU" node="3QsrawRiFGj" />
     </node>
   </node>
+  <node concept="2ik09W" id="3QsrawRpvnG">
+    <property role="TrG5h" value="ExampleContract" />
+    <node concept="aREg_" id="3QsrawRpTkI" role="aREgB">
+      <node concept="2ik0NV" id="3QsrawRpYpR" role="13z3mo">
+        <property role="13z3e$" value="1" />
+        <property role="13z3hU" value="TypeA" />
+      </node>
+    </node>
+    <node concept="aREgA" id="3QsrawRpTkK" role="aREgT" />
+  </node>
 </model>
 

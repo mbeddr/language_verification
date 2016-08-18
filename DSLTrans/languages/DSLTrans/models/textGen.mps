@@ -2722,33 +2722,31 @@
                     <property role="ldcpH" value="true" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="3QsrawRmFAG" role="3cqZAp" />
-            <node concept="lc7rE" id="3QsrawRl_SB" role="3cqZAp">
-              <node concept="la8eA" id="3QsrawRlB1C" role="lcghm">
-                <property role="lacIc" value="self[&quot;equations&quot;] = [" />
-                <property role="ldcpH" value="true" />
-              </node>
-            </node>
-            <node concept="lc7rE" id="3QsrawRlChb" role="3cqZAp">
-              <node concept="l9hG8" id="3QsrawRlDjj" role="lcghm">
-                <node concept="3cpWs3" id="3QsrawRlQrc" role="lb14g">
-                  <node concept="3cpWs3" id="3QsrawRlD_n" role="3uHU7B">
-                    <node concept="37vLTw" id="3QsrawRlDpl" role="3uHU7B">
-                      <ref role="3cqZAo" node="3QsrawRibJa" resolve="equationsStr" />
-                    </node>
-                    <node concept="Xl_RD" id="3QsrawRlDAc" role="3uHU7w">
-                      <property role="Xl_RC" value="]" />
-                    </node>
+                <node concept="lc7rE" id="3QsrawRl_SB" role="3cqZAp">
+                  <node concept="la8eA" id="3QsrawRlB1C" role="lcghm">
+                    <property role="lacIc" value="self[&quot;equations&quot;] = [" />
+                    <property role="ldcpH" value="true" />
                   </node>
-                  <node concept="Xl_RD" id="3QsrawRlQsG" role="3uHU7w">
-                    <property role="Xl_RC" value="\n" />
+                </node>
+                <node concept="lc7rE" id="3QsrawRlChb" role="3cqZAp">
+                  <node concept="l9hG8" id="3QsrawRlDjj" role="lcghm">
+                    <node concept="3cpWs3" id="3QsrawRlQrc" role="lb14g">
+                      <node concept="3cpWs3" id="3QsrawRlD_n" role="3uHU7B">
+                        <node concept="37vLTw" id="3QsrawRlDpl" role="3uHU7B">
+                          <ref role="3cqZAo" node="3QsrawRibJa" resolve="equationsStr" />
+                        </node>
+                        <node concept="Xl_RD" id="3QsrawRlDAc" role="3uHU7w">
+                          <property role="Xl_RC" value="]" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="3QsrawRlQsG" role="3uHU7w">
+                        <property role="Xl_RC" value="\n" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="3QsrawRmWXO" role="3cqZAp" />
           </node>
         </node>
       </node>

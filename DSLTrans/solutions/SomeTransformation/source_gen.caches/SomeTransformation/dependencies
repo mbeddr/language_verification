@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot />
+<dependenciesRoot>
+  <dependency className="SomeTransformation.ExampleContract" file="Contract_ExampleContract.py" />
+  <dependency className="SomeTransformation.ExampleRule" file="HExampleRule.py" />
+</dependenciesRoot>
 

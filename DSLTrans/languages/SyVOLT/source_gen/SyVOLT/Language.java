@@ -12,6 +12,7 @@ import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import SyVOLT.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "69eded0a-1bc3-427e-9a48-e8713d355d49(SyVOLT)";
@@ -45,6 +46,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new SyVOLT.structure.StructureAspectDescriptor();
+    }
+    if (aspectClass == TextGenAspectDescriptor.class) {
+      return (T) new SyVOLT.textGen.TextGenAspectDescriptor();
     }
     return super.createAspect(aspectClass);
   }
