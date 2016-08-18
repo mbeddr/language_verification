@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage/transfverif.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/SomeTransformation/SomeTransformation.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="" />
     </projectModules>
   </component>
 </project>
