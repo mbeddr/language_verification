@@ -19,6 +19,9 @@
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
       </concept>
+      <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
+        <property id="7049464676098553445" name="atom" index="2ik0Mw" />
+      </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
       </concept>
@@ -91,6 +94,23 @@
       <node concept="2ik0NV" id="3QsrawRpYpR" role="13z3mo">
         <property role="13z3e$" value="1" />
         <property role="13z3hU" value="TypeA" />
+        <node concept="2ik0M_" id="3QsrawRqSUT" role="13z3hJ">
+          <property role="TrG5h" value="1" />
+          <node concept="13yNan" id="3QsrawRqSUX" role="2ik0Q0">
+            <node concept="2ik0MB" id="3QsrawRqSV3" role="2ik0Q6">
+              <property role="2ik0Mw" value="hello" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2ik0NV" id="3QsrawRqzpI" role="13z3mo">
+        <property role="13z3e$" value="2" />
+        <property role="13z3hU" value="TypeC" />
+      </node>
+      <node concept="1jGXVw" id="3QsrawRqzpM" role="13z3mp">
+        <property role="aCCiF" value="RelType1" />
+        <ref role="13xwDP" node="3QsrawRpYpR" />
+        <ref role="13xwDU" node="3QsrawRqzpI" />
       </node>
     </node>
     <node concept="aREgA" id="3QsrawRpTkK" role="aREgT" />
@@ -286,8 +306,10 @@
         <property role="13z3hU" value="Member" />
         <node concept="2ik0M_" id="3dPnTp7RILs" role="13z3hJ">
           <property role="TrG5h" value="firstName" />
-          <node concept="13yNan" id="3dPnTp7RILw" role="2ik0Q0">
-            <node concept="13yPN0" id="3dPnTp7RILA" role="2ik0Q6" />
+          <node concept="13yNan" id="3QsrawRrbRH" role="2ik0Q0">
+            <node concept="2ik0MB" id="3QsrawRrbRN" role="2ik0Q6">
+              <property role="2ik0Mw" value="hello" />
+            </node>
           </node>
         </node>
       </node>

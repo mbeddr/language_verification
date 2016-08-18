@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="SyVOLT.Language" file="Language.java">
+    <classNode dependClassName="SyVOLT.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="SyVOLT.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="SyVOLT.structure.StructureAspectDescriptor" />
     <classNode dependClassName="SyVOLT.textGen.TextGenAspectDescriptor" />
@@ -13,6 +14,7 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
