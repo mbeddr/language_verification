@@ -32,7 +32,7 @@ public class MatchAttributeString_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_739xr6_b0(EditorContext editorContext, SNode node) {
-    SingleRoleCellProvider provider = new MatchAttributeString_Editor.atomSingleRoleHandler_739xr6_b0(node, MetaAdapterFactory.getContainmentLink(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26545b555L, 0x61d4bac5f384b743L, "atom"), editorContext);
+    SingleRoleCellProvider provider = new MatchAttributeString_Editor.atomSingleRoleHandler_739xr6_b0(node, MetaAdapterFactory.getContainmentLink(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26545b555L, 0x3e9562919593bc57L, "atom"), editorContext);
     return provider.createCell();
   }
   private class atomSingleRoleHandler_739xr6_b0 extends SingleRoleCellProvider {

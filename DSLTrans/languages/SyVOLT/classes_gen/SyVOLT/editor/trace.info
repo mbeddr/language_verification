@@ -10,7 +10,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="14,0,61,0" name="SyVOLT.editor.EditorAspectDescriptorImpl" />
+      <unit at="14,0,64,0" name="SyVOLT.editor.EditorAspectDescriptorImpl" />
     </file>
   </root>
   <root nodeRef="r:8446dc0d-dfe2-4433-9645-7abdefe22762(SyVOLT.editor)/4439542802417908145">
@@ -3570,6 +3570,33 @@
       <unit id="4439542802418151475" at="58,0,86,0" name="SyVOLT.editor.AndContractFormula_Editor$_Inline_xb6mav_a1a" />
       <unit id="4439542802418151522" at="112,0,140,0" name="SyVOLT.editor.AndContractFormula_Editor$_Inline_xb6mav_a3a" />
       <unit id="4439542802418151372" at="17,0,147,0" name="SyVOLT.editor.AndContractFormula_Editor" />
+    </file>
+  </root>
+  <root nodeRef="r:8446dc0d-dfe2-4433-9645-7abdefe22762(SyVOLT.editor)/4509618979300651537">
+    <file name="Wildcard_Editor.java">
+      <node id="4509618979300651537" at="12,79,13,62" concept="6" />
+      <node id="4509618979300651542" at="15,88,16,131" concept="5" />
+      <node id="4509618979300651542" at="16,131,17,67" concept="5" />
+      <node id="4509618979300651542" at="18,26,19,27" concept="2" />
+      <node id="4509618979300651542" at="20,5,21,22" concept="6" />
+      <node id="4509618979300651537" at="12,0,15,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="4509618979300651542" at="17,67,20,5" concept="3" />
+      <node id="4509618979300651542" at="15,0,23,0" concept="4" trace="createComponent_njyyex_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="4509618979300651537" at="12,79,13,62" />
+      <scope id="4509618979300651542" at="18,26,19,27" />
+      <scope id="4509618979300651537" at="12,0,15,0">
+        <var name="editorContext" id="4509618979300651537" />
+        <var name="node" id="4509618979300651537" />
+      </scope>
+      <scope id="4509618979300651542" at="15,88,21,22">
+        <var name="bigCell" id="4509618979300651542" />
+        <var name="editorCell" id="4509618979300651542" />
+      </scope>
+      <scope id="4509618979300651542" at="15,0,23,0">
+        <var name="editorContext" id="4509618979300651542" />
+        <var name="node" id="4509618979300651542" />
+      </scope>
+      <unit id="4509618979300651537" at="11,0,24,0" name="SyVOLT.editor.Wildcard_Editor" />
     </file>
   </root>
 </debug-info>
