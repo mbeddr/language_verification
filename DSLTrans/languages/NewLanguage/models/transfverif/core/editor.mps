@@ -238,7 +238,7 @@
   </node>
   <node concept="24kQdi" id="5paAjb8vWKx">
     <property role="3GE5qa" value="Links" />
-    <ref role="1XX52x" to="i3vy:3ky2qXA$tty" resolve="ApplyLink" />
+    <ref role="1XX52x" to="i3vy:3ky2qXA$tty" resolve="DirectApplyLink" />
     <node concept="3EZMnI" id="5paAjb8vWKz" role="2wV5jI">
       <node concept="2iRfu4" id="5paAjb8vWK$" role="2iSdaV" />
       <node concept="1iCGBv" id="5paAjb8vWK_" role="3EZMnx">

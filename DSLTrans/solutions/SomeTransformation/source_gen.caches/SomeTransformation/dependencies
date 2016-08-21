@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="SomeTransformation.ExampleContract" file="Contract_ExampleContract.py" />
-  <dependency className="SomeTransformation.ExampleRule" file="HExampleRule.py" />
+  <dependency className="SomeTransformation.Father2Man" file="HFather2Man.py" />
+  <dependency className="SomeTransformation.HouseholdToCommunity" file="HHouseholdToCommunity.py" />
+  <dependency className="SomeTransformation.UnionFather" file="HUnionFather.py" />
 </dependenciesRoot>
 
