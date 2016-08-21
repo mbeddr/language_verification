@@ -17,6 +17,9 @@
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
         <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
+      <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
+        <child id="7049464676098553447" name="atom" index="2ik0My" />
+      </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
       </concept>
@@ -40,6 +43,7 @@
       </concept>
       <concept id="2796321687636129109" name="transfverif.core.structure.MatchAttributeString" flags="ng" index="13yNan">
         <child id="7049464676098553667" name="atom" index="2ik0Q6" />
+        <child id="4509618979300686935" name="atom" index="2F1HV6" />
       </concept>
       <concept id="2796321687636138754" name="transfverif.core.structure.StringVariableAtom" flags="ng" index="13yPN0" />
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
@@ -82,6 +86,7 @@
         <property id="4439542802417930854" name="outputLanguage" index="aRNVe" />
         <child id="7049464676098554042" name="contracts" index="2ik09Z" />
       </concept>
+      <concept id="4509618979300651531" name="SyVOLT.structure.Wildcard" flags="ng" index="2F1_2q" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -133,9 +138,9 @@
         <property role="13z3hU" value="TypeA" />
         <node concept="2ik0M_" id="3QsrawRqSUT" role="13z3hJ">
           <property role="TrG5h" value="1" />
-          <node concept="13yNan" id="3QsrawRqSUX" role="2ik0Q0">
-            <node concept="2ik0MB" id="3QsrawRqSV3" role="2ik0Q6">
-              <property role="2ik0Mw" value="hello" />
+          <node concept="13yNan" id="3UloD6l_rMl" role="2ik0Q0">
+            <node concept="2ik0MB" id="3UloD6l_rMr" role="2F1HV6">
+              <property role="2ik0Mw" value="sadasd" />
             </node>
           </node>
         </node>
@@ -150,7 +155,23 @@
         <ref role="13xwDU" node="3QsrawRqzpI" />
       </node>
     </node>
-    <node concept="aREgA" id="3QsrawRpTkK" role="aREgT" />
+    <node concept="aREgA" id="3QsrawRpTkK" role="aREgT">
+      <node concept="1jGXXa" id="3UloD6l$QvW" role="1jGXX7">
+        <property role="13z3e$" value="3" />
+        <property role="13z3hU" value="TypeB" />
+        <node concept="2ik0MC" id="3UloD6l$Qw1" role="2ik0MI">
+          <property role="TrG5h" value="6" />
+          <node concept="2ik0ME" id="3UloD6l$Qwb" role="2ik0MU">
+            <node concept="2F1_2q" id="3UloD6l$Qwk" role="13yhA8" />
+            <node concept="2ik0M$" id="3UloD6l$Qwn" role="13yhAc">
+              <node concept="2ik0MB" id="3UloD6l$Qwp" role="2ik0My">
+                <property role="2ik0Mw" value="hello" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2ik09X" id="3dPnTp7RIMW">
     <property role="TrG5h" value="fourmembers" />

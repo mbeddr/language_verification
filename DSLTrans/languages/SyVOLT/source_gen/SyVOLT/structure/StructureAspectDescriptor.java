@@ -27,16 +27,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSamePostElement = new ConceptDescriptorBuilder("SyVOLT.structure.SamePostElement", MetaIdFactory.conceptId(0x69eded0a1bc3427eL, 0x9a48e8713d355d49L, 0x3d9c6ca837433cdaL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "transfverif.core.structure.ApplyLink", "SyVOLT.structure.SameElement").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x3d9c6ca83742c8a8L), MetaIdFactory.conceptId(0x69eded0a1bc3427eL, 0x9a48e8713d355d49L, 0x3d9c6ca837434c98L)).alias("Same Post Element", "").create();
   /*package*/ final ConceptDescriptor myConceptSamePreElement = new ConceptDescriptorBuilder("SyVOLT.structure.SamePreElement", MetaIdFactory.conceptId(0x69eded0a1bc3427eL, 0x9a48e8713d355d49L, 0x3d9c6ca8374334f5L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "transfverif.core.structure.MatchLink", "SyVOLT.structure.SameElement").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c265488de4L), MetaIdFactory.conceptId(0x69eded0a1bc3427eL, 0x9a48e8713d355d49L, 0x3d9c6ca837434c98L)).alias("Same Pre Element", "").create();
   /*package*/ final ConceptDescriptor myConceptUnaryContractFormula = new ConceptDescriptorBuilder("SyVOLT.structure.UnaryContractFormula", MetaIdFactory.conceptId(0x69eded0a1bc3427eL, 0x9a48e8713d355d49L, 0x3d9c6ca8374334d8L)).interface_().parents("SyVOLT.structure.ContractFormula").parentIds(MetaIdFactory.conceptId(0x69eded0a1bc3427eL, 0x9a48e8713d355d49L, 0x3d9c6ca8374334d4L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(4439542802417923312L, "arg", MetaIdFactory.conceptId(0x69eded0a1bc3427eL, 0x9a48e8713d355d49L, 0x3d9c6ca8374334d4L), false)).references("arg").create();
+  /*package*/ final ConceptDescriptor myConceptWildcard = new ConceptDescriptorBuilder("SyVOLT.structure.Wildcard", MetaIdFactory.conceptId(0x69eded0a1bc3427eL, 0x9a48e8713d355d49L, 0x3e9562919593320bL)).super_("transfverif.core.structure.ApplyAttributeValue").super_(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L)).parents("transfverif.core.structure.ApplyAttributeValue").parentIds(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L)).alias("Wildcard", "").create();
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAndContractFormula, myConceptAtomicContract, myConceptBinaryContractFormula, myConceptContractFormula, myConceptContractSet, myConceptImplicationContractFormula, myConceptIndirectApplyLink, myConceptNotContractFormula, myConceptOrContractFormula, myConceptPostCondition, myConceptPreCondition, myConceptSameElement, myConceptSamePostElement, myConceptSamePreElement, myConceptUnaryContractFormula);
+    return Arrays.asList(myConceptAndContractFormula, myConceptAtomicContract, myConceptBinaryContractFormula, myConceptContractFormula, myConceptContractSet, myConceptImplicationContractFormula, myConceptIndirectApplyLink, myConceptNotContractFormula, myConceptOrContractFormula, myConceptPostCondition, myConceptPreCondition, myConceptSameElement, myConceptSamePostElement, myConceptSamePreElement, myConceptUnaryContractFormula, myConceptWildcard);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0t, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0u, conceptFqName)) {
       case 0:
         return myConceptAndContractFormula;
       case 1:
@@ -67,9 +68,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSamePreElement;
       case 14:
         return myConceptUnaryContractFormula;
+      case 15:
+        return myConceptWildcard;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0t = new String[]{"SyVOLT.structure.AndContractFormula", "SyVOLT.structure.AtomicContract", "SyVOLT.structure.BinaryContractFormula", "SyVOLT.structure.ContractFormula", "SyVOLT.structure.ContractSet", "SyVOLT.structure.ImplicationContractFormula", "SyVOLT.structure.IndirectApplyLink", "SyVOLT.structure.NotContractFormula", "SyVOLT.structure.OrContractFormula", "SyVOLT.structure.PostCondition", "SyVOLT.structure.PreCondition", "SyVOLT.structure.SameElement", "SyVOLT.structure.SamePostElement", "SyVOLT.structure.SamePreElement", "SyVOLT.structure.UnaryContractFormula"};
+  private static String[] stringSwitchCases_1htk8d_a0a0u = new String[]{"SyVOLT.structure.AndContractFormula", "SyVOLT.structure.AtomicContract", "SyVOLT.structure.BinaryContractFormula", "SyVOLT.structure.ContractFormula", "SyVOLT.structure.ContractSet", "SyVOLT.structure.ImplicationContractFormula", "SyVOLT.structure.IndirectApplyLink", "SyVOLT.structure.NotContractFormula", "SyVOLT.structure.OrContractFormula", "SyVOLT.structure.PostCondition", "SyVOLT.structure.PreCondition", "SyVOLT.structure.SameElement", "SyVOLT.structure.SamePostElement", "SyVOLT.structure.SamePreElement", "SyVOLT.structure.UnaryContractFormula", "SyVOLT.structure.Wildcard"};
 }

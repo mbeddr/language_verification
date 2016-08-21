@@ -830,5 +830,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3UloD6l$N8h">
+    <property role="3GE5qa" value="Attributes" />
+    <ref role="1XX52x" to="yeb1:3UloD6l$N8b" resolve="Wildcard" />
+    <node concept="PMmxH" id="3UloD6l$N8m" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 
