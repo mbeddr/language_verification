@@ -16,12 +16,15 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 
 public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase implements EditorHintsProvider {
-  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("GraphicalEditor", "GraphicalEditor", true, "DSLTrans.editor.graphicalRepresentation.GraphicalEditor"));
+  private Collection<ConceptEditorHint> myHints = Arrays.<ConceptEditorHint>asList(new ConceptEditorHintImpl("GraphicalEditor", "Graphical Editor for DSL Trans", true, "DSLTrans.editor.Experiment.GraphicalEditor"));
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = ((SAbstractConcept) concept);
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x51706dc3bd019bb1L, "DSLTrans.structure.ApplyModel"))) {
         return Arrays.asList(new ConceptEditor[]{new ApplyModel_Editor(), new ApplyModel_GraphicalEditor_Editor()});
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d76dL, "transfverif.core.structure.BackwardLink"))) {
+        return Collections.<ConceptEditor>singletonList(new BackwardLink_GraphicalEditor_Editor());
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d762L, "transfverif.core.structure.DirectApplyLink"))) {
         return Collections.<ConceptEditor>singletonList(new DirectApplyLink_GraphicalEditor_Editor());

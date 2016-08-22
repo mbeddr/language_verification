@@ -35,7 +35,7 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected String[] getExtendedLanguageIDs() {
-    return new String[]{"transfverif.core"};
+    return new String[]{"de.itemis.mps.editor.diagram.layout", "transfverif.core"};
   }
   @Override
   public Collection<TemplateModule> getGenerators() {
