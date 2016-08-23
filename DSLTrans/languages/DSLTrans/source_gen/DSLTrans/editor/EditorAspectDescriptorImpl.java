@@ -32,9 +32,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d76dL, "transfverif.core.structure.BackwardLink"))) {
         return Collections.<ConceptEditor>singletonList(new BackwardLink_GraphicalEditor_Editor());
       }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b66fL, "transfverif.core.structure.Concat"))) {
-        return Collections.<ConceptEditor>singletonList(new Concat_GraphicalEditor_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d762L, "transfverif.core.structure.DirectApplyLink"))) {
         return Collections.<ConceptEditor>singletonList(new DirectApplyLink_GraphicalEditor_Editor());
       }

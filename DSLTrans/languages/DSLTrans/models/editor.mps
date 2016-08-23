@@ -1582,7 +1582,7 @@
           </node>
         </node>
         <node concept="39fpm" id="4Q5sp1x79uf" role="35U2g">
-          <property role="1NdBj4" value="RIGHT" />
+          <property role="1NdBj4" value="DOWN" />
         </node>
         <node concept="lj46D" id="4Q5sp1x79ug" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -1613,60 +1613,6 @@
                 <node concept="2ZN8Hh" id="4Q5sp1x79us" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="4Q5sp1x7edR" role="2OqNvi">
                   <ref role="3TtcxE" to="i3vy:67kIGnNxbpF" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="4Q5sp1x7YRp">
-    <property role="3GE5qa" value="Elements" />
-    <ref role="1XX52x" to="i3vy:67kIGnNxbpJ" resolve="Concat" />
-    <node concept="2aJ2om" id="4Q5sp1x7YRu" role="CpUAK">
-      <ref role="2$4xQ3" node="366QDlfn5Qa" resolve="GraphicalEditor" />
-    </node>
-    <node concept="3EZMnI" id="4Q5sp1x7Zjc" role="2wV5jI">
-      <property role="S$Qs1" value="true" />
-      <node concept="l2Vlx" id="4Q5sp1x7Zjd" role="2iSdaV" />
-      <node concept="27vDVx" id="4Q5sp1x7Zjk" role="3EZMnx">
-        <node concept="39fpm" id="4Q5sp1x7Zjr" role="35U2g">
-          <property role="1NdBj4" value="DOWN" />
-        </node>
-        <node concept="lj46D" id="4Q5sp1x7Zjs" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="pVoyu" id="4Q5sp1x7Zjt" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3C0NmK" id="4Q5sp1x7Zju" role="3F10Kt">
-          <property role="Vb096" value="black" />
-          <node concept="3ZlJ5R" id="4Q5sp1x7Zjv" role="VblUZ">
-            <node concept="3clFbS" id="4Q5sp1x7Zjw" role="2VODD2">
-              <node concept="3clFbF" id="4Q5sp1x7Zjx" role="3cqZAp">
-                <node concept="10M0yZ" id="4Q5sp1x7Zjy" role="3clFbG">
-                  <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                  <ref role="3cqZAo" to="z60i:~Color.darkGray" resolve="darkGray" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3C0NmR" id="4Q5sp1x7Zjz" role="3F10Kt">
-          <property role="3DY3mF" value="2.0" />
-        </node>
-        <node concept="2ZMM4L" id="4Q5sp1x7Zj$" role="aCds2">
-          <node concept="3clFbS" id="4Q5sp1x7Zj_" role="2VODD2">
-            <node concept="3clFbF" id="4Q5sp1x8899" role="3cqZAp">
-              <node concept="2OqwBi" id="4Q5sp1x88bY" role="3clFbG">
-                <node concept="2ZN8Hh" id="4Q5sp1x8892" role="2Oq$k0" />
-                <node concept="2Rf3mk" id="4Q5sp1x88ys" role="2OqNvi">
-                  <node concept="1xMEDy" id="4Q5sp1x88yu" role="1xVPHs">
-                    <node concept="chp4Y" id="7A6aDEk6_zi" role="ri$Ld">
-                      <ref role="cht4Q" to="i3vy:67kIGnNxbpP" resolve="ApplyAttributeValue" />
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
