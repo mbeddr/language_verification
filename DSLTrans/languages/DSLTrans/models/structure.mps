@@ -102,12 +102,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3ky2qXA$ttC" resolve="Layer" />
     </node>
-    <node concept="1TJgyj" id="6JhS3QZMbeD" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3ky2qXA$ttC" resolve="Layer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3ky2qXA$ttC">
     <property role="1pbfSe" value="1682710249" />
@@ -123,10 +117,10 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ky2qXA$trv" resolve="Rule" />
     </node>
-    <node concept="1TJgyj" id="3QsrawRf7Ny" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
+    <node concept="1TJgyj" id="6pYRU8YvRZG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="previousSource" />
-      <ref role="20lvS9" node="3ky2qXA$ttC" resolve="Layer" />
+      <ref role="20lvS9" node="3ky2qXA$ttN" resolve="PreviousLayer" />
     </node>
     <node concept="1TJgyi" id="3QsrawRgP9y" role="1TKVEl">
       <property role="TrG5h" value="outputLanguage" />
