@@ -1,6 +1,14 @@
 # -----------------------------------------------------------
 # General
 
+#MPS Settings
+**/.mps/workspace.xml
+
+#generated files
+**/*.class
+**/*.info
+**/source_gen.caches/*
+**/classes_gen/*
 
 distros/*
 MPS/*
@@ -19,7 +27,6 @@ artifacts/*
 *.*.log
 
 .idea
-workspace.xml
 
 
 junitvmwatcher*.properties
