@@ -2,7 +2,7 @@
 # General
 
 #MPS Settings
-.mps
+.mps/*
 
 #generated files
 **/*.class
