@@ -20,12 +20,6 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = ((SAbstractConcept) concept);
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b63eL, "transfverif.core.structure.AnyMatchClass"))) {
-        return Collections.<ConceptEditor>singletonList(new AnyMatchClass_GraphicalEditor_Editor());
-      }
-      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e5L, "transfverif.core.structure.ApplyClass"))) {
-        return Collections.<ConceptEditor>singletonList(new ApplyClass_GraphicalEditor_Editor());
-      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x51706dc3bd019bb1L, "DSLTrans.structure.ApplyModel"))) {
         return Arrays.asList(new ConceptEditor[]{new ApplyModel_Editor(), new ApplyModel_GraphicalEditor_Editor()});
       }
