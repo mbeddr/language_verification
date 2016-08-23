@@ -4,7 +4,6 @@
     <classNode dependClassName="DSLTrans.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="DSLTrans.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="DSLTrans.editor.EditorAspectDescriptorImpl" />
-    <classNode dependClassName="DSLTrans.intentions.IntentionsDescriptor" />
     <classNode dependClassName="DSLTrans.structure.StructureAspectDescriptor" />
     <classNode dependClassName="DSLTrans.textGen.TextGenAspectDescriptor" />
     <classNode dependClassName="java.lang.Class" />
@@ -14,7 +13,6 @@
     <classNode dependClassName="java.util.UUID" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
-    <classNode dependClassName="jetbrains.mps.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />

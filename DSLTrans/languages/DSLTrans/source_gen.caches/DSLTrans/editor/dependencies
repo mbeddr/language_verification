@@ -372,10 +372,13 @@
     <classNode dependClassName="DSLTrans.editor.Concat_GraphicalEditor_Editor" />
     <classNode dependClassName="DSLTrans.editor.DirectApplyLink_GraphicalEditor_Editor" />
     <classNode dependClassName="DSLTrans.editor.DirectMatchLink_GraphicalEditor_Editor" />
+    <classNode dependClassName="DSLTrans.editor.IndirectMatchLink_GraphicalEditor_Editor" />
     <classNode dependClassName="DSLTrans.editor.Layer_Editor" />
     <classNode dependClassName="DSLTrans.editor.Layer_GraphicalEditor_Editor" />
     <classNode dependClassName="DSLTrans.editor.MatchModel_Editor" />
     <classNode dependClassName="DSLTrans.editor.MatchModel_GraphicalEditor_Editor" />
+    <classNode dependClassName="DSLTrans.editor.PreviousLayer_Editor" />
+    <classNode dependClassName="DSLTrans.editor.PreviousLayer_GraphicalEditor_Editor" />
     <classNode dependClassName="DSLTrans.editor.Rule_Editor" />
     <classNode dependClassName="DSLTrans.editor.Rule_GraphicalEditor_Editor" />
     <classNode dependClassName="DSLTrans.editor.Transformation_Editor" />
@@ -393,21 +396,69 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.EditorHintsProvider" />
   </dependency>
+  <dependency className="DSLTrans.editor.IndirectArrow" file="IndirectArrow.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.geom.GeneralPath" />
+    <classNode dependClassName="java.awt.geom.Rectangle2D" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
+  </dependency>
+  <dependency className="DSLTrans.editor.IndirectMatchLink_GraphicalEditor_Editor" file="IndirectMatchLink_GraphicalEditor_Editor.java">
+    <classNode dependClassName="DSLTrans.editor.IndirectArrow" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.DiagramUtil" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EditorCell_DiagramElement" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EndpointUtil" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpointReference" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpoint_Internal" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IEdgeAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.SNodeEdgeAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShape" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.styles.editor.LineStyle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.lang.Float" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.MPSColors" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.StyleRegistry" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
   <dependency className="DSLTrans.editor.Layer_Editor" file="Layer_Editor.java">
     <classNode dependClassName="com.mbeddr.core.base.editor.HorizLineCell" />
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.editor.BaseLanguageStyle_StyleSheet" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.AbstractCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.InlineCellProvider" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.MPSColors" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical" />
@@ -423,6 +474,8 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.StyleRegistry" />
     <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
@@ -547,6 +600,61 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.StyleRegistry" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="DSLTrans.editor.PreviousLayer_Editor" file="PreviousLayer_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.InlineCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="DSLTrans.editor.PreviousLayer_GraphicalEditor_Editor" file="PreviousLayer_GraphicalEditor_Editor.java">
+    <classNode dependClassName="DSLTrans.editor.Arrow" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.DiagramUtil" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EditorCell_DiagramElement" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EndpointUtil" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpointReference" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpoint_Internal" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IEdgeAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.SNodeEdgeAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShape" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.styles.editor.LineStyle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.lang.Float" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.MPSColors" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.StyleRegistry" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>

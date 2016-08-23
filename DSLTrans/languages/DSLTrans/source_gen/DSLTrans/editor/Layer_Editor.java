@@ -20,9 +20,10 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
-import jetbrains.mps.baseLanguage.editor.BaseLanguageStyle_StyleSheet;
-import jetbrains.mps.nodeEditor.InlineCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -30,7 +31,6 @@ import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
-import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class Layer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -98,7 +98,7 @@ public class Layer_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.FONT_SIZE, 0, 10);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createConstant_158t2l_a2a(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_158t2l_b2a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_158t2l_b2a(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_158t2l_a2a(EditorContext editorContext, SNode node) {
@@ -107,55 +107,34 @@ public class Layer_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_158t2l_b2a(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("previousSource");
-    provider.setNoTargetText("<no previousSource>");
-    EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Layer_Editor._Inline_158t2l_a1c0());
-    editorCell = provider.createEditorCell(editorContext);
-    if (editorCell.getRole() == null) {
-      editorCell.setReferenceCell(true);
-      editorCell.setRole("previousSource");
-    }
-    Style style = new StyleImpl();
-    BaseLanguageStyle_StyleSheet.apply_KeyWord(style, editorCell);
-    editorCell.getStyle().putAll(style);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
+  private EditorCell createRefNode_158t2l_b2a(EditorContext editorContext, SNode node) {
+    SingleRoleCellProvider provider = new Layer_Editor.previousSourceSingleRoleHandler_158t2l_b2a(node, MetaAdapterFactory.getContainmentLink(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x352209af6691d768L, 0x667edfa23e7f7fecL, "previousSource"), editorContext);
+    return provider.createCell();
   }
-  public static class _Inline_158t2l_a1c0 extends InlineCellProvider {
-    public _Inline_158t2l_a1c0() {
-      super();
+  private class previousSourceSingleRoleHandler_158t2l_b2a extends SingleRoleCellProvider {
+    public previousSourceSingleRoleHandler_158t2l_b2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
     }
-    public EditorCell createEditorCell(EditorContext editorContext) {
-      return this.createEditorCell(editorContext, this.getSNode());
-    }
-    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_158t2l_a0b2a(editorContext, node);
-    }
-    private EditorCell createProperty_158t2l_a0b2a(EditorContext editorContext, SNode node) {
-      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-      provider.setRole("name");
-      provider.setNoTargetText("<no name>");
-      provider.setReadOnly(true);
-      EditorCell editorCell;
-      editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_name_1");
-      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-      SNode attributeConcept = provider.getRoleAttribute();
-      Class attributeKind = provider.getRoleAttributeClass();
-      if (attributeConcept != null) {
-        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-        return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
-      } else
+    protected EditorCell createChildCell(SNode child) {
+      EditorCell editorCell = super.createChildCell(child);
+      installCellInfo(child, editorCell);
       return editorCell;
+    }
+    private void installCellInfo(SNode child, EditorCell editorCell) {
+      editorCell.setSubstituteInfo(new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext));
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("previousSource");
+      }
+    }
+    @Override
+    protected EditorCell createEmptyCell() {
+      EditorCell editorCell = super.createEmptyCell();
+      editorCell.setCellId("empty_previousSource");
+      installCellInfo(null, editorCell);
+      return editorCell;
+    }
+    protected String getNoTargetText() {
+      return "<no previousSource>";
     }
   }
   private EditorCell createCustom_158t2l_d0(final EditorContext editorContext, final SNode node) {

@@ -41,11 +41,17 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d74fL, "transfverif.core.structure.DirectMatchLink"))) {
         return Collections.<ConceptEditor>singletonList(new DirectMatchLink_GraphicalEditor_Editor());
       }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d75cL, "transfverif.core.structure.IndirectMatchLink"))) {
+        return Collections.<ConceptEditor>singletonList(new IndirectMatchLink_GraphicalEditor_Editor());
+      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x352209af6691d768L, "DSLTrans.structure.Layer"))) {
         return Arrays.asList(new ConceptEditor[]{new Layer_Editor(), new Layer_GraphicalEditor_Editor()});
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x51706dc3bd019bb0L, "DSLTrans.structure.MatchModel"))) {
         return Arrays.asList(new ConceptEditor[]{new MatchModel_Editor(), new MatchModel_GraphicalEditor_Editor()});
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x352209af6691d773L, "DSLTrans.structure.PreviousLayer"))) {
+        return Arrays.asList(new ConceptEditor[]{new PreviousLayer_Editor(), new PreviousLayer_GraphicalEditor_Editor()});
       }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x4e1e6c633ef54d3dL, 0xb04d0e2974d639e7L, 0x352209af6691d6dfL, "DSLTrans.structure.Rule"))) {
         return Arrays.asList(new ConceptEditor[]{new Rule_Editor(), new Rule_GraphicalEditor_Editor()});
