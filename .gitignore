@@ -1,6 +1,14 @@
 # -----------------------------------------------------------
 # General
 
+#MPS Settings
+.mps
+
+#generated files
+**/*.class
+**/*.info
+**/source_gen.caches/*
+**/classes_gen/*
 
 distros/*
 MPS/*
