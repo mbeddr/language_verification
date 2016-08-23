@@ -2,7 +2,7 @@
 # General
 
 #MPS Settings
-.mps/*
+**/.mps/workspace.xml
 
 #generated files
 **/*.class
@@ -27,7 +27,6 @@ artifacts/*
 *.*.log
 
 .idea
-workspace.xml
 
 
 junitvmwatcher*.properties
