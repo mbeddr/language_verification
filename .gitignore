@@ -7,6 +7,8 @@
 #generated files
 **/*.class
 **/*.info
+*.info
+*.class
 **/source_gen.caches/*
 **/classes_gen/*
 
