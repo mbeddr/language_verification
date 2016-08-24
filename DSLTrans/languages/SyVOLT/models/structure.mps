@@ -246,5 +246,18 @@
     <property role="3GE5qa" value="Attributes" />
     <ref role="1TJDcQ" to="i3vy:67kIGnNxbpP" resolve="ApplyAttributeValue" />
   </node>
+  <node concept="1TIwiD" id="4KZuhCZbGgS">
+    <property role="1pbfSe" value="1955709614" />
+    <property role="3GE5qa" value="Elements" />
+    <property role="TrG5h" value="IsolatedContract" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4KZuhCZcXJe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fullContract" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67kIGnNxbyT" resolve="AtomicContract" />
+    </node>
+  </node>
 </model>
 
