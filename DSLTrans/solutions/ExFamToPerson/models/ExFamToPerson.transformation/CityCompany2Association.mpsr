@@ -62,55 +62,55 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="1AcaMXhA0G1">
-    <property role="TrG5h" value="Father2Man" />
-    <node concept="3GsvpM" id="1AcaMXhA0G2" role="2ik0Mo">
-      <node concept="1jGXXa" id="4OZxLw4YJEZ" role="1jGXX7">
-        <property role="13z3e$" value="F2M_A" />
-        <property role="13z3hU" value="Man" />
-        <node concept="2ik0MC" id="4OZxLw4YJFr" role="2ik0MI">
-          <property role="TrG5h" value="fullName" />
-          <node concept="2ik0ME" id="4OZxLw4YJFv" role="2ik0MU">
-            <node concept="2ik0MF" id="4OZxLw4YJFC" role="13yhA8">
-              <ref role="2ik0MN" node="4OZxLw4YJFS" resolve="firstName" />
+  <node concept="1jGXXK" id="4OZxLw4YKN1">
+    <property role="TrG5h" value="CityCompany2Association" />
+    <node concept="3GsvpM" id="4OZxLw4YKN2" role="2ik0Mo">
+      <node concept="1jGXXa" id="4OZxLw4ZfBm" role="1jGXX7">
+        <property role="13z3e$" value="CC2A_Assoc" />
+        <property role="13z3hU" value="Association" />
+        <node concept="2ik0MC" id="4OZxLw4ZfBo" role="2ik0MI">
+          <property role="TrG5h" value="name" />
+          <node concept="2ik0ME" id="4OZxLw4ZfBs" role="2ik0MU">
+            <node concept="2ik0MF" id="4OZxLw4ZfB_" role="13yhA8">
+              <ref role="2ik0MN" node="4OZxLw4ZfAN" resolve="name" />
             </node>
-            <node concept="2ik0MF" id="4OZxLw4YJGn" role="13yhAc">
-              <ref role="2ik0MN" node="4OZxLw4YJFF" resolve="lastName" />
+            <node concept="2ik0MF" id="4OZxLw4ZfBC" role="13yhAc">
+              <ref role="2ik0MN" node="4OZxLw4ZfB0" resolve="name" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="3GsvpN" id="1AcaMXhA0G3" role="2ik0Mu">
-      <node concept="2ik0NV" id="1AcaMXhA0Ge" role="13z3mo">
-        <property role="13z3e$" value="F2M_M1" />
-        <property role="13z3hU" value="Family" />
-        <node concept="2ik0M_" id="4OZxLw4YJFF" role="13z3hJ">
-          <property role="TrG5h" value="lastName" />
-          <node concept="13yNan" id="4OZxLw4YJFJ" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4YJFP" role="2F1HV6" />
+    <node concept="3GsvpN" id="4OZxLw4YKN3" role="2ik0Mu">
+      <node concept="2ik0NV" id="4OZxLw4YKN5" role="13z3mo">
+        <property role="13z3e$" value="CC2A_City" />
+        <property role="13z3hU" value="City" />
+        <node concept="2ik0M_" id="4OZxLw4ZfAN" role="13z3hJ">
+          <property role="TrG5h" value="name" />
+          <node concept="13yNan" id="4OZxLw4ZfAR" role="2ik0Q0">
+            <node concept="13yPN0" id="4OZxLw4ZfAX" role="2F1HV6" />
           </node>
         </node>
       </node>
-      <node concept="2ik0NV" id="1AcaMXhA0G5" role="13z3mo">
-        <property role="13z3e$" value="F2M_M2" />
-        <property role="13z3hU" value="Parent" />
-        <node concept="2ik0M_" id="4OZxLw4YJFS" role="13z3hJ">
-          <property role="TrG5h" value="firstName" />
-          <node concept="13yNan" id="4OZxLw4YJFW" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4YJGk" role="2F1HV6" />
+      <node concept="2ik0NV" id="4OZxLw4ZfAJ" role="13z3mo">
+        <property role="13z3e$" value="CC2A_Company" />
+        <property role="13z3hU" value="Company" />
+        <node concept="2ik0M_" id="4OZxLw4ZfB0" role="13z3hJ">
+          <property role="TrG5h" value="name" />
+          <node concept="13yNan" id="4OZxLw4ZfB4" role="2ik0Q0">
+            <node concept="13yPN0" id="4OZxLw4ZfBa" role="2F1HV6" />
           </node>
         </node>
       </node>
-      <node concept="1jGXVw" id="1AcaMXhA0Gi" role="13z3mp">
-        <property role="aCCiF" value="family" />
-        <ref role="13xwDU" node="1AcaMXhA0Ge" />
-        <ref role="13xwDP" node="1AcaMXhA0G5" />
+      <node concept="1jGXVw" id="4OZxLw4ZfBd" role="13z3mp">
+        <property role="aCCiF" value="companies" />
+        <ref role="13xwDP" node="4OZxLw4YKN5" />
+        <ref role="13xwDU" node="4OZxLw4ZfAJ" />
       </node>
-      <node concept="1jGXVw" id="1AcaMXhA0Gn" role="13z3mp">
-        <property role="aCCiF" value="fathers" />
-        <ref role="13xwDP" node="1AcaMXhA0Ge" />
-        <ref role="13xwDU" node="1AcaMXhA0G5" />
+      <node concept="1jGXVw" id="4OZxLw4ZfBi" role="13z3mp">
+        <property role="aCCiF" value="isIn" />
+        <ref role="13xwDP" node="4OZxLw4ZfAJ" />
+        <ref role="13xwDU" node="4OZxLw4YKN5" />
       </node>
     </node>
   </node>
