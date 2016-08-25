@@ -21,8 +21,10 @@ import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.scope.ListScope;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class AttributeRef_Constraints extends BaseConstraintsDescriptor {
@@ -47,7 +49,7 @@ public class AttributeRef_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public String getPresentation(final IOperationContext operationContext, final ReferencePresentationContext _context) {
-            return SPropertyOperations.getString(_context.getParameterNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " : Match Class " + SPropertyOperations.getString(SNodeOperations.cast(SNodeOperations.getParent(_context.getParameterNode()), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL, "transfverif.core.structure.MatchClass")), MetaAdapterFactory.getProperty(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b3b5L, 0x26ce87c26542b466L, "ID"));
+            return SPropertyOperations.getString(_context.getParameterNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + " : Match Attribute " + SPropertyOperations.getString(SNodeOperations.cast(_context.getParameterNode(), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b660L, "transfverif.core.structure.MatchAttribute")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
           }
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
@@ -56,8 +58,12 @@ public class AttributeRef_Constraints extends BaseConstraintsDescriptor {
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
-              final Iterable<SNode> classes = SModelOperations.nodesIncludingImported(_context.getModel(), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b660L, "transfverif.core.structure.MatchAttribute"));
-              return new ListScope(classes) {
+              if (LOG.isInfoEnabled()) {
+                LOG.info("Parent: " + SNodeOperations.getConcept(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getContextNode()))))).toString());
+              }
+
+              final Iterable<SNode> attrs = SNodeOperations.getNodeDescendants(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(SNodeOperations.getParent(_context.getContextNode())))), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b660L, "transfverif.core.structure.MatchAttribute"), false, new SAbstractConcept[]{});
+              return new ListScope(attrs) {
                 public String getName(SNode child) {
                   return SPropertyOperations.getString(SNodeOperations.cast(child, MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b660L, "transfverif.core.structure.MatchAttribute")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
                 }
@@ -69,5 +75,6 @@ public class AttributeRef_Constraints extends BaseConstraintsDescriptor {
     });
     return references;
   }
+  protected static Logger LOG = LogManager.getLogger(AttributeRef_Constraints.class);
   private static SNodePointer breakingNode_31jsbr_a0a2a0a0a1a0b0a1a1 = new SNodePointer("r:5839fc8d-e87f-4cc0-b0c0-91be42b15039(transfverif.core.constraints)", "6217950678929786777");
 }

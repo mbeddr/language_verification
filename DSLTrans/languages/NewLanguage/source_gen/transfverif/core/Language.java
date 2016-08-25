@@ -9,6 +9,9 @@ import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
+import jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor;
+import transfverif.core.actions.ActionAspectDescriptorImpl;
+import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import transfverif.core.editor.EditorAspectDescriptorImpl;
@@ -41,6 +44,12 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
+    if (aspectClass == ActionAspectDescriptor.class) {
+      return (T) new ActionAspectDescriptorImpl();
+    }
+    if (aspectClass == BehaviorAspectDescriptor.class) {
+      return (T) new transfverif.core.behavior.BehaviorAspectDescriptor();
+    }
     if (aspectClass == ConstraintsAspectDescriptor.class) {
       return (T) new transfverif.core.constraints.ConstraintsAspectDescriptor();
     }

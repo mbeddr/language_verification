@@ -724,9 +724,7 @@
         </node>
         <node concept="2ik0MC" id="4v3zQDeycfN" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="2ik0MF" id="4v3zQDeycfR" role="2ik0MU">
-            <ref role="2ik0MN" node="4v3zQDeycf5" resolve="name" />
-          </node>
+          <node concept="2ik0MF" id="1vCz2cBlFW8" role="2ik0MU" />
         </node>
         <node concept="37mRI7" id="3MNcr5wPPLo" role="lGtFl">
           <node concept="37mRIm" id="3MNcr5wPPLp" role="37mRID">
@@ -3557,9 +3555,7 @@
         <property role="13z3e$" value="65" />
         <node concept="2ik0MC" id="3dPnTp7RHVj" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="2ik0MF" id="3dPnTp7RHVq" role="2ik0MU">
-            <ref role="2ik0MN" node="2K9dotEBlvf" resolve="name" />
-          </node>
+          <node concept="2ik0MF" id="1vCz2cBlwxf" role="2ik0MU" />
         </node>
         <node concept="2ik0MC" id="3dPnTp7RHVd" role="2ik0MI">
           <property role="TrG5h" value="ApplyAttribute" />

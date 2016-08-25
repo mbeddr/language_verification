@@ -66,6 +66,9 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ky2qXA$tty" resolve="DirectApplyLink" />
     </node>
+    <node concept="PrWs8" id="1vCz2cBlkkl" role="PzmwI">
+      <ref role="PrY4T" node="1vCz2cBlkkh" resolve="Countable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3ky2qXA$tr_">
     <property role="1pbfSe" value="1682710380" />
@@ -143,9 +146,6 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="67kIGnNxbp6" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="2rexW9_gF9q" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="matchClasses" />
@@ -157,6 +157,9 @@
       <property role="20kJfa" value="matchLinks" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2rexW9_i8R$" resolve="MatchLink" />
+    </node>
+    <node concept="PrWs8" id="1vCz2cBlkko" role="PzmwI">
+      <ref role="PrY4T" node="1vCz2cBlkkh" resolve="Countable" />
     </node>
   </node>
   <node concept="1TIwiD" id="67kIGnNxbp8">
@@ -287,19 +290,6 @@
       <ref role="PrY4T" node="2rexW9_gFeP" resolve="Class" />
     </node>
   </node>
-  <node concept="PlHQZ" id="2rexW9_gFeP">
-    <property role="1pbfSe" value="1945027721" />
-    <property role="3GE5qa" value="Elements" />
-    <property role="TrG5h" value="Class" />
-    <node concept="1TJgyi" id="2rexW9_gFeS" role="1TKVEl">
-      <property role="TrG5h" value="metamodelType" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="2rexW9_gFhA" role="1TKVEl">
-      <property role="TrG5h" value="ID" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2rexW9_hrll">
     <property role="1pbfSe" value="1944830697" />
     <property role="3GE5qa" value="Attributes" />
@@ -367,6 +357,28 @@
     <property role="TrG5h" value="ApplyLink" />
     <node concept="PrWs8" id="3QsrawRgGyD" role="PrDN$">
       <ref role="PrY4T" node="2rexW9_i8QQ" resolve="Link" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2rexW9_gFeP">
+    <property role="1pbfSe" value="1945027721" />
+    <property role="3GE5qa" value="Elements" />
+    <property role="TrG5h" value="Class" />
+    <node concept="1TJgyi" id="2rexW9_gFeS" role="1TKVEl">
+      <property role="TrG5h" value="metamodelType" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2rexW9_gFhA" role="1TKVEl">
+      <property role="TrG5h" value="ID" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1vCz2cBlkkh">
+    <property role="1pbfSe" value="1061015860" />
+    <property role="TrG5h" value="Countable" />
+    <property role="3GE5qa" value="Util" />
+    <node concept="1TJgyi" id="1vCz2cBlkki" role="1TKVEl">
+      <property role="TrG5h" value="counter" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

@@ -12,8 +12,8 @@ import org.jetbrains.annotations.Nullable;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
-  /*package*/ final ConceptDescriptor myConceptAbstractApplier = new ConceptDescriptorBuilder("transfverif.core.structure.AbstractApplier", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e3L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(3828633282163103464L, "applyClasses", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e5L), true, true, false), new ConceptDescriptorBuilder.Link(7049464676098553424L, "applyLinks", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d762L), true, true, false)).children(new String[]{"applyClasses", "applyLinks"}, new boolean[]{true, true}).abstract_().create();
-  /*package*/ final ConceptDescriptor myConceptAbstractMatcher = new ConceptDescriptorBuilder("transfverif.core.structure.AbstractMatcher", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b645L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(2796321687635931738L, "matchClasses", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL), true, true, false), new ConceptDescriptorBuilder.Link(2796321687635931739L, "matchLinks", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c265488de4L), true, true, false)).children(new String[]{"matchClasses", "matchLinks"}, new boolean[]{true, true}).abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptAbstractApplier = new ConceptDescriptorBuilder("transfverif.core.structure.AbstractApplier", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e3L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "transfverif.core.structure.Countable").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x17e88c2327554511L)).childDescriptors(new ConceptDescriptorBuilder.Link(3828633282163103464L, "applyClasses", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e5L), true, true, false), new ConceptDescriptorBuilder.Link(7049464676098553424L, "applyLinks", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d762L), true, true, false)).children(new String[]{"applyClasses", "applyLinks"}, new boolean[]{true, true}).abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptAbstractMatcher = new ConceptDescriptorBuilder("transfverif.core.structure.AbstractMatcher", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b645L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "transfverif.core.structure.Countable").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x17e88c2327554511L)).childDescriptors(new ConceptDescriptorBuilder.Link(2796321687635931738L, "matchClasses", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL), true, true, false), new ConceptDescriptorBuilder.Link(2796321687635931739L, "matchLinks", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c265488de4L), true, true, false)).children(new String[]{"matchClasses", "matchLinks"}, new boolean[]{true, true}).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptAnyMatchClass = new ConceptDescriptorBuilder("transfverif.core.structure.AnyMatchClass", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b63eL)).super_("transfverif.core.structure.MatchClass").super_(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL)).parents("transfverif.core.structure.MatchClass").parentIds(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL)).create();
   /*package*/ final ConceptDescriptor myConceptApplyAttribute = new ConceptDescriptorBuilder("transfverif.core.structure.ApplyAttribute", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b66dL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(7049464676098553471L, "value", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L), false, false, false)).children(new String[]{"value"}, new boolean[]{false}).create();
   /*package*/ final ConceptDescriptor myConceptApplyAttributeString = new ConceptDescriptorBuilder("transfverif.core.structure.ApplyAttributeString", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b661L)).super_("transfverif.core.structure.ApplyAttributeValue").super_(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L)).parents("transfverif.core.structure.ApplyAttributeValue").parentIds(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L)).childDescriptors(new ConceptDescriptorBuilder.Link(7049464676098553447L, "atom", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b662L), false, false, false)).children(new String[]{"atom"}, new boolean[]{false}).alias("StringAtom", "").create();
@@ -24,6 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBackwardLink = new ConceptDescriptorBuilder("transfverif.core.structure.BackwardLink", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d76dL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "transfverif.core.structure.Link").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c265488db6L)).alias("Back", "").create();
   /*package*/ final ConceptDescriptor myConceptClass = new ConceptDescriptorBuilder("transfverif.core.structure.Class", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b3b5L)).interface_().propertyDescriptors(new ConceptDescriptorBuilder.Prop(2796321687635932088L, "metamodelType"), new ConceptDescriptorBuilder.Prop(2796321687635932262L, "ID")).properties("metamodelType", "ID").create();
   /*package*/ final ConceptDescriptor myConceptConcat = new ConceptDescriptorBuilder("transfverif.core.structure.Concat", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b66fL)).super_("transfverif.core.structure.ApplyAttributeValue").super_(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L)).parents("transfverif.core.structure.ApplyAttributeValue").parentIds(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L)).childDescriptors(new ConceptDescriptorBuilder.Link(2796321687636254282L, "arg1", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L), false, false, false), new ConceptDescriptorBuilder.Link(2796321687636254286L, "arg2", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b675L), false, false, false)).children(new String[]{"arg1", "arg2"}, new boolean[]{false, false}).alias("Concat", "").create();
+  /*package*/ final ConceptDescriptor myConceptCountable = new ConceptDescriptorBuilder("transfverif.core.structure.Countable", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x17e88c2327554511L)).interface_().propertyDescriptors(new ConceptDescriptorBuilder.Prop(1722780940080858386L, "counter")).properties("counter").create();
   /*package*/ final ConceptDescriptor myConceptDirectApplyLink = new ConceptDescriptorBuilder("transfverif.core.structure.DirectApplyLink", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d762L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "transfverif.core.structure.ApplyLink", "transfverif.core.structure.LinkType").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x3d9c6ca83742c8a8L), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x3d9c6ca8373ee800L)).alias("Direct Apply", "").create();
   /*package*/ final ConceptDescriptor myConceptDirectMatchLink = new ConceptDescriptorBuilder("transfverif.core.structure.DirectMatchLink", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d74fL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "transfverif.core.structure.MatchLink", "transfverif.core.structure.LinkType").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c265488de4L), MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x3d9c6ca8373ee800L)).alias("Direct Match", "").create();
   /*package*/ final ConceptDescriptor myConceptExistsMatchClass = new ConceptDescriptorBuilder("transfverif.core.structure.ExistsMatchClass", MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x61d4bac5f384b648L)).super_("transfverif.core.structure.MatchClass").super_(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL)).parents("transfverif.core.structure.MatchClass").parentIds(MetaIdFactory.conceptId(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL)).create();
@@ -41,13 +42,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractApplier, myConceptAbstractMatcher, myConceptAnyMatchClass, myConceptApplyAttribute, myConceptApplyAttributeString, myConceptApplyAttributeValue, myConceptApplyClass, myConceptApplyLink, myConceptAttributeRef, myConceptBackwardLink, myConceptClass, myConceptConcat, myConceptDirectApplyLink, myConceptDirectMatchLink, myConceptExistsMatchClass, myConceptIndirectMatchLink, myConceptLink, myConceptLinkType, myConceptMatchAttribute, myConceptMatchAttributeString, myConceptMatchAttributeValue, myConceptMatchClass, myConceptMatchLink, myConceptStringAtom, myConceptStringLiteralAtom, myConceptStringVariableAtom);
+    return Arrays.asList(myConceptAbstractApplier, myConceptAbstractMatcher, myConceptAnyMatchClass, myConceptApplyAttribute, myConceptApplyAttributeString, myConceptApplyAttributeValue, myConceptApplyClass, myConceptApplyLink, myConceptAttributeRef, myConceptBackwardLink, myConceptClass, myConceptConcat, myConceptCountable, myConceptDirectApplyLink, myConceptDirectMatchLink, myConceptExistsMatchClass, myConceptIndirectMatchLink, myConceptLink, myConceptLinkType, myConceptMatchAttribute, myConceptMatchAttributeString, myConceptMatchAttributeValue, myConceptMatchClass, myConceptMatchLink, myConceptStringAtom, myConceptStringLiteralAtom, myConceptStringVariableAtom);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0eb, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0fb, conceptFqName)) {
       case 0:
         return myConceptAbstractApplier;
       case 1:
@@ -73,36 +74,38 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 11:
         return myConceptConcat;
       case 12:
-        return myConceptDirectApplyLink;
+        return myConceptCountable;
       case 13:
-        return myConceptDirectMatchLink;
+        return myConceptDirectApplyLink;
       case 14:
-        return myConceptExistsMatchClass;
+        return myConceptDirectMatchLink;
       case 15:
-        return myConceptIndirectMatchLink;
+        return myConceptExistsMatchClass;
       case 16:
-        return myConceptLink;
+        return myConceptIndirectMatchLink;
       case 17:
-        return myConceptLinkType;
+        return myConceptLink;
       case 18:
-        return myConceptMatchAttribute;
+        return myConceptLinkType;
       case 19:
-        return myConceptMatchAttributeString;
+        return myConceptMatchAttribute;
       case 20:
-        return myConceptMatchAttributeValue;
+        return myConceptMatchAttributeString;
       case 21:
-        return myConceptMatchClass;
+        return myConceptMatchAttributeValue;
       case 22:
-        return myConceptMatchLink;
+        return myConceptMatchClass;
       case 23:
-        return myConceptStringAtom;
+        return myConceptMatchLink;
       case 24:
-        return myConceptStringLiteralAtom;
+        return myConceptStringAtom;
       case 25:
+        return myConceptStringLiteralAtom;
+      case 26:
         return myConceptStringVariableAtom;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0eb = new String[]{"transfverif.core.structure.AbstractApplier", "transfverif.core.structure.AbstractMatcher", "transfverif.core.structure.AnyMatchClass", "transfverif.core.structure.ApplyAttribute", "transfverif.core.structure.ApplyAttributeString", "transfverif.core.structure.ApplyAttributeValue", "transfverif.core.structure.ApplyClass", "transfverif.core.structure.ApplyLink", "transfverif.core.structure.AttributeRef", "transfverif.core.structure.BackwardLink", "transfverif.core.structure.Class", "transfverif.core.structure.Concat", "transfverif.core.structure.DirectApplyLink", "transfverif.core.structure.DirectMatchLink", "transfverif.core.structure.ExistsMatchClass", "transfverif.core.structure.IndirectMatchLink", "transfverif.core.structure.Link", "transfverif.core.structure.LinkType", "transfverif.core.structure.MatchAttribute", "transfverif.core.structure.MatchAttributeString", "transfverif.core.structure.MatchAttributeValue", "transfverif.core.structure.MatchClass", "transfverif.core.structure.MatchLink", "transfverif.core.structure.StringAtom", "transfverif.core.structure.StringLiteralAtom", "transfverif.core.structure.StringVariableAtom"};
+  private static String[] stringSwitchCases_1htk8d_a0a0fb = new String[]{"transfverif.core.structure.AbstractApplier", "transfverif.core.structure.AbstractMatcher", "transfverif.core.structure.AnyMatchClass", "transfverif.core.structure.ApplyAttribute", "transfverif.core.structure.ApplyAttributeString", "transfverif.core.structure.ApplyAttributeValue", "transfverif.core.structure.ApplyClass", "transfverif.core.structure.ApplyLink", "transfverif.core.structure.AttributeRef", "transfverif.core.structure.BackwardLink", "transfverif.core.structure.Class", "transfverif.core.structure.Concat", "transfverif.core.structure.Countable", "transfverif.core.structure.DirectApplyLink", "transfverif.core.structure.DirectMatchLink", "transfverif.core.structure.ExistsMatchClass", "transfverif.core.structure.IndirectMatchLink", "transfverif.core.structure.Link", "transfverif.core.structure.LinkType", "transfverif.core.structure.MatchAttribute", "transfverif.core.structure.MatchAttributeString", "transfverif.core.structure.MatchAttributeValue", "transfverif.core.structure.MatchClass", "transfverif.core.structure.MatchLink", "transfverif.core.structure.StringAtom", "transfverif.core.structure.StringLiteralAtom", "transfverif.core.structure.StringVariableAtom"};
 }
