@@ -259,5 +259,31 @@
       <ref role="20lvS9" node="67kIGnNxbyT" resolve="AtomicContract" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4KZuhCZjjnB">
+    <property role="1pbfSe" value="1955709614" />
+    <property role="3GE5qa" value="Elements" />
+    <property role="TrG5h" value="ConnectedContract" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4KZuhCZjjnC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fullContract" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67kIGnNxbyT" resolve="AtomicContract" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4KZuhCZjjnD">
+    <property role="1pbfSe" value="1955709614" />
+    <property role="3GE5qa" value="Elements" />
+    <property role="TrG5h" value="CompleteContract" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4KZuhCZjjnE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fullContract" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67kIGnNxbyT" resolve="AtomicContract" />
+    </node>
+  </node>
 </model>
 
