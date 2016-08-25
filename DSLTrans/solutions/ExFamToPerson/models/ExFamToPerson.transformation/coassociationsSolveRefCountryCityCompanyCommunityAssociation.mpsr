@@ -44,54 +44,59 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="4OZxLw4ZfDH">
-    <property role="TrG5h" value="CommFamilyParentWoman" />
-    <node concept="3GsvpM" id="4OZxLw4ZfDI" role="2ik0Mo">
-      <node concept="1jGXXa" id="4OZxLw4ZfDJ" role="1jGXX7">
-        <property role="13z3e$" value="CFPW_C" />
+  <node concept="1jGXXK" id="4OZxLw4ZfEL">
+    <property role="TrG5h" value="coassociationsSolveRefCountryCityCompanyCommunityAssociation" />
+    <node concept="3GsvpM" id="4OZxLw4ZfEM" role="2ik0Mo">
+      <node concept="1jGXXa" id="4OZxLw4ZfEN" role="1jGXX7">
+        <property role="13z3e$" value="CCCCA_Comm" />
         <property role="13z3hU" value="Community" />
       </node>
-      <node concept="1jGXXa" id="4OZxLw4ZfDK" role="1jGXX7">
-        <property role="13z3e$" value="CFPW_M" />
-        <property role="13z3hU" value="Woman" />
+      <node concept="1jGXXa" id="4OZxLw4ZfFr" role="1jGXX7">
+        <property role="13z3e$" value="CCCCA_Assoc" />
+        <property role="13z3hU" value="Association" />
       </node>
-      <node concept="1jGXVd" id="4OZxLw4ZfDL" role="2ik0Ml">
-        <property role="aCCiF" value="persons" />
-        <ref role="13xwDU" node="4OZxLw4ZfDK" />
-        <ref role="13xwDP" node="4OZxLw4ZfDJ" />
+      <node concept="1jGXVd" id="4OZxLw4ZfFu" role="2ik0Ml">
+        <property role="aCCiF" value="associations" />
+        <ref role="13xwDP" node="4OZxLw4ZfEN" />
+        <ref role="13xwDU" node="4OZxLw4ZfFr" />
       </node>
     </node>
-    <node concept="3GsvpN" id="4OZxLw4ZfDM" role="2ik0Mu">
-      <node concept="2ik0NV" id="4OZxLw4ZfDN" role="13z3mo">
-        <property role="13z3e$" value="CFPW_C" />
+    <node concept="3GsvpN" id="4OZxLw4ZfEP" role="2ik0Mu">
+      <node concept="2ik0NV" id="4OZxLw4ZfER" role="13z3mo">
+        <property role="13z3e$" value="CCCCA_Country" />
         <property role="13z3hU" value="Country" />
       </node>
-      <node concept="2ik0NV" id="4OZxLw4ZfDO" role="13z3mo">
-        <property role="13z3e$" value="CFPW_F" />
-        <property role="13z3hU" value="Family" />
+      <node concept="2ik0NV" id="4OZxLw4ZfEW" role="13z3mo">
+        <property role="13z3e$" value="CCCCA_Company" />
+        <property role="13z3hU" value="Company" />
       </node>
-      <node concept="2ik0NV" id="4OZxLw4ZfDP" role="13z3mo">
-        <property role="13z3e$" value="CFPW_P" />
-        <property role="13z3hU" value="Parent" />
+      <node concept="2ik0NV" id="4OZxLw4ZfF4" role="13z3mo">
+        <property role="13z3e$" value="CCCCA_City" />
+        <property role="13z3hU" value="City" />
       </node>
-      <node concept="1jGXVw" id="4OZxLw4ZfDQ" role="13z3mp">
-        <property role="aCCiF" value="families" />
-        <ref role="13xwDP" node="4OZxLw4ZfDN" />
-        <ref role="13xwDU" node="4OZxLw4ZfDO" />
+      <node concept="1jGXVw" id="4OZxLw4ZfF9" role="13z3mp">
+        <property role="aCCiF" value="companies" />
+        <ref role="13xwDP" node="4OZxLw4ZfER" />
+        <ref role="13xwDU" node="4OZxLw4ZfEW" />
       </node>
-      <node concept="1jGXVw" id="4OZxLw4ZfDR" role="13z3mp">
-        <property role="aCCiF" value="mothers" />
-        <ref role="13xwDP" node="4OZxLw4ZfDO" />
-        <ref role="13xwDU" node="4OZxLw4ZfDP" />
+      <node concept="1jGXVw" id="4OZxLw4ZfFe" role="13z3mp">
+        <property role="aCCiF" value="isIn" />
+        <ref role="13xwDP" node="4OZxLw4ZfEW" />
+        <ref role="13xwDU" node="4OZxLw4ZfF4" />
+      </node>
+      <node concept="1jGXVw" id="4OZxLw4ZfFm" role="13z3mp">
+        <property role="aCCiF" value="companies" />
+        <ref role="13xwDP" node="4OZxLw4ZfF4" />
+        <ref role="13xwDU" node="4OZxLw4ZfEW" />
       </node>
     </node>
-    <node concept="1jGXV2" id="4OZxLw4ZfDS" role="2udmAx">
-      <ref role="13xwDU" node="4OZxLw4ZfDN" />
-      <ref role="13xwDP" node="4OZxLw4ZfDJ" />
+    <node concept="1jGXV2" id="4OZxLw4ZfFw" role="2udmAx">
+      <ref role="13xwDP" node="4OZxLw4ZfEN" />
+      <ref role="13xwDU" node="4OZxLw4ZfER" />
     </node>
-    <node concept="1jGXV2" id="4OZxLw4ZfDT" role="2udmAx">
-      <ref role="13xwDP" node="4OZxLw4ZfDK" />
-      <ref role="13xwDU" node="4OZxLw4ZfDP" />
+    <node concept="1jGXV2" id="4OZxLw4ZfFy" role="2udmAx">
+      <ref role="13xwDP" node="4OZxLw4ZfFr" />
+      <ref role="13xwDU" node="4OZxLw4ZfEW" />
     </node>
   </node>
 </model>

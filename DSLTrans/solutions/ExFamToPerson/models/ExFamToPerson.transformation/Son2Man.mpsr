@@ -93,8 +93,8 @@
         </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4YJFn" role="13z3mo">
-        <property role="13z3e$" value="S2M_P2" />
-        <property role="13z3hU" value="Parent" />
+        <property role="13z3e$" value="S2M_C2" />
+        <property role="13z3hU" value="Child" />
         <node concept="2ik0M_" id="4OZxLw4YKLz" role="13z3hJ">
           <property role="TrG5h" value="firstName" />
           <node concept="13yNan" id="4OZxLw4YKLB" role="2ik0Q0">

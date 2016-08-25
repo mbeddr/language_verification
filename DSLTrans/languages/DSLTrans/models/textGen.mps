@@ -1580,7 +1580,7 @@
                               <node concept="37vLTI" id="3QsrawRnCm_" role="3clFbG">
                                 <node concept="3cpWs3" id="3QsrawRnCmA" role="37vLTx">
                                   <node concept="Xl_RD" id="3QsrawRnCmB" role="3uHU7w">
-                                    <property role="Xl_RC" value=")" />
+                                    <property role="Xl_RC" value=")," />
                                   </node>
                                   <node concept="37vLTw" id="3QsrawRnCmC" role="3uHU7B">
                                     <ref role="3cqZAo" node="3QsrawRibJa" resolve="equationsStr" />
@@ -1779,7 +1779,7 @@
                               <node concept="37vLTI" id="3QsrawRjI_h" role="3clFbG">
                                 <node concept="3cpWs3" id="3QsrawRjIFp" role="37vLTx">
                                   <node concept="Xl_RD" id="3QsrawRjIFN" role="3uHU7w">
-                                    <property role="Xl_RC" value=")" />
+                                    <property role="Xl_RC" value=")," />
                                   </node>
                                   <node concept="37vLTw" id="3QsrawRjIA6" role="3uHU7B">
                                     <ref role="3cqZAo" node="3QsrawRibJa" resolve="equationsStr" />

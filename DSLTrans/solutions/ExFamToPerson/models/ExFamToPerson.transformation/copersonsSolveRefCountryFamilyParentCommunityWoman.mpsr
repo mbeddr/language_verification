@@ -44,54 +44,54 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="4OZxLw4ZfDU">
-    <property role="TrG5h" value="CommFamilyChildMan" />
-    <node concept="3GsvpM" id="4OZxLw4ZfDV" role="2ik0Mo">
-      <node concept="1jGXXa" id="4OZxLw4ZfDW" role="1jGXX7">
-        <property role="13z3e$" value="CFCM_C" />
+  <node concept="1jGXXK" id="4OZxLw4ZfDH">
+    <property role="TrG5h" value="copersonsSolveRefCountryFamilyParentCommunityWoman" />
+    <node concept="3GsvpM" id="4OZxLw4ZfDI" role="2ik0Mo">
+      <node concept="1jGXXa" id="4OZxLw4ZfDJ" role="1jGXX7">
+        <property role="13z3e$" value="CFPW_C" />
         <property role="13z3hU" value="Community" />
       </node>
-      <node concept="1jGXXa" id="4OZxLw4ZfDX" role="1jGXX7">
-        <property role="13z3e$" value="CFCM_M" />
-        <property role="13z3hU" value="Man" />
+      <node concept="1jGXXa" id="4OZxLw4ZfDK" role="1jGXX7">
+        <property role="13z3e$" value="CFPW_M" />
+        <property role="13z3hU" value="Woman" />
       </node>
-      <node concept="1jGXVd" id="4OZxLw4ZfDY" role="2ik0Ml">
+      <node concept="1jGXVd" id="4OZxLw4ZfDL" role="2ik0Ml">
         <property role="aCCiF" value="persons" />
-        <ref role="13xwDP" node="4OZxLw4ZfDW" />
-        <ref role="13xwDU" node="4OZxLw4ZfDX" />
+        <ref role="13xwDU" node="4OZxLw4ZfDK" />
+        <ref role="13xwDP" node="4OZxLw4ZfDJ" />
       </node>
     </node>
-    <node concept="3GsvpN" id="4OZxLw4ZfDZ" role="2ik0Mu">
-      <node concept="2ik0NV" id="4OZxLw4ZfE0" role="13z3mo">
-        <property role="13z3e$" value="CFCM_C" />
+    <node concept="3GsvpN" id="4OZxLw4ZfDM" role="2ik0Mu">
+      <node concept="2ik0NV" id="4OZxLw4ZfDN" role="13z3mo">
+        <property role="13z3e$" value="CFPW_C" />
         <property role="13z3hU" value="Country" />
       </node>
-      <node concept="2ik0NV" id="4OZxLw4ZfE1" role="13z3mo">
-        <property role="13z3e$" value="CFCM_F" />
+      <node concept="2ik0NV" id="4OZxLw4ZfDO" role="13z3mo">
+        <property role="13z3e$" value="CFPW_F" />
         <property role="13z3hU" value="Family" />
       </node>
-      <node concept="2ik0NV" id="4OZxLw4ZfE2" role="13z3mo">
-        <property role="13z3e$" value="CFCM_P" />
-        <property role="13z3hU" value="Child" />
+      <node concept="2ik0NV" id="4OZxLw4ZfDP" role="13z3mo">
+        <property role="13z3e$" value="CFPW_P" />
+        <property role="13z3hU" value="Parent" />
       </node>
-      <node concept="1jGXVw" id="4OZxLw4ZfE3" role="13z3mp">
+      <node concept="1jGXVw" id="4OZxLw4ZfDQ" role="13z3mp">
         <property role="aCCiF" value="families" />
-        <ref role="13xwDP" node="4OZxLw4ZfE0" />
-        <ref role="13xwDU" node="4OZxLw4ZfE1" />
+        <ref role="13xwDP" node="4OZxLw4ZfDN" />
+        <ref role="13xwDU" node="4OZxLw4ZfDO" />
       </node>
-      <node concept="1jGXVw" id="4OZxLw4ZfE4" role="13z3mp">
-        <property role="aCCiF" value="sons" />
-        <ref role="13xwDU" node="4OZxLw4ZfE2" />
-        <ref role="13xwDP" node="4OZxLw4ZfE1" />
+      <node concept="1jGXVw" id="4OZxLw4ZfDR" role="13z3mp">
+        <property role="aCCiF" value="mothers" />
+        <ref role="13xwDP" node="4OZxLw4ZfDO" />
+        <ref role="13xwDU" node="4OZxLw4ZfDP" />
       </node>
     </node>
-    <node concept="1jGXV2" id="4OZxLw4ZfE5" role="2udmAx">
-      <ref role="13xwDU" node="4OZxLw4ZfE0" />
-      <ref role="13xwDP" node="4OZxLw4ZfDW" />
+    <node concept="1jGXV2" id="4OZxLw4ZfDS" role="2udmAx">
+      <ref role="13xwDU" node="4OZxLw4ZfDN" />
+      <ref role="13xwDP" node="4OZxLw4ZfDJ" />
     </node>
-    <node concept="1jGXV2" id="4OZxLw4ZfE6" role="2udmAx">
-      <ref role="13xwDP" node="4OZxLw4ZfDX" />
-      <ref role="13xwDU" node="4OZxLw4ZfE2" />
+    <node concept="1jGXV2" id="4OZxLw4ZfDT" role="2udmAx">
+      <ref role="13xwDP" node="4OZxLw4ZfDK" />
+      <ref role="13xwDU" node="4OZxLw4ZfDP" />
     </node>
   </node>
 </model>
