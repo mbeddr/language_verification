@@ -42,37 +42,37 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="1AcaMXhA0G1">
-    <property role="TrG5h" value="Father2Man" />
-    <node concept="3GsvpM" id="1AcaMXhA0G2" role="2ik0Mo">
-      <node concept="1jGXXa" id="4OZxLw4YJEZ" role="1jGXX7">
-        <property role="13z3e$" value="F2M_A" />
-        <property role="13z3hU" value="Man" />
+  <node concept="1jGXXK" id="4OZxLw4YJES">
+    <property role="TrG5h" value="Mother2Woman" />
+    <node concept="3GsvpM" id="4OZxLw4YJET" role="2ik0Mo">
+      <node concept="1jGXXa" id="4OZxLw4YJF5" role="1jGXX7">
+        <property role="13z3e$" value="M2W_W" />
+        <property role="13z3hU" value="Woman" />
       </node>
     </node>
-    <node concept="3GsvpN" id="1AcaMXhA0G3" role="2ik0Mu">
-      <node concept="2ik0NV" id="1AcaMXhA0Ge" role="13z3mo">
-        <property role="13z3e$" value="F2M_M1" />
+    <node concept="3GsvpN" id="4OZxLw4YJEU" role="2ik0Mu">
+      <node concept="2ik0NV" id="4OZxLw4YJEV" role="13z3mo">
+        <property role="13z3e$" value="M2W_F1" />
         <property role="13z3hU" value="Family" />
       </node>
-      <node concept="2ik0NV" id="1AcaMXhA0G5" role="13z3mo">
-        <property role="13z3e$" value="F2M_M2" />
+      <node concept="2ik0NV" id="4OZxLw4YJEW" role="13z3mo">
+        <property role="13z3e$" value="M2W_P2" />
         <property role="13z3hU" value="Parent" />
       </node>
-      <node concept="1jGXVw" id="1AcaMXhA0Gi" role="13z3mp">
+      <node concept="1jGXVw" id="4OZxLw4YJEX" role="13z3mp">
         <property role="aCCiF" value="family" />
-        <ref role="13xwDU" node="1AcaMXhA0Ge" />
-        <ref role="13xwDP" node="1AcaMXhA0G5" />
+        <ref role="13xwDP" node="4OZxLw4YJEW" />
+        <ref role="13xwDU" node="4OZxLw4YJEV" />
       </node>
-      <node concept="1jGXVw" id="1AcaMXhA0Gn" role="13z3mp">
-        <property role="aCCiF" value="fathers" />
-        <ref role="13xwDP" node="1AcaMXhA0Ge" />
-        <ref role="13xwDU" node="1AcaMXhA0G5" />
+      <node concept="1jGXVw" id="4OZxLw4YJEY" role="13z3mp">
+        <property role="aCCiF" value="mothers" />
+        <ref role="13xwDU" node="4OZxLw4YJEW" />
+        <ref role="13xwDP" node="4OZxLw4YJEV" />
       </node>
     </node>
-    <node concept="1jGXV2" id="4OZxLw4YJF3" role="2udmAx">
-      <ref role="13xwDP" node="4OZxLw4YJEZ" />
-      <ref role="13xwDU" node="1AcaMXhA0G5" />
+    <node concept="1jGXV2" id="4OZxLw4YJF7" role="2udmAx">
+      <ref role="13xwDP" node="4OZxLw4YJF5" />
+      <ref role="13xwDU" node="4OZxLw4YJEW" />
     </node>
   </node>
 </model>

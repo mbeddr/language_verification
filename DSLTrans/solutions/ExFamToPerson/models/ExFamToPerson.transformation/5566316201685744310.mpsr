@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
+      <concept id="3828633282163103455" name="DSLTrans.structure.Rule" flags="ng" index="1jGXXK">
+        <child id="7049464676098553437" name="applyModel" index="2ik0Mo" />
+      </concept>
+      <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
+    </language>
+  </registry>
+  <node concept="1jGXXK" id="4OZxLw4YJEQ">
+    <node concept="3GsvpM" id="4OZxLw4YJER" role="2ik0Mo" />
+  </node>
+</model>
+
