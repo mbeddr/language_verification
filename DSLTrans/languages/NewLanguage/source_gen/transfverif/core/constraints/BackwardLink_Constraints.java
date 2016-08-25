@@ -20,9 +20,9 @@ import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class BackwardLink_Constraints extends BaseConstraintsDescriptor {
@@ -56,7 +56,7 @@ public class BackwardLink_Constraints extends BaseConstraintsDescriptor {
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
-              final Iterable<SNode> classes = SModelOperations.nodesIncludingImported(_context.getModel(), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e5L, "transfverif.core.structure.ApplyClass"));
+              final Iterable<SNode> classes = SNodeOperations.getNodeDescendants(SNodeOperations.getParent(_context.getContextNode()), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e5L, "transfverif.core.structure.ApplyClass"), false, new SAbstractConcept[]{});
               return new ListScope(classes) {
                 public String getName(SNode child) {
                   return SPropertyOperations.getString(SNodeOperations.cast(child, MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x352209af6691d6e5L, "transfverif.core.structure.ApplyClass")), MetaAdapterFactory.getProperty(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b3b5L, 0x26ce87c26542b466L, "ID"));
@@ -91,7 +91,7 @@ public class BackwardLink_Constraints extends BaseConstraintsDescriptor {
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
-              final Iterable<SNode> classes = SModelOperations.nodesIncludingImported(_context.getModel(), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL, "transfverif.core.structure.MatchClass"));
+              final Iterable<SNode> classes = SNodeOperations.getNodeDescendants(SNodeOperations.getParent(_context.getContextNode()), MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL, "transfverif.core.structure.MatchClass"), false, new SAbstractConcept[]{});
               return new ListScope(classes) {
                 public String getName(SNode child) {
                   return SPropertyOperations.getString(SNodeOperations.cast(child, MetaAdapterFactory.getConcept(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b25eL, "transfverif.core.structure.MatchClass")), MetaAdapterFactory.getProperty(0xa2c7a1ebb3b54bbbL, 0x819be25a3c6de3a8L, 0x26ce87c26542b3b5L, 0x26ce87c26542b466L, "ID"));
