@@ -1443,7 +1443,7 @@
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="4KZuhCZjkZW" role="3uHU7w">
-                                <property role="Xl_RC" value=") # association" />
+                                <property role="Xl_RC" value="), # association" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="4KZuhCZjkZX" role="3uHU7w">
