@@ -4,6 +4,9 @@
   <imports />
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
+      <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
+        <property id="4439542802417641475" name="typeName" index="aCCiF" />
+      </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
       </concept>
@@ -27,6 +30,10 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
+        <reference id="2796321687636315575" name="source" index="13xwDP" />
+        <reference id="2796321687636315576" name="target" index="13xwDU" />
+      </concept>
       <concept id="2796321687636129109" name="transfverif.core.structure.MatchAttributeString" flags="ng" index="13yNan">
         <child id="4509618979300686935" name="atom" index="2F1HV6" />
       </concept>
@@ -38,10 +45,12 @@
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
         <child id="2796321687635932077" name="attributes" index="13z3hJ" />
       </concept>
+      <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
       <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
         <child id="7049464676098553451" name="attributes" index="2ik0MI" />
       </concept>
       <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
+        <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
       </concept>
     </language>
@@ -95,6 +104,11 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="1jGXVd" id="4OZxLw4ZCe6" role="2ik0Ml">
+        <property role="aCCiF" value="committee" />
+        <ref role="13xwDP" node="4OZxLw4YKMf" />
+        <ref role="13xwDU" node="4OZxLw4YKMh" />
       </node>
     </node>
     <node concept="3GsvpN" id="4OZxLw4YKMb" role="2ik0Mu">
