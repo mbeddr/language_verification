@@ -17,10 +17,6 @@
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
       </concept>
-      <concept id="7049464676098553455" name="transfverif.core.structure.Concat" flags="ng" index="2ik0ME">
-        <child id="2796321687636254282" name="arg1" index="13yhA8" />
-        <child id="2796321687636254286" name="arg2" index="13yhAc" />
-      </concept>
       <concept id="7049464676098553454" name="transfverif.core.structure.AttributeRef" flags="ng" index="2ik0MF">
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
@@ -78,7 +74,7 @@
         </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4WaSx" role="13z3mo">
-        <property role="13z3e$" value="MotherFather_M2" />
+        <property role="13z3e$" value="MotherFather_Mother" />
         <property role="13z3hU" value="Member" />
         <node concept="2ik0M_" id="4OZxLw4WaSV" role="13z3hJ">
           <property role="TrG5h" value="firstName" />
@@ -88,7 +84,7 @@
         </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4WaSG" role="13z3mo">
-        <property role="13z3e$" value="MotherFather_M3" />
+        <property role="13z3e$" value="MotherFather_Father" />
         <property role="13z3hU" value="Member" />
         <node concept="2ik0M_" id="4OZxLw4WaT8" role="13z3hJ">
           <property role="TrG5h" value="firstName" />
@@ -116,32 +112,16 @@
       <node concept="1jGXXa" id="4OZxLw4WaTw" role="1jGXX7">
         <property role="13z3e$" value="MotherFather_AMother" />
         <property role="13z3hU" value="Woman" />
-        <node concept="2ik0MC" id="4OZxLw4WaTS" role="2ik0MI">
+        <node concept="2ik0MC" id="4MaYa8s4Kcf" role="2ik0MI">
           <property role="TrG5h" value="fullName" />
-          <node concept="2ik0ME" id="4OZxLw4WaTW" role="2ik0MU">
-            <node concept="2ik0MF" id="4OZxLw4WaU5" role="13yhA8">
-              <ref role="2ik0MN" node="4OZxLw4WaSV" resolve="firstName" />
-            </node>
-            <node concept="2ik0MF" id="4OZxLw4WaU8" role="13yhAc">
-              <ref role="2ik0MN" node="4OZxLw4WaSt" resolve="lastName" />
-            </node>
+          <node concept="2ik0MF" id="4MaYa8s4Kcn" role="2ik0MU">
+            <ref role="2ik0MN" node="4OZxLw4WaT8" resolve="firstName" />
           </node>
         </node>
       </node>
       <node concept="1jGXXa" id="4OZxLw4WaTJ" role="1jGXX7">
         <property role="13z3e$" value="MotherFather_AFather" />
         <property role="13z3hU" value="Man" />
-        <node concept="2ik0MC" id="4OZxLw4WaUb" role="2ik0MI">
-          <property role="TrG5h" value="fullName" />
-          <node concept="2ik0ME" id="4OZxLw4WaUf" role="2ik0MU">
-            <node concept="2ik0MF" id="4OZxLw4WaUo" role="13yhA8">
-              <ref role="2ik0MN" node="4OZxLw4WaT8" resolve="firstName" />
-            </node>
-            <node concept="2ik0MF" id="4OZxLw4WaUr" role="13yhAc">
-              <ref role="2ik0MN" node="4OZxLw4WaSt" resolve="lastName" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="1jGXVd" id="4OZxLw4WaTN" role="2ik0Ml">
         <property role="aCCiF" value="persons" />

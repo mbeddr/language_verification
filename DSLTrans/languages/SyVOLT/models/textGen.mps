@@ -672,7 +672,7 @@
       <node concept="3clFbS" id="4OZxLw4FDU5" role="2VODD2">
         <node concept="3clFbF" id="4OZxLw4FDUc" role="3cqZAp">
           <node concept="Xl_RD" id="4OZxLw4FDUb" role="3clFbG">
-            <property role="Xl_RC" value=".py" />
+            <property role="Xl_RC" value="py" />
           </node>
         </node>
       </node>
@@ -3510,7 +3510,7 @@
       <node concept="3clFbS" id="4OZxLw4FDUk" role="2VODD2">
         <node concept="3clFbF" id="4OZxLw4FDUr" role="3cqZAp">
           <node concept="Xl_RD" id="4OZxLw4FDUq" role="3clFbG">
-            <property role="Xl_RC" value=".py" />
+            <property role="Xl_RC" value="py" />
           </node>
         </node>
       </node>
@@ -4686,7 +4686,7 @@
       <node concept="3clFbS" id="4OZxLw4RcEk" role="2VODD2">
         <node concept="3clFbF" id="4OZxLw4RcEr" role="3cqZAp">
           <node concept="Xl_RD" id="4OZxLw4RcEq" role="3clFbG">
-            <property role="Xl_RC" value=".py" />
+            <property role="Xl_RC" value="py" />
           </node>
         </node>
       </node>

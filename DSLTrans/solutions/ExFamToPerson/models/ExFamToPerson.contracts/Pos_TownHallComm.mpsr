@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:fbd6b328-fee2-4cb3-9eca-fcefa4901b82(ExFamToPerson.contracts)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
+      <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
+        <property id="4439542802417641475" name="typeName" index="aCCiF" />
+      </concept>
+      <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
+        <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
+      </concept>
+      <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
+        <property id="1722780940080858386" name="counter" index="KJs$L" />
+      </concept>
+      <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
+        <reference id="2796321687636315575" name="source" index="13xwDP" />
+        <reference id="2796321687636315576" name="target" index="13xwDU" />
+      </concept>
+      <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
+        <property id="2796321687635932262" name="ID" index="13z3e$" />
+        <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+      </concept>
+      <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
+      <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
+        <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
+        <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
+      </concept>
+    </language>
+    <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
+      <concept id="4439542802417895565" name="SyVOLT.structure.PreCondition" flags="ng" index="aREg_" />
+      <concept id="4439542802417895566" name="SyVOLT.structure.PostCondition" flags="ng" index="aREgA" />
+      <concept id="7049464676098554041" name="SyVOLT.structure.AtomicContract" flags="ng" index="2ik09W">
+        <child id="4439542802417895567" name="preCondition" index="aREgB" />
+        <child id="4439542802417895569" name="postCondition" index="aREgT" />
+        <child id="4439542802417895572" name="traceLinks" index="aREgW" />
+      </concept>
+      <concept id="2186611055801906832" name="SyVOLT.structure.ContractBackwardLink" flags="ng" index="2lmX6V" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2ik09W" id="4MaYa8s4Xly">
+    <property role="TrG5h" value="Pos_TownHallComm" />
+    <node concept="aREg_" id="4MaYa8s4Xlz" role="aREgB">
+      <property role="KJs$L" value="1" />
+      <node concept="2ik0NV" id="4MaYa8s4XlB" role="13z3mo">
+        <property role="13z3e$" value="THC_City" />
+        <property role="13z3hU" value="City" />
+      </node>
+    </node>
+    <node concept="aREgA" id="4MaYa8s4Xl_" role="aREgT">
+      <property role="KJs$L" value="2" />
+      <node concept="1jGXXa" id="4MaYa8s4XlD" role="1jGXX7">
+        <property role="13z3e$" value="THC_TH" />
+        <property role="13z3hU" value="TownHall" />
+      </node>
+      <node concept="1jGXXa" id="4MaYa8s4XlJ" role="1jGXX7">
+        <property role="13z3e$" value="THC_Comm" />
+        <property role="13z3hU" value="Committee" />
+      </node>
+      <node concept="1jGXVd" id="4MaYa8s4XlM" role="2ik0Ml">
+        <property role="aCCiF" value="committee" />
+        <ref role="13xwDP" node="4MaYa8s4XlD" />
+        <ref role="13xwDU" node="4MaYa8s4XlJ" />
+      </node>
+    </node>
+    <node concept="2lmX6V" id="4MaYa8s4XlO" role="aREgW">
+      <ref role="13xwDP" node="4MaYa8s4XlD" />
+      <ref role="13xwDU" node="4MaYa8s4XlB" />
+    </node>
+  </node>
+</model>
+
