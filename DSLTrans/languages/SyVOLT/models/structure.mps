@@ -103,7 +103,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="traceLinks" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="i3vy:3ky2qXA$ttH" resolve="BackwardLink" />
+      <ref role="20lvS9" node="1TopMIb0Vqg" resolve="ContractBackwardLink" />
     </node>
     <node concept="PrWs8" id="3QsrawRgNjF" role="PzmwI">
       <ref role="PrY4T" node="3QsrawRgNjk" resolve="ContractFormula" />
@@ -283,6 +283,17 @@
       <property role="20kJfa" value="fullContract" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="67kIGnNxbyT" resolve="AtomicContract" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1TopMIb0Vqg">
+    <property role="1pbfSe" value="1453580869" />
+    <property role="3GE5qa" value="Links" />
+    <property role="TrG5h" value="ContractBackwardLink" />
+    <property role="34LRSv" value="Back" />
+    <ref role="1TJDcQ" to="i3vy:3ky2qXA$ttH" resolve="BackwardLink" />
+    <node concept="1TJgyi" id="1TopMIb0VmV" role="1TKVEl">
+      <property role="TrG5h" value="backwardInPre" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
