@@ -73,31 +73,15 @@
     </language>
   </registry>
   <node concept="1jGXXK" id="3dPnTp7RI4D">
-    <property role="TrG5h" value="layer3Rule3" />
+    <property role="TrG5h" value="layer3rule3" />
     <node concept="3GsvpM" id="3dPnTp7RI4E" role="2ik0Mo">
       <node concept="1jGXXa" id="3dPnTp7RI6d" role="1jGXX7">
         <property role="13z3hU" value="ImplementationModule" />
-        <property role="13z3e$" value="18" />
-        <node concept="2ik0MC" id="3dPnTp7RI7m" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RI7n" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RI7o" role="2ik0My">
-              <property role="2ik0Mw" value="ImplementationModule" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3e$" value="IM" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RI6f" role="1jGXX7">
-        <property role="13z3hU" value="GloblvariableDeclaration" />
-        <property role="13z3e$" value="19" />
-        <node concept="2ik0MC" id="3dPnTp7RI7s" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RI7t" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RI7u" role="2ik0My">
-              <property role="2ik0Mw" value="GlobalVarOps" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3hU" value="GlobalVariableDeclaration" />
+        <property role="13z3e$" value="GVD" />
         <node concept="2ik0MC" id="3dPnTp7RI7y" role="2ik0MI">
           <property role="TrG5h" value="name" />
           <node concept="2ik0ME" id="3dPnTp7RI7D" role="2ik0MU">
@@ -130,7 +114,7 @@
             </node>
             <node concept="2ik0M$" id="3dPnTp7RI8F" role="13yhAc">
               <node concept="2ik0MB" id="3dPnTp7RI8H" role="2ik0My">
-                <property role="2ik0Mw" value="_ops" />
+                <property role="2ik0Mw" value="__ops" />
               </node>
             </node>
           </node>
@@ -138,18 +122,10 @@
       </node>
       <node concept="1jGXXa" id="3dPnTp7RI6m" role="1jGXX7">
         <property role="13z3hU" value="TypeDefType" />
-        <property role="13z3e$" value="20" />
-        <node concept="2ik0MC" id="3dPnTp7RI8L" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RI8M" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RI8N" role="2ik0My">
-              <property role="2ik0Mw" value="TypeDefIntefaceStruct" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3e$" value="TDT" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RI9n" role="1jGXX7">
-        <property role="13z3e$" value="21" />
+        <property role="13z3e$" value="TD" />
         <property role="13z3hU" value="TypeDef" />
       </node>
       <node concept="1jGXVd" id="3dPnTp7RI9O" role="2ik0Ml">
@@ -171,7 +147,7 @@
     <node concept="3GsvpN" id="3dPnTp7RI4F" role="2ik0Mu">
       <node concept="2ik0NV" id="3dPnTp7RI4H" role="13z3mo">
         <property role="13z3hU" value="ImplementationModule" />
-        <property role="13z3e$" value="12" />
+        <property role="13z3e$" value="IM" />
         <node concept="2ik0M_" id="2K9dotEBlvZ" role="13z3hJ">
           <property role="TrG5h" value="name" />
           <node concept="13yNan" id="2K9dotEBlw0" role="2ik0Q0">
@@ -181,11 +157,11 @@
       </node>
       <node concept="2ik0NV" id="3dPnTp7RI4M" role="13z3mo">
         <property role="13z3hU" value="InstanceConfiguration" />
-        <property role="13z3e$" value="13" />
+        <property role="13z3e$" value="IC" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RI4U" role="13z3mo">
         <property role="13z3hU" value="ComponentsInstance" />
-        <property role="13z3e$" value="14" />
+        <property role="13z3e$" value="CI" />
         <node concept="2ik0M_" id="2K9dotEBlw5" role="13z3hJ">
           <property role="TrG5h" value="name" />
           <node concept="13yNan" id="2K9dotEBlw6" role="2ik0Q0">
@@ -195,15 +171,15 @@
       </node>
       <node concept="2ik0NV" id="3dPnTp7RI54" role="13z3mo">
         <property role="13z3hU" value="AtomicComponent" />
-        <property role="13z3e$" value="15" />
+        <property role="13z3e$" value="AC" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RI5g" role="13z3mo">
         <property role="13z3hU" value="ProvidedPort" />
-        <property role="13z3e$" value="16" />
+        <property role="13z3e$" value="PPort" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RI5u" role="13z3mo">
         <property role="13z3hU" value="ClientServerInterface" />
-        <property role="13z3e$" value="17" />
+        <property role="13z3e$" value="CSI" />
         <node concept="2ik0M_" id="2K9dotEBlwb" role="13z3hJ">
           <property role="TrG5h" value="name" />
           <node concept="13yNan" id="2K9dotEBlwc" role="2ik0Q0">
@@ -212,7 +188,7 @@
         </node>
       </node>
       <node concept="1jGXVw" id="3dPnTp7RI6G" role="13z3mp">
-        <property role="aCCiF" value="Contents" />
+        <property role="aCCiF" value="contents" />
         <ref role="13xwDU" node="3dPnTp7RI4M" />
         <ref role="13xwDP" node="3dPnTp7RI4H" />
       </node>
@@ -239,7 +215,7 @@
     </node>
     <node concept="1jGXV2" id="3dPnTp7RI9i" role="2udmAx">
       <ref role="13xwDP" node="3dPnTp7RI6d" />
-      <ref role="13xwDU" node="3dPnTp7RI4U" />
+      <ref role="13xwDU" node="3dPnTp7RI4H" />
     </node>
     <node concept="1jGXV2" id="3dPnTp7RI9k" role="2udmAx">
       <ref role="13xwDU" node="3dPnTp7RI5u" />
