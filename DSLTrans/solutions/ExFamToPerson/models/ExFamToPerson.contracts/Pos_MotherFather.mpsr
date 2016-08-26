@@ -21,6 +21,9 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
+        <property id="1722780940080858386" name="counter" index="KJs$L" />
+      </concept>
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
         <reference id="2796321687636315576" name="target" index="13xwDU" />
@@ -105,6 +108,7 @@
       </node>
     </node>
     <node concept="aREgA" id="4OZxLw4WaSp" role="aREgT">
+      <property role="KJs$L" value="1" />
       <node concept="1jGXXa" id="4OZxLw4WaTu" role="1jGXX7">
         <property role="13z3e$" value="MotherFather_A1" />
         <property role="13z3hU" value="Community" />
