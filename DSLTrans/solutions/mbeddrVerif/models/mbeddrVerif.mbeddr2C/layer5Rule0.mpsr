@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:3f83a3cc-6d45-4f54-9d3f-7ab7bb0b8de1(mbeddrVerif.mbeddr2Ctrans)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
+      <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
+        <property id="4439542802417641475" name="typeName" index="aCCiF" />
+      </concept>
+      <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
+        <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
+        <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
+      </concept>
+      <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
+        <child id="7049464676098553447" name="atom" index="2ik0My" />
+      </concept>
+      <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
+        <property id="7049464676098553445" name="atom" index="2ik0Mw" />
+      </concept>
+      <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
+        <child id="7049464676098553471" name="value" index="2ik0MU" />
+      </concept>
+      <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
+        <reference id="2796321687636315575" name="source" index="13xwDP" />
+        <reference id="2796321687636315576" name="target" index="13xwDU" />
+      </concept>
+      <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
+        <property id="2796321687635932262" name="ID" index="13z3e$" />
+        <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+      </concept>
+      <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
+      <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
+      <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
+        <child id="7049464676098553451" name="attributes" index="2ik0MI" />
+      </concept>
+      <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
+        <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
+        <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
+      </concept>
+    </language>
+    <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
+      <concept id="3828633282163103455" name="DSLTrans.structure.Rule" flags="ng" index="1jGXXK">
+        <child id="7049464676098553437" name="applyModel" index="2ik0Mo" />
+        <child id="7049464676098553435" name="matchModel" index="2ik0Mu" />
+        <child id="6217950678929633427" name="backwardLinks" index="2udmAx" />
+      </concept>
+      <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
+      <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1jGXXK" id="3dPnTp7RIoO">
+    <property role="TrG5h" value="layer5Rule0" />
+    <node concept="3GsvpM" id="3dPnTp7RIoP" role="2ik0Mo">
+      <node concept="1jGXXa" id="3dPnTp7RIpZ" role="1jGXX7">
+        <property role="13z3hU" value="StatementList" />
+        <property role="13z3e$" value="6" />
+        <node concept="2ik0MC" id="3dPnTp7RIrq" role="2ik0MI">
+          <property role="TrG5h" value="ApplyAttribute" />
+          <node concept="2ik0M$" id="3dPnTp7RIrr" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RIrs" role="2ik0My">
+              <property role="2ik0Mw" value="WireFunctionStatements" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIq1" role="1jGXX7">
+        <property role="13z3hU" value="GlobalvariableDeclaration" />
+        <property role="13z3e$" value="7" />
+        <node concept="2ik0MC" id="3dPnTp7RIrw" role="2ik0MI">
+          <property role="TrG5h" value="ApplyAttribute" />
+          <node concept="2ik0M$" id="3dPnTp7RIrx" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RIry" role="2ik0My">
+              <property role="2ik0Mw" value="GloabalVarOps" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIq4" role="1jGXX7">
+        <property role="13z3hU" value="ExpressionStatement" />
+        <property role="13z3e$" value="8" />
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIq8" role="1jGXX7">
+        <property role="13z3hU" value="AssignmentExpr" />
+        <property role="13z3e$" value="9" />
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIqd" role="1jGXX7">
+        <property role="13z3hU" value="GenericDotExpression" />
+        <property role="13z3e$" value="10" />
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIqj" role="1jGXX7">
+        <property role="13z3hU" value="RefereneceExpr" />
+        <property role="13z3e$" value="11" />
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIqq" role="1jGXX7">
+        <property role="13z3hU" value="GloabalVarRef" />
+        <property role="13z3e$" value="12" />
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIqy" role="1jGXX7">
+        <property role="13z3hU" value="GenericMemberRef" />
+        <property role="13z3e$" value="13" />
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIqF" role="1jGXX7">
+        <property role="13z3hU" value="CFunctionPointerStructMemeber" />
+        <property role="13z3e$" value="14" />
+        <node concept="2ik0MC" id="3dPnTp7RIrJ" role="2ik0MI">
+          <property role="TrG5h" value="ApplyAttribute" />
+          <node concept="2ik0M$" id="3dPnTp7RIrK" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RIrL" role="2ik0My">
+              <property role="2ik0Mw" value="CFunctionPointerStructMember" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIqP" role="1jGXX7">
+        <property role="13z3hU" value="FunctionPrototype" />
+        <property role="13z3e$" value="15" />
+        <node concept="2ik0MC" id="3dPnTp7RIrP" role="2ik0MI">
+          <property role="TrG5h" value="ApplyAttribute" />
+          <node concept="2ik0M$" id="3dPnTp7RIrQ" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RIrR" role="2ik0My">
+              <property role="2ik0Mw" value="ProvidedPortFunctionPrototype" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RIr0" role="1jGXX7">
+        <property role="13z3hU" value="FunctionRefExpr" />
+        <property role="13z3e$" value="16" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIrV" role="2ik0Ml">
+        <property role="aCCiF" value="statements" />
+        <ref role="13xwDU" node="3dPnTp7RIq4" />
+        <ref role="13xwDP" node="3dPnTp7RIpZ" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIPh" role="2ik0Ml">
+        <property role="aCCiF" value="var" />
+        <ref role="13xwDP" node="3dPnTp7RIqq" />
+        <ref role="13xwDU" node="3dPnTp7RIq1" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIQ5" role="2ik0Ml">
+        <property role="aCCiF" value="expr" />
+        <ref role="13xwDP" node="3dPnTp7RIq4" />
+        <ref role="13xwDU" node="3dPnTp7RIq8" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIPk" role="2ik0Ml">
+        <property role="aCCiF" value="left" />
+        <ref role="13xwDU" node="3dPnTp7RIqd" />
+        <ref role="13xwDP" node="3dPnTp7RIq8" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIPo" role="2ik0Ml">
+        <property role="aCCiF" value="right" />
+        <ref role="13xwDP" node="3dPnTp7RIq8" />
+        <ref role="13xwDU" node="3dPnTp7RIqj" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIPt" role="2ik0Ml">
+        <property role="aCCiF" value="target" />
+        <ref role="13xwDU" node="3dPnTp7RIqy" />
+        <ref role="13xwDP" node="3dPnTp7RIqd" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIPz" role="2ik0Ml">
+        <property role="aCCiF" value="expression" />
+        <ref role="13xwDP" node="3dPnTp7RIqd" />
+        <ref role="13xwDU" node="3dPnTp7RIqq" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIPE" role="2ik0Ml">
+        <property role="aCCiF" value="expression" />
+        <ref role="13xwDP" node="3dPnTp7RIqj" />
+        <ref role="13xwDU" node="3dPnTp7RIr0" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIPM" role="2ik0Ml">
+        <property role="aCCiF" value="function" />
+        <ref role="13xwDP" node="3dPnTp7RIr0" />
+        <ref role="13xwDU" node="3dPnTp7RIqP" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RIPV" role="2ik0Ml">
+        <property role="aCCiF" value="member" />
+        <ref role="13xwDU" node="3dPnTp7RIqF" />
+        <ref role="13xwDP" node="3dPnTp7RIqy" />
+      </node>
+    </node>
+    <node concept="3GsvpN" id="3dPnTp7RIoQ" role="2ik0Mu">
+      <node concept="2ik0NV" id="3dPnTp7RIoS" role="13z3mo">
+        <property role="13z3hU" value="ComponentInstance" />
+        <property role="13z3e$" value="1" />
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RIoX" role="13z3mo">
+        <property role="13z3hU" value="AtomicComponent" />
+        <property role="13z3e$" value="2" />
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RIp5" role="13z3mo">
+        <property role="13z3hU" value="ProvidedPort" />
+        <property role="13z3e$" value="3" />
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RIpf" role="13z3mo">
+        <property role="13z3hU" value="ClientServerInterface" />
+        <property role="13z3e$" value="4" />
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RIpr" role="13z3mo">
+        <property role="13z3hU" value="Operation" />
+        <property role="13z3e$" value="5" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RIpy" role="13z3mp">
+        <property role="aCCiF" value="component" />
+        <ref role="13xwDU" node="3dPnTp7RIoX" />
+        <ref role="13xwDP" node="3dPnTp7RIoS" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RIpB" role="13z3mp">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDP" node="3dPnTp7RIoX" />
+        <ref role="13xwDU" node="3dPnTp7RIp5" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RIpJ" role="13z3mp">
+        <property role="aCCiF" value="intf" />
+        <ref role="13xwDP" node="3dPnTp7RIp5" />
+        <ref role="13xwDU" node="3dPnTp7RIpf" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RIpT" role="13z3mp">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDP" node="3dPnTp7RIpf" />
+        <ref role="13xwDU" node="3dPnTp7RIpr" />
+      </node>
+    </node>
+    <node concept="1jGXV2" id="3dPnTp7RIrc" role="2udmAx">
+      <ref role="13xwDU" node="3dPnTp7RIoS" />
+      <ref role="13xwDP" node="3dPnTp7RIpZ" />
+    </node>
+    <node concept="1jGXV2" id="3dPnTp7RIre" role="2udmAx">
+      <ref role="13xwDP" node="3dPnTp7RIq1" />
+      <ref role="13xwDU" node="3dPnTp7RIp5" />
+    </node>
+    <node concept="1jGXV2" id="3dPnTp7RIrh" role="2udmAx">
+      <ref role="13xwDU" node="3dPnTp7RIpr" />
+      <ref role="13xwDP" node="3dPnTp7RIqF" />
+    </node>
+    <node concept="1jGXV2" id="3dPnTp7RIrl" role="2udmAx">
+      <ref role="13xwDU" node="3dPnTp7RIp5" />
+      <ref role="13xwDP" node="3dPnTp7RIqP" />
+    </node>
+  </node>
+</model>
+

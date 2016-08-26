@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:3f83a3cc-6d45-4f54-9d3f-7ab7bb0b8de1(mbeddrVerif.mbeddr2Ctrans)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
+      <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
+        <property id="4439542802417641475" name="typeName" index="aCCiF" />
+      </concept>
+      <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
+        <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
+        <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
+      </concept>
+      <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
+        <child id="7049464676098553447" name="atom" index="2ik0My" />
+      </concept>
+      <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
+        <child id="7049464676098553669" name="value" index="2ik0Q0" />
+      </concept>
+      <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
+        <property id="7049464676098553445" name="atom" index="2ik0Mw" />
+      </concept>
+      <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
+        <child id="7049464676098553471" name="value" index="2ik0MU" />
+      </concept>
+      <concept id="7049464676098553455" name="transfverif.core.structure.Concat" flags="ng" index="2ik0ME">
+        <child id="2796321687636254282" name="arg1" index="13yhA8" />
+        <child id="2796321687636254286" name="arg2" index="13yhAc" />
+      </concept>
+      <concept id="7049464676098553454" name="transfverif.core.structure.AttributeRef" flags="ng" index="2ik0MF">
+        <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
+      </concept>
+      <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
+        <reference id="2796321687636315575" name="source" index="13xwDP" />
+        <reference id="2796321687636315576" name="target" index="13xwDU" />
+      </concept>
+      <concept id="2796321687636129109" name="transfverif.core.structure.MatchAttributeString" flags="ng" index="13yNan">
+        <child id="4509618979300686935" name="atom" index="2F1HV6" />
+      </concept>
+      <concept id="2796321687636138754" name="transfverif.core.structure.StringVariableAtom" flags="ng" index="13yPN0" />
+      <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
+        <property id="2796321687635932262" name="ID" index="13z3e$" />
+        <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+      </concept>
+      <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
+        <child id="2796321687635932077" name="attributes" index="13z3hJ" />
+      </concept>
+      <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
+      <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
+      <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
+        <child id="7049464676098553451" name="attributes" index="2ik0MI" />
+      </concept>
+      <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
+        <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
+        <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
+      </concept>
+    </language>
+    <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
+      <concept id="3828633282163103455" name="DSLTrans.structure.Rule" flags="ng" index="1jGXXK">
+        <child id="7049464676098553437" name="applyModel" index="2ik0Mo" />
+        <child id="7049464676098553435" name="matchModel" index="2ik0Mu" />
+        <child id="6217950678929633427" name="backwardLinks" index="2udmAx" />
+      </concept>
+      <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
+      <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1jGXXK" id="3dPnTp7RI4D">
+    <property role="TrG5h" value="layer3Rule3" />
+    <node concept="3GsvpM" id="3dPnTp7RI4E" role="2ik0Mo">
+      <node concept="1jGXXa" id="3dPnTp7RI6d" role="1jGXX7">
+        <property role="13z3hU" value="ImplementationModule" />
+        <property role="13z3e$" value="18" />
+        <node concept="2ik0MC" id="3dPnTp7RI7m" role="2ik0MI">
+          <property role="TrG5h" value="ApplyAttribute" />
+          <node concept="2ik0M$" id="3dPnTp7RI7n" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RI7o" role="2ik0My">
+              <property role="2ik0Mw" value="ImplementationModule" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RI6f" role="1jGXX7">
+        <property role="13z3hU" value="GloblvariableDeclaration" />
+        <property role="13z3e$" value="19" />
+        <node concept="2ik0MC" id="3dPnTp7RI7s" role="2ik0MI">
+          <property role="TrG5h" value="ApplyAttribute" />
+          <node concept="2ik0M$" id="3dPnTp7RI7t" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RI7u" role="2ik0My">
+              <property role="2ik0Mw" value="GlobalVarOps" />
+            </node>
+          </node>
+        </node>
+        <node concept="2ik0MC" id="3dPnTp7RI7y" role="2ik0MI">
+          <property role="TrG5h" value="name" />
+          <node concept="2ik0ME" id="3dPnTp7RI7D" role="2ik0MU">
+            <node concept="2ik0ME" id="3dPnTp7RI7M" role="13yhA8">
+              <node concept="2ik0ME" id="3dPnTp7RI7V" role="13yhA8">
+                <node concept="2ik0ME" id="3dPnTp7RI84" role="13yhA8">
+                  <node concept="2ik0ME" id="3dPnTp7RI8d" role="13yhA8">
+                    <node concept="2ik0MF" id="3dPnTp7RI8m" role="13yhA8">
+                      <ref role="2ik0MN" node="2K9dotEBlvZ" resolve="name" />
+                    </node>
+                    <node concept="2ik0M$" id="3dPnTp7RI8p" role="13yhAc">
+                      <node concept="2ik0MB" id="3dPnTp7RI8r" role="2ik0My">
+                        <property role="2ik0Mw" value="_" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2ik0MF" id="3dPnTp7RI8v" role="13yhAc">
+                    <ref role="2ik0MN" node="2K9dotEBlw5" resolve="name" />
+                  </node>
+                </node>
+                <node concept="2ik0M$" id="3dPnTp7RI8y" role="13yhAc">
+                  <node concept="2ik0MB" id="3dPnTp7RI8$" role="2ik0My">
+                    <property role="2ik0Mw" value="_" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2ik0MF" id="3dPnTp7RI8C" role="13yhAc">
+                <ref role="2ik0MN" node="2K9dotEBlwb" resolve="name" />
+              </node>
+            </node>
+            <node concept="2ik0M$" id="3dPnTp7RI8F" role="13yhAc">
+              <node concept="2ik0MB" id="3dPnTp7RI8H" role="2ik0My">
+                <property role="2ik0Mw" value="_ops" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RI6m" role="1jGXX7">
+        <property role="13z3hU" value="TypeDefType" />
+        <property role="13z3e$" value="20" />
+        <node concept="2ik0MC" id="3dPnTp7RI8L" role="2ik0MI">
+          <property role="TrG5h" value="ApplyAttribute" />
+          <node concept="2ik0M$" id="3dPnTp7RI8M" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RI8N" role="2ik0My">
+              <property role="2ik0Mw" value="TypeDefIntefaceStruct" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXa" id="3dPnTp7RI9n" role="1jGXX7">
+        <property role="13z3e$" value="21" />
+        <property role="13z3hU" value="TypeDef" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RI9O" role="2ik0Ml">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDU" node="3dPnTp7RI6f" />
+        <ref role="13xwDP" node="3dPnTp7RI6d" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RI9Q" role="2ik0Ml">
+        <property role="aCCiF" value="type" />
+        <ref role="13xwDP" node="3dPnTp7RI6f" />
+        <ref role="13xwDU" node="3dPnTp7RI6m" />
+      </node>
+      <node concept="1jGXVd" id="3dPnTp7RI9T" role="2ik0Ml">
+        <property role="aCCiF" value="typeDef" />
+        <ref role="13xwDP" node="3dPnTp7RI6m" />
+        <ref role="13xwDU" node="3dPnTp7RI9n" />
+      </node>
+    </node>
+    <node concept="3GsvpN" id="3dPnTp7RI4F" role="2ik0Mu">
+      <node concept="2ik0NV" id="3dPnTp7RI4H" role="13z3mo">
+        <property role="13z3hU" value="ImplementationModule" />
+        <property role="13z3e$" value="12" />
+        <node concept="2ik0M_" id="2K9dotEBlvZ" role="13z3hJ">
+          <property role="TrG5h" value="name" />
+          <node concept="13yNan" id="2K9dotEBlw0" role="2ik0Q0">
+            <node concept="13yPN0" id="2K9dotEBlw1" role="2F1HV6" />
+          </node>
+        </node>
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RI4M" role="13z3mo">
+        <property role="13z3hU" value="InstanceConfiguration" />
+        <property role="13z3e$" value="13" />
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RI4U" role="13z3mo">
+        <property role="13z3hU" value="ComponentsInstance" />
+        <property role="13z3e$" value="14" />
+        <node concept="2ik0M_" id="2K9dotEBlw5" role="13z3hJ">
+          <property role="TrG5h" value="name" />
+          <node concept="13yNan" id="2K9dotEBlw6" role="2ik0Q0">
+            <node concept="13yPN0" id="2K9dotEBlw7" role="2F1HV6" />
+          </node>
+        </node>
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RI54" role="13z3mo">
+        <property role="13z3hU" value="AtomicComponent" />
+        <property role="13z3e$" value="15" />
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RI5g" role="13z3mo">
+        <property role="13z3hU" value="ProvidedPort" />
+        <property role="13z3e$" value="16" />
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RI5u" role="13z3mo">
+        <property role="13z3hU" value="ClientServerInterface" />
+        <property role="13z3e$" value="17" />
+        <node concept="2ik0M_" id="2K9dotEBlwb" role="13z3hJ">
+          <property role="TrG5h" value="name" />
+          <node concept="13yNan" id="2K9dotEBlwc" role="2ik0Q0">
+            <node concept="13yPN0" id="2K9dotEBlwd" role="2F1HV6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RI6G" role="13z3mp">
+        <property role="aCCiF" value="Contents" />
+        <ref role="13xwDU" node="3dPnTp7RI4M" />
+        <ref role="13xwDP" node="3dPnTp7RI4H" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RI6L" role="13z3mp">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDU" node="3dPnTp7RI4U" />
+        <ref role="13xwDP" node="3dPnTp7RI4M" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RI6T" role="13z3mp">
+        <property role="aCCiF" value="component" />
+        <ref role="13xwDP" node="3dPnTp7RI4U" />
+        <ref role="13xwDU" node="3dPnTp7RI54" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RI73" role="13z3mp">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDP" node="3dPnTp7RI54" />
+        <ref role="13xwDU" node="3dPnTp7RI5g" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RI7f" role="13z3mp">
+        <property role="aCCiF" value="intf" />
+        <ref role="13xwDP" node="3dPnTp7RI5g" />
+        <ref role="13xwDU" node="3dPnTp7RI5u" />
+      </node>
+    </node>
+    <node concept="1jGXV2" id="3dPnTp7RI9i" role="2udmAx">
+      <ref role="13xwDP" node="3dPnTp7RI6d" />
+      <ref role="13xwDU" node="3dPnTp7RI4U" />
+    </node>
+    <node concept="1jGXV2" id="3dPnTp7RI9k" role="2udmAx">
+      <ref role="13xwDU" node="3dPnTp7RI5u" />
+      <ref role="13xwDP" node="3dPnTp7RI9n" />
+    </node>
+  </node>
+</model>
+
