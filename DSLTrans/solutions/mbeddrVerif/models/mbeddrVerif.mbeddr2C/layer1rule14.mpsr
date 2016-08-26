@@ -44,63 +44,41 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="3dPnTp7RHRy">
-    <property role="TrG5h" value="layer1rule11" />
-    <node concept="3GsvpM" id="3dPnTp7RHRz" role="2ik0Mo">
-      <node concept="1jGXXa" id="3dPnTp7RHRM" role="1jGXX7">
-        <property role="13z3hU" value="TypeDef" />
-        <property role="13z3e$" value="TD" />
+  <node concept="1jGXXK" id="3dPnTp7RHUd">
+    <property role="TrG5h" value="layer1rule14" />
+    <node concept="3GsvpM" id="3dPnTp7RHUe" role="2ik0Mo">
+      <node concept="1jGXXa" id="3dPnTp7RHUq" role="1jGXX7">
+        <property role="13z3hU" value="StringType" />
+        <property role="13z3e$" value="60" />
       </node>
-      <node concept="1jGXXa" id="3dPnTp7RHRO" role="1jGXX7">
-        <property role="13z3hU" value="Member" />
-        <property role="13z3e$" value="Member" />
+      <node concept="1jGXXa" id="3dPnTp7RHUs" role="1jGXX7">
+        <property role="13z3hU" value="FunctionPrototype" />
+        <property role="13z3e$" value="61" />
       </node>
-      <node concept="1jGXXa" id="3dPnTp7RHRR" role="1jGXX7">
-        <property role="13z3hU" value="PointerType" />
-        <property role="13z3e$" value="PntrType" />
-      </node>
-      <node concept="1jGXXa" id="3dPnTp7RHRV" role="1jGXX7">
-        <property role="13z3hU" value="TypeDefType" />
-        <property role="13z3e$" value="TDType" />
-      </node>
-      <node concept="1jGXVd" id="3dPnTp7RHSm" role="2ik0Ml">
+      <node concept="1jGXVd" id="3dPnTp7RHUx" role="2ik0Ml">
         <property role="aCCiF" value="type" />
-        <ref role="13xwDP" node="3dPnTp7RHRO" />
-        <ref role="13xwDU" node="3dPnTp7RHRR" />
-      </node>
-      <node concept="1jGXVd" id="3dPnTp7RHSo" role="2ik0Ml">
-        <property role="aCCiF" value="baseType" />
-        <ref role="13xwDP" node="3dPnTp7RHRR" />
-        <ref role="13xwDU" node="3dPnTp7RHRV" />
-      </node>
-      <node concept="1jGXVd" id="3dPnTp7RHSr" role="2ik0Ml">
-        <property role="aCCiF" value="typeDef" />
-        <ref role="13xwDU" node="3dPnTp7RHRM" />
-        <ref role="13xwDP" node="3dPnTp7RHRV" />
+        <ref role="13xwDP" node="3dPnTp7RHUs" />
+        <ref role="13xwDU" node="3dPnTp7RHUq" />
       </node>
     </node>
-    <node concept="3GsvpN" id="3dPnTp7RHR$" role="2ik0Mu">
-      <node concept="2ik0NV" id="3dPnTp7RHRC" role="13z3mo">
-        <property role="13z3hU" value="ClientServerInterface" />
-        <property role="13z3e$" value="CSI" />
+    <node concept="3GsvpN" id="3dPnTp7RHUf" role="2ik0Mu">
+      <node concept="2ik0NV" id="3dPnTp7RHUh" role="13z3mo">
+        <property role="13z3hU" value="Operation" />
+        <property role="13z3e$" value="58" />
       </node>
-      <node concept="2ik0NV" id="3dPnTp7RHRI" role="13z3mo">
-        <property role="13z3hU" value="RequiredPort" />
-        <property role="13z3e$" value="RP" />
+      <node concept="2ik0NV" id="3dPnTp7RHUm" role="13z3mo">
+        <property role="13z3hU" value="StringType" />
+        <property role="13z3e$" value="59" />
       </node>
-      <node concept="1jGXVw" id="3dPnTp7RHSk" role="13z3mp">
-        <property role="aCCiF" value="intf" />
-        <ref role="13xwDP" node="3dPnTp7RHRI" />
-        <ref role="13xwDU" node="3dPnTp7RHRC" />
+      <node concept="1jGXVw" id="3dPnTp7RHUv" role="13z3mp">
+        <property role="aCCiF" value="type" />
+        <ref role="13xwDP" node="3dPnTp7RHUh" />
+        <ref role="13xwDU" node="3dPnTp7RHUm" />
       </node>
     </node>
-    <node concept="1jGXV2" id="3dPnTp7RHSN" role="2udmAx">
-      <ref role="13xwDP" node="3dPnTp7RHRO" />
-      <ref role="13xwDU" node="3dPnTp7RHRI" />
-    </node>
-    <node concept="1jGXV2" id="3dPnTp7RHSP" role="2udmAx">
-      <ref role="13xwDU" node="3dPnTp7RHRC" />
-      <ref role="13xwDP" node="3dPnTp7RHRM" />
+    <node concept="1jGXV2" id="3dPnTp7RHUz" role="2udmAx">
+      <ref role="13xwDP" node="3dPnTp7RHUs" />
+      <ref role="13xwDU" node="3dPnTp7RHUh" />
     </node>
   </node>
 </model>

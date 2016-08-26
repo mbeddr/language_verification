@@ -11,15 +11,6 @@
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
         <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
-      <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
-        <child id="7049464676098553447" name="atom" index="2ik0My" />
-      </concept>
-      <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
-        <property id="7049464676098553445" name="atom" index="2ik0Mw" />
-      </concept>
-      <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
-        <child id="7049464676098553471" name="value" index="2ik0MU" />
-      </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
@@ -32,9 +23,7 @@
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
       <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
       <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
-      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
-        <child id="7049464676098553451" name="attributes" index="2ik0MI" />
-      </concept>
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
       <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
         <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
@@ -55,61 +44,45 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="4v3zQDeycy8">
-    <property role="TrG5h" value="layer1Rule7" />
-    <node concept="3GsvpM" id="4v3zQDeycy9" role="2ik0Mo">
-      <node concept="1jGXXa" id="4v3zQDeycyl" role="1jGXX7">
-        <property role="13z3hU" value="StructDeclaration" />
-        <property role="13z3e$" value="31" />
-        <node concept="2ik0MC" id="4v3zQDeycyw" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="4v3zQDeycyx" role="2ik0MU">
-            <node concept="2ik0MB" id="4v3zQDeycyy" role="2ik0My">
-              <property role="2ik0Mw" value="AtomicComponentStructCData" />
-            </node>
-          </node>
-        </node>
+  <node concept="1jGXXK" id="4v3zQDeycvi">
+    <property role="TrG5h" value="layer1rule3" />
+    <node concept="3GsvpM" id="4v3zQDeycvj" role="2ik0Mo">
+      <node concept="1jGXXa" id="4v3zQDeycvs" role="1jGXX7">
+        <property role="13z3hU" value="FunctionRefType" />
+        <property role="13z3e$" value="15" />
       </node>
-      <node concept="1jGXXa" id="4v3zQDeycyn" role="1jGXX7">
-        <property role="13z3hU" value="ImplementationModule" />
-        <property role="13z3e$" value="32" />
-        <node concept="2ik0MC" id="4v3zQDeycyq" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="4v3zQDeycyr" role="2ik0MU">
-            <node concept="2ik0MB" id="4v3zQDeycys" role="2ik0My">
-              <property role="2ik0Mw" value="ImplementationModule" />
-            </node>
-          </node>
-        </node>
+      <node concept="1jGXXa" id="4v3zQDeycvw" role="1jGXX7">
+        <property role="13z3hU" value="StringType" />
+        <property role="13z3e$" value="16" />
       </node>
-      <node concept="1jGXVd" id="4v3zQDeycyC" role="2ik0Ml">
-        <property role="aCCiF" value="contents" />
-        <ref role="13xwDP" node="4v3zQDeycyl" />
-        <ref role="13xwDU" node="4v3zQDeycyn" />
+      <node concept="1jGXVd" id="4v3zQDeycvG" role="2ik0Ml">
+        <property role="aCCiF" value="returnType" />
+        <ref role="13xwDU" node="4v3zQDeycvw" />
+        <ref role="13xwDP" node="4v3zQDeycvs" />
       </node>
     </node>
-    <node concept="3GsvpN" id="4v3zQDeycya" role="2ik0Mu">
-      <node concept="2ik0NV" id="4v3zQDeycyc" role="13z3mo">
-        <property role="13z3hU" value="ImplementationModule" />
-        <property role="13z3e$" value="29" />
+    <node concept="3GsvpN" id="4v3zQDeycvk" role="2ik0Mu">
+      <node concept="1jGXVw" id="4v3zQDeycvq" role="13z3mp">
+        <property role="aCCiF" value="type" />
+        <ref role="13xwDU" node="4v3zQDeycvn" />
+        <ref role="13xwDP" node="4v3zQDeycvm" />
       </node>
-      <node concept="2ik0NV" id="4v3zQDeycyh" role="13z3mo">
-        <property role="13z3hU" value="AtomicComponent" />
-        <property role="13z3e$" value="30" />
+      <node concept="2ik0NV" id="4v3zQDeycvm" role="13z3mo">
+        <property role="13z3hU" value="Operation" />
+        <property role="13z3e$" value="13" />
       </node>
-      <node concept="1jGXVw" id="4v3zQDeycyA" role="13z3mp">
-        <property role="aCCiF" value="contants" />
-        <ref role="13xwDU" node="4v3zQDeycyh" />
-        <ref role="13xwDP" node="4v3zQDeycyc" />
+      <node concept="2ik0NV" id="4v3zQDeycvn" role="13z3mo">
+        <property role="13z3hU" value="StringType" />
+        <property role="13z3e$" value="14" />
       </node>
     </node>
-    <node concept="1jGXV2" id="4v3zQDeycyE" role="2udmAx">
-      <ref role="13xwDP" node="4v3zQDeycyn" />
-      <ref role="13xwDU" node="4v3zQDeycyc" />
+    <node concept="1jGXV2" id="4v3zQDeycxO" role="2udmAx">
+      <ref role="13xwDP" node="4v3zQDeycvs" />
+      <ref role="13xwDU" node="4v3zQDeycvm" />
     </node>
-    <node concept="1jGXV2" id="4v3zQDeycyG" role="2udmAx">
-      <ref role="13xwDU" node="4v3zQDeycyh" />
-      <ref role="13xwDP" node="4v3zQDeycyl" />
+    <node concept="1jGXV2" id="5a$qMY50kMR" role="2udmAx">
+      <ref role="13xwDP" node="4v3zQDeycvw" />
+      <ref role="13xwDU" node="4v3zQDeycvn" />
     </node>
   </node>
 </model>

@@ -21,6 +21,9 @@
         <child id="7049464676098553471" name="value" index="2ik0MU" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
+        <property id="1722780940080858386" name="counter" index="KJs$L" />
+      </concept>
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
         <reference id="2796321687636315576" name="target" index="13xwDU" />
@@ -55,61 +58,89 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="4v3zQDeyctg">
-    <property role="TrG5h" value="layer1Rule0" />
-    <node concept="3GsvpM" id="4v3zQDeycth" role="2ik0Mo">
-      <node concept="1jGXXa" id="4v3zQDeyctt" role="1jGXX7">
+  <node concept="1jGXXK" id="3dPnTp7RHSS">
+    <property role="TrG5h" value="layer1rule12" />
+    <node concept="3GsvpM" id="3dPnTp7RHST" role="2ik0Mo">
+      <node concept="1jGXXa" id="3dPnTp7RHSY" role="1jGXX7">
         <property role="13z3hU" value="ImplementationModule" />
-        <property role="13z3e$" value="3" />
-        <node concept="2ik0MC" id="4v3zQDeyctv" role="2ik0MI">
+        <property role="13z3e$" value="IM" />
+        <node concept="2ik0MC" id="3dPnTp7RHTd" role="2ik0MI">
           <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="4v3zQDeyctz" role="2ik0MU">
-            <node concept="2ik0MB" id="4v3zQDeyct_" role="2ik0My">
+          <node concept="2ik0M$" id="3dPnTp7RHTe" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RHTf" role="2ik0My">
               <property role="2ik0Mw" value="ImplementationModule" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXXa" id="4v3zQDeyctD" role="1jGXX7">
-        <property role="13z3e$" value="4" />
-        <property role="13z3hU" value="StructDeclaration" />
-        <node concept="2ik0MC" id="4v3zQDeyctN" role="2ik0MI">
+      <node concept="1jGXXa" id="3dPnTp7RHT0" role="1jGXX7">
+        <property role="13z3hU" value="FunctionPrototype" />
+        <property role="13z3e$" value="FP" />
+        <node concept="2ik0MC" id="3dPnTp7RHTp" role="2ik0MI">
           <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="4v3zQDeyctR" role="2ik0MU">
-            <node concept="2ik0MB" id="4v3zQDeyctT" role="2ik0My">
-              <property role="2ik0Mw" value="ClientServerStructData" />
+          <node concept="2ik0M$" id="3dPnTp7RHTq" role="2ik0MU">
+            <node concept="2ik0MB" id="3dPnTp7RHTr" role="2ik0My">
+              <property role="2ik0Mw" value="ProvidedPortFunctionPrototype" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXVd" id="4v3zQDeyctZ" role="2ik0Ml">
+      <node concept="1jGXVd" id="3dPnTp7RHTv" role="2ik0Ml">
         <property role="aCCiF" value="contents" />
-        <ref role="13xwDU" node="4v3zQDeyctD" />
-        <ref role="13xwDP" node="4v3zQDeyctt" />
+        <ref role="13xwDP" node="3dPnTp7RHSY" />
+        <ref role="13xwDU" node="3dPnTp7RHT0" />
       </node>
     </node>
-    <node concept="3GsvpN" id="4v3zQDeycti" role="2ik0Mu">
-      <node concept="2ik0NV" id="4v3zQDeyctk" role="13z3mo">
-        <property role="13z3e$" value="1" />
+    <node concept="3GsvpN" id="3dPnTp7RHSU" role="2ik0Mu">
+      <property role="KJs$L" value="4" />
+      <node concept="2ik0NV" id="3dPnTp7RHSW" role="13z3mo">
         <property role="13z3hU" value="ImplementationModule" />
+        <property role="13z3e$" value="IM" />
       </node>
-      <node concept="2ik0NV" id="4v3zQDeyctp" role="13z3mo">
-        <property role="13z3e$" value="2" />
+      <node concept="2ik0NV" id="5a$qMY50kNB" role="13z3mo">
+        <property role="13z3e$" value="AC" />
+        <property role="13z3hU" value="AtomicComponent" />
+      </node>
+      <node concept="2ik0NV" id="5a$qMY50kNJ" role="13z3mo">
+        <property role="13z3e$" value="PPort" />
+        <property role="13z3hU" value="ProvidedPort" />
+      </node>
+      <node concept="2ik0NV" id="5a$qMY50kNT" role="13z3mo">
+        <property role="13z3e$" value="CSI" />
         <property role="13z3hU" value="ClientServerInterface" />
       </node>
-      <node concept="1jGXVw" id="4v3zQDeyctX" role="13z3mp">
+      <node concept="2ik0NV" id="5a$qMY50kO5" role="13z3mo">
+        <property role="13z3e$" value="Op" />
+        <property role="13z3hU" value="Operation" />
+      </node>
+      <node concept="1jGXVw" id="5a$qMY50kOc" role="13z3mp">
         <property role="aCCiF" value="contents" />
-        <ref role="13xwDP" node="4v3zQDeyctk" />
-        <ref role="13xwDU" node="4v3zQDeyctp" />
+        <ref role="13xwDP" node="3dPnTp7RHSW" />
+        <ref role="13xwDU" node="5a$qMY50kNB" />
+      </node>
+      <node concept="1jGXVw" id="5a$qMY50kOh" role="13z3mp">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDP" node="5a$qMY50kNB" />
+        <ref role="13xwDU" node="5a$qMY50kNJ" />
+      </node>
+      <node concept="1jGXVw" id="5a$qMY50kOp" role="13z3mp">
+        <property role="aCCiF" value="intf" />
+        <ref role="13xwDP" node="5a$qMY50kNJ" />
+        <ref role="13xwDU" node="5a$qMY50kNT" />
+      </node>
+      <node concept="1jGXVw" id="5a$qMY50kOz" role="13z3mp">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDP" node="5a$qMY50kNT" />
+        <ref role="13xwDU" node="5a$qMY50kO5" />
       </node>
     </node>
-    <node concept="1jGXV2" id="4v3zQDeycxT" role="2udmAx">
-      <ref role="13xwDP" node="4v3zQDeyctt" />
-      <ref role="13xwDU" node="4v3zQDeyctk" />
+    <node concept="1jGXV2" id="3dPnTp7RHTx" role="2udmAx">
+      <ref role="13xwDP" node="3dPnTp7RHSY" />
+      <ref role="13xwDU" node="3dPnTp7RHSW" />
     </node>
-    <node concept="1jGXV2" id="4v3zQDeycxV" role="2udmAx">
-      <ref role="13xwDP" node="4v3zQDeyctD" />
-      <ref role="13xwDU" node="4v3zQDeyctp" />
+    <node concept="1jGXV2" id="3dPnTp7RHTz" role="2udmAx">
+      <ref role="13xwDP" node="3dPnTp7RHT0" />
+      <ref role="13xwDU" node="5a$qMY50kO5" />
     </node>
   </node>
 </model>

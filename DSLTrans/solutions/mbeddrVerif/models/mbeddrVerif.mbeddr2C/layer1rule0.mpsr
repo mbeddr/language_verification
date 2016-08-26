@@ -9,15 +9,7 @@
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
-      </concept>
-      <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
-        <child id="7049464676098553447" name="atom" index="2ik0My" />
-      </concept>
-      <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
-        <property id="7049464676098553445" name="atom" index="2ik0Mw" />
-      </concept>
-      <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
-        <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
@@ -30,9 +22,8 @@
       </concept>
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
       <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
-      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
-        <child id="7049464676098553451" name="attributes" index="2ik0MI" />
-      </concept>
+      <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
       <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
         <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
@@ -53,52 +44,45 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="3dPnTp7RHSS">
-    <property role="TrG5h" value="layer1Rule12" />
-    <node concept="3GsvpM" id="3dPnTp7RHST" role="2ik0Mo">
-      <node concept="1jGXXa" id="3dPnTp7RHSY" role="1jGXX7">
+  <node concept="1jGXXK" id="4v3zQDeyctg">
+    <property role="TrG5h" value="layer1rule0" />
+    <node concept="3GsvpM" id="4v3zQDeycth" role="2ik0Mo">
+      <node concept="1jGXXa" id="4v3zQDeyctt" role="1jGXX7">
         <property role="13z3hU" value="ImplementationModule" />
-        <property role="13z3e$" value="52" />
-        <node concept="2ik0MC" id="3dPnTp7RHTd" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RHTe" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RHTf" role="2ik0My">
-              <property role="2ik0Mw" value="ImplementationModule" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3e$" value="3" />
       </node>
-      <node concept="1jGXXa" id="3dPnTp7RHT0" role="1jGXX7">
-        <property role="13z3hU" value="FunctionPrototype" />
-        <property role="13z3e$" value="53" />
-        <node concept="2ik0MC" id="3dPnTp7RHTp" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RHTq" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RHTr" role="2ik0My">
-              <property role="2ik0Mw" value="ProvidedPortFunctionPrototype" />
-            </node>
-          </node>
-        </node>
+      <node concept="1jGXXa" id="4v3zQDeyctD" role="1jGXX7">
+        <property role="13z3e$" value="4" />
+        <property role="13z3hU" value="StructDeclaration" />
       </node>
-      <node concept="1jGXVd" id="3dPnTp7RHTv" role="2ik0Ml">
+      <node concept="1jGXVd" id="4v3zQDeyctZ" role="2ik0Ml">
         <property role="aCCiF" value="contents" />
-        <ref role="13xwDP" node="3dPnTp7RHSY" />
-        <ref role="13xwDU" node="3dPnTp7RHT0" />
+        <ref role="13xwDU" node="4v3zQDeyctD" />
+        <ref role="13xwDP" node="4v3zQDeyctt" />
       </node>
     </node>
-    <node concept="3GsvpN" id="3dPnTp7RHSU" role="2ik0Mu">
-      <node concept="2ik0NV" id="3dPnTp7RHSW" role="13z3mo">
+    <node concept="3GsvpN" id="4v3zQDeycti" role="2ik0Mu">
+      <node concept="2ik0NV" id="4v3zQDeyctk" role="13z3mo">
+        <property role="13z3e$" value="1" />
         <property role="13z3hU" value="ImplementationModule" />
-        <property role="13z3e$" value="51" />
+      </node>
+      <node concept="2ik0NV" id="4v3zQDeyctp" role="13z3mo">
+        <property role="13z3e$" value="2" />
+        <property role="13z3hU" value="ClientServerInterface" />
+      </node>
+      <node concept="1jGXVw" id="4v3zQDeyctX" role="13z3mp">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDP" node="4v3zQDeyctk" />
+        <ref role="13xwDU" node="4v3zQDeyctp" />
       </node>
     </node>
-    <node concept="1jGXV2" id="3dPnTp7RHTx" role="2udmAx">
-      <ref role="13xwDP" node="3dPnTp7RHSY" />
-      <ref role="13xwDU" node="3dPnTp7RHSW" />
+    <node concept="1jGXV2" id="4v3zQDeycxT" role="2udmAx">
+      <ref role="13xwDP" node="4v3zQDeyctt" />
+      <ref role="13xwDU" node="4v3zQDeyctk" />
     </node>
-    <node concept="1jGXV2" id="3dPnTp7RHTz" role="2udmAx">
-      <ref role="13xwDP" node="3dPnTp7RHT0" />
-      <ref role="13xwDU" node="3dPnTp7RHSW" />
+    <node concept="1jGXV2" id="4v3zQDeycxV" role="2udmAx">
+      <ref role="13xwDP" node="4v3zQDeyctD" />
+      <ref role="13xwDU" node="4v3zQDeyctp" />
     </node>
   </node>
 </model>

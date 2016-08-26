@@ -11,15 +11,6 @@
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
         <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
-      <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
-        <child id="7049464676098553447" name="atom" index="2ik0My" />
-      </concept>
-      <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
-        <property id="7049464676098553445" name="atom" index="2ik0Mw" />
-      </concept>
-      <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
-        <child id="7049464676098553471" name="value" index="2ik0MU" />
-      </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
@@ -30,11 +21,11 @@
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
       </concept>
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
+      <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
       <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
-      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
-        <child id="7049464676098553451" name="attributes" index="2ik0MI" />
-      </concept>
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
       <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
+        <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
       </concept>
     </language>
@@ -53,56 +44,45 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="4v3zQDeycuE">
-    <property role="TrG5h" value="layer1Rule2" />
-    <node concept="3GsvpM" id="4v3zQDeycuF" role="2ik0Mo">
-      <node concept="1jGXXa" id="4v3zQDeycuX" role="1jGXX7">
-        <property role="13z3hU" value="FunctionFefType" />
-        <property role="13z3e$" value="11" />
-        <node concept="2ik0MC" id="4v3zQDeycv6" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="4v3zQDeycv7" role="2ik0MU">
-            <node concept="2ik0MB" id="4v3zQDeycv8" role="2ik0My">
-              <property role="2ik0Mw" value="FunctionFefType" />
-            </node>
-          </node>
-        </node>
+  <node concept="1jGXXK" id="4v3zQDeycu1">
+    <property role="TrG5h" value="layer1rule1" />
+    <node concept="3GsvpM" id="4v3zQDeycu2" role="2ik0Mo">
+      <node concept="1jGXXa" id="4v3zQDeycu3" role="1jGXX7">
+        <property role="13z3e$" value="7" />
+        <property role="13z3hU" value="StructDeclaration" />
       </node>
-      <node concept="1jGXXa" id="4v3zQDeycuZ" role="1jGXX7">
-        <property role="13z3hU" value="VoidType" />
-        <property role="13z3e$" value="12" />
-        <node concept="2ik0MC" id="4v3zQDeycvc" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="4v3zQDeycvd" role="2ik0MU">
-            <node concept="2ik0MB" id="4v3zQDeycve" role="2ik0My">
-              <property role="2ik0Mw" value="VoidType" />
-            </node>
-          </node>
-        </node>
+      <node concept="1jGXXa" id="4v3zQDeycu5" role="1jGXX7">
+        <property role="13z3hU" value="CFunctionPointerStructMember" />
+        <property role="13z3e$" value="8" />
+      </node>
+      <node concept="1jGXVd" id="4v3zQDeycu8" role="2ik0Ml">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDU" node="4v3zQDeycu5" />
+        <ref role="13xwDP" node="4v3zQDeycu3" />
       </node>
     </node>
-    <node concept="3GsvpN" id="4v3zQDeycuG" role="2ik0Mu">
-      <node concept="2ik0NV" id="4v3zQDeycuI" role="13z3mo">
+    <node concept="3GsvpN" id="4v3zQDeycuf" role="2ik0Mu">
+      <node concept="2ik0NV" id="4v3zQDeycuh" role="13z3mo">
+        <property role="13z3hU" value="ClientServerInterface" />
+        <property role="13z3e$" value="5" />
+      </node>
+      <node concept="2ik0NV" id="4v3zQDeycum" role="13z3mo">
+        <property role="13z3e$" value="6" />
         <property role="13z3hU" value="Operation" />
-        <property role="13z3e$" value="9" />
       </node>
-      <node concept="2ik0NV" id="4v3zQDeycuN" role="13z3mo">
-        <property role="13z3hU" value="VoidType" />
-        <property role="13z3e$" value="10" />
-      </node>
-      <node concept="1jGXVw" id="4v3zQDeycuR" role="13z3mp">
-        <property role="aCCiF" value="type" />
-        <ref role="13xwDU" node="4v3zQDeycuN" />
-        <ref role="13xwDP" node="4v3zQDeycuI" />
+      <node concept="1jGXVw" id="5a$qMY50kMN" role="13z3mp">
+        <property role="aCCiF" value="contents" />
+        <ref role="13xwDP" node="4v3zQDeycuh" />
+        <ref role="13xwDU" node="4v3zQDeycum" />
       </node>
     </node>
-    <node concept="1jGXV2" id="4v3zQDeycy3" role="2udmAx">
-      <ref role="13xwDU" node="4v3zQDeycuI" />
-      <ref role="13xwDP" node="4v3zQDeycuX" />
+    <node concept="1jGXV2" id="4v3zQDeycxY" role="2udmAx">
+      <ref role="13xwDU" node="4v3zQDeycuh" />
+      <ref role="13xwDP" node="4v3zQDeycu3" />
     </node>
-    <node concept="1jGXV2" id="4v3zQDeycy5" role="2udmAx">
-      <ref role="13xwDP" node="4v3zQDeycuZ" />
-      <ref role="13xwDU" node="4v3zQDeycuN" />
+    <node concept="1jGXV2" id="4v3zQDeycy0" role="2udmAx">
+      <ref role="13xwDP" node="4v3zQDeycu5" />
+      <ref role="13xwDU" node="4v3zQDeycum" />
     </node>
   </node>
 </model>
