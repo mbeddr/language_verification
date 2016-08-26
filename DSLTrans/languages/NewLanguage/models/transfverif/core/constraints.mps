@@ -120,6 +120,7 @@
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -620,15 +621,24 @@
         <node concept="3clFbS" id="5paAjb8wE7R" role="2VODD2">
           <node concept="3clFbF" id="5paAjb8wEfl" role="3cqZAp">
             <node concept="3cpWs3" id="5paAjb8wQLd" role="3clFbG">
-              <node concept="3cpWs3" id="5paAjb8wQAj" role="3uHU7B">
-                <node concept="2OqwBi" id="5paAjb8wN4B" role="3uHU7B">
-                  <node concept="Bn53e" id="5paAjb8wMZF" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="5paAjb8wNps" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="3cpWs3" id="4MaYa8s4Qcn" role="3uHU7B">
+                <node concept="2OqwBi" id="4MaYa8s4KAf" role="3uHU7B">
+                  <node concept="2OqwBi" id="4MaYa8s4Kq7" role="2Oq$k0">
+                    <node concept="Bn53e" id="4MaYa8s4Kmu" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="4MaYa8s4KvB" role="2OqNvi">
+                      <node concept="1xMEDy" id="4MaYa8s4KvD" role="1xVPHs">
+                        <node concept="chp4Y" id="4MaYa8s4KxN" role="ri$Ld">
+                          <ref role="cht4Q" to="i3vy:2rexW9_gF9u" resolve="MatchClass" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="4MaYa8s4KJF" role="2OqNvi">
+                    <ref role="3TsBF5" to="i3vy:2rexW9_gFhA" resolve="ID" />
                   </node>
                 </node>
-                <node concept="Xl_RD" id="5paAjb8wQCt" role="3uHU7w">
-                  <property role="Xl_RC" value=" : Match Attribute " />
+                <node concept="Xl_RD" id="4MaYa8s4QfS" role="3uHU7w">
+                  <property role="Xl_RC" value="." />
                 </node>
               </node>
               <node concept="2OqwBi" id="1vCz2cBlu7q" role="3uHU7w">
