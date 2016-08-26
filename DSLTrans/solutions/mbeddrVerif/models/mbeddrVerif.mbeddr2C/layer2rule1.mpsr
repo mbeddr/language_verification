@@ -9,15 +9,7 @@
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
-      </concept>
-      <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
-        <child id="7049464676098553447" name="atom" index="2ik0My" />
-      </concept>
-      <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
-        <property id="7049464676098553445" name="atom" index="2ik0Mw" />
-      </concept>
-      <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
-        <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
@@ -30,9 +22,8 @@
       </concept>
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
       <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
-      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
-        <child id="7049464676098553451" name="attributes" index="2ik0MI" />
-      </concept>
+      <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
       <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
         <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
@@ -53,52 +44,41 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="3dPnTp7RHVt">
-    <property role="TrG5h" value="layer2Rule0" />
-    <node concept="3GsvpM" id="3dPnTp7RHVu" role="2ik0Mo">
-      <node concept="1jGXXa" id="3dPnTp7RHVz" role="1jGXX7">
-        <property role="13z3hU" value="PointerType" />
-        <property role="13z3e$" value="67" />
-        <node concept="2ik0MC" id="3dPnTp7RHVC" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RHVD" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RHVE" role="2ik0My">
-              <property role="2ik0Mw" value="InstancePointer" />
-            </node>
-          </node>
-        </node>
+  <node concept="1jGXXK" id="3dPnTp7RHVV">
+    <property role="TrG5h" value="layer2rule1" />
+    <node concept="3GsvpM" id="3dPnTp7RHVW" role="2ik0Mo">
+      <node concept="1jGXXa" id="3dPnTp7RHW8" role="1jGXX7">
+        <property role="13z3hU" value="StringType" />
+        <property role="13z3e$" value="ST" />
       </node>
-      <node concept="1jGXXa" id="3dPnTp7RHV_" role="1jGXX7">
-        <property role="13z3hU" value="FunctionRefType" />
-        <property role="13z3e$" value="68" />
-        <node concept="2ik0MC" id="3dPnTp7RHVI" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RHVJ" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RHVK" role="2ik0My">
-              <property role="2ik0Mw" value="FunctionRefType" />
-            </node>
-          </node>
-        </node>
+      <node concept="1jGXXa" id="3dPnTp7RHWa" role="1jGXX7">
+        <property role="13z3hU" value="Argument" />
+        <property role="13z3e$" value="Arg" />
       </node>
-      <node concept="1jGXVd" id="3dPnTp7RHVT" role="2ik0Ml">
-        <property role="aCCiF" value="ArgTypes" />
-        <ref role="13xwDP" node="3dPnTp7RHV_" />
-        <ref role="13xwDU" node="3dPnTp7RHVz" />
+      <node concept="1jGXVd" id="3dPnTp7RHWl" role="2ik0Ml">
+        <property role="aCCiF" value="type" />
+        <ref role="13xwDU" node="3dPnTp7RHW8" />
+        <ref role="13xwDP" node="3dPnTp7RHWa" />
       </node>
     </node>
-    <node concept="3GsvpN" id="3dPnTp7RHVv" role="2ik0Mu">
-      <node concept="2ik0NV" id="3dPnTp7RHVx" role="13z3mo">
-        <property role="13z3hU" value="Operation" />
-        <property role="13z3e$" value="66" />
+    <node concept="3GsvpN" id="3dPnTp7RHVX" role="2ik0Mu">
+      <node concept="2ik0NV" id="3dPnTp7RHVZ" role="13z3mo">
+        <property role="13z3hU" value="StringType" />
+        <property role="13z3e$" value="ST" />
+      </node>
+      <node concept="2ik0NV" id="3dPnTp7RHW4" role="13z3mo">
+        <property role="13z3hU" value="OperationParameter" />
+        <property role="13z3e$" value="OP" />
+      </node>
+      <node concept="1jGXVw" id="3dPnTp7RHWj" role="13z3mp">
+        <property role="aCCiF" value="type" />
+        <ref role="13xwDU" node="3dPnTp7RHVZ" />
+        <ref role="13xwDP" node="3dPnTp7RHW4" />
       </node>
     </node>
-    <node concept="1jGXV2" id="3dPnTp7RHVO" role="2udmAx">
-      <ref role="13xwDU" node="3dPnTp7RHVx" />
-      <ref role="13xwDP" node="3dPnTp7RHVz" />
-    </node>
-    <node concept="1jGXV2" id="3dPnTp7RHVQ" role="2udmAx">
-      <ref role="13xwDP" node="3dPnTp7RHV_" />
-      <ref role="13xwDU" node="3dPnTp7RHVx" />
+    <node concept="1jGXV2" id="3dPnTp7RHWn" role="2udmAx">
+      <ref role="13xwDU" node="3dPnTp7RHW4" />
+      <ref role="13xwDP" node="3dPnTp7RHWa" />
     </node>
   </node>
 </model>
