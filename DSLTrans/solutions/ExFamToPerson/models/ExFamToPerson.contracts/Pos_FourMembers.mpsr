@@ -20,7 +20,6 @@
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
       </concept>
-      <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
       <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
       <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
       <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
@@ -37,6 +36,7 @@
         <child id="4439542802417895569" name="postCondition" index="aREgT" />
         <child id="4439542802417895572" name="traceLinks" index="aREgW" />
       </concept>
+      <concept id="2186611055801906832" name="SyVOLT.structure.ContractBackwardLink" flags="ng" index="2lmX6V" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -130,21 +130,21 @@
         <ref role="13xwDP" node="1AcaMXhA0HX" />
       </node>
     </node>
-    <node concept="1jGXV2" id="1AcaMXhA0K0" role="aREgW">
+    <node concept="2lmX6V" id="1TopMIb1I$0" role="aREgW">
       <ref role="13xwDP" node="1AcaMXhA0In" />
       <ref role="13xwDU" node="1AcaMXhA0GM" />
     </node>
-    <node concept="1jGXV2" id="1AcaMXhA0K2" role="aREgW">
-      <ref role="13xwDU" node="1AcaMXhA0GR" />
+    <node concept="2lmX6V" id="1TopMIb22HR" role="aREgW">
       <ref role="13xwDP" node="1AcaMXhA0Jk" />
+      <ref role="13xwDU" node="1AcaMXhA0GR" />
     </node>
-    <node concept="1jGXV2" id="1AcaMXhA0K5" role="aREgW">
-      <ref role="13xwDU" node="1AcaMXhA0H0" />
+    <node concept="2lmX6V" id="1TopMIb22I4" role="aREgW">
       <ref role="13xwDP" node="1AcaMXhA0Jw" />
+      <ref role="13xwDU" node="1AcaMXhA0H0" />
     </node>
-    <node concept="1jGXV2" id="1AcaMXhA0K9" role="aREgW">
-      <ref role="13xwDU" node="1AcaMXhA0Hb" />
+    <node concept="2lmX6V" id="1TopMIb22Ij" role="aREgW">
       <ref role="13xwDP" node="1AcaMXhA0J_" />
+      <ref role="13xwDU" node="1AcaMXhA0Hb" />
     </node>
   </node>
 </model>

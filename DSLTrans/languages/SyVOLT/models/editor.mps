@@ -35,7 +35,9 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
@@ -835,6 +837,65 @@
     <ref role="1XX52x" to="yeb1:3UloD6l$N8b" resolve="Wildcard" />
     <node concept="PMmxH" id="3UloD6l$N8m" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1TopMIb0Vqo">
+    <property role="3GE5qa" value="Links" />
+    <ref role="1XX52x" to="yeb1:1TopMIb0Vqg" resolve="ContractBackwardLink" />
+    <node concept="3EZMnI" id="1TopMIb0VsK" role="2wV5jI">
+      <node concept="2iRkQZ" id="1TopMIb0VsL" role="2iSdaV" />
+      <node concept="3EZMnI" id="5paAjb8vWLb" role="3EZMnx">
+        <node concept="2iRfu4" id="5paAjb8vWLc" role="2iSdaV" />
+        <node concept="1iCGBv" id="5paAjb8vWLd" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:2rexW9_i8QR" />
+          <node concept="1sVBvm" id="5paAjb8vWLe" role="1sWHZn">
+            <node concept="3F0A7n" id="5paAjb8vWLf" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="i3vy:2rexW9_gFhA" resolve="ID" />
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="5paAjb8vWLg" role="3EZMnx">
+          <property role="3F0ifm" value="----" />
+        </node>
+        <node concept="PMmxH" id="5paAjb8vWLh" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="3F0ifn" id="5paAjb8vWLi" role="3EZMnx">
+          <property role="3F0ifm" value="---&gt;" />
+        </node>
+        <node concept="1iCGBv" id="5paAjb8vWLj" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:2rexW9_i8QS" />
+          <node concept="1sVBvm" id="5paAjb8vWLk" role="1sWHZn">
+            <node concept="3F0A7n" id="5paAjb8vWLl" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="i3vy:2rexW9_gFhA" resolve="ID" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="1TopMIb0Vvw" role="3EZMnx">
+        <node concept="2iRfu4" id="1TopMIb0Vvx" role="2iSdaV" />
+        <node concept="3F0ifn" id="1TopMIb0VrM" role="3EZMnx">
+          <property role="3F0ifm" value="Precondition includes traces:" />
+          <node concept="VechU" id="1TopMIb1ENa" role="3F10Kt">
+            <property role="Vb096" value="darkGray" />
+          </node>
+          <node concept="Vb9p2" id="1TopMIb1EOU" role="3F10Kt">
+            <property role="Vbekb" value="BOLD_ITALIC" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="1TopMIb0Vw5" role="3EZMnx">
+          <ref role="1NtTu8" to="yeb1:1TopMIb0VmV" resolve="backwardInPre" />
+          <ref role="1k5W1q" to="r4b4:y826GFAP8A" resolve="Boolean" />
+          <node concept="VechU" id="1TopMIb1SEi" role="3F10Kt">
+            <property role="Vb096" value="blue" />
+          </node>
+        </node>
+        <node concept="VSNWy" id="1TopMIb1LW2" role="3F10Kt">
+          <property role="1lJzqX" value="10" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
