@@ -16,6 +16,7 @@
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
+    <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -51,7 +52,9 @@
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
+        <property id="1186403771423" name="style" index="Vbekb" />
+      </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -712,9 +715,9 @@
           </node>
         </node>
       </node>
-      <node concept="3F2HdR" id="3QsrawRfy$C" role="3EZMnx">
+      <node concept="3F2HdR" id="2uM0u1SEs8m" role="3EZMnx">
         <ref role="1NtTu8" to="rr4f:3ky2qXA$ttF" />
-        <node concept="2iRkQZ" id="3QsrawRfy$E" role="2czzBx" />
+        <node concept="2iRkQZ" id="2uM0u1SEs8o" role="2czzBx" />
       </node>
       <node concept="gc7cB" id="2rexW9_h3C7" role="3EZMnx">
         <node concept="3VJUX4" id="2rexW9_h3C9" role="3YsKMw">
@@ -2237,6 +2240,26 @@
       </node>
       <node concept="3C0NmK" id="6pYRU8YwWKu" role="3F10Kt">
         <property role="Vb096" value="darkGray" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2uM0u1SErYu">
+    <property role="3GE5qa" value="Elements" />
+    <ref role="1XX52x" to="rr4f:2uM0u1SErYk" resolve="RulePointer" />
+    <node concept="3EZMnI" id="2uM0u1SErYL" role="2wV5jI">
+      <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+      <node concept="1iCGBv" id="2uM0u1SErYY" role="3EZMnx">
+        <ref role="1NtTu8" to="rr4f:2uM0u1SErYl" />
+        <node concept="1sVBvm" id="2uM0u1SErZ0" role="1sWHZn">
+          <node concept="3F0A7n" id="2uM0u1SErZd" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="2uM0u1SErYO" role="2iSdaV" />
+      <node concept="Vb9p2" id="2uM0u1SEN$x" role="3F10Kt">
+        <property role="Vbekb" value="PLAIN" />
       </node>
     </node>
   </node>

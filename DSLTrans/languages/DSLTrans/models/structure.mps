@@ -111,14 +111,14 @@
     <property role="TrG5h" value="Layer" />
     <property role="3GE5qa" value="Elements" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3ky2qXA$ttD" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="3ky2qXA$ttF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rules" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3ky2qXA$trv" resolve="Rule" />
+      <ref role="20lvS9" node="2uM0u1SErYk" resolve="RulePointer" />
+    </node>
+    <node concept="PrWs8" id="3ky2qXA$ttD" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyj" id="6pYRU8YvRZG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -141,6 +141,18 @@
     <property role="3GE5qa" value="Elements" />
     <property role="TrG5h" value="ApplyModel" />
     <ref role="1TJDcQ" to="i3vy:3ky2qXA$trz" resolve="AbstractApplier" />
+  </node>
+  <node concept="1TIwiD" id="2uM0u1SErYk">
+    <property role="1pbfSe" value="1604599436" />
+    <property role="3GE5qa" value="Elements" />
+    <property role="TrG5h" value="RulePointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2uM0u1SErYl" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ky2qXA$trv" resolve="Rule" />
+    </node>
   </node>
 </model>
 
