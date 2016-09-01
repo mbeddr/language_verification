@@ -27,6 +27,9 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
+        <property id="1722780940080858386" name="counter" index="KJs$L" />
+      </concept>
       <concept id="2796321687636129109" name="transfverif.core.structure.MatchAttributeString" flags="ng" index="13yNan">
         <child id="4509618979300686935" name="atom" index="2F1HV6" />
       </concept>
@@ -222,6 +225,19 @@
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
+      <node concept="37mRIm" id="57pZU2XST71" role="37mRID">
+        <property role="37mO49" value="5898026252864033201" />
+        <node concept="gqqVs" id="57pZU2XST70" role="37mO4d">
+          <property role="gqqTZ" value="603.0" />
+          <property role="gqqTW" value="45.0" />
+          <property role="gqqTX" value="98.0" />
+          <property role="gqqTy" value="73.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="3GsvpN" id="57pZU2XST6L" role="2ik0Mu">
+      <property role="KJs$L" value="0" />
     </node>
   </node>
 </model>
