@@ -83,6 +83,9 @@
     <node concept="PrWs8" id="6JhS3QZMbfg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="2t59Tl5myiP" role="PzmwI">
+      <ref role="PrY4T" to="i3vy:2t59Tl5mye5" resolve="ILanguageScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="6JhS3QZMbfk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="layer" />
@@ -91,6 +94,10 @@
     </node>
     <node concept="1TJgyi" id="2rexW9_glbF" role="1TKVEl">
       <property role="TrG5h" value="inputLanguage" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2t59Tl5kswl" role="1TKVEl">
+      <property role="TrG5h" value="outputLanguage" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

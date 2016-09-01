@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -301,6 +302,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2rexW9_htGc" resolve="StringAtom" />
     </node>
+    <node concept="1TJgyj" id="2t59Tl5mrcC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="property" />
+      <ref role="20lvS9" node="2t59Tl5my58" resolve="TVPropIDRefExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2rexW9_htG2">
     <property role="1pbfSe" value="1944821052" />
@@ -332,6 +338,9 @@
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2rexW9_gFeP" resolve="Class" />
+    </node>
+    <node concept="PrWs8" id="28y$t0VJj$4" role="PrDN$">
+      <ref role="PrY4T" node="3QsrawRfIw0" resolve="LinkType" />
     </node>
   </node>
   <node concept="PlHQZ" id="2rexW9_i8R$">
@@ -371,6 +380,11 @@
       <property role="TrG5h" value="ID" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyj" id="28y$t0VJxVp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="concept" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1vCz2cBlkkh">
     <property role="1pbfSe" value="1061015860" />
@@ -385,6 +399,32 @@
     <property role="1pbfSe" value="1576310172" />
     <property role="3GE5qa" value="Elements" />
     <property role="TrG5h" value="AbstractMatcherApplier" />
+  </node>
+  <node concept="1TIwiD" id="2t59Tl5my58">
+    <property role="1pbfSe" value="1822378205" />
+    <property role="3GE5qa" value="Util" />
+    <property role="TrG5h" value="TVPropIDRefExpression" />
+    <ref role="1TJDcQ" to="tp25:2iMJRNxD2Yw" resolve="PropertyIdRefExpression" />
+  </node>
+  <node concept="PlHQZ" id="2t59Tl5mye5">
+    <property role="1pbfSe" value="1822378778" />
+    <property role="TrG5h" value="ILanguageScopeProvider" />
+    <node concept="1TJgyj" id="2t59Tl5m1Ze" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="inputLan" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
+    </node>
+    <node concept="1TJgyj" id="2t59Tl5m1Zh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outputLan" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="28y$t0VJLmX">
+    <property role="1pbfSe" value="1575069581" />
+    <property role="3GE5qa" value="Util" />
+    <property role="TrG5h" value="TVConceptIDRefExpression" />
+    <ref role="1TJDcQ" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
   </node>
 </model>
 

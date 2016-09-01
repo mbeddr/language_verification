@@ -287,36 +287,43 @@
       <node concept="2iRkQZ" id="55KrseX0e$X" role="2iSdaV" />
       <node concept="3EZMnI" id="55KrseX0e$J" role="3EZMnx">
         <node concept="2iRfu4" id="55KrseX0e$K" role="2iSdaV" />
-        <node concept="3F0ifn" id="55KrseX0e$G" role="3EZMnx">
-          <property role="3F0ifm" value="DSLTrans Transformation Name:" />
-          <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
-          <node concept="Vb9p2" id="55KrseX1652" role="3F10Kt" />
-          <node concept="VechU" id="55KrseX168s" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
-          </node>
-        </node>
         <node concept="3F0A7n" id="55KrseX0e$S" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
-        <node concept="3XFhqQ" id="55KrseX0l2I" role="3EZMnx" />
-        <node concept="3XFhqQ" id="55KrseX0l2S" role="3EZMnx" />
         <node concept="3XFhqQ" id="55KrseX0l34" role="3EZMnx" />
         <node concept="3F0ifn" id="55KrseX17io" role="3EZMnx">
           <property role="3F0ifm" value="|" />
         </node>
-        <node concept="3F0ifn" id="55KrseX0l3w" role="3EZMnx">
-          <property role="3F0ifm" value="Input Language: " />
-          <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
-          <node concept="Vb9p2" id="55KrseX169p" role="3F10Kt" />
-          <node concept="VechU" id="55KrseX16cO" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
+        <node concept="3EZMnI" id="2t59Tl5mfrQ" role="3EZMnx">
+          <node concept="2iRkQZ" id="2t59Tl5mfrR" role="2iSdaV" />
+          <node concept="3EZMnI" id="2t59Tl5mftE" role="3EZMnx">
+            <node concept="2iRfu4" id="2t59Tl5mftF" role="2iSdaV" />
+            <node concept="3F0ifn" id="2t59Tl5mftN" role="3EZMnx">
+              <property role="3F0ifm" value="Input Language: " />
+              <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
+              <node concept="Vb9p2" id="2t59Tl5mftO" role="3F10Kt" />
+              <node concept="VechU" id="2t59Tl5mftP" role="3F10Kt">
+                <property role="Vb096" value="DARK_GREEN" />
+              </node>
+            </node>
+            <node concept="3F1sOY" id="2t59Tl5m21j" role="3EZMnx">
+              <ref role="1NtTu8" to="i3vy:2t59Tl5m1Ze" />
+            </node>
           </node>
-        </node>
-        <node concept="3F0A7n" id="3QsrawRgEa6" role="3EZMnx">
-          <ref role="1NtTu8" to="rr4f:2rexW9_glbF" resolve="inputLanguage" />
-        </node>
-        <node concept="3F0ifn" id="55KrseX0l4E" role="3EZMnx">
-          <property role="3F0ifm" value="|" />
+          <node concept="3EZMnI" id="2t59Tl5mfue" role="3EZMnx">
+            <node concept="2iRfu4" id="2t59Tl5mfuf" role="2iSdaV" />
+            <node concept="3F0ifn" id="2t59Tl5mfuq" role="3EZMnx">
+              <property role="3F0ifm" value="Ouput Language: " />
+              <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
+              <node concept="Vb9p2" id="2t59Tl5mfur" role="3F10Kt" />
+              <node concept="VechU" id="2t59Tl5mfus" role="3F10Kt">
+                <property role="Vb096" value="DARK_GREEN" />
+              </node>
+            </node>
+            <node concept="3F1sOY" id="2t59Tl5mfuz" role="3EZMnx">
+              <ref role="1NtTu8" to="i3vy:2t59Tl5m1Zh" />
+            </node>
+          </node>
         </node>
         <node concept="VSNWy" id="55KrseX15ic" role="3F10Kt">
           <property role="1lJzqX" value="16" />

@@ -10,7 +10,10 @@
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" />
     <import index="npif" ref="r:51612dd2-562c-4222-89dc-728837d8209f(DSLTrans.textGen)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
+    <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -94,6 +97,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -142,6 +148,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -665,6 +674,40 @@
     </node>
     <node concept="13hLZK" id="3QsrawRj3l1" role="13h7CW">
       <node concept="3clFbS" id="3QsrawRj3l2" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2t59Tl5mnuj">
+    <property role="3GE5qa" value="Elements" />
+    <ref role="13h7C2" to="rr4f:6JhS3QZMbff" resolve="Transformation" />
+    <node concept="13i0hz" id="2t59Tl5mnum" role="13h7CS">
+      <property role="TrG5h" value="inputLanguage" />
+      <node concept="3Tm1VV" id="2t59Tl5mnun" role="1B3o_S" />
+      <node concept="3clFbS" id="2t59Tl5mnuo" role="3clF47">
+        <node concept="3clFbF" id="2t59Tl5mnuv" role="3cqZAp">
+          <node concept="2OqwBi" id="2t59Tl5mpHn" role="3clFbG">
+            <node concept="2OqwBi" id="2t59Tl5mnIH" role="2Oq$k0">
+              <node concept="2OqwBi" id="2t59Tl5mnxS" role="2Oq$k0">
+                <node concept="13iPFW" id="2t59Tl5mnuu" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2t59Tl5mnCT" role="2OqNvi">
+                  <ref role="3Tt5mk" to="rr4f:2t59Tl5m1Ze" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="2t59Tl5mpBu" role="2OqNvi">
+                <ref role="3Tt5mk" to="tp25:34EJa6aIpny" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="2t59Tl5mpLf" role="2OqNvi">
+              <ref role="37wK5l" to="tpeu:34EJa6aIcyj" resolve="getLanguage" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="2t59Tl5mq2m" role="3clF45">
+        <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="2t59Tl5mnuk" role="13h7CW">
+      <node concept="3clFbS" id="2t59Tl5mnul" role="2VODD2" />
     </node>
   </node>
 </model>
