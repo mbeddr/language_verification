@@ -59,26 +59,10 @@
       <node concept="1jGXXa" id="3dPnTp7RHXe" role="1jGXX7">
         <property role="13z3hU" value="FunctionPrototype" />
         <property role="13z3e$" value="FP" />
-        <node concept="2ik0MC" id="3dPnTp7RHX_" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RHXA" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RHXB" role="2ik0My">
-              <property role="2ik0Mw" value="ProvidedPortFunctionPrototype" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="1jGXXa" id="3dPnTp7RHXg" role="1jGXX7">
         <property role="13z3hU" value="Argument" />
         <property role="13z3e$" value="Arg" />
-        <node concept="2ik0MC" id="3dPnTp7RHXF" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RHXG" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RHXH" role="2ik0My">
-              <property role="2ik0Mw" value="ProvidedPortFunctionPrototypeInstanceArgument" />
-            </node>
-          </node>
-        </node>
         <node concept="2ik0MC" id="3dPnTp7RHXL" role="2ik0MI">
           <property role="TrG5h" value="name" />
           <node concept="2ik0M$" id="3dPnTp7RHXS" role="2ik0MU">

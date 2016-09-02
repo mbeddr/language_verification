@@ -70,10 +70,7 @@
         <ref role="13xwDU" node="4MaYa8s4XlJ" />
       </node>
     </node>
-    <node concept="2lmX6V" id="4MaYa8s4XlO" role="aREgW">
-      <ref role="13xwDP" node="4MaYa8s4XlD" />
-      <ref role="13xwDU" node="4MaYa8s4XlB" />
-    </node>
+    <node concept="2lmX6V" id="2t59Tl5ksvW" role="aREgW" />
   </node>
 </model>
 

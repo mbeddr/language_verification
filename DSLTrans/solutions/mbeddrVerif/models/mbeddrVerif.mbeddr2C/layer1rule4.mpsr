@@ -49,7 +49,7 @@
     <node concept="3GsvpM" id="4v3zQDeycvJ" role="2ik0Mo">
       <node concept="1jGXXa" id="4v3zQDeycw8" role="1jGXX7">
         <property role="13z3e$" value="FRT" />
-        <property role="13z3hU" value="FuctionRefType" />
+        <property role="13z3hU" value="FunctionRefType" />
       </node>
       <node concept="1jGXXa" id="4v3zQDeycwe" role="1jGXX7">
         <property role="13z3e$" value="ST" />

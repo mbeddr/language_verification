@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="ExFamToPerson" uuid="0935f126-fe42-4c8f-b3d2-525aa53ff024" moduleVersion="0" compileInMPS="true">
-  <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
-  </models>
+<solution name="ExFamToPerson" uuid="aefb65bf-f4f9-46cc-b134-e7ef5d291376" moduleVersion="0" compileInMPS="true">
+  <models />
   <sourcePath />
   <languageVersions>
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" fqName="DSLTrans" version="0" />

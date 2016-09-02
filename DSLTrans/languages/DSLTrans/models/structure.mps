@@ -2,7 +2,7 @@
 <model ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -85,6 +85,9 @@
     <node concept="PrWs8" id="6JhS3QZMbfg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="2t59Tl5myiP" role="PzmwI">
+      <ref role="PrY4T" to="i3vy:2t59Tl5mye5" resolve="ILanguageScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="6JhS3QZMbfk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="layer" />
@@ -93,6 +96,10 @@
     </node>
     <node concept="1TJgyi" id="2rexW9_glbF" role="1TKVEl">
       <property role="TrG5h" value="inputLanguage" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2t59Tl5kswl" role="1TKVEl">
+      <property role="TrG5h" value="outputLanguage" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

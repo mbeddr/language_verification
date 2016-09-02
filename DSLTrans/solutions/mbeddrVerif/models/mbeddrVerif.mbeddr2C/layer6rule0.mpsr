@@ -98,11 +98,11 @@
     </language>
   </registry>
   <node concept="1jGXXK" id="3dPnTp7RIKk">
-    <property role="TrG5h" value="layer6Rule0" />
+    <property role="TrG5h" value="layer6rule0" />
     <node concept="3GsvpM" id="3dPnTp7RIKl" role="2ik0Mo">
       <node concept="1jGXXa" id="3dPnTp7RIKB" role="1jGXX7">
         <property role="13z3hU" value="StatementList" />
-        <property role="13z3e$" value="2" />
+        <property role="13z3e$" value="SList" />
         <node concept="2ik0MC" id="3dPnTp7RIKQ" role="2ik0MI">
           <property role="TrG5h" value="ApplyAttribute" />
           <node concept="2ik0M$" id="3dPnTp7RIKR" role="2ik0MU">
@@ -114,11 +114,11 @@
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIKD" role="1jGXX7">
         <property role="13z3hU" value="ReturnStatement" />
-        <property role="13z3e$" value="3" />
+        <property role="13z3e$" value="ReturnS" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIKG" role="1jGXX7">
         <property role="13z3hU" value="NumberLiteral" />
-        <property role="13z3e$" value="4" />
+        <property role="13z3e$" value="NumLit" />
         <node concept="2ik0MC" id="3dPnTp7RIKK" role="2ik0MI">
           <property role="TrG5h" value="Value" />
           <node concept="2ik0M$" id="3dPnTp7RIKL" role="2ik0MU">
@@ -261,7 +261,7 @@
     </node>
     <node concept="3GsvpN" id="3dPnTp7RIKm" role="2ik0Mu">
       <node concept="2ik0NV" id="3dPnTp7RIKo" role="13z3mo">
-        <property role="13z3e$" value="1" />
+        <property role="13z3e$" value="Func" />
         <property role="13z3hU" value="Function" />
         <node concept="2ik0M_" id="2K9dotEBltP" role="13z3hJ">
           <property role="TrG5h" value="name" />

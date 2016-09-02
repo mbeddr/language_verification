@@ -80,7 +80,7 @@
         <property role="13z3e$" value="IM" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIf8" role="1jGXX7">
-        <property role="13z3hU" value="FunctionProtoType" />
+        <property role="13z3hU" value="FunctionPrototype" />
         <property role="13z3e$" value="FP" />
         <node concept="2ik0MC" id="3dPnTp7RIfu" role="2ik0MI">
           <property role="TrG5h" value="name" />
