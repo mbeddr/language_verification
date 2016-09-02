@@ -7,38 +7,16 @@
   <imports />
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
-      <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
-        <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
-      </concept>
-      <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
-      <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
-        <property id="1722780940080858386" name="counter" index="KJs$L" />
-      </concept>
-      <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
-        <property id="2796321687635932262" name="ID" index="13z3e$" />
-        <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
-      </concept>
       <concept id="2829711462939370373" name="transfverif.core.structure.ILanguageScopeProvider" flags="ng" index="1y7Kgg">
         <child id="2829711462939238353" name="outputLan" index="1y7jx4" />
         <child id="2829711462939238350" name="inputLan" index="1y7jxr" />
       </concept>
     </language>
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
-      <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7">
-        <child id="3828633282163103595" name="rulePresenter" index="1jGXV4" />
-      </concept>
-      <concept id="3828633282163103455" name="DSLTrans.structure.Rule" flags="ng" index="1jGXXK">
-        <child id="7049464676098553437" name="applyModel" index="2ik0Mo" />
-        <child id="7049464676098553435" name="matchModel" index="2ik0Mu" />
-      </concept>
+      <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7" />
       <concept id="7769237388006044623" name="DSLTrans.structure.Transformation" flags="ng" index="3k6lfM">
         <child id="7769237388006044628" name="layer" index="3k6lfD" />
       </concept>
-      <concept id="2860350776942378900" name="DSLTrans.structure.RulePointer" flags="ng" index="1v6VTO">
-        <reference id="2860350776942378901" name="pointer" index="1v6VTP" />
-      </concept>
-      <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
-      <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
@@ -93,56 +71,6 @@
     <property role="TrG5h" value="Test" />
     <node concept="1jGXV7" id="75JtzgfMnrZ" role="3k6lfD">
       <property role="TrG5h" value="first" />
-      <node concept="1jGXXK" id="75JtzgfMA4Y" role="1jGXV4">
-        <property role="TrG5h" value="hello" />
-        <node concept="3GsvpM" id="75JtzgfMA4Z" role="2ik0Mo">
-          <property role="KJs$L" value="1" />
-        </node>
-        <node concept="3GsvpN" id="75JtzgfMA5R" role="2ik0Mu">
-          <property role="KJs$L" value="2" />
-          <node concept="2ik0NV" id="57pZU2XSBVu" role="13z3mo">
-            <property role="13z3e$" value="Any1" />
-            <property role="13z3hU" value="Class1" />
-          </node>
-          <node concept="37mRI7" id="57pZU2XSBWf" role="lGtFl">
-            <node concept="37mRIm" id="57pZU2XSBWg" role="37mRID">
-              <property role="37mO49" value="5898026252863962846" />
-              <node concept="gqqVs" id="57pZU2XSBWe" role="37mO4d">
-                <property role="gqqTZ" value="12.000100135803223" />
-                <property role="gqqTW" value="12.0" />
-                <property role="gqqTX" value="230.0" />
-                <property role="gqqTy" value="40.0" />
-                <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="37mRI7" id="57pZU2XSBWc" role="lGtFl">
-          <node concept="37mRIm" id="57pZU2XSBWd" role="37mRID">
-            <property role="37mO49" value="8173881814676038007" />
-            <node concept="gqqVs" id="57pZU2XSBWb" role="37mO4d">
-              <property role="gqqTZ" value="12.000100135803223" />
-              <property role="gqqTW" value="12.0" />
-              <property role="gqqTX" value="274.0" />
-              <property role="gqqTy" value="85.0" />
-              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-            </node>
-          </node>
-          <node concept="37mRIm" id="57pZU2XSBWi" role="37mRID">
-            <property role="37mO49" value="8173881814676037951" />
-            <node concept="gqqVs" id="57pZU2XSBWh" role="37mO4d">
-              <property role="gqqTZ" value="12.000100135803223" />
-              <property role="gqqTW" value="165.0" />
-              <property role="gqqTX" value="106.0" />
-              <property role="gqqTy" value="86.0" />
-              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1v6VTO" id="57pZU2XSTaB" role="1jGXV4">
-        <ref role="1v6VTP" node="75JtzgfMA4Y" resolve="hello" />
-      </node>
       <node concept="37mRI7" id="57pZU2XSBW9" role="lGtFl">
         <node concept="37mRIm" id="57pZU2XSBWa" role="37mRID">
           <property role="37mO49" value="8173881814676037950" />

@@ -11,15 +11,6 @@
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
         <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
-      <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
-        <child id="7049464676098553447" name="atom" index="2ik0My" />
-      </concept>
-      <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
-        <property id="7049464676098553445" name="atom" index="2ik0Mw" />
-      </concept>
-      <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
-        <child id="7049464676098553471" name="value" index="2ik0MU" />
-      </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
@@ -32,9 +23,7 @@
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
       <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
       <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
-      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
-        <child id="7049464676098553451" name="attributes" index="2ik0MI" />
-      </concept>
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
       <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
         <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
@@ -56,130 +45,90 @@
     </language>
   </registry>
   <node concept="1jGXXK" id="3dPnTp7RIs0">
-    <property role="TrG5h" value="layer5Rule1" />
+    <property role="TrG5h" value="layer5rule1" />
     <node concept="3GsvpM" id="3dPnTp7RIs1" role="2ik0Mo">
       <node concept="1jGXXa" id="3dPnTp7RIu1" role="1jGXX7">
         <property role="13z3hU" value="StatementList" />
-        <property role="13z3e$" value="27" />
-        <node concept="2ik0MC" id="3dPnTp7RIu3" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RIu4" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RIu5" role="2ik0My">
-              <property role="2ik0Mw" value="WireFunctionStatements" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3e$" value="SList" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIu9" role="1jGXX7">
         <property role="13z3hU" value="GlobalVariableDeclaration" />
-        <property role="13z3e$" value="28" />
-        <node concept="2ik0MC" id="3dPnTp7RIuu" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RIuv" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RIuw" role="2ik0My">
-              <property role="2ik0Mw" value="GlobalComponentInstanceDeclaration" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3e$" value="GVD" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIuf" role="1jGXX7">
-        <property role="13z3hU" value="ExpressoinStatement" />
-        <property role="13z3e$" value="29" />
+        <property role="13z3hU" value="ExpressionStatement" />
+        <property role="13z3e$" value="ExprState" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIum" role="1jGXX7">
         <property role="13z3hU" value="AssignmentExpr" />
-        <property role="13z3e$" value="30" />
+        <property role="13z3e$" value="AssignExpr" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIu$" role="1jGXX7">
         <property role="13z3hU" value="GenericDotExpression" />
-        <property role="13z3e$" value="31" />
+        <property role="13z3e$" value="GDE" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIuK" role="1jGXX7">
         <property role="13z3hU" value="ReferenceExpr" />
-        <property role="13z3e$" value="32" />
+        <property role="13z3e$" value="RefExpr" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIuX" role="1jGXX7">
-        <property role="13z3hU" value="GloabalVarRef" />
-        <property role="13z3e$" value="33" />
+        <property role="13z3hU" value="GlobalVarRef" />
+        <property role="13z3e$" value="GVR" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIvb" role="1jGXX7">
         <property role="13z3hU" value="Member" />
-        <property role="13z3e$" value="34" />
-        <node concept="2ik0MC" id="3dPnTp7RIvq" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RIvr" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RIvs" role="2ik0My">
-              <property role="2ik0Mw" value="RequiredPort_port" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3e$" value="Member" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIvw" role="1jGXX7">
-        <property role="13z3hU" value="GloabalVariableDeclaration" />
-        <property role="13z3e$" value="35" />
-        <node concept="2ik0MC" id="3dPnTp7RIvN" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RIvO" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RIvP" role="2ik0My">
-              <property role="2ik0Mw" value="GloabalVariableInstanceDeclaration" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3hU" value="GlobalVariableDeclaration" />
+        <property role="13z3e$" value="GVD2" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIvT" role="1jGXX7">
-        <property role="13z3hU" value="GloabalvarRef" />
-        <property role="13z3e$" value="36" />
+        <property role="13z3hU" value="GlobalVarRef" />
+        <property role="13z3e$" value="GVR2" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIwg" role="1jGXX7">
         <property role="13z3hU" value="ExpressionStatement" />
-        <property role="13z3e$" value="37" />
+        <property role="13z3e$" value="ExprState" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIwC" role="1jGXX7">
         <property role="13z3hU" value="AssignmentExpr" />
-        <property role="13z3e$" value="38" />
+        <property role="13z3e$" value="AssExpr" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIx1" role="1jGXX7">
         <property role="13z3hU" value="GenericMemberRef" />
-        <property role="13z3e$" value="39" />
+        <property role="13z3e$" value="GMR" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIxr" role="1jGXX7">
-        <property role="13z3hU" value="Memeber" />
-        <property role="13z3e$" value="40" />
-        <node concept="2ik0MC" id="3dPnTp7RIxQ" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute" />
-          <node concept="2ik0M$" id="3dPnTp7RIxR" role="2ik0MU">
-            <node concept="2ik0MB" id="3dPnTp7RIxS" role="2ik0My">
-              <property role="2ik0Mw" value="RequiredPort_ops" />
-            </node>
-          </node>
-        </node>
+        <property role="13z3hU" value="Member" />
+        <property role="13z3e$" value="Member2" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIxW" role="1jGXX7">
         <property role="13z3hU" value="ReferenceExpr" />
-        <property role="13z3e$" value="41" />
+        <property role="13z3e$" value="RefExpr2" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIyr" role="1jGXX7">
         <property role="13z3hU" value="GlobalVarRef" />
-        <property role="13z3e$" value="42" />
+        <property role="13z3e$" value="GVR3" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIyV" role="1jGXX7">
         <property role="13z3hU" value="GlobalVariableDeclaration" />
-        <property role="13z3e$" value="43" />
+        <property role="13z3e$" value="GVD3" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIVK" role="1jGXX7">
-        <property role="13z3e$" value="101" />
+        <property role="13z3e$" value="GDE2" />
         <property role="13z3hU" value="GenericDotExpression" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIWw" role="1jGXX7">
-        <property role="13z3e$" value="102" />
+        <property role="13z3e$" value="GVR4" />
         <property role="13z3hU" value="GlobalVarRef" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIX3" role="1jGXX7">
-        <property role="13z3e$" value="103" />
+        <property role="13z3e$" value="GR" />
         <property role="13z3hU" value="GlobalRef" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIYD" role="1jGXX7">
-        <property role="13z3e$" value="104" />
+        <property role="13z3e$" value="GMR2" />
         <property role="13z3hU" value="GenericMemberRef" />
       </node>
       <node concept="1jGXVd" id="3dPnTp7RIU6" role="2ik0Ml">
@@ -281,47 +230,47 @@
     <node concept="3GsvpN" id="3dPnTp7RIs2" role="2ik0Mu">
       <node concept="2ik0NV" id="3dPnTp7RIs4" role="13z3mo">
         <property role="13z3hU" value="ComponentInstance" />
-        <property role="13z3e$" value="17" />
+        <property role="13z3e$" value="CI" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RIs5" role="13z3mo">
         <property role="13z3hU" value="AtomicComponent" />
-        <property role="13z3e$" value="18" />
+        <property role="13z3e$" value="AC" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RIs6" role="13z3mo">
-        <property role="13z3hU" value="ReuiredPort" />
-        <property role="13z3e$" value="19" />
+        <property role="13z3hU" value="RequiredPort" />
+        <property role="13z3e$" value="RPort" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RIsf" role="13z3mo">
         <property role="13z3hU" value="InstanceConfiguration" />
-        <property role="13z3e$" value="20" />
+        <property role="13z3e$" value="IC" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RIsr" role="13z3mo">
         <property role="13z3hU" value="AssemblyConnector" />
-        <property role="13z3e$" value="21" />
+        <property role="13z3e$" value="AssConnect" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RIsD" role="13z3mo">
         <property role="13z3hU" value="InstancePortRef" />
-        <property role="13z3e$" value="22" />
+        <property role="13z3e$" value="IPortRef" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RIsT" role="13z3mo">
         <property role="13z3hU" value="ComponentInstance" />
-        <property role="13z3e$" value="23" />
+        <property role="13z3e$" value="CI2" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RItb" role="13z3mo">
         <property role="13z3hU" value="AtomicComponent" />
-        <property role="13z3e$" value="24" />
+        <property role="13z3e$" value="AC2" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RItv" role="13z3mo">
         <property role="13z3hU" value="ProvidedPort" />
-        <property role="13z3e$" value="25" />
+        <property role="13z3e$" value="PPort" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RItP" role="13z3mo">
-        <property role="13z3e$" value="26" />
+        <property role="13z3e$" value="CSI" />
         <property role="13z3hU" value="ClientServerInterface" />
       </node>
       <node concept="2ik0NV" id="3dPnTp7RIRA" role="13z3mo">
-        <property role="13z3e$" value="100" />
-        <property role="13z3hU" value="InsatncePortRef" />
+        <property role="13z3e$" value="IPortRef2" />
+        <property role="13z3hU" value="InstancePortRef" />
       </node>
       <node concept="1jGXVw" id="3dPnTp7RI$r" role="13z3mp">
         <property role="aCCiF" value="contents" />
