@@ -7,6 +7,8 @@
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="i9c9" ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" />
+  </imports>
 </model>
 

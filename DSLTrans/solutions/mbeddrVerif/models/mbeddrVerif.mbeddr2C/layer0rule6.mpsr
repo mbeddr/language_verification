@@ -193,6 +193,50 @@
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
         </node>
+        <node concept="37mRIm" id="5$ec28UcUCl" role="37mRID">
+          <property role="37mO49" value="6687527058722491119" />
+          <node concept="2VclpC" id="5$ec28UcUCk" role="37mO4d">
+            <node concept="3ul5H1" id="5$ec28UcUCm" role="3ul5Gx">
+              <property role="3ul5GH" value="label" />
+              <node concept="3wpmZ1" id="5$ec28UcUCn" role="3ul5Gz">
+                <node concept="2VclrF" id="5$ec28UcUCo" role="3wpmZR">
+                  <property role="2Vclpx" value="0.0" />
+                  <property role="2Vclpz" value="0.0" />
+                </node>
+                <node concept="2VclrF" id="5$ec28UcUCp" role="3wpmZP">
+                  <property role="2Vclpx" value="579.0001001358032" />
+                  <property role="2Vclpz" value="112.0" />
+                </node>
+              </node>
+            </node>
+            <node concept="3ul5H1" id="5$ec28UcUCq" role="3ul5Gx">
+              <property role="3ul5GH" value="startRole" />
+              <node concept="3wpmZ1" id="5$ec28UcUCr" role="3ul5Gz">
+                <node concept="2VclrF" id="5$ec28UcUCs" role="3wpmZR">
+                  <property role="2Vclpx" value="0.0" />
+                  <property role="2Vclpz" value="0.0" />
+                </node>
+                <node concept="2VclrF" id="5$ec28UcUCt" role="3wpmZP">
+                  <property role="2Vclpx" value="579.0001001358032" />
+                  <property role="2Vclpz" value="137.51471862576142" />
+                </node>
+              </node>
+            </node>
+            <node concept="3ul5H1" id="5$ec28UcUCu" role="3ul5Gx">
+              <property role="3ul5GH" value="endRole" />
+              <node concept="3wpmZ1" id="5$ec28UcUCv" role="3ul5Gz">
+                <node concept="2VclrF" id="5$ec28UcUCw" role="3wpmZR">
+                  <property role="2Vclpx" value="0.0" />
+                  <property role="2Vclpz" value="0.0" />
+                </node>
+                <node concept="2VclrF" id="5$ec28UcUCx" role="3wpmZP">
+                  <property role="2Vclpx" value="579.0001001358032" />
+                  <property role="2Vclpz" value="99.21320343559643" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1jGXVd" id="5NeRAQ8XSFJ" role="2ik0Ml">
         <property role="aCCiF" value="original" />
