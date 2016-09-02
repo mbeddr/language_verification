@@ -133,7 +133,7 @@
         <property role="13z3e$" value="FuncCall" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RImV" role="1jGXX7">
-        <property role="13z3hU" value="FunctionProtype" />
+        <property role="13z3hU" value="FunctionPrototype" />
         <property role="13z3e$" value="FuncProto" />
       </node>
       <node concept="1jGXVd" id="3dPnTp7RIof" role="2ik0Ml">

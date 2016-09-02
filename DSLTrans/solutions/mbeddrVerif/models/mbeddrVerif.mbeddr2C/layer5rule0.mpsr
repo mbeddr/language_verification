@@ -80,7 +80,7 @@
         <property role="13z3e$" value="GMR" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIqF" role="1jGXX7">
-        <property role="13z3hU" value="CFunctionPointerStructMemeber" />
+        <property role="13z3hU" value="CFunctionPointerStructMember" />
         <property role="13z3e$" value="CFPSM" />
       </node>
       <node concept="1jGXXa" id="3dPnTp7RIqP" role="1jGXX7">

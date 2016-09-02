@@ -445,7 +445,7 @@
         </node>
       </node>
       <node concept="2ik0NV" id="3dPnTp7RIa5" role="13z3mo">
-        <property role="13z3hU" value="ComponentsInstance" />
+        <property role="13z3hU" value="ComponentInstance" />
         <property role="13z3e$" value="CI" />
         <node concept="2ik0M_" id="2K9dotEBlwn" role="13z3hJ">
           <property role="TrG5h" value="name" />

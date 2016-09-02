@@ -313,7 +313,7 @@
         </node>
       </node>
       <node concept="2ik0NV" id="5a$qMY50kSc" role="13z3mo">
-        <property role="13z3hU" value="ComponentsInstance" />
+        <property role="13z3hU" value="ComponentInstance" />
         <property role="13z3e$" value="CI" />
         <node concept="2ik0M_" id="5a$qMY50kSd" role="13z3hJ">
           <property role="TrG5h" value="name" />
