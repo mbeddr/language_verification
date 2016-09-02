@@ -50,7 +50,12 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="isIn" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="57pZU2XSTeI" resolve="City" />
+      <ref role="20lvS9" node="6oBlwyi3bPT" resolve="CityPointer" />
+    </node>
+    <node concept="1TJgyj" id="6oBlwyi3bQn" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="employees" />
+      <ref role="20lvS9" node="6oBlwyi3bQd" resolve="ParentPointer" />
     </node>
   </node>
   <node concept="1TIwiD" id="57pZU2XSTeG">
@@ -131,7 +136,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="companies" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="57pZU2XSTeF" resolve="Company" />
+      <ref role="20lvS9" node="6oBlwyi3bPP" resolve="CompanyPointer" />
     </node>
   </node>
   <node concept="1TIwiD" id="57pZU2XSTeJ">
@@ -180,6 +185,11 @@
     <property role="1pbfSe" value="264082258" />
     <property role="TrG5h" value="Parent" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oBlwyi3bQk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="worksIn" />
+      <ref role="20lvS9" node="57pZU2XSTeF" resolve="Company" />
+    </node>
     <node concept="PrWs8" id="57pZU2XSTf7" role="PzmwI">
       <ref role="PrY4T" node="57pZU2XSTeO" resolve="Member" />
     </node>
@@ -203,13 +213,85 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="family" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="57pZU2XSTeH" resolve="Family" />
+      <ref role="20lvS9" node="6oBlwyi3bQ9" resolve="FamilyPointer" />
     </node>
     <node concept="1TJgyj" id="57pZU2XSVbO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="livesIn" />
       <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6oBlwyi3bPT" resolve="CityPointer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oBlwyi3bPP">
+    <property role="1pbfSe" value="130804867" />
+    <property role="TrG5h" value="CompanyPointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oBlwyi3bPQ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="pointer" />
+      <ref role="20lvS9" node="57pZU2XSTeF" resolve="Company" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oBlwyi3bPT">
+    <property role="1pbfSe" value="130804863" />
+    <property role="TrG5h" value="CityPointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oBlwyi3bPU" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="57pZU2XSTeI" resolve="City" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oBlwyi3bPX">
+    <property role="1pbfSe" value="130804859" />
+    <property role="TrG5h" value="SchoolPointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oBlwyi3bPY" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <ref role="20lvS9" node="57pZU2XSTeK" resolve="School" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oBlwyi3bQ1">
+    <property role="1pbfSe" value="130804855" />
+    <property role="TrG5h" value="ChildPointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oBlwyi3bQ2" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <ref role="20lvS9" node="57pZU2XSTeN" resolve="Child" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oBlwyi3bQ5">
+    <property role="1pbfSe" value="130804851" />
+    <property role="TrG5h" value="NeighborhoodPointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oBlwyi3bQ6" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <ref role="20lvS9" node="57pZU2XSTeL" resolve="Neighborhood" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oBlwyi3bQ9">
+    <property role="1pbfSe" value="130804847" />
+    <property role="TrG5h" value="FamilyPointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oBlwyi3bQa" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <ref role="20lvS9" node="57pZU2XSTeH" resolve="Family" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oBlwyi3bQd">
+    <property role="1pbfSe" value="130804843" />
+    <property role="TrG5h" value="ParentPointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6oBlwyi3bQe" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <ref role="20lvS9" node="57pZU2XSTeM" resolve="Parent" />
     </node>
   </node>
 </model>
