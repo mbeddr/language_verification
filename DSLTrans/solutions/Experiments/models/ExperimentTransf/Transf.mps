@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:27d47792-ff04-4ff5-b058-48daa235d6df(Experiments.Exp)">
+<model ref="r:27d47792-ff04-4ff5-b058-48daa235d6df(ExperimentTransf.Transf)">
   <persistence version="9" />
   <languages>
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
@@ -15,6 +15,7 @@
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
       <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7" />
       <concept id="7769237388006044623" name="DSLTrans.structure.Transformation" flags="ng" index="3k6lfM">
+        <child id="3065370308850507516" name="inputModel" index="AAzNM" />
         <child id="7769237388006044628" name="layer" index="3k6lfD" />
       </concept>
     </language>
@@ -22,6 +23,7 @@
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
+      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS" />
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
@@ -68,7 +70,7 @@
     </language>
   </registry>
   <node concept="3k6lfM" id="75JtzgfMnrY">
-    <property role="TrG5h" value="Test" />
+    <property role="TrG5h" value="SomeTransf" />
     <node concept="1jGXV7" id="75JtzgfMnrZ" role="3k6lfD">
       <property role="TrG5h" value="first" />
       <node concept="37mRI7" id="57pZU2XSBW9" role="lGtFl">
@@ -172,6 +174,7 @@
         </node>
       </node>
     </node>
+    <node concept="BaHAS" id="2EaowSc4iI4" role="AAzNM" />
   </node>
 </model>
 
