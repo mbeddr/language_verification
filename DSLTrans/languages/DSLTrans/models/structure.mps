@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -95,15 +96,15 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3ky2qXA$ttC" resolve="Layer" />
     </node>
-    <node concept="1TJgyj" id="2EaowSc45VW" role="1TKVEi">
+    <node concept="1TJgyj" id="2EaowSc5P4s" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputModel" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
     <node concept="1TJgyj" id="2EaowSc45W1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="outputModel" />
-      <ref role="20lvS9" to="tp25:v3WHCwUiHy" resolve="ModelReferenceExpression" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ky2qXA$ttN">

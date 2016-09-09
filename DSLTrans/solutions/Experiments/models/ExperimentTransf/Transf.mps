@@ -15,18 +15,25 @@
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
       <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7" />
       <concept id="7769237388006044623" name="DSLTrans.structure.Transformation" flags="ng" index="3k6lfM">
-        <child id="3065370308850507516" name="inputModel" index="AAzNM" />
+        <child id="3065370308850507521" name="outputModel" index="AAzOf" />
+        <child id="3065370308850962716" name="inputModel" index="ABjci" />
         <child id="7769237388006044628" name="layer" index="3k6lfD" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
+        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
+        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+      </concept>
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS" />
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
+      <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
+        <child id="1678062499342629861" name="moduleId" index="37shsm" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -174,7 +181,18 @@
         </node>
       </node>
     </node>
-    <node concept="BaHAS" id="2EaowSc4iI4" role="AAzNM" />
+    <node concept="37shsh" id="2EaowSc5VNQ" role="ABjci">
+      <node concept="20RdaH" id="2EaowSc5VNZ" role="37shsm">
+        <property role="20Rdg5" value="3f74c60f-47e5-47a9-895b-6e05b58f1d7f" />
+        <property role="20Rdg7" value="inputModel" />
+      </node>
+    </node>
+    <node concept="37shsh" id="2EaowSc6fas" role="AAzOf">
+      <node concept="20RdaH" id="2EaowSc6faG" role="37shsm">
+        <property role="20Rdg5" value="49f1df96-a7a5-4808-baa9-2f550a6cba50" />
+        <property role="20Rdg7" value="outputModel2" />
+      </node>
+    </node>
   </node>
 </model>
 
