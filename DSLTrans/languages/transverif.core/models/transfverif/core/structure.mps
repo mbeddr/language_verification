@@ -411,12 +411,12 @@
     <property role="TrG5h" value="ILanguageScopeProvider" />
     <node concept="1TJgyj" id="2t59Tl5m1Ze" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="inputLan" />
+      <property role="20kJfa" value="inputLanguage" />
       <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
     <node concept="1TJgyj" id="2t59Tl5m1Zh" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="outputLan" />
+      <property role="20kJfa" value="outputLanguage" />
       <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
   </node>

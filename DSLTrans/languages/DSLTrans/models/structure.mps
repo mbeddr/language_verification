@@ -98,12 +98,12 @@
     </node>
     <node concept="1TJgyj" id="2EaowSc5P4s" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="inputModel" />
+      <property role="20kJfa" value="inputModule" />
       <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
     <node concept="1TJgyj" id="2EaowSc45W1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="outputModel" />
+      <property role="20kJfa" value="outputModule" />
       <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
   </node>
