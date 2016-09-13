@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="DSLTrans.lib" uuid="3224dd6b-ae86-46ab-b51c-b024552634a5" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="dsltrans_engine.jar" />
     </modelRoot>
