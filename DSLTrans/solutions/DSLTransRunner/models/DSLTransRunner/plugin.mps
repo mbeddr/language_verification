@@ -20,6 +20,7 @@
     <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="gb9h" ref="43c436bd-db54-4ae3-8584-e447d7de5f9d/java:dsltrans.util(DSLTrans.lib/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
@@ -1055,6 +1056,7 @@
                 <property role="Xl_RC" value="         Children: " />
               </node>
             </node>
+            <node concept="3clFbH" id="2EVdxuSWwaj" role="3cqZAp" />
             <node concept="3clFbH" id="2EVdxuSWlkk" role="3cqZAp" />
             <node concept="3cpWs8" id="2EVdxuSWjy7" role="3cqZAp">
               <node concept="3cpWsn" id="2EVdxuSWjy8" role="3cpWs9">
@@ -1106,6 +1108,7 @@
                 <ref role="3cqZAo" node="2EVdxuSWjy8" resolve="children" />
               </node>
             </node>
+            <node concept="3clFbH" id="2EVdxuSWz$r" role="3cqZAp" />
             <node concept="3clFbH" id="2EVdxuSWioC" role="3cqZAp" />
             <node concept="3cpWs8" id="2EVdxuSWdel" role="3cqZAp">
               <node concept="3cpWsn" id="2EVdxuSWdem" role="3cpWs9">
@@ -1157,7 +1160,6 @@
                 <ref role="3cqZAo" node="2EVdxuSWdem" resolve="refs" />
               </node>
             </node>
-            <node concept="3clFbH" id="2EVdxuSWbiG" role="3cqZAp" />
           </node>
           <node concept="3cpWsn" id="2EVdxuSW7xY" role="1Duv9x">
             <property role="TrG5h" value="node" />
