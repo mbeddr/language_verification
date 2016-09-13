@@ -55,7 +55,7 @@
   </registry>
   <node concept="312cEu" id="5cBD0WxCDeg">
     <property role="TrG5h" value="MPSMetaAttribute" />
-    <property role="3GE5qa" value="Metamodel" />
+    <property role="3GE5qa" value="metamodel" />
     <node concept="3Tm1VV" id="5cBD0WxCDeh" role="1B3o_S" />
     <node concept="3uibUv" id="5cBD0WxCDf7" role="EKbjA">
       <ref role="3uigEE" to="fodd:~MetaAttribute" resolve="MetaAttribute" />
