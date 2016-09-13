@@ -4,9 +4,8 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="98a5ea16-05e8-4296-b548-cbaca3397fce" name="Persons" version="0" />
+    <use id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" version="0" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -16,7 +15,6 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="dush" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.persistence(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="tcg7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.fileTypes(MPS.Platform/)" />
     <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
@@ -25,7 +23,7 @@
     <import index="fzpi" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.model(DSLTrans.lib/)" />
     <import index="gnwr" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans(DSLTrans.lib/)" />
     <import index="8ieb" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.impl(DSLTrans.lib/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
@@ -324,9 +322,485 @@
           </node>
         </node>
         <node concept="3clFbH" id="4YDsaJSJZC_" role="3cqZAp" />
-        <node concept="3cpWs6" id="4YDsaJSJZBr" role="3cqZAp">
-          <node concept="10Nm6u" id="4YDsaJSJZC4" role="3cqZAk" />
+        <node concept="3cpWs8" id="5cBD0WxAV5q" role="3cqZAp">
+          <node concept="3cpWsn" id="5cBD0WxAV5p" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="output_mm_id" />
+            <node concept="3uibUv" id="5cBD0WxAV5r" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~MetaModelIdentifier" resolve="MetaModelIdentifier" />
+            </node>
+            <node concept="2OqwBi" id="5cBD0WxAV7c" role="33vP2m">
+              <node concept="37vLTw" id="5cBD0WxAV7b" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV7d" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMetaModelIdentifier():dsltrans.MetaModelIdentifier" resolve="createMetaModelIdentifier" />
+              </node>
+            </node>
+          </node>
         </node>
+        <node concept="3clFbF" id="5cBD0WxAV5t" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7f" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7e" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5p" resolve="output_mm_id" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7g" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelName(java.lang.String):void" resolve="setMetaModelName" />
+              <node concept="Xl_RD" id="5cBD0WxAV5v" role="37wK5m">
+                <property role="Xl_RC" value="Output Metamodel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV5w" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7i" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7h" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5p" resolve="output_mm_id" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7j" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelURI(java.lang.String):void" resolve="setMetaModelURI" />
+              <node concept="Xl_RD" id="5cBD0WxAV5y" role="37wK5m">
+                <property role="Xl_RC" value="Output/Metamodel/URI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxAYSB" role="3cqZAp" />
+        <node concept="3cpWs8" id="5cBD0WxAV5$" role="3cqZAp">
+          <node concept="3cpWsn" id="5cBD0WxAV5z" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="inputFilePort" />
+            <node concept="3uibUv" id="5cBD0WxAV5_" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~FilePort" resolve="FilePort" />
+            </node>
+            <node concept="2OqwBi" id="5cBD0WxAV7l" role="33vP2m">
+              <node concept="37vLTw" id="5cBD0WxAV7k" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV7m" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createFilePort():dsltrans.FilePort" resolve="createFilePort" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV5B" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7o" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7n" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7p" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~FilePort.setFilePathURI(java.lang.String):void" resolve="setFilePathURI" />
+              <node concept="Xl_RD" id="5cBD0WxAV5D" role="37wK5m">
+                <property role="Xl_RC" value="Input/Model/URI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV5E" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7r" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7q" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7s" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier):void" resolve="setMetaModelId" />
+              <node concept="37vLTw" id="5cBD0WxAV5G" role="37wK5m">
+                <ref role="3cqZAo" node="4YDsaJSJZFd" resolve="input_mm_id" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV5H" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7u" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7t" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7v" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String):void" resolve="setName" />
+              <node concept="Xl_RD" id="5cBD0WxAV5J" role="37wK5m">
+                <property role="Xl_RC" value="inputModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxAZf9" role="3cqZAp" />
+        <node concept="3cpWs8" id="5cBD0WxAV5L" role="3cqZAp">
+          <node concept="3cpWsn" id="5cBD0WxAV5K" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="firstLayer" />
+            <node concept="3uibUv" id="5cBD0WxAV5M" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~Sequential" resolve="Sequential" />
+            </node>
+            <node concept="2OqwBi" id="5cBD0WxAV7x" role="33vP2m">
+              <node concept="37vLTw" id="5cBD0WxAV7w" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV7y" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createSequential():dsltrans.Sequential" resolve="createSequential" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV5O" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7$" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7z" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7_" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Layer.setDescription(java.lang.String):void" resolve="setDescription" />
+              <node concept="Xl_RD" id="5cBD0WxAV5Q" role="37wK5m">
+                <property role="Xl_RC" value="first layer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV5R" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7B" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7A" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7C" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String):void" resolve="setName" />
+              <node concept="Xl_RD" id="5cBD0WxAV5T" role="37wK5m">
+                <property role="Xl_RC" value="firstLayer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV5U" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7E" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7D" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7F" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier):void" resolve="setMetaModelId" />
+              <node concept="37vLTw" id="5cBD0WxAV5W" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV5p" resolve="output_mm_id" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV5X" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7H" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7G" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7I" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Layer.setOutputFilePathURI(java.lang.String):void" resolve="setOutputFilePathURI" />
+              <node concept="Xl_RD" id="5cBD0WxAV5Z" role="37wK5m">
+                <property role="Xl_RC" value="Output/Model/URI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxAZAc" role="3cqZAp" />
+        <node concept="3clFbF" id="5cBD0WxAV60" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV61" role="3clFbG">
+            <node concept="2OqwBi" id="5cBD0WxAV7K" role="2Oq$k0">
+              <node concept="37vLTw" id="5cBD0WxAV7J" role="2Oq$k0">
+                <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV7L" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource():org.eclipse.emf.common.util.EList" resolve="getPreviousSource" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV63" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="5cBD0WxAV64" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxAZWM" role="3cqZAp" />
+        <node concept="3clFbF" id="5cBD0WxAV65" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV66" role="3clFbG">
+            <node concept="2OqwBi" id="5cBD0WxAV7N" role="2Oq$k0">
+              <node concept="37vLTw" id="5cBD0WxAV7M" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZDk" resolve="transformation" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV7O" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV68" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="5cBD0WxAV69" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV6a" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV6b" role="3clFbG">
+            <node concept="2OqwBi" id="5cBD0WxAV7Q" role="2Oq$k0">
+              <node concept="37vLTw" id="5cBD0WxAV7P" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZDk" resolve="transformation" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV7R" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV6d" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="5cBD0WxAV6e" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB0jq" role="3cqZAp" />
+        <node concept="3cpWs8" id="5cBD0WxAV6g" role="3cqZAp">
+          <node concept="3cpWsn" id="5cBD0WxAV6f" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="rule" />
+            <node concept="3uibUv" id="5cBD0WxAV6h" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~Rule" resolve="Rule" />
+            </node>
+            <node concept="2OqwBi" id="5cBD0WxAV7T" role="33vP2m">
+              <node concept="37vLTw" id="5cBD0WxAV7S" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV7U" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createRule():dsltrans.Rule" resolve="createRule" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV6j" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV7W" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV7V" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV6f" resolve="rule" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV7X" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Rule.setDescription(java.lang.String):void" resolve="setDescription" />
+              <node concept="Xl_RD" id="5cBD0WxAV6l" role="37wK5m">
+                <property role="Xl_RC" value="First Rule" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB0E4" role="3cqZAp" />
+        <node concept="3cpWs8" id="5cBD0WxAV6n" role="3cqZAp">
+          <node concept="3cpWsn" id="5cBD0WxAV6m" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="matchModel" />
+            <node concept="3uibUv" id="5cBD0WxAV6o" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~MatchModel" resolve="MatchModel" />
+            </node>
+            <node concept="2OqwBi" id="5cBD0WxAV7Z" role="33vP2m">
+              <node concept="37vLTw" id="5cBD0WxAV7Y" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV80" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMatchModel():dsltrans.MatchModel" resolve="createMatchModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB10K" role="3cqZAp" />
+        <node concept="3cpWs8" id="5cBD0WxAV6r" role="3cqZAp">
+          <node concept="3cpWsn" id="5cBD0WxAV6q" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="matchA" />
+            <node concept="3uibUv" id="5cBD0WxAV6s" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~AnyMatchClass" resolve="AnyMatchClass" />
+            </node>
+            <node concept="2OqwBi" id="5cBD0WxAV82" role="33vP2m">
+              <node concept="37vLTw" id="5cBD0WxAV81" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV83" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAnyMatchClass():dsltrans.AnyMatchClass" resolve="createAnyMatchClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV6u" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV85" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV84" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV6q" resolve="matchA" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV86" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String):void" resolve="setClassName" />
+              <node concept="Xl_RD" id="5cBD0WxAV6w" role="37wK5m">
+                <property role="Xl_RC" value="ClassA" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV6x" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV88" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV87" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV6q" resolve="matchA" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV89" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String):void" resolve="setPackageName" />
+              <node concept="Xl_RD" id="5cBD0WxAV6z" role="37wK5m">
+                <property role="Xl_RC" value="samplenamespace" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB1nS" role="3cqZAp" />
+        <node concept="3clFbF" id="5cBD0WxAV6$" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV6_" role="3clFbG">
+            <node concept="2OqwBi" id="5cBD0WxAV8b" role="2Oq$k0">
+              <node concept="37vLTw" id="5cBD0WxAV8a" role="2Oq$k0">
+                <ref role="3cqZAo" node="5cBD0WxAV6m" resolve="matchModel" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV8c" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV6B" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="5cBD0WxAV6C" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV6q" resolve="matchA" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB1Js" role="3cqZAp" />
+        <node concept="3clFbF" id="5cBD0WxAV6D" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV6E" role="3clFbG">
+            <node concept="2OqwBi" id="5cBD0WxAV8e" role="2Oq$k0">
+              <node concept="37vLTw" id="5cBD0WxAV8d" role="2Oq$k0">
+                <ref role="3cqZAo" node="5cBD0WxAV6f" resolve="rule" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV8f" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~Rule.getMatch():org.eclipse.emf.common.util.EList" resolve="getMatch" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV6G" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="5cBD0WxAV6H" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV6m" resolve="matchModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB26e" role="3cqZAp" />
+        <node concept="3cpWs8" id="5cBD0WxAV6J" role="3cqZAp">
+          <node concept="3cpWsn" id="5cBD0WxAV6I" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="applyModel" />
+            <node concept="3uibUv" id="5cBD0WxAV6K" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~ApplyModel" resolve="ApplyModel" />
+            </node>
+            <node concept="2OqwBi" id="5cBD0WxAV8h" role="33vP2m">
+              <node concept="37vLTw" id="5cBD0WxAV8g" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV8i" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyModel():dsltrans.ApplyModel" resolve="createApplyModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB3aF" role="3cqZAp" />
+        <node concept="3cpWs8" id="5cBD0WxAV6N" role="3cqZAp">
+          <node concept="3cpWsn" id="5cBD0WxAV6M" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="applyClass" />
+            <node concept="3uibUv" id="5cBD0WxAV6O" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~ApplyClass" resolve="ApplyClass" />
+            </node>
+            <node concept="2OqwBi" id="5cBD0WxAV8k" role="33vP2m">
+              <node concept="37vLTw" id="5cBD0WxAV8j" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV8l" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyClass():dsltrans.ApplyClass" resolve="createApplyClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB3xA" role="3cqZAp" />
+        <node concept="3clFbF" id="5cBD0WxAV6Q" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV8n" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV8m" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV6M" resolve="applyClass" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV8o" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String):void" resolve="setClassName" />
+              <node concept="Xl_RD" id="5cBD0WxAV6S" role="37wK5m">
+                <property role="Xl_RC" value="ClassA" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5cBD0WxAV6T" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV8q" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV8p" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV6M" resolve="applyClass" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV8r" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String):void" resolve="setPackageName" />
+              <node concept="Xl_RD" id="5cBD0WxAV6V" role="37wK5m">
+                <property role="Xl_RC" value="samplenamespace" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB3Su" role="3cqZAp" />
+        <node concept="3clFbF" id="5cBD0WxAV6W" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV6X" role="3clFbG">
+            <node concept="2OqwBi" id="5cBD0WxAV8t" role="2Oq$k0">
+              <node concept="37vLTw" id="5cBD0WxAV8s" role="2Oq$k0">
+                <ref role="3cqZAo" node="5cBD0WxAV6I" resolve="applyModel" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV8u" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV6Z" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="5cBD0WxAV70" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV6M" resolve="applyClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB4fo" role="3cqZAp" />
+        <node concept="3clFbF" id="5cBD0WxAV71" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV8w" role="3clFbG">
+            <node concept="37vLTw" id="5cBD0WxAV8v" role="2Oq$k0">
+              <ref role="3cqZAo" node="5cBD0WxAV6f" resolve="rule" />
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV8x" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Rule.setApply(dsltrans.ApplyModel):void" resolve="setApply" />
+              <node concept="37vLTw" id="5cBD0WxAV73" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV6I" resolve="applyModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB5kd" role="3cqZAp" />
+        <node concept="3clFbF" id="5cBD0WxAV74" role="3cqZAp">
+          <node concept="2OqwBi" id="5cBD0WxAV75" role="3clFbG">
+            <node concept="2OqwBi" id="5cBD0WxAV8z" role="2Oq$k0">
+              <node concept="37vLTw" id="5cBD0WxAV8y" role="2Oq$k0">
+                <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
+              </node>
+              <node concept="liA8E" id="5cBD0WxAV8$" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~Layer.getHasRule():org.eclipse.emf.common.util.EList" resolve="getHasRule" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5cBD0WxAV77" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="5cBD0WxAV78" role="37wK5m">
+                <ref role="3cqZAo" node="5cBD0WxAV6f" resolve="rule" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxB5Fb" role="3cqZAp" />
+        <node concept="3cpWs6" id="5cBD0WxAV79" role="3cqZAp">
+          <node concept="37vLTw" id="5cBD0WxAV7a" role="3cqZAk">
+            <ref role="3cqZAo" node="4YDsaJSJZDk" resolve="transformation" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="5cBD0WxAV30" role="3cqZAp" />
       </node>
     </node>
     <node concept="tnohg" id="2EaowSc3HnO" role="tncku">
