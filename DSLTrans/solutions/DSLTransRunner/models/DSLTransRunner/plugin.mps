@@ -24,6 +24,7 @@
     <import index="4r8p" ref="eaa630cc-2cf4-4cf0-aff6-79a001e1a484/java:dsltrans.io(DSLTrans.lib/)" />
     <import index="fzpi" ref="eaa630cc-2cf4-4cf0-aff6-79a001e1a484/java:dsltrans.model(DSLTrans.lib/)" />
     <import index="gnwr" ref="eaa630cc-2cf4-4cf0-aff6-79a001e1a484/java:dsltrans(DSLTrans.lib/)" />
+    <import index="8ieb" ref="eaa630cc-2cf4-4cf0-aff6-79a001e1a484/java:dsltrans.impl(DSLTrans.lib/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
@@ -123,6 +124,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -244,8 +248,81 @@
         <ref role="3uigEE" to="gnwr:~TransformationModel" resolve="TransformationModel" />
       </node>
       <node concept="3clFbS" id="4YDsaJSJYfl" role="3clF47">
-        <node concept="3clFbF" id="4YDsaJSJYFQ" role="3cqZAp">
-          <node concept="10Nm6u" id="4YDsaJSJYFP" role="3clFbG" />
+        <node concept="3cpWs8" id="4YDsaJSJZtD" role="3cqZAp">
+          <node concept="3cpWsn" id="4YDsaJSJZtC" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="factory" />
+            <node concept="3uibUv" id="4YDsaJSJZtE" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~DsltransFactory" resolve="DsltransFactory" />
+            </node>
+            <node concept="2ShNRf" id="4YDsaJSJZzu" role="33vP2m">
+              <node concept="1pGfFk" id="4YDsaJSJZzv" role="2ShVmc">
+                <ref role="37wK5l" to="8ieb:~DsltransFactoryImpl.&lt;init&gt;()" resolve="DsltransFactoryImpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4YDsaJSJZDl" role="3cqZAp">
+          <node concept="3cpWsn" id="4YDsaJSJZDk" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="transformation" />
+            <node concept="3uibUv" id="4YDsaJSJZDm" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~TransformationModel" resolve="TransformationModel" />
+            </node>
+            <node concept="2OqwBi" id="4YDsaJSJZDp" role="33vP2m">
+              <node concept="37vLTw" id="4YDsaJSJZDo" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="4YDsaJSJZDq" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createTransformationModel():dsltrans.TransformationModel" resolve="createTransformationModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4YDsaJSK0P2" role="3cqZAp" />
+        <node concept="3cpWs8" id="4YDsaJSJZFe" role="3cqZAp">
+          <node concept="3cpWsn" id="4YDsaJSJZFd" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="input_mm_id" />
+            <node concept="3uibUv" id="4YDsaJSK0B8" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~MetaModelIdentifier" resolve="MetaModelIdentifier" />
+            </node>
+            <node concept="2OqwBi" id="4YDsaJSJZFo" role="33vP2m">
+              <node concept="37vLTw" id="4YDsaJSJZFn" role="2Oq$k0">
+                <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="4YDsaJSJZFp" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMetaModelIdentifier():dsltrans.MetaModelIdentifier" resolve="createMetaModelIdentifier" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4YDsaJSJZFh" role="3cqZAp">
+          <node concept="2OqwBi" id="4YDsaJSK0Eu" role="3clFbG">
+            <node concept="37vLTw" id="4YDsaJSJZFq" role="2Oq$k0">
+              <ref role="3cqZAo" node="4YDsaJSJZFd" resolve="input_mm_id" />
+            </node>
+            <node concept="liA8E" id="4YDsaJSK0Mp" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelName(java.lang.String):void" resolve="setMetaModelName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4YDsaJSJZFk" role="3cqZAp">
+          <node concept="2OqwBi" id="4YDsaJSJZFu" role="3clFbG">
+            <node concept="37vLTw" id="4YDsaJSJZFt" role="2Oq$k0">
+              <ref role="3cqZAo" node="4YDsaJSJZFd" resolve="input_mm_id" />
+            </node>
+            <node concept="liA8E" id="4YDsaJSJZFv" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelURI(java.lang.String):void" resolve="setMetaModelURI" />
+              <node concept="Xl_RD" id="4YDsaJSJZFm" role="37wK5m">
+                <property role="Xl_RC" value="Input/Metamodel/URI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4YDsaJSJZC_" role="3cqZAp" />
+        <node concept="3cpWs6" id="4YDsaJSJZBr" role="3cqZAp">
+          <node concept="10Nm6u" id="4YDsaJSJZC4" role="3cqZAk" />
         </node>
       </node>
     </node>
