@@ -33,7 +33,6 @@
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7(DSLTrans)" version="0" />
-    <module reference="43c436bd-db54-4ae3-8584-e447d7de5f9d(DSLTrans.lib)" version="0" />
     <module reference="4a49fceb-ecd0-4e6c-8f19-a17f566bae9d(DSLTransRunner)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
