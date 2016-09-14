@@ -82,6 +82,12 @@
           </node>
         </node>
       </node>
+      <node concept="3s$Bmu" id="10d1GjX9s0O" role="3s_gse">
+        <property role="3s$Bm0" value="testLoadSampleTransformationModel" />
+        <node concept="3cqZAl" id="10d1GjX9s0P" role="3clF45" />
+        <node concept="3Tm1VV" id="10d1GjX9s0Q" role="1B3o_S" />
+        <node concept="3clFbS" id="10d1GjX9s0R" role="3clF47" />
+      </node>
     </node>
   </node>
 </model>
