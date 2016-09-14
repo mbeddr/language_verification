@@ -5,12 +5,11 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="2829711462939370373" name="transfverif.core.structure.ILanguageScopeProvider" flags="ng" index="1y7Kgg">
-        <child id="2829711462939238353" name="outputLan" index="1y7jx4" />
-        <child id="2829711462939238350" name="inputLan" index="1y7jxr" />
+        <child id="2829711462939238353" name="outputLanguage" index="1y7jx4" />
+        <child id="2829711462939238350" name="inputLanguage" index="1y7jxr" />
       </concept>
     </language>
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
-      <concept id="7056178151139109875" name="DSLTrans.structure.RulePresenter" flags="ng" index="3bq7Xn" />
       <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7">
         <child id="3828633282163103595" name="rulePresenter" index="1jGXV4" />
         <child id="7385586326860431340" name="previousSource" index="1o0q1e" />
@@ -132,7 +131,6 @@
       <node concept="1v6VTO" id="57pZU2XSBrN" role="1jGXV4">
         <ref role="1v6VTP" node="1AcaMXhA0G1" resolve="Father2Man" />
       </node>
-      <node concept="3bq7Xn" id="57pZU2XV9Sx" role="1jGXV4" />
       <node concept="37mRI7" id="57pZU2XSBw1" role="lGtFl">
         <node concept="37mRIm" id="57pZU2XSBw2" role="37mRID">
           <property role="37mO49" value="5566316201685744338" />

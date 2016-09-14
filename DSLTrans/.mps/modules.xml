@@ -9,7 +9,6 @@
       <modulePath path="$PROJECT_DIR$/languages/transverif.core/transfverif.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.lib/DSLTrans.lib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTransRunner/DSLTransRunner.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/DSLTransRunnerApp/DSLTransRunnerApp.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPerson/ExFamToPerson.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Experiments/ExperimentTransf.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/inputModel/inputModel.msd" folder="" />
