@@ -10,7 +10,6 @@
     <import index="lusk" ref="r:3e3702a1-b935-454e-a3d0-91767f8fc9bd(DSLTransRunner.plugin)" />
     <import index="gnwr" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans(DSLTrans.lib/)" />
     <import index="8ieb" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.impl(DSLTrans.lib/)" />
-    <import index="935o" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.transformer.exceptions(DSLTrans.lib/)" />
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
@@ -23,23 +22,12 @@
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -61,9 +49,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -72,9 +57,6 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
-        <child id="1160998896846" name="condition" index="1gVkn0" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -172,75 +154,56 @@
               <ref role="3uigEE" to="lusk:5cBD0WxCBUw" resolve="DSLTransModelLoader" />
             </node>
             <node concept="2ShNRf" id="7YEdkPF3gRG" role="33vP2m">
-              <node concept="HV5vD" id="2xy1OL3V86o" role="2ShVmc">
-                <ref role="HV5vE" to="lusk:5cBD0WxCBUw" resolve="DSLTransModelLoader" />
+              <node concept="1pGfFk" id="7YEdkPF3h0a" role="2ShVmc">
+                <ref role="37wK5l" to="lusk:10d1GjXbCC3" resolve="DSLTransModelLoader" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="SfApY" id="2xy1OL3V8hc" role="3cqZAp">
-          <node concept="3clFbS" id="2xy1OL3V8hd" role="SfCbr">
-            <node concept="3cpWs8" id="7YEdkPF3phZ" role="3cqZAp">
-              <node concept="3cpWsn" id="7YEdkPF3pi0" role="3cpWs9">
-                <property role="TrG5h" value="dsltransTr" />
-                <node concept="3uibUv" id="7YEdkPF3pi1" role="1tU5fm">
-                  <ref role="3uigEE" to="gnwr:~TransformationModel" resolve="TransformationModel" />
-                </node>
-                <node concept="2OqwBi" id="7YEdkPF3plR" role="33vP2m">
-                  <node concept="37vLTw" id="7YEdkPF3plq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7YEdkPF3gR5" resolve="loader" />
-                  </node>
-                  <node concept="liA8E" id="7YEdkPF3pro" role="2OqNvi">
-                    <ref role="37wK5l" to="lusk:10d1GjXbsKE" resolve="loadTransformation" />
-                    <node concept="37vLTw" id="7YEdkPF3prP" role="37wK5m">
-                      <ref role="3cqZAo" node="7YEdkPF3haU" resolve="trNode" />
-                    </node>
-                  </node>
-                </node>
-              </node>
+        <node concept="3cpWs8" id="7YEdkPF3phZ" role="3cqZAp">
+          <node concept="3cpWsn" id="7YEdkPF3pi0" role="3cpWs9">
+            <property role="TrG5h" value="dsltransTr" />
+            <node concept="3uibUv" id="7YEdkPF3pi1" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~TransformationModel" resolve="TransformationModel" />
             </node>
-            <node concept="3clFbF" id="1xiOHsiBFaZ" role="3cqZAp">
-              <node concept="2OqwBi" id="1xiOHsiBFb0" role="3clFbG">
-                <node concept="37vLTw" id="1xiOHsiBFb1" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
-                </node>
-                <node concept="liA8E" id="1xiOHsiBFb2" role="2OqNvi">
-                  <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
-                </node>
+            <node concept="2OqwBi" id="7YEdkPF3plR" role="33vP2m">
+              <node concept="37vLTw" id="7YEdkPF3plq" role="2Oq$k0">
+                <ref role="3cqZAo" node="7YEdkPF3gR5" resolve="loader" />
               </node>
-            </node>
-            <node concept="3vlDli" id="7YEdkPF3pDR" role="3cqZAp">
-              <node concept="3cmrfG" id="7YEdkPF3pHK" role="3tpDZB">
-                <property role="3cmrfH" value="3" />
-              </node>
-              <node concept="2OqwBi" id="7YEdkPF3pYo" role="3tpDZA">
-                <node concept="2OqwBi" id="7YEdkPF3pLu" role="2Oq$k0">
-                  <node concept="37vLTw" id="7YEdkPF3pKO" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
-                  </node>
-                  <node concept="liA8E" id="7YEdkPF3pSv" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="7YEdkPF3qmk" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+              <node concept="liA8E" id="7YEdkPF3pro" role="2OqNvi">
+                <ref role="37wK5l" to="lusk:10d1GjXbsKE" resolve="loadTransformation" />
+                <node concept="37vLTw" id="7YEdkPF3prP" role="37wK5m">
+                  <ref role="3cqZAo" node="7YEdkPF3haU" resolve="trNode" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="2xy1OL3V8h8" role="TEbGg">
-            <node concept="3clFbS" id="2xy1OL3V8h9" role="TDEfX">
-              <node concept="1gVbGN" id="2xy1OL3V92t" role="3cqZAp">
-                <node concept="3clFbT" id="2xy1OL3V9da" role="1gVkn0">
-                  <property role="3clFbU" value="false" />
-                </node>
+        </node>
+        <node concept="3clFbF" id="1xiOHsiBFaZ" role="3cqZAp">
+          <node concept="2OqwBi" id="1xiOHsiBFb0" role="3clFbG">
+            <node concept="37vLTw" id="1xiOHsiBFb1" role="2Oq$k0">
+              <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
+            </node>
+            <node concept="liA8E" id="1xiOHsiBFb2" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="7YEdkPF3pDR" role="3cqZAp">
+          <node concept="3cmrfG" id="7YEdkPF3pHK" role="3tpDZB">
+            <property role="3cmrfH" value="3" />
+          </node>
+          <node concept="2OqwBi" id="7YEdkPF3pYo" role="3tpDZA">
+            <node concept="2OqwBi" id="7YEdkPF3pLu" role="2Oq$k0">
+              <node concept="37vLTw" id="7YEdkPF3pKO" role="2Oq$k0">
+                <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
+              </node>
+              <node concept="liA8E" id="7YEdkPF3pSv" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
               </node>
             </node>
-            <node concept="3cpWsn" id="2xy1OL3V8ha" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="2xy1OL3V8hb" role="1tU5fm">
-                <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
-              </node>
+            <node concept="liA8E" id="7YEdkPF3qmk" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
             </node>
           </node>
         </node>
