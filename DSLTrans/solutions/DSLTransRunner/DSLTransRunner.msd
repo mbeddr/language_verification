@@ -11,6 +11,11 @@
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">98a5ea16-05e8-4296-b548-cbaca3397fce(Persons)</dependency>
     <dependency reexport="true">3224dd6b-ae86-46ab-b51c-b024552634a5(DSLTrans.lib)</dependency>
+    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
+    <dependency reexport="false">a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8(transfverif.core)</dependency>
+    <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" fqName="DSLTrans" version="0" />
