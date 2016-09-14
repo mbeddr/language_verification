@@ -541,6 +541,25 @@
             <property role="3cmrfH" value="46" />
           </node>
         </node>
+        <node concept="3vlDli" id="3SN6lk6kX3D" role="3cqZAp">
+          <node concept="3cmrfG" id="3SN6lk6kZfS" role="3tpDZA">
+            <property role="3cmrfH" value="61" />
+          </node>
+          <node concept="2OqwBi" id="3SN6lk6kYCY" role="3tpDZB">
+            <node concept="2OqwBi" id="3SN6lk6kYCZ" role="2Oq$k0">
+              <node concept="37vLTw" id="3SN6lk6kYD0" role="2Oq$k0">
+                <ref role="3cqZAo" node="3SN6lk6kpDV" resolve="mm_db" />
+              </node>
+              <node concept="liA8E" id="3SN6lk6kYD1" role="2OqNvi">
+                <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaAttributes():java.util.List" resolve="getMetaAttributes" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3SN6lk6kYD2" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3SN6lk6l0mu" role="3cqZAp" />
       </node>
     </node>
   </node>
