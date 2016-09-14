@@ -234,8 +234,8 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3SN6lk6ihYy" role="1B3o_S" />
-      <node concept="3uibUv" id="3SN6lk6ihYz" role="3clF45">
-        <ref role="3uigEE" to="4r8p:~ModelLoader" resolve="ModelLoader" />
+      <node concept="3uibUv" id="3SN6lk6k987" role="3clF45">
+        <ref role="3uigEE" node="3SN6lk6hFeJ" resolve="MPSModelLoader" />
       </node>
     </node>
     <node concept="2tJIrI" id="3SN6lk6iWl_" role="jymVt" />

@@ -335,46 +335,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3SN6lk6j4vJ" role="3cqZAp" />
-        <node concept="34ab3g" id="3SN6lk6j4vK" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="Xl_RD" id="3SN6lk6j4vL" role="34bqiv">
-            <property role="Xl_RC" value="-------------------" />
-          </node>
-        </node>
-        <node concept="34ab3g" id="3SN6lk6j4vM" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="3SN6lk6j4vN" role="34bqiv">
-            <node concept="2OqwBi" id="3SN6lk6j4vO" role="3uHU7w">
-              <node concept="2OqwBi" id="3SN6lk6j9Rt" role="2Oq$k0">
-                <node concept="37vLTw" id="3SN6lk6j9Hk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3SN6lk6igqw" resolve="persistenceLayer" />
-                </node>
-                <node concept="2OwXpG" id="3SN6lk6j9XC" role="2OqNvi">
-                  <ref role="2Oxat5" node="3SN6lk6iSvL" resolve="MPSInputMetamodel" />
-                </node>
-              </node>
-              <node concept="liA8E" id="3SN6lk6j4vQ" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="3SN6lk6j4vR" role="3uHU7B">
-              <property role="Xl_RC" value="MMName: " />
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="3SN6lk6j4vS" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="Xl_RD" id="3SN6lk6j4vT" role="34bqiv">
-            <property role="Xl_RC" value="-------------------" />
-          </node>
-        </node>
-        <node concept="34ab3g" id="3SN6lk6j4vU" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="Xl_RD" id="3SN6lk6j4vV" role="34bqiv">
-            <property role="Xl_RC" value="Concepts" />
-          </node>
-        </node>
         <node concept="3clFbH" id="3SN6lk6jbAf" role="3cqZAp" />
         <node concept="3cpWs8" id="3SN6lk6jxbX" role="3cqZAp">
           <node concept="3cpWsn" id="3SN6lk6jxc0" role="3cpWs9">
@@ -403,45 +363,6 @@
         </node>
         <node concept="1DcWWT" id="3SN6lk6j4vW" role="3cqZAp">
           <node concept="3clFbS" id="3SN6lk6j4vX" role="2LFqv$">
-            <node concept="3clFbH" id="3SN6lk6jp7H" role="3cqZAp" />
-            <node concept="34ab3g" id="3SN6lk6j4vY" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="3SN6lk6j4vZ" role="34bqiv">
-                <node concept="2OqwBi" id="3SN6lk6j4w0" role="3uHU7w">
-                  <node concept="37vLTw" id="3SN6lk6j4w1" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3SN6lk6j4xw" resolve="concept" />
-                  </node>
-                  <node concept="liA8E" id="3SN6lk6j4w2" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3SN6lk6j4w3" role="3uHU7B">
-                  <property role="Xl_RC" value="----&gt; " />
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="3SN6lk6j4w4" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="3SN6lk6j4w5" role="34bqiv">
-                <node concept="2OqwBi" id="3SN6lk6j4w6" role="3uHU7w">
-                  <node concept="37vLTw" id="3SN6lk6j4w7" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3SN6lk6j4xw" resolve="concept" />
-                  </node>
-                  <node concept="liA8E" id="3SN6lk6j4w8" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.isAbstract():boolean" resolve="isAbstract" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3SN6lk6j4w9" role="3uHU7B">
-                  <property role="Xl_RC" value="----&gt; Is abstract: " />
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="3SN6lk6j4wa" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="Xl_RD" id="3SN6lk6j4wb" role="34bqiv">
-                <property role="Xl_RC" value="----&gt; Parent: " />
-              </node>
-            </node>
             <node concept="3clFbH" id="3SN6lk6jcLB" role="3cqZAp" />
             <node concept="3cpWs8" id="3SN6lk6jcZx" role="3cqZAp">
               <node concept="3cpWsn" id="3SN6lk6jcZw" role="3cpWs9">
@@ -496,12 +417,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="3SN6lk6jeY3" role="3cqZAp" />
-            <node concept="34ab3g" id="3SN6lk6j4xd" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="Xl_RD" id="3SN6lk6j4xe" role="34bqiv">
-                <property role="Xl_RC" value="    Attributes: " />
-              </node>
-            </node>
             <node concept="3cpWs8" id="3SN6lk6j4xf" role="3cqZAp">
               <node concept="3cpWsn" id="3SN6lk6j4xg" role="3cpWs9">
                 <property role="TrG5h" value="props" />
@@ -641,12 +556,6 @@
         <node concept="1DcWWT" id="3SN6lk6jnQV" role="3cqZAp">
           <node concept="3clFbS" id="3SN6lk6jnQX" role="2LFqv$">
             <node concept="3clFbH" id="3SN6lk6jcdK" role="3cqZAp" />
-            <node concept="34ab3g" id="3SN6lk6j4wB" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="Xl_RD" id="3SN6lk6j4wC" role="34bqiv">
-                <property role="Xl_RC" value="    Containment Links: " />
-              </node>
-            </node>
             <node concept="3cpWs8" id="3SN6lk6j4wD" role="3cqZAp">
               <node concept="3cpWsn" id="3SN6lk6j4wE" role="3cpWs9">
                 <property role="TrG5h" value="clinks" />
@@ -771,12 +680,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="3SN6lk6jBB3" role="3cqZAp" />
-            <node concept="34ab3g" id="3SN6lk6j4wU" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="Xl_RD" id="3SN6lk6j4wV" role="34bqiv">
-                <property role="Xl_RC" value="    Reference Links: " />
-              </node>
-            </node>
             <node concept="3cpWs8" id="3SN6lk6j4wW" role="3cqZAp">
               <node concept="3cpWsn" id="3SN6lk6j4wX" role="3cpWs9">
                 <property role="TrG5h" value="rlinks" />
