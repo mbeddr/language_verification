@@ -12,38 +12,29 @@
       </concept>
     </language>
     <language id="05f6207f-0b7e-4413-bedb-09f3dfc58438" name="Families">
-      <concept id="5898026252864033707" name="Families.structure.Company" flags="ng" index="3GeAKb">
-        <child id="5898026252864033802" name="isIn" index="3GeAIE" />
-      </concept>
       <concept id="5898026252864033708" name="Families.structure.Country" flags="ng" index="3GeAKc">
-        <child id="5898026252864033739" name="companies" index="3GeALF" />
         <child id="5898026252864033741" name="families" index="3GeALH" />
         <child id="5898026252864033744" name="cities" index="3GeALK" />
       </concept>
-      <concept id="5898026252864033709" name="Families.structure.Family" flags="ng" index="3GeAKd" />
+      <concept id="5898026252864033709" name="Families.structure.Family" flags="ng" index="3GeAKd">
+        <reference id="5898026252864033789" name="registeredIn" index="3GeALt" />
+      </concept>
       <concept id="5898026252864033710" name="Families.structure.City" flags="ng" index="3GeAKe">
         <child id="5898026252864033780" name="neighborhoods" index="3GeALk" />
       </concept>
       <concept id="5898026252864033713" name="Families.structure.Neighborhood" flags="ng" index="3GeAKh" />
-      <concept id="7360946710770400633" name="Families.structure.CityPointer" flags="ng" index="3OaYHL">
-        <reference id="7360946710770400634" name="pointer" index="3OaYHM" />
-      </concept>
     </language>
   </registry>
   <node concept="3GeAKc" id="10d1GjX9r2w">
     <property role="TrG5h" value="CountryA" />
-    <node concept="3GeAKd" id="10d1GjX9r2x" role="3GeALH" />
     <node concept="3GeAKe" id="10d1GjX9r2y" role="3GeALK">
       <property role="TrG5h" value="CityA" />
       <node concept="3GeAKh" id="10d1GjX9r2z" role="3GeALk">
         <property role="TrG5h" value="NeighbourhoodA" />
       </node>
     </node>
-    <node concept="3GeAKb" id="10d1GjX9r2$" role="3GeALF">
-      <property role="TrG5h" value="CompanyA" />
-      <node concept="3OaYHL" id="10d1GjX9r2_" role="3GeAIE">
-        <ref role="3OaYHM" node="10d1GjX9r2y" resolve="CityA" />
-      </node>
+    <node concept="3GeAKd" id="10d1GjX9r2E" role="3GeALH">
+      <ref role="3GeALt" node="10d1GjX9r2z" resolve="NeighbourhoodA" />
     </node>
   </node>
 </model>
