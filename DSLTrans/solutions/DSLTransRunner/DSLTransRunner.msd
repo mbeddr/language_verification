@@ -10,7 +10,7 @@
     <dependency reexport="false">4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7(DSLTrans)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">98a5ea16-05e8-4296-b548-cbaca3397fce(Persons)</dependency>
-    <dependency reexport="false">3224dd6b-ae86-46ab-b51c-b024552634a5(DSLTrans.lib)</dependency>
+    <dependency reexport="true">3224dd6b-ae86-46ab-b51c-b024552634a5(DSLTrans.lib)</dependency>
   </dependencies>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
