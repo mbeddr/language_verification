@@ -189,6 +189,57 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3SN6lk6jAmr" role="3cqZAp">
+          <node concept="2OqwBi" id="3SN6lk6jAms" role="3clFbG">
+            <node concept="37vLTw" id="3SN6lk6jAmt" role="2Oq$k0">
+              <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
+            </node>
+            <node concept="liA8E" id="3SN6lk6jAmu" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3SN6lk6jApG" role="3cqZAp">
+          <node concept="2OqwBi" id="3SN6lk6jApH" role="3clFbG">
+            <node concept="37vLTw" id="3SN6lk6jApI" role="2Oq$k0">
+              <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
+            </node>
+            <node concept="liA8E" id="3SN6lk6jApJ" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3SN6lk6jAtx" role="3cqZAp">
+          <node concept="2OqwBi" id="3SN6lk6jAty" role="3clFbG">
+            <node concept="37vLTw" id="3SN6lk6jAtz" role="2Oq$k0">
+              <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
+            </node>
+            <node concept="liA8E" id="3SN6lk6jAt$" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3SN6lk6jAxV" role="3cqZAp">
+          <node concept="2OqwBi" id="3SN6lk6jAxW" role="3clFbG">
+            <node concept="37vLTw" id="3SN6lk6jAxX" role="2Oq$k0">
+              <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
+            </node>
+            <node concept="liA8E" id="3SN6lk6jAxY" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3SN6lk6jAyU" role="3cqZAp">
+          <node concept="2OqwBi" id="3SN6lk6jAyV" role="3clFbG">
+            <node concept="37vLTw" id="3SN6lk6jAyW" role="2Oq$k0">
+              <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
+            </node>
+            <node concept="liA8E" id="3SN6lk6jAyX" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3SN6lk6jAjO" role="3cqZAp" />
         <node concept="3vlDli" id="7YEdkPF3pDR" role="3cqZAp">
           <node concept="3cmrfG" id="7YEdkPF3pHK" role="3tpDZB">
             <property role="3cmrfH" value="3" />
