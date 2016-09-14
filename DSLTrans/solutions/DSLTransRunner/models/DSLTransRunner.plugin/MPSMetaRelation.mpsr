@@ -4,7 +4,6 @@
   <imports>
     <import index="fodd" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.metamodel(DSLTrans.lib/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="4hha" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.tests(DSLTrans.lib/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -322,8 +321,8 @@
             <node concept="37vLTw" id="5cBD0WxCQJG" role="2ZW6bz">
               <ref role="3cqZAo" node="5cBD0WxCQJC" resolve="ar" />
             </node>
-            <node concept="3uibUv" id="5cBD0WxCQJH" role="2ZW6by">
-              <ref role="3uigEE" to="4hha:~GenericMetaRelation" resolve="GenericMetaRelation" />
+            <node concept="3uibUv" id="3SN6lk6ikoa" role="2ZW6by">
+              <ref role="3uigEE" node="5cBD0WxCD0X" resolve="MPSMetaRelation" />
             </node>
           </node>
           <node concept="3clFbS" id="5cBD0WxCQJK" role="3clFbx">
@@ -331,15 +330,15 @@
               <node concept="3cpWsn" id="5cBD0WxCQJL" role="3cpWs9">
                 <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="mr" />
-                <node concept="3uibUv" id="5cBD0WxCQJN" role="1tU5fm">
-                  <ref role="3uigEE" to="4hha:~GenericMetaRelation" resolve="GenericMetaRelation" />
+                <node concept="3uibUv" id="3SN6lk6ik__" role="1tU5fm">
+                  <ref role="3uigEE" node="5cBD0WxCD0X" resolve="MPSMetaRelation" />
                 </node>
                 <node concept="10QFUN" id="5cBD0WxCQJO" role="33vP2m">
                   <node concept="37vLTw" id="5cBD0WxCQJP" role="10QFUP">
                     <ref role="3cqZAo" node="5cBD0WxCQJC" resolve="ar" />
                   </node>
-                  <node concept="3uibUv" id="5cBD0WxCQJQ" role="10QFUM">
-                    <ref role="3uigEE" to="4hha:~GenericMetaRelation" resolve="GenericMetaRelation" />
+                  <node concept="3uibUv" id="3SN6lk6ikVG" role="10QFUM">
+                    <ref role="3uigEE" node="5cBD0WxCD0X" resolve="MPSMetaRelation" />
                   </node>
                 </node>
               </node>
@@ -361,7 +360,7 @@
                           <ref role="3cqZAo" node="5cBD0WxCQJL" resolve="mr" />
                         </node>
                         <node concept="liA8E" id="5cBD0WxCQLb" role="2OqNvi">
-                          <ref role="37wK5l" to="4hha:~GenericMetaRelation.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" node="5cBD0WxCQKs" resolve="getName" />
                         </node>
                       </node>
                     </node>
@@ -378,7 +377,7 @@
                         <ref role="3cqZAo" node="5cBD0WxCQJL" resolve="mr" />
                       </node>
                       <node concept="liA8E" id="5cBD0WxCQLg" role="2OqNvi">
-                        <ref role="37wK5l" to="4hha:~GenericMetaRelation.getSource():dsltrans.metamodel.MetaEntity" resolve="getSource" />
+                        <ref role="37wK5l" node="5cBD0WxCQJo" resolve="getSource" />
                       </node>
                     </node>
                   </node>
@@ -395,7 +394,7 @@
                       <ref role="3cqZAo" node="5cBD0WxCQJL" resolve="mr" />
                     </node>
                     <node concept="liA8E" id="5cBD0WxCQLl" role="2OqNvi">
-                      <ref role="37wK5l" to="4hha:~GenericMetaRelation.getTarget():dsltrans.metamodel.MetaEntity" resolve="getTarget" />
+                      <ref role="37wK5l" node="5cBD0WxCQJv" resolve="getTarget" />
                     </node>
                   </node>
                 </node>
