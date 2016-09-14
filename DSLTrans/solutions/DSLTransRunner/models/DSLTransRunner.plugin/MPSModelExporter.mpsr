@@ -100,7 +100,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="3SN6lk6in6b">
-    <property role="3GE5qa" value="DSLTransInput" />
+    <property role="3GE5qa" value="DSLTransInputClasses" />
     <property role="TrG5h" value="MPSModelExporter" />
     <node concept="2tJIrI" id="3SN6lk6ingH" role="jymVt" />
     <node concept="312cEg" id="3SN6lk6in7a" role="jymVt">

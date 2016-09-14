@@ -60,7 +60,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="3SN6lk6hDOS">
-    <property role="3GE5qa" value="DSLTransInput" />
+    <property role="3GE5qa" value="DSLTransInputClasses" />
     <property role="TrG5h" value="MPSInstanceDatabaseManager" />
     <node concept="2tJIrI" id="3SN6lk6hDV8" role="jymVt" />
     <node concept="312cEg" id="3SN6lk6hDQ6" role="jymVt">
