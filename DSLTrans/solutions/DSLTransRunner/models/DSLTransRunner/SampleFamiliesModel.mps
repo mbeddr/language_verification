@@ -25,17 +25,25 @@
         <child id="5898026252864033780" name="neighborhoods" index="3GeALk" />
       </concept>
       <concept id="5898026252864033713" name="Families.structure.Neighborhood" flags="ng" index="3GeAKh" />
-      <concept id="7360946710770400633" name="Families.structure.CityPointer" flags="ng" index="3OaYHL" />
+      <concept id="7360946710770400633" name="Families.structure.CityPointer" flags="ng" index="3OaYHL">
+        <reference id="7360946710770400634" name="pointer" index="3OaYHM" />
+      </concept>
     </language>
   </registry>
   <node concept="3GeAKc" id="10d1GjX9r2w">
-    <property role="TrG5h" value="A" />
+    <property role="TrG5h" value="CountryA" />
     <node concept="3GeAKd" id="10d1GjX9r2x" role="3GeALH" />
     <node concept="3GeAKe" id="10d1GjX9r2y" role="3GeALK">
-      <node concept="3GeAKh" id="10d1GjX9r2z" role="3GeALk" />
+      <property role="TrG5h" value="CityA" />
+      <node concept="3GeAKh" id="10d1GjX9r2z" role="3GeALk">
+        <property role="TrG5h" value="NeighbourhoodA" />
+      </node>
     </node>
     <node concept="3GeAKb" id="10d1GjX9r2$" role="3GeALF">
-      <node concept="3OaYHL" id="10d1GjX9r2_" role="3GeAIE" />
+      <property role="TrG5h" value="CompanyA" />
+      <node concept="3OaYHL" id="10d1GjX9r2_" role="3GeAIE">
+        <ref role="3OaYHM" node="10d1GjX9r2y" resolve="CityA" />
+      </node>
     </node>
   </node>
 </model>
