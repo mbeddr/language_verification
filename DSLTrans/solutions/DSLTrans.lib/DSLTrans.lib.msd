@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="DSLTrans.lib" uuid="3224dd6b-ae86-46ab-b51c-b024552634a5" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="dsltrans_engine.jar" />
+    <modelRoot contentPath="C:/Users/clagms/Source Control/GitHub/DSLTransGIT/DSLTransEngine/exportedlib" type="java_classes">
+      <sourceRoot location="dsltrans_engine_201609142123.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/dsltrans_engine.jar" />
+    <stubModelEntry path="C:/Users/clagms/Source Control/GitHub/DSLTransGIT/DSLTransEngine/exportedlib/dsltrans_engine_201609142123.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
