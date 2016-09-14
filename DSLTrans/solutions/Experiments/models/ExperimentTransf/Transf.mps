@@ -7,18 +7,46 @@
   <imports />
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
+      <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
+        <property id="4439542802417641475" name="typeName" index="aCCiF" />
+      </concept>
+      <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
+        <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
+        <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
+      </concept>
+      <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
+        <property id="1722780940080858386" name="counter" index="KJs$L" />
+      </concept>
+      <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
+        <reference id="2796321687636315575" name="source" index="13xwDP" />
+        <reference id="2796321687636315576" name="target" index="13xwDU" />
+      </concept>
+      <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
+        <property id="2796321687635932262" name="ID" index="13z3e$" />
+        <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+      </concept>
+      <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
       <concept id="2829711462939370373" name="transfverif.core.structure.ILanguageScopeProvider" flags="ng" index="1y7Kgg">
-        <child id="2829711462939238353" name="outputLan" index="1y7jx4" />
-        <child id="2829711462939238350" name="inputLan" index="1y7jxr" />
+        <child id="2829711462939238353" name="outputLanguage" index="1y7jx4" />
+        <child id="2829711462939238350" name="inputLanguage" index="1y7jxr" />
       </concept>
     </language>
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
-      <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7" />
+      <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7">
+        <child id="3828633282163103595" name="rulePresenter" index="1jGXV4" />
+      </concept>
+      <concept id="3828633282163103455" name="DSLTrans.structure.Rule" flags="ng" index="1jGXXK">
+        <child id="7049464676098553437" name="applyModel" index="2ik0Mo" />
+        <child id="7049464676098553435" name="matchModel" index="2ik0Mu" />
+      </concept>
       <concept id="7769237388006044623" name="DSLTrans.structure.Transformation" flags="ng" index="3k6lfM">
-        <child id="3065370308850507521" name="outputModel" index="AAzOf" />
-        <child id="3065370308850962716" name="inputModel" index="ABjci" />
+        <child id="3065370308850507521" name="outputModule" index="AAzOf" />
+        <child id="3065370308850962716" name="inputModule" index="ABjci" />
         <child id="7769237388006044628" name="layer" index="3k6lfD" />
       </concept>
+      <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
+      <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
@@ -89,6 +117,28 @@
             <property role="gqqTX" value="318.0" />
             <property role="gqqTy" value="284.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXK" id="3SN6lk6hFlF" role="1jGXV4">
+        <property role="TrG5h" value="bla" />
+        <node concept="3GsvpM" id="3SN6lk6hFlG" role="2ik0Mo">
+          <property role="KJs$L" value="0" />
+        </node>
+        <node concept="3GsvpN" id="3SN6lk6hFmm" role="2ik0Mu">
+          <property role="KJs$L" value="2" />
+          <node concept="1jGXVw" id="3SN6lk6iaWz" role="13z3mp">
+            <property role="aCCiF" value="bla" />
+            <ref role="13xwDP" node="3SN6lk6iaW_" />
+            <ref role="13xwDU" node="3SN6lk6iaWK" />
+          </node>
+          <node concept="2ik0NV" id="3SN6lk6iaW_" role="13z3mo">
+            <property role="13z3e$" value="Any0" />
+            <property role="13z3hU" value="A" />
+          </node>
+          <node concept="2ik0NV" id="3SN6lk6iaWK" role="13z3mo">
+            <property role="13z3e$" value="Any1" />
+            <property role="13z3hU" value="B" />
           </node>
         </node>
       </node>

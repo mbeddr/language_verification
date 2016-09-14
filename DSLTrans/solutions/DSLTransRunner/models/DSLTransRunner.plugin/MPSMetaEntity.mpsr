@@ -123,7 +123,7 @@
   </registry>
   <node concept="312cEu" id="5cBD0WxCCNq">
     <property role="TrG5h" value="MPSMetaEntity" />
-    <property role="3GE5qa" value="metamodel" />
+    <property role="3GE5qa" value="DSLTransInput" />
     <node concept="2tJIrI" id="5cBD0WxCDJ9" role="jymVt" />
     <node concept="312cEg" id="5cBD0WxCDOa" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -294,6 +294,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCRuu" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCCU3" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getDotNotation" />
@@ -321,6 +322,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCRJI" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCCUa" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getQualifiedName" />
@@ -348,6 +350,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCS0Z" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCCUh" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getName" />
@@ -365,6 +368,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCSih" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCCUo" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isAbstract" />
@@ -380,6 +384,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCSz$" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCCUv" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getSuperEntities" />
@@ -400,6 +405,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCSOS" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCCUB" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="isSubTypeOf" />
@@ -505,6 +511,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCT6d" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCCUK" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="print" />
@@ -522,6 +529,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCTnz" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCCUR" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getPackage" />

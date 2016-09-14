@@ -14,12 +14,6 @@
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
-        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
-      </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
-        <child id="1188208488637" name="annotation" index="2AJF6D" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -124,7 +118,7 @@
   </registry>
   <node concept="312cEu" id="5cBD0WxCD0X">
     <property role="TrG5h" value="MPSMetaRelation" />
-    <property role="3GE5qa" value="metamodel" />
+    <property role="3GE5qa" value="DSLTransInput" />
     <node concept="312cEg" id="5cBD0WxCQIo" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -171,6 +165,7 @@
       </node>
       <node concept="3Tm6S6" id="5cBD0WxCQIF" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCR5A" role="jymVt" />
     <node concept="3clFbW" id="5cBD0WxCQIG" role="jymVt">
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
@@ -275,13 +270,11 @@
       </node>
       <node concept="3Tm1VV" id="5cBD0WxCQJn" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCTRz" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCQJo" role="jymVt">
       <property role="TrG5h" value="getSource" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="5cBD0WxCQJp" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
       <node concept="3clFbS" id="5cBD0WxCQJq" role="3clF47">
         <node concept="3cpWs6" id="5cBD0WxCQJr" role="3cqZAp">
           <node concept="37vLTw" id="5cBD0WxCQJs" role="3cqZAk">
@@ -294,13 +287,11 @@
         <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCUfV" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCQJv" role="jymVt">
       <property role="TrG5h" value="getTarget" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="5cBD0WxCQJw" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
       <node concept="3clFbS" id="5cBD0WxCQJx" role="3clF47">
         <node concept="3cpWs6" id="5cBD0WxCQJy" role="3cqZAp">
           <node concept="37vLTw" id="5cBD0WxCQJz" role="3cqZAk">
@@ -313,13 +304,11 @@
         <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCUCf" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCQJA" role="jymVt">
       <property role="TrG5h" value="isEqual" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="5cBD0WxCQJB" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
       <node concept="37vLTG" id="5cBD0WxCQJC" role="3clF46">
         <property role="TrG5h" value="ar" />
         <property role="3TUv4t" value="false" />
@@ -423,13 +412,11 @@
       <node concept="3Tm1VV" id="5cBD0WxCQKc" role="1B3o_S" />
       <node concept="10P_77" id="5cBD0WxCQKd" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCV0z" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCQKe" role="jymVt">
       <property role="TrG5h" value="isSet" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="5cBD0WxCQKf" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
       <node concept="3clFbS" id="5cBD0WxCQKg" role="3clF47">
         <node concept="3cpWs6" id="5cBD0WxCQKh" role="3cqZAp">
           <node concept="37vLTw" id="5cBD0WxCQKi" role="3cqZAk">
@@ -440,13 +427,11 @@
       <node concept="3Tm1VV" id="5cBD0WxCQKj" role="1B3o_S" />
       <node concept="10P_77" id="5cBD0WxCQKk" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCVoT" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCQKl" role="jymVt">
       <property role="TrG5h" value="isContainment" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="5cBD0WxCQKm" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
       <node concept="3clFbS" id="5cBD0WxCQKn" role="3clF47">
         <node concept="3cpWs6" id="5cBD0WxCQKo" role="3cqZAp">
           <node concept="37vLTw" id="5cBD0WxCQKp" role="3cqZAk">
@@ -457,13 +442,11 @@
       <node concept="3Tm1VV" id="5cBD0WxCQKq" role="1B3o_S" />
       <node concept="10P_77" id="5cBD0WxCQKr" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCVLh" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCQKs" role="jymVt">
       <property role="TrG5h" value="getName" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="5cBD0WxCQKt" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
       <node concept="3clFbS" id="5cBD0WxCQKu" role="3clF47">
         <node concept="3cpWs6" id="5cBD0WxCQKv" role="3cqZAp">
           <node concept="37vLTw" id="5cBD0WxCQKw" role="3cqZAk">
@@ -476,13 +459,11 @@
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
     </node>
+    <node concept="2tJIrI" id="5cBD0WxCW9_" role="jymVt" />
     <node concept="3clFb_" id="5cBD0WxCQKz" role="jymVt">
       <property role="TrG5h" value="print" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="5cBD0WxCQK$" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
       <node concept="3clFbS" id="5cBD0WxCQK_" role="3clF47">
         <node concept="3clFbJ" id="5cBD0WxCQKA" role="3cqZAp">
           <node concept="1rXfSq" id="5cBD0WxCQKB" role="3clFbw">
