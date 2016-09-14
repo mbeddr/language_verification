@@ -2,20 +2,48 @@
 <model ref="r:3e3702a1-b935-454e-a3d0-91767f8fc9bd(DSLTransRunner.plugin)" content="root">
   <persistence version="9" />
   <imports>
+    <import index="fodd" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.metamodel(DSLTrans.lib/)" implicit="true" />
     <import index="4r8p" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.io(DSLTrans.lib/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
-    <import index="fodd" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.metamodel(DSLTrans.lib/)" implicit="true" />
     <import index="fzpi" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.model(DSLTrans.lib/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
+        <property id="8606350594693632173" name="isTransient" index="eg7rD" />
+        <property id="1240249534625" name="isVolatile" index="34CwA1" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
       </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -36,7 +64,15 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -47,6 +83,7 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -61,6 +98,96 @@
     <property role="3GE5qa" value="DSLTransInput" />
     <property role="TrG5h" value="MPSModelLoader" />
     <node concept="2tJIrI" id="3SN6lk6hFfv" role="jymVt" />
+    <node concept="312cEg" id="3SN6lk6igqo" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="metamodelDatabase" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="3SN6lk6igqq" role="1tU5fm">
+        <ref role="3uigEE" to="fodd:~MetaModelDatabase" resolve="MetaModelDatabase" />
+      </node>
+      <node concept="3Tm6S6" id="3SN6lk6igqr" role="1B3o_S" />
+    </node>
+    <node concept="312cEg" id="3SN6lk6igqs" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="instanceDatabase" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="3SN6lk6ilKW" role="1tU5fm">
+        <ref role="3uigEE" node="3SN6lk6gWv2" resolve="MPSInstanceDatabase" />
+      </node>
+      <node concept="3Tm6S6" id="3SN6lk6igqv" role="1B3o_S" />
+    </node>
+    <node concept="312cEg" id="3SN6lk6igqw" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="persistenceLayer" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3uibUv" id="3SN6lk6im0F" role="1tU5fm">
+        <ref role="3uigEE" node="3SN6lk6ihXf" resolve="MPSPersistenceLayer" />
+      </node>
+      <node concept="3Tm6S6" id="3SN6lk6igqz" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3SN6lk6igmE" role="jymVt" />
+    <node concept="3clFbW" id="3SN6lk6igB6" role="jymVt">
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3cqZAl" id="3SN6lk6igB7" role="3clF45" />
+      <node concept="37vLTG" id="3SN6lk6igB8" role="3clF46">
+        <property role="TrG5h" value="genericPersistenceLayer" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="3SN6lk6imdW" role="1tU5fm">
+          <ref role="3uigEE" node="3SN6lk6ihXf" resolve="MPSPersistenceLayer" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3SN6lk6igBa" role="3clF47">
+        <node concept="3clFbF" id="3SN6lk6igBb" role="3cqZAp">
+          <node concept="37vLTI" id="3SN6lk6igBc" role="3clFbG">
+            <node concept="2OqwBi" id="3SN6lk6igBd" role="37vLTJ">
+              <node concept="Xjq3P" id="3SN6lk6igBe" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3SN6lk6igBf" role="2OqNvi">
+                <ref role="2Oxat5" node="3SN6lk6igqo" resolve="metamodelDatabase" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="3SN6lk6igBu" role="37vLTx">
+              <node concept="1pGfFk" id="3SN6lk6igBv" role="2ShVmc">
+                <ref role="37wK5l" to="fodd:~MetaModelDatabase.&lt;init&gt;()" resolve="MetaModelDatabase" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3SN6lk6igBh" role="3cqZAp">
+          <node concept="37vLTI" id="3SN6lk6igBi" role="3clFbG">
+            <node concept="2OqwBi" id="3SN6lk6igBj" role="37vLTJ">
+              <node concept="Xjq3P" id="3SN6lk6igBk" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3SN6lk6igBl" role="2OqNvi">
+                <ref role="2Oxat5" node="3SN6lk6igqs" resolve="instanceDatabase" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="3SN6lk6igBw" role="37vLTx">
+              <node concept="HV5vD" id="3SN6lk6impI" role="2ShVmc">
+                <ref role="HV5vE" node="3SN6lk6gWv2" resolve="MPSInstanceDatabase" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3SN6lk6igBn" role="3cqZAp">
+          <node concept="37vLTI" id="3SN6lk6igBo" role="3clFbG">
+            <node concept="2OqwBi" id="3SN6lk6igBp" role="37vLTJ">
+              <node concept="Xjq3P" id="3SN6lk6igBq" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3SN6lk6igBr" role="2OqNvi">
+                <ref role="2Oxat5" node="3SN6lk6igqw" resolve="persistenceLayer" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3SN6lk6igBs" role="37vLTx">
+              <ref role="3cqZAo" node="3SN6lk6igB8" resolve="genericPersistenceLayer" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3SN6lk6igBt" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3SN6lk6igze" role="jymVt" />
     <node concept="3Tm1VV" id="3SN6lk6hFeK" role="1B3o_S" />
     <node concept="3uibUv" id="3SN6lk6hFfk" role="EKbjA">
       <ref role="3uigEE" to="4r8p:~ModelLoader" resolve="ModelLoader" />
@@ -117,8 +244,10 @@
         <ref role="3uigEE" to="fodd:~MetaModelDatabase" resolve="MetaModelDatabase" />
       </node>
       <node concept="3clFbS" id="3SN6lk6hFfZ" role="3clF47">
-        <node concept="3clFbF" id="3SN6lk6hFg1" role="3cqZAp">
-          <node concept="10Nm6u" id="3SN6lk6hFg0" role="3clFbG" />
+        <node concept="3cpWs6" id="3SN6lk6igZu" role="3cqZAp">
+          <node concept="37vLTw" id="3SN6lk6igZv" role="3cqZAk">
+            <ref role="3cqZAo" node="3SN6lk6igqo" resolve="metamodelDatabase" />
+          </node>
         </node>
       </node>
     </node>
@@ -135,7 +264,21 @@
           <ref role="3uigEE" to="fodd:~MetaModelDatabase" resolve="MetaModelDatabase" />
         </node>
       </node>
-      <node concept="3clFbS" id="3SN6lk6hFg8" role="3clF47" />
+      <node concept="3clFbS" id="3SN6lk6hFg8" role="3clF47">
+        <node concept="3clFbF" id="3SN6lk6ih1X" role="3cqZAp">
+          <node concept="37vLTI" id="3SN6lk6ih1Y" role="3clFbG">
+            <node concept="2OqwBi" id="3SN6lk6ih1Z" role="37vLTJ">
+              <node concept="Xjq3P" id="3SN6lk6ih20" role="2Oq$k0" />
+              <node concept="2OwXpG" id="3SN6lk6ih21" role="2OqNvi">
+                <ref role="2Oxat5" node="3SN6lk6igqo" resolve="metamodelDatabase" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3SN6lk6ihir" role="37vLTx">
+              <ref role="3cqZAo" node="3SN6lk6hFg6" resolve="database" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="3SN6lk6hFg9" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -147,8 +290,10 @@
         <ref role="3uigEE" to="fzpi:~InstanceDatabase" resolve="InstanceDatabase" />
       </node>
       <node concept="3clFbS" id="3SN6lk6hFgd" role="3clF47">
-        <node concept="3clFbF" id="3SN6lk6hFgf" role="3cqZAp">
-          <node concept="10Nm6u" id="3SN6lk6hFge" role="3clFbG" />
+        <node concept="3cpWs6" id="3SN6lk6ihlm" role="3cqZAp">
+          <node concept="37vLTw" id="3SN6lk6ihln" role="3cqZAk">
+            <ref role="3cqZAo" node="3SN6lk6igqs" resolve="instanceDatabase" />
+          </node>
         </node>
       </node>
     </node>
