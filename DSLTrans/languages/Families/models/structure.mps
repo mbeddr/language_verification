@@ -87,6 +87,10 @@
     <node concept="PrWs8" id="57pZU2XSTeP" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="1eaQRpkrIDH" role="1TKVEl">
+      <property role="TrG5h" value="someprop" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="57pZU2XSTeH">
     <property role="1pbfSe" value="264082253" />
@@ -121,6 +125,9 @@
       <property role="20kJfa" value="registeredIn" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="57pZU2XSTeL" resolve="Neighborhood" />
+    </node>
+    <node concept="PrWs8" id="1eaQRpkstAQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="57pZU2XSTeI">
