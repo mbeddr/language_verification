@@ -819,48 +819,7 @@
             <ref role="3cqZAo" node="1eaQRpkt9Jm" resolve="conLinks" />
           </node>
           <node concept="3clFbS" id="1eaQRpkt9Jy" role="2LFqv$">
-            <node concept="3cpWs8" id="1eaQRpkt9Jz" role="3cqZAp">
-              <node concept="3cpWsn" id="1eaQRpkt9J$" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="targetClass" />
-                <node concept="3uibUv" id="1eaQRpkt9J_" role="1tU5fm">
-                  <ref role="3uigEE" node="5cBD0WxCCNq" resolve="MPSMetaEntity" />
-                </node>
-                <node concept="10QFUN" id="1eaQRpkt9JA" role="33vP2m">
-                  <node concept="2OqwBi" id="1eaQRpkt9JB" role="10QFUP">
-                    <node concept="2OqwBi" id="1eaQRpkt9JC" role="2Oq$k0">
-                      <node concept="Xjq3P" id="1eaQRpkt9JD" role="2Oq$k0" />
-                      <node concept="2OwXpG" id="1eaQRpkt9JE" role="2OqNvi">
-                        <ref role="2Oxat5" node="3SN6lk6igqo" resolve="metamodelDatabase" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="1eaQRpkt9JF" role="2OqNvi">
-                      <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaEntityByName(java.lang.String,java.lang.String):dsltrans.metamodel.MetaEntity" resolve="getMetaEntityByName" />
-                      <node concept="Xl_RD" id="1eaQRpkt9JG" role="37wK5m">
-                        <property role="Xl_RC" value="samplenamespace" />
-                      </node>
-                      <node concept="2OqwBi" id="1eaQRpkt9JH" role="37wK5m">
-                        <node concept="2OqwBi" id="1eaQRpkt9JI" role="2Oq$k0">
-                          <node concept="2GrUjf" id="1eaQRpkt9JJ" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="1eaQRpkt9Jw" resolve="conLink" />
-                          </node>
-                          <node concept="liA8E" id="1eaQRpkt9JK" role="2OqNvi">
-                            <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="1eaQRpkt9JL" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3uibUv" id="1eaQRpkt9JM" role="10QFUM">
-                    <ref role="3uigEE" node="5cBD0WxCCNq" resolve="MPSMetaEntity" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="1eaQRpkt9JN" role="3cqZAp" />
+            <node concept="3clFbH" id="1eaQRpkujdI" role="3cqZAp" />
             <node concept="3cpWs8" id="1eaQRpkt9K2" role="3cqZAp">
               <node concept="3cpWsn" id="1eaQRpkt9K3" role="3cpWs9">
                 <property role="TrG5h" value="containedNodes" />
@@ -908,36 +867,26 @@
                           <ref role="37wK5l" to="c17a:~SConceptFeature.getName():java.lang.String" resolve="getName" />
                         </node>
                       </node>
-                      <node concept="3EllGN" id="1eaQRpktPoi" role="37wK5m">
-                        <node concept="2OqwBi" id="1eaQRpktPSv" role="3ElVtu">
-                          <node concept="37vLTw" id="1eaQRpktPGh" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1eaQRpkt9KW" resolve="conceptInstance" />
+                      <node concept="3EllGN" id="1eaQRpkueLH" role="37wK5m">
+                        <node concept="2OqwBi" id="1eaQRpkugBR" role="3ElVtu">
+                          <node concept="2GrUjf" id="1eaQRpkuf9I" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="1eaQRpkt9Jw" resolve="conLink" />
                           </node>
-                          <node concept="liA8E" id="1eaQRpktQ5q" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                          <node concept="liA8E" id="1eaQRpkugTO" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SConceptFeature.getOwner():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getOwner" />
                           </node>
                         </node>
                         <node concept="37vLTw" id="1eaQRpktOYO" role="3ElQJh">
                           <ref role="3cqZAo" node="1eaQRpktyZi" resolve="classMap" />
                         </node>
                       </node>
-                      <node concept="3EllGN" id="1eaQRpktR4$" role="37wK5m">
-                        <node concept="2OqwBi" id="1eaQRpktSO4" role="3ElVtu">
-                          <node concept="2OqwBi" id="1eaQRpktSsK" role="2Oq$k0">
-                            <node concept="2OqwBi" id="1eaQRpktSai" role="2Oq$k0">
-                              <node concept="37vLTw" id="1eaQRpktRp9" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1eaQRpkt9K3" resolve="containedNodes" />
-                              </node>
-                              <node concept="liA8E" id="1eaQRpktSki" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="1eaQRpktSFq" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
-                            </node>
+                      <node concept="3EllGN" id="1eaQRpkuhyU" role="37wK5m">
+                        <node concept="2OqwBi" id="1eaQRpkuiit" role="3ElVtu">
+                          <node concept="2GrUjf" id="1eaQRpkuhYF" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="1eaQRpkt9Jw" resolve="conLink" />
                           </node>
-                          <node concept="liA8E" id="1eaQRpktSYC" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                          <node concept="liA8E" id="1eaQRpkuiyb" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                           </node>
                         </node>
                         <node concept="37vLTw" id="1eaQRpktTtc" role="3ElQJh">
