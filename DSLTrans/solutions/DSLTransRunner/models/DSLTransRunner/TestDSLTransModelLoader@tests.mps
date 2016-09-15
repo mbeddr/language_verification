@@ -12,9 +12,8 @@
     <import index="8ieb" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.impl(DSLTrans.lib/)" />
     <import index="935o" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.transformer.exceptions(DSLTrans.lib/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="x957" ref="r:d68ae243-c16e-4cf0-a7fb-44b13c900089(DSLTransRunner.TestDSLTransModelLoader@tests)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
+    <import index="hu10" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.common.util(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
@@ -145,18 +144,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -228,6 +217,74 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4gTzlFhOr5f" role="3cqZAp" />
+        <node concept="SfApY" id="1qXFFx7fe0_" role="3cqZAp">
+          <node concept="3clFbS" id="1qXFFx7fe0A" role="SfCbr">
+            <node concept="3cpWs8" id="7YEdkPF3phZ" role="3cqZAp">
+              <node concept="3cpWsn" id="7YEdkPF3pi0" role="3cpWs9">
+                <property role="TrG5h" value="dsltransTr" />
+                <node concept="3uibUv" id="7YEdkPF3pi1" role="1tU5fm">
+                  <ref role="3uigEE" to="gnwr:~TransformationModel" resolve="TransformationModel" />
+                </node>
+                <node concept="2OqwBi" id="7YEdkPF3plR" role="33vP2m">
+                  <node concept="37vLTw" id="7YEdkPF3plq" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7YEdkPF3gR5" resolve="loader" />
+                  </node>
+                  <node concept="liA8E" id="7YEdkPF3pro" role="2OqNvi">
+                    <ref role="37wK5l" to="lusk:10d1GjXbsKE" resolve="loadTransformation" />
+                    <node concept="37vLTw" id="7YEdkPF3prP" role="37wK5m">
+                      <ref role="3cqZAo" node="7YEdkPF3haU" resolve="trNode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3vlDli" id="7YEdkPF3pDR" role="3cqZAp">
+              <node concept="3cmrfG" id="7YEdkPF3pHK" role="3tpDZB">
+                <property role="3cmrfH" value="3" />
+              </node>
+              <node concept="2OqwBi" id="7VuXLakAUie" role="3tpDZA">
+                <node concept="2OqwBi" id="5RJ1p1ZTqOn" role="2Oq$k0">
+                  <node concept="37vLTw" id="5RJ1p1ZTqNN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
+                  </node>
+                  <node concept="liA8E" id="5RJ1p1ZTqWO" role="2OqNvi">
+                    <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7VuXLakAUA$" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="1qXFFx7fe0x" role="TEbGg">
+            <node concept="3clFbS" id="1qXFFx7fe0y" role="TDEfX">
+              <node concept="3clFbF" id="1qXFFx7fexe" role="3cqZAp">
+                <node concept="2OqwBi" id="1qXFFx7feNp" role="3clFbG">
+                  <node concept="37vLTw" id="1qXFFx7feMG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1qXFFx7fe0z" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="1qXFFx7ff1P" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWsn" id="1qXFFx7fe0z" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="1qXFFx7fe0$" role="1tU5fm">
+                <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1xiOHsiBoVH" role="1SL9yI">
+      <property role="TrG5h" value="debugClassLoaders" />
+      <node concept="3cqZAl" id="1xiOHsiBoVI" role="3clF45" />
+      <node concept="3clFbS" id="1xiOHsiBoVM" role="3clF47">
         <node concept="3cpWs8" id="4gTzlFhOjBy" role="3cqZAp">
           <node concept="3cpWsn" id="4gTzlFhOjBx" role="3cpWs9">
             <property role="3TUv4t" value="false" />
@@ -262,7 +319,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4gTzlFhOo05" role="3cqZAp" />
         <node concept="3clFbF" id="4gTzlFhOjBF" role="3cqZAp">
           <node concept="2OqwBi" id="4gTzlFhOjBM" role="3clFbG">
             <node concept="37vLTw" id="4gTzlFhOjBL" role="2Oq$k0">
@@ -285,8 +341,8 @@
             <node concept="liA8E" id="4gTzlFhOjBR" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="2YIFZM" id="4gTzlFhOjBS" role="37wK5m">
-                <ref role="1Pybhc" to="wyt6:~ClassLoader" resolve="ClassLoader" />
                 <ref role="37wK5l" to="wyt6:~ClassLoader.getSystemClassLoader():java.lang.ClassLoader" resolve="getSystemClassLoader" />
+                <ref role="1Pybhc" to="wyt6:~ClassLoader" resolve="ClassLoader" />
               </node>
             </node>
           </node>
@@ -310,21 +366,6 @@
                   <node concept="liA8E" id="5ZTvmAlqRhp" role="2OqNvi">
                     <ref role="37wK5l" to="8ieb:~DsltransFactoryImpl.createTransformationModel():dsltrans.TransformationModel" resolve="createTransformationModel" />
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="5ZTvmAlqRsB" role="3cqZAp">
-              <node concept="2OqwBi" id="5ZTvmAlqRQM" role="3clFbG">
-                <node concept="2OqwBi" id="5ZTvmAlqRw9" role="2Oq$k0">
-                  <node concept="37vLTw" id="5ZTvmAlqRs_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5ZTvmAlqO4a" resolve="dsltransTr2" />
-                  </node>
-                  <node concept="liA8E" id="5ZTvmAlqRK9" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="5ZTvmAlqScp" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                 </node>
               </node>
             </node>
@@ -408,8 +449,8 @@
                           </node>
                           <node concept="2OqwBi" id="4gTzlFhOifd" role="33vP2m">
                             <node concept="2YIFZM" id="4gTzlFhOifB" role="2Oq$k0">
-                              <ref role="1Pybhc" to="wyt6:~Class" resolve="Class" />
                               <ref role="37wK5l" to="wyt6:~Class.forName(java.lang.String):java.lang.Class" resolve="forName" />
+                              <ref role="1Pybhc" to="wyt6:~Class" resolve="Class" />
                               <node concept="2OqwBi" id="4gTzlFhOifD" role="37wK5m">
                                 <node concept="37vLTw" id="4gTzlFhOifC" role="2Oq$k0">
                                   <ref role="3cqZAo" node="4gTzlFhOifw" resolve="elt" />
@@ -500,187 +541,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4gTzlFhOr5f" role="3cqZAp" />
-        <node concept="1X3_iC" id="4gTzlFhOLZn" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="SfApY" id="1qXFFx7fe0_" role="8Wnug">
-            <node concept="3clFbS" id="1qXFFx7fe0A" role="SfCbr">
-              <node concept="3cpWs8" id="7YEdkPF3phZ" role="3cqZAp">
-                <node concept="3cpWsn" id="7YEdkPF3pi0" role="3cpWs9">
-                  <property role="TrG5h" value="dsltransTr" />
-                  <node concept="3uibUv" id="7YEdkPF3pi1" role="1tU5fm">
-                    <ref role="3uigEE" to="gnwr:~TransformationModel" resolve="TransformationModel" />
-                  </node>
-                  <node concept="2OqwBi" id="7YEdkPF3plR" role="33vP2m">
-                    <node concept="37vLTw" id="7YEdkPF3plq" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7YEdkPF3gR5" resolve="loader" />
-                    </node>
-                    <node concept="liA8E" id="7YEdkPF3pro" role="2OqNvi">
-                      <ref role="37wK5l" to="lusk:10d1GjXbsKE" resolve="loadTransformation" />
-                      <node concept="37vLTw" id="7YEdkPF3prP" role="37wK5m">
-                        <ref role="3cqZAo" node="7YEdkPF3haU" resolve="trNode" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3vlDli" id="7YEdkPF3pDR" role="3cqZAp">
-                <node concept="3cmrfG" id="7YEdkPF3pHK" role="3tpDZB">
-                  <property role="3cmrfH" value="3" />
-                </node>
-                <node concept="2OqwBi" id="7YEdkPF3pYo" role="3tpDZA">
-                  <node concept="2OqwBi" id="7YEdkPF3pLu" role="2Oq$k0">
-                    <node concept="37vLTw" id="7YEdkPF3pKO" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
-                    </node>
-                    <node concept="liA8E" id="7YEdkPF3pSv" role="2OqNvi">
-                      <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="7YEdkPF3qmk" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="TDmWw" id="1qXFFx7fe0x" role="TEbGg">
-              <node concept="3clFbS" id="1qXFFx7fe0y" role="TDEfX">
-                <node concept="3clFbF" id="1qXFFx7fexe" role="3cqZAp">
-                  <node concept="2OqwBi" id="1qXFFx7feNp" role="3clFbG">
-                    <node concept="37vLTw" id="1qXFFx7feMG" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1qXFFx7fe0z" resolve="e" />
-                    </node>
-                    <node concept="liA8E" id="1qXFFx7ff1P" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWsn" id="1qXFFx7fe0z" role="TDEfY">
-                <property role="TrG5h" value="e" />
-                <node concept="3uibUv" id="1qXFFx7fe0$" role="1tU5fm">
-                  <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1LZb2c" id="1xiOHsiBoVH" role="1SL9yI">
-      <property role="TrG5h" value="debug" />
-      <node concept="3cqZAl" id="1xiOHsiBoVI" role="3clF45" />
-      <node concept="3clFbS" id="1xiOHsiBoVM" role="3clF47">
-        <node concept="1X3_iC" id="4gTzlFhOAXF" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="1xiOHsiBoZb" role="8Wnug">
-            <node concept="3cpWsn" id="1xiOHsiBoZc" role="3cpWs9">
-              <property role="TrG5h" value="factory" />
-              <node concept="3uibUv" id="1xiOHsiBp3F" role="1tU5fm">
-                <ref role="3uigEE" to="gnwr:~DsltransFactory" resolve="DsltransFactory" />
-              </node>
-              <node concept="2ShNRf" id="1xiOHsiBp49" role="33vP2m">
-                <node concept="1pGfFk" id="1xiOHsiBqo5" role="2ShVmc">
-                  <ref role="37wK5l" to="8ieb:~DsltransFactoryImpl.&lt;init&gt;()" resolve="DsltransFactoryImpl" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="4gTzlFhOAXG" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="1xiOHsiBqsS" role="8Wnug">
-            <node concept="3cpWsn" id="1xiOHsiBqsT" role="3cpWs9">
-              <property role="TrG5h" value="tr" />
-              <node concept="3uibUv" id="1xiOHsiBqsU" role="1tU5fm">
-                <ref role="3uigEE" to="gnwr:~TransformationModel" resolve="TransformationModel" />
-              </node>
-              <node concept="2OqwBi" id="1xiOHsiBqQM" role="33vP2m">
-                <node concept="37vLTw" id="1xiOHsiBqxe" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1xiOHsiBoZc" resolve="factory" />
-                </node>
-                <node concept="liA8E" id="1xiOHsiBqXs" role="2OqNvi">
-                  <ref role="37wK5l" to="gnwr:~DsltransFactory.createTransformationModel():dsltrans.TransformationModel" resolve="createTransformationModel" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="4gTzlFhOAXH" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1xiOHsiBr0f" role="8Wnug">
-            <node concept="2OqwBi" id="5ZTvmAlr4uX" role="3clFbG">
-              <node concept="2OqwBi" id="1xiOHsiBr18" role="2Oq$k0">
-                <node concept="37vLTw" id="1xiOHsiBr0d" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1xiOHsiBqsT" resolve="tr" />
-                </node>
-                <node concept="liA8E" id="1xiOHsiBr7l" role="2OqNvi">
-                  <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
-                </node>
-              </node>
-              <node concept="liA8E" id="5ZTvmAlr4NM" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="4gTzlFhOAXI" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1xiOHsiBDzw" role="8Wnug">
-            <node concept="2OqwBi" id="5ZTvmAlr5ba" role="3clFbG">
-              <node concept="2OqwBi" id="1xiOHsiBDzx" role="2Oq$k0">
-                <node concept="37vLTw" id="1xiOHsiBDzy" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1xiOHsiBqsT" resolve="tr" />
-                </node>
-                <node concept="liA8E" id="1xiOHsiBDzz" role="2OqNvi">
-                  <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
-                </node>
-              </node>
-              <node concept="liA8E" id="5ZTvmAlr5wz" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="4gTzlFhOAXJ" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="1xiOHsiBrJm" role="8Wnug">
-            <node concept="3cpWsn" id="1xiOHsiBrJn" role="3cpWs9">
-              <property role="TrG5h" value="trModel" />
-              <node concept="H_c77" id="1xiOHsiBrJo" role="1tU5fm" />
-              <node concept="BaHAS" id="1xiOHsiBrJp" role="33vP2m">
-                <property role="BaHAW" value="DSLTransRunner.SampleTransformation" />
-                <property role="BaGAP" value="" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="4gTzlFhOAXK" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3vlDli" id="1xiOHsiBrJq" role="8Wnug">
-            <node concept="3cmrfG" id="1xiOHsiBrJr" role="3tpDZB">
-              <property role="3cmrfH" value="1" />
-            </node>
-            <node concept="2OqwBi" id="1xiOHsiBrJs" role="3tpDZA">
-              <node concept="2OqwBi" id="1xiOHsiBrJt" role="2Oq$k0">
-                <node concept="37vLTw" id="1xiOHsiBrJu" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1xiOHsiBrJn" resolve="trModel" />
-                </node>
-                <node concept="2RRcyG" id="1xiOHsiBrJv" role="2OqNvi">
-                  <ref role="2RRcyH" to="rr4f:6JhS3QZMbff" resolve="Transformation" />
-                </node>
-              </node>
-              <node concept="34oBXx" id="1xiOHsiBrJw" role="2OqNvi" />
             </node>
           </node>
         </node>
