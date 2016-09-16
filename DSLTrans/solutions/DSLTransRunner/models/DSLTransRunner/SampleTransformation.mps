@@ -121,15 +121,15 @@
       </node>
     </node>
     <node concept="37shsh" id="10d1GjX9r31" role="ABjci">
-      <node concept="20RdaH" id="10d1GjX9r38" role="37shsm">
-        <property role="20Rdg5" value="4a49fceb-ecd0-4e6c-8f19-a17f566bae9d" />
-        <property role="20Rdg7" value="DSLTransRunner" />
+      <node concept="20RdaH" id="1eaQRpkxgJK" role="37shsm">
+        <property role="20Rdg5" value="3f74c60f-47e5-47a9-895b-6e05b58f1d7f" />
+        <property role="20Rdg7" value="inputModel" />
       </node>
     </node>
     <node concept="37shsh" id="10d1GjX9rna" role="AAzOf">
-      <node concept="20RdaH" id="10d1GjX9rnh" role="37shsm">
-        <property role="20Rdg5" value="4a49fceb-ecd0-4e6c-8f19-a17f566bae9d" />
-        <property role="20Rdg7" value="DSLTransRunner" />
+      <node concept="20RdaH" id="1eaQRpkxgJQ" role="37shsm">
+        <property role="20Rdg5" value="b0929202-c875-45f6-bd7f-1cc2fe33c948" />
+        <property role="20Rdg7" value="outputModel" />
       </node>
     </node>
     <node concept="1jGXV7" id="10d1GjX9rnm" role="3k6lfD">

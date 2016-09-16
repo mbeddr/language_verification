@@ -13,7 +13,6 @@
     </language>
     <language id="05f6207f-0b7e-4413-bedb-09f3dfc58438" name="Families">
       <concept id="5898026252864033708" name="Families.structure.Country" flags="ng" index="3GeAKc">
-        <property id="1408179134775880301" name="someprop" index="17T34r" />
         <child id="5898026252864033741" name="families" index="3GeALH" />
         <child id="5898026252864033744" name="cities" index="3GeALK" />
       </concept>
@@ -26,16 +25,15 @@
       <concept id="5898026252864033713" name="Families.structure.Neighborhood" flags="ng" index="3GeAKh" />
     </language>
   </registry>
-  <node concept="3GeAKc" id="2EVdxuSW9hk">
+  <node concept="3GeAKc" id="1eaQRpkxpkS">
     <property role="TrG5h" value="Portugal" />
-    <property role="17T34r" value="bla" />
-    <node concept="3GeAKd" id="2EVdxuSW9hl" role="3GeALH">
+    <node concept="3GeAKd" id="1eaQRpkxpkT" role="3GeALH">
       <property role="TrG5h" value="Lucio" />
-      <ref role="3GeALt" node="2EVdxuSW9hn" resolve="Cascais" />
+      <ref role="3GeALt" node="1eaQRpkxpkV" resolve="Cascais" />
     </node>
-    <node concept="3GeAKe" id="2EVdxuSW9hm" role="3GeALK">
+    <node concept="3GeAKe" id="1eaQRpkxpkU" role="3GeALK">
       <property role="TrG5h" value="Cascais" />
-      <node concept="3GeAKh" id="2EVdxuSW9hn" role="3GeALk">
+      <node concept="3GeAKh" id="1eaQRpkxpkV" role="3GeALk">
         <property role="TrG5h" value="Cascais" />
       </node>
     </node>
