@@ -2752,12 +2752,6 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="1NdVp2rTnqu" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="1NdVp2rTnqw" role="34bqiv">
-            <property role="Xl_RC" value="Setting allow inheritance to true. This needs to be implemented." />
-          </node>
-        </node>
         <node concept="3clFbF" id="1NdVp2rTkxj" role="3cqZAp">
           <node concept="2OqwBi" id="1NdVp2rTlru" role="3clFbG">
             <node concept="37vLTw" id="1NdVp2rTkxh" role="2Oq$k0">
@@ -2765,8 +2759,13 @@
             </node>
             <node concept="liA8E" id="1NdVp2rTlwW" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~AbstractClass.setAllowInheritance(boolean):void" resolve="setAllowInheritance" />
-              <node concept="3clFbT" id="1NdVp2rTl_T" role="37wK5m">
-                <property role="3clFbU" value="true" />
+              <node concept="2OqwBi" id="2GbRIwA68X1" role="37wK5m">
+                <node concept="37vLTw" id="2GbRIwA68PH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1NdVp2rQhbm" resolve="matchClass" />
+                </node>
+                <node concept="3TrcHB" id="2GbRIwA692k" role="2OqNvi">
+                  <ref role="3TsBF5" to="i3vy:1eaQRpkppkO" resolve="allowInheritance" />
+                </node>
               </node>
             </node>
           </node>
