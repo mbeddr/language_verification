@@ -2168,14 +2168,73 @@
         </node>
       </node>
       <node concept="3clFbS" id="JP13UtgpQc" role="3clF47">
-        <node concept="YS8fn" id="2GbRIwA4MqO" role="3cqZAp">
-          <node concept="2ShNRf" id="2GbRIwA4MvW" role="YScLw">
-            <node concept="1pGfFk" id="2GbRIwA4VIv" role="2ShVmc">
-              <ref role="37wK5l" to="935o:~MissingFeatureException.&lt;init&gt;(java.lang.String)" resolve="MissingFeatureException" />
-              <node concept="Xl_RD" id="2GbRIwA4VNO" role="37wK5m">
-                <property role="Xl_RC" value="TO BE DONE" />
+        <node concept="3cpWs8" id="2GbRIwA69u3" role="3cqZAp">
+          <node concept="3cpWsn" id="2GbRIwA69u4" role="3cpWs9">
+            <property role="TrG5h" value="concat" />
+            <node concept="3uibUv" id="2GbRIwA69u5" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~Concat" resolve="Concat" />
+            </node>
+            <node concept="2OqwBi" id="2GbRIwA69Ed" role="33vP2m">
+              <node concept="37vLTw" id="2GbRIwA69zV" role="2Oq$k0">
+                <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="2GbRIwA69Kj" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createConcat():dsltrans.Concat" resolve="createConcat" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA6bIK" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA6cSy" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA6bII" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA69u4" resolve="concat" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA6dgQ" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Concat.setLeftTerm(dsltrans.Term):void" resolve="setLeftTerm" />
+              <node concept="1rXfSq" id="2GbRIwA6drg" role="37wK5m">
+                <ref role="37wK5l" node="JP13UtfCzI" resolve="createAttrValue" />
+                <node concept="2OqwBi" id="2GbRIwA6dIr" role="37wK5m">
+                  <node concept="37vLTw" id="2GbRIwA6dAC" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JP13UtgrgE" resolve="applyAttrValue" />
+                  </node>
+                  <node concept="3TrEf2" id="2GbRIwA6dSd" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i3vy:2rexW9_hTTa" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2GbRIwA6feQ" role="37wK5m">
+                  <ref role="3cqZAo" node="JP13UtgrgG" resolve="matchAttr2matchAttrTrace" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA6gJZ" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA6hUZ" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA6gJX" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA69u4" resolve="concat" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA6igP" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Concat.setRightTerm(dsltrans.Term):void" resolve="setRightTerm" />
+              <node concept="1rXfSq" id="2GbRIwA6irc" role="37wK5m">
+                <ref role="37wK5l" node="JP13UtfCzI" resolve="createAttrValue" />
+                <node concept="2OqwBi" id="2GbRIwA6iIp" role="37wK5m">
+                  <node concept="37vLTw" id="2GbRIwA6iAA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JP13UtgrgE" resolve="applyAttrValue" />
+                  </node>
+                  <node concept="3TrEf2" id="2GbRIwA6iSb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i3vy:2rexW9_hTTe" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2GbRIwA6j6s" role="37wK5m">
+                  <ref role="3cqZAo" node="JP13UtgrgG" resolve="matchAttr2matchAttrTrace" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2GbRIwA6abM" role="3cqZAp">
+          <node concept="37vLTw" id="2GbRIwA6ahC" role="3cqZAk">
+            <ref role="3cqZAo" node="2GbRIwA69u4" resolve="concat" />
           </node>
         </node>
       </node>
