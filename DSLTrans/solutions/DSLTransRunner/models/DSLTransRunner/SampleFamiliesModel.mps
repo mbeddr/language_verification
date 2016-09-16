@@ -13,6 +13,7 @@
     </language>
     <language id="05f6207f-0b7e-4413-bedb-09f3dfc58438" name="Families">
       <concept id="5898026252864033708" name="Families.structure.Country" flags="ng" index="3GeAKc">
+        <property id="1408179134775880301" name="someprop" index="17T34r" />
         <child id="5898026252864033741" name="families" index="3GeALH" />
         <child id="5898026252864033744" name="cities" index="3GeALK" />
       </concept>
@@ -27,6 +28,7 @@
   </registry>
   <node concept="3GeAKc" id="10d1GjX9r2w">
     <property role="TrG5h" value="CountryA" />
+    <property role="17T34r" value="bla" />
     <node concept="3GeAKe" id="10d1GjX9r2y" role="3GeALK">
       <property role="TrG5h" value="CityA" />
       <node concept="3GeAKh" id="10d1GjX9r2z" role="3GeALk">
