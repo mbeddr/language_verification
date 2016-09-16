@@ -90,9 +90,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -139,12 +136,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -1640,12 +1631,6 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="JP13Utf786" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="JP13Utf787" role="34bqiv">
-            <property role="Xl_RC" value="Setting allow inheritance to true. This needs to be implemented." />
-          </node>
-        </node>
         <node concept="3clFbF" id="JP13Utf788" role="3cqZAp">
           <node concept="2OqwBi" id="JP13Utf789" role="3clFbG">
             <node concept="37vLTw" id="JP13Utf78a" role="2Oq$k0">
@@ -1653,8 +1638,13 @@
             </node>
             <node concept="liA8E" id="JP13Utf78b" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~AbstractClass.setAllowInheritance(boolean):void" resolve="setAllowInheritance" />
-              <node concept="3clFbT" id="JP13Utf78c" role="37wK5m">
-                <property role="3clFbU" value="true" />
+              <node concept="2OqwBi" id="2GbRIwA7o_0" role="37wK5m">
+                <node concept="37vLTw" id="2GbRIwA7otJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JP13Uteucr" resolve="applyClass" />
+                </node>
+                <node concept="3TrcHB" id="2GbRIwA7oEj" role="2OqNvi">
+                  <ref role="3TsBF5" to="i3vy:1eaQRpkppkO" resolve="allowInheritance" />
+                </node>
               </node>
             </node>
           </node>
@@ -2168,14 +2158,73 @@
         </node>
       </node>
       <node concept="3clFbS" id="JP13UtgpQc" role="3clF47">
-        <node concept="YS8fn" id="2GbRIwA4MqO" role="3cqZAp">
-          <node concept="2ShNRf" id="2GbRIwA4MvW" role="YScLw">
-            <node concept="1pGfFk" id="2GbRIwA4VIv" role="2ShVmc">
-              <ref role="37wK5l" to="935o:~MissingFeatureException.&lt;init&gt;(java.lang.String)" resolve="MissingFeatureException" />
-              <node concept="Xl_RD" id="2GbRIwA4VNO" role="37wK5m">
-                <property role="Xl_RC" value="TO BE DONE" />
+        <node concept="3cpWs8" id="2GbRIwA69u3" role="3cqZAp">
+          <node concept="3cpWsn" id="2GbRIwA69u4" role="3cpWs9">
+            <property role="TrG5h" value="concat" />
+            <node concept="3uibUv" id="2GbRIwA69u5" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~Concat" resolve="Concat" />
+            </node>
+            <node concept="2OqwBi" id="2GbRIwA69Ed" role="33vP2m">
+              <node concept="37vLTw" id="2GbRIwA69zV" role="2Oq$k0">
+                <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="2GbRIwA69Kj" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createConcat():dsltrans.Concat" resolve="createConcat" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA6bIK" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA6cSy" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA6bII" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA69u4" resolve="concat" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA6dgQ" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Concat.setLeftTerm(dsltrans.Term):void" resolve="setLeftTerm" />
+              <node concept="1rXfSq" id="2GbRIwA6drg" role="37wK5m">
+                <ref role="37wK5l" node="JP13UtfCzI" resolve="createAttrValue" />
+                <node concept="2OqwBi" id="2GbRIwA6dIr" role="37wK5m">
+                  <node concept="37vLTw" id="2GbRIwA6dAC" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JP13UtgrgE" resolve="applyAttrValue" />
+                  </node>
+                  <node concept="3TrEf2" id="2GbRIwA6dSd" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i3vy:2rexW9_hTTa" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2GbRIwA6feQ" role="37wK5m">
+                  <ref role="3cqZAo" node="JP13UtgrgG" resolve="matchAttr2matchAttrTrace" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA6gJZ" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA6hUZ" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA6gJX" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA69u4" resolve="concat" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA6igP" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Concat.setRightTerm(dsltrans.Term):void" resolve="setRightTerm" />
+              <node concept="1rXfSq" id="2GbRIwA6irc" role="37wK5m">
+                <ref role="37wK5l" node="JP13UtfCzI" resolve="createAttrValue" />
+                <node concept="2OqwBi" id="2GbRIwA6iIp" role="37wK5m">
+                  <node concept="37vLTw" id="2GbRIwA6iAA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JP13UtgrgE" resolve="applyAttrValue" />
+                  </node>
+                  <node concept="3TrEf2" id="2GbRIwA6iSb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i3vy:2rexW9_hTTe" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="2GbRIwA6j6s" role="37wK5m">
+                  <ref role="3cqZAo" node="JP13UtgrgG" resolve="matchAttr2matchAttrTrace" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2GbRIwA6abM" role="3cqZAp">
+          <node concept="37vLTw" id="2GbRIwA6ahC" role="3cqZAk">
+            <ref role="3cqZAo" node="2GbRIwA69u4" resolve="concat" />
           </node>
         </node>
       </node>
@@ -2752,12 +2801,6 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="1NdVp2rTnqu" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="1NdVp2rTnqw" role="34bqiv">
-            <property role="Xl_RC" value="Setting allow inheritance to true. This needs to be implemented." />
-          </node>
-        </node>
         <node concept="3clFbF" id="1NdVp2rTkxj" role="3cqZAp">
           <node concept="2OqwBi" id="1NdVp2rTlru" role="3clFbG">
             <node concept="37vLTw" id="1NdVp2rTkxh" role="2Oq$k0">
@@ -2765,8 +2808,13 @@
             </node>
             <node concept="liA8E" id="1NdVp2rTlwW" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~AbstractClass.setAllowInheritance(boolean):void" resolve="setAllowInheritance" />
-              <node concept="3clFbT" id="1NdVp2rTl_T" role="37wK5m">
-                <property role="3clFbU" value="true" />
+              <node concept="2OqwBi" id="2GbRIwA68X1" role="37wK5m">
+                <node concept="37vLTw" id="2GbRIwA68PH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1NdVp2rQhbm" resolve="matchClass" />
+                </node>
+                <node concept="3TrcHB" id="2GbRIwA692k" role="2OqNvi">
+                  <ref role="3TsBF5" to="i3vy:1eaQRpkppkO" resolve="allowInheritance" />
+                </node>
               </node>
             </node>
           </node>
