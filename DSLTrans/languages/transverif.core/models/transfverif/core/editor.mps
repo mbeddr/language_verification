@@ -305,27 +305,58 @@
   <node concept="24kQdi" id="2rexW9_gFfs">
     <property role="3GE5qa" value="Elements" />
     <ref role="1XX52x" to="i3vy:3ky2qXA$tr_" resolve="ApplyClass" />
-    <node concept="3EZMnI" id="2rexW9_gFg4" role="2wV5jI">
-      <node concept="2iRkQZ" id="2rexW9_gFg5" role="2iSdaV" />
-      <node concept="3EZMnI" id="2rexW9_hcRw" role="3EZMnx">
-        <node concept="2iRfu4" id="2rexW9_hcRx" role="2iSdaV" />
-        <node concept="3F0A7n" id="2rexW9_hcRy" role="3EZMnx">
+    <node concept="3EZMnI" id="1eaQRpkwfz7" role="2wV5jI">
+      <node concept="2iRkQZ" id="1eaQRpkwfz8" role="2iSdaV" />
+      <node concept="3EZMnI" id="1eaQRpkwfz9" role="3EZMnx">
+        <node concept="2iRfu4" id="1eaQRpkwfza" role="2iSdaV" />
+        <node concept="3F0A7n" id="1eaQRpkwfzb" role="3EZMnx">
           <ref role="1NtTu8" to="i3vy:2rexW9_gFhA" resolve="ID" />
         </node>
-        <node concept="3F0ifn" id="2rexW9_hcRz" role="3EZMnx">
+        <node concept="3F0ifn" id="1eaQRpkwfzc" role="3EZMnx">
           <property role="3F0ifm" value=":" />
         </node>
-        <node concept="3F0A7n" id="2rexW9_hcR$" role="3EZMnx">
+        <node concept="3F0A7n" id="1eaQRpkwfzd" role="3EZMnx">
           <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
           <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
         </node>
-        <node concept="3F0ifn" id="2rexW9_hcR_" role="3EZMnx">
-          <property role="3F0ifm" value="ApplyClass" />
+        <node concept="PMmxH" id="1eaQRpkwfze" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="3F0ifn" id="1eaQRpkwfzf" role="3EZMnx">
+          <property role="3F0ifm" value="(Allow inheritance = " />
+          <node concept="VSNWy" id="1eaQRpkwfzg" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
+          </node>
+          <node concept="VechU" id="1eaQRpkwfzh" role="3F10Kt">
+            <property role="Vb096" value="black" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="1eaQRpkwfzi" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:1eaQRpkppkO" resolve="allowInheritance" />
+          <node concept="VSNWy" id="1eaQRpkwfzj" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
+          </node>
+          <node concept="VechU" id="1eaQRpkwfzk" role="3F10Kt">
+            <property role="Vb096" value="DARK_BLUE" />
+          </node>
+          <node concept="Vb9p2" id="1eaQRpkwfzl" role="3F10Kt">
+            <property role="Vbekb" value="BOLD_ITALIC" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1eaQRpkwfzm" role="3EZMnx">
+          <property role="3F0ifm" value=")" />
+          <node concept="VSNWy" id="1eaQRpkwfzn" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
+          </node>
+          <node concept="VechU" id="1eaQRpkwfzo" role="3F10Kt">
+            <property role="Vb096" value="black" />
+          </node>
         </node>
       </node>
-      <node concept="3F2HdR" id="2rexW9_gFgm" role="3EZMnx">
+      <node concept="3F0ifn" id="1eaQRpkwfzp" role="3EZMnx" />
+      <node concept="3F2HdR" id="1eaQRpkwfzq" role="3EZMnx">
         <ref role="1NtTu8" to="i3vy:67kIGnNxbpF" />
-        <node concept="2iRkQZ" id="2rexW9_gFgo" role="2czzBx" />
+        <node concept="2iRkQZ" id="1eaQRpkwfzr" role="2czzBx" />
       </node>
     </node>
   </node>

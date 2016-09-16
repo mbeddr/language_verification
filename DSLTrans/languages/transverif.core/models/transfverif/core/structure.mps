@@ -77,6 +77,7 @@
     <property role="3GE5qa" value="Elements" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="Apply Class" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="67kIGnNxbpF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -292,10 +293,6 @@
     <node concept="PrWs8" id="2rexW9_gFeU" role="PzmwI">
       <ref role="PrY4T" node="2rexW9_gFeP" resolve="Class" />
     </node>
-    <node concept="1TJgyi" id="1eaQRpkppkO" role="1TKVEl">
-      <property role="TrG5h" value="allowInheritance" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2rexW9_hrll">
     <property role="1pbfSe" value="1944830697" />
@@ -385,6 +382,10 @@
     <node concept="1TJgyi" id="2rexW9_gFhA" role="1TKVEl">
       <property role="TrG5h" value="ID" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1eaQRpkppkO" role="1TKVEl">
+      <property role="TrG5h" value="allowInheritance" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="28y$t0VJxVp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
