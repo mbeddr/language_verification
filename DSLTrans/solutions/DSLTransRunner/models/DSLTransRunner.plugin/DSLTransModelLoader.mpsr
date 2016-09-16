@@ -1692,9 +1692,7 @@
             </node>
             <node concept="liA8E" id="JP13Utf78u" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String):void" resolve="setPackageName" />
-              <node concept="Xl_RD" id="JP13Utf78v" role="37wK5m">
-                <property role="Xl_RC" value="DEFAULT_PACKAGE" />
-              </node>
+              <node concept="Xl_RD" id="JP13Utf78v" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -2862,9 +2860,7 @@
             </node>
             <node concept="liA8E" id="1NdVp2rSepA" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String):void" resolve="setPackageName" />
-              <node concept="Xl_RD" id="1NdVp2rSfh6" role="37wK5m">
-                <property role="Xl_RC" value="DEFAULT_PACKAGE" />
-              </node>
+              <node concept="Xl_RD" id="1NdVp2rSfh6" role="37wK5m" />
             </node>
           </node>
         </node>

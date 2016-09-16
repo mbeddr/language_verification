@@ -13,7 +13,6 @@
     </language>
     <language id="05f6207f-0b7e-4413-bedb-09f3dfc58438" name="Families">
       <concept id="5898026252864033708" name="Families.structure.Country" flags="ng" index="3GeAKc">
-        <property id="1408179134775880301" name="someprop" index="17T34r" />
         <child id="5898026252864033741" name="families" index="3GeALH" />
         <child id="5898026252864033744" name="cities" index="3GeALK" />
       </concept>
@@ -26,17 +25,17 @@
       <concept id="5898026252864033713" name="Families.structure.Neighborhood" flags="ng" index="3GeAKh" />
     </language>
   </registry>
-  <node concept="3GeAKc" id="10d1GjX9r2w">
+  <node concept="3GeAKc" id="1eaQRpkASz6">
     <property role="TrG5h" value="CountryA" />
-    <property role="17T34r" value="bla" />
-    <node concept="3GeAKe" id="10d1GjX9r2y" role="3GeALK">
-      <property role="TrG5h" value="CityA" />
-      <node concept="3GeAKh" id="10d1GjX9r2z" role="3GeALk">
-        <property role="TrG5h" value="NeighbourhoodA" />
-      </node>
+    <node concept="3GeAKd" id="1eaQRpkASz7" role="3GeALH">
+      <property role="TrG5h" value="familyA" />
+      <ref role="3GeALt" node="1eaQRpkASz9" resolve="neighborhoodA" />
     </node>
-    <node concept="3GeAKd" id="10d1GjX9r2E" role="3GeALH">
-      <ref role="3GeALt" node="10d1GjX9r2z" resolve="NeighbourhoodA" />
+    <node concept="3GeAKe" id="1eaQRpkASz8" role="3GeALK">
+      <property role="TrG5h" value="CityA" />
+      <node concept="3GeAKh" id="1eaQRpkASz9" role="3GeALk">
+        <property role="TrG5h" value="neighborhoodA" />
+      </node>
     </node>
   </node>
 </model>

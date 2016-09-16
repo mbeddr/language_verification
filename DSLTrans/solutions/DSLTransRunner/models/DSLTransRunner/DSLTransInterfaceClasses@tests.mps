@@ -146,8 +146,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -640,265 +650,313 @@
           </node>
         </node>
         <node concept="3clFbH" id="1eaQRpkyI1r" role="3cqZAp" />
-        <node concept="3cpWs8" id="1eaQRpkyPNb" role="3cqZAp">
-          <node concept="3cpWsn" id="1eaQRpkyPNe" role="3cpWs9">
-            <property role="TrG5h" value="listMR" />
-            <node concept="_YKpA" id="1eaQRpkyPN7" role="1tU5fm">
-              <node concept="3uibUv" id="1eaQRpkyQea" role="_ZDj9">
-                <ref role="3uigEE" to="fodd:~MetaRelation" resolve="MetaRelation" />
+        <node concept="1X3_iC" id="1eaQRpk$sKt" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="1eaQRpkyPNb" role="8Wnug">
+            <node concept="3cpWsn" id="1eaQRpkyPNe" role="3cpWs9">
+              <property role="TrG5h" value="listMR" />
+              <node concept="_YKpA" id="1eaQRpkyPN7" role="1tU5fm">
+                <node concept="3uibUv" id="1eaQRpkyQea" role="_ZDj9">
+                  <ref role="3uigEE" to="fodd:~MetaRelation" resolve="MetaRelation" />
+                </node>
               </node>
-            </node>
-            <node concept="2OqwBi" id="1eaQRpkyQEM" role="33vP2m">
-              <node concept="37vLTw" id="1eaQRpkyQDH" role="2Oq$k0">
-                <ref role="3cqZAo" node="3SN6lk6kpDV" resolve="mm_db" />
-              </node>
-              <node concept="liA8E" id="1eaQRpkyR5h" role="2OqNvi">
-                <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaRelations():java.util.List" resolve="getMetaRelations" />
+              <node concept="2OqwBi" id="1eaQRpkyQEM" role="33vP2m">
+                <node concept="37vLTw" id="1eaQRpkyQDH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3SN6lk6kpDV" resolve="mm_db" />
+                </node>
+                <node concept="liA8E" id="1eaQRpkyR5h" role="2OqNvi">
+                  <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaRelations():java.util.List" resolve="getMetaRelations" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1eaQRpkyR6u" role="3cqZAp" />
-        <node concept="34ab3g" id="1eaQRpkz6A6" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="Xl_RD" id="1eaQRpkz6A8" role="34bqiv">
-            <property role="Xl_RC" value="--------------------" />
-          </node>
+        <node concept="1X3_iC" id="1eaQRpk$sKu" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbH" id="1eaQRpkyR6u" role="8Wnug" />
         </node>
-        <node concept="34ab3g" id="1eaQRpkz8JJ" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="1eaQRpkz9ds" role="34bqiv">
-            <node concept="2OqwBi" id="1eaQRpkzbL1" role="3uHU7w">
-              <node concept="37vLTw" id="1eaQRpkz9Vv" role="2Oq$k0">
-                <ref role="3cqZAo" node="1eaQRpkyPNe" resolve="listMR" />
-              </node>
-              <node concept="34oBXx" id="1eaQRpkzcpC" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="1eaQRpkz8JL" role="3uHU7B">
-              <property role="Xl_RC" value="Number of relations: " />
+        <node concept="1X3_iC" id="1eaQRpk$sKv" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="1eaQRpkz6A6" role="8Wnug">
+            <property role="35gtTG" value="info" />
+            <node concept="Xl_RD" id="1eaQRpkz6A8" role="34bqiv">
+              <property role="Xl_RC" value="--------------------" />
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="1eaQRpkyS_1" role="3cqZAp">
-          <node concept="2GrKxI" id="1eaQRpkyS_3" role="2Gsz3X">
-            <property role="TrG5h" value="mr" />
-          </node>
-          <node concept="37vLTw" id="1eaQRpkyUbZ" role="2GsD0m">
-            <ref role="3cqZAo" node="1eaQRpkyPNe" resolve="listMR" />
-          </node>
-          <node concept="3clFbS" id="1eaQRpkyS_7" role="2LFqv$">
-            <node concept="34ab3g" id="1eaQRpkzi5h" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="1eaQRpkzioB" role="34bqiv">
-                <node concept="2OqwBi" id="1eaQRpkziqg" role="3uHU7w">
-                  <node concept="2GrUjf" id="1eaQRpkzip8" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="1eaQRpkyS_3" resolve="mr" />
-                  </node>
-                  <node concept="liA8E" id="1eaQRpkzj6V" role="2OqNvi">
-                    <ref role="37wK5l" to="fodd:~MetaRelation.getName():java.lang.String" resolve="getName" />
-                  </node>
+        <node concept="1X3_iC" id="1eaQRpk$sKw" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="1eaQRpkz8JJ" role="8Wnug">
+            <property role="35gtTG" value="info" />
+            <node concept="3cpWs3" id="1eaQRpkz9ds" role="34bqiv">
+              <node concept="2OqwBi" id="1eaQRpkzbL1" role="3uHU7w">
+                <node concept="37vLTw" id="1eaQRpkz9Vv" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1eaQRpkyPNe" resolve="listMR" />
                 </node>
-                <node concept="Xl_RD" id="1eaQRpkzi5j" role="3uHU7B">
-                  <property role="Xl_RC" value="  *** " />
-                </node>
+                <node concept="34oBXx" id="1eaQRpkzcpC" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="1eaQRpkz8JL" role="3uHU7B">
+                <property role="Xl_RC" value="Number of relations: " />
               </node>
             </node>
-            <node concept="34ab3g" id="1eaQRpkyUVH" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="1eaQRpkz2J6" role="34bqiv">
-                <node concept="2OqwBi" id="1eaQRpkz3Hl" role="3uHU7w">
-                  <node concept="2GrUjf" id="1eaQRpkz3sH" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="1eaQRpkyS_3" resolve="mr" />
+          </node>
+        </node>
+        <node concept="1X3_iC" id="1eaQRpk$sKx" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2Gpval" id="1eaQRpkyS_1" role="8Wnug">
+            <node concept="2GrKxI" id="1eaQRpkyS_3" role="2Gsz3X">
+              <property role="TrG5h" value="mr" />
+            </node>
+            <node concept="37vLTw" id="1eaQRpkyUbZ" role="2GsD0m">
+              <ref role="3cqZAo" node="1eaQRpkyPNe" resolve="listMR" />
+            </node>
+            <node concept="3clFbS" id="1eaQRpkyS_7" role="2LFqv$">
+              <node concept="34ab3g" id="1eaQRpkzi5h" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <node concept="3cpWs3" id="1eaQRpkzioB" role="34bqiv">
+                  <node concept="2OqwBi" id="1eaQRpkziqg" role="3uHU7w">
+                    <node concept="2GrUjf" id="1eaQRpkzip8" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="1eaQRpkyS_3" resolve="mr" />
+                    </node>
+                    <node concept="liA8E" id="1eaQRpkzj6V" role="2OqNvi">
+                      <ref role="37wK5l" to="fodd:~MetaRelation.getName():java.lang.String" resolve="getName" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="1eaQRpkz4r9" role="2OqNvi">
-                    <ref role="37wK5l" to="fodd:~MetaRelation.getTarget():dsltrans.metamodel.MetaEntity" resolve="getTarget" />
+                  <node concept="Xl_RD" id="1eaQRpkzi5j" role="3uHU7B">
+                    <property role="Xl_RC" value="  *** " />
                   </node>
                 </node>
-                <node concept="3cpWs3" id="1eaQRpkz0pX" role="3uHU7B">
-                  <node concept="3cpWs3" id="1eaQRpkyYso" role="3uHU7B">
-                    <node concept="3cpWs3" id="1eaQRpkyXnW" role="3uHU7B">
-                      <node concept="3cpWs3" id="1eaQRpkyV0e" role="3uHU7B">
-                        <node concept="Xl_RD" id="1eaQRpkyUVJ" role="3uHU7B">
-                          <property role="Xl_RC" value="  ---- MR: " />
-                        </node>
-                        <node concept="2OqwBi" id="1eaQRpkyVrH" role="3uHU7w">
-                          <node concept="2GrUjf" id="1eaQRpkyVq_" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="1eaQRpkyS_3" resolve="mr" />
+              </node>
+              <node concept="34ab3g" id="1eaQRpkyUVH" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <node concept="3cpWs3" id="1eaQRpkz2J6" role="34bqiv">
+                  <node concept="2OqwBi" id="1eaQRpkz3Hl" role="3uHU7w">
+                    <node concept="2GrUjf" id="1eaQRpkz3sH" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="1eaQRpkyS_3" resolve="mr" />
+                    </node>
+                    <node concept="liA8E" id="1eaQRpkz4r9" role="2OqNvi">
+                      <ref role="37wK5l" to="fodd:~MetaRelation.getTarget():dsltrans.metamodel.MetaEntity" resolve="getTarget" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="1eaQRpkz0pX" role="3uHU7B">
+                    <node concept="3cpWs3" id="1eaQRpkyYso" role="3uHU7B">
+                      <node concept="3cpWs3" id="1eaQRpkyXnW" role="3uHU7B">
+                        <node concept="3cpWs3" id="1eaQRpkyV0e" role="3uHU7B">
+                          <node concept="Xl_RD" id="1eaQRpkyUVJ" role="3uHU7B">
+                            <property role="Xl_RC" value="  ---- MR: " />
                           </node>
-                          <node concept="liA8E" id="1eaQRpkyW7b" role="2OqNvi">
-                            <ref role="37wK5l" to="fodd:~MetaRelation.getSource():dsltrans.metamodel.MetaEntity" resolve="getSource" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="1eaQRpkyXDm" role="3uHU7w">
-                        <property role="Xl_RC" value="--- " />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="1eaQRpkyZoM" role="3uHU7w">
-                      <node concept="2GrUjf" id="1eaQRpkyZ8B" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="1eaQRpkyS_3" resolve="mr" />
-                      </node>
-                      <node concept="liA8E" id="1eaQRpkz05D" role="2OqNvi">
-                        <ref role="37wK5l" to="fodd:~MetaRelation.getName():java.lang.String" resolve="getName" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="1eaQRpkz17c" role="3uHU7w">
-                    <property role="Xl_RC" value=" --&gt;" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1eaQRpkyRK6" role="3cqZAp" />
-        <node concept="3cpWs8" id="1eaQRpkwSKb" role="3cqZAp">
-          <node concept="3cpWsn" id="1eaQRpkwSKc" role="3cpWs9">
-            <property role="TrG5h" value="m_db" />
-            <node concept="3uibUv" id="1eaQRpkx01U" role="1tU5fm">
-              <ref role="3uigEE" to="fzpi:~InstanceDatabase" resolve="InstanceDatabase" />
-            </node>
-            <node concept="2OqwBi" id="1eaQRpkwTq7" role="33vP2m">
-              <node concept="37vLTw" id="1eaQRpkwTpt" role="2Oq$k0">
-                <ref role="3cqZAo" node="3SN6lk6k7VY" resolve="ml" />
-              </node>
-              <node concept="liA8E" id="1eaQRpkwTLG" role="2OqNvi">
-                <ref role="37wK5l" to="lusk:3SN6lk6hFg9" resolve="getInstanceDatabase" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1eaQRpkwTMn" role="3cqZAp" />
-        <node concept="34ab3g" id="1eaQRpkwXEB" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="1eaQRpkwY4T" role="34bqiv">
-            <node concept="Xl_RD" id="1eaQRpkwXED" role="3uHU7B">
-              <property role="Xl_RC" value=" ---&gt; Number of instances in the database: " />
-            </node>
-            <node concept="2OqwBi" id="1eaQRpkwWaA" role="3uHU7w">
-              <node concept="2OqwBi" id="1eaQRpkwV5_" role="2Oq$k0">
-                <node concept="37vLTw" id="1eaQRpkwUMf" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1eaQRpkwSKc" resolve="m_db" />
-                </node>
-                <node concept="liA8E" id="1eaQRpkwW3m" role="2OqNvi">
-                  <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceEntities():java.util.List" resolve="getInstanceEntities" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1eaQRpkwWSZ" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="34ab3g" id="1eaQRpkzBgm" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="1eaQRpkzBNb" role="34bqiv">
-            <node concept="2OqwBi" id="1eaQRpkzDcd" role="3uHU7w">
-              <node concept="2OqwBi" id="1eaQRpkzC$C" role="2Oq$k0">
-                <node concept="37vLTw" id="1eaQRpkzCzc" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1eaQRpkwSKc" resolve="m_db" />
-                </node>
-                <node concept="liA8E" id="1eaQRpkzD4b" role="2OqNvi">
-                  <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceRelations():java.util.List" resolve="getInstanceRelations" />
-                </node>
-              </node>
-              <node concept="liA8E" id="1eaQRpkzEd8" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="1eaQRpkzBgo" role="3uHU7B">
-              <property role="Xl_RC" value=" ---&gt; Number of relations in the database: " />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1eaQRpkzERn" role="3cqZAp" />
-        <node concept="2Gpval" id="1eaQRpkzG0C" role="3cqZAp">
-          <node concept="2GrKxI" id="1eaQRpkzG0E" role="2Gsz3X">
-            <property role="TrG5h" value="rel" />
-          </node>
-          <node concept="2OqwBi" id="1eaQRpkzIn2" role="2GsD0m">
-            <node concept="37vLTw" id="1eaQRpkzI2i" role="2Oq$k0">
-              <ref role="3cqZAo" node="1eaQRpkwSKc" resolve="m_db" />
-            </node>
-            <node concept="liA8E" id="1eaQRpkzJcg" role="2OqNvi">
-              <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceRelations():java.util.List" resolve="getInstanceRelations" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="1eaQRpkzG0I" role="2LFqv$">
-            <node concept="34ab3g" id="1eaQRpkzJLu" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="1eaQRpkzZst" role="34bqiv">
-                <node concept="2OqwBi" id="1eaQRpk$3l8" role="3uHU7w">
-                  <node concept="2OqwBi" id="1eaQRpk$215" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1eaQRpk$0HM" role="2Oq$k0">
-                      <node concept="2GrUjf" id="1eaQRpk$0nj" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="1eaQRpkzG0E" resolve="rel" />
-                      </node>
-                      <node concept="liA8E" id="1eaQRpk$1Dg" role="2OqNvi">
-                        <ref role="37wK5l" to="fzpi:~InstanceRelation.getTarget():dsltrans.model.InstanceEntity" resolve="getTarget" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="1eaQRpk$2X7" role="2OqNvi">
-                      <ref role="37wK5l" to="fzpi:~InstanceEntity.getMetaEntity():dsltrans.metamodel.MetaEntity" resolve="getMetaEntity" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1eaQRpk$4i4" role="2OqNvi">
-                    <ref role="37wK5l" to="fodd:~MetaEntity.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-                <node concept="3cpWs3" id="1eaQRpkzXAG" role="3uHU7B">
-                  <node concept="3cpWs3" id="1eaQRpkzTM6" role="3uHU7B">
-                    <node concept="3cpWs3" id="1eaQRpkzR9e" role="3uHU7B">
-                      <node concept="3cpWs3" id="1eaQRpkzKnx" role="3uHU7B">
-                        <node concept="Xl_RD" id="1eaQRpkzJLw" role="3uHU7B">
-                          <property role="Xl_RC" value="  === " />
-                        </node>
-                        <node concept="2OqwBi" id="1eaQRpkzPQJ" role="3uHU7w">
-                          <node concept="2OqwBi" id="1eaQRpkzOAp" role="2Oq$k0">
-                            <node concept="2OqwBi" id="1eaQRpkzKTH" role="2Oq$k0">
-                              <node concept="2GrUjf" id="1eaQRpkzKTp" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="1eaQRpkzG0E" resolve="rel" />
-                              </node>
-                              <node concept="liA8E" id="1eaQRpkzLLi" role="2OqNvi">
-                                <ref role="37wK5l" to="fzpi:~InstanceRelation.getSource():dsltrans.model.InstanceEntity" resolve="getSource" />
-                              </node>
+                          <node concept="2OqwBi" id="1eaQRpkyVrH" role="3uHU7w">
+                            <node concept="2GrUjf" id="1eaQRpkyVq_" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="1eaQRpkyS_3" resolve="mr" />
                             </node>
-                            <node concept="liA8E" id="1eaQRpkzPwc" role="2OqNvi">
-                              <ref role="37wK5l" to="fzpi:~InstanceEntity.getMetaEntity():dsltrans.metamodel.MetaEntity" resolve="getMetaEntity" />
+                            <node concept="liA8E" id="1eaQRpkyW7b" role="2OqNvi">
+                              <ref role="37wK5l" to="fodd:~MetaRelation.getSource():dsltrans.metamodel.MetaEntity" resolve="getSource" />
                             </node>
                           </node>
-                          <node concept="liA8E" id="1eaQRpkzQJA" role="2OqNvi">
-                            <ref role="37wK5l" to="fodd:~MetaEntity.getName():java.lang.String" resolve="getName" />
-                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="1eaQRpkyXDm" role="3uHU7w">
+                          <property role="Xl_RC" value="--- " />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="1eaQRpkzRvp" role="3uHU7w">
-                        <property role="Xl_RC" value=" --- " />
+                      <node concept="2OqwBi" id="1eaQRpkyZoM" role="3uHU7w">
+                        <node concept="2GrUjf" id="1eaQRpkyZ8B" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1eaQRpkyS_3" resolve="mr" />
+                        </node>
+                        <node concept="liA8E" id="1eaQRpkz05D" role="2OqNvi">
+                          <ref role="37wK5l" to="fodd:~MetaRelation.getName():java.lang.String" resolve="getName" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="1eaQRpkzWhq" role="3uHU7w">
-                      <node concept="2OqwBi" id="1eaQRpkzV0U" role="2Oq$k0">
-                        <node concept="2GrUjf" id="1eaQRpkzUF4" role="2Oq$k0">
+                    <node concept="Xl_RD" id="1eaQRpkz17c" role="3uHU7w">
+                      <property role="Xl_RC" value=" --&gt;" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="1eaQRpk$sKy" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbH" id="1eaQRpkyRK6" role="8Wnug" />
+        </node>
+        <node concept="1X3_iC" id="1eaQRpk$sKz" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="1eaQRpkwSKb" role="8Wnug">
+            <node concept="3cpWsn" id="1eaQRpkwSKc" role="3cpWs9">
+              <property role="TrG5h" value="m_db" />
+              <node concept="3uibUv" id="1eaQRpkx01U" role="1tU5fm">
+                <ref role="3uigEE" to="fzpi:~InstanceDatabase" resolve="InstanceDatabase" />
+              </node>
+              <node concept="2OqwBi" id="1eaQRpkwTq7" role="33vP2m">
+                <node concept="37vLTw" id="1eaQRpkwTpt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3SN6lk6k7VY" resolve="ml" />
+                </node>
+                <node concept="liA8E" id="1eaQRpkwTLG" role="2OqNvi">
+                  <ref role="37wK5l" to="lusk:3SN6lk6hFg9" resolve="getInstanceDatabase" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="1eaQRpk$sK$" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbH" id="1eaQRpkwTMn" role="8Wnug" />
+        </node>
+        <node concept="1X3_iC" id="1eaQRpk$sK_" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="1eaQRpkwXEB" role="8Wnug">
+            <property role="35gtTG" value="info" />
+            <node concept="3cpWs3" id="1eaQRpkwY4T" role="34bqiv">
+              <node concept="Xl_RD" id="1eaQRpkwXED" role="3uHU7B">
+                <property role="Xl_RC" value=" ---&gt; Number of instances in the database: " />
+              </node>
+              <node concept="2OqwBi" id="1eaQRpkwWaA" role="3uHU7w">
+                <node concept="2OqwBi" id="1eaQRpkwV5_" role="2Oq$k0">
+                  <node concept="37vLTw" id="1eaQRpkwUMf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1eaQRpkwSKc" resolve="m_db" />
+                  </node>
+                  <node concept="liA8E" id="1eaQRpkwW3m" role="2OqNvi">
+                    <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceEntities():java.util.List" resolve="getInstanceEntities" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1eaQRpkwWSZ" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="1eaQRpk$sKA" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="1eaQRpkzBgm" role="8Wnug">
+            <property role="35gtTG" value="info" />
+            <node concept="3cpWs3" id="1eaQRpkzBNb" role="34bqiv">
+              <node concept="2OqwBi" id="1eaQRpkzDcd" role="3uHU7w">
+                <node concept="2OqwBi" id="1eaQRpkzC$C" role="2Oq$k0">
+                  <node concept="37vLTw" id="1eaQRpkzCzc" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1eaQRpkwSKc" resolve="m_db" />
+                  </node>
+                  <node concept="liA8E" id="1eaQRpkzD4b" role="2OqNvi">
+                    <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceRelations():java.util.List" resolve="getInstanceRelations" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1eaQRpkzEd8" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1eaQRpkzBgo" role="3uHU7B">
+                <property role="Xl_RC" value=" ---&gt; Number of relations in the database: " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="1eaQRpk$sKB" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbH" id="1eaQRpkzERn" role="8Wnug" />
+        </node>
+        <node concept="1X3_iC" id="1eaQRpk$sKC" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2Gpval" id="1eaQRpkzG0C" role="8Wnug">
+            <node concept="2GrKxI" id="1eaQRpkzG0E" role="2Gsz3X">
+              <property role="TrG5h" value="rel" />
+            </node>
+            <node concept="2OqwBi" id="1eaQRpkzIn2" role="2GsD0m">
+              <node concept="37vLTw" id="1eaQRpkzI2i" role="2Oq$k0">
+                <ref role="3cqZAo" node="1eaQRpkwSKc" resolve="m_db" />
+              </node>
+              <node concept="liA8E" id="1eaQRpkzJcg" role="2OqNvi">
+                <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceRelations():java.util.List" resolve="getInstanceRelations" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="1eaQRpkzG0I" role="2LFqv$">
+              <node concept="34ab3g" id="1eaQRpkzJLu" role="3cqZAp">
+                <property role="35gtTG" value="info" />
+                <node concept="3cpWs3" id="1eaQRpkzZst" role="34bqiv">
+                  <node concept="2OqwBi" id="1eaQRpk$3l8" role="3uHU7w">
+                    <node concept="2OqwBi" id="1eaQRpk$215" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1eaQRpk$0HM" role="2Oq$k0">
+                        <node concept="2GrUjf" id="1eaQRpk$0nj" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="1eaQRpkzG0E" resolve="rel" />
                         </node>
-                        <node concept="liA8E" id="1eaQRpkzVUe" role="2OqNvi">
-                          <ref role="37wK5l" to="fzpi:~InstanceRelation.getRelation():dsltrans.metamodel.MetaRelation" resolve="getRelation" />
+                        <node concept="liA8E" id="1eaQRpk$1Dg" role="2OqNvi">
+                          <ref role="37wK5l" to="fzpi:~InstanceRelation.getTarget():dsltrans.model.InstanceEntity" resolve="getTarget" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="1eaQRpkzXcr" role="2OqNvi">
-                        <ref role="37wK5l" to="fodd:~MetaRelation.getName():java.lang.String" resolve="getName" />
+                      <node concept="liA8E" id="1eaQRpk$2X7" role="2OqNvi">
+                        <ref role="37wK5l" to="fzpi:~InstanceEntity.getMetaEntity():dsltrans.metamodel.MetaEntity" resolve="getMetaEntity" />
                       </node>
                     </node>
+                    <node concept="liA8E" id="1eaQRpk$4i4" role="2OqNvi">
+                      <ref role="37wK5l" to="fodd:~MetaEntity.getName():java.lang.String" resolve="getName" />
+                    </node>
                   </node>
-                  <node concept="Xl_RD" id="1eaQRpkzXZb" role="3uHU7w">
-                    <property role="Xl_RC" value="--&gt;" />
+                  <node concept="3cpWs3" id="1eaQRpkzXAG" role="3uHU7B">
+                    <node concept="3cpWs3" id="1eaQRpkzTM6" role="3uHU7B">
+                      <node concept="3cpWs3" id="1eaQRpkzR9e" role="3uHU7B">
+                        <node concept="3cpWs3" id="1eaQRpkzKnx" role="3uHU7B">
+                          <node concept="Xl_RD" id="1eaQRpkzJLw" role="3uHU7B">
+                            <property role="Xl_RC" value="  === " />
+                          </node>
+                          <node concept="2OqwBi" id="1eaQRpkzPQJ" role="3uHU7w">
+                            <node concept="2OqwBi" id="1eaQRpkzOAp" role="2Oq$k0">
+                              <node concept="2OqwBi" id="1eaQRpkzKTH" role="2Oq$k0">
+                                <node concept="2GrUjf" id="1eaQRpkzKTp" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="1eaQRpkzG0E" resolve="rel" />
+                                </node>
+                                <node concept="liA8E" id="1eaQRpkzLLi" role="2OqNvi">
+                                  <ref role="37wK5l" to="fzpi:~InstanceRelation.getSource():dsltrans.model.InstanceEntity" resolve="getSource" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="1eaQRpkzPwc" role="2OqNvi">
+                                <ref role="37wK5l" to="fzpi:~InstanceEntity.getMetaEntity():dsltrans.metamodel.MetaEntity" resolve="getMetaEntity" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="1eaQRpkzQJA" role="2OqNvi">
+                              <ref role="37wK5l" to="fodd:~MetaEntity.getName():java.lang.String" resolve="getName" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="1eaQRpkzRvp" role="3uHU7w">
+                          <property role="Xl_RC" value=" --- " />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1eaQRpkzWhq" role="3uHU7w">
+                        <node concept="2OqwBi" id="1eaQRpkzV0U" role="2Oq$k0">
+                          <node concept="2GrUjf" id="1eaQRpkzUF4" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="1eaQRpkzG0E" resolve="rel" />
+                          </node>
+                          <node concept="liA8E" id="1eaQRpkzVUe" role="2OqNvi">
+                            <ref role="37wK5l" to="fzpi:~InstanceRelation.getRelation():dsltrans.metamodel.MetaRelation" resolve="getRelation" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1eaQRpkzXcr" role="2OqNvi">
+                          <ref role="37wK5l" to="fodd:~MetaRelation.getName():java.lang.String" resolve="getName" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="1eaQRpkzXZb" role="3uHU7w">
+                      <property role="Xl_RC" value="--&gt;" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3SN6lk6l0mu" role="3cqZAp" />
+        <node concept="3clFbH" id="1eaQRpk$tfF" role="3cqZAp" />
       </node>
     </node>
     <node concept="1LZb2c" id="1eaQRpkuFiZ" role="1SL9yI">

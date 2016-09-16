@@ -54,6 +54,20 @@
     <node concept="PrWs8" id="2EaowSc4lSV" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="1eaQRpkCugr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="committee" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1eaQRpkCugu" resolve="Committee" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1eaQRpkCugu">
+    <property role="1pbfSe" value="1747763092" />
+    <property role="TrG5h" value="Committee" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1eaQRpkCugv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
