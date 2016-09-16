@@ -138,6 +138,7 @@
     <property role="1pbfSe" value="1431924995" />
     <property role="3GE5qa" value="Elements" />
     <property role="TrG5h" value="AnyMatchClass" />
+    <property role="34LRSv" value="Any MatchClass" />
     <ref role="1TJDcQ" node="2rexW9_gF9u" resolve="MatchClass" />
   </node>
   <node concept="1TIwiD" id="67kIGnNxbp5">
@@ -167,6 +168,7 @@
     <property role="1pbfSe" value="1431925005" />
     <property role="3GE5qa" value="Elements" />
     <property role="TrG5h" value="ExistsMatchClass" />
+    <property role="34LRSv" value="Exists MatchClass" />
     <ref role="1TJDcQ" node="2rexW9_gF9u" resolve="MatchClass" />
   </node>
   <node concept="1TIwiD" id="67kIGnNxbpw">
@@ -289,6 +291,10 @@
     </node>
     <node concept="PrWs8" id="2rexW9_gFeU" role="PzmwI">
       <ref role="PrY4T" node="2rexW9_gFeP" resolve="Class" />
+    </node>
+    <node concept="1TJgyi" id="1eaQRpkppkO" role="1TKVEl">
+      <property role="TrG5h" value="allowInheritance" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="2rexW9_hrll">
