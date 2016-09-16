@@ -39,6 +39,10 @@
       <concept id="1164991038168" name="jetbrains.mps.baseLanguage.structure.ThrowStatement" flags="nn" index="YS8fn">
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
+      <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
+        <child id="1081256993305" name="classType" index="2ZW6by" />
+        <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -1170,7 +1174,123 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="JP13Utf0EC" role="3clF47" />
+      <node concept="3clFbS" id="JP13Utf0EC" role="3clF47">
+        <node concept="3cpWs8" id="2GbRIwA5_CE" role="3cqZAp">
+          <node concept="3cpWsn" id="2GbRIwA5_CF" role="3cpWs9">
+            <property role="TrG5h" value="blinkTarget" />
+            <node concept="3uibUv" id="2GbRIwA5JTD" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~MatchClass" resolve="MatchClass" />
+            </node>
+            <node concept="2OqwBi" id="2GbRIwA5K1x" role="33vP2m">
+              <node concept="37vLTw" id="2GbRIwA5K1y" role="2Oq$k0">
+                <ref role="3cqZAo" node="JP13Utf2X0" resolve="matchClass2matchClassTrace" />
+              </node>
+              <node concept="liA8E" id="2GbRIwA5K1z" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <node concept="2OqwBi" id="2GbRIwA5K1$" role="37wK5m">
+                  <node concept="37vLTw" id="2GbRIwA5K1_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JP13Utf1XE" resolve="backward" />
+                  </node>
+                  <node concept="3TrEf2" id="2GbRIwA5K1A" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i3vy:2rexW9_i8QS" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2GbRIwA5KiL" role="3cqZAp">
+          <node concept="3clFbS" id="2GbRIwA5KiN" role="3clFbx">
+            <node concept="YS8fn" id="2GbRIwA5MCn" role="3cqZAp">
+              <node concept="2ShNRf" id="2GbRIwA5MS2" role="YScLw">
+                <node concept="1pGfFk" id="2GbRIwA5NwS" role="2ShVmc">
+                  <ref role="37wK5l" to="935o:~MissingFeatureException.&lt;init&gt;(java.lang.String)" resolve="MissingFeatureException" />
+                  <node concept="Xl_RD" id="2GbRIwA5NAg" role="37wK5m">
+                    <property role="Xl_RC" value="Backward Links can onely be made to a positive match classe." />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="2GbRIwA5MmS" role="3clFbw">
+            <node concept="2ZW3vV" id="2GbRIwA5LRT" role="3fr31v">
+              <node concept="3uibUv" id="2GbRIwA5Mbu" role="2ZW6by">
+                <ref role="3uigEE" to="gnwr:~PositiveMatchClass" resolve="PositiveMatchClass" />
+              </node>
+              <node concept="37vLTw" id="2GbRIwA5LFS" role="2ZW6bz">
+                <ref role="3cqZAo" node="2GbRIwA5_CF" resolve="blinkTarget" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2GbRIwA5kSH" role="3cqZAp">
+          <node concept="3cpWsn" id="2GbRIwA5kSI" role="3cpWs9">
+            <property role="TrG5h" value="dsltransAssociation" />
+            <node concept="3uibUv" id="2GbRIwA5lcI" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~PositiveBackwardRestriction" resolve="PositiveBackwardRestriction" />
+            </node>
+            <node concept="2OqwBi" id="2GbRIwA5kSK" role="33vP2m">
+              <node concept="37vLTw" id="2GbRIwA5kSL" role="2Oq$k0">
+                <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="2GbRIwA5qf$" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createPositiveBackwardRestriction():dsltrans.PositiveBackwardRestriction" resolve="createPositiveBackwardRestriction" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA5sF7" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA5u2h" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA5sF5" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA5kSI" resolve="dsltransAssociation" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA5uaD" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.setSourceClass(dsltrans.PositiveMatchClass):void" resolve="setSourceClass" />
+              <node concept="1eOMI4" id="2GbRIwA5P8W" role="37wK5m">
+                <node concept="10QFUN" id="2GbRIwA5P8T" role="1eOMHV">
+                  <node concept="3uibUv" id="2GbRIwA5PhS" role="10QFUM">
+                    <ref role="3uigEE" to="gnwr:~PositiveMatchClass" resolve="PositiveMatchClass" />
+                  </node>
+                  <node concept="37vLTw" id="2GbRIwA5Pnu" role="10QFUP">
+                    <ref role="3cqZAo" node="2GbRIwA5_CF" resolve="blinkTarget" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA5kSX" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA5kSY" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA5kSZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA5kSI" resolve="dsltransAssociation" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA5kT0" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.setTargetClass(dsltrans.ApplyClass):void" resolve="setTargetClass" />
+              <node concept="2OqwBi" id="2GbRIwA5kT1" role="37wK5m">
+                <node concept="37vLTw" id="2GbRIwA5kT2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JP13Utf40O" resolve="applyClass2applyClassTrace" />
+                </node>
+                <node concept="liA8E" id="2GbRIwA5kT3" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <node concept="2OqwBi" id="2GbRIwA5R33" role="37wK5m">
+                    <node concept="37vLTw" id="2GbRIwA5QU9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="JP13Utf1XE" resolve="backward" />
+                    </node>
+                    <node concept="3TrEf2" id="2GbRIwA5Re1" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i3vy:2rexW9_i8QR" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2GbRIwA5kT7" role="3cqZAp">
+          <node concept="37vLTw" id="2GbRIwA5kT8" role="3cqZAk">
+            <ref role="3cqZAo" node="2GbRIwA5kSI" resolve="dsltransAssociation" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm6S6" id="JP13UteZlI" role="1B3o_S" />
       <node concept="3uibUv" id="JP13Utf0C1" role="3clF45">
         <ref role="3uigEE" to="gnwr:~PositiveBackwardRestriction" resolve="PositiveBackwardRestriction" />
@@ -1204,6 +1324,9 @@
             <ref role="3uigEE" to="gnwr:~ApplyClass" resolve="ApplyClass" />
           </node>
         </node>
+      </node>
+      <node concept="3uibUv" id="2GbRIwA5NDc" role="Sfmx6">
+        <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
       </node>
     </node>
     <node concept="3clFb_" id="1NdVp2rUs5n" role="jymVt">
@@ -1386,6 +1509,9 @@
           </node>
         </node>
       </node>
+      <node concept="3uibUv" id="2GbRIwA59oa" role="Sfmx6">
+        <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
+      </node>
     </node>
     <node concept="3clFb_" id="JP13Ute$CL" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -1393,7 +1519,81 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="JP13Ute$CO" role="3clF47" />
+      <node concept="3clFbS" id="JP13Ute$CO" role="3clF47">
+        <node concept="3cpWs8" id="2GbRIwA5a_0" role="3cqZAp">
+          <node concept="3cpWsn" id="2GbRIwA5a_1" role="3cpWs9">
+            <property role="TrG5h" value="dsltransAssociation" />
+            <node concept="3uibUv" id="2GbRIwA5b4A" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~ApplyAssociation" resolve="ApplyAssociation" />
+            </node>
+            <node concept="2OqwBi" id="2GbRIwA5hKW" role="33vP2m">
+              <node concept="37vLTw" id="2GbRIwA5gEH" role="2Oq$k0">
+                <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="2GbRIwA5iRv" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyAssociation():dsltrans.ApplyAssociation" resolve="createApplyAssociation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA5a_y" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA5a_z" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA5a_$" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA5a_1" resolve="dsltransAssociation" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA5a__" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~ApplyAssociation.setSource(dsltrans.ApplyClass):void" resolve="setSource" />
+              <node concept="2OqwBi" id="2GbRIwA5a_A" role="37wK5m">
+                <node concept="37vLTw" id="2GbRIwA5k8s" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JP13UteBzC" resolve="applyClass2applyClassTrace" />
+                </node>
+                <node concept="liA8E" id="2GbRIwA5a_C" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <node concept="2OqwBi" id="2GbRIwA5a_D" role="37wK5m">
+                    <node concept="37vLTw" id="2GbRIwA5kAn" role="2Oq$k0">
+                      <ref role="3cqZAo" node="JP13Ute_T2" resolve="applyAssoc" />
+                    </node>
+                    <node concept="3TrEf2" id="2GbRIwA5a_F" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i3vy:2rexW9_i8QR" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA5a_G" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA5a_H" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA5a_I" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA5a_1" resolve="dsltransAssociation" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA5a_J" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~ApplyAssociation.setTarget(dsltrans.ApplyClass):void" resolve="setTarget" />
+              <node concept="2OqwBi" id="2GbRIwA5a_K" role="37wK5m">
+                <node concept="37vLTw" id="2GbRIwA5kqk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JP13UteBzC" resolve="applyClass2applyClassTrace" />
+                </node>
+                <node concept="liA8E" id="2GbRIwA5a_M" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <node concept="2OqwBi" id="2GbRIwA5a_N" role="37wK5m">
+                    <node concept="37vLTw" id="2GbRIwA5kLH" role="2Oq$k0">
+                      <ref role="3cqZAo" node="JP13Ute_T2" resolve="applyAssoc" />
+                    </node>
+                    <node concept="3TrEf2" id="2GbRIwA5a_P" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i3vy:2rexW9_i8QS" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2GbRIwA5a_Q" role="3cqZAp">
+          <node concept="37vLTw" id="2GbRIwA5a_R" role="3cqZAk">
+            <ref role="3cqZAo" node="2GbRIwA5a_1" resolve="dsltransAssociation" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm6S6" id="JP13UteznN" role="1B3o_S" />
       <node concept="3uibUv" id="JP13Ute$Cn" role="3clF45">
         <ref role="3uigEE" to="gnwr:~ApplyAssociation" resolve="ApplyAssociation" />
@@ -1586,6 +1786,9 @@
           </node>
         </node>
       </node>
+      <node concept="3uibUv" id="2GbRIwA5896" role="Sfmx6">
+        <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
+      </node>
     </node>
     <node concept="3clFb_" id="JP13UtfoGq" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -1695,6 +1898,9 @@
           </node>
         </node>
       </node>
+      <node concept="3uibUv" id="2GbRIwA56WL" role="Sfmx6">
+        <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
+      </node>
     </node>
     <node concept="3clFb_" id="JP13UtfCzI" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -1782,7 +1988,7 @@
               <node concept="3clFbF" id="JP13UtgaLF" role="3cqZAp">
                 <node concept="37vLTI" id="JP13UtgaLH" role="3clFbG">
                   <node concept="1rXfSq" id="JP13UtgaLI" role="37vLTx">
-                    <ref role="37wK5l" node="JP13UtfX_6" resolve="createAtomApply" />
+                    <ref role="37wK5l" node="JP13UtgpQ9" resolve="createConcat" />
                     <node concept="10QFUN" id="JP13UtgaLJ" role="37wK5m">
                       <node concept="3Tqbb2" id="JP13UtgaLK" role="10QFUM">
                         <ref role="ehGHo" to="i3vy:67kIGnNxbpJ" resolve="Concat" />
@@ -1865,7 +2071,55 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="JP13UtgdQ3" role="3clF47" />
+      <node concept="3clFbS" id="JP13UtgdQ3" role="3clF47">
+        <node concept="3cpWs8" id="2GbRIwA4Xjf" role="3cqZAp">
+          <node concept="3cpWsn" id="2GbRIwA4Xjg" role="3cpWs9">
+            <property role="TrG5h" value="dsltransAttrRef" />
+            <node concept="3uibUv" id="2GbRIwA4Xjh" role="1tU5fm">
+              <ref role="3uigEE" to="gnwr:~AttributeRef" resolve="AttributeRef" />
+            </node>
+            <node concept="2OqwBi" id="2GbRIwA4Xw$" role="33vP2m">
+              <node concept="37vLTw" id="2GbRIwA4Xqp" role="2Oq$k0">
+                <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
+              </node>
+              <node concept="liA8E" id="2GbRIwA4XB1" role="2OqNvi">
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAttributeRef():dsltrans.AttributeRef" resolve="createAttributeRef" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GbRIwA53og" role="3cqZAp">
+          <node concept="2OqwBi" id="2GbRIwA54BS" role="3clFbG">
+            <node concept="37vLTw" id="2GbRIwA53oe" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA4Xjg" resolve="dsltransAttrRef" />
+            </node>
+            <node concept="liA8E" id="2GbRIwA54HE" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~AttributeRef.setAttributeRef(dsltrans.Attribute):void" resolve="setAttributeRef" />
+              <node concept="2OqwBi" id="2GbRIwA557c" role="37wK5m">
+                <node concept="37vLTw" id="2GbRIwA54RU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JP13UtgkG4" resolve="matchAttr2matchAttrTrace" />
+                </node>
+                <node concept="liA8E" id="2GbRIwA56e_" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <node concept="2OqwBi" id="2GbRIwA56EY" role="37wK5m">
+                    <node concept="37vLTw" id="2GbRIwA56uy" role="2Oq$k0">
+                      <ref role="3cqZAo" node="JP13Utgjyq" resolve="applyAttrValue" />
+                    </node>
+                    <node concept="3TrEf2" id="2GbRIwA56Pr" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i3vy:67kIGnNxbpQ" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2GbRIwA4XNz" role="3cqZAp">
+          <node concept="37vLTw" id="2GbRIwA4YVq" role="3cqZAk">
+            <ref role="3cqZAo" node="2GbRIwA4Xjg" resolve="dsltransAttrRef" />
+          </node>
+        </node>
+      </node>
       <node concept="3Tm6S6" id="JP13Utgcm1" role="1B3o_S" />
       <node concept="3uibUv" id="JP13UtgdOA" role="3clF45">
         <ref role="3uigEE" to="gnwr:~Term" resolve="Term" />
@@ -1898,7 +2152,7 @@
       <node concept="37vLTG" id="JP13UtgrgE" role="3clF46">
         <property role="TrG5h" value="applyAttrValue" />
         <node concept="3Tqbb2" id="JP13UtgrgF" role="1tU5fm">
-          <ref role="ehGHo" to="i3vy:67kIGnNxbpI" resolve="AttributeRef" />
+          <ref role="ehGHo" to="i3vy:67kIGnNxbpJ" resolve="Concat" />
         </node>
       </node>
       <node concept="37vLTG" id="JP13UtgrgG" role="3clF46">
@@ -1913,10 +2167,24 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbS" id="JP13UtgpQc" role="3clF47" />
+      <node concept="3clFbS" id="JP13UtgpQc" role="3clF47">
+        <node concept="YS8fn" id="2GbRIwA4MqO" role="3cqZAp">
+          <node concept="2ShNRf" id="2GbRIwA4MvW" role="YScLw">
+            <node concept="1pGfFk" id="2GbRIwA4VIv" role="2ShVmc">
+              <ref role="37wK5l" to="935o:~MissingFeatureException.&lt;init&gt;(java.lang.String)" resolve="MissingFeatureException" />
+              <node concept="Xl_RD" id="2GbRIwA4VNO" role="37wK5m">
+                <property role="Xl_RC" value="TO BE DONE" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3Tm6S6" id="JP13UtgosL" role="1B3o_S" />
       <node concept="3uibUv" id="JP13UtgpJ1" role="3clF45">
         <ref role="3uigEE" to="gnwr:~Term" resolve="Term" />
+      </node>
+      <node concept="3uibUv" id="2GbRIwA4VPe" role="Sfmx6">
+        <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
       </node>
     </node>
     <node concept="3clFb_" id="JP13UtfX_6" role="jymVt">
