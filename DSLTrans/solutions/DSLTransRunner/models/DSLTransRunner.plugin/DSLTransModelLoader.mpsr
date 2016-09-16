@@ -90,9 +90,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -139,12 +136,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -1640,12 +1631,6 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="JP13Utf786" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="JP13Utf787" role="34bqiv">
-            <property role="Xl_RC" value="Setting allow inheritance to true. This needs to be implemented." />
-          </node>
-        </node>
         <node concept="3clFbF" id="JP13Utf788" role="3cqZAp">
           <node concept="2OqwBi" id="JP13Utf789" role="3clFbG">
             <node concept="37vLTw" id="JP13Utf78a" role="2Oq$k0">
@@ -1653,8 +1638,13 @@
             </node>
             <node concept="liA8E" id="JP13Utf78b" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~AbstractClass.setAllowInheritance(boolean):void" resolve="setAllowInheritance" />
-              <node concept="3clFbT" id="JP13Utf78c" role="37wK5m">
-                <property role="3clFbU" value="true" />
+              <node concept="2OqwBi" id="2GbRIwA7o_0" role="37wK5m">
+                <node concept="37vLTw" id="2GbRIwA7otJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JP13Uteucr" resolve="applyClass" />
+                </node>
+                <node concept="3TrcHB" id="2GbRIwA7oEj" role="2OqNvi">
+                  <ref role="3TsBF5" to="i3vy:1eaQRpkppkO" resolve="allowInheritance" />
+                </node>
               </node>
             </node>
           </node>
