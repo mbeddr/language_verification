@@ -1489,8 +1489,8 @@
             <node concept="liA8E" id="7gnODH_SEnp" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
               <node concept="10M0yZ" id="7gnODH_SEnq" role="37wK5m">
-                <ref role="3cqZAo" to="z60i:~Color.darkGray" resolve="darkGray" />
                 <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="z60i:~Color.DARK_GRAY" resolve="DARK_GRAY" />
               </node>
             </node>
           </node>
