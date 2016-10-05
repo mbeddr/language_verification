@@ -6,6 +6,8 @@
       <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/simpleInputLanguage/simpleInputLanguage.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/simpleOutputLanguage/simpleOutputLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/transverif.core/transfverif.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.lib/DSLTrans.lib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTransRunner/DSLTransRunner.msd" folder="" />

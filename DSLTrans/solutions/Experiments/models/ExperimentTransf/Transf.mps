@@ -7,26 +7,21 @@
   <imports />
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
-      <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
-      </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
-        <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
-      <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
-        <reference id="2796321687636315575" name="source" index="13xwDP" />
-        <reference id="2796321687636315576" name="target" index="13xwDU" />
-      </concept>
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
       </concept>
-      <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
+      <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
+      <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
+        <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
+      </concept>
       <concept id="2829711462939370373" name="transfverif.core.structure.ILanguageScopeProvider" flags="ng" index="1y7Kgg">
         <child id="2829711462939238353" name="outputLanguage" index="1y7jx4" />
         <child id="2829711462939238350" name="inputLanguage" index="1y7jxr" />
@@ -121,38 +116,33 @@
         </node>
       </node>
       <node concept="1jGXXK" id="3SN6lk6hFlF" role="1jGXV4">
-        <property role="TrG5h" value="bla" />
+        <property role="TrG5h" value="someRule" />
         <node concept="3GsvpM" id="3SN6lk6hFlG" role="2ik0Mo">
-          <property role="KJs$L" value="0" />
+          <property role="KJs$L" value="1" />
+          <node concept="1jGXXa" id="Dn$Lr8biYO" role="1jGXX7">
+            <property role="13z3e$" value="Apply0" />
+            <property role="13z3hU" value="A_out" />
+          </node>
         </node>
         <node concept="3GsvpN" id="3SN6lk6hFmm" role="2ik0Mu">
           <property role="KJs$L" value="2" />
-          <node concept="1jGXVw" id="3SN6lk6iaWz" role="13z3mp">
-            <property role="aCCiF" value="bla" />
-            <ref role="13xwDP" node="3SN6lk6iaW_" />
-            <ref role="13xwDU" node="3SN6lk6iaWK" />
-          </node>
           <node concept="2ik0NV" id="3SN6lk6iaW_" role="13z3mo">
             <property role="13z3e$" value="Any0" />
-            <property role="13z3hU" value="A" />
-          </node>
-          <node concept="2ik0NV" id="3SN6lk6iaWK" role="13z3mo">
-            <property role="13z3e$" value="Any1" />
-            <property role="13z3hU" value="B" />
+            <property role="13z3hU" value="A_in" />
           </node>
         </node>
       </node>
     </node>
     <node concept="pHN19" id="75JtzgfMA60" role="1y7jxr">
-      <node concept="2V$Bhx" id="2EVdxuSTSSH" role="2V$M_3">
-        <property role="2V$B1T" value="05f6207f-0b7e-4413-bedb-09f3dfc58438" />
-        <property role="2V$B1Q" value="Families" />
+      <node concept="2V$Bhx" id="Dn$Lr8biYB" role="2V$M_3">
+        <property role="2V$B1T" value="443933c7-2e65-4840-9493-341bfee78b6f" />
+        <property role="2V$B1Q" value="simpleInputLanguage" />
       </node>
     </node>
     <node concept="pHN19" id="75JtzgfMA6c" role="1y7jx4">
-      <node concept="2V$Bhx" id="75JtzgfMA6j" role="2V$M_3">
-        <property role="2V$B1T" value="69eded0a-1bc3-427e-9a48-e8713d355d49" />
-        <property role="2V$B1Q" value="SyVOLT" />
+      <node concept="2V$Bhx" id="Dn$Lr8biYG" role="2V$M_3">
+        <property role="2V$B1T" value="cb4551c1-1ee1-4aa5-a83b-23aec6d7e712" />
+        <property role="2V$B1Q" value="simpleOutputLanguage" />
       </node>
     </node>
     <node concept="37mRI7" id="57pZU2XSBW6" role="lGtFl">

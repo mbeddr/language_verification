@@ -77,7 +77,7 @@
     <property role="3GE5qa" value="Elements" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="Apply Class" />
+    <property role="34LRSv" value="ApplyClass" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="67kIGnNxbpF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

@@ -7,8 +7,8 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language id="05f6207f-0b7e-4413-bedb-09f3dfc58438" fqName="Families" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
+    <language id="443933c7-2e65-4840-9493-341bfee78b6f" fqName="simpleInputLanguage" version="-1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f74c60f-47e5-47a9-895b-6e05b58f1d7f(inputModel)" version="0" />
