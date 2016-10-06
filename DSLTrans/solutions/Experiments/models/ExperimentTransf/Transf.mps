@@ -7,8 +7,12 @@
   <imports />
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
+      <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
+        <property id="4439542802417641475" name="typeName" index="aCCiF" />
+      </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
+        <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
@@ -23,8 +27,11 @@
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
       </concept>
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
+      <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
+      <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
       <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa" />
       <concept id="3828633282163103459" name="transfverif.core.structure.AbstractApplier" flags="ng" index="1jGXXc">
+        <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
       </concept>
       <concept id="2829711462939370373" name="transfverif.core.structure.ILanguageScopeProvider" flags="ng" index="1y7Kgg">
@@ -323,6 +330,41 @@
     </node>
     <node concept="1jGXV7" id="7YIyNGbFiO8" role="3k6lfD">
       <property role="TrG5h" value="second" />
+      <node concept="1jGXXK" id="gTuKPSb$5E" role="1jGXV4">
+        <property role="TrG5h" value="connect" />
+        <node concept="3GsvpM" id="gTuKPSb$5G" role="2ik0Mo">
+          <property role="KJs$L" value="2" />
+          <node concept="1jGXXa" id="gTuKPSb$5O" role="1jGXX7">
+            <property role="13z3e$" value="Apply0" />
+            <property role="13z3hU" value="A" />
+          </node>
+          <node concept="1jGXXa" id="gTuKPSb$6j" role="1jGXX7">
+            <property role="13z3e$" value="Apply1" />
+            <property role="13z3hU" value="C" />
+          </node>
+          <node concept="1jGXVd" id="gTuKPSb$6O" role="2ik0Ml">
+            <property role="aCCiF" value="cs" />
+            <ref role="13xwDP" node="gTuKPSb$5O" />
+            <ref role="13xwDU" node="gTuKPSb$6j" />
+          </node>
+        </node>
+        <node concept="3GsvpN" id="gTuKPSb$5K" role="2ik0Mu">
+          <property role="KJs$L" value="2" />
+          <node concept="1jGXVw" id="gTuKPSb$6L" role="13z3mp">
+            <property role="aCCiF" value="bs" />
+            <ref role="13xwDP" node="gTuKPSb$5M" />
+            <ref role="13xwDU" node="gTuKPSb$6f" />
+          </node>
+          <node concept="2ik0NV" id="gTuKPSb$5M" role="13z3mo">
+            <property role="13z3e$" value="Any0" />
+            <property role="13z3hU" value="A" />
+          </node>
+          <node concept="2ik0NV" id="gTuKPSb$6f" role="13z3mo">
+            <property role="13z3e$" value="Any1" />
+            <property role="13z3hU" value="B" />
+          </node>
+        </node>
+      </node>
       <node concept="1jGXVs" id="7YIyNGbFiP1" role="1o0q1e">
         <ref role="3k6leo" node="75JtzgfMnrZ" resolve="first" />
       </node>

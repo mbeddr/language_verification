@@ -7,8 +7,9 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="935o" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.transformer.exceptions(DSLTrans.lib/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -30,8 +31,16 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
+        <child id="1164879758292" name="body" index="SfCbr" />
+        <child id="1164903496223" name="catchClause" index="TEbGg" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
+        <child id="1164903359218" name="catchBody" index="TDEfX" />
+        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -308,22 +317,6 @@
             </node>
           </node>
           <node concept="3clFbS" id="10d1GjXbQrG" role="2LFqv$">
-            <node concept="34ab3g" id="7YIyNGbF1EW" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="7YIyNGbF1Sw" role="34bqiv">
-                <node concept="2OqwBi" id="7YIyNGbF2a_" role="3uHU7w">
-                  <node concept="2GrUjf" id="7YIyNGbF23h" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="10d1GjXbQrC" resolve="layer" />
-                  </node>
-                  <node concept="3TrcHB" id="7YIyNGbF2mv" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="7YIyNGbF1EY" role="3uHU7B">
-                  <property role="Xl_RC" value=" -- Layer: " />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="2Ub285OrRTa" role="3cqZAp">
               <node concept="3cpWsn" id="2Ub285OrRTb" role="3cpWs9">
                 <property role="TrG5h" value="dsltransLayer" />
@@ -394,7 +387,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7YIyNGbEBrP" role="3cqZAp" />
+        <node concept="3clFbH" id="gTuKPSaOdY" role="3cqZAp" />
         <node concept="2Gpval" id="7YIyNGbFfDv" role="3cqZAp">
           <node concept="2GrKxI" id="7YIyNGbFfDx" role="2Gsz3X">
             <property role="TrG5h" value="lay" />
@@ -408,25 +401,87 @@
             </node>
           </node>
           <node concept="3clFbS" id="7YIyNGbFfD_" role="2LFqv$">
-            <node concept="34ab3g" id="7YIyNGbFhQF" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="7YIyNGbFuXD" role="34bqiv">
-                <node concept="3cpWs3" id="7YIyNGbFhW6" role="3uHU7B">
-                  <node concept="Xl_RD" id="7YIyNGbFhQH" role="3uHU7B">
-                    <property role="Xl_RC" value="  - Layer: " />
-                  </node>
-                  <node concept="2OqwBi" id="7YIyNGbFiuT" role="3uHU7w">
-                    <node concept="2GrUjf" id="7YIyNGbFipx" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="7YIyNGbFfDx" resolve="lay" />
+            <node concept="SfApY" id="gTuKPSaqnT" role="3cqZAp">
+              <node concept="3clFbS" id="gTuKPSaqnV" role="SfCbr">
+                <node concept="3cpWs8" id="gTuKPS9PYs" role="3cqZAp">
+                  <node concept="3cpWsn" id="gTuKPS9PYt" role="3cpWs9">
+                    <property role="TrG5h" value="lay2" />
+                    <node concept="3uibUv" id="gTuKPS9PYu" role="1tU5fm">
+                      <ref role="3uigEE" to="gnwr:~Sequential" resolve="Sequential" />
                     </node>
-                    <node concept="liA8E" id="7YIyNGbFiDU" role="2OqNvi">
-                      <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                    <node concept="10QFUN" id="gTuKPS9Qc_" role="33vP2m">
+                      <node concept="3uibUv" id="gTuKPS9Qcz" role="10QFUM">
+                        <ref role="3uigEE" to="gnwr:~Sequential" resolve="Sequential" />
+                      </node>
+                      <node concept="2GrUjf" id="gTuKPS9Qns" role="10QFUP">
+                        <ref role="2Gs0qQ" node="7YIyNGbFfDx" resolve="lay" />
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="Xl_RD" id="7YIyNGbFvj_" role="3uHU7w">
-                  <property role="Xl_RC" value=" --- " />
+                <node concept="34ab3g" id="7YIyNGbFhQF" role="3cqZAp">
+                  <property role="35gtTG" value="info" />
+                  <node concept="3cpWs3" id="7YIyNGbFhW6" role="34bqiv">
+                    <node concept="Xl_RD" id="7YIyNGbFhQH" role="3uHU7B">
+                      <property role="Xl_RC" value="  - Layer: " />
+                    </node>
+                    <node concept="2OqwBi" id="7YIyNGbFiuT" role="3uHU7w">
+                      <node concept="37vLTw" id="gTuKPS9RAQ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
+                      </node>
+                      <node concept="liA8E" id="7YIyNGbFiDU" role="2OqNvi">
+                        <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
+                <node concept="2Gpval" id="gTuKPSawdm" role="3cqZAp">
+                  <node concept="2GrKxI" id="gTuKPSawdo" role="2Gsz3X">
+                    <property role="TrG5h" value="previous" />
+                  </node>
+                  <node concept="2OqwBi" id="gTuKPSawxY" role="2GsD0m">
+                    <node concept="37vLTw" id="gTuKPSawqs" role="2Oq$k0">
+                      <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
+                    </node>
+                    <node concept="liA8E" id="gTuKPSawA2" role="2OqNvi">
+                      <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource():org.eclipse.emf.common.util.EList" resolve="getPreviousSource" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="gTuKPSawds" role="2LFqv$">
+                    <node concept="34ab3g" id="gTuKPSawNd" role="3cqZAp">
+                      <property role="35gtTG" value="info" />
+                      <node concept="3cpWs3" id="gTuKPSbqzD" role="34bqiv">
+                        <node concept="2OqwBi" id="gTuKPSbrhz" role="3uHU7w">
+                          <node concept="1eOMI4" id="gTuKPSbqLb" role="2Oq$k0">
+                            <node concept="10QFUN" id="gTuKPSbqL8" role="1eOMHV">
+                              <node concept="3uibUv" id="gTuKPSbqXQ" role="10QFUM">
+                                <ref role="3uigEE" to="gnwr:~Sequential" resolve="Sequential" />
+                              </node>
+                              <node concept="2GrUjf" id="gTuKPSbrcg" role="10QFUP">
+                                <ref role="2Gs0qQ" node="gTuKPSawdo" resolve="previous" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="gTuKPSbro_" role="2OqNvi">
+                            <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="gTuKPSawNf" role="3uHU7B">
+                          <property role="Xl_RC" value="    + " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="gTuKPSaqnW" role="TEbGg">
+                <node concept="3cpWsn" id="gTuKPSaqnY" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="gTuKPSaqSa" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="gTuKPSaqo2" role="TDEfX" />
               </node>
             </node>
           </node>
@@ -452,6 +507,7 @@
         <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
       </node>
     </node>
+    <node concept="2tJIrI" id="gTuKPSaK8h" role="jymVt" />
     <node concept="3clFb_" id="2Ub285OrY3f" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createTraceLink" />
@@ -549,6 +605,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="gTuKPSaLQM" role="jymVt" />
     <node concept="3clFb_" id="10d1GjXbOCd" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createLayer" />
@@ -676,23 +733,33 @@
           </node>
           <node concept="9aQIb" id="2Ub285OrWdE" role="9aQIa">
             <node concept="3clFbS" id="2Ub285OrWdF" role="9aQI4">
-              <node concept="3cpWs8" id="2Ub285OsbQa" role="3cqZAp">
-                <node concept="3cpWsn" id="2Ub285OsbQb" role="3cpWs9">
+              <node concept="3cpWs8" id="gTuKPSaXue" role="3cqZAp">
+                <node concept="3cpWsn" id="gTuKPSaXuf" role="3cpWs9">
                   <property role="TrG5h" value="previousSources" />
-                  <node concept="3uibUv" id="2Ub285OsbQ8" role="1tU5fm">
+                  <node concept="3uibUv" id="gTuKPSaXug" role="1tU5fm">
                     <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                    <node concept="3uibUv" id="2Ub285OsbYZ" role="11_B2D">
+                    <node concept="3uibUv" id="gTuKPSaXuh" role="11_B2D">
                       <ref role="3uigEE" to="gnwr:~Sequential" resolve="Sequential" />
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="2Ub285OscqE" role="33vP2m">
-                    <node concept="37vLTw" id="2Ub285OsoJU" role="2Oq$k0">
+                  <node concept="2OqwBi" id="gTuKPSb6R0" role="33vP2m">
+                    <node concept="37vLTw" id="gTuKPSb6R1" role="2Oq$k0">
                       <ref role="3cqZAo" node="2Ub285Osn7z" resolve="layer2AbstractSourcesTrace" />
                     </node>
-                    <node concept="liA8E" id="2Ub285OsdHT" role="2OqNvi">
+                    <node concept="liA8E" id="gTuKPSb6R2" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
-                      <node concept="37vLTw" id="2Ub285OsdZh" role="37wK5m">
-                        <ref role="3cqZAo" node="10d1GjXbP6K" resolve="layer" />
+                      <node concept="2OqwBi" id="gTuKPSb7DH" role="37wK5m">
+                        <node concept="2OqwBi" id="gTuKPSb7fm" role="2Oq$k0">
+                          <node concept="37vLTw" id="gTuKPSb6R3" role="2Oq$k0">
+                            <ref role="3cqZAo" node="10d1GjXbP6K" resolve="layer" />
+                          </node>
+                          <node concept="3TrEf2" id="gTuKPSb7s3" role="2OqNvi">
+                            <ref role="3Tt5mk" to="rr4f:6pYRU8YvRZG" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="gTuKPSbdc0" role="2OqNvi">
+                          <ref role="3Tt5mk" to="rr4f:6JhS3QZMbe_" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -723,7 +790,7 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="2Ub285Osijq" role="2GsD0m">
-                  <ref role="3cqZAo" node="2Ub285OsbQb" resolve="previousSources" />
+                  <ref role="3cqZAo" node="gTuKPSaXuf" resolve="previousSources" />
                 </node>
               </node>
             </node>
@@ -813,6 +880,7 @@
         <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
       </node>
     </node>
+    <node concept="2tJIrI" id="gTuKPS9yQt" role="jymVt" />
     <node concept="3clFb_" id="2Ub285OswvF" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="createRules" />
