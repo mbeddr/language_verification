@@ -45,13 +45,13 @@
     <node concept="1TJgyj" id="Dn$Lr8cmLJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cs" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="Dn$Lr8cmLF" resolve="C" />
     </node>
     <node concept="1TJgyj" id="Dn$Lr8cmLM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ds" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="Dn$Lr8cmLG" resolve="D" />
     </node>
   </node>

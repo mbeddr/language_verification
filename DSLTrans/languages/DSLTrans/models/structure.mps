@@ -132,7 +132,7 @@
     <node concept="1TJgyj" id="6pYRU8YvRZG" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="previousSource" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="3ky2qXA$ttN" resolve="PreviousLayer" />
     </node>
   </node>
