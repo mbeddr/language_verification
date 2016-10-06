@@ -410,17 +410,22 @@
           <node concept="3clFbS" id="7YIyNGbFfD_" role="2LFqv$">
             <node concept="34ab3g" id="7YIyNGbFhQF" role="3cqZAp">
               <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="7YIyNGbFhW6" role="34bqiv">
-                <node concept="2OqwBi" id="7YIyNGbFiuT" role="3uHU7w">
-                  <node concept="2GrUjf" id="7YIyNGbFipx" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="7YIyNGbFfDx" resolve="lay" />
+              <node concept="3cpWs3" id="7YIyNGbFuXD" role="34bqiv">
+                <node concept="3cpWs3" id="7YIyNGbFhW6" role="3uHU7B">
+                  <node concept="Xl_RD" id="7YIyNGbFhQH" role="3uHU7B">
+                    <property role="Xl_RC" value="  - Layer: " />
                   </node>
-                  <node concept="liA8E" id="7YIyNGbFiDU" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                  <node concept="2OqwBi" id="7YIyNGbFiuT" role="3uHU7w">
+                    <node concept="2GrUjf" id="7YIyNGbFipx" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="7YIyNGbFfDx" resolve="lay" />
+                    </node>
+                    <node concept="liA8E" id="7YIyNGbFiDU" role="2OqNvi">
+                      <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                    </node>
                   </node>
                 </node>
-                <node concept="Xl_RD" id="7YIyNGbFhQH" role="3uHU7B">
-                  <property role="Xl_RC" value="  - Layer: " />
+                <node concept="Xl_RD" id="7YIyNGbFvj_" role="3uHU7w">
+                  <property role="Xl_RC" value=" --- " />
                 </node>
               </node>
             </node>
@@ -682,7 +687,7 @@
                   </node>
                   <node concept="2OqwBi" id="2Ub285OscqE" role="33vP2m">
                     <node concept="37vLTw" id="2Ub285OsoJU" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2Ub285Osn7z" resolve="layer2AsbtractSourcesTrace" />
+                      <ref role="3cqZAo" node="2Ub285Osn7z" resolve="layer2AbstractSourcesTrace" />
                     </node>
                     <node concept="liA8E" id="2Ub285OsdHT" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
@@ -790,7 +795,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2Ub285Osn7z" role="3clF46">
-        <property role="TrG5h" value="layer2AsbtractSourcesTrace" />
+        <property role="TrG5h" value="layer2AbstractSourcesTrace" />
         <node concept="3uibUv" id="2Ub285Osnz$" role="1tU5fm">
           <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
           <node concept="3Tqbb2" id="2Ub285Osnz_" role="11_B2D">
