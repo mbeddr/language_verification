@@ -7,8 +7,8 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
-    <import index="935o" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.transformer.exceptions(DSLTrans.lib/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="935o" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.transformer.exceptions(DSLTrans.lib/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -90,6 +90,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -136,6 +137,12 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -207,7 +214,7 @@
         </node>
         <node concept="3cpWs8" id="2Ub285OskKG" role="3cqZAp">
           <node concept="3cpWsn" id="2Ub285OskKM" role="3cpWs9">
-            <property role="TrG5h" value="layer2AsbtractSourcesTrace" />
+            <property role="TrG5h" value="layer2AbstractSourcesTrace" />
             <node concept="3uibUv" id="2Ub285OskKO" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
               <node concept="3Tqbb2" id="2Ub285Oslnc" role="11_B2D">
@@ -301,6 +308,22 @@
             </node>
           </node>
           <node concept="3clFbS" id="10d1GjXbQrG" role="2LFqv$">
+            <node concept="34ab3g" id="7YIyNGbF1EW" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="7YIyNGbF1Sw" role="34bqiv">
+                <node concept="2OqwBi" id="7YIyNGbF2a_" role="3uHU7w">
+                  <node concept="2GrUjf" id="7YIyNGbF23h" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="10d1GjXbQrC" resolve="layer" />
+                  </node>
+                  <node concept="3TrcHB" id="7YIyNGbF2mv" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="7YIyNGbF1EY" role="3uHU7B">
+                  <property role="Xl_RC" value=" -- Layer: " />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="2Ub285OrRTa" role="3cqZAp">
               <node concept="3cpWsn" id="2Ub285OrRTb" role="3cpWs9">
                 <property role="TrG5h" value="dsltransLayer" />
@@ -332,7 +355,7 @@
                     <ref role="3cqZAo" node="2Ub285OrQ9W" resolve="inputPort" />
                   </node>
                   <node concept="37vLTw" id="2Ub285Osn35" role="37wK5m">
-                    <ref role="3cqZAo" node="2Ub285OskKM" resolve="layer2AsbtractSourcesTrace" />
+                    <ref role="3cqZAo" node="2Ub285OskKM" resolve="layer2AbstractSourcesTrace" />
                   </node>
                 </node>
               </node>
@@ -365,12 +388,45 @@
                   <ref role="3cqZAo" node="2Ub285OrRTb" resolve="dsltransLayer" />
                 </node>
                 <node concept="37vLTw" id="2Ub285Osq_0" role="37wK5m">
-                  <ref role="3cqZAo" node="2Ub285OskKM" resolve="layer2AsbtractSourcesTrace" />
+                  <ref role="3cqZAo" node="2Ub285OskKM" resolve="layer2AbstractSourcesTrace" />
                 </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="7YIyNGbEBrP" role="3cqZAp" />
+        <node concept="2Gpval" id="7YIyNGbFfDv" role="3cqZAp">
+          <node concept="2GrKxI" id="7YIyNGbFfDx" role="2Gsz3X">
+            <property role="TrG5h" value="lay" />
+          </node>
+          <node concept="2OqwBi" id="7YIyNGbFhx7" role="2GsD0m">
+            <node concept="37vLTw" id="7YIyNGbFhjS" role="2Oq$k0">
+              <ref role="3cqZAo" node="10d1GjXb_Ml" resolve="dsltransTransformation" />
+            </node>
+            <node concept="liA8E" id="7YIyNGbFhEz" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="7YIyNGbFfD_" role="2LFqv$">
+            <node concept="34ab3g" id="7YIyNGbFhQF" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="7YIyNGbFhW6" role="34bqiv">
+                <node concept="2OqwBi" id="7YIyNGbFiuT" role="3uHU7w">
+                  <node concept="2GrUjf" id="7YIyNGbFipx" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="7YIyNGbFfDx" resolve="lay" />
+                  </node>
+                  <node concept="liA8E" id="7YIyNGbFiDU" role="2OqNvi">
+                    <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="7YIyNGbFhQH" role="3uHU7B">
+                  <property role="Xl_RC" value="  - Layer: " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7YIyNGbEC$c" role="3cqZAp" />
         <node concept="3cpWs6" id="10d1GjXbMAm" role="3cqZAp">
           <node concept="37vLTw" id="10d1GjXbMK8" role="3cqZAk">
             <ref role="3cqZAo" node="10d1GjXb_Ml" resolve="dsltransTransformation" />
@@ -402,7 +458,7 @@
           <node concept="3fqX7Q" id="2Ub285Os8el" role="3clFbw">
             <node concept="2OqwBi" id="2Ub285Os8en" role="3fr31v">
               <node concept="37vLTw" id="2Ub285OspHw" role="2Oq$k0">
-                <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AsbtractSourcesTrace" />
+                <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AbstractSourcesTrace" />
               </node>
               <node concept="liA8E" id="2Ub285Os8ep" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
@@ -416,7 +472,7 @@
             <node concept="3clFbF" id="2Ub285Os8Oi" role="3cqZAp">
               <node concept="2OqwBi" id="2Ub285Os8Ok" role="3clFbG">
                 <node concept="37vLTw" id="2Ub285OspXj" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AsbtractSourcesTrace" />
+                  <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AbstractSourcesTrace" />
                 </node>
                 <node concept="liA8E" id="2Ub285Os8Om" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
@@ -440,7 +496,7 @@
           <node concept="2OqwBi" id="2Ub285Os5Xp" role="3clFbG">
             <node concept="2OqwBi" id="2Ub285Os0l4" role="2Oq$k0">
               <node concept="37vLTw" id="2Ub285Osqew" role="2Oq$k0">
-                <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AsbtractSourcesTrace" />
+                <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AbstractSourcesTrace" />
               </node>
               <node concept="liA8E" id="2Ub285Os0WI" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
@@ -473,7 +529,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="2Ub285OsoUd" role="3clF46">
-        <property role="TrG5h" value="layer2AsbtractSourcesTrace" />
+        <property role="TrG5h" value="layer2AbstractSourcesTrace" />
         <node concept="3uibUv" id="2Ub285Ospp2" role="1tU5fm">
           <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
           <node concept="3Tqbb2" id="2Ub285Ospp3" role="11_B2D">

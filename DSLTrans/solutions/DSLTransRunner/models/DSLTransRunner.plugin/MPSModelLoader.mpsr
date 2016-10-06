@@ -102,7 +102,6 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -156,12 +155,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1829,65 +1822,6 @@
               </node>
               <node concept="37vLTw" id="3SN6lk6joD_" role="1DdaDG">
                 <ref role="3cqZAo" node="3SN6lk6j4vD" resolve="concepts" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="Dn$Lr8buMj" role="3cqZAp" />
-        <node concept="34ab3g" id="Dn$Lr8byUL" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="Dn$Lr8bzv_" role="34bqiv">
-            <node concept="2OqwBi" id="Dn$Lr8b_fy" role="3uHU7w">
-              <node concept="2OqwBi" id="Dn$Lr8b_24" role="2Oq$k0">
-                <node concept="2OqwBi" id="Dn$Lr8b$dt" role="2Oq$k0">
-                  <node concept="Xjq3P" id="Dn$Lr8b$5X" role="2Oq$k0" />
-                  <node concept="2OwXpG" id="Dn$Lr8b$Bu" role="2OqNvi">
-                    <ref role="2Oxat5" node="3SN6lk6igqo" resolve="metamodelDatabase" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="Dn$Lr8b_7w" role="2OqNvi">
-                  <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaEntities():java.util.List" resolve="getMetaEntities" />
-                </node>
-              </node>
-              <node concept="liA8E" id="Dn$Lr8b_PO" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-              </node>
-            </node>
-            <node concept="Xl_RD" id="Dn$Lr8byUN" role="3uHU7B">
-              <property role="Xl_RC" value="-----&gt; Number of meta entities: " />
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="Dn$Lr8bOXj" role="3cqZAp">
-          <node concept="2GrKxI" id="Dn$Lr8bOXl" role="2Gsz3X">
-            <property role="TrG5h" value="ent" />
-          </node>
-          <node concept="2OqwBi" id="Dn$Lr8bRaL" role="2GsD0m">
-            <node concept="2OqwBi" id="Dn$Lr8bQrS" role="2Oq$k0">
-              <node concept="Xjq3P" id="Dn$Lr8bQ1e" role="2Oq$k0" />
-              <node concept="2OwXpG" id="Dn$Lr8bQLM" role="2OqNvi">
-                <ref role="2Oxat5" node="3SN6lk6igqo" resolve="metamodelDatabase" />
-              </node>
-            </node>
-            <node concept="liA8E" id="Dn$Lr8bRzP" role="2OqNvi">
-              <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaEntities():java.util.List" resolve="getMetaEntities" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="Dn$Lr8bOXp" role="2LFqv$">
-            <node concept="34ab3g" id="Dn$Lr8bS7O" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="Dn$Lr8bSdZ" role="34bqiv">
-                <node concept="2OqwBi" id="Dn$Lr8bSS6" role="3uHU7w">
-                  <node concept="2GrUjf" id="Dn$Lr8bSrE" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="Dn$Lr8bOXl" resolve="ent" />
-                  </node>
-                  <node concept="liA8E" id="Dn$Lr8bTfE" role="2OqNvi">
-                    <ref role="37wK5l" to="fodd:~MetaEntity.getName():java.lang.String" resolve="getName" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="Dn$Lr8bS7Q" role="3uHU7B">
-                  <property role="Xl_RC" value="  Entity: " />
-                </node>
               </node>
             </node>
           </node>
