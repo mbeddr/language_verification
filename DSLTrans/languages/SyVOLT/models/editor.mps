@@ -129,7 +129,6 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
-      <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
       <concept id="8433227566817223068" name="de.itemis.mps.editor.diagram.structure.LayeredLayoutAlgorithm" flags="ng" index="39fpm">
         <property id="7623784619795245948" name="direction" index="1NdBj4" />
       </concept>
@@ -140,7 +139,6 @@
         <child id="8433227566816393050" name="layoutAlgorithm" index="35U2g" />
       </concept>
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
-        <child id="2044706694575458564" name="labelCell" index="3kqczz" />
         <child id="6358960566596428706" name="curved" index="3Czvdj" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
@@ -175,6 +173,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -1046,18 +1047,13 @@
               <ref role="3TsBF5" to="yeb1:1TopMIb0VmV" resolve="backwardInPre" />
             </node>
           </node>
+          <node concept="35c_gC" id="6jiqG8hnWR$" role="1xbcaF">
+            <ref role="35c_gD" to="yeb1:1TopMIb0Vqg" resolve="ContractBackwardLink" />
+          </node>
         </node>
       </node>
       <node concept="3clFbT" id="6K026VuOG7Z" role="3Czvdj">
         <property role="3clFbU" value="true" />
-      </node>
-      <node concept="238au4" id="6K026VuV4yJ" role="3kqczz">
-        <node concept="3EZMnI" id="6K026VuV4zy" role="2wV5jI">
-          <node concept="3F0A7n" id="6K026VuV4zD" role="3EZMnx">
-            <ref role="1NtTu8" to="yeb1:1TopMIb0VmV" resolve="backwardInPre" />
-          </node>
-          <node concept="l2Vlx" id="6K026VuV4z_" role="2iSdaV" />
-        </node>
       </node>
     </node>
     <node concept="2aJ2om" id="6H8JmBfEpW" role="CpUAK">
