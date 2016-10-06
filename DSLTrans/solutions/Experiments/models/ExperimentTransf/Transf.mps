@@ -116,19 +116,36 @@
         </node>
       </node>
       <node concept="1jGXXK" id="3SN6lk6hFlF" role="1jGXV4">
-        <property role="TrG5h" value="someRule" />
+        <property role="TrG5h" value="transform_A" />
         <node concept="3GsvpM" id="3SN6lk6hFlG" role="2ik0Mo">
           <property role="KJs$L" value="1" />
           <node concept="1jGXXa" id="Dn$Lr8biYO" role="1jGXX7">
             <property role="13z3e$" value="Apply0" />
-            <property role="13z3hU" value="A_out" />
+            <property role="13z3hU" value="A" />
           </node>
         </node>
-        <node concept="3GsvpN" id="3SN6lk6hFmm" role="2ik0Mu">
-          <property role="KJs$L" value="2" />
-          <node concept="2ik0NV" id="3SN6lk6iaW_" role="13z3mo">
-            <property role="13z3e$" value="Any0" />
-            <property role="13z3hU" value="A_in" />
+        <node concept="3GsvpN" id="6PkVIr7pQd1" role="2ik0Mu">
+          <property role="KJs$L" value="6" />
+          <node concept="2ik0NV" id="6PkVIr7qyVh" role="13z3mo">
+            <property role="13z3e$" value="Any4" />
+            <property role="13z3hU" value="A" />
+          </node>
+        </node>
+      </node>
+      <node concept="1jGXXK" id="6PkVIr7pQbs" role="1jGXV4">
+        <property role="TrG5h" value="transform_B" />
+        <node concept="3GsvpM" id="6PkVIr7pQbu" role="2ik0Mo">
+          <property role="KJs$L" value="4" />
+          <node concept="1jGXXa" id="6PkVIr7pQeV" role="1jGXX7">
+            <property role="13z3e$" value="Apply2" />
+            <property role="13z3hU" value="C" />
+          </node>
+        </node>
+        <node concept="3GsvpN" id="6PkVIr7pQcF" role="2ik0Mu">
+          <property role="KJs$L" value="3" />
+          <node concept="2ik0NV" id="6PkVIr7pQfk" role="13z3mo">
+            <property role="13z3e$" value="Any2" />
+            <property role="13z3hU" value="B" />
           </node>
         </node>
       </node>
@@ -140,9 +157,9 @@
       </node>
     </node>
     <node concept="pHN19" id="75JtzgfMA6c" role="1y7jx4">
-      <node concept="2V$Bhx" id="Dn$Lr8biYG" role="2V$M_3">
-        <property role="2V$B1T" value="cb4551c1-1ee1-4aa5-a83b-23aec6d7e712" />
-        <property role="2V$B1Q" value="simpleOutputLanguage" />
+      <node concept="2V$Bhx" id="Dn$Lr8c47u" role="2V$M_3">
+        <property role="2V$B1T" value="443933c7-2e65-4840-9493-341bfee78b6f" />
+        <property role="2V$B1Q" value="simpleInputLanguage" />
       </node>
     </node>
     <node concept="37mRI7" id="57pZU2XSBW6" role="lGtFl">
