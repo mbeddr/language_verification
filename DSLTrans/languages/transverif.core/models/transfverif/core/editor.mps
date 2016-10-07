@@ -16,8 +16,8 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -322,9 +322,8 @@
         <node concept="3F0ifn" id="1eaQRpkwfzc" role="3EZMnx">
           <property role="3F0ifm" value=":" />
         </node>
-        <node concept="3F0A7n" id="1eaQRpkwfzd" role="3EZMnx">
-          <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
-          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
+        <node concept="3F1sOY" id="2UpaMmVBvXS" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:28y$t0VJxVp" />
         </node>
         <node concept="PMmxH" id="1eaQRpkwfze" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -1757,9 +1756,8 @@
         <node concept="3F0ifn" id="6PkVIr7pZcY" role="3EZMnx">
           <property role="3F0ifm" value=":" />
         </node>
-        <node concept="3F0A7n" id="6PkVIr7pZcZ" role="3EZMnx">
-          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
-          <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+        <node concept="3F1sOY" id="2UpaMmVBgbf" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:28y$t0VJxVp" />
         </node>
         <node concept="PMmxH" id="6PkVIr7pZd0" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -1816,8 +1814,8 @@
           <property role="3F0ifm" value=":" />
         </node>
         <node concept="3F0A7n" id="6PkVIr7pZdR" role="3EZMnx">
-          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
           <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
+          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
         </node>
         <node concept="PMmxH" id="6PkVIr7pZdS" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
