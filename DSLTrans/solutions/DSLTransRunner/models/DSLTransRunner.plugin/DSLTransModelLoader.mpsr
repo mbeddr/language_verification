@@ -99,6 +99,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -435,39 +438,197 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Gpval" id="gTuKPSawdm" role="3cqZAp">
-                  <node concept="2GrKxI" id="gTuKPSawdo" role="2Gsz3X">
-                    <property role="TrG5h" value="previous" />
-                  </node>
-                  <node concept="2OqwBi" id="gTuKPSawxY" role="2GsD0m">
-                    <node concept="37vLTw" id="gTuKPSawqs" role="2Oq$k0">
-                      <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
+                <node concept="3cpWs8" id="4mULXgb_3fE" role="3cqZAp">
+                  <node concept="3cpWsn" id="4mULXgb_3fF" role="3cpWs9">
+                    <property role="TrG5h" value="rules" />
+                    <node concept="3uibUv" id="4mULXgb_3fC" role="1tU5fm">
+                      <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                      <node concept="3uibUv" id="4mULXgb_3pY" role="11_B2D">
+                        <ref role="3uigEE" to="gnwr:~Rule" resolve="Rule" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="gTuKPSawA2" role="2OqNvi">
-                      <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource():org.eclipse.emf.common.util.EList" resolve="getPreviousSource" />
+                    <node concept="2OqwBi" id="4mULXgb_3Ya" role="33vP2m">
+                      <node concept="37vLTw" id="4mULXgb_3G7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
+                      </node>
+                      <node concept="liA8E" id="4mULXgb_435" role="2OqNvi">
+                        <ref role="37wK5l" to="gnwr:~Layer.getHasRule():org.eclipse.emf.common.util.EList" resolve="getHasRule" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="3clFbS" id="gTuKPSawds" role="2LFqv$">
-                    <node concept="34ab3g" id="gTuKPSawNd" role="3cqZAp">
+                </node>
+                <node concept="34ab3g" id="4mULXgb_q6J" role="3cqZAp">
+                  <property role="35gtTG" value="info" />
+                  <node concept="Xl_RD" id="4mULXgb_q6L" role="34bqiv">
+                    <property role="Xl_RC" value="  Rules" />
+                  </node>
+                </node>
+                <node concept="2Gpval" id="4mULXgb_6I9" role="3cqZAp">
+                  <node concept="2GrKxI" id="4mULXgb_6Ib" role="2Gsz3X">
+                    <property role="TrG5h" value="rule" />
+                  </node>
+                  <node concept="37vLTw" id="4mULXgb_6X8" role="2GsD0m">
+                    <ref role="3cqZAo" node="4mULXgb_3fF" resolve="rules" />
+                  </node>
+                  <node concept="3clFbS" id="4mULXgb_6If" role="2LFqv$">
+                    <node concept="34ab3g" id="4mULXgb_7ay" role="3cqZAp">
                       <property role="35gtTG" value="info" />
-                      <node concept="3cpWs3" id="gTuKPSbqzD" role="34bqiv">
-                        <node concept="2OqwBi" id="gTuKPSbrhz" role="3uHU7w">
-                          <node concept="1eOMI4" id="gTuKPSbqLb" role="2Oq$k0">
-                            <node concept="10QFUN" id="gTuKPSbqL8" role="1eOMHV">
-                              <node concept="3uibUv" id="gTuKPSbqXQ" role="10QFUM">
-                                <ref role="3uigEE" to="gnwr:~Sequential" resolve="Sequential" />
-                              </node>
-                              <node concept="2GrUjf" id="gTuKPSbrcg" role="10QFUP">
-                                <ref role="2Gs0qQ" node="gTuKPSawdo" resolve="previous" />
-                              </node>
-                            </node>
+                      <node concept="3cpWs3" id="4mULXgb_7iC" role="34bqiv">
+                        <node concept="2OqwBi" id="4mULXgb_7FG" role="3uHU7w">
+                          <node concept="2GrUjf" id="4mULXgb_7pv" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
                           </node>
-                          <node concept="liA8E" id="gTuKPSbro_" role="2OqNvi">
-                            <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                          <node concept="liA8E" id="4mULXgb_bBG" role="2OqNvi">
+                            <ref role="37wK5l" to="gnwr:~Rule.getDescription():java.lang.String" resolve="getDescription" />
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="gTuKPSawNf" role="3uHU7B">
-                          <property role="Xl_RC" value="    + " />
+                        <node concept="Xl_RD" id="4mULXgb_7a$" role="3uHU7B">
+                          <property role="Xl_RC" value="    * " />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="4mULXgb_MiL" role="3cqZAp">
+                      <node concept="3cpWsn" id="4mULXgb_MiM" role="3cpWs9">
+                        <property role="TrG5h" value="match" />
+                        <node concept="3uibUv" id="4mULXgb_MiN" role="1tU5fm">
+                          <ref role="3uigEE" to="gnwr:~MatchModel" resolve="MatchModel" />
+                        </node>
+                        <node concept="2OqwBi" id="4mULXgb_RGU" role="33vP2m">
+                          <node concept="2OqwBi" id="4mULXgb_M_w" role="2Oq$k0">
+                            <node concept="2GrUjf" id="4mULXgb_M$C" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
+                            </node>
+                            <node concept="liA8E" id="4mULXgb_MFv" role="2OqNvi">
+                              <ref role="37wK5l" to="gnwr:~Rule.getMatch():org.eclipse.emf.common.util.EList" resolve="getMatch" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4mULXgb_S5V" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                            <node concept="3cmrfG" id="4mULXgb_SeC" role="37wK5m">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="34ab3g" id="4mULXgb_VAB" role="3cqZAp">
+                      <property role="35gtTG" value="info" />
+                      <node concept="3cpWs3" id="4mULXgb_VRL" role="34bqiv">
+                        <node concept="2OqwBi" id="4mULXgb_Wev" role="3uHU7w">
+                          <node concept="2OqwBi" id="4mULXgb_W0h" role="2Oq$k0">
+                            <node concept="37vLTw" id="4mULXgb_VYM" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
+                            </node>
+                            <node concept="liA8E" id="4mULXgb_W4p" role="2OqNvi">
+                              <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4mULXgb_WSc" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="4mULXgb_VAD" role="3uHU7B">
+                          <property role="Xl_RC" value="        Number of match classes: " />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="34ab3g" id="4mULXgb_X3J" role="3cqZAp">
+                      <property role="35gtTG" value="info" />
+                      <node concept="3cpWs3" id="4mULXgb_X3K" role="34bqiv">
+                        <node concept="Xl_RD" id="4mULXgb_X3Q" role="3uHU7B">
+                          <property role="Xl_RC" value="        Number of match associations: " />
+                        </node>
+                        <node concept="2OqwBi" id="4mULXgbA3DM" role="3uHU7w">
+                          <node concept="2OqwBi" id="4mULXgb_XBj" role="2Oq$k0">
+                            <node concept="37vLTw" id="4mULXgb_Xv6" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
+                            </node>
+                            <node concept="liA8E" id="4mULXgb_XFx" role="2OqNvi">
+                              <ref role="37wK5l" to="gnwr:~MatchModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4mULXgbA4kN" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs8" id="4mULXgbA5sh" role="3cqZAp">
+                      <node concept="3cpWsn" id="4mULXgbA5si" role="3cpWs9">
+                        <property role="TrG5h" value="apply" />
+                        <node concept="3uibUv" id="4mULXgbA5sj" role="1tU5fm">
+                          <ref role="3uigEE" to="gnwr:~ApplyModel" resolve="ApplyModel" />
+                        </node>
+                        <node concept="2OqwBi" id="4mULXgbA5JS" role="33vP2m">
+                          <node concept="2GrUjf" id="4mULXgbA5Du" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
+                          </node>
+                          <node concept="liA8E" id="4mULXgbA5XD" role="2OqNvi">
+                            <ref role="37wK5l" to="gnwr:~Rule.getApply():dsltrans.ApplyModel" resolve="getApply" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="34ab3g" id="4mULXgbA69v" role="3cqZAp">
+                      <property role="35gtTG" value="info" />
+                      <node concept="3cpWs3" id="4mULXgbA69w" role="34bqiv">
+                        <node concept="2OqwBi" id="4mULXgbAaIW" role="3uHU7w">
+                          <node concept="2OqwBi" id="4mULXgbAavM" role="2Oq$k0">
+                            <node concept="37vLTw" id="4mULXgbA9Ns" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
+                            </node>
+                            <node concept="liA8E" id="4mULXgbAa$o" role="2OqNvi">
+                              <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4mULXgbAbqL" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="4mULXgbA69A" role="3uHU7B">
+                          <property role="Xl_RC" value="        Number of apply classes: " />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="34ab3g" id="4mULXgbA69B" role="3cqZAp">
+                      <property role="35gtTG" value="info" />
+                      <node concept="3cpWs3" id="4mULXgbA69C" role="34bqiv">
+                        <node concept="Xl_RD" id="4mULXgbA69D" role="3uHU7B">
+                          <property role="Xl_RC" value="        Number of apply associations: " />
+                        </node>
+                        <node concept="2OqwBi" id="4mULXgbA69E" role="3uHU7w">
+                          <node concept="2OqwBi" id="4mULXgbA69F" role="2Oq$k0">
+                            <node concept="37vLTw" id="4mULXgbAbDi" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
+                            </node>
+                            <node concept="liA8E" id="4mULXgbA69H" role="2OqNvi">
+                              <ref role="37wK5l" to="gnwr:~ApplyModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4mULXgbA69I" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="34ab3g" id="4mULXgbB9CU" role="3cqZAp">
+                      <property role="35gtTG" value="info" />
+                      <node concept="3cpWs3" id="4mULXgbBaa7" role="34bqiv">
+                        <node concept="2OqwBi" id="4mULXgbBaNY" role="3uHU7w">
+                          <node concept="2OqwBi" id="4mULXgbBajc" role="2Oq$k0">
+                            <node concept="2GrUjf" id="4mULXgbBahH" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
+                            </node>
+                            <node concept="liA8E" id="4mULXgbBawA" role="2OqNvi">
+                              <ref role="37wK5l" to="gnwr:~Rule.getBackwards():org.eclipse.emf.common.util.EList" resolve="getBackwards" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="4mULXgbBcWQ" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="4mULXgbB9CW" role="3uHU7B">
+                          <property role="Xl_RC" value="        Number of backward links: " />
                         </node>
                       </node>
                     </node>
@@ -1703,6 +1864,24 @@
                       <ref role="3Tt5mk" to="i3vy:2rexW9_i8QS" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4mULXgbAvGP" role="3cqZAp">
+          <node concept="2OqwBi" id="4mULXgbAvGQ" role="3clFbG">
+            <node concept="37vLTw" id="4mULXgbAz23" role="2Oq$k0">
+              <ref role="3cqZAo" node="2GbRIwA5a_1" resolve="dsltransAssociation" />
+            </node>
+            <node concept="liA8E" id="4mULXgbAvGS" role="2OqNvi">
+              <ref role="37wK5l" to="gnwr:~Association.setAssociationName(java.lang.String):void" resolve="setAssociationName" />
+              <node concept="2OqwBi" id="4mULXgbAznn" role="37wK5m">
+                <node concept="37vLTw" id="4mULXgbAzeG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="JP13Ute_T2" resolve="applyAssoc" />
+                </node>
+                <node concept="3TrcHB" id="4mULXgbAzv9" role="2OqNvi">
+                  <ref role="3TsBF5" to="i3vy:3QsrawRfIw3" resolve="typeName" />
                 </node>
               </node>
             </node>

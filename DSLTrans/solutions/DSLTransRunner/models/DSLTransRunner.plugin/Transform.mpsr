@@ -1586,6 +1586,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="1eaQRpk$IrM" role="3cqZAp" />
+        <node concept="3clFbH" id="4mULXgbAHLD" role="3cqZAp" />
         <node concept="3cpWs8" id="gTuKPSbNBo" role="3cqZAp">
           <node concept="3cpWsn" id="gTuKPSbNBp" role="3cpWs9">
             <property role="TrG5h" value="output" />
@@ -1602,7 +1603,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="gTuKPSbOy9" role="3cqZAp" />
+        <node concept="3clFbH" id="4mULXgbAN0_" role="3cqZAp" />
         <node concept="34ab3g" id="gTuKPSbPko" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="3cpWs3" id="gTuKPSbPMJ" role="34bqiv">
@@ -1625,6 +1626,28 @@
           </node>
         </node>
         <node concept="3clFbH" id="gTuKPScaes" role="3cqZAp" />
+        <node concept="34ab3g" id="4mULXgbB1hV" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="3cpWs3" id="4mULXgbB1hW" role="34bqiv">
+            <node concept="Xl_RD" id="4mULXgbB1i2" role="3uHU7B">
+              <property role="Xl_RC" value="Relations in output metamodel: " />
+            </node>
+            <node concept="2OqwBi" id="4mULXgbB2Ha" role="3uHU7w">
+              <node concept="2OqwBi" id="4mULXgbB2vE" role="2Oq$k0">
+                <node concept="37vLTw" id="4mULXgbB2sS" role="2Oq$k0">
+                  <ref role="3cqZAo" node="gTuKPSbNBp" resolve="output" />
+                </node>
+                <node concept="liA8E" id="4mULXgbB2zZ" role="2OqNvi">
+                  <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceRelations():java.util.List" resolve="getInstanceRelations" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4mULXgbB3hI" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4mULXgbB0UB" role="3cqZAp" />
         <node concept="2Gpval" id="gTuKPScb7B" role="3cqZAp">
           <node concept="2GrKxI" id="gTuKPScb7D" role="2Gsz3X">
             <property role="TrG5h" value="ent" />
