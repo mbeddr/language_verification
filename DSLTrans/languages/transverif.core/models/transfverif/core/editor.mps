@@ -322,6 +322,9 @@
         <node concept="3F0ifn" id="1eaQRpkwfzc" role="3EZMnx">
           <property role="3F0ifm" value=":" />
         </node>
+        <node concept="3F0A7n" id="_xUCdafCf6" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
+        </node>
         <node concept="3F1sOY" id="2UpaMmVBvXS" role="3EZMnx">
           <ref role="1NtTu8" to="i3vy:28y$t0VJxVp" />
         </node>
@@ -1755,6 +1758,9 @@
         </node>
         <node concept="3F0ifn" id="6PkVIr7pZcY" role="3EZMnx">
           <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F0A7n" id="_xUCdafCfI" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
         </node>
         <node concept="3F1sOY" id="2UpaMmVBgbf" role="3EZMnx">
           <ref role="1NtTu8" to="i3vy:28y$t0VJxVp" />
