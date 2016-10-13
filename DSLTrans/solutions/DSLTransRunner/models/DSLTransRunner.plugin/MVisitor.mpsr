@@ -260,7 +260,7 @@
                         <ref role="2Gs0qQ" node="1eaQRpksCaT" resolve="conLink" />
                       </node>
                       <node concept="liA8E" id="1eaQRpksD_C" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SConceptFeature.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1eaQRpksDhn" role="3uHU7B">
@@ -482,7 +482,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="3SN6lk6lyae" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SConceptFeature.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="3SN6lk6lxxD" role="3uHU7B">

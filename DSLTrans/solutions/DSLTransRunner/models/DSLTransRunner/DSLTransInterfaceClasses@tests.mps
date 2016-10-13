@@ -4,7 +4,7 @@
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="1" />
   </languages>
   <imports>
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -123,6 +123,10 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
@@ -131,10 +135,7 @@
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -220,7 +221,7 @@
             </node>
             <node concept="2OqwBi" id="2EaowSc5Xem" role="33vP2m">
               <node concept="3TrEf2" id="2EaowSc5Xsf" role="2OqNvi">
-                <ref role="3Tt5mk" to="rr4f:2EaowSc5P4s" />
+                <ref role="3Tt5mk" to="rr4f:2EaowSc5P4s" resolve="inputModule" />
               </node>
               <node concept="37vLTw" id="3SN6lk6jWen" role="2Oq$k0">
                 <ref role="3cqZAo" node="7YEdkPF3haU" resolve="trNode" />
@@ -239,7 +240,7 @@
                 <ref role="3cqZAo" node="7YEdkPF3haU" resolve="trNode" />
               </node>
               <node concept="3TrEf2" id="2EaowSc4_4H" role="2OqNvi">
-                <ref role="3Tt5mk" to="rr4f:2EaowSc45W1" />
+                <ref role="3Tt5mk" to="rr4f:2EaowSc45W1" resolve="outputModule" />
               </node>
             </node>
           </node>
@@ -260,13 +261,13 @@
                 <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModuleByFqName(java.lang.String):org.jetbrains.mps.openapi.module.SModule" resolve="getModuleByFqName" />
                 <node concept="2OqwBi" id="2EaowSc617O" role="37wK5m">
                   <node concept="1PxgMI" id="2EaowSc612y" role="2Oq$k0">
-                    <ref role="1PxNhF" to="tp25:nJmxU5cSyN" resolve="ModulePointer" />
-                    <node concept="2OqwBi" id="2EaowSc60R0" role="1PxMeX">
+                    <ref role="1m5ApE" to="tp25:nJmxU5cSyN" resolve="ModulePointer" />
+                    <node concept="2OqwBi" id="2EaowSc60R0" role="1m5AlR">
                       <node concept="37vLTw" id="2EVdxuSUGjq" role="2Oq$k0">
                         <ref role="3cqZAo" node="2EaowSc4w1b" resolve="inputModuleRef" />
                       </node>
                       <node concept="3TrEf2" id="2EaowSc60W0" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" />
+                        <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />
                       </node>
                     </node>
                   </node>
@@ -294,13 +295,13 @@
                 <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModuleByFqName(java.lang.String):org.jetbrains.mps.openapi.module.SModule" resolve="getModuleByFqName" />
                 <node concept="2OqwBi" id="2EVdxuSUFNb" role="37wK5m">
                   <node concept="1PxgMI" id="2EVdxuSUFNc" role="2Oq$k0">
-                    <ref role="1PxNhF" to="tp25:nJmxU5cSyN" resolve="ModulePointer" />
-                    <node concept="2OqwBi" id="2EVdxuSUFNd" role="1PxMeX">
+                    <ref role="1m5ApE" to="tp25:nJmxU5cSyN" resolve="ModulePointer" />
+                    <node concept="2OqwBi" id="2EVdxuSUFNd" role="1m5AlR">
                       <node concept="37vLTw" id="2EVdxuSUFNe" role="2Oq$k0">
                         <ref role="3cqZAo" node="2EaowSc4$Hr" resolve="outputModuleRef" />
                       </node>
                       <node concept="3TrEf2" id="2EVdxuSUFNf" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" />
+                        <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />
                       </node>
                     </node>
                   </node>
@@ -378,14 +379,14 @@
               <node concept="2OqwBi" id="3SN6lk6iZib" role="2Oq$k0">
                 <node concept="2OqwBi" id="2EVdxuSTlx6" role="2Oq$k0">
                   <node concept="3TrEf2" id="2EVdxuSTsOV" role="2OqNvi">
-                    <ref role="3Tt5mk" to="i3vy:2t59Tl5m1Ze" />
+                    <ref role="3Tt5mk" to="i3vy:2t59Tl5m1Ze" resolve="inputLanguage" />
                   </node>
                   <node concept="37vLTw" id="3SN6lk6jZO0" role="2Oq$k0">
                     <ref role="3cqZAo" node="7YEdkPF3haU" resolve="trNode" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="3SN6lk6iZt3" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp25:34EJa6aIpny" />
+                  <ref role="3Tt5mk" to="tp25:34EJa6aIpny" resolve="languageId" />
                 </node>
               </node>
               <node concept="2qgKlT" id="3SN6lk6iZLY" role="2OqNvi">
@@ -402,14 +403,14 @@
               <node concept="2OqwBi" id="3SN6lk6iZX2" role="2Oq$k0">
                 <node concept="2OqwBi" id="3SN6lk6iYhn" role="2Oq$k0">
                   <node concept="3TrEf2" id="3SN6lk6iZ9u" role="2OqNvi">
-                    <ref role="3Tt5mk" to="i3vy:2t59Tl5m1Zh" />
+                    <ref role="3Tt5mk" to="i3vy:2t59Tl5m1Zh" resolve="outputLanguage" />
                   </node>
                   <node concept="37vLTw" id="3SN6lk6k0RB" role="2Oq$k0">
                     <ref role="3cqZAo" node="7YEdkPF3haU" resolve="trNode" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="3SN6lk6j08w" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp25:34EJa6aIpny" />
+                  <ref role="3Tt5mk" to="tp25:34EJa6aIpny" resolve="languageId" />
                 </node>
               </node>
               <node concept="2qgKlT" id="3SN6lk6j0pT" role="2OqNvi">
