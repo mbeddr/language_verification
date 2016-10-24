@@ -15,7 +15,6 @@
   </registry>
   <node concept="32uCKV" id="Dn$Lr8biYk">
     <node concept="32pJXW" id="6PkVIr7pQc0" role="32pJXV" />
-    <node concept="32pJXW" id="4mULXgbBjGi" role="32pJXV" />
   </node>
 </model>
 
