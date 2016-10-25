@@ -3,21 +3,21 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/DSLTrans/DSLTrans.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="forTests" />
-      <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="forTests" />
+      <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/simpleInputLanguage/simpleInputLanguage.mpl" folder="forTests" />
-      <modulePath path="$PROJECT_DIR$/languages/simpleOutputLanguage/simpleOutputLanguage.mpl" folder="forTests" />
+      <modulePath path="$PROJECT_DIR$/languages/simpleInputLanguage/simpleInputLanguage.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/simpleOutputLanguage/simpleOutputLanguage.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/transverif.core/transfverif.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.lib/DSLTrans.lib.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTransRunner/DSLTransRunner.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/ExFamToPerson/ExFamToPerson.msd" folder="forTests" />
-      <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf2/ExperimentTransf2.msd" folder="forTests" />
-      <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf3/ExperimentTransf3.msd" folder="forTests" />
-      <modulePath path="$PROJECT_DIR$/solutions/Experiments/ExperimentTransf.msd" folder="forTests" />
-      <modulePath path="$PROJECT_DIR$/solutions/inputModel/inputModel.msd" folder="forTests" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExFamToPerson/ExFamToPerson.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf2/ExperimentTransf2.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf3/ExperimentTransf3.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/Experiments/ExperimentTransf.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/inputModel/inputModel.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/outputModel/outputModel.msd" folder="forTests" />
+      <modulePath path="$PROJECT_DIR$/solutions/outputModel/outputModel.msd" folder="examples" />
     </projectModules>
   </component>
 </project>
