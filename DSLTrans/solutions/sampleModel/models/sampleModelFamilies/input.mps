@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:b40a8a9f-2721-47f7-80fc-6e5158837ebf(DSLTransRunner.SampleFamiliesModel)">
+<model ref="r:8e7e7507-95ec-4705-b197-a1b37194cee5(sampleModelFamilies.input)">
   <persistence version="9" />
   <languages>
     <use id="05f6207f-0b7e-4413-bedb-09f3dfc58438" name="Families" version="0" />
+    <use id="98a5ea16-05e8-4296-b548-cbaca3397fce" name="Persons" version="0" />
   </languages>
   <imports />
   <registry>
@@ -25,17 +26,17 @@
       <concept id="5898026252864033713" name="Families.structure.Neighborhood" flags="ng" index="3GeAKh" />
     </language>
   </registry>
-  <node concept="3GeAKc" id="1eaQRpkASz6">
+  <node concept="3GeAKc" id="7Mzm_rpO5U0">
     <property role="TrG5h" value="CountryA" />
-    <node concept="3GeAKd" id="1eaQRpkASz7" role="3GeALH">
-      <property role="TrG5h" value="familyA" />
-      <ref role="3GeALt" node="1eaQRpkASz9" resolve="neighborhoodA" />
-    </node>
-    <node concept="3GeAKe" id="1eaQRpkASz8" role="3GeALK">
+    <node concept="3GeAKe" id="7Mzm_rpO5U6" role="3GeALK">
       <property role="TrG5h" value="CityA" />
-      <node concept="3GeAKh" id="1eaQRpkASz9" role="3GeALk">
+      <node concept="3GeAKh" id="7Mzm_rpO5U7" role="3GeALk">
         <property role="TrG5h" value="neighborhoodA" />
       </node>
+    </node>
+    <node concept="3GeAKd" id="7Mzm_rpO5U4" role="3GeALH">
+      <property role="TrG5h" value="familyA" />
+      <ref role="3GeALt" node="7Mzm_rpO5U7" resolve="neighborhoodA" />
     </node>
   </node>
 </model>

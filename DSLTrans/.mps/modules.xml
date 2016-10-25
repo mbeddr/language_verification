@@ -13,10 +13,12 @@
       <modulePath path="$PROJECT_DIR$/solutions/DSLTransRunner/DSLTransRunner.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPerson/ExFamToPerson.msd" folder="forTests" />
       <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf2/ExperimentTransf2.msd" folder="forTests" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf3/ExperimentTransf3.msd" folder="forTests" />
       <modulePath path="$PROJECT_DIR$/solutions/Experiments/ExperimentTransf.msd" folder="forTests" />
       <modulePath path="$PROJECT_DIR$/solutions/inputModel/inputModel.msd" folder="forTests" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/outputModel/outputModel.msd" folder="forTests" />
+      <modulePath path="$PROJECT_DIR$/solutions/sampleModel/sampleModelFamilies.msd" folder="forTests" />
     </projectModules>
   </component>
 </project>
