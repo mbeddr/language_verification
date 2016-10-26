@@ -94,6 +94,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -106,6 +107,11 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
@@ -2043,6 +2049,77 @@
           </node>
           <node concept="3cmrfG" id="7h3JEESFNTj" role="3tpDZA">
             <property role="3cmrfH" value="8" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="7h3JEESFUcr" role="3cqZAp" />
+        <node concept="3cpWs8" id="7h3JEESFWjG" role="3cqZAp">
+          <node concept="3cpWsn" id="7h3JEESFWjJ" role="3cpWs9">
+            <property role="TrG5h" value="nod" />
+            <node concept="3Tqbb2" id="7h3JEESFWjE" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7h3JEESG2fm" role="3cqZAp">
+          <node concept="3cpWsn" id="7h3JEESG2fn" role="3cpWs9">
+            <property role="TrG5h" value="cons" />
+            <node concept="3uibUv" id="7h3JEESG2fk" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Iterable" resolve="Iterable" />
+              <node concept="3uibUv" id="7h3JEESG3sT" role="11_B2D">
+                <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7h3JEESFZ$K" role="33vP2m">
+              <node concept="37vLTw" id="7h3JEESFZt7" role="2Oq$k0">
+                <ref role="3cqZAo" node="7h3JEESFNQI" resolve="outputLanguage" />
+              </node>
+              <node concept="liA8E" id="7h3JEESG0rs" role="2OqNvi">
+                <ref role="37wK5l" to="c17a:~SLanguage.getConcepts():java.lang.Iterable" resolve="getConcepts" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7h3JEESG7VN" role="3cqZAp">
+          <node concept="3cpWsn" id="7h3JEESG7VO" role="3cpWs9">
+            <property role="TrG5h" value="con" />
+            <node concept="3uibUv" id="7h3JEESG7VP" role="1tU5fm">
+              <ref role="3uigEE" to="c17a:~SAbstractConcept" resolve="SAbstractConcept" />
+            </node>
+            <node concept="2OqwBi" id="7h3JEESGaG0" role="33vP2m">
+              <node concept="2OqwBi" id="7h3JEESG9tR" role="2Oq$k0">
+                <node concept="37vLTw" id="7h3JEESG9im" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7h3JEESG2fn" resolve="cons" />
+                </node>
+                <node concept="liA8E" id="7h3JEESGasG" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7h3JEESGc3v" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7h3JEESGdrR" role="3cqZAp">
+          <node concept="2OqwBi" id="7h3JEESGdrO" role="3clFbG">
+            <node concept="10M0yZ" id="7h3JEESGdrP" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="7h3JEESGdrQ" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="7h3JEESGeIr" role="37wK5m">
+                <node concept="2OqwBi" id="7h3JEESGfJz" role="3uHU7w">
+                  <node concept="37vLTw" id="7h3JEESGf_K" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7h3JEESG7VO" resolve="con" />
+                  </node>
+                  <node concept="liA8E" id="7h3JEESGgJT" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="7h3JEESGdTA" role="3uHU7B">
+                  <property role="Xl_RC" value="Found a concept: " />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="5cBD0WxB5Fb" role="3cqZAp" />

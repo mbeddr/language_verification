@@ -114,6 +114,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
         <child id="1144226360166" name="iterable" index="1DdaDG" />
       </concept>
@@ -246,18 +247,16 @@
               <node concept="3cmrfG" id="7YEdkPF3pHK" role="3tpDZB">
                 <property role="3cmrfH" value="3" />
               </node>
-              <node concept="2OqwBi" id="7VuXLakAUie" role="3tpDZA">
-                <node concept="2OqwBi" id="5RJ1p1ZTqOn" role="2Oq$k0">
-                  <node concept="37vLTw" id="5RJ1p1ZTqNN" role="2Oq$k0">
+              <node concept="2OqwBi" id="7h3JEESJGs2" role="3tpDZA">
+                <node concept="2OqwBi" id="7h3JEESJzyb" role="2Oq$k0">
+                  <node concept="37vLTw" id="7h3JEESJvPl" role="2Oq$k0">
                     <ref role="3cqZAo" node="7YEdkPF3pi0" resolve="dsltransTr" />
                   </node>
-                  <node concept="liA8E" id="5RJ1p1ZTqWO" role="2OqNvi">
+                  <node concept="liA8E" id="7h3JEESJCJs" role="2OqNvi">
                     <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
                   </node>
                 </node>
-                <node concept="liA8E" id="7VuXLakAUA$" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-                </node>
+                <node concept="1B$H19" id="7h3JEESJGsb" role="2OqNvi" />
               </node>
             </node>
             <node concept="3vlDli" id="2GbRIwA81iU" role="3cqZAp">
