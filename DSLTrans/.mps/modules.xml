@@ -13,6 +13,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/DSLTransRunner/DSLTransRunner.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPerson/ExFamToPerson.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Experiments/ExperimentTransf.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/RunnerPlugin/RunnerPlugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/inputModel/inputModel.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/outputModel/outputModel.msd" folder="" />
