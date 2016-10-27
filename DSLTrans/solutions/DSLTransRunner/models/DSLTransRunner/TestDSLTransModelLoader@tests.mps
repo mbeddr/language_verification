@@ -168,8 +168,8 @@
             <property role="TrG5h" value="trModel" />
             <node concept="H_c77" id="7YEdkPF3h9O" role="1tU5fm" />
             <node concept="BaHAS" id="7YEdkPF3h18" role="33vP2m">
-              <property role="BaHAW" value="DSLTransRunner.SampleTransformation" />
               <property role="BaGAP" value="" />
+              <property role="BaHAW" value="ExperimentTransf3.SampleTransformation" />
             </node>
           </node>
         </node>

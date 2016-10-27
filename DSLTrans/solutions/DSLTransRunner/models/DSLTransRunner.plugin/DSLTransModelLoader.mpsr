@@ -8,6 +8,7 @@
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="935o" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.transformer.exceptions(DSLTrans.lib/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -51,6 +52,9 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -149,12 +153,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -422,18 +420,26 @@
                     </node>
                   </node>
                 </node>
-                <node concept="34ab3g" id="7YIyNGbFhQF" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="3cpWs3" id="7YIyNGbFhW6" role="34bqiv">
-                    <node concept="Xl_RD" id="7YIyNGbFhQH" role="3uHU7B">
-                      <property role="Xl_RC" value="  - Layer: " />
+                <node concept="3clFbF" id="2IH$1p84hkh" role="3cqZAp">
+                  <node concept="2OqwBi" id="2IH$1p84hke" role="3clFbG">
+                    <node concept="10M0yZ" id="2IH$1p84hkf" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
-                    <node concept="2OqwBi" id="7YIyNGbFiuT" role="3uHU7w">
-                      <node concept="37vLTw" id="gTuKPS9RAQ" role="2Oq$k0">
-                        <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
-                      </node>
-                      <node concept="liA8E" id="7YIyNGbFiDU" role="2OqNvi">
-                        <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                    <node concept="liA8E" id="2IH$1p84hkg" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="3cpWs3" id="7YIyNGbFhW6" role="37wK5m">
+                        <node concept="Xl_RD" id="7YIyNGbFhQH" role="3uHU7B">
+                          <property role="Xl_RC" value="  - Layer: " />
+                        </node>
+                        <node concept="2OqwBi" id="7YIyNGbFiuT" role="3uHU7w">
+                          <node concept="37vLTw" id="gTuKPS9RAQ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
+                          </node>
+                          <node concept="liA8E" id="7YIyNGbFiDU" role="2OqNvi">
+                            <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -457,10 +463,18 @@
                     </node>
                   </node>
                 </node>
-                <node concept="34ab3g" id="4mULXgb_q6J" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="Xl_RD" id="4mULXgb_q6L" role="34bqiv">
-                    <property role="Xl_RC" value="  Rules" />
+                <node concept="3clFbF" id="2IH$1p84l_W" role="3cqZAp">
+                  <node concept="2OqwBi" id="2IH$1p84l_T" role="3clFbG">
+                    <node concept="10M0yZ" id="2IH$1p84l_U" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="2IH$1p84l_V" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="Xl_RD" id="4mULXgb_q6L" role="37wK5m">
+                        <property role="Xl_RC" value="  Rules" />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="2Gpval" id="4mULXgb_6I9" role="3cqZAp">
@@ -471,19 +485,27 @@
                     <ref role="3cqZAo" node="4mULXgb_3fF" resolve="rules" />
                   </node>
                   <node concept="3clFbS" id="4mULXgb_6If" role="2LFqv$">
-                    <node concept="34ab3g" id="4mULXgb_7ay" role="3cqZAp">
-                      <property role="35gtTG" value="info" />
-                      <node concept="3cpWs3" id="4mULXgb_7iC" role="34bqiv">
-                        <node concept="2OqwBi" id="4mULXgb_7FG" role="3uHU7w">
-                          <node concept="2GrUjf" id="4mULXgb_7pv" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
-                          </node>
-                          <node concept="liA8E" id="4mULXgb_bBG" role="2OqNvi">
-                            <ref role="37wK5l" to="gnwr:~Rule.getDescription():java.lang.String" resolve="getDescription" />
-                          </node>
+                    <node concept="3clFbF" id="2IH$1p84noz" role="3cqZAp">
+                      <node concept="2OqwBi" id="2IH$1p84now" role="3clFbG">
+                        <node concept="10M0yZ" id="2IH$1p84nox" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                         </node>
-                        <node concept="Xl_RD" id="4mULXgb_7a$" role="3uHU7B">
-                          <property role="Xl_RC" value="    * " />
+                        <node concept="liA8E" id="2IH$1p84noy" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="3cpWs3" id="4mULXgb_7iC" role="37wK5m">
+                            <node concept="2OqwBi" id="4mULXgb_7FG" role="3uHU7w">
+                              <node concept="2GrUjf" id="4mULXgb_7pv" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
+                              </node>
+                              <node concept="liA8E" id="4mULXgb_bBG" role="2OqNvi">
+                                <ref role="37wK5l" to="gnwr:~Rule.getDescription():java.lang.String" resolve="getDescription" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4mULXgb_7a$" role="3uHU7B">
+                              <property role="Xl_RC" value="    * " />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -511,44 +533,138 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="34ab3g" id="4mULXgb_VAB" role="3cqZAp">
-                      <property role="35gtTG" value="info" />
-                      <node concept="3cpWs3" id="4mULXgb_VRL" role="34bqiv">
-                        <node concept="2OqwBi" id="4mULXgb_Wev" role="3uHU7w">
-                          <node concept="2OqwBi" id="4mULXgb_W0h" role="2Oq$k0">
-                            <node concept="37vLTw" id="4mULXgb_VYM" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
-                            </node>
-                            <node concept="liA8E" id="4mULXgb_W4p" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="4mULXgb_WSc" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-                          </node>
+                    <node concept="3clFbF" id="2IH$1p84rzK" role="3cqZAp">
+                      <node concept="2OqwBi" id="2IH$1p84rzH" role="3clFbG">
+                        <node concept="10M0yZ" id="2IH$1p84rzI" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                         </node>
-                        <node concept="Xl_RD" id="4mULXgb_VAD" role="3uHU7B">
-                          <property role="Xl_RC" value="        Number of match classes: " />
+                        <node concept="liA8E" id="2IH$1p84rzJ" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="3cpWs3" id="4mULXgb_VRL" role="37wK5m">
+                            <node concept="2OqwBi" id="4mULXgb_Wev" role="3uHU7w">
+                              <node concept="2OqwBi" id="4mULXgb_W0h" role="2Oq$k0">
+                                <node concept="37vLTw" id="4mULXgb_VYM" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
+                                </node>
+                                <node concept="liA8E" id="4mULXgb_W4p" role="2OqNvi">
+                                  <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="4mULXgb_WSc" role="2OqNvi">
+                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4mULXgb_VAD" role="3uHU7B">
+                              <property role="Xl_RC" value="        Number of match classes: " />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="34ab3g" id="4mULXgb_X3J" role="3cqZAp">
-                      <property role="35gtTG" value="info" />
-                      <node concept="3cpWs3" id="4mULXgb_X3K" role="34bqiv">
-                        <node concept="Xl_RD" id="4mULXgb_X3Q" role="3uHU7B">
-                          <property role="Xl_RC" value="        Number of match associations: " />
+                    <node concept="2Gpval" id="2IH$1p87DER" role="3cqZAp">
+                      <node concept="2GrKxI" id="2IH$1p87DET" role="2Gsz3X">
+                        <property role="TrG5h" value="cla" />
+                      </node>
+                      <node concept="2OqwBi" id="2IH$1p87EWK" role="2GsD0m">
+                        <node concept="37vLTw" id="2IH$1p87EBc" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
                         </node>
-                        <node concept="2OqwBi" id="4mULXgbA3DM" role="3uHU7w">
-                          <node concept="2OqwBi" id="4mULXgb_XBj" role="2Oq$k0">
-                            <node concept="37vLTw" id="4mULXgb_Xv6" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
+                        <node concept="liA8E" id="2IH$1p87FAS" role="2OqNvi">
+                          <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="2IH$1p87DEX" role="2LFqv$">
+                        <node concept="3clFbF" id="2IH$1p87IE8" role="3cqZAp">
+                          <node concept="2OqwBi" id="2IH$1p87IE9" role="3clFbG">
+                            <node concept="10M0yZ" id="2IH$1p87IEa" role="2Oq$k0">
+                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                             </node>
-                            <node concept="liA8E" id="4mULXgb_XFx" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~MatchModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                            <node concept="liA8E" id="2IH$1p87IEb" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <node concept="3cpWs3" id="2IH$1p87IEc" role="37wK5m">
+                                <node concept="2OqwBi" id="2IH$1p87Yj$" role="3uHU7w">
+                                  <node concept="2GrUjf" id="2IH$1p87PGu" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="2IH$1p87DET" resolve="cla" />
+                                  </node>
+                                  <node concept="liA8E" id="2IH$1p87YJA" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="2IH$1p87IEi" role="3uHU7B">
+                                  <property role="Xl_RC" value="                - Match Class:" />
+                                </node>
+                              </node>
                             </node>
                           </node>
-                          <node concept="liA8E" id="4mULXgbA4kN" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                        </node>
+                        <node concept="2Gpval" id="2IH$1p8dWHt" role="3cqZAp">
+                          <node concept="2GrKxI" id="2IH$1p8dWHv" role="2Gsz3X">
+                            <property role="TrG5h" value="attr" />
+                          </node>
+                          <node concept="2OqwBi" id="2IH$1p8dY8Q" role="2GsD0m">
+                            <node concept="2GrUjf" id="2IH$1p8dXK3" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="2IH$1p87DET" resolve="cla" />
+                            </node>
+                            <node concept="liA8E" id="2IH$1p8dYCN" role="2OqNvi">
+                              <ref role="37wK5l" to="gnwr:~MatchClass.getAttribute():org.eclipse.emf.common.util.EList" resolve="getAttribute" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="2IH$1p8dWHz" role="2LFqv$">
+                            <node concept="3clFbF" id="2IH$1p8e2yj" role="3cqZAp">
+                              <node concept="2OqwBi" id="2IH$1p8e2yg" role="3clFbG">
+                                <node concept="10M0yZ" id="2IH$1p8e2yh" role="2Oq$k0">
+                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                                </node>
+                                <node concept="liA8E" id="2IH$1p8e2yi" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <node concept="3cpWs3" id="2IH$1p8e476" role="37wK5m">
+                                    <node concept="2OqwBi" id="2IH$1p8e7b9" role="3uHU7w">
+                                      <node concept="2GrUjf" id="2IH$1p8e5w$" role="2Oq$k0">
+                                        <ref role="2Gs0qQ" node="2IH$1p8dWHv" resolve="attr" />
+                                      </node>
+                                      <node concept="liA8E" id="2IH$1p8jW3X" role="2OqNvi">
+                                        <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="2IH$1p8e2NW" role="3uHU7B">
+                                      <property role="Xl_RC" value="                           + Attribute: " />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2IH$1p84x$C" role="3cqZAp">
+                      <node concept="2OqwBi" id="2IH$1p84x$_" role="3clFbG">
+                        <node concept="10M0yZ" id="2IH$1p84x$A" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                        </node>
+                        <node concept="liA8E" id="2IH$1p84x$B" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="3cpWs3" id="4mULXgb_X3K" role="37wK5m">
+                            <node concept="Xl_RD" id="4mULXgb_X3Q" role="3uHU7B">
+                              <property role="Xl_RC" value="        Number of match associations: " />
+                            </node>
+                            <node concept="2OqwBi" id="4mULXgbA3DM" role="3uHU7w">
+                              <node concept="2OqwBi" id="4mULXgb_XBj" role="2Oq$k0">
+                                <node concept="37vLTw" id="4mULXgb_Xv6" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
+                                </node>
+                                <node concept="liA8E" id="4mULXgb_XFx" role="2OqNvi">
+                                  <ref role="37wK5l" to="gnwr:~MatchModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="4mULXgbA4kN" role="2OqNvi">
+                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -569,66 +685,202 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="34ab3g" id="4mULXgbA69v" role="3cqZAp">
-                      <property role="35gtTG" value="info" />
-                      <node concept="3cpWs3" id="4mULXgbA69w" role="34bqiv">
-                        <node concept="2OqwBi" id="4mULXgbAaIW" role="3uHU7w">
-                          <node concept="2OqwBi" id="4mULXgbAavM" role="2Oq$k0">
-                            <node concept="37vLTw" id="4mULXgbA9Ns" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
-                            </node>
-                            <node concept="liA8E" id="4mULXgbAa$o" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="4mULXgbAbqL" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
-                          </node>
+                    <node concept="3clFbF" id="2IH$1p84BBL" role="3cqZAp">
+                      <node concept="2OqwBi" id="2IH$1p84BBI" role="3clFbG">
+                        <node concept="10M0yZ" id="2IH$1p84BBJ" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                         </node>
-                        <node concept="Xl_RD" id="4mULXgbA69A" role="3uHU7B">
-                          <property role="Xl_RC" value="        Number of apply classes: " />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="34ab3g" id="4mULXgbA69B" role="3cqZAp">
-                      <property role="35gtTG" value="info" />
-                      <node concept="3cpWs3" id="4mULXgbA69C" role="34bqiv">
-                        <node concept="Xl_RD" id="4mULXgbA69D" role="3uHU7B">
-                          <property role="Xl_RC" value="        Number of apply associations: " />
-                        </node>
-                        <node concept="2OqwBi" id="4mULXgbA69E" role="3uHU7w">
-                          <node concept="2OqwBi" id="4mULXgbA69F" role="2Oq$k0">
-                            <node concept="37vLTw" id="4mULXgbAbDi" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
+                        <node concept="liA8E" id="2IH$1p84BBK" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="3cpWs3" id="4mULXgbA69w" role="37wK5m">
+                            <node concept="2OqwBi" id="4mULXgbAaIW" role="3uHU7w">
+                              <node concept="2OqwBi" id="4mULXgbAavM" role="2Oq$k0">
+                                <node concept="37vLTw" id="4mULXgbA9Ns" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
+                                </node>
+                                <node concept="liA8E" id="4mULXgbAa$o" role="2OqNvi">
+                                  <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="4mULXgbAbqL" role="2OqNvi">
+                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                              </node>
                             </node>
-                            <node concept="liA8E" id="4mULXgbA69H" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~ApplyModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                            <node concept="Xl_RD" id="4mULXgbA69A" role="3uHU7B">
+                              <property role="Xl_RC" value="        Number of apply classes: " />
                             </node>
-                          </node>
-                          <node concept="liA8E" id="4mULXgbA69I" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="34ab3g" id="4mULXgbB9CU" role="3cqZAp">
-                      <property role="35gtTG" value="info" />
-                      <node concept="3cpWs3" id="4mULXgbBaa7" role="34bqiv">
-                        <node concept="2OqwBi" id="4mULXgbBaNY" role="3uHU7w">
-                          <node concept="2OqwBi" id="4mULXgbBajc" role="2Oq$k0">
-                            <node concept="2GrUjf" id="4mULXgbBahH" role="2Oq$k0">
-                              <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
+                    <node concept="2Gpval" id="2IH$1p88iX8" role="3cqZAp">
+                      <node concept="2GrKxI" id="2IH$1p88iX9" role="2Gsz3X">
+                        <property role="TrG5h" value="cla" />
+                      </node>
+                      <node concept="2OqwBi" id="2IH$1p890P7" role="2GsD0m">
+                        <node concept="37vLTw" id="2IH$1p88J2L" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
+                        </node>
+                        <node concept="liA8E" id="2IH$1p891jL" role="2OqNvi">
+                          <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="2IH$1p88iXd" role="2LFqv$">
+                        <node concept="3clFbF" id="2IH$1p88iXe" role="3cqZAp">
+                          <node concept="2OqwBi" id="2IH$1p88iXf" role="3clFbG">
+                            <node concept="10M0yZ" id="2IH$1p88iXg" role="2Oq$k0">
+                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                             </node>
-                            <node concept="liA8E" id="4mULXgbBawA" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~Rule.getBackwards():org.eclipse.emf.common.util.EList" resolve="getBackwards" />
+                            <node concept="liA8E" id="2IH$1p88iXh" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <node concept="3cpWs3" id="2IH$1p88iXi" role="37wK5m">
+                                <node concept="2OqwBi" id="2IH$1p88iXj" role="3uHU7w">
+                                  <node concept="2GrUjf" id="2IH$1p88iXk" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="2IH$1p88iX9" resolve="cla" />
+                                  </node>
+                                  <node concept="liA8E" id="2IH$1p88iXl" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="2IH$1p88iXm" role="3uHU7B">
+                                  <property role="Xl_RC" value="                - Apply Class:" />
+                                </node>
+                              </node>
                             </node>
-                          </node>
-                          <node concept="liA8E" id="4mULXgbBcWQ" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="4mULXgbB9CW" role="3uHU7B">
-                          <property role="Xl_RC" value="        Number of backward links: " />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2IH$1p84HOD" role="3cqZAp">
+                      <node concept="2OqwBi" id="2IH$1p84HOA" role="3clFbG">
+                        <node concept="10M0yZ" id="2IH$1p84HOB" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                        </node>
+                        <node concept="liA8E" id="2IH$1p84HOC" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="3cpWs3" id="4mULXgbA69C" role="37wK5m">
+                            <node concept="Xl_RD" id="4mULXgbA69D" role="3uHU7B">
+                              <property role="Xl_RC" value="        Number of apply associations: " />
+                            </node>
+                            <node concept="2OqwBi" id="4mULXgbA69E" role="3uHU7w">
+                              <node concept="2OqwBi" id="4mULXgbA69F" role="2Oq$k0">
+                                <node concept="37vLTw" id="4mULXgbAbDi" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
+                                </node>
+                                <node concept="liA8E" id="4mULXgbA69H" role="2OqNvi">
+                                  <ref role="37wK5l" to="gnwr:~ApplyModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="4mULXgbA69I" role="2OqNvi">
+                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2IH$1p84NS_" role="3cqZAp">
+                      <node concept="2OqwBi" id="2IH$1p84NSy" role="3clFbG">
+                        <node concept="10M0yZ" id="2IH$1p84NSz" role="2Oq$k0">
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                        </node>
+                        <node concept="liA8E" id="2IH$1p84NS$" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="3cpWs3" id="4mULXgbBaa7" role="37wK5m">
+                            <node concept="2OqwBi" id="4mULXgbBaNY" role="3uHU7w">
+                              <node concept="2OqwBi" id="4mULXgbBajc" role="2Oq$k0">
+                                <node concept="2GrUjf" id="4mULXgbBahH" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
+                                </node>
+                                <node concept="liA8E" id="4mULXgbBawA" role="2OqNvi">
+                                  <ref role="37wK5l" to="gnwr:~Rule.getBackwards():org.eclipse.emf.common.util.EList" resolve="getBackwards" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="4mULXgbBcWQ" role="2OqNvi">
+                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="4mULXgbB9CW" role="3uHU7B">
+                              <property role="Xl_RC" value="        Number of backward links: " />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2Gpval" id="2IH$1p858mC" role="3cqZAp">
+                      <node concept="2GrKxI" id="2IH$1p858mE" role="2Gsz3X">
+                        <property role="TrG5h" value="back" />
+                      </node>
+                      <node concept="2OqwBi" id="2IH$1p8591R" role="2GsD0m">
+                        <node concept="2GrUjf" id="2IH$1p858PM" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
+                        </node>
+                        <node concept="liA8E" id="2IH$1p859$j" role="2OqNvi">
+                          <ref role="37wK5l" to="gnwr:~Rule.getBackwards():org.eclipse.emf.common.util.EList" resolve="getBackwards" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="2IH$1p858mI" role="2LFqv$">
+                        <node concept="3clFbF" id="2IH$1p85cjP" role="3cqZAp">
+                          <node concept="2OqwBi" id="2IH$1p85cjM" role="3clFbG">
+                            <node concept="10M0yZ" id="2IH$1p85cjN" role="2Oq$k0">
+                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                            </node>
+                            <node concept="liA8E" id="2IH$1p85cjO" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <node concept="3cpWs3" id="2IH$1p85dnq" role="37wK5m">
+                                <node concept="2OqwBi" id="2IH$1p878fB" role="3uHU7w">
+                                  <node concept="2OqwBi" id="2IH$1p85dIh" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="2IH$1p85dzT" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="2IH$1p858mE" resolve="back" />
+                                    </node>
+                                    <node concept="liA8E" id="2IH$1p85enJ" role="2OqNvi">
+                                      <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.getSourceClass():dsltrans.PositiveMatchClass" resolve="getSourceClass" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="2IH$1p87iW6" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="2IH$1p85czH" role="3uHU7B">
+                                  <property role="Xl_RC" value="                - Source:" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="2IH$1p85w1y" role="3cqZAp">
+                          <node concept="2OqwBi" id="2IH$1p85w1z" role="3clFbG">
+                            <node concept="10M0yZ" id="2IH$1p85w1$" role="2Oq$k0">
+                              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                            </node>
+                            <node concept="liA8E" id="2IH$1p85w1_" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <node concept="3cpWs3" id="2IH$1p85w1A" role="37wK5m">
+                                <node concept="2OqwBi" id="2IH$1p85Hxv" role="3uHU7w">
+                                  <node concept="2OqwBi" id="2IH$1p85w1C" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="2IH$1p85w1D" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="2IH$1p858mE" resolve="back" />
+                                    </node>
+                                    <node concept="liA8E" id="2IH$1p85EJZ" role="2OqNvi">
+                                      <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.getTargetClass():dsltrans.ApplyClass" resolve="getTargetClass" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="2IH$1p87mtJ" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="2IH$1p85w1G" role="3uHU7B">
+                                  <property role="Xl_RC" value="                - Target:" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -2384,6 +2636,38 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2IH$1p8cQ2k" role="3cqZAp">
+          <node concept="2OqwBi" id="2IH$1p8c34K" role="3clFbG">
+            <node concept="10M0yZ" id="2IH$1p8c34L" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="2IH$1p8c34M" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="3cpWs3" id="2IH$1p8cbOo" role="37wK5m">
+                <node concept="Xl_RD" id="2IH$1p8c6sT" role="3uHU7B">
+                  <property role="Xl_RC" value="MatchAttr2matchAttrTrace: " />
+                </node>
+                <node concept="2OqwBi" id="2IH$1p8cXch" role="3uHU7w">
+                  <node concept="37vLTw" id="2IH$1p8cXci" role="2Oq$k0">
+                    <ref role="3cqZAo" node="JP13UtgkG4" resolve="matchAttr2matchAttrTrace" />
+                  </node>
+                  <node concept="liA8E" id="2IH$1p8cXcj" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                    <node concept="2OqwBi" id="2IH$1p8cXck" role="37wK5m">
+                      <node concept="37vLTw" id="2IH$1p8cXcl" role="2Oq$k0">
+                        <ref role="3cqZAo" node="JP13Utgjyq" resolve="applyAttrValue" />
+                      </node>
+                      <node concept="3TrEf2" id="2IH$1p8cXcm" role="2OqNvi">
+                        <ref role="3Tt5mk" to="i3vy:67kIGnNxbpQ" resolve="matchAttribute" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2GbRIwA53og" role="3cqZAp">
           <node concept="2OqwBi" id="2GbRIwA54BS" role="3clFbG">
             <node concept="37vLTw" id="2GbRIwA53oe" role="2Oq$k0">
@@ -3469,31 +3753,97 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="1NdVp2rTfYx" role="3cqZAp">
-          <node concept="2OqwBi" id="1NdVp2rTg4G" role="3clFbG">
-            <node concept="37vLTw" id="1NdVp2rTfYv" role="2Oq$k0">
-              <ref role="3cqZAo" node="1NdVp2rTfxE" resolve="atom" />
+        <node concept="3clFbJ" id="2IH$1p8jwrg" role="3cqZAp">
+          <node concept="3clFbS" id="2IH$1p8jwri" role="3clFbx">
+            <node concept="3clFbF" id="2IH$1p8j_Na" role="3cqZAp">
+              <node concept="2OqwBi" id="2IH$1p8j_N7" role="3clFbG">
+                <node concept="10M0yZ" id="2IH$1p8j_N8" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="2IH$1p8j_N9" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="2IH$1p8jA3J" role="37wK5m">
+                    <property role="Xl_RC" value="!!!!!!!!!!!!!!! StringLiteralAtom" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="1NdVp2rTgaL" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String):void" resolve="setValue" />
-              <node concept="2OqwBi" id="1NdVp2rTiaE" role="37wK5m">
-                <node concept="1eOMI4" id="1NdVp2rThAx" role="2Oq$k0">
-                  <node concept="10QFUN" id="1NdVp2rThAu" role="1eOMHV">
-                    <node concept="3Tqbb2" id="1NdVp2rThJr" role="10QFUM">
-                      <ref role="ehGHo" to="i3vy:67kIGnNxbpy" resolve="StringLiteralAtom" />
+            <node concept="3clFbF" id="1NdVp2rTfYx" role="3cqZAp">
+              <node concept="2OqwBi" id="1NdVp2rTg4G" role="3clFbG">
+                <node concept="37vLTw" id="1NdVp2rTfYv" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1NdVp2rTfxE" resolve="atom" />
+                </node>
+                <node concept="liA8E" id="1NdVp2rTgaL" role="2OqNvi">
+                  <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String):void" resolve="setValue" />
+                  <node concept="2OqwBi" id="1NdVp2rTiaE" role="37wK5m">
+                    <node concept="1eOMI4" id="1NdVp2rThAx" role="2Oq$k0">
+                      <node concept="10QFUN" id="1NdVp2rThAu" role="1eOMHV">
+                        <node concept="3Tqbb2" id="1NdVp2rThJr" role="10QFUM">
+                          <ref role="ehGHo" to="i3vy:67kIGnNxbpy" resolve="StringLiteralAtom" />
+                        </node>
+                        <node concept="2OqwBi" id="1NdVp2rTi1_" role="10QFUP">
+                          <node concept="37vLTw" id="1NdVp2rThU1" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1NdVp2rT4tK" resolve="matchAttrValue" />
+                          </node>
+                          <node concept="3TrEf2" id="1NdVp2rTi76" role="2OqNvi">
+                            <ref role="3Tt5mk" to="i3vy:3UloD6l$VLn" resolve="atom" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
-                    <node concept="2OqwBi" id="1NdVp2rTi1_" role="10QFUP">
-                      <node concept="37vLTw" id="1NdVp2rThU1" role="2Oq$k0">
-                        <ref role="3cqZAo" node="1NdVp2rT4tK" resolve="matchAttrValue" />
-                      </node>
-                      <node concept="3TrEf2" id="1NdVp2rTi76" role="2OqNvi">
-                        <ref role="3Tt5mk" to="i3vy:3UloD6l$VLn" resolve="atom" />
-                      </node>
+                    <node concept="3TrcHB" id="1NdVp2rTiho" role="2OqNvi">
+                      <ref role="3TsBF5" to="i3vy:67kIGnNxbp_" resolve="atom" />
                     </node>
                   </node>
                 </node>
-                <node concept="3TrcHB" id="1NdVp2rTiho" role="2OqNvi">
-                  <ref role="3TsBF5" to="i3vy:67kIGnNxbp_" resolve="atom" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2IH$1p8j$Et" role="3clFbw">
+            <node concept="2OqwBi" id="2IH$1p8jzYK" role="2Oq$k0">
+              <node concept="37vLTw" id="2IH$1p8jzIM" role="2Oq$k0">
+                <ref role="3cqZAo" node="1NdVp2rT4tK" resolve="matchAttrValue" />
+              </node>
+              <node concept="3TrEf2" id="2IH$1p8j$mX" role="2OqNvi">
+                <ref role="3Tt5mk" to="i3vy:3UloD6l$VLn" resolve="atom" />
+              </node>
+            </node>
+            <node concept="1mIQ4w" id="2IH$1p8j_07" role="2OqNvi">
+              <node concept="chp4Y" id="2IH$1p8j_6y" role="cj9EA">
+                <ref role="cht4Q" to="i3vy:67kIGnNxbpy" resolve="StringLiteralAtom" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="2IH$1p8jAy9" role="3eNLev">
+            <node concept="3clFbS" id="2IH$1p8jAyb" role="3eOfB_">
+              <node concept="3clFbF" id="2IH$1p8l6bo" role="3cqZAp">
+                <node concept="2OqwBi" id="2IH$1p8l6bq" role="3clFbG">
+                  <node concept="37vLTw" id="2IH$1p8l6br" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1NdVp2rTfxE" resolve="atom" />
+                  </node>
+                  <node concept="liA8E" id="2IH$1p8l6bs" role="2OqNvi">
+                    <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String):void" resolve="setValue" />
+                    <node concept="Xl_RD" id="2IH$1p8ld8l" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="2IH$1p8krd_" role="3cqZAp">
+                <node concept="10Nm6u" id="2IH$1p8kt_r" role="3cqZAk" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2IH$1p8jAL7" role="3eO9$A">
+              <node concept="2OqwBi" id="2IH$1p8jAL8" role="2Oq$k0">
+                <node concept="37vLTw" id="2IH$1p8jAL9" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1NdVp2rT4tK" resolve="matchAttrValue" />
+                </node>
+                <node concept="3TrEf2" id="2IH$1p8jALa" role="2OqNvi">
+                  <ref role="3Tt5mk" to="i3vy:3UloD6l$VLn" resolve="atom" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="2IH$1p8jALb" role="2OqNvi">
+                <node concept="chp4Y" id="2IH$1p8jASB" role="cj9EA">
+                  <ref role="cht4Q" to="i3vy:2rexW9_htG2" resolve="StringVariableAtom" />
                 </node>
               </node>
             </node>
