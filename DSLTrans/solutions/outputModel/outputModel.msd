@@ -13,6 +13,7 @@
   </usedLanguages>
   <languageVersions>
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:443933c7-2e65-4840-9493-341bfee78b6f:simpleInputLanguage" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="b0929202-c875-45f6-bd7f-1cc2fe33c948(outputModel)" version="0" />
