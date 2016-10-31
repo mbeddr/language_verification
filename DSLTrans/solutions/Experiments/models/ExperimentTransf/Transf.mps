@@ -20,20 +20,19 @@
       </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
+        <child id="6292131328146430401" name="property" index="1157Rq" />
       </concept>
       <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
         <property id="7049464676098553445" name="atom" index="2ik0Mw" />
       </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
       <concept id="7049464676098553454" name="transfverif.core.structure.AttributeRef" flags="ng" index="2ik0MF">
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
-      <concept id="4723391157061411708" name="transfverif.core.structure.Attribute" flags="ng" index="ikjx7">
-        <child id="2829711462939341608" name="property" index="1y79iX" />
-      </concept>
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
@@ -198,24 +197,24 @@
           <node concept="1jGXXa" id="2IH$1p89vck" role="1jGXX7">
             <property role="13z3e$" value="Apply3" />
             <property role="13z3hU" value="A" />
-            <node concept="2ik0MC" id="2IH$1p8lztF" role="2ik0MI">
-              <property role="TrG5h" value="nameA" />
-              <node concept="2ik0MF" id="2IH$1p8lztR" role="2ik0MU">
-                <ref role="2ik0MN" node="46cQNHk7NFf" resolve="nameA" />
+            <node concept="2ik0MC" id="5ti91GmipxS" role="2ik0MI">
+              <property role="TrG5h" value="applyAttribute" />
+              <node concept="2ik0M$" id="5ti91Gmipy1" role="2ik0MU">
+                <node concept="2ik0MB" id="5ti91Gmipy3" role="2ik0My">
+                  <property role="2ik0Mw" value="solveRef" />
+                </node>
               </node>
-              <node concept="1y7Krt" id="46cQNHk7NFY" role="1y79iX">
+              <node concept="1imNlU" id="5ti91GmipxZ" role="1157Rj" />
+            </node>
+            <node concept="2ik0MC" id="5ti91Gmipxj" role="2ik0MI">
+              <property role="TrG5h" value="nameA" />
+              <node concept="2ik0MF" id="5ti91GmipxA" role="2ik0MU">
+                <ref role="2ik0MN" node="5ti91Gmipsc" resolve="nameA" />
+              </node>
+              <node concept="1y7Krt" id="5ti91Gmipxr" role="1157Rj">
                 <ref role="355D3t" to="oqdb:6HyGJ_oty0z" resolve="A" />
                 <ref role="355D3u" to="oqdb:6HyGJ_oty0$" resolve="nameA" />
               </node>
-            </node>
-            <node concept="2ik0MC" id="2IH$1p89vcp" role="2ik0MI">
-              <property role="TrG5h" value="ApplyAttribute" />
-              <node concept="2ik0M$" id="2IH$1p89vcv" role="2ik0MU">
-                <node concept="2ik0MB" id="2IH$1p89vcx" role="2ik0My">
-                  <property role="2ik0Mw" value="solveref" />
-                </node>
-              </node>
-              <node concept="1imNlU" id="1UHaC1cXLBi" role="1y79iX" />
             </node>
             <node concept="pBohH" id="46cQNHjQ7sk" role="pB8W9">
               <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
@@ -296,12 +295,12 @@
             <node concept="pBohH" id="46cQNHjQ7s4" role="pB8W9">
               <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
             </node>
-            <node concept="2ik0M_" id="46cQNHk7NFf" role="13z3hJ">
+            <node concept="2ik0M_" id="5ti91Gmipsc" role="13z3hJ">
               <property role="TrG5h" value="nameA" />
-              <node concept="13yNan" id="46cQNHk7NFu" role="2ik0Q0">
-                <node concept="13yPN0" id="46cQNHk7NF$" role="2F1HV6" />
+              <node concept="13yNan" id="5ti91Gmipsr" role="2ik0Q0">
+                <node concept="13yPN0" id="5ti91Gmipsx" role="2F1HV6" />
               </node>
-              <node concept="1y7Krt" id="46cQNHk7NFj" role="1y79iX">
+              <node concept="1y7Krt" id="5ti91Gmipse" role="1157Rq">
                 <ref role="355D3t" to="oqdb:6HyGJ_oty0z" resolve="A" />
                 <ref role="355D3u" to="oqdb:6HyGJ_oty0$" resolve="nameA" />
               </node>
@@ -404,17 +403,17 @@
           <node concept="1jGXXa" id="4mULXgbB7By" role="1jGXX7">
             <property role="13z3e$" value="Apply0" />
             <property role="13z3hU" value="C" />
-            <node concept="2ik0MC" id="2IH$1p89vdc" role="2ik0MI">
-              <property role="TrG5h" value="ApplyAttribute" />
-              <node concept="2ik0M$" id="2IH$1p89vdi" role="2ik0MU">
-                <node concept="2ik0MB" id="2IH$1p89vdk" role="2ik0My">
-                  <property role="2ik0Mw" value="solveref" />
-                </node>
-              </node>
-              <node concept="1imNlU" id="1UHaC1cXLBk" role="1y79iX" />
-            </node>
             <node concept="pBohH" id="46cQNHjQ7su" role="pB8W9">
               <ref role="35c_gD" to="oqdb:Dn$Lr8cmLF" resolve="C" />
+            </node>
+            <node concept="2ik0MC" id="5ti91Gmipy7" role="2ik0MI">
+              <property role="TrG5h" value="applyAttribute" />
+              <node concept="2ik0M$" id="5ti91Gmipyd" role="2ik0MU">
+                <node concept="2ik0MB" id="5ti91Gmipyf" role="2ik0My">
+                  <property role="2ik0Mw" value="solveRef" />
+                </node>
+              </node>
+              <node concept="1imNlU" id="5ti91Gmipyb" role="1157Rj" />
             </node>
           </node>
         </node>
@@ -459,6 +458,10 @@
                 <node concept="2ik0MB" id="2IH$1p8bqkI" role="2ik0My">
                   <property role="2ik0Mw" value="blabla" />
                 </node>
+              </node>
+              <node concept="1y7Krt" id="5ti91Gmk8eT" role="1157Rj">
+                <ref role="355D3t" to="oqdb:Dn$Lr8cmLE" resolve="B" />
+                <ref role="355D3u" to="oqdb:2IH$1p89vdX" resolve="nameB" />
               </node>
             </node>
             <node concept="pBohH" id="46cQNHjQ7sR" role="pB8W9">
