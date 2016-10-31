@@ -285,6 +285,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="pointer" />
       <property role="IQ2ns" value="7360946710770400638" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="57pZU2XSTeK" resolve="School" />
     </node>
   </node>
@@ -296,6 +297,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="pointer" />
       <property role="IQ2ns" value="7360946710770400642" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="57pZU2XSTeN" resolve="Child" />
     </node>
   </node>
@@ -309,6 +311,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="pointer" />
       <property role="IQ2ns" value="7360946710770400646" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="57pZU2XSTeL" resolve="Neighborhood" />
     </node>
   </node>
@@ -320,6 +323,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="pointer" />
       <property role="IQ2ns" value="7360946710770400650" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="57pZU2XSTeH" resolve="Family" />
     </node>
   </node>
@@ -331,6 +335,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="pointer" />
       <property role="IQ2ns" value="7360946710770400654" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="57pZU2XSTeM" resolve="Parent" />
     </node>
   </node>
