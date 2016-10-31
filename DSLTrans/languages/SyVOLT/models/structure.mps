@@ -80,15 +80,8 @@
     <node concept="PrWs8" id="3QsrawRgP9q" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="3QsrawRgP9$" role="1TKVEl">
-      <property role="TrG5h" value="inputLanguage" />
-      <property role="IQ2nx" value="4439542802417930852" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3QsrawRgP9A" role="1TKVEl">
-      <property role="TrG5h" value="outputLanguage" />
-      <property role="IQ2nx" value="4439542802417930854" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="PrWs8" id="46cQNHjPx5s" role="PzmwI">
+      <ref role="PrY4T" to="i3vy:2t59Tl5mye5" resolve="ILanguageScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="67kIGnNxbyT">
