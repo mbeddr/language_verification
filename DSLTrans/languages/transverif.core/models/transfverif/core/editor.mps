@@ -17,7 +17,6 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="tpch" ref="r:00000000-0000-4000-0000-011c8959028d(jetbrains.mps.lang.structure.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -65,9 +64,6 @@
       </concept>
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
-      </concept>
-      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
-        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -321,9 +317,6 @@
         </node>
         <node concept="3F0ifn" id="1eaQRpkwfzc" role="3EZMnx">
           <property role="3F0ifm" value=":" />
-        </node>
-        <node concept="3F0A7n" id="_xUCdafCf6" role="3EZMnx">
-          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
         </node>
         <node concept="3F1sOY" id="2UpaMmVBvXS" role="3EZMnx">
           <ref role="1NtTu8" to="i3vy:28y$t0VJxVp" resolve="concept" />
@@ -1762,9 +1755,6 @@
         <node concept="3F0ifn" id="6PkVIr7pZcY" role="3EZMnx">
           <property role="3F0ifm" value=":" />
         </node>
-        <node concept="3F0A7n" id="_xUCdafCfI" role="3EZMnx">
-          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
-        </node>
         <node concept="3F1sOY" id="2UpaMmVBgbf" role="3EZMnx">
           <ref role="1NtTu8" to="i3vy:28y$t0VJxVp" resolve="concept" />
         </node>
@@ -1821,10 +1811,6 @@
         </node>
         <node concept="3F0ifn" id="6PkVIr7pZdQ" role="3EZMnx">
           <property role="3F0ifm" value=":" />
-        </node>
-        <node concept="3F0A7n" id="6PkVIr7pZdR" role="3EZMnx">
-          <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
-          <ref role="1NtTu8" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
         </node>
         <node concept="PMmxH" id="6PkVIr7pZdS" role="3EZMnx">
           <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -1905,6 +1891,13 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1UHaC1cXy07">
+    <property role="3GE5qa" value="Util" />
+    <ref role="1XX52x" to="i3vy:1UHaC1cXxZU" resolve="ForceTraceability" />
+    <node concept="PMmxH" id="1UHaC1cXy09" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

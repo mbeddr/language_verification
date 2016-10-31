@@ -438,6 +438,9 @@
     <property role="TrG5h" value="TVPropIDRefExpression" />
     <property role="EcuMT" value="2829711462939369800" />
     <ref role="1TJDcQ" to="tp25:2iMJRNxD2Yw" resolve="PropertyIdRefExpression" />
+    <node concept="PrWs8" id="1UHaC1cXxZX" role="PzmwI">
+      <ref role="PrY4T" node="1UHaC1cXxZT" resolve="TVPropReference" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2t59Tl5mye5">
     <property role="TrG5h" value="ILanguageScopeProvider" />
@@ -469,7 +472,23 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="property" />
       <property role="IQ2ns" value="2829711462939341608" />
-      <ref role="20lvS9" node="2t59Tl5my58" resolve="TVPropIDRefExpression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1UHaC1cXxZT" resolve="TVPropReference" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1UHaC1cXxZT">
+    <property role="EcuMT" value="2210469722644160505" />
+    <property role="3GE5qa" value="Util" />
+    <property role="TrG5h" value="TVPropReference" />
+  </node>
+  <node concept="1TIwiD" id="1UHaC1cXxZU">
+    <property role="EcuMT" value="2210469722644160506" />
+    <property role="3GE5qa" value="Util" />
+    <property role="TrG5h" value="ForceTraceability" />
+    <property role="34LRSv" value="&lt;&lt;Apply Attribute&gt;&gt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1UHaC1cXxZV" role="PzmwI">
+      <ref role="PrY4T" node="1UHaC1cXxZT" resolve="TVPropReference" />
     </node>
   </node>
 </model>

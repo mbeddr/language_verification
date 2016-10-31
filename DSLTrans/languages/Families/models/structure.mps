@@ -138,6 +138,11 @@
     <node concept="PrWs8" id="1eaQRpkstAQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="1UHaC1cWigI" role="1TKVEl">
+      <property role="IQ2nx" value="2210469722643833902" />
+      <property role="TrG5h" value="lastName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="57pZU2XSTeI">
     <property role="TrG5h" value="City" />
