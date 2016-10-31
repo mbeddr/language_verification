@@ -4,7 +4,9 @@
   <languages>
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="oqdb" ref="r:f423ea52-17a3-4af5-a991-70c01d00f018(simpleInputLanguage.structure)" implicit="true" />
+  </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
@@ -29,6 +31,10 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="4723391157061411708" name="transfverif.core.structure.Attribute" flags="ng" index="ikjx7">
+        <child id="2829711462939341608" name="property" index="1y79iX" />
+      </concept>
+      <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
@@ -43,6 +49,7 @@
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+        <child id="2459688670039252697" name="concept" index="pB8W9" />
       </concept>
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
         <child id="2796321687635932077" name="attributes" index="13z3hJ" />
@@ -60,6 +67,7 @@
         <child id="2829711462939238353" name="outputLanguage" index="1y7jx4" />
         <child id="2829711462939238350" name="inputLanguage" index="1y7jxr" />
       </concept>
+      <concept id="2829711462939369800" name="transfverif.core.structure.TVPropIDRefExpression" flags="ng" index="1y7Krt" />
     </language>
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
       <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7">
@@ -93,6 +101,13 @@
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
         <child id="1678062499342629861" name="moduleId" index="37shsm" />
@@ -185,7 +200,11 @@
             <node concept="2ik0MC" id="2IH$1p8lztF" role="2ik0MI">
               <property role="TrG5h" value="nameA" />
               <node concept="2ik0MF" id="2IH$1p8lztR" role="2ik0MU">
-                <ref role="2ik0MN" node="2IH$1p8lztp" resolve="nameA" />
+                <ref role="2ik0MN" node="46cQNHk7NFf" resolve="nameA" />
+              </node>
+              <node concept="1y7Krt" id="46cQNHk7NFY" role="1y79iX">
+                <ref role="355D3t" to="oqdb:6HyGJ_oty0z" resolve="A" />
+                <ref role="355D3u" to="oqdb:6HyGJ_oty0$" resolve="nameA" />
               </node>
             </node>
             <node concept="2ik0MC" id="2IH$1p89vcp" role="2ik0MI">
@@ -195,6 +214,9 @@
                   <property role="2ik0Mw" value="solveref" />
                 </node>
               </node>
+            </node>
+            <node concept="pBohH" id="46cQNHjQ7sk" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
             </node>
           </node>
           <node concept="37mRI7" id="6PkVIr7qDGc" role="lGtFl">
@@ -269,10 +291,17 @@
           <node concept="2ik0NV" id="6PkVIr7qyVh" role="13z3mo">
             <property role="13z3e$" value="Any4" />
             <property role="13z3hU" value="A" />
-            <node concept="2ik0M_" id="2IH$1p8lztp" role="13z3hJ">
+            <node concept="pBohH" id="46cQNHjQ7s4" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
+            </node>
+            <node concept="2ik0M_" id="46cQNHk7NFf" role="13z3hJ">
               <property role="TrG5h" value="nameA" />
-              <node concept="13yNan" id="2IH$1p8lztv" role="2ik0Q0">
-                <node concept="13yPN0" id="2IH$1p8lztB" role="2F1HV6" />
+              <node concept="13yNan" id="46cQNHk7NFu" role="2ik0Q0">
+                <node concept="13yPN0" id="46cQNHk7NF$" role="2F1HV6" />
+              </node>
+              <node concept="1y7Krt" id="46cQNHk7NFj" role="1y79iX">
+                <ref role="355D3t" to="oqdb:6HyGJ_oty0z" resolve="A" />
+                <ref role="355D3u" to="oqdb:6HyGJ_oty0$" resolve="nameA" />
               </node>
             </node>
           </node>
@@ -381,6 +410,9 @@
                 </node>
               </node>
             </node>
+            <node concept="pBohH" id="46cQNHjQ7su" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLF" resolve="C" />
+            </node>
           </node>
         </node>
         <node concept="3GsvpN" id="4mULXgbB7Bf" role="2ik0Mu">
@@ -388,6 +420,9 @@
           <node concept="2ik0NV" id="4mULXgbB7Bi" role="13z3mo">
             <property role="13z3e$" value="Any0" />
             <property role="13z3hU" value="B" />
+            <node concept="pBohH" id="46cQNHjQ7sp" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLE" resolve="B" />
+            </node>
           </node>
         </node>
       </node>
@@ -401,10 +436,16 @@
           <node concept="1jGXXa" id="4mULXgbBjGn" role="1jGXX7">
             <property role="13z3e$" value="Apply3" />
             <property role="13z3hU" value="A" />
+            <node concept="pBohH" id="46cQNHjQ7sH" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
+            </node>
           </node>
           <node concept="1jGXXa" id="4mULXgbB7Jj" role="1jGXX7">
             <property role="13z3e$" value="Apply2" />
             <property role="13z3hU" value="C" />
+            <node concept="pBohH" id="46cQNHjQ7sM" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLF" resolve="C" />
+            </node>
           </node>
           <node concept="1jGXXa" id="2IH$1p8bqja" role="1jGXX7">
             <property role="13z3e$" value="Apply4" />
@@ -416,6 +457,9 @@
                   <property role="2ik0Mw" value="blabla" />
                 </node>
               </node>
+            </node>
+            <node concept="pBohH" id="46cQNHjQ7sR" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLE" resolve="B" />
             </node>
           </node>
           <node concept="1jGXVd" id="4mULXgbBjGs" role="2ik0Ml">
@@ -434,10 +478,16 @@
           <node concept="2ik0NV" id="2IH$1p89vcU" role="13z3mo">
             <property role="13z3e$" value="Any2" />
             <property role="13z3hU" value="B" />
+            <node concept="pBohH" id="46cQNHjQ7sz" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLE" resolve="B" />
+            </node>
           </node>
           <node concept="2ik0NV" id="4mULXgbB7IZ" role="13z3mo">
             <property role="13z3e$" value="Any0" />
             <property role="13z3hU" value="A" />
+            <node concept="pBohH" id="46cQNHjQ7sC" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
+            </node>
           </node>
         </node>
         <node concept="1jGXV2" id="2IH$1p843eg" role="2udmAx">
