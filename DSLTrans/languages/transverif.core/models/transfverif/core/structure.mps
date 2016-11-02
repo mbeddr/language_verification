@@ -198,7 +198,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="property" />
       <property role="IQ2ns" value="6292131328146430401" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2t59Tl5my58" resolve="TVPropIDRefExpression" />
     </node>
     <node concept="PrWs8" id="5paAjb8w_81" role="PzmwI">
@@ -251,7 +251,7 @@
       <property role="IQ2ns" value="6292131328146430408" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="property" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="1UHaC1cXxZT" resolve="TVPropReference" />
     </node>
   </node>
