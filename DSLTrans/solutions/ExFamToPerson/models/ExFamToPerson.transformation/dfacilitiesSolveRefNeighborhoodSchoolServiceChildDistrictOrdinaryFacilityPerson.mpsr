@@ -21,12 +21,14 @@
       </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
+        <child id="6292131328146430401" name="property" index="1157Rq" />
       </concept>
       <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
         <property id="7049464676098553445" name="atom" index="2ik0Mw" />
       </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
       <concept id="7049464676098553455" name="transfverif.core.structure.Concat" flags="ng" index="2ik0ME">
         <child id="2796321687636254282" name="arg1" index="13yhA8" />
@@ -36,9 +38,6 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
-      <concept id="4723391157061411708" name="transfverif.core.structure.Attribute" flags="ng" index="ikjx7">
-        <child id="2829711462939341608" name="property" index="1y79iX" />
-      </concept>
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
@@ -112,25 +111,25 @@
       <node concept="1jGXXa" id="4OZxLw4ZfHW" role="1jGXX7">
         <property role="13z3e$" value="OF_OF" />
         <property role="13z3hU" value="OrdinaryFacility" />
-        <node concept="2ik0MC" id="4OZxLw4ZfHZ" role="2ik0MI">
+        <node concept="pBohH" id="1UHaC1cWuDS" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdIA" resolve="OrdinaryFacility" />
+        </node>
+        <node concept="2ik0MC" id="bEUHl5fsbW" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="2ik0ME" id="4OZxLw4ZfI3" role="2ik0MU">
-            <node concept="2ik0M$" id="4OZxLw4ZfIc" role="13yhA8">
-              <node concept="2ik0MB" id="4OZxLw4ZfIe" role="2ik0My">
+          <node concept="2ik0ME" id="bEUHl5fsce" role="2ik0MU">
+            <node concept="2ik0M$" id="bEUHl5fscn" role="13yhA8">
+              <node concept="2ik0MB" id="bEUHl5fscp" role="2ik0My">
                 <property role="2ik0Mw" value="OrdFacForSchool" />
               </node>
             </node>
-            <node concept="2ik0MF" id="4OZxLw4ZfIi" role="13yhAc">
-              <ref role="2ik0MN" node="4OZxLw4ZfHg" resolve="name" />
+            <node concept="2ik0MF" id="bEUHl5fsct" role="13yhAc">
+              <ref role="2ik0MN" node="bEUHl5fsb$" resolve="name" />
             </node>
           </node>
-          <node concept="1y7Krt" id="1UHaC1cWuDX" role="1y79iX">
+          <node concept="1y7Krt" id="bEUHl5fsc2" role="1157Rj">
             <ref role="355D3t" to="eh87:46cQNHkcdIA" resolve="OrdinaryFacility" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
-        </node>
-        <node concept="pBohH" id="1UHaC1cWuDS" role="pB8W9">
-          <ref role="35c_gD" to="eh87:46cQNHkcdIA" resolve="OrdinaryFacility" />
         </node>
       </node>
       <node concept="1jGXVd" id="4OZxLw4ZfII" role="2ik0Ml">
@@ -155,18 +154,18 @@
       <node concept="2ik0NV" id="4OZxLw4ZfGS" role="13z3mo">
         <property role="13z3e$" value="OF_School" />
         <property role="13z3hU" value="School" />
-        <node concept="2ik0M_" id="4OZxLw4ZfHg" role="13z3hJ">
+        <node concept="pBohH" id="1UHaC1cWuDp" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeK" resolve="School" />
+        </node>
+        <node concept="2ik0M_" id="bEUHl5fsb$" role="13z3hJ">
           <property role="TrG5h" value="name" />
-          <node concept="13yNan" id="4OZxLw4ZfHk" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4ZfHq" role="2F1HV6" />
+          <node concept="13yNan" id="bEUHl5fsbN" role="2ik0Q0">
+            <node concept="13yPN0" id="bEUHl5fsbT" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="1UHaC1cWuDu" role="1y79iX">
+          <node concept="1y7Krt" id="bEUHl5fsbC" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeK" resolve="School" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
-        </node>
-        <node concept="pBohH" id="1UHaC1cWuDp" role="pB8W9">
-          <ref role="35c_gD" to="b6kg:57pZU2XSTeK" resolve="School" />
         </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4ZfH0" role="13z3mo">

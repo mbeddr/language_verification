@@ -17,9 +17,11 @@
       </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
+        <child id="6292131328146430401" name="property" index="1157Rq" />
       </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
       <concept id="7049464676098553455" name="transfverif.core.structure.Concat" flags="ng" index="2ik0ME">
         <child id="2796321687636254282" name="arg1" index="13yhA8" />
@@ -29,9 +31,6 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
-      <concept id="4723391157061411708" name="transfverif.core.structure.Attribute" flags="ng" index="ikjx7">
-        <child id="2829711462939341608" name="property" index="1y79iX" />
-      </concept>
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
@@ -122,23 +121,23 @@
       <node concept="1jGXXa" id="4OZxLw4ZfBm" role="1jGXX7">
         <property role="13z3e$" value="CC2A_Assoc" />
         <property role="13z3hU" value="Association" />
-        <node concept="2ik0MC" id="4OZxLw4ZfBo" role="2ik0MI">
+        <node concept="pBohH" id="1UHaC1cWig2" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdIM" resolve="Association" />
+        </node>
+        <node concept="2ik0MC" id="bEUHl5fs16" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="2ik0ME" id="4OZxLw4ZfBs" role="2ik0MU">
-            <node concept="2ik0MF" id="4OZxLw4ZfB_" role="13yhA8">
-              <ref role="2ik0MN" node="4OZxLw4ZfAN" resolve="name" />
+          <node concept="2ik0ME" id="bEUHl5fs1D" role="2ik0MU">
+            <node concept="2ik0MF" id="bEUHl5fs1M" role="13yhA8">
+              <ref role="2ik0MN" node="bEUHl5frZR" resolve="name" />
             </node>
-            <node concept="2ik0MF" id="4OZxLw4ZfBC" role="13yhAc">
-              <ref role="2ik0MN" node="4OZxLw4ZfB0" resolve="name" />
+            <node concept="2ik0MF" id="bEUHl5fs1P" role="13yhAc">
+              <ref role="2ik0MN" node="bEUHl5fs0f" resolve="name1" />
             </node>
           </node>
-          <node concept="1y7Krt" id="1UHaC1cWigc" role="1y79iX">
+          <node concept="1y7Krt" id="bEUHl5fs1a" role="1157Rj">
             <ref role="355D3t" to="eh87:46cQNHkcdIM" resolve="Association" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
-        </node>
-        <node concept="pBohH" id="1UHaC1cWig2" role="pB8W9">
-          <ref role="35c_gD" to="eh87:46cQNHkcdIM" resolve="Association" />
         </node>
       </node>
       <node concept="37mRI7" id="5$ec28U83K8" role="lGtFl">
@@ -158,12 +157,12 @@
       <node concept="2ik0NV" id="4OZxLw4YKN5" role="13z3mo">
         <property role="13z3e$" value="CC2A_City" />
         <property role="13z3hU" value="City" />
-        <node concept="2ik0M_" id="4OZxLw4ZfAN" role="13z3hJ">
+        <node concept="2ik0M_" id="bEUHl5frZR" role="13z3hJ">
           <property role="TrG5h" value="name" />
-          <node concept="13yNan" id="4OZxLw4ZfAR" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4ZfAX" role="2F1HV6" />
+          <node concept="13yNan" id="bEUHl5fs06" role="2ik0Q0">
+            <node concept="13yPN0" id="bEUHl5fs0c" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="46cQNHkcdI4" role="1y79iX">
+          <node concept="1y7Krt" id="bEUHl5frZV" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeI" resolve="City" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
@@ -175,18 +174,18 @@
       <node concept="2ik0NV" id="4OZxLw4ZfAJ" role="13z3mo">
         <property role="13z3e$" value="CC2A_Company" />
         <property role="13z3hU" value="Company" />
-        <node concept="2ik0M_" id="4OZxLw4ZfB0" role="13z3hJ">
-          <property role="TrG5h" value="name" />
-          <node concept="13yNan" id="4OZxLw4ZfB4" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4ZfBa" role="2F1HV6" />
+        <node concept="pBohH" id="1UHaC1cWig7" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeF" resolve="Company" />
+        </node>
+        <node concept="2ik0M_" id="bEUHl5fs0f" role="13z3hJ">
+          <property role="TrG5h" value="name1" />
+          <node concept="13yNan" id="bEUHl5fs0u" role="2ik0Q0">
+            <node concept="13yPN0" id="bEUHl5fs0$" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="46cQNHkcdIf" role="1y79iX">
+          <node concept="1y7Krt" id="bEUHl5fs0j" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeF" resolve="Company" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
-        </node>
-        <node concept="pBohH" id="1UHaC1cWig7" role="pB8W9">
-          <ref role="35c_gD" to="b6kg:57pZU2XSTeF" resolve="Company" />
         </node>
       </node>
       <node concept="1jGXVw" id="4OZxLw4ZfBd" role="13z3mp">

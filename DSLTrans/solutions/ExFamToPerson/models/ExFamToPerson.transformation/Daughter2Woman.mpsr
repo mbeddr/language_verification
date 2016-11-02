@@ -16,9 +16,11 @@
       </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
+        <child id="6292131328146430401" name="property" index="1157Rq" />
       </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
       <concept id="7049464676098553455" name="transfverif.core.structure.Concat" flags="ng" index="2ik0ME">
         <child id="2796321687636254282" name="arg1" index="13yhA8" />
@@ -28,9 +30,6 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
-      <concept id="4723391157061411708" name="transfverif.core.structure.Attribute" flags="ng" index="ikjx7">
-        <child id="2829711462939341608" name="property" index="1y79iX" />
-      </concept>
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
@@ -86,23 +85,23 @@
       <node concept="1jGXXa" id="4OZxLw4YJFb" role="1jGXX7">
         <property role="13z3e$" value="D2W_W" />
         <property role="13z3hU" value="Woman" />
-        <node concept="2ik0MC" id="4OZxLw4YJHx" role="2ik0MI">
+        <node concept="pBohH" id="1UHaC1cWih6" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdIJ" resolve="Woman" />
+        </node>
+        <node concept="2ik0MC" id="bEUHl5fs2U" role="2ik0MI">
           <property role="TrG5h" value="fullName" />
-          <node concept="2ik0ME" id="4OZxLw4YJH_" role="2ik0MU">
-            <node concept="2ik0MF" id="4OZxLw4YJHI" role="13yhA8">
-              <ref role="2ik0MN" node="4OZxLw4YJHk" resolve="firstName" />
+          <node concept="2ik0ME" id="bEUHl5fs39" role="2ik0MU">
+            <node concept="2ik0MF" id="bEUHl5fs3i" role="13yhA8">
+              <ref role="2ik0MN" node="bEUHl5fs2y" resolve="firstName" />
             </node>
-            <node concept="2ik0MF" id="4OZxLw4YJHL" role="13yhAc">
-              <ref role="2ik0MN" node="4OZxLw4YJH7" resolve="lastName" />
+            <node concept="2ik0MF" id="bEUHl5fs3l" role="13yhAc">
+              <ref role="2ik0MN" node="bEUHl5fs1S" resolve="lastName" />
             </node>
           </node>
-          <node concept="1y7Krt" id="1UHaC1cWihb" role="1y79iX">
+          <node concept="1y7Krt" id="bEUHl5fs2Y" role="1157Rj">
             <ref role="355D3t" to="eh87:46cQNHkcdIJ" resolve="Woman" />
             <ref role="355D3u" to="eh87:46cQNHkcdIE" resolve="fullName" />
           </node>
-        </node>
-        <node concept="pBohH" id="1UHaC1cWih6" role="pB8W9">
-          <ref role="35c_gD" to="eh87:46cQNHkcdIJ" resolve="Woman" />
         </node>
       </node>
     </node>
@@ -110,12 +109,12 @@
       <node concept="2ik0NV" id="4OZxLw4YJFd" role="13z3mo">
         <property role="13z3e$" value="D2W_F1" />
         <property role="13z3hU" value="Family" />
-        <node concept="2ik0M_" id="4OZxLw4YJH7" role="13z3hJ">
+        <node concept="2ik0M_" id="bEUHl5fs1S" role="13z3hJ">
           <property role="TrG5h" value="lastName" />
-          <node concept="13yNan" id="4OZxLw4YJHb" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4YJHh" role="2F1HV6" />
+          <node concept="13yNan" id="bEUHl5fs27" role="2ik0Q0">
+            <node concept="13yPN0" id="bEUHl5fs2d" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="1UHaC1cWigA" role="1y79iX">
+          <node concept="1y7Krt" id="bEUHl5fs1W" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeH" resolve="Family" />
             <ref role="355D3u" to="b6kg:1UHaC1cWigI" resolve="lastName" />
           </node>
@@ -127,18 +126,18 @@
       <node concept="2ik0NV" id="4OZxLw4YJFe" role="13z3mo">
         <property role="13z3e$" value="D2W_C2" />
         <property role="13z3hU" value="Child" />
-        <node concept="2ik0M_" id="4OZxLw4YJHk" role="13z3hJ">
+        <node concept="pBohH" id="1UHaC1cWigQ" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeN" resolve="Child" />
+        </node>
+        <node concept="2ik0M_" id="bEUHl5fs2y" role="13z3hJ">
           <property role="TrG5h" value="firstName" />
-          <node concept="13yNan" id="4OZxLw4YJHo" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4YJHu" role="2F1HV6" />
+          <node concept="13yNan" id="bEUHl5fs2L" role="2ik0Q0">
+            <node concept="13yPN0" id="bEUHl5fs2R" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="1UHaC1cWigV" role="1y79iX">
+          <node concept="1y7Krt" id="bEUHl5fs2A" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeN" resolve="Child" />
             <ref role="355D3u" to="b6kg:57pZU2XSTf5" resolve="firstName" />
           </node>
-        </node>
-        <node concept="pBohH" id="1UHaC1cWigQ" role="pB8W9">
-          <ref role="35c_gD" to="b6kg:57pZU2XSTeN" resolve="Child" />
         </node>
       </node>
       <node concept="1jGXVw" id="4OZxLw4YJFf" role="13z3mp">
