@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="RunnerPlugin" uuid="2f14216b-eb54-4da8-80e2-689e4d8d0aea" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="DSLTransVerif" uuid="2f14216b-eb54-4da8-80e2-689e4d8d0aea" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -28,7 +28,6 @@
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
     <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
-    <language slang="l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior" version="0" />
     <language slang="l:fe9d76d7-5809-45c9-ae28-a40915b4d6ff:jetbrains.mps.lang.checkedName" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
     <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="2" />
@@ -44,13 +43,13 @@
     <module reference="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7(DSLTrans)" version="0" />
     <module reference="3224dd6b-ae86-46ab-b51c-b024552634a5(DSLTrans.lib)" version="0" />
     <module reference="4a49fceb-ecd0-4e6c-8f19-a17f566bae9d(DSLTransRunner)" version="0" />
+    <module reference="2f14216b-eb54-4da8-80e2-689e4d8d0aea(DSLTransVerif)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="2f14216b-eb54-4da8-80e2-689e4d8d0aea(RunnerPlugin)" version="0" />
     <module reference="69eded0a-1bc3-427e-9a48-e8713d355d49(SyVOLT)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="7b45fa94-2707-4a1a-9e6a-ce40c4aaf35a(de.itemis.mps.editor.collapsible.runtime)" version="0" />

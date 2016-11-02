@@ -1178,8 +1178,8 @@
   </node>
   <node concept="3tCIjb" id="KrNvFhLeX1">
     <property role="3tCIj8" value="/" />
-    <property role="3tCIje" value="/home/ss/verification/transformation/" />
-    <property role="3tCIjd" value="/home/ss/verification/ecore/" />
+    <property role="3tCIje" value="/Users/levilucio/tmp/" />
+    <property role="3tCIjd" value="/Users/levilucio/tmp/" />
     <property role="TrG5h" value="zwei" />
   </node>
 </model>
