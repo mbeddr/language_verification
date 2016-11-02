@@ -84,9 +84,6 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -142,6 +139,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -860,15 +858,6 @@
       <ref role="1N5Vy1" to="tp25:2iMJRNxD2Yx" resolve="conceptDeclaration" />
       <node concept="1MUpDS" id="2t59Tl5my5e" role="1N6uqs">
         <node concept="3clFbS" id="2t59Tl5my5g" role="2VODD2">
-          <node concept="34ab3g" id="_xUCda_moz" role="3cqZAp">
-            <property role="35gtTG" value="info" />
-            <node concept="2OqwBi" id="_xUCda_nDx" role="34bqiv">
-              <node concept="21POm0" id="_xUCda_nkg" role="2Oq$k0" />
-              <node concept="2qgKlT" id="_xUCda_nX2" role="2OqNvi">
-                <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="2t59Tl5mzbd" role="3cqZAp">
             <node concept="3cpWsn" id="2t59Tl5mzbg" role="3cpWs9">
               <property role="TrG5h" value="res" />
@@ -978,17 +967,20 @@
               </node>
               <node concept="3clFbH" id="_xUCda_ikr" role="3cqZAp" />
             </node>
-            <node concept="2OqwBi" id="_xUCda_kXv" role="3clFbw">
-              <node concept="2OqwBi" id="_xUCda_j3P" role="2Oq$k0">
-                <node concept="21POm0" id="_xUCda_iJ_" role="2Oq$k0" />
-                <node concept="2qgKlT" id="_xUCdaA97j" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+            <node concept="2OqwBi" id="46cQNHkb6Lx" role="3clFbw">
+              <node concept="2OqwBi" id="46cQNHkb4po" role="2Oq$k0">
+                <node concept="2OqwBi" id="_xUCda_j3P" role="2Oq$k0">
+                  <node concept="21POm0" id="_xUCda_iJ_" role="2Oq$k0" />
+                  <node concept="2yIwOk" id="46cQNHkaSM8" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="46cQNHkb5yf" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
                 </node>
               </node>
-              <node concept="liA8E" id="_xUCda_lr2" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
-                <node concept="Xl_RD" id="_xUCda_lJc" role="37wK5m">
-                  <property role="Xl_RC" value="MatchAttributeString" />
+              <node concept="liA8E" id="46cQNHkb8uc" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="46cQNHkb9p2" role="37wK5m">
+                  <property role="Xl_RC" value="MatchAttribute" />
                 </node>
               </node>
             </node>
@@ -1085,19 +1077,20 @@
               </node>
               <node concept="3clFbH" id="_xUCdaACvQ" role="3cqZAp" />
             </node>
-            <node concept="3fqX7Q" id="_xUCdaAJH3" role="3clFbw">
-              <node concept="2OqwBi" id="_xUCdaAJH5" role="3fr31v">
+            <node concept="2OqwBi" id="46cQNHkbAYx" role="3clFbw">
+              <node concept="2OqwBi" id="46cQNHkb$$k" role="2Oq$k0">
                 <node concept="2OqwBi" id="_xUCdaAJH6" role="2Oq$k0">
                   <node concept="21POm0" id="_xUCdaAJH7" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="_xUCdaAJH8" role="2OqNvi">
-                    <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
-                  </node>
+                  <node concept="2yIwOk" id="46cQNHkbzq2" role="2OqNvi" />
                 </node>
-                <node concept="liA8E" id="_xUCdaAJH9" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
-                  <node concept="Xl_RD" id="_xUCdaAJHa" role="37wK5m">
-                    <property role="Xl_RC" value="MatchAttributeString" />
-                  </node>
+                <node concept="liA8E" id="46cQNHkb_H5" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+              <node concept="liA8E" id="46cQNHkbCHA" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="Xl_RD" id="46cQNHkbDGu" role="37wK5m">
+                  <property role="Xl_RC" value="ApplyAttribute" />
                 </node>
               </node>
             </node>

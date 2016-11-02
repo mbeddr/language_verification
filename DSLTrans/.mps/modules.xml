@@ -7,6 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/simpleInputLanguage/simpleInputLanguage.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/simpleInputLanguage2/simpleInputLanguage2.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/simpleOutputLanguage/simpleOutputLanguage.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/transverif.core/transfverif.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.lib/DSLTrans.lib.msd" folder="" />
@@ -14,9 +15,11 @@
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPerson/ExFamToPerson.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf2/ExperimentTransf2.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf3/ExperimentTransf3.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf4/ExperimentTransf4.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/Experiments/ExperimentTransf.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/RunnerPlugin/RunnerPlugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/inputModel/inputModel.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/inputModel2/inputModel2.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/outputModel/outputModel.msd" folder="examples" />
     </projectModules>

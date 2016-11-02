@@ -4,7 +4,9 @@
   <languages>
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="oqdb" ref="r:f423ea52-17a3-4af5-a991-70c01d00f018(simpleInputLanguage.structure)" implicit="true" />
+  </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
@@ -18,17 +20,20 @@
       </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
+        <child id="6292131328146430401" name="property" index="1157Rq" />
       </concept>
       <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
         <property id="7049464676098553445" name="atom" index="2ik0Mw" />
       </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
       <concept id="7049464676098553454" name="transfverif.core.structure.AttributeRef" flags="ng" index="2ik0MF">
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
@@ -43,10 +48,12 @@
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+        <child id="2459688670039252697" name="concept" index="pB8W9" />
       </concept>
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
         <child id="2796321687635932077" name="attributes" index="13z3hJ" />
       </concept>
+      <concept id="2210469722644160506" name="transfverif.core.structure.ForceTraceability" flags="ng" index="1imNlU" />
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
       <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
       <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
@@ -60,6 +67,7 @@
         <child id="2829711462939238353" name="outputLanguage" index="1y7jx4" />
         <child id="2829711462939238350" name="inputLanguage" index="1y7jxr" />
       </concept>
+      <concept id="2829711462939369800" name="transfverif.core.structure.TVPropIDRefExpression" flags="ng" index="1y7Krt" />
     </language>
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
       <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7">
@@ -93,6 +101,13 @@
       <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
         <child id="1678062499342629861" name="moduleId" index="37shsm" />
@@ -182,19 +197,27 @@
           <node concept="1jGXXa" id="2IH$1p89vck" role="1jGXX7">
             <property role="13z3e$" value="Apply3" />
             <property role="13z3hU" value="A" />
-            <node concept="2ik0MC" id="2IH$1p8lztF" role="2ik0MI">
-              <property role="TrG5h" value="nameA" />
-              <node concept="2ik0MF" id="2IH$1p8lztR" role="2ik0MU">
-                <ref role="2ik0MN" node="2IH$1p8lztp" resolve="nameA" />
-              </node>
-            </node>
-            <node concept="2ik0MC" id="2IH$1p89vcp" role="2ik0MI">
-              <property role="TrG5h" value="ApplyAttribute" />
-              <node concept="2ik0M$" id="2IH$1p89vcv" role="2ik0MU">
-                <node concept="2ik0MB" id="2IH$1p89vcx" role="2ik0My">
-                  <property role="2ik0Mw" value="solveref" />
+            <node concept="2ik0MC" id="5ti91GmipxS" role="2ik0MI">
+              <property role="TrG5h" value="applyAttribute" />
+              <node concept="2ik0M$" id="5ti91Gmipy1" role="2ik0MU">
+                <node concept="2ik0MB" id="5ti91Gmipy3" role="2ik0My">
+                  <property role="2ik0Mw" value="solveRef" />
                 </node>
               </node>
+              <node concept="1imNlU" id="5ti91GmipxZ" role="1157Rj" />
+            </node>
+            <node concept="2ik0MC" id="5ti91Gmipxj" role="2ik0MI">
+              <property role="TrG5h" value="nameA" />
+              <node concept="2ik0MF" id="5ti91GmipxA" role="2ik0MU">
+                <ref role="2ik0MN" node="5ti91Gmipsc" resolve="nameA" />
+              </node>
+              <node concept="1y7Krt" id="5ti91Gmipxr" role="1157Rj">
+                <ref role="355D3t" to="oqdb:6HyGJ_oty0z" resolve="A" />
+                <ref role="355D3u" to="oqdb:6HyGJ_oty0$" resolve="nameA" />
+              </node>
+            </node>
+            <node concept="pBohH" id="46cQNHjQ7sk" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
             </node>
           </node>
           <node concept="37mRI7" id="6PkVIr7qDGc" role="lGtFl">
@@ -269,10 +292,17 @@
           <node concept="2ik0NV" id="6PkVIr7qyVh" role="13z3mo">
             <property role="13z3e$" value="Any4" />
             <property role="13z3hU" value="A" />
-            <node concept="2ik0M_" id="2IH$1p8lztp" role="13z3hJ">
+            <node concept="pBohH" id="46cQNHjQ7s4" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
+            </node>
+            <node concept="2ik0M_" id="5ti91Gmipsc" role="13z3hJ">
               <property role="TrG5h" value="nameA" />
-              <node concept="13yNan" id="2IH$1p8lztv" role="2ik0Q0">
-                <node concept="13yPN0" id="2IH$1p8lztB" role="2F1HV6" />
+              <node concept="13yNan" id="5ti91Gmipsr" role="2ik0Q0">
+                <node concept="13yPN0" id="5ti91Gmipsx" role="2F1HV6" />
+              </node>
+              <node concept="1y7Krt" id="5ti91Gmipse" role="1157Rq">
+                <ref role="355D3t" to="oqdb:6HyGJ_oty0z" resolve="A" />
+                <ref role="355D3u" to="oqdb:6HyGJ_oty0$" resolve="nameA" />
               </node>
             </node>
           </node>
@@ -373,13 +403,17 @@
           <node concept="1jGXXa" id="4mULXgbB7By" role="1jGXX7">
             <property role="13z3e$" value="Apply0" />
             <property role="13z3hU" value="C" />
-            <node concept="2ik0MC" id="2IH$1p89vdc" role="2ik0MI">
-              <property role="TrG5h" value="ApplyAttribute" />
-              <node concept="2ik0M$" id="2IH$1p89vdi" role="2ik0MU">
-                <node concept="2ik0MB" id="2IH$1p89vdk" role="2ik0My">
-                  <property role="2ik0Mw" value="solveref" />
+            <node concept="pBohH" id="46cQNHjQ7su" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLF" resolve="C" />
+            </node>
+            <node concept="2ik0MC" id="5ti91Gmipy7" role="2ik0MI">
+              <property role="TrG5h" value="applyAttribute" />
+              <node concept="2ik0M$" id="5ti91Gmipyd" role="2ik0MU">
+                <node concept="2ik0MB" id="5ti91Gmipyf" role="2ik0My">
+                  <property role="2ik0Mw" value="solveRef" />
                 </node>
               </node>
+              <node concept="1imNlU" id="5ti91Gmipyb" role="1157Rj" />
             </node>
           </node>
         </node>
@@ -388,6 +422,9 @@
           <node concept="2ik0NV" id="4mULXgbB7Bi" role="13z3mo">
             <property role="13z3e$" value="Any0" />
             <property role="13z3hU" value="B" />
+            <node concept="pBohH" id="46cQNHjQ7sp" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLE" resolve="B" />
+            </node>
           </node>
         </node>
       </node>
@@ -401,10 +438,16 @@
           <node concept="1jGXXa" id="4mULXgbBjGn" role="1jGXX7">
             <property role="13z3e$" value="Apply3" />
             <property role="13z3hU" value="A" />
+            <node concept="pBohH" id="46cQNHjQ7sH" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
+            </node>
           </node>
           <node concept="1jGXXa" id="4mULXgbB7Jj" role="1jGXX7">
             <property role="13z3e$" value="Apply2" />
             <property role="13z3hU" value="C" />
+            <node concept="pBohH" id="46cQNHjQ7sM" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLF" resolve="C" />
+            </node>
           </node>
           <node concept="1jGXXa" id="2IH$1p8bqja" role="1jGXX7">
             <property role="13z3e$" value="Apply4" />
@@ -416,6 +459,13 @@
                   <property role="2ik0Mw" value="blabla" />
                 </node>
               </node>
+              <node concept="1y7Krt" id="5ti91Gmk8eT" role="1157Rj">
+                <ref role="355D3t" to="oqdb:Dn$Lr8cmLE" resolve="B" />
+                <ref role="355D3u" to="oqdb:2IH$1p89vdX" resolve="nameB" />
+              </node>
+            </node>
+            <node concept="pBohH" id="46cQNHjQ7sR" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLE" resolve="B" />
             </node>
           </node>
           <node concept="1jGXVd" id="4mULXgbBjGs" role="2ik0Ml">
@@ -423,16 +473,27 @@
             <ref role="13xwDP" node="4mULXgbBjGn" />
             <ref role="13xwDU" node="4mULXgbB7Jj" />
           </node>
+          <node concept="1jGXVd" id="4HOlOngngzm" role="2ik0Ml">
+            <property role="aCCiF" value="bs" />
+            <ref role="13xwDP" node="4mULXgbBjGn" />
+            <ref role="13xwDU" node="2IH$1p8bqja" />
+          </node>
         </node>
         <node concept="3GsvpN" id="4mULXgbB7IW" role="2ik0Mu">
           <property role="KJs$L" value="3" />
           <node concept="2ik0NV" id="2IH$1p89vcU" role="13z3mo">
             <property role="13z3e$" value="Any2" />
             <property role="13z3hU" value="B" />
+            <node concept="pBohH" id="46cQNHjQ7sz" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:Dn$Lr8cmLE" resolve="B" />
+            </node>
           </node>
           <node concept="2ik0NV" id="4mULXgbB7IZ" role="13z3mo">
             <property role="13z3e$" value="Any0" />
             <property role="13z3hU" value="A" />
+            <node concept="pBohH" id="46cQNHjQ7sC" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
+            </node>
           </node>
         </node>
         <node concept="1jGXV2" id="2IH$1p843eg" role="2udmAx">

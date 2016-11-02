@@ -2,8 +2,8 @@
 <model ref="r:f423ea52-17a3-4af5-a991-70c01d00f018(simpleInputLanguage.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -85,15 +85,15 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="Dn$Lr8cmLE" resolve="B" />
     </node>
-    <node concept="1TJgyj" id="6HyGJ_oty0C" role="1TKVEi">
-      <property role="IQ2ns" value="7737943893776670760" />
+    <node concept="1TJgyj" id="46cQNHjvPtu" role="1TKVEi">
+      <property role="IQ2ns" value="4723391157055215454" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cs" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="Dn$Lr8cmLF" resolve="C" />
     </node>
-    <node concept="1TJgyj" id="6HyGJ_oty0F" role="1TKVEi">
-      <property role="IQ2ns" value="7737943893776670763" />
+    <node concept="1TJgyj" id="46cQNHjvPtx" role="1TKVEi">
+      <property role="IQ2ns" value="4723391157055215457" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ds" />
       <property role="20lbJX" value="0..n" />
