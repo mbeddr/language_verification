@@ -94,6 +94,11 @@
         <child id="3065370308850962716" name="inputModule" index="ABjci" />
         <child id="7769237388006044628" name="layer" index="3k6lfD" />
       </concept>
+      <concept id="872517429970413873" name="DSLTrans.structure.VerificationConfig" flags="ng" index="3tCIjb">
+        <property id="872517429970413874" name="dependencyPath" index="3tCIj8" />
+        <property id="872517429970413879" name="ecorePath" index="3tCIjd" />
+        <property id="872517429970413876" name="transformationPath" index="3tCIje" />
+      </concept>
       <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
       <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
     </language>
@@ -480,9 +485,9 @@
       </node>
     </node>
     <node concept="pHN19" id="75JtzgfMA6c" role="1y7jx4">
-      <node concept="2V$Bhx" id="Dn$Lr8c47u" role="2V$M_3">
-        <property role="2V$B1T" value="443933c7-2e65-4840-9493-341bfee78b6f" />
-        <property role="2V$B1Q" value="simpleInputLanguage" />
+      <node concept="2V$Bhx" id="KrNvFhMQel" role="2V$M_3">
+        <property role="2V$B1T" value="cb4551c1-1ee1-4aa5-a83b-23aec6d7e712" />
+        <property role="2V$B1Q" value="simpleOutputLanguage" />
       </node>
     </node>
     <node concept="37mRI7" id="57pZU2XSBW6" role="lGtFl">
@@ -1170,6 +1175,12 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3tCIjb" id="KrNvFhLeX1">
+    <property role="3tCIj8" value="/" />
+    <property role="3tCIje" value="/home/ss/verification/transformation/" />
+    <property role="3tCIjd" value="/home/ss/verification/ecore/" />
+    <property role="TrG5h" value="zwei" />
   </node>
 </model>
 

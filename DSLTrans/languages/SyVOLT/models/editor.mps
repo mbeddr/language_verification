@@ -1544,5 +1544,33 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2gP53FquMc">
+    <property role="3GE5qa" value="Config" />
+    <ref role="1XX52x" to="yeb1:2gP53Fn_hS" resolve="Config" />
+    <node concept="3EZMnI" id="2gP53FquMe" role="2wV5jI">
+      <node concept="3F0ifn" id="2gP53FquMl" role="3EZMnx">
+        <property role="3F0ifm" value="Config" />
+      </node>
+      <node concept="3F0ifn" id="2gP53FquMr" role="3EZMnx">
+        <property role="3F0ifm" value="File" />
+      </node>
+      <node concept="3F0ifn" id="2gP53FquMz" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0ifn" id="2gP53FquMH" role="3EZMnx">
+        <property role="3F0ifm" value="Rule Set and Contract Path:" />
+      </node>
+      <node concept="3F0A7n" id="2gP53FquN0" role="3EZMnx">
+        <ref role="1NtTu8" to="yeb1:2gP53Fn_hV" resolve="contractsPath" />
+      </node>
+      <node concept="3F0ifn" id="2gP53FquNe" role="3EZMnx">
+        <property role="3F0ifm" value="Dependency Path:" />
+      </node>
+      <node concept="3F0A7n" id="2gP53FquNB" role="3EZMnx">
+        <ref role="1NtTu8" to="yeb1:2gP53Fn_hT" resolve="dependencyPath" />
+      </node>
+      <node concept="l2Vlx" id="2gP53FquMh" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

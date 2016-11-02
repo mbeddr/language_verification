@@ -12,6 +12,7 @@
     <import index="5sfo" ref="r:0eb1a231-68cf-4d6a-81d5-53440a19b42b(SyVOLT.textGen)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -184,7 +185,11 @@
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -239,6 +244,7 @@
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
@@ -803,6 +809,29 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="KrNvFhLjWD" role="3cqZAp">
+          <node concept="3cpWsn" id="KrNvFhLjWG" role="3cpWs9">
+            <property role="TrG5h" value="path" />
+            <node concept="17QB3L" id="KrNvFhZ_iP" role="1tU5fm" />
+            <node concept="2OqwBi" id="KrNvFi0U2y" role="33vP2m">
+              <node concept="2OqwBi" id="KrNvFhWsnT" role="2Oq$k0">
+                <node concept="2OqwBi" id="KrNvFhWo5U" role="2Oq$k0">
+                  <node concept="2OqwBi" id="KrNvFhWfz9" role="2Oq$k0">
+                    <node concept="13iPFW" id="KrNvFhWeyR" role="2Oq$k0" />
+                    <node concept="I4A8Y" id="KrNvFhWmXM" role="2OqNvi" />
+                  </node>
+                  <node concept="2RRcyG" id="KrNvFhWoZK" role="2OqNvi">
+                    <ref role="2RRcyH" to="rr4f:KrNvFhIi$L" resolve="VerificationConfig" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="KrNvFi0SDY" role="2OqNvi" />
+              </node>
+              <node concept="3TrcHB" id="KrNvFi0WCc" role="2OqNvi">
+                <ref role="3TsBF5" to="rr4f:KrNvFhIi$O" resolve="transformationPath" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="4YYlhfPxH0o" role="3cqZAp">
           <node concept="3cpWsn" id="4YYlhfPxH0p" role="3cpWs9">
             <property role="TrG5h" value="pythonClassName" />
@@ -873,8 +902,13 @@
             <node concept="2ShNRf" id="4YYlhfPxH0D" role="33vP2m">
               <node concept="1pGfFk" id="4YYlhfPxH0E" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="4YYlhfPzdDV" role="37wK5m">
-                  <ref role="3cqZAo" node="4YYlhfPyUTP" resolve="filename" />
+                <node concept="3cpWs3" id="KrNvFi0XT_" role="37wK5m">
+                  <node concept="37vLTw" id="KrNvFi0ZCd" role="3uHU7B">
+                    <ref role="3cqZAo" node="KrNvFhLjWG" resolve="path" />
+                  </node>
+                  <node concept="37vLTw" id="4YYlhfPzdDV" role="3uHU7w">
+                    <ref role="3cqZAo" node="4YYlhfPyUTP" resolve="filename" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2226,6 +2260,30 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="KrNvFi1Ekr" role="3cqZAp">
+          <node concept="3cpWsn" id="KrNvFi1Eks" role="3cpWs9">
+            <property role="TrG5h" value="path" />
+            <node concept="17QB3L" id="KrNvFi1Ekt" role="1tU5fm" />
+            <node concept="2OqwBi" id="KrNvFi1Eku" role="33vP2m">
+              <node concept="2OqwBi" id="KrNvFi1Ekv" role="2Oq$k0">
+                <node concept="2OqwBi" id="KrNvFi1Ekw" role="2Oq$k0">
+                  <node concept="2OqwBi" id="KrNvFi1Ekx" role="2Oq$k0">
+                    <node concept="13iPFW" id="KrNvFi1Eky" role="2Oq$k0" />
+                    <node concept="I4A8Y" id="KrNvFi1Ekz" role="2OqNvi" />
+                  </node>
+                  <node concept="2RRcyG" id="KrNvFi1Ek$" role="2OqNvi">
+                    <ref role="2RRcyH" to="rr4f:KrNvFhIi$L" resolve="VerificationConfig" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="KrNvFi1Ek_" role="2OqNvi" />
+              </node>
+              <node concept="3TrcHB" id="KrNvFi1EkA" role="2OqNvi">
+                <ref role="3TsBF5" to="rr4f:KrNvFhIi$O" resolve="transformationPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="KrNvFi1CZm" role="3cqZAp" />
         <node concept="3cpWs8" id="6XxPrVIz4J9" role="3cqZAp">
           <node concept="3cpWsn" id="6XxPrVIz4Ja" role="3cpWs9">
             <property role="TrG5h" value="pythonClassName" />
@@ -2283,8 +2341,13 @@
             <node concept="2ShNRf" id="6XxPrVIz4Jy" role="33vP2m">
               <node concept="1pGfFk" id="6XxPrVIz4Jz" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="6XxPrVIz4J$" role="37wK5m">
-                  <ref role="3cqZAo" node="6XxPrVIz4Ji" resolve="filename" />
+                <node concept="3cpWs3" id="KrNvFi1GVd" role="37wK5m">
+                  <node concept="37vLTw" id="KrNvFi1HD6" role="3uHU7w">
+                    <ref role="3cqZAo" node="6XxPrVIz4Ji" resolve="filename" />
+                  </node>
+                  <node concept="37vLTw" id="KrNvFi1FWh" role="3uHU7B">
+                    <ref role="3cqZAo" node="KrNvFi1Eks" resolve="path" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -3501,6 +3564,30 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="KrNvFi1IPW" role="3cqZAp">
+          <node concept="3cpWsn" id="KrNvFi1IPX" role="3cpWs9">
+            <property role="TrG5h" value="path" />
+            <node concept="17QB3L" id="KrNvFi1IPY" role="1tU5fm" />
+            <node concept="2OqwBi" id="KrNvFi1IPZ" role="33vP2m">
+              <node concept="2OqwBi" id="KrNvFi1IQ0" role="2Oq$k0">
+                <node concept="2OqwBi" id="KrNvFi1IQ1" role="2Oq$k0">
+                  <node concept="2OqwBi" id="KrNvFi1IQ2" role="2Oq$k0">
+                    <node concept="13iPFW" id="KrNvFi1IQ3" role="2Oq$k0" />
+                    <node concept="I4A8Y" id="KrNvFi1IQ4" role="2OqNvi" />
+                  </node>
+                  <node concept="2RRcyG" id="KrNvFi1IQ5" role="2OqNvi">
+                    <ref role="2RRcyH" to="rr4f:KrNvFhIi$L" resolve="VerificationConfig" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="KrNvFi1IQ6" role="2OqNvi" />
+              </node>
+              <node concept="3TrcHB" id="KrNvFi1IQ7" role="2OqNvi">
+                <ref role="3TsBF5" to="rr4f:KrNvFhIi$O" resolve="transformationPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="KrNvFi1IqD" role="3cqZAp" />
         <node concept="3cpWs8" id="6XxPrVIzZNt" role="3cqZAp">
           <node concept="3cpWsn" id="6XxPrVIzZNu" role="3cpWs9">
             <property role="TrG5h" value="pythonClassName" />
@@ -3558,8 +3645,13 @@
             <node concept="2ShNRf" id="6XxPrVIzZNQ" role="33vP2m">
               <node concept="1pGfFk" id="6XxPrVIzZNR" role="2ShVmc">
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="6XxPrVIzZNS" role="37wK5m">
-                  <ref role="3cqZAo" node="6XxPrVIzZNA" resolve="filename" />
+                <node concept="3cpWs3" id="KrNvFi1JCj" role="37wK5m">
+                  <node concept="37vLTw" id="KrNvFi1K7L" role="3uHU7B">
+                    <ref role="3cqZAo" node="KrNvFi1IPX" resolve="path" />
+                  </node>
+                  <node concept="37vLTw" id="6XxPrVIzZNS" role="3uHU7w">
+                    <ref role="3cqZAo" node="6XxPrVIzZNA" resolve="filename" />
+                  </node>
                 </node>
               </node>
             </node>
