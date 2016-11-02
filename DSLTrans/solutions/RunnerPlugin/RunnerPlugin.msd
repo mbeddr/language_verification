@@ -14,6 +14,7 @@
     <dependency reexport="false">4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7(DSLTrans)</dependency>
     <dependency reexport="false">4a49fceb-ecd0-4e6c-8f19-a17f566bae9d(DSLTransRunner)</dependency>
     <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
+    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7:DSLTrans" version="0" />
@@ -33,6 +34,8 @@
     <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="1" />
     <language slang="l:ef7bf5ac-d06c-4342-b11d-e42104eb9343:jetbrains.mps.lang.plugin.standalone" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />
+    <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="3" />
+    <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8:transfverif.core" version="0" />
   </languageVersions>

@@ -15,7 +15,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf2/ExperimentTransf2.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf3/ExperimentTransf3.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/Experiments/ExperimentTransf.msd" folder="examples" />
-      <modulePath path="$PROJECT_DIR$/solutions/RunnerPlugin/RunnerPlugin.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/RunnerPlugin/RunnerPlugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/inputModel/inputModel.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/outputModel/outputModel.msd" folder="examples" />

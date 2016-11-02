@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -41,6 +42,7 @@
   <node concept="1TIwiD" id="Dn$Lr8cmLE">
     <property role="TrG5h" value="B" />
     <property role="EcuMT" value="745225989410352234" />
+    <property role="34LRSv" value="B" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2IH$1p89vdX" role="1TKVEl">
       <property role="IQ2nx" value="3147330139975971709" />
@@ -51,6 +53,7 @@
   <node concept="1TIwiD" id="Dn$Lr8cmLF">
     <property role="TrG5h" value="C" />
     <property role="EcuMT" value="745225989410352235" />
+    <property role="34LRSv" value="C" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2IH$1p8bnxd" role="1TKVEl">
       <property role="IQ2nx" value="3147330139976464461" />
@@ -61,12 +64,14 @@
   <node concept="1TIwiD" id="Dn$Lr8cmLG">
     <property role="TrG5h" value="D" />
     <property role="EcuMT" value="745225989410352236" />
+    <property role="34LRSv" value="D" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6HyGJ_oty0z">
     <property role="EcuMT" value="7737943893776670755" />
     <property role="TrG5h" value="A" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="A" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="6HyGJ_oty0$" role="1TKVEl">
       <property role="IQ2nx" value="7737943893776670756" />
