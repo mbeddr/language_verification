@@ -616,6 +616,9 @@
               <node concept="37vLTw" id="75zsbcX6hHA" role="37wK5m">
                 <ref role="3cqZAo" node="75zsbcX5XfD" resolve="transformationPath" />
               </node>
+              <node concept="37vLTw" id="75zsbcXbLqk" role="37wK5m">
+                <ref role="3cqZAo" node="75zsbcX5VUA" resolve="ecorePath" />
+              </node>
             </node>
           </node>
         </node>
@@ -1745,7 +1748,7 @@
   </node>
   <node concept="3tCIjb" id="75zsbcX5_P9">
     <property role="TrG5h" value="PluginConfig" />
-    <property role="3tCIj8" value="/Users/levilucio/fortiss/SyVOLT" />
+    <property role="3tCIj8" value="/Users/levilucio/fortiss/SyVOLT/" />
     <property role="3tCIje" value="/Users/levilucio/tmp/" />
     <property role="3tCIjd" value="/Users/levilucio/tmp/" />
     <property role="3GE5qa" value="config" />

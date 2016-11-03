@@ -5223,7 +5223,7 @@
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                 <node concept="3cpWs3" id="KrNvFi251X" role="37wK5m">
                   <node concept="37vLTw" id="KrNvFi25Ws" role="3uHU7B">
-                    <ref role="3cqZAo" node="75zsbcX697x" resolve="path" />
+                    <ref role="3cqZAo" node="75zsbcX697x" resolve="transformationPath" />
                   </node>
                   <node concept="Xl_RD" id="1j60nTi_T3l" role="3uHU7w">
                     <property role="Xl_RC" value="toplevel.py" />
@@ -5522,9 +5522,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="1j60nTi$8sG" role="3cqZAp" />
-                <node concept="3clFbH" id="1j60nTi$8os" role="3cqZAp" />
-                <node concept="3clFbH" id="1j60nTi$8kd" role="3cqZAp" />
               </node>
             </node>
             <node concept="3clFbH" id="1j60nTi$5LZ" role="3cqZAp" />
@@ -5588,15 +5585,20 @@
                 </node>
                 <node concept="liA8E" id="1j60nTi$iYO" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                  <node concept="2OqwBi" id="1j60nTi_8Vr" role="37wK5m">
-                    <node concept="2OqwBi" id="1j60nTi$jvM" role="2Oq$k0">
-                      <node concept="13iPFW" id="1j60nTi$j85" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="1j60nTi_8uW" role="2OqNvi">
-                        <ref role="37wK5l" node="2t59Tl5mnum" resolve="inputLanguage" />
-                      </node>
+                  <node concept="3cpWs3" id="75zsbcXbR3I" role="37wK5m">
+                    <node concept="37vLTw" id="75zsbcXbRED" role="3uHU7B">
+                      <ref role="3cqZAo" node="75zsbcXbPKu" resolve="ecorePath" />
                     </node>
-                    <node concept="liA8E" id="1j60nTi_9i1" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                    <node concept="2OqwBi" id="1j60nTi_8Vr" role="3uHU7w">
+                      <node concept="2OqwBi" id="1j60nTi$jvM" role="2Oq$k0">
+                        <node concept="13iPFW" id="1j60nTi$j85" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="1j60nTi_8uW" role="2OqNvi">
+                          <ref role="37wK5l" node="2t59Tl5mnum" resolve="inputLanguage" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1j60nTi_9i1" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -5635,15 +5637,20 @@
                 </node>
                 <node concept="liA8E" id="1j60nTi$nZr" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                  <node concept="2OqwBi" id="1j60nTi_9uW" role="37wK5m">
-                    <node concept="2OqwBi" id="1j60nTi_9uX" role="2Oq$k0">
-                      <node concept="13iPFW" id="1j60nTi_9uY" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="1j60nTi_9uZ" role="2OqNvi">
-                        <ref role="37wK5l" node="2t59Tl5mnum" resolve="inputLanguage" />
-                      </node>
+                  <node concept="3cpWs3" id="75zsbcXbTcl" role="37wK5m">
+                    <node concept="37vLTw" id="75zsbcXbTNY" role="3uHU7B">
+                      <ref role="3cqZAo" node="75zsbcXbPKu" resolve="ecorePath" />
                     </node>
-                    <node concept="liA8E" id="1j60nTi_9v0" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                    <node concept="2OqwBi" id="1j60nTi_9uW" role="3uHU7w">
+                      <node concept="2OqwBi" id="1j60nTi_9uX" role="2Oq$k0">
+                        <node concept="13iPFW" id="1j60nTi_9uY" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="1j60nTi_9uZ" role="2OqNvi">
+                          <ref role="37wK5l" node="2t59Tl5mnum" resolve="inputLanguage" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="1j60nTi_9v0" role="2OqNvi">
+                        <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -5974,8 +5981,12 @@
         <node concept="3clFbH" id="1j60nTizD1p" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="75zsbcX697x" role="3clF46">
-        <property role="TrG5h" value="path" />
+        <property role="TrG5h" value="transformationPath" />
         <node concept="17QB3L" id="75zsbcX697w" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="75zsbcXbPKu" role="3clF46">
+        <property role="TrG5h" value="ecorePath" />
+        <node concept="17QB3L" id="75zsbcXbQhB" role="1tU5fm" />
       </node>
     </node>
     <node concept="13hLZK" id="2t59Tl5mnuk" role="13h7CW">
