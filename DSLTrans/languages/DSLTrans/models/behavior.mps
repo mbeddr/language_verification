@@ -67,9 +67,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -177,11 +174,7 @@
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
-      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
-      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -236,7 +229,6 @@
         <child id="1197687026896" name="keyType" index="3rHrn6" />
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
@@ -753,29 +745,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7rNOiA33LO2" role="3cqZAp" />
-        <node concept="3cpWs8" id="KrNvFi1IPW" role="3cqZAp">
-          <node concept="3cpWsn" id="KrNvFi1IPX" role="3cpWs9">
-            <property role="TrG5h" value="path" />
-            <node concept="17QB3L" id="KrNvFi1IPY" role="1tU5fm" />
-            <node concept="2OqwBi" id="KrNvFi1IPZ" role="33vP2m">
-              <node concept="2OqwBi" id="KrNvFi1IQ0" role="2Oq$k0">
-                <node concept="2OqwBi" id="KrNvFi1IQ1" role="2Oq$k0">
-                  <node concept="2OqwBi" id="KrNvFi1IQ2" role="2Oq$k0">
-                    <node concept="13iPFW" id="KrNvFi1IQ3" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="KrNvFi1IQ4" role="2OqNvi" />
-                  </node>
-                  <node concept="2RRcyG" id="KrNvFi1IQ5" role="2OqNvi">
-                    <ref role="2RRcyH" to="rr4f:KrNvFhIi$L" resolve="VerificationConfig" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="KrNvFi1IQ6" role="2OqNvi" />
-              </node>
-              <node concept="3TrcHB" id="KrNvFi1IQ7" role="2OqNvi">
-                <ref role="3TsBF5" to="rr4f:KrNvFhIi$O" resolve="transformationPath" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="KrNvFi1SoW" role="3cqZAp" />
         <node concept="3cpWs8" id="7rNOiA33QxT" role="3cqZAp">
           <node concept="3cpWsn" id="7rNOiA33QxU" role="3cpWs9">
@@ -791,14 +760,11 @@
                     <property role="Xl_RC" value=".py" />
                   </node>
                   <node concept="3cpWs3" id="KrNvFi1XU5" role="3uHU7B">
-                    <node concept="37vLTw" id="KrNvFi213e" role="3uHU7B">
-                      <ref role="3cqZAo" node="KrNvFi1IPX" resolve="path" />
+                    <node concept="37vLTw" id="5PBkhXSe_Cp" role="3uHU7B">
+                      <ref role="3cqZAo" node="5PBkhXSevug" resolve="path" />
                     </node>
-                    <node concept="2OqwBi" id="1j60nTiCy__" role="3uHU7w">
-                      <node concept="13iPFW" id="1j60nTiCxnR" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="1j60nTiC_y0" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                      </node>
+                    <node concept="37vLTw" id="5PBkhXSeUZr" role="3uHU7w">
+                      <ref role="3cqZAo" node="7rNOiA34Muy" resolve="name" />
                     </node>
                   </node>
                 </node>
@@ -807,30 +773,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7rNOiA3xhG5" role="3cqZAp" />
-        <node concept="3clFbF" id="7rNOiA3xnIB" role="3cqZAp">
-          <node concept="2OqwBi" id="7rNOiA3xv0M" role="3clFbG">
-            <node concept="10M0yZ" id="7rNOiA3xqxw" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="7rNOiA3xxwr" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7rNOiA3xBp2" role="37wK5m">
-                <node concept="2YIFZM" id="7rNOiA3xDUP" role="3uHU7w">
-                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                  <node concept="Xl_RD" id="7rNOiA3xEsV" role="37wK5m">
-                    <property role="Xl_RC" value="user.dir" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="7rNOiA3xyqU" role="3uHU7B">
-                  <property role="Xl_RC" value="the user directory is " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7rNOiA3402v" role="3cqZAp" />
         <node concept="SfApY" id="7rNOiA3433i" role="3cqZAp">
           <node concept="3clFbS" id="7rNOiA3433k" role="SfCbr">
             <node concept="3clFbH" id="7rNOiA3433j" role="3cqZAp" />
@@ -5170,6 +5112,10 @@
       <node concept="37vLTG" id="7rNOiA34Muy" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="7rNOiA34Mux" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5PBkhXSevug" role="3clF46">
+        <property role="TrG5h" value="path" />
+        <node concept="17QB3L" id="5PBkhXSexgy" role="1tU5fm" />
       </node>
     </node>
     <node concept="13hLZK" id="3QsrawRj3l1" role="13h7CW">
