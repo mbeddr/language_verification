@@ -6,7 +6,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
+    <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
   </languages>
   <imports>
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" />
@@ -21,12 +21,12 @@
     <import index="hu10" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.common.util(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="hulx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.ecore.resource.impl(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="70if" ref="r:9109930e-6a35-42eb-9296-670068affeb2(DSLTrans.behavior)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" implicit="true" />
-    <import index="zo2d" ref="r:dd550aea-2b00-4668-98bd-5bd26d5c1fc5(SyVOLT.behavior)" implicit="true" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
+    <import index="70if" ref="r:9109930e-6a35-42eb-9296-670068affeb2(DSLTrans.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="zo2d" ref="r:dd550aea-2b00-4668-98bd-5bd26d5c1fc5(SyVOLT.behavior)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -108,6 +108,7 @@
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -193,17 +194,16 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
-    <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
-      <concept id="872517429970413873" name="DSLTrans.structure.VerificationConfig" flags="ng" index="3tCIjb">
-        <property id="872517429970413874" name="dependencyPath" index="3tCIj8" />
-        <property id="872517429970413879" name="ecorePath" index="3tCIjd" />
-        <property id="872517429970413876" name="transformationPath" index="3tCIje" />
-      </concept>
-    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
       <concept id="1205756064662" name="jetbrains.mps.baseLanguage.classifiers.structure.IMemberOperation" flags="ng" index="2WEnae">
         <reference id="1205756909548" name="member" index="2WH_rO" />
+      </concept>
+    </language>
+    <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
+      <concept id="872517429970413873" name="SyVOLT.structure.VerificationConfig" flags="ng" index="3tCIjb">
+        <property id="872517429970413874" name="syvoltEnginePath" index="3tCIj8" />
+        <property id="872517429970413879" name="syvoltBackendPath" index="3tCIjd" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -218,9 +218,6 @@
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
-      </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -263,159 +260,41 @@
     <property role="2uzpH1" value="Generate Transformation" />
     <node concept="tnohg" id="7rNOiA32K_G" role="tncku">
       <node concept="3clFbS" id="7rNOiA32K_H" role="2VODD2">
-        <node concept="1X3_iC" id="1j60nTiz9Sm" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="7rNOiA3vEX9" role="8Wnug">
-            <node concept="3cpWsn" id="7rNOiA3vEXc" role="3cpWs9">
-              <property role="TrG5h" value="moduleNode" />
-              <node concept="2OqwBi" id="7rNOiA3vIKw" role="33vP2m">
-                <node concept="2OqwBi" id="7rNOiA3vGpK" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7rNOiA3vFhn" role="2Oq$k0">
-                    <node concept="2WthIp" id="7rNOiA3vF0f" role="2Oq$k0" />
-                    <node concept="3gHZIF" id="7rNOiA3vZnr" role="2OqNvi">
-                      <ref role="2WH_rO" node="7rNOiA3vFOG" resolve="currentModel" />
-                    </node>
-                  </node>
-                  <node concept="2RRcyG" id="7rNOiA3vGBF" role="2OqNvi">
-                    <ref role="2RRcyH" to="rr4f:3ky2qXA$trv" resolve="Rule" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="7rNOiA3vNDn" role="2OqNvi" />
-              </node>
-              <node concept="3Tqbb2" id="7rNOiA3vNQl" role="1tU5fm">
-                <ref role="ehGHo" to="rr4f:3ky2qXA$trv" resolve="Rule" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="1j60nTiz9Sn" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="7rNOiA3vO2M" role="8Wnug">
-            <node concept="2OqwBi" id="7rNOiA3vObV" role="3clFbG">
-              <node concept="37vLTw" id="7rNOiA3vO2K" role="2Oq$k0">
-                <ref role="3cqZAo" node="7rNOiA3vEXc" resolve="moduleNode" />
-              </node>
-              <node concept="2qgKlT" id="7rNOiA3vOBJ" role="2OqNvi">
-                <ref role="37wK5l" to="70if:7rNOiA33qpT" resolve="generateTextGen" />
-                <node concept="2OqwBi" id="7rNOiA3vP5I" role="37wK5m">
-                  <node concept="37vLTw" id="7rNOiA3vORW" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7rNOiA3vEXc" resolve="moduleNode" />
-                  </node>
-                  <node concept="3TrcHB" id="7rNOiA3vPpw" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="1j60nTiz9So" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="7rNOiA3vS2o" role="8Wnug">
-            <node concept="2OqwBi" id="7rNOiA3vS$y" role="3clFbG">
-              <node concept="10M0yZ" id="7rNOiA3vS2n" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              </node>
-              <node concept="liA8E" id="7rNOiA3vTtX" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                <node concept="3cpWs3" id="7rNOiA3vTMh" role="37wK5m">
-                  <node concept="2OqwBi" id="7rNOiA3vU0G" role="3uHU7w">
-                    <node concept="37vLTw" id="7rNOiA3vTOU" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7rNOiA3vEXc" resolve="moduleNode" />
-                    </node>
-                    <node concept="3TrcHB" id="7rNOiA3vUtM" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="7rNOiA3vTuJ" role="3uHU7B">
-                    <property role="Xl_RC" value="the name is " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="3glPWev2hfn" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="4YYlhfProN9" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="1j60nTiz5Ts" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="4YYlhfPrqBP" role="8Wnug">
-            <node concept="3cpWsn" id="4YYlhfPrqBS" role="3cpWs9">
-              <property role="TrG5h" value="contract" />
-              <node concept="3Tqbb2" id="4YYlhfPrqBN" role="1tU5fm">
-                <ref role="ehGHo" to="yeb1:67kIGnNxbyT" resolve="AtomicContract" />
-              </node>
-              <node concept="2OqwBi" id="4YYlhfPrt_3" role="33vP2m">
-                <node concept="2OqwBi" id="4YYlhfPrrT7" role="2Oq$k0">
-                  <node concept="2OqwBi" id="4YYlhfPrr4_" role="2Oq$k0">
-                    <node concept="2WthIp" id="4YYlhfPrqQ6" role="2Oq$k0" />
-                    <node concept="3gHZIF" id="4YYlhfPrry8" role="2OqNvi">
-                      <ref role="2WH_rO" node="7rNOiA3vFOG" resolve="currentModel" />
-                    </node>
-                  </node>
-                  <node concept="2RRcyG" id="4YYlhfPrs76" role="2OqNvi">
-                    <ref role="2RRcyH" to="yeb1:67kIGnNxbyT" resolve="AtomicContract" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="4YYlhfPrwPG" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="1j60nTiz5Tt" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="4YYlhfPxemM" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="1j60nTiz5Tu" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="6XxPrVI_qok" role="8Wnug">
-            <node concept="2OqwBi" id="6XxPrVI_qx$" role="3clFbG">
-              <node concept="37vLTw" id="6XxPrVI_qoi" role="2Oq$k0">
-                <ref role="3cqZAo" node="4YYlhfPrqBS" resolve="contract" />
-              </node>
-              <node concept="2qgKlT" id="6XxPrVI_qXs" role="2OqNvi">
-                <ref role="37wK5l" to="zo2d:6XxPrVIzV71" resolve="generateIsolatedtextGen" />
-                <node concept="2OqwBi" id="6XxPrVI_rg4" role="37wK5m">
-                  <node concept="37vLTw" id="6XxPrVI_r2m" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4YYlhfPrqBS" resolve="contract" />
-                  </node>
-                  <node concept="3TrcHB" id="6XxPrVI_rLf" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7rNOiA32MAR" role="3cqZAp">
-          <node concept="2OqwBi" id="7rNOiA32MXB" role="3clFbG">
-            <node concept="10M0yZ" id="7rNOiA32MAQ" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="7rNOiA32NM8" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="7rNOiA32NOj" role="37wK5m">
-                <property role="Xl_RC" value="hi this is from inside the transformation" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="7rNOiA3sdqv" role="3cqZAp" />
-        <node concept="3clFbH" id="6XxPrVIxLvx" role="3cqZAp" />
+        <node concept="3cpWs8" id="75zsbcXeQmq" role="3cqZAp">
+          <node concept="3cpWsn" id="75zsbcXeQmo" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="ecoreDir" />
+            <node concept="17QB3L" id="75zsbcXeQRY" role="1tU5fm" />
+            <node concept="Xl_RD" id="75zsbcXeQTh" role="33vP2m">
+              <property role="Xl_RC" value="ecore/" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="75zsbcXeRoV" role="3cqZAp">
+          <node concept="3cpWsn" id="75zsbcXeRoT" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="transformationDir" />
+            <node concept="17QB3L" id="75zsbcXeRR_" role="1tU5fm" />
+            <node concept="Xl_RD" id="75zsbcXeRTe" role="33vP2m">
+              <property role="Xl_RC" value="transformation/" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="75zsbcXeSoD" role="3cqZAp">
+          <node concept="3cpWsn" id="75zsbcXeSoB" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="contractDir" />
+            <node concept="17QB3L" id="75zsbcXeSRn" role="1tU5fm" />
+            <node concept="Xl_RD" id="75zsbcXeSTe" role="33vP2m">
+              <property role="Xl_RC" value="contracts/" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="75zsbcXePRM" role="3cqZAp" />
         <node concept="3cpWs8" id="75zsbcX5VUz" role="3cqZAp">
           <node concept="3cpWsn" id="75zsbcX5VUA" role="3cpWs9">
-            <property role="TrG5h" value="ecorePath" />
+            <property role="TrG5h" value="syvoltEnginePath" />
             <node concept="17QB3L" id="75zsbcX5VUx" role="1tU5fm" />
             <node concept="2OqwBi" id="75zsbcX5WEN" role="33vP2m">
               <node concept="2OqwBi" id="75zsbcX5WEO" role="2Oq$k0">
@@ -425,20 +304,20 @@
                     <property role="BaGAP" value="" />
                   </node>
                   <node concept="2RRcyG" id="75zsbcX5WER" role="2OqNvi">
-                    <ref role="2RRcyH" to="rr4f:KrNvFhIi$L" resolve="VerificationConfig" />
+                    <ref role="2RRcyH" to="yeb1:KrNvFhIi$L" resolve="VerificationConfig" />
                   </node>
                 </node>
                 <node concept="1uHKPH" id="75zsbcX5WES" role="2OqNvi" />
               </node>
-              <node concept="3TrcHB" id="75zsbcX5WET" role="2OqNvi">
-                <ref role="3TsBF5" to="rr4f:KrNvFhIi$R" resolve="ecorePath" />
+              <node concept="3TrcHB" id="75zsbcXeYz6" role="2OqNvi">
+                <ref role="3TsBF5" to="yeb1:KrNvFhIi$M" resolve="syvoltEnginePath" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3cpWs8" id="75zsbcX5XfA" role="3cqZAp">
           <node concept="3cpWsn" id="75zsbcX5XfD" role="3cpWs9">
-            <property role="TrG5h" value="transformationPath" />
+            <property role="TrG5h" value="syvoltBackendPath" />
             <node concept="17QB3L" id="75zsbcX5Xf$" role="1tU5fm" />
             <node concept="2OqwBi" id="75zsbcX5Y35" role="33vP2m">
               <node concept="2OqwBi" id="75zsbcX5Y36" role="2Oq$k0">
@@ -448,36 +327,13 @@
                     <property role="BaGAP" value="" />
                   </node>
                   <node concept="2RRcyG" id="75zsbcX5Y39" role="2OqNvi">
-                    <ref role="2RRcyH" to="rr4f:KrNvFhIi$L" resolve="VerificationConfig" />
+                    <ref role="2RRcyH" to="yeb1:KrNvFhIi$L" resolve="VerificationConfig" />
                   </node>
                 </node>
                 <node concept="1uHKPH" id="75zsbcX5Y3a" role="2OqNvi" />
               </node>
-              <node concept="3TrcHB" id="75zsbcX5YhL" role="2OqNvi">
-                <ref role="3TsBF5" to="rr4f:KrNvFhIi$O" resolve="transformationPath" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="75zsbcX5YP8" role="3cqZAp">
-          <node concept="3cpWsn" id="75zsbcX5YPb" role="3cpWs9">
-            <property role="TrG5h" value="dependencyPath" />
-            <node concept="17QB3L" id="75zsbcX5YP6" role="1tU5fm" />
-            <node concept="2OqwBi" id="75zsbcX5Zqc" role="33vP2m">
-              <node concept="2OqwBi" id="75zsbcX5Zqd" role="2Oq$k0">
-                <node concept="2OqwBi" id="75zsbcX5Zqe" role="2Oq$k0">
-                  <node concept="BaHAS" id="75zsbcX5Zqf" role="2Oq$k0">
-                    <property role="BaHAW" value="DSLTransVerif.plugin" />
-                    <property role="BaGAP" value="" />
-                  </node>
-                  <node concept="2RRcyG" id="75zsbcX5Zqg" role="2OqNvi">
-                    <ref role="2RRcyH" to="rr4f:KrNvFhIi$L" resolve="VerificationConfig" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="75zsbcX5Zqh" role="2OqNvi" />
-              </node>
-              <node concept="3TrcHB" id="75zsbcX5ZNj" role="2OqNvi">
-                <ref role="3TsBF5" to="rr4f:KrNvFhIi$M" resolve="dependencyPath" />
+              <node concept="3TrcHB" id="75zsbcXf1p1" role="2OqNvi">
+                <ref role="3TsBF5" to="yeb1:KrNvFhIi$R" resolve="syvoltBackendPath" />
               </node>
             </node>
           </node>
@@ -532,12 +388,16 @@
             <node concept="37vLTw" id="3glPWev2wDP" role="37wK5m">
               <ref role="3cqZAo" node="xkd1MZvQFl" resolve="inputLanguage" />
             </node>
-            <node concept="37vLTw" id="75zsbcX600f" role="37wK5m">
-              <ref role="3cqZAo" node="75zsbcX5VUA" resolve="ecorePath" />
+            <node concept="3cpWs3" id="75zsbcXf2nz" role="37wK5m">
+              <node concept="37vLTw" id="75zsbcXf33D" role="3uHU7B">
+                <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+              </node>
+              <node concept="37vLTw" id="75zsbcXf2ws" role="3uHU7w">
+                <ref role="3cqZAo" node="75zsbcXeQmo" resolve="ecoreDir" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7rNOiA32ODZ" role="3cqZAp" />
         <node concept="3clFbH" id="75zsbcX5Dub" role="3cqZAp" />
         <node concept="3cpWs8" id="6XxPrVIxthA" role="3cqZAp">
           <node concept="3cpWsn" id="6XxPrVIxthB" role="3cpWs9">
@@ -583,8 +443,13 @@
             <node concept="37vLTw" id="KrNvFhIif2" role="37wK5m">
               <ref role="3cqZAo" node="6XxPrVIxthB" resolve="outputLanguage" />
             </node>
-            <node concept="37vLTw" id="75zsbcX607m" role="37wK5m">
-              <ref role="3cqZAo" node="75zsbcX5VUA" resolve="ecorePath" />
+            <node concept="3cpWs3" id="75zsbcXf2SH" role="37wK5m">
+              <node concept="37vLTw" id="75zsbcXf2UU" role="3uHU7w">
+                <ref role="3cqZAo" node="75zsbcXeQmo" resolve="ecoreDir" />
+              </node>
+              <node concept="37vLTw" id="75zsbcXf3ba" role="3uHU7B">
+                <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+              </node>
             </node>
           </node>
         </node>
@@ -613,11 +478,21 @@
             </node>
             <node concept="2qgKlT" id="1j60nTi_S5U" role="2OqNvi">
               <ref role="37wK5l" to="70if:1j60nTizhsG" resolve="generateTransformationTextgen" />
-              <node concept="37vLTw" id="75zsbcX6hHA" role="37wK5m">
-                <ref role="3cqZAo" node="75zsbcX5XfD" resolve="transformationPath" />
+              <node concept="3cpWs3" id="75zsbcXf6UK" role="37wK5m">
+                <node concept="37vLTw" id="75zsbcXf71Q" role="3uHU7w">
+                  <ref role="3cqZAo" node="75zsbcXeRoT" resolve="transformationDir" />
+                </node>
+                <node concept="37vLTw" id="75zsbcX6hHA" role="3uHU7B">
+                  <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                </node>
               </node>
-              <node concept="37vLTw" id="75zsbcXbLqk" role="37wK5m">
-                <ref role="3cqZAo" node="75zsbcX5VUA" resolve="ecorePath" />
+              <node concept="3cpWs3" id="75zsbcXf8d2" role="37wK5m">
+                <node concept="37vLTw" id="75zsbcXfape" role="3uHU7w">
+                  <ref role="3cqZAo" node="75zsbcXeQmo" resolve="ecoreDir" />
+                </node>
+                <node concept="37vLTw" id="75zsbcXf7Mr" role="3uHU7B">
+                  <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                </node>
               </node>
             </node>
           </node>
@@ -719,8 +594,13 @@
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="37vLTw" id="75zsbcX80bv" role="37wK5m">
-                    <ref role="3cqZAo" node="75zsbcX5XfD" resolve="transformationPath" />
+                  <node concept="3cpWs3" id="75zsbcXfaPj" role="37wK5m">
+                    <node concept="37vLTw" id="75zsbcXfaV_" role="3uHU7w">
+                      <ref role="3cqZAo" node="75zsbcXeSoB" resolve="contractDir" />
+                    </node>
+                    <node concept="37vLTw" id="75zsbcX80bv" role="3uHU7B">
+                      <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -740,8 +620,13 @@
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="37vLTw" id="75zsbcX7nsB" role="37wK5m">
-                    <ref role="3cqZAo" node="75zsbcX5XfD" resolve="transformationPath" />
+                  <node concept="3cpWs3" id="75zsbcXfblj" role="37wK5m">
+                    <node concept="37vLTw" id="75zsbcXfbr_" role="3uHU7w">
+                      <ref role="3cqZAo" node="75zsbcXeSoB" resolve="contractDir" />
+                    </node>
+                    <node concept="37vLTw" id="75zsbcX7nsB" role="3uHU7B">
+                      <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -761,8 +646,13 @@
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
-                  <node concept="37vLTw" id="75zsbcX7nCG" role="37wK5m">
-                    <ref role="3cqZAo" node="75zsbcX5XfD" resolve="transformationPath" />
+                  <node concept="3cpWs3" id="75zsbcXfbPj" role="37wK5m">
+                    <node concept="37vLTw" id="75zsbcXfbV_" role="3uHU7w">
+                      <ref role="3cqZAo" node="75zsbcXeSoB" resolve="contractDir" />
+                    </node>
+                    <node concept="37vLTw" id="75zsbcX7nCG" role="3uHU7B">
+                      <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1746,11 +1636,10 @@
     </node>
     <node concept="3Tm1VV" id="xkd1MZvwOd" role="1B3o_S" />
   </node>
-  <node concept="3tCIjb" id="75zsbcX5_P9">
-    <property role="TrG5h" value="PluginConfig" />
-    <property role="3tCIj8" value="/Users/levilucio/fortiss/SyVOLT/" />
-    <property role="3tCIje" value="/Users/levilucio/tmp/" />
-    <property role="3tCIjd" value="/Users/levilucio/tmp/" />
+  <node concept="3tCIjb" id="75zsbcXePm6">
+    <property role="TrG5h" value="VerifPluginConfig" />
+    <property role="3tCIj8" value="/Users/levilucio/git/SyVOLT" />
+    <property role="3tCIjd" value="/Users/levilucio/tmp" />
     <property role="3GE5qa" value="config" />
   </node>
 </model>
