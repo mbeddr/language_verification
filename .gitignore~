@@ -178,3 +178,4 @@ code/plugins/sl-all/build.xml
 tmp
 
 #will ignore the config file for DSL trans verification
+DSLTrans/solutions/RunnerPlugin/models/DSLTransVerif/config.mps

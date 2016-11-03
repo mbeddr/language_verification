@@ -24,7 +24,7 @@
   <node concept="3tCIjb" id="75zsbcXePm6">
     <property role="TrG5h" value="VerifPluginConfig" />
     <property role="3tCIj8" value="/home/ss/git/SyVOLT/" />
-    <property role="3tCIjd" value="/home/ss/tmp/" />
+    <property role="3tCIjd" value="/home/s/tmp/" />
     <property role="3GE5qa" value="config" />
   </node>
 </model>
