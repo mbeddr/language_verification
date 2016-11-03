@@ -67,9 +67,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -99,7 +96,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -4995,10 +4992,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="7rNOiA3j86B" role="3cqZAp" />
             <node concept="3clFbH" id="7rNOiA3tUBD" role="3cqZAp" />
-            <node concept="3clFbH" id="7rNOiA3lhNU" role="3cqZAp" />
-            <node concept="3clFbH" id="7rNOiA3ujdv" role="3cqZAp" />
             <node concept="3SKdUt" id="7rNOiA3ul_6" role="3cqZAp">
               <node concept="3SKdUq" id="7rNOiA3ul_8" role="3SKWNk">
                 <property role="3SKdUp" value="end of indent" />
@@ -5061,8 +5055,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="7rNOiA3j878" role="3cqZAp" />
-            <node concept="3clFbH" id="7rNOiA3fDY1" role="3cqZAp" />
             <node concept="3clFbH" id="7rNOiA3438$" role="3cqZAp" />
             <node concept="3clFbF" id="7rNOiA34GSy" role="3cqZAp">
               <node concept="2OqwBi" id="7rNOiA34IKx" role="3clFbG">
@@ -5085,21 +5077,12 @@
             </node>
             <node concept="3clFbS" id="7rNOiA3433r" role="TDEfX">
               <node concept="3clFbF" id="7rNOiA3x3Mr" role="3cqZAp">
-                <node concept="2OqwBi" id="7rNOiA3x4wF" role="3clFbG">
-                  <node concept="10M0yZ" id="7rNOiA3x4fX" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                <node concept="2OqwBi" id="2EAnn9pgqUc" role="3clFbG">
+                  <node concept="37vLTw" id="2EAnn9pgqJ$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7rNOiA3433n" resolve="ex" />
                   </node>
-                  <node concept="liA8E" id="7rNOiA3x65n" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="3cpWs3" id="7rNOiA3x9FI" role="37wK5m">
-                      <node concept="37vLTw" id="7rNOiA3x9FT" role="3uHU7w">
-                        <ref role="3cqZAo" node="7rNOiA3433n" resolve="ex" />
-                      </node>
-                      <node concept="Xl_RD" id="7rNOiA3x72a" role="3uHU7B">
-                        <property role="Xl_RC" value="the ex is " />
-                      </node>
-                    </node>
+                  <node concept="liA8E" id="2EAnn9pgrJ7" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
               </node>
@@ -5934,12 +5917,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="1j60nTi$YQt" role="3cqZAp" />
-            <node concept="3clFbH" id="1j60nTi$YrR" role="3cqZAp" />
-            <node concept="3clFbH" id="1j60nTi$2AD" role="3cqZAp" />
-            <node concept="3clFbH" id="1j60nTi$2sF" role="3cqZAp" />
-            <node concept="3clFbH" id="1j60nTi$22L" role="3cqZAp" />
-            <node concept="3clFbH" id="1j60nTi$1PA" role="3cqZAp" />
-            <node concept="3clFbH" id="1j60nTi$1Hz" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="1j60nTizDv6" role="TEbGg">
             <node concept="3cpWsn" id="1j60nTizDv8" role="TDEfY">
@@ -5948,7 +5925,18 @@
                 <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
               </node>
             </node>
-            <node concept="3clFbS" id="1j60nTizDvc" role="TDEfX" />
+            <node concept="3clFbS" id="1j60nTizDvc" role="TDEfX">
+              <node concept="3clFbF" id="2EAnn9pfdnv" role="3cqZAp">
+                <node concept="2OqwBi" id="2EAnn9pfdy8" role="3clFbG">
+                  <node concept="37vLTw" id="2EAnn9pfdnu" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1j60nTizDv8" resolve="ex" />
+                  </node>
+                  <node concept="liA8E" id="2EAnn9pfdPd" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbH" id="1j60nTizD1p" role="3cqZAp" />

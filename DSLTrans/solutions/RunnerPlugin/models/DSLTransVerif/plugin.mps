@@ -154,7 +154,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -1350,83 +1349,7 @@
   </node>
   <node concept="312cEu" id="xkd1MZvwOc">
     <property role="TrG5h" value="Utility" />
-    <node concept="3clFbW" id="xkd1MZvwSl" role="jymVt">
-      <node concept="3cqZAl" id="xkd1MZvwSn" role="3clF45" />
-      <node concept="3Tm1VV" id="xkd1MZvwSo" role="1B3o_S" />
-      <node concept="3clFbS" id="xkd1MZvwSp" role="3clF47" />
-    </node>
     <node concept="2tJIrI" id="xkd1MZvwSF" role="jymVt" />
-    <node concept="2YIFZL" id="xkd1MZvx8m" role="jymVt">
-      <property role="TrG5h" value="generatetextgenFromTransformation" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="xkd1MZvx8p" role="3clF47">
-        <node concept="3cpWs8" id="7rNOiA33QxT" role="3cqZAp">
-          <node concept="3cpWsn" id="7rNOiA33QxU" role="3cpWs9">
-            <property role="TrG5h" value="file" />
-            <node concept="3uibUv" id="7rNOiA33QxV" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
-            </node>
-            <node concept="2ShNRf" id="7rNOiA33SdW" role="33vP2m">
-              <node concept="1pGfFk" id="7rNOiA33Snj" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="Xl_RD" id="7rNOiA3wRxf" role="37wK5m">
-                  <property role="Xl_RC" value="aa.py" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7rNOiA3xhG5" role="3cqZAp" />
-        <node concept="3clFbF" id="7rNOiA3xnIB" role="3cqZAp">
-          <node concept="2OqwBi" id="7rNOiA3xv0M" role="3clFbG">
-            <node concept="10M0yZ" id="7rNOiA3xqxw" role="2Oq$k0">
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-            </node>
-            <node concept="liA8E" id="7rNOiA3xxwr" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="7rNOiA3xBp2" role="37wK5m">
-                <node concept="2YIFZM" id="7rNOiA3xDUP" role="3uHU7w">
-                  <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
-                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                  <node concept="Xl_RD" id="7rNOiA3xEsV" role="37wK5m">
-                    <property role="Xl_RC" value="user.dir" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="7rNOiA3xyqU" role="3uHU7B">
-                  <property role="Xl_RC" value="the user directory is " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="xkd1MZvxyv" role="3cqZAp" />
-        <node concept="SfApY" id="xkd1MZvxNk" role="3cqZAp">
-          <node concept="3clFbS" id="xkd1MZvxNm" role="SfCbr">
-            <node concept="3clFbH" id="xkd1MZvxNl" role="3cqZAp" />
-            <node concept="3clFbH" id="xkd1MZvy8m" role="3cqZAp" />
-          </node>
-          <node concept="TDmWw" id="xkd1MZvxNn" role="TEbGg">
-            <node concept="3cpWsn" id="xkd1MZvxNp" role="TDEfY">
-              <property role="TrG5h" value="ex" />
-              <node concept="3uibUv" id="xkd1MZvy5c" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="xkd1MZvxNt" role="TDEfX" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="xkd1MZvwZ0" role="1B3o_S" />
-      <node concept="3cqZAl" id="xkd1MZvx8h" role="3clF45" />
-      <node concept="37vLTG" id="xkd1MZvxr$" role="3clF46">
-        <property role="TrG5h" value="name" />
-        <node concept="17QB3L" id="xkd1MZvxrz" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="xkd1MZwi61" role="jymVt" />
     <node concept="2YIFZL" id="xkd1MZwinn" role="jymVt">
       <property role="TrG5h" value="writeEMFfiles" />
       <property role="od$2w" value="false" />
