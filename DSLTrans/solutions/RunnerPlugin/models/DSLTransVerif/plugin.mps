@@ -2,11 +2,11 @@
 <model ref="r:aed4491f-4962-4065-9ae2-1da861e2c072(DSLTransVerif.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
   </languages>
   <imports>
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" />
@@ -102,6 +102,9 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -166,6 +169,7 @@
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -266,14 +270,30 @@
     <property role="2uzpH1" value="Generate Transformation" />
     <node concept="tnohg" id="7rNOiA32K_G" role="tncku">
       <node concept="3clFbS" id="7rNOiA32K_H" role="2VODD2">
-        <node concept="3clFbH" id="7rNOiA3sdqv" role="3cqZAp" />
+        <node concept="3clFbH" id="75zsbcXh6oB" role="3cqZAp" />
+        <node concept="3cpWs8" id="75zsbcXh96n" role="3cqZAp">
+          <node concept="3cpWsn" id="75zsbcXh96l" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="backendDir" />
+            <node concept="17QB3L" id="75zsbcXh9Ed" role="1tU5fm" />
+            <node concept="Xl_RD" id="75zsbcXhacw" role="33vP2m">
+              <property role="Xl_RC" value="backend/" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="75zsbcXh9EG" role="3cqZAp" />
         <node concept="3cpWs8" id="75zsbcXeQmq" role="3cqZAp">
           <node concept="3cpWsn" id="75zsbcXeQmo" role="3cpWs9">
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="ecoreDir" />
             <node concept="17QB3L" id="75zsbcXeQRY" role="1tU5fm" />
-            <node concept="Xl_RD" id="75zsbcXeQTh" role="33vP2m">
-              <property role="Xl_RC" value="ecore/" />
+            <node concept="3cpWs3" id="75zsbcXhaN$" role="33vP2m">
+              <node concept="37vLTw" id="75zsbcXhaYv" role="3uHU7B">
+                <ref role="3cqZAo" node="75zsbcXh96l" resolve="backendDir" />
+              </node>
+              <node concept="Xl_RD" id="75zsbcXeQTh" role="3uHU7w">
+                <property role="Xl_RC" value="ecore/" />
+              </node>
             </node>
           </node>
         </node>
@@ -282,8 +302,13 @@
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="transformationDir" />
             <node concept="17QB3L" id="75zsbcXeRR_" role="1tU5fm" />
-            <node concept="Xl_RD" id="75zsbcXeRTe" role="33vP2m">
-              <property role="Xl_RC" value="transformation/" />
+            <node concept="3cpWs3" id="75zsbcXhbO6" role="33vP2m">
+              <node concept="37vLTw" id="75zsbcXhc2N" role="3uHU7B">
+                <ref role="3cqZAo" node="75zsbcXh96l" resolve="backendDir" />
+              </node>
+              <node concept="Xl_RD" id="75zsbcXeRTe" role="3uHU7w">
+                <property role="Xl_RC" value="transformation/" />
+              </node>
             </node>
           </node>
         </node>
@@ -292,8 +317,13 @@
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="contractDir" />
             <node concept="17QB3L" id="75zsbcXeSRn" role="1tU5fm" />
-            <node concept="Xl_RD" id="75zsbcXeSTe" role="33vP2m">
-              <property role="Xl_RC" value="contracts/" />
+            <node concept="3cpWs3" id="75zsbcXhcuT" role="33vP2m">
+              <node concept="37vLTw" id="75zsbcXhcGR" role="3uHU7B">
+                <ref role="3cqZAo" node="75zsbcXh96l" resolve="backendDir" />
+              </node>
+              <node concept="Xl_RD" id="75zsbcXeSTe" role="3uHU7w">
+                <property role="Xl_RC" value="contracts/" />
+              </node>
             </node>
           </node>
         </node>
@@ -344,10 +374,159 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="75zsbcXgQWl" role="3cqZAp" />
+        <node concept="3SKdUt" id="75zsbcXgYRa" role="3cqZAp">
+          <node concept="3SKdUq" id="75zsbcXgYRc" role="3SKWNk">
+            <property role="3SKdUp" value="first cleanup the backend dir by deleting everything there" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="75zsbcXhmc6" role="3cqZAp">
+          <node concept="3cpWsn" id="75zsbcXhmc5" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="backendFolder" />
+            <node concept="3uibUv" id="75zsbcXhM$s" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="75zsbcXhMMi" role="33vP2m">
+              <node concept="1pGfFk" id="75zsbcXhMMb" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="75zsbcXhnY6" role="37wK5m">
+                  <node concept="37vLTw" id="75zsbcXhnY7" role="3uHU7w">
+                    <ref role="3cqZAo" node="75zsbcXh96l" resolve="backendDir" />
+                  </node>
+                  <node concept="37vLTw" id="75zsbcXhnY8" role="3uHU7B">
+                    <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="75zsbcXi6ZC" role="3cqZAp">
+          <node concept="2YIFZM" id="75zsbcXi9i4" role="3clFbG">
+            <ref role="37wK5l" node="75zsbcXi8Eb" resolve="deleteDirRecursive" />
+            <ref role="1Pybhc" node="xkd1MZvwOc" resolve="Utility" />
+            <node concept="37vLTw" id="75zsbcXi9IN" role="37wK5m">
+              <ref role="3cqZAo" node="75zsbcXhmc5" resolve="backendFolder" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="75zsbcXiauf" role="3cqZAp" />
+        <node concept="3SKdUt" id="75zsbcXib5E" role="3cqZAp">
+          <node concept="3SKdUq" id="75zsbcXib5G" role="3SKWNk">
+            <property role="3SKdUp" value="now create a new backend folder and all the subfolders" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="75zsbcXiepd" role="3cqZAp">
+          <node concept="2OqwBi" id="75zsbcXif8H" role="3clFbG">
+            <node concept="37vLTw" id="75zsbcXiepb" role="2Oq$k0">
+              <ref role="3cqZAo" node="75zsbcXhmc5" resolve="backendFolder" />
+            </node>
+            <node concept="liA8E" id="75zsbcXigpn" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.mkdir():boolean" resolve="mkdir" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="75zsbcXihCi" role="3cqZAp">
+          <node concept="3cpWsn" id="75zsbcXihCj" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="ecoreFolder" />
+            <node concept="3uibUv" id="75zsbcXihCk" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="75zsbcXihCl" role="33vP2m">
+              <node concept="1pGfFk" id="75zsbcXihCm" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="75zsbcXiiRy" role="37wK5m">
+                  <node concept="37vLTw" id="75zsbcXij9F" role="3uHU7w">
+                    <ref role="3cqZAo" node="75zsbcXeQmo" resolve="ecoreDir" />
+                  </node>
+                  <node concept="37vLTw" id="75zsbcXihCp" role="3uHU7B">
+                    <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="75zsbcXijKe" role="3cqZAp">
+          <node concept="3cpWsn" id="75zsbcXijKf" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="transformationFolder" />
+            <node concept="3uibUv" id="75zsbcXijKg" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="75zsbcXijKh" role="33vP2m">
+              <node concept="1pGfFk" id="75zsbcXijKi" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="75zsbcXiM_B" role="37wK5m">
+                  <node concept="37vLTw" id="75zsbcXiMNu" role="3uHU7w">
+                    <ref role="3cqZAo" node="75zsbcXeRoT" resolve="transformationDir" />
+                  </node>
+                  <node concept="37vLTw" id="75zsbcXiM_D" role="3uHU7B">
+                    <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="75zsbcXikrp" role="3cqZAp">
+          <node concept="3cpWsn" id="75zsbcXikrq" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="contractFolder" />
+            <node concept="3uibUv" id="75zsbcXikrr" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="75zsbcXikrs" role="33vP2m">
+              <node concept="1pGfFk" id="75zsbcXikrt" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="75zsbcXikru" role="37wK5m">
+                  <node concept="37vLTw" id="75zsbcXikrx" role="3uHU7B">
+                    <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                  </node>
+                  <node concept="37vLTw" id="75zsbcXimO8" role="3uHU7w">
+                    <ref role="3cqZAo" node="75zsbcXeSoB" resolve="contractDir" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="75zsbcXinxa" role="3cqZAp">
+          <node concept="2OqwBi" id="75zsbcXiohv" role="3clFbG">
+            <node concept="37vLTw" id="75zsbcXinx8" role="2Oq$k0">
+              <ref role="3cqZAo" node="75zsbcXihCj" resolve="ecoreFolder" />
+            </node>
+            <node concept="liA8E" id="75zsbcXiph2" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.mkdir():boolean" resolve="mkdir" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="75zsbcXiq4Y" role="3cqZAp">
+          <node concept="2OqwBi" id="75zsbcXiqSW" role="3clFbG">
+            <node concept="37vLTw" id="75zsbcXiq4W" role="2Oq$k0">
+              <ref role="3cqZAo" node="75zsbcXijKf" resolve="transformationFolder" />
+            </node>
+            <node concept="liA8E" id="75zsbcXirSG" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.mkdir():boolean" resolve="mkdir" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="75zsbcXisaj" role="3cqZAp">
+          <node concept="2OqwBi" id="75zsbcXisV9" role="3clFbG">
+            <node concept="37vLTw" id="75zsbcXisah" role="2Oq$k0">
+              <ref role="3cqZAo" node="75zsbcXikrq" resolve="contractFolder" />
+            </node>
+            <node concept="liA8E" id="75zsbcXitV6" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.mkdir():boolean" resolve="mkdir" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="75zsbcX5VpL" role="3cqZAp" />
         <node concept="3SKdUt" id="6XxPrVIxKtn" role="3cqZAp">
           <node concept="3SKdUq" id="6XxPrVIxKtp" role="3SKWNk">
-            <property role="3SKdUp" value="for the EMF files" />
+            <property role="3SKdUp" value="genenerate the EMF files" />
           </node>
         </node>
         <node concept="3cpWs8" id="xkd1MZvQFk" role="3cqZAp">
@@ -484,19 +663,19 @@
             </node>
             <node concept="2qgKlT" id="1j60nTi_S5U" role="2OqNvi">
               <ref role="37wK5l" to="70if:1j60nTizhsG" resolve="generateTransformationTextgen" />
-              <node concept="3cpWs3" id="75zsbcXf6UK" role="37wK5m">
-                <node concept="37vLTw" id="75zsbcXf71Q" role="3uHU7w">
+              <node concept="3cpWs3" id="75zsbcXiV3q" role="37wK5m">
+                <node concept="37vLTw" id="75zsbcXiYxu" role="3uHU7w">
                   <ref role="3cqZAo" node="75zsbcXeRoT" resolve="transformationDir" />
                 </node>
-                <node concept="37vLTw" id="75zsbcX6hHA" role="3uHU7B">
+                <node concept="37vLTw" id="75zsbcXiUEs" role="3uHU7B">
                   <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
                 </node>
               </node>
-              <node concept="3cpWs3" id="75zsbcXf8d2" role="37wK5m">
-                <node concept="37vLTw" id="75zsbcXfape" role="3uHU7w">
+              <node concept="3cpWs3" id="75zsbcXiZi7" role="37wK5m">
+                <node concept="37vLTw" id="75zsbcXiZto" role="3uHU7w">
                   <ref role="3cqZAo" node="75zsbcXeQmo" resolve="ecoreDir" />
                 </node>
-                <node concept="37vLTw" id="75zsbcXf7Mr" role="3uHU7B">
+                <node concept="37vLTw" id="75zsbcXiYQc" role="3uHU7B">
                   <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
                 </node>
               </node>
@@ -509,7 +688,6 @@
             <property role="3SKdUp" value="generate textgen for all Rules" />
           </node>
         </node>
-        <node concept="3clFbH" id="1j60nTiC2Jw" role="3cqZAp" />
         <node concept="3cpWs8" id="1j60nTiC5gk" role="3cqZAp">
           <node concept="3cpWsn" id="1j60nTiC5gl" role="3cpWs9">
             <property role="TrG5h" value="rules" />
@@ -517,15 +695,15 @@
               <ref role="2I9WkF" to="rr4f:3ky2qXA$trv" resolve="Rule" />
             </node>
             <node concept="2OqwBi" id="1j60nTiC5gm" role="33vP2m">
-              <node concept="2SmgA7" id="5PBkhXSarlq" role="2OqNvi">
-                <node concept="chp4Y" id="5PBkhXSarIn" role="1dBWTz">
-                  <ref role="cht4Q" to="rr4f:3ky2qXA$trv" resolve="Rule" />
-                </node>
-              </node>
               <node concept="2OqwBi" id="1j60nTiC5gn" role="2Oq$k0">
                 <node concept="2WthIp" id="1j60nTiC5go" role="2Oq$k0" />
                 <node concept="3gHZIF" id="1j60nTiC5gp" role="2OqNvi">
                   <ref role="2WH_rO" node="7rNOiA3vFOG" resolve="currentModel" />
+                </node>
+              </node>
+              <node concept="2SmgA7" id="5PBkhXSarlq" role="2OqNvi">
+                <node concept="chp4Y" id="5PBkhXSarIn" role="1dBWTz">
+                  <ref role="cht4Q" to="rr4f:3ky2qXA$trv" resolve="Rule" />
                 </node>
               </node>
             </node>
@@ -552,6 +730,14 @@
                     </node>
                     <node concept="3TrcHB" id="1j60nTiCPbG" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs3" id="75zsbcXiyJb" role="37wK5m">
+                    <node concept="37vLTw" id="75zsbcXfifS" role="3uHU7w">
+                      <ref role="3cqZAo" node="75zsbcXeRoT" resolve="transformationDir" />
+                    </node>
+                    <node concept="37vLTw" id="5PBkhXSeBRM" role="3uHU7B">
+                      <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
                     </node>
                   </node>
                 </node>
@@ -665,11 +851,8 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1j60nTiCVzG" role="3cqZAp" />
-            <node concept="3clFbH" id="1j60nTiCVoc" role="3cqZAp" />
           </node>
         </node>
-        <node concept="3clFbH" id="1j60nTiCP_9" role="3cqZAp" />
       </node>
     </node>
     <node concept="2S4$dB" id="7rNOiA3vFOG" role="1NuT2Z">
@@ -1167,7 +1350,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6XxPrVIvRc7" role="3cqZAp" />
         <node concept="3clFbH" id="KrNvFi2V4a" role="3cqZAp" />
         <node concept="3clFbH" id="KrNvFi2Nop" role="3cqZAp" />
         <node concept="3cpWs8" id="6XxPrVIvQSO" role="3cqZAp">
@@ -1580,9 +1762,6 @@
             <node concept="3clFbS" id="6XxPrVIvWs9" role="TDEfX" />
           </node>
         </node>
-        <node concept="3clFbH" id="6XxPrVIvHq1" role="3cqZAp" />
-        <node concept="3clFbH" id="6XxPrVIvHrv" role="3cqZAp" />
-        <node concept="3clFbH" id="3glPWev2n1v" role="3cqZAp" />
         <node concept="3clFbH" id="3glPWev1QEC" role="3cqZAp" />
         <node concept="SfApY" id="3glPWev1Rii" role="3cqZAp">
           <node concept="3clFbS" id="3glPWev1Rik" role="SfCbr">
@@ -1642,12 +1821,133 @@
         <node concept="17QB3L" id="KrNvFi331j" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="75zsbcXhWVT" role="jymVt" />
+    <node concept="2YIFZL" id="75zsbcXi8Eb" role="jymVt">
+      <property role="TrG5h" value="deleteDirRecursive" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="75zsbcXhus8" role="3clF47">
+        <node concept="3SKdUt" id="75zsbcXhXKV" role="3cqZAp">
+          <node concept="3SKdUq" id="75zsbcXhXKX" role="3SKWNk">
+            <property role="3SKdUp" value="utility method to delete directories recursively" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="75zsbcXhhKu" role="3cqZAp">
+          <node concept="3clFbS" id="75zsbcXhhKw" role="3clFbx">
+            <node concept="3cpWs8" id="75zsbcXhd3f" role="3cqZAp">
+              <node concept="3cpWsn" id="75zsbcXhd3e" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="entries" />
+                <node concept="2OqwBi" id="75zsbcXhVPZ" role="33vP2m">
+                  <node concept="37vLTw" id="75zsbcXhV0U" role="2Oq$k0">
+                    <ref role="3cqZAo" node="75zsbcXhxpI" resolve="dir" />
+                  </node>
+                  <node concept="liA8E" id="75zsbcXhW_P" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.list():java.lang.String[]" resolve="list" />
+                  </node>
+                </node>
+                <node concept="10Q1$e" id="75zsbcXhglV" role="1tU5fm">
+                  <node concept="17QB3L" id="75zsbcXhfN1" role="10Q1$1" />
+                </node>
+              </node>
+            </node>
+            <node concept="1DcWWT" id="75zsbcXhd3j" role="3cqZAp">
+              <node concept="37vLTw" id="75zsbcXhd3x" role="1DdaDG">
+                <ref role="3cqZAo" node="75zsbcXhd3e" resolve="entries" />
+              </node>
+              <node concept="3cpWsn" id="75zsbcXhd3u" role="1Duv9x">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="s" />
+                <node concept="17QB3L" id="75zsbcXhgH8" role="1tU5fm" />
+              </node>
+              <node concept="3clFbS" id="75zsbcXhd3l" role="2LFqv$">
+                <node concept="3cpWs8" id="75zsbcXhd3n" role="3cqZAp">
+                  <node concept="3cpWsn" id="75zsbcXhd3m" role="3cpWs9">
+                    <property role="3TUv4t" value="false" />
+                    <property role="TrG5h" value="currentFile" />
+                    <node concept="3uibUv" id="75zsbcXhd3o" role="1tU5fm">
+                      <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                    </node>
+                    <node concept="2ShNRf" id="75zsbcXhd3_" role="33vP2m">
+                      <node concept="1pGfFk" id="75zsbcXhd4g" role="2ShVmc">
+                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                        <node concept="2OqwBi" id="75zsbcXhd4i" role="37wK5m">
+                          <node concept="37vLTw" id="75zsbcXhH2e" role="2Oq$k0">
+                            <ref role="3cqZAo" node="75zsbcXhxpI" resolve="dir" />
+                          </node>
+                          <node concept="liA8E" id="75zsbcXhd4j" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~File.getPath():java.lang.String" resolve="getPath" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="75zsbcXhd3r" role="37wK5m">
+                          <ref role="3cqZAo" node="75zsbcXhd3u" resolve="s" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="75zsbcXh_Ci" role="3cqZAp">
+                  <node concept="3clFbS" id="75zsbcXh_Ck" role="3clFbx">
+                    <node concept="3clFbF" id="75zsbcXhANH" role="3cqZAp">
+                      <node concept="1rXfSq" id="75zsbcXhANF" role="3clFbG">
+                        <ref role="37wK5l" node="75zsbcXi8Eb" resolve="deleteDirRecursive" />
+                        <node concept="37vLTw" id="75zsbcXhB0p" role="37wK5m">
+                          <ref role="3cqZAo" node="75zsbcXhd3m" resolve="currentFile" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="75zsbcXhAbz" role="3clFbw">
+                    <node concept="37vLTw" id="75zsbcXh_Os" role="2Oq$k0">
+                      <ref role="3cqZAo" node="75zsbcXhd3m" resolve="currentFile" />
+                    </node>
+                    <node concept="liA8E" id="75zsbcXhAtt" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.isDirectory():boolean" resolve="isDirectory" />
+                    </node>
+                  </node>
+                  <node concept="9aQIb" id="75zsbcXhBl5" role="9aQIa">
+                    <node concept="3clFbS" id="75zsbcXhBl6" role="9aQI4">
+                      <node concept="3clFbF" id="75zsbcXhBos" role="3cqZAp">
+                        <node concept="2OqwBi" id="75zsbcXhd4l" role="3clFbG">
+                          <node concept="37vLTw" id="75zsbcXhd4k" role="2Oq$k0">
+                            <ref role="3cqZAo" node="75zsbcXhd3m" resolve="currentFile" />
+                          </node>
+                          <node concept="liA8E" id="75zsbcXhd4m" role="2OqNvi">
+                            <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="75zsbcXhU9J" role="3clFbw">
+            <node concept="37vLTw" id="75zsbcXhTLr" role="2Oq$k0">
+              <ref role="3cqZAo" node="75zsbcXhxpI" resolve="dir" />
+            </node>
+            <node concept="liA8E" id="75zsbcXhUId" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="75zsbcXhxpI" role="3clF46">
+        <property role="TrG5h" value="dir" />
+        <node concept="3uibUv" id="75zsbcXhPG0" role="1tU5fm">
+          <ref role="3uigEE" to="guwi:~File" resolve="File" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="75zsbcXhurY" role="3clF45" />
+      <node concept="3Tm1VV" id="75zsbcXhslt" role="1B3o_S" />
+    </node>
     <node concept="3Tm1VV" id="xkd1MZvwOd" role="1B3o_S" />
   </node>
   <node concept="3tCIjb" id="75zsbcXePm6">
     <property role="TrG5h" value="VerifPluginConfig" />
-    <property role="3tCIj8" value="/Users/levilucio/git/SyVOLT" />
-    <property role="3tCIjd" value="/Users/levilucio/tmp" />
+    <property role="3tCIj8" value="/Users/levilucio/git/SyVOLT/" />
+    <property role="3tCIjd" value="/Users/levilucio/tmp/" />
     <property role="3GE5qa" value="config" />
   </node>
 </model>
