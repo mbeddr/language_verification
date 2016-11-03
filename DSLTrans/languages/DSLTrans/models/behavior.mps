@@ -5211,30 +5211,6 @@
       <node concept="3Tm1VV" id="1j60nTizhsH" role="1B3o_S" />
       <node concept="3cqZAl" id="1j60nTizh_6" role="3clF45" />
       <node concept="3clFbS" id="1j60nTizhsJ" role="3clF47">
-        <node concept="3clFbH" id="1j60nTizCYY" role="3cqZAp" />
-        <node concept="3cpWs8" id="KrNvFi24ps" role="3cqZAp">
-          <node concept="3cpWsn" id="KrNvFi24pt" role="3cpWs9">
-            <property role="TrG5h" value="path" />
-            <node concept="17QB3L" id="KrNvFi24pu" role="1tU5fm" />
-            <node concept="2OqwBi" id="KrNvFi24pv" role="33vP2m">
-              <node concept="2OqwBi" id="KrNvFi24pw" role="2Oq$k0">
-                <node concept="2OqwBi" id="KrNvFi24px" role="2Oq$k0">
-                  <node concept="2OqwBi" id="KrNvFi24py" role="2Oq$k0">
-                    <node concept="13iPFW" id="KrNvFi24pz" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="KrNvFi24p$" role="2OqNvi" />
-                  </node>
-                  <node concept="2RRcyG" id="KrNvFi24p_" role="2OqNvi">
-                    <ref role="2RRcyH" to="rr4f:KrNvFhIi$L" resolve="VerificationConfig" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="KrNvFi24pA" role="2OqNvi" />
-              </node>
-              <node concept="3TrcHB" id="KrNvFi24pB" role="2OqNvi">
-                <ref role="3TsBF5" to="rr4f:KrNvFhIi$O" resolve="transformationPath" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="KrNvFi23Pu" role="3cqZAp" />
         <node concept="3cpWs8" id="1j60nTizD7P" role="3cqZAp">
           <node concept="3cpWsn" id="1j60nTizD7Q" role="3cpWs9">
@@ -5247,7 +5223,7 @@
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                 <node concept="3cpWs3" id="KrNvFi251X" role="37wK5m">
                   <node concept="37vLTw" id="KrNvFi25Ws" role="3uHU7B">
-                    <ref role="3cqZAo" node="KrNvFi24pt" resolve="path" />
+                    <ref role="3cqZAo" node="75zsbcX697x" resolve="path" />
                   </node>
                   <node concept="Xl_RD" id="1j60nTi_T3l" role="3uHU7w">
                     <property role="Xl_RC" value="toplevel.py" />
@@ -5996,6 +5972,10 @@
           </node>
         </node>
         <node concept="3clFbH" id="1j60nTizD1p" role="3cqZAp" />
+      </node>
+      <node concept="37vLTG" id="75zsbcX697x" role="3clF46">
+        <property role="TrG5h" value="path" />
+        <node concept="17QB3L" id="75zsbcX697w" role="1tU5fm" />
       </node>
     </node>
     <node concept="13hLZK" id="2t59Tl5mnuk" role="13h7CW">

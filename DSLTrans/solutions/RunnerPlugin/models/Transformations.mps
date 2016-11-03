@@ -6,7 +6,6 @@
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core" version="0" />
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
     <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
   </languages>
   <imports>
@@ -93,11 +92,6 @@
         <child id="3065370308850507521" name="outputModule" index="AAzOf" />
         <child id="3065370308850962716" name="inputModule" index="ABjci" />
         <child id="7769237388006044628" name="layer" index="3k6lfD" />
-      </concept>
-      <concept id="872517429970413873" name="DSLTrans.structure.VerificationConfig" flags="ng" index="3tCIjb">
-        <property id="872517429970413874" name="dependencyPath" index="3tCIj8" />
-        <property id="872517429970413879" name="ecorePath" index="3tCIjd" />
-        <property id="872517429970413876" name="transformationPath" index="3tCIje" />
       </concept>
       <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
       <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
@@ -1175,12 +1169,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="3tCIjb" id="KrNvFhLeX1">
-    <property role="3tCIj8" value="/" />
-    <property role="3tCIje" value="/Users/levilucio/tmp/" />
-    <property role="3tCIjd" value="/Users/levilucio/tmp/" />
-    <property role="TrG5h" value="zwei" />
   </node>
 </model>
 
