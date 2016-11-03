@@ -1372,7 +1372,7 @@
                 <node concept="liA8E" id="7rNOiA3j7Gs" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="7rNOiA3j7Gt" role="37wK5m">
-                    <property role="Xl_RC" value="\t\t\&quot;mm__\&quot;] = \&quot;\&quot;\&quot;ApplyModel\&quot;\&quot;\&quot;\n\n" />
+                    <property role="Xl_RC" value="\t\t[\&quot;mm__\&quot;] = \&quot;\&quot;\&quot;ApplyModel\&quot;\&quot;\&quot;\n\n" />
                   </node>
                 </node>
               </node>
