@@ -5385,7 +5385,7 @@
                 <node concept="liA8E" id="1j60nTi$1uf" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$1$S" role="37wK5m">
-                    <property role="Xl_RC" value="\t\t\n\n#============TRANSFORMATION=================\n" />
+                    <property role="Xl_RC" value="\n\n\t\t#============TRANSFORMATION=================\n" />
                   </node>
                 </node>
               </node>
@@ -5587,7 +5587,7 @@
                 <node concept="liA8E" id="1j60nTi$3Wt" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$3Wu" role="37wK5m">
-                    <property role="Xl_RC" value="\n\n#=====METAMODELS=================\n" />
+                    <property role="Xl_RC" value="\n\n\t\t#=====METAMODELS=================\n" />
                   </node>
                 </node>
               </node>
@@ -5695,7 +5695,7 @@
                 <node concept="liA8E" id="1j60nTi$qTO" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$r3H" role="37wK5m">
-                    <property role="Xl_RC" value="\n\n#====CONTRACTS==================\n" />
+                    <property role="Xl_RC" value="\n\n\t\t#====CONTRACTS==================\n" />
                   </node>
                 </node>
               </node>
@@ -5854,7 +5854,7 @@
                 <node concept="liA8E" id="1j60nTi$NpC" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$N_5" role="37wK5m">
-                    <property role="Xl_RC" value="\n\n#=========PC SAVE LOCATION\n\n" />
+                    <property role="Xl_RC" value="\n\n\t\t#=========PC SAVE LOCATION\n\n" />
                   </node>
                 </node>
               </node>
@@ -5910,7 +5910,7 @@
                 <node concept="liA8E" id="1j60nTi$Xsc" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$XC9" role="37wK5m">
-                    <property role="Xl_RC" value="\n\n\n\t\tif __name__ == \&quot;__main__\&quot;:\n" />
+                    <property role="Xl_RC" value="\n\n\nif __name__ == \&quot;__main__\&quot;:\n" />
                   </node>
                 </node>
               </node>
@@ -5923,7 +5923,7 @@
                 <node concept="liA8E" id="1j60nTi$XNW" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$XNX" role="37wK5m">
-                    <property role="Xl_RC" value="\t\tparser = load_parser()\n" />
+                    <property role="Xl_RC" value="\tparser = load_parser()\n" />
                   </node>
                 </node>
               </node>
@@ -5936,7 +5936,7 @@
                 <node concept="liA8E" id="1j60nTi$YM7" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$YM8" role="37wK5m">
-                    <property role="Xl_RC" value="\t\targs = parser.parse_args()\n\n" />
+                    <property role="Xl_RC" value="\targs = parser.parse_args()\n\n" />
                   </node>
                 </node>
               </node>
@@ -5949,7 +5949,7 @@
                 <node concept="liA8E" id="1j60nTi$ZuW" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$ZuX" role="37wK5m">
-                    <property role="Xl_RC" value="\t\ttest = ProverTest()\n" />
+                    <property role="Xl_RC" value="\ttest = ProverTest()\n" />
                   </node>
                 </node>
               </node>
@@ -5962,7 +5962,7 @@
                 <node concept="liA8E" id="1j60nTi_07Q" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi_07R" role="37wK5m">
-                    <property role="Xl_RC" value="\t\ttest.test_correct(args)" />
+                    <property role="Xl_RC" value="\ttest.test_correct(args)" />
                   </node>
                 </node>
               </node>
