@@ -24,7 +24,7 @@
   <node concept="3tCIjb" id="75zsbcXePm6">
     <property role="TrG5h" value="VerifPluginConfig" />
     <property role="3tCIj8" value="/Users/levilucio/fortiss/SyVOLT/" />
-    <property role="3tCIjd" value="/Users/levilucio/blabla/" />
+    <property role="3tCIjd" value="/Users/levilucio/tmp/" />
     <property role="3GE5qa" value="config" />
   </node>
 </model>
