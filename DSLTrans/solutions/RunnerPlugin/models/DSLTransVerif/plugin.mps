@@ -204,12 +204,6 @@
         <reference id="1205756909548" name="member" index="2WH_rO" />
       </concept>
     </language>
-    <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
-      <concept id="872517429970413873" name="SyVOLT.structure.VerificationConfig" flags="ng" index="3tCIjb">
-        <property id="872517429970413874" name="syvoltEnginePath" index="3tCIj8" />
-        <property id="872517429970413879" name="syvoltBackendPath" index="3tCIjd" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -238,7 +232,6 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -339,7 +332,7 @@
               <node concept="2OqwBi" id="75zsbcX5WEO" role="2Oq$k0">
                 <node concept="2OqwBi" id="75zsbcX5WEP" role="2Oq$k0">
                   <node concept="BaHAS" id="75zsbcX5WEQ" role="2Oq$k0">
-                    <property role="BaHAW" value="DSLTransVerif.plugin" />
+                    <property role="BaHAW" value="DSLTransVerif.config" />
                     <property role="BaGAP" value="" />
                   </node>
                   <node concept="2RRcyG" id="75zsbcX5WER" role="2OqNvi">
@@ -362,7 +355,7 @@
               <node concept="2OqwBi" id="75zsbcX5Y36" role="2Oq$k0">
                 <node concept="2OqwBi" id="75zsbcX5Y37" role="2Oq$k0">
                   <node concept="BaHAS" id="75zsbcX5Y38" role="2Oq$k0">
-                    <property role="BaHAW" value="DSLTransVerif.plugin" />
+                    <property role="BaHAW" value="DSLTransVerif.config" />
                     <property role="BaGAP" value="" />
                   </node>
                   <node concept="2RRcyG" id="75zsbcX5Y39" role="2OqNvi">
@@ -1943,12 +1936,6 @@
       <node concept="3Tm1VV" id="75zsbcXhslt" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="xkd1MZvwOd" role="1B3o_S" />
-  </node>
-  <node concept="3tCIjb" id="75zsbcXePm6">
-    <property role="TrG5h" value="VerifPluginConfig" />
-    <property role="3tCIj8" value="/Users/levilucio/git/SyVOLT/" />
-    <property role="3tCIjd" value="/Users/levilucio/tmp/" />
-    <property role="3GE5qa" value="config" />
   </node>
 </model>
 
