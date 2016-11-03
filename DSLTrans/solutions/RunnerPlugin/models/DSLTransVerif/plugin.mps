@@ -21,6 +21,7 @@
     <import index="hu10" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.common.util(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="hulx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.ecore.resource.impl(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="tg2o" ref="r:aed4491f-4962-4065-9ae2-1da861e2c072(DSLTransVerif.plugin)" />
     <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" implicit="true" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
@@ -637,7 +638,6 @@
             <property role="3SKdUp" value="generate top level python" />
           </node>
         </node>
-        <node concept="3clFbH" id="1j60nTi_Hrv" role="3cqZAp" />
         <node concept="3clFbF" id="1j60nTi_HQA" role="3cqZAp">
           <node concept="2OqwBi" id="1j60nTi_PWz" role="3clFbG">
             <node concept="2OqwBi" id="1j60nTi_Li_" role="2Oq$k0">
@@ -656,6 +656,9 @@
             </node>
             <node concept="2qgKlT" id="1j60nTi_S5U" role="2OqNvi">
               <ref role="37wK5l" to="70if:1j60nTizhsG" resolve="generateTransformationTextgen" />
+              <node concept="37vLTw" id="2EAnn9p8f13" role="37wK5m">
+                <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+              </node>
               <node concept="3cpWs3" id="75zsbcXiV3q" role="37wK5m">
                 <node concept="37vLTw" id="75zsbcXiYxu" role="3uHU7w">
                   <ref role="3cqZAo" node="75zsbcXeRoT" resolve="transformationDir" />
@@ -846,6 +849,70 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2EAnn9p7wQl" role="3cqZAp" />
+        <node concept="3SKdUt" id="2EAnn9p7z1Y" role="3cqZAp">
+          <node concept="3SKdUq" id="2EAnn9p7z20" role="3SKWNk">
+            <property role="3SKdUp" value="finally run the python script" />
+          </node>
+        </node>
+        <node concept="1X3_iC" id="2EAnn9pcFyb" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="2EAnn9p7_kU" role="8Wnug">
+            <node concept="3cpWsn" id="2EAnn9p7_kV" role="3cpWs9">
+              <property role="TrG5h" value="builder" />
+              <node concept="3uibUv" id="2EAnn9p7_kW" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~ProcessBuilder" resolve="ProcessBuilder" />
+              </node>
+              <node concept="2ShNRf" id="2EAnn9p7Xnu" role="33vP2m">
+                <node concept="1pGfFk" id="2EAnn9p89Zg" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~ProcessBuilder.&lt;init&gt;(java.lang.String...)" resolve="ProcessBuilder" />
+                  <node concept="3cpWs3" id="2EAnn9p8bpF" role="37wK5m">
+                    <node concept="3cpWs3" id="2EAnn9p8aVC" role="3uHU7B">
+                      <node concept="Xl_RD" id="2EAnn9p8a0S" role="3uHU7B">
+                        <property role="Xl_RC" value="python " />
+                      </node>
+                      <node concept="37vLTw" id="2EAnn9p8aYB" role="3uHU7w">
+                        <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="2EAnn9p8bHv" role="3uHU7w">
+                      <property role="Xl_RC" value="backend/toplevel.py" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="2EAnn9pcFyc" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="2EAnn9p7Uzz" role="8Wnug">
+            <node concept="3cpWsn" id="2EAnn9p7Uzy" role="3cpWs9">
+              <property role="3TUv4t" value="false" />
+              <property role="TrG5h" value="env" />
+              <node concept="3uibUv" id="2EAnn9p7Uz$" role="1tU5fm">
+                <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                <node concept="3uibUv" id="2EAnn9p7Uz_" role="11_B2D">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+                <node concept="3uibUv" id="2EAnn9p7UzA" role="11_B2D">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2EAnn9p7Xjd" role="33vP2m">
+                <node concept="37vLTw" id="2EAnn9p7Xjc" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2EAnn9p7_kV" resolve="builder" />
+                </node>
+                <node concept="liA8E" id="2EAnn9p7Xje" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~ProcessBuilder.environment():java.util.Map" resolve="environment" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2EAnn9p7WcQ" role="3cqZAp" />
       </node>
     </node>
     <node concept="2S4$dB" id="7rNOiA3vFOG" role="1NuT2Z">
