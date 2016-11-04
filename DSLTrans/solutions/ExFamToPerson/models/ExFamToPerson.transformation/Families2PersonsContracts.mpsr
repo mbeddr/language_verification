@@ -50,33 +50,6 @@
         <property role="2V$B1Q" value="Persons" />
       </node>
     </node>
-    <node concept="1NTnwR" id="2EAnn9phfkN" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4XdH" resolve="Neg_CityCompany" />
-    </node>
-    <node concept="1NTnwR" id="2EAnn9phfkV" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xhb" resolve="Neg_CountryCity" />
-    </node>
-    <node concept="1NTnwR" id="2EAnn9phfl3" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xk6" resolve="Neg_DaughterMother" />
-    </node>
-    <node concept="1NTnwR" id="2EAnn9phfld" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xhz" resolve="Neg_SchoolOrdFac" />
-    </node>
-    <node concept="1NTnwR" id="2EAnn9phflp" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xi3" resolve="Pos_AssocCity" />
-    </node>
-    <node concept="1NTnwR" id="2EAnn9phflB" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xj8" resolve="Pos_ChildSchool" />
-    </node>
-    <node concept="1NTnwR" id="2EAnn9phflR" role="2ik09Z">
-      <ref role="1NTnwO" node="1AcaMXhA0Gt" resolve="Pos_FourMembers" />
-    </node>
-    <node concept="1NTnwR" id="2EAnn9phfm9" role="2ik09Z">
-      <ref role="1NTnwO" node="4OZxLw4WaSm" resolve="Pos_MotherFather" />
-    </node>
-    <node concept="1NTnwR" id="2EAnn9phfmt" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4XkE" resolve="Pos_ParentCompany" />
-    </node>
     <node concept="1NTnwR" id="2EAnn9phfmN" role="2ik09Z">
       <ref role="1NTnwO" node="4MaYa8s4Xly" resolve="Pos_TownHallComm" />
     </node>
