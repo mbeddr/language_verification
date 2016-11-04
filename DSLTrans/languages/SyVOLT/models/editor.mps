@@ -391,11 +391,7 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="3QsrawRhIa2" role="3EZMnx">
-        <node concept="VSNWy" id="3QsrawRhIa3" role="3F10Kt">
-          <property role="1lJzqX" value="6" />
-        </node>
-      </node>
+      <node concept="3F0ifn" id="2EAnn9phmEU" role="3EZMnx" />
       <node concept="3F0ifn" id="3QsrawRgSkR" role="3EZMnx">
         <property role="3F0ifm" value="Atomic Contracts:" />
         <node concept="Veino" id="3QsrawRgSkS" role="3F10Kt">
@@ -411,6 +407,7 @@
         <ref role="1NtTu8" to="yeb1:67kIGnNxbyU" resolve="contracts" />
         <node concept="2iRkQZ" id="3QsrawRgQfa" role="2czzBx" />
       </node>
+      <node concept="3F0ifn" id="2EAnn9phg2G" role="3EZMnx" />
       <node concept="3F0ifn" id="3QsrawRgS91" role="3EZMnx">
         <property role="3F0ifm" value="Contract Composition:" />
         <node concept="Veino" id="3QsrawRgS92" role="3F10Kt">
@@ -426,11 +423,7 @@
         <ref role="1NtTu8" to="yeb1:3QsrawRgNjM" resolve="formulae" />
         <node concept="2iRkQZ" id="3QsrawRgQjx" role="2czzBx" />
       </node>
-      <node concept="3F0ifn" id="3QsrawRhhNp" role="3EZMnx">
-        <node concept="VSNWy" id="3QsrawRhhNq" role="3F10Kt">
-          <property role="1lJzqX" value="6" />
-        </node>
-      </node>
+      <node concept="3F0ifn" id="2EAnn9phg9f" role="3EZMnx" />
       <node concept="3F0ifn" id="3QsrawRgSdF" role="3EZMnx">
         <property role="3F0ifm" value="Element Binding:" />
         <node concept="Veino" id="3QsrawRgSdG" role="3F10Kt">
@@ -1579,6 +1572,22 @@
         <ref role="1NtTu8" to="yeb1:KrNvFhIi$R" resolve="syvoltBackendPath" />
       </node>
       <node concept="l2Vlx" id="KrNvFhIi_8" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2EAnn9pgMls">
+    <property role="3GE5qa" value="Elements" />
+    <ref role="1XX52x" to="yeb1:2EAnn9pgMl5" resolve="AtomicContractPointer" />
+    <node concept="3EZMnI" id="2EAnn9pgMlL" role="2wV5jI">
+      <node concept="2iRfu4" id="2EAnn9pgMlM" role="2iSdaV" />
+      <node concept="1iCGBv" id="2EAnn9pgMlu" role="3EZMnx">
+        <ref role="1NtTu8" to="yeb1:2EAnn9pgMl6" resolve="pointer" />
+        <node concept="1sVBvm" id="2EAnn9pgMlw" role="1sWHZn">
+          <node concept="3F0A7n" id="2EAnn9pgMlB" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
