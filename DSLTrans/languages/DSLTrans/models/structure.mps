@@ -3,12 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
   </languages>
   <imports>
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
@@ -111,6 +111,12 @@
       <property role="20kJfa" value="outputModule" />
       <property role="IQ2ns" value="3065370308850507521" />
       <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
+    </node>
+    <node concept="1TJgyj" id="4knEpdJWV$A" role="1TKVEi">
+      <property role="IQ2ns" value="4978634363784902950" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="contracts" />
+      <ref role="20lvS9" to="yeb1:67kIGnNxbyS" resolve="ContractSet" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ky2qXA$ttN">

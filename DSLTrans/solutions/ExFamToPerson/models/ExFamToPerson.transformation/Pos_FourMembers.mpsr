@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fbd6b328-fee2-4cb3-9eca-fcefa4901b82(ExFamToPerson.contracts)" content="root">
+<model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
   <persistence version="9" />
   <imports>
     <import index="b6kg" ref="r:09755222-e7cd-474b-a0c9-bd85f7571aec(Families.structure)" implicit="true" />
@@ -50,6 +50,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -91,6 +92,7 @@
   </registry>
   <node concept="2ik09W" id="1AcaMXhA0Gt">
     <property role="TrG5h" value="Pos_FourMembers" />
+    <property role="3GE5qa" value="contracts" />
     <node concept="aREg_" id="1AcaMXhA0Gv" role="aREgB">
       <node concept="2ik0NV" id="1AcaMXhA0Gx" role="13z3mo">
         <property role="13z3e$" value="FourMem_M1" />
@@ -129,8 +131,8 @@
       </node>
       <node concept="1jGXVw" id="1AcaMXhA0Hh" role="13z3mp">
         <property role="aCCiF" value="fathers" />
-        <ref role="13xwDP" node="1AcaMXhA0Gx" />
         <ref role="13xwDU" node="1AcaMXhA0GM" />
+        <ref role="13xwDP" node="1AcaMXhA0Gx" />
       </node>
       <node concept="1jGXVw" id="1AcaMXhA0Hm" role="13z3mp">
         <property role="aCCiF" value="mothers" />
@@ -144,8 +146,8 @@
       </node>
       <node concept="1jGXVw" id="1AcaMXhA0HP" role="13z3mp">
         <property role="aCCiF" value="daughters" />
-        <ref role="13xwDU" node="1AcaMXhA0Hb" />
         <ref role="13xwDP" node="1AcaMXhA0Gx" />
+        <ref role="13xwDU" node="1AcaMXhA0Hb" />
       </node>
       <node concept="37mRI7" id="5V8FnTaO9Jd" role="lGtFl">
         <node concept="37mRIm" id="5V8FnTaO9Je" role="37mRID">
@@ -448,8 +450,8 @@
       </node>
       <node concept="1jGXVd" id="1AcaMXhA0JR" role="2ik0Ml">
         <property role="aCCiF" value="persons" />
-        <ref role="13xwDP" node="1AcaMXhA0HX" />
         <ref role="13xwDU" node="1AcaMXhA0Jw" />
+        <ref role="13xwDP" node="1AcaMXhA0HX" />
       </node>
       <node concept="1jGXVd" id="1AcaMXhA0JV" role="2ik0Ml">
         <property role="aCCiF" value="persons" />
@@ -710,16 +712,16 @@
       </node>
     </node>
     <node concept="2lmX6V" id="1TopMIb1I$0" role="aREgW">
-      <ref role="13xwDP" node="1AcaMXhA0In" />
       <ref role="13xwDU" node="1AcaMXhA0GM" />
+      <ref role="13xwDP" node="1AcaMXhA0In" />
     </node>
     <node concept="2lmX6V" id="1TopMIb22HR" role="aREgW">
-      <ref role="13xwDP" node="1AcaMXhA0Jk" />
       <ref role="13xwDU" node="1AcaMXhA0GR" />
+      <ref role="13xwDP" node="1AcaMXhA0Jk" />
     </node>
     <node concept="2lmX6V" id="1TopMIb22I4" role="aREgW">
-      <ref role="13xwDP" node="1AcaMXhA0Jw" />
       <ref role="13xwDU" node="1AcaMXhA0H0" />
+      <ref role="13xwDP" node="1AcaMXhA0Jw" />
     </node>
     <node concept="2lmX6V" id="1TopMIb22Ij" role="aREgW">
       <ref role="13xwDP" node="1AcaMXhA0J_" />

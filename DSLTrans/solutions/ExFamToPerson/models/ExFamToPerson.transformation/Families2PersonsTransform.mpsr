@@ -18,11 +18,16 @@
         <reference id="7769237388006044581" name="source" index="3k6leo" />
       </concept>
       <concept id="7769237388006044623" name="DSLTrans.structure.Transformation" flags="ng" index="3k6lfM">
+        <reference id="4978634363784902950" name="contracts" index="ET12P" />
+        <child id="4978634363784830305" name="contracts" index="ETjjM" />
         <child id="7769237388006044628" name="layer" index="3k6lfD" />
       </concept>
       <concept id="2860350776942378900" name="DSLTrans.structure.RulePointer" flags="ng" index="1v6VTO">
         <reference id="2860350776942378901" name="pointer" index="1v6VTP" />
       </concept>
+    </language>
+    <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
+      <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
@@ -35,6 +40,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -76,6 +82,8 @@
   </registry>
   <node concept="3k6lfM" id="2uM0u1SEDcf">
     <property role="TrG5h" value="Families2PersonsTransform" />
+    <property role="3GE5qa" value="transformation" />
+    <ref role="ET12P" node="2EAnn9pgMkB" resolve="Families2PersonsContracts" />
     <node concept="1jGXV7" id="2uM0u1SEDcg" role="3k6lfD">
       <property role="TrG5h" value="layer1" />
       <node concept="1v6VTO" id="2uM0u1SEDCn" role="1jGXV4">
@@ -313,6 +321,7 @@
         <property role="2V$B1Q" value="Families" />
       </node>
     </node>
+    <node concept="2ik09X" id="4knEpdJWV$0" role="ETjjM" />
   </node>
 </model>
 
