@@ -16,10 +16,9 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765956807" name="final" index="R5$K2" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -50,7 +49,7 @@
     <property role="3GE5qa" value="Elements" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="3828633282163103455" />
-    <ref role="1TJDcQ" node="67G_aiExeJN" resolve="RulePresenter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3ky2qXA$trw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -77,6 +76,9 @@
     </node>
     <node concept="PrWs8" id="4o$Qo1rTD40" role="PzmwI">
       <ref role="PrY4T" to="i3vy:4o$Qo1rTD3$" resolve="AbstractMatcherApplier" />
+    </node>
+    <node concept="PrWs8" id="2EAnn9phtbP" role="PzmwI">
+      <ref role="PrY4T" node="2EAnn9phtbH" resolve="RulePresenter" />
     </node>
   </node>
   <node concept="1TIwiD" id="6JhS3QZMbff">
@@ -134,7 +136,7 @@
       <property role="20kJfa" value="rulePresenter" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="3828633282163103595" />
-      <ref role="20lvS9" node="67G_aiExeJN" resolve="RulePresenter" />
+      <ref role="20lvS9" node="2EAnn9phtbH" resolve="RulePresenter" />
     </node>
     <node concept="PrWs8" id="3ky2qXA$ttD" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -163,7 +165,7 @@
     <property role="3GE5qa" value="Elements" />
     <property role="TrG5h" value="RulePointer" />
     <property role="EcuMT" value="2860350776942378900" />
-    <ref role="1TJDcQ" node="67G_aiExeJN" resolve="RulePresenter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2uM0u1SErYl" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="pointer" />
@@ -171,14 +173,14 @@
       <property role="IQ2ns" value="2860350776942378901" />
       <ref role="20lvS9" node="3ky2qXA$trv" resolve="Rule" />
     </node>
+    <node concept="PrWs8" id="2EAnn9phtbI" role="PzmwI">
+      <ref role="PrY4T" node="2EAnn9phtbH" resolve="RulePresenter" />
+    </node>
   </node>
-  <node concept="1TIwiD" id="67G_aiExeJN">
+  <node concept="PlHQZ" id="2EAnn9phtbH">
+    <property role="EcuMT" value="3073246541432345325" />
     <property role="3GE5qa" value="Elements" />
     <property role="TrG5h" value="RulePresenter" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="EcuMT" value="7056178151139109875" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
