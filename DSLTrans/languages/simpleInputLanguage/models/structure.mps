@@ -17,9 +17,13 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -82,14 +86,14 @@
       <property role="IQ2ns" value="7737943893776670758" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="bs" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="Dn$Lr8cmLE" resolve="B" />
     </node>
     <node concept="1TJgyj" id="46cQNHjvPtu" role="1TKVEi">
       <property role="IQ2ns" value="4723391157055215454" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="cs" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="Dn$Lr8cmLF" resolve="C" />
     </node>
     <node concept="1TJgyj" id="46cQNHjvPtx" role="1TKVEi">
@@ -98,6 +102,16 @@
       <property role="20kJfa" value="ds" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="Dn$Lr8cmLG" resolve="D" />
+    </node>
+    <node concept="PrWs8" id="aubH6spK6G" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="aubH6sskp$" role="1TKVEi">
+      <property role="IQ2ns" value="188639712203851364" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="one" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="Dn$Lr8cmLF" resolve="C" />
     </node>
   </node>
 </model>
