@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fbd6b328-fee2-4cb3-9eca-fcefa4901b82(ExFamToPerson.contracts)" content="root">
+<model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
   <persistence version="9" />
-  <imports />
+  <imports>
+    <import index="b6kg" ref="r:09755222-e7cd-474b-a0c9-bd85f7571aec(Families.structure)" implicit="true" />
+    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
+  </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
@@ -13,14 +16,17 @@
       </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
+        <child id="6292131328146430401" name="property" index="1157Rq" />
       </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
       <concept id="7049464676098553454" name="transfverif.core.structure.AttributeRef" flags="ng" index="2ik0MF">
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
@@ -35,6 +41,7 @@
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+        <child id="2459688670039252697" name="concept" index="pB8W9" />
       </concept>
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
         <child id="2796321687635932077" name="attributes" index="13z3hJ" />
@@ -48,6 +55,7 @@
         <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
       </concept>
+      <concept id="2829711462939369800" name="transfverif.core.structure.TVPropIDRefExpression" flags="ng" index="1y7Krt" />
     </language>
     <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
       <concept id="4439542802417895565" name="SyVOLT.structure.PreCondition" flags="ng" index="aREg_" />
@@ -57,7 +65,19 @@
         <child id="4439542802417895569" name="postCondition" index="aREgT" />
       </concept>
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -65,6 +85,7 @@
   </registry>
   <node concept="2ik09W" id="4OZxLw4WaSm">
     <property role="TrG5h" value="Pos_MotherFather" />
+    <property role="3GE5qa" value="contracts" />
     <node concept="aREg_" id="4OZxLw4WaSn" role="aREgB">
       <node concept="2ik0NV" id="4OZxLw4WaSr" role="13z3mo">
         <property role="13z3e$" value="MotherFather_M1" />
@@ -74,6 +95,13 @@
           <node concept="13yNan" id="4OZxLw4WaSM" role="2ik0Q0">
             <node concept="13yPN0" id="4OZxLw4WaSS" role="2F1HV6" />
           </node>
+          <node concept="1y7Krt" id="4knEpdJWwnq" role="1157Rq">
+            <ref role="355D3t" to="b6kg:57pZU2XSTeH" resolve="Family" />
+            <ref role="355D3u" to="b6kg:1UHaC1cWigI" resolve="lastName" />
+          </node>
+        </node>
+        <node concept="pBohH" id="4knEpdJWwnl" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeH" resolve="Family" />
         </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4WaSx" role="13z3mo">
@@ -84,6 +112,13 @@
           <node concept="13yNan" id="4OZxLw4WaSZ" role="2ik0Q0">
             <node concept="13yPN0" id="4OZxLw4WaT5" role="2F1HV6" />
           </node>
+          <node concept="1y7Krt" id="4knEpdJWwn_" role="1157Rq">
+            <ref role="355D3u" to="b6kg:57pZU2XSTf5" resolve="firstName" />
+            <ref role="355D3t" to="b6kg:57pZU2XSTeO" resolve="Member" />
+          </node>
+        </node>
+        <node concept="pBohH" id="4knEpdJWwnE" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeO" resolve="Member" />
         </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4WaSG" role="13z3mo">
@@ -94,17 +129,24 @@
           <node concept="13yNan" id="4OZxLw4WaTc" role="2ik0Q0">
             <node concept="13yPN0" id="4OZxLw4WaTi" role="2F1HV6" />
           </node>
+          <node concept="1y7Krt" id="4knEpdJWwnU" role="1157Rq">
+            <ref role="355D3t" to="b6kg:57pZU2XSTeO" resolve="Member" />
+            <ref role="355D3u" to="b6kg:57pZU2XSTf5" resolve="firstName" />
+          </node>
+        </node>
+        <node concept="pBohH" id="4knEpdJWwnP" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeO" resolve="Member" />
         </node>
       </node>
       <node concept="1jGXVw" id="4OZxLw4WaTl" role="13z3mp">
         <property role="aCCiF" value="mothers" />
-        <ref role="13xwDP" node="4OZxLw4WaSr" />
         <ref role="13xwDU" node="4OZxLw4WaSx" />
+        <ref role="13xwDP" node="4OZxLw4WaSr" />
       </node>
       <node concept="1jGXVw" id="4OZxLw4WaTq" role="13z3mp">
         <property role="aCCiF" value="fathers" />
-        <ref role="13xwDP" node="4OZxLw4WaSr" />
         <ref role="13xwDU" node="4OZxLw4WaSG" />
+        <ref role="13xwDP" node="4OZxLw4WaSr" />
       </node>
     </node>
     <node concept="aREgA" id="4OZxLw4WaSp" role="aREgT">
@@ -112,6 +154,9 @@
       <node concept="1jGXXa" id="4OZxLw4WaTu" role="1jGXX7">
         <property role="13z3e$" value="MotherFather_A1" />
         <property role="13z3hU" value="Community" />
+        <node concept="pBohH" id="4knEpdJWwo5" role="pB8W9">
+          <ref role="35c_gD" to="eh87:2EaowSc4lST" resolve="Community" />
+        </node>
       </node>
       <node concept="1jGXXa" id="4OZxLw4WaTw" role="1jGXX7">
         <property role="13z3e$" value="MotherFather_AMother" />
@@ -121,16 +166,26 @@
           <node concept="2ik0MF" id="4MaYa8s4Kcn" role="2ik0MU">
             <ref role="2ik0MN" node="4OZxLw4WaT8" resolve="firstName" />
           </node>
+          <node concept="1y7Krt" id="4knEpdJWwof" role="1157Rj">
+            <ref role="355D3t" to="eh87:46cQNHkcdIJ" resolve="Woman" />
+            <ref role="355D3u" to="eh87:46cQNHkcdIE" resolve="fullName" />
+          </node>
+        </node>
+        <node concept="pBohH" id="4knEpdJWwoa" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdIJ" resolve="Woman" />
         </node>
       </node>
       <node concept="1jGXXa" id="4OZxLw4WaTJ" role="1jGXX7">
         <property role="13z3e$" value="MotherFather_AFather" />
         <property role="13z3hU" value="Man" />
+        <node concept="pBohH" id="4knEpdJWwoq" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdIG" resolve="Man" />
+        </node>
       </node>
       <node concept="1jGXVd" id="4OZxLw4WaTN" role="2ik0Ml">
         <property role="aCCiF" value="persons" />
-        <ref role="13xwDP" node="4OZxLw4WaTu" />
         <ref role="13xwDU" node="4OZxLw4WaTw" />
+        <ref role="13xwDP" node="4OZxLw4WaTu" />
       </node>
       <node concept="1jGXVd" id="4OZxLw4WaTP" role="2ik0Ml">
         <property role="aCCiF" value="persons" />
