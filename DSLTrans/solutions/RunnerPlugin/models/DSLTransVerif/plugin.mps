@@ -1404,6 +1404,33 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="4_IbDxThZ6O" role="3cqZAp">
+              <node concept="2OqwBi" id="4_IbDxThZ6L" role="3clFbG">
+                <node concept="10M0yZ" id="4_IbDxThZ6M" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                </node>
+                <node concept="liA8E" id="4_IbDxThZ6N" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="3cpWs3" id="4_IbDxTi0Sx" role="37wK5m">
+                    <node concept="Xl_RD" id="4_IbDxTi0cA" role="3uHU7B">
+                      <property role="Xl_RC" value="---------&gt; PYTHONPATH: " />
+                    </node>
+                    <node concept="2OqwBi" id="4_IbDxTi39B" role="3uHU7w">
+                      <node concept="37vLTw" id="4_IbDxTi2JE" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2EAnn9p7Uzy" resolve="env" />
+                      </node>
+                      <node concept="liA8E" id="4_IbDxTi3Ap" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object):java.lang.Object" resolve="get" />
+                        <node concept="Xl_RD" id="4_IbDxTi4dR" role="37wK5m">
+                          <property role="Xl_RC" value="PYTHONPATH" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="SfApY" id="2EAnn9pe8m4" role="3cqZAp">
               <node concept="3clFbS" id="2EAnn9pe8m6" role="SfCbr">
                 <node concept="3cpWs8" id="2EAnn9pe3U0" role="3cqZAp">
@@ -1653,6 +1680,7 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="4_IbDxThTD_" role="3cqZAp" />
           </node>
           <node concept="2OqwBi" id="2EAnn9pdD6T" role="3clFbw">
             <node concept="37vLTw" id="2EAnn9pdCl4" role="2Oq$k0">
@@ -1672,8 +1700,13 @@
                   </node>
                   <node concept="liA8E" id="2EAnn9pdQ9n" role="2OqNvi">
                     <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                    <node concept="Xl_RD" id="2EAnn9pdQap" role="37wK5m">
-                      <property role="Xl_RC" value="Can't find the backend directory: " />
+                    <node concept="3cpWs3" id="4_IbDxThCqE" role="37wK5m">
+                      <node concept="37vLTw" id="4_IbDxThCvH" role="3uHU7w">
+                        <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                      </node>
+                      <node concept="Xl_RD" id="2EAnn9pdQap" role="3uHU7B">
+                        <property role="Xl_RC" value="Can't find the backend directory: " />
+                      </node>
                     </node>
                   </node>
                 </node>
