@@ -14,6 +14,8 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
+    <use id="05f6207f-0b7e-4413-bedb-09f3dfc58438" name="Families" version="0" />
+    <use id="98a5ea16-05e8-4296-b548-cbaca3397fce" name="Persons" version="0" />
   </languages>
   <imports>
     <import index="i9c9" ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" />
