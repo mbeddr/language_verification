@@ -149,7 +149,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2147,7 +2147,7 @@
                     <node concept="3clFbF" id="6xRNLzYo4GD" role="3cqZAp">
                       <node concept="37vLTI" id="6xRNLzYo5ep" role="3clFbG">
                         <node concept="Xl_RD" id="6xRNLzYo5rv" role="37vLTx">
-                          <property role="Xl_RC" value="abstract=\&quot;true\&quot; " />
+                          <property role="Xl_RC" value=" abstract=\&quot;true\&quot; " />
                         </node>
                         <node concept="37vLTw" id="6xRNLzYo4GB" role="37vLTJ">
                           <ref role="3cqZAo" node="6xRNLzYnTuF" resolve="abstractString" />
@@ -2174,19 +2174,24 @@
                       <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                       <node concept="3cpWs3" id="6xRNLzYnRm0" role="37wK5m">
                         <node concept="Xl_RD" id="aubH6srx1u" role="3uHU7w">
-                          <property role="Xl_RC" value="\&quot; \n" />
+                          <property role="Xl_RC" value=" \n" />
                         </node>
                         <node concept="3cpWs3" id="aubH6srvT5" role="3uHU7B">
-                          <node concept="3cpWs3" id="6XxPrVIw8m0" role="3uHU7B">
-                            <node concept="Xl_RD" id="6XxPrVIw7KJ" role="3uHU7B">
-                              <property role="Xl_RC" value="&lt;eClassifiers xsi:type=\&quot;ecore:EClass\&quot; name=\&quot;" />
+                          <node concept="3cpWs3" id="3OrqAkQkUty" role="3uHU7B">
+                            <node concept="Xl_RD" id="3OrqAkQkULD" role="3uHU7w">
+                              <property role="Xl_RC" value="\&quot;" />
                             </node>
-                            <node concept="2OqwBi" id="6XxPrVIw9hL" role="3uHU7w">
-                              <node concept="37vLTw" id="6XxPrVIw8YP" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3glPWev5zDv" resolve="concept" />
+                            <node concept="3cpWs3" id="6XxPrVIw8m0" role="3uHU7B">
+                              <node concept="Xl_RD" id="6XxPrVIw7KJ" role="3uHU7B">
+                                <property role="Xl_RC" value="&lt;eClassifiers xsi:type=\&quot;ecore:EClass\&quot; name=\&quot;" />
                               </node>
-                              <node concept="liA8E" id="6XxPrVIw9D9" role="2OqNvi">
-                                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                              <node concept="2OqwBi" id="6XxPrVIw9hL" role="3uHU7w">
+                                <node concept="37vLTw" id="6XxPrVIw8YP" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="3glPWev5zDv" resolve="concept" />
+                                </node>
+                                <node concept="liA8E" id="6XxPrVIw9D9" role="2OqNvi">
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                                </node>
                               </node>
                             </node>
                           </node>
