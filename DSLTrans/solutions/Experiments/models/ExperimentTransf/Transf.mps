@@ -191,7 +191,7 @@
         </node>
       </node>
       <node concept="1jGXXK" id="3SN6lk6hFlF" role="1jGXV4">
-        <property role="TrG5h" value="transform_A" />
+        <property role="TrG5h" value="transformA" />
         <node concept="3GsvpM" id="3SN6lk6hFlG" role="2ik0Mo">
           <property role="KJs$L" value="6" />
           <node concept="1jGXXa" id="2IH$1p89vck" role="1jGXX7">
@@ -397,7 +397,7 @@
         </node>
       </node>
       <node concept="1jGXXK" id="4mULXgbB7_B" role="1jGXV4">
-        <property role="TrG5h" value="transform_B" />
+        <property role="TrG5h" value="transformB" />
         <node concept="3GsvpM" id="4mULXgbB7_D" role="2ik0Mo">
           <property role="KJs$L" value="1" />
           <node concept="1jGXXa" id="4mULXgbB7By" role="1jGXX7">
