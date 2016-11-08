@@ -62,6 +62,7 @@
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
         <child id="2796321687635932077" name="attributes" index="13z3hJ" />
       </concept>
+      <concept id="2210469722644160506" name="transfverif.core.structure.ForceTraceability" flags="ng" index="1imNlU" />
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
       <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
       <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
@@ -81,6 +82,10 @@
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
       <concept id="3828633282163103592" name="DSLTrans.structure.Layer" flags="ng" index="1jGXV7">
         <child id="3828633282163103595" name="rulePresenter" index="1jGXV4" />
+        <child id="7385586326860431340" name="previousSource" index="1o0q1e" />
+      </concept>
+      <concept id="3828633282163103603" name="DSLTrans.structure.PreviousLayer" flags="ng" index="1jGXVs">
+        <reference id="7769237388006044581" name="source" index="3k6leo" />
       </concept>
       <concept id="3828633282163103455" name="DSLTrans.structure.Rule" flags="ng" index="1jGXXK">
         <child id="7049464676098553437" name="applyModel" index="2ik0Mo" />
@@ -91,6 +96,9 @@
         <child id="3065370308850507521" name="outputModule" index="AAzOf" />
         <child id="3065370308850962716" name="inputModule" index="ABjci" />
         <child id="7769237388006044628" name="layer" index="3k6lfD" />
+      </concept>
+      <concept id="2860350776942378900" name="DSLTrans.structure.RulePointer" flags="ng" index="1v6VTO">
+        <reference id="2860350776942378901" name="pointer" index="1v6VTP" />
       </concept>
       <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
       <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
@@ -186,6 +194,15 @@
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
             <ref role="355D3t" to="1hz8:2EaowSc4lSU" resolve="TownHall" />
           </node>
+        </node>
+        <node concept="2ik0MC" id="GW95CXIluC" role="2ik0MI">
+          <property role="TrG5h" value="trace" />
+          <node concept="2ik0M$" id="GW95CXIluO" role="2ik0MU">
+            <node concept="2ik0MB" id="GW95CXIluQ" role="2ik0My">
+              <property role="2ik0Mw" value="solveref" />
+            </node>
+          </node>
+          <node concept="1imNlU" id="GW95CXIluM" role="1157Rj" />
         </node>
       </node>
       <node concept="1jGXXa" id="4OZxLw4YKMh" role="1jGXX7">
@@ -576,7 +593,7 @@
     <property role="TrG5h" value="Country2Community" />
     <property role="3GE5qa" value="transformation" />
     <node concept="3GsvpM" id="3RdW_rChosq" role="2ik0Mo">
-      <property role="KJs$L" value="1" />
+      <property role="KJs$L" value="3" />
       <node concept="1jGXVd" id="7OSI$xj4OW$" role="2ik0Ml">
         <property role="aCCiF" value="communities" />
         <ref role="13xwDP" node="7OSI$xj4OWA" />
@@ -587,6 +604,15 @@
         <property role="13z3hU" value="Community" />
         <node concept="pBohH" id="1UHaC1cWigs" role="pB8W9">
           <ref role="35c_gD" to="1hz8:2EaowSc4lST" resolve="Community" />
+        </node>
+        <node concept="2ik0MC" id="GW95CXIluU" role="2ik0MI">
+          <property role="TrG5h" value="trace" />
+          <node concept="2ik0M$" id="GW95CXIlv0" role="2ik0MU">
+            <node concept="2ik0MB" id="GW95CXIlv2" role="2ik0My">
+              <property role="2ik0Mw" value="solveref" />
+            </node>
+          </node>
+          <node concept="1imNlU" id="GW95CXIluY" role="1157Rj" />
         </node>
       </node>
       <node concept="1jGXXa" id="7OSI$xj4OWA" role="1jGXX7">
@@ -709,26 +735,77 @@
     </node>
     <node concept="1jGXV7" id="4knEpdJZqj9" role="3k6lfD">
       <property role="TrG5h" value="Layer1" />
-      <node concept="1jGXXK" id="7OSI$xj4OYn" role="1jGXV4">
-        <property role="TrG5h" value="first" />
-        <node concept="3GsvpM" id="7OSI$xj4OYp" role="2ik0Mo">
-          <property role="KJs$L" value="1" />
-          <node concept="1jGXXa" id="7OSI$xj4OYA" role="1jGXX7">
-            <property role="13z3e$" value="Apply0" />
-            <node concept="pBohH" id="7OSI$xj4OYC" role="pB8W9">
-              <ref role="35c_gD" to="1hz8:7OSI$xj4NKq" resolve="rootFTP" />
-            </node>
-          </node>
-        </node>
-        <node concept="3GsvpN" id="7OSI$xj4OYt" role="2ik0Mu">
-          <property role="KJs$L" value="1" />
-          <node concept="2ik0NV" id="7OSI$xj4OYv" role="13z3mo">
-            <property role="13z3e$" value="Any0" />
-            <node concept="pBohH" id="7OSI$xj4OYx" role="pB8W9">
-              <ref role="35c_gD" to="1hz8:7OSI$xj4NKq" resolve="rootFTP" />
-            </node>
-          </node>
-        </node>
+      <node concept="1v6VTO" id="GW95CXFWNA" role="1jGXV4">
+        <ref role="1v6VTP" node="3RdW_rChosp" resolve="Country2Community" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="GW95CXFWO9" role="3k6lfD">
+      <property role="TrG5h" value="Layer2" />
+      <node concept="1jGXVs" id="GW95CXFWOd" role="1o0q1e">
+        <ref role="3k6leo" node="4knEpdJZqj9" resolve="Layer1" />
+      </node>
+      <node concept="1v6VTO" id="GW95CXFWOf" role="1jGXV4">
+        <ref role="1v6VTP" node="1AcaMXhA0G1" resolve="Father2Man" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="GW95CXFWOy" role="3k6lfD">
+      <property role="TrG5h" value="Layer3" />
+      <node concept="1jGXVs" id="GW95CXFWOD" role="1o0q1e">
+        <ref role="3k6leo" node="GW95CXFWO9" resolve="Layer2" />
+      </node>
+      <node concept="1v6VTO" id="GW95CXFWOF" role="1jGXV4">
+        <ref role="1v6VTP" node="4OZxLw4YJES" resolve="Mother2Woman" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="GW95CXFWOH" role="3k6lfD">
+      <property role="TrG5h" value="Layer4" />
+      <node concept="1jGXVs" id="GW95CXFWOR" role="1o0q1e">
+        <ref role="3k6leo" node="GW95CXFWOy" resolve="Layer3" />
+      </node>
+      <node concept="1v6VTO" id="GW95CXFWOT" role="1jGXV4">
+        <ref role="1v6VTP" node="4OZxLw4YJFi" resolve="Son2Man" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="GW95CXFWOV" role="3k6lfD">
+      <property role="TrG5h" value="Layer5" />
+      <node concept="1jGXVs" id="GW95CXFWP8" role="1o0q1e">
+        <ref role="3k6leo" node="GW95CXFWOH" resolve="Layer4" />
+      </node>
+      <node concept="1v6VTO" id="GW95CXFWPa" role="1jGXV4">
+        <ref role="1v6VTP" node="4OZxLw4YJF9" resolve="Daughter2Woman" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="GW95CXFWP_" role="3k6lfD">
+      <property role="TrG5h" value="Layer6" />
+      <node concept="1jGXVs" id="GW95CXFWPP" role="1o0q1e">
+        <ref role="3k6leo" node="GW95CXFWOV" resolve="Layer5" />
+      </node>
+      <node concept="1v6VTO" id="GW95CXFWPR" role="1jGXV4">
+        <ref role="1v6VTP" node="4OZxLw4YKM7" resolve="City2TownHall" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="GW95CXIlvP" role="3k6lfD">
+      <property role="TrG5h" value="Layer7" />
+      <node concept="1jGXVs" id="GW95CXIlwb" role="1o0q1e">
+        <ref role="3k6leo" node="GW95CXFWP_" resolve="Layer6" />
+      </node>
+      <node concept="1v6VTO" id="GW95CXIlwd" role="1jGXV4">
+        <ref role="1v6VTP" node="4OZxLw4YKN1" resolve="CityCompany2Association" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="GW95CXIlwf" role="3k6lfD">
+      <property role="TrG5h" value="Layer8" />
+      <node concept="1jGXVs" id="GW95CXIlwK" role="1o0q1e">
+        <ref role="3k6leo" node="GW95CXIlvP" resolve="Layer7" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="GW95CXIltx" role="3k6lfD">
+      <property role="TrG5h" value="Layer11" />
+      <node concept="1v6VTO" id="GW95CXIltQ" role="1jGXV4">
+        <ref role="1v6VTP" node="4OZxLw4ZfEk" resolve="cotownHallsSolveRefCountryCityCommunityTownHall" />
+      </node>
+      <node concept="1jGXVs" id="GW95CXIlwN" role="1o0q1e">
+        <ref role="3k6leo" node="GW95CXIlwf" resolve="Layer8" />
       </node>
     </node>
     <node concept="37shsh" id="7OSI$xj4OX4" role="ABjci">

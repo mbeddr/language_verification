@@ -1645,57 +1645,76 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="2IH$1p8acs5" role="3cqZAp">
-              <node concept="2OqwBi" id="2IH$1p8acs6" role="3clFbG">
-                <node concept="10M0yZ" id="2IH$1p8acs7" role="2Oq$k0">
-                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                  <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                </node>
-                <node concept="liA8E" id="2IH$1p8acs8" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                  <node concept="3cpWs3" id="2IH$1p8aKDE" role="37wK5m">
-                    <node concept="2OqwBi" id="2IH$1p8aQ0a" role="3uHU7w">
-                      <node concept="2GrUjf" id="2IH$1p8aPMw" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="2IH$1p8acs0" resolve="attr" />
-                      </node>
-                      <node concept="liA8E" id="2IH$1p8aQU7" role="2OqNvi">
-                        <ref role="37wK5l" to="fzpi:~InstanceAttribute.getValue():java.lang.Object" resolve="getValue" />
-                      </node>
+            <node concept="3clFbJ" id="4HOlOngnWpu" role="3cqZAp">
+              <node concept="3clFbS" id="4HOlOngnWpw" role="3clFbx">
+                <node concept="3clFbF" id="2IH$1p8acs5" role="3cqZAp">
+                  <node concept="2OqwBi" id="2IH$1p8acs6" role="3clFbG">
+                    <node concept="10M0yZ" id="2IH$1p8acs7" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
-                    <node concept="3cpWs3" id="2IH$1p8aEp6" role="3uHU7B">
-                      <node concept="3cpWs3" id="2IH$1p8axeN" role="3uHU7B">
-                        <node concept="3cpWs3" id="2IH$1p8acs9" role="3uHU7B">
-                          <node concept="Xl_RD" id="2IH$1p8acsf" role="3uHU7B">
-                            <property role="Xl_RC" value="   Attribute with Name = " />
+                    <node concept="liA8E" id="2IH$1p8acs8" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="3cpWs3" id="2IH$1p8aKDE" role="37wK5m">
+                        <node concept="2OqwBi" id="2IH$1p8aQ0a" role="3uHU7w">
+                          <node concept="2GrUjf" id="2IH$1p8aPMw" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="2IH$1p8acs0" resolve="attr" />
                           </node>
-                          <node concept="2OqwBi" id="2IH$1p8aYWb" role="3uHU7w">
-                            <node concept="2OqwBi" id="2IH$1p8aT0P" role="2Oq$k0">
-                              <node concept="2GrUjf" id="2IH$1p8acsc" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="2IH$1p8acs0" resolve="attr" />
-                              </node>
-                              <node concept="liA8E" id="2IH$1p8aX0u" role="2OqNvi">
-                                <ref role="37wK5l" to="fzpi:~InstanceAttribute.getMetaAttribute():dsltrans.metamodel.MetaAttribute" resolve="getMetaAttribute" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="2IH$1p8b2T1" role="2OqNvi">
-                              <ref role="37wK5l" to="fodd:~MetaAttribute.getName():java.lang.String" resolve="getName" />
-                            </node>
+                          <node concept="liA8E" id="2IH$1p8aQU7" role="2OqNvi">
+                            <ref role="37wK5l" to="fzpi:~InstanceAttribute.getValue():java.lang.Object" resolve="getValue" />
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="2IH$1p8aDtx" role="3uHU7w">
-                          <property role="Xl_RC" value=" : " />
+                        <node concept="3cpWs3" id="2IH$1p8aEp6" role="3uHU7B">
+                          <node concept="3cpWs3" id="2IH$1p8axeN" role="3uHU7B">
+                            <node concept="3cpWs3" id="2IH$1p8acs9" role="3uHU7B">
+                              <node concept="Xl_RD" id="2IH$1p8acsf" role="3uHU7B">
+                                <property role="Xl_RC" value="   Attribute with Name = " />
+                              </node>
+                              <node concept="2OqwBi" id="2IH$1p8aYWb" role="3uHU7w">
+                                <node concept="2OqwBi" id="2IH$1p8aT0P" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="2IH$1p8acsc" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="2IH$1p8acs0" resolve="attr" />
+                                  </node>
+                                  <node concept="liA8E" id="2IH$1p8aX0u" role="2OqNvi">
+                                    <ref role="37wK5l" to="fzpi:~InstanceAttribute.getMetaAttribute():dsltrans.metamodel.MetaAttribute" resolve="getMetaAttribute" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="2IH$1p8b2T1" role="2OqNvi">
+                                  <ref role="37wK5l" to="fodd:~MetaAttribute.getName():java.lang.String" resolve="getName" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="2IH$1p8aDtx" role="3uHU7w">
+                              <property role="Xl_RC" value=" : " />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="2IH$1p8aJtF" role="3uHU7w">
+                            <property role="Xl_RC" value=" Value = " />
+                          </node>
                         </node>
-                      </node>
-                      <node concept="Xl_RD" id="2IH$1p8aJtF" role="3uHU7w">
-                        <property role="Xl_RC" value=" Value = " />
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="4HOlOngnWpu" role="3cqZAp">
-              <node concept="3clFbS" id="4HOlOngnWpw" role="3clFbx">
+                <node concept="3clFbF" id="GW95CXGtQA" role="3cqZAp">
+                  <node concept="2OqwBi" id="GW95CXGtQz" role="3clFbG">
+                    <node concept="10M0yZ" id="GW95CXGtQ$" role="2Oq$k0">
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    </node>
+                    <node concept="liA8E" id="GW95CXGtQ_" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="3cpWs3" id="GW95CXGuuU" role="37wK5m">
+                        <node concept="37vLTw" id="GW95CXGuCM" role="3uHU7w">
+                          <ref role="3cqZAo" node="4HOlOngkIUQ" resolve="instanceToAddAttr" />
+                        </node>
+                        <node concept="Xl_RD" id="GW95CXGu95" role="3uHU7B">
+                          <property role="Xl_RC" value="Instance to add attr: " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="4HOlOnglFJP" role="3cqZAp">
                   <node concept="2OqwBi" id="4HOlOnglHw8" role="3clFbG">
                     <node concept="2JrnkZ" id="4HOlOnglHoo" role="2Oq$k0">

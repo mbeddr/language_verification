@@ -18,6 +18,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -1236,17 +1237,33 @@
               </node>
               <node concept="3clFbH" id="_xUCdazCW1" role="3cqZAp" />
             </node>
-            <node concept="2OqwBi" id="_xUCdaz8EQ" role="3clFbw">
-              <node concept="2OqwBi" id="_xUCdayU3O" role="2Oq$k0">
-                <node concept="21POm0" id="_xUCdayTIJ" role="2Oq$k0" />
-                <node concept="2qgKlT" id="_xUCdayUp9" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+            <node concept="22lmx$" id="GW95CXJq2T" role="3clFbw">
+              <node concept="2OqwBi" id="_xUCdaz8EQ" role="3uHU7B">
+                <node concept="2OqwBi" id="_xUCdayU3O" role="2Oq$k0">
+                  <node concept="21POm0" id="_xUCdayTIJ" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="_xUCdayUp9" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="_xUCdaz94f" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                  <node concept="Xl_RD" id="_xUCdaz9oG" role="37wK5m">
+                    <property role="Xl_RC" value="Any MatchClass" />
+                  </node>
                 </node>
               </node>
-              <node concept="liA8E" id="_xUCdaz94f" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
-                <node concept="Xl_RD" id="_xUCdaz9oG" role="37wK5m">
-                  <property role="Xl_RC" value="Any MatchClass" />
+              <node concept="2OqwBi" id="GW95CXJqME" role="3uHU7w">
+                <node concept="2OqwBi" id="GW95CXJqMF" role="2Oq$k0">
+                  <node concept="21POm0" id="GW95CXJqMG" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="GW95CXJqMH" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="GW95CXJqMI" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                  <node concept="Xl_RD" id="GW95CXJqMJ" role="37wK5m">
+                    <property role="Xl_RC" value="Exists MatchClass" />
+                  </node>
                 </node>
               </node>
             </node>

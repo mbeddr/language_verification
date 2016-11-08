@@ -328,10 +328,16 @@
       <node concept="2ik0NV" id="4OZxLw4ZfJa" role="13z3mo">
         <property role="13z3e$" value="SF_Child" />
         <property role="13z3hU" value="Child" />
+        <node concept="pBohH" id="GW95CXIlyD" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeN" resolve="Child" />
+        </node>
       </node>
       <node concept="2ik0Md" id="4OZxLw4ZfJb" role="13z3mo">
         <property role="13z3e$" value="SF_Service" />
         <property role="13z3hU" value="Service" />
+        <node concept="pBohH" id="GW95CXJwvW" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeJ" resolve="Service" />
+        </node>
       </node>
       <node concept="1jGXVw" id="4OZxLw4ZfJc" role="13z3mp">
         <property role="aCCiF" value="schools" />
