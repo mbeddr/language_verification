@@ -92,7 +92,7 @@
     <node concept="1TJgyj" id="46cQNHkcdJ0" role="1TKVEi">
       <property role="IQ2ns" value="4723391157066849216" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="district" />
+      <property role="20kJfa" value="districts" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="46cQNHkcdIq" resolve="District" />
     </node>
