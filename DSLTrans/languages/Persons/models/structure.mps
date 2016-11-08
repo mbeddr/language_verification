@@ -96,12 +96,11 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="46cQNHkcdIq" resolve="District" />
     </node>
-    <node concept="1TJgyj" id="46cQNHkcdJf" role="1TKVEi">
-      <property role="IQ2ns" value="4723391157066849231" />
-      <property role="20lmBu" value="aggregation" />
+    <node concept="1TJgyj" id="7OSI$xj4w2H" role="1TKVEi">
+      <property role="IQ2ns" value="9023166673230889133" />
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="workers" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="46cQNHkcdJc" resolve="PersonPointer" />
+      <ref role="20lvS9" node="46cQNHkcdID" resolve="Person" />
     </node>
   </node>
   <node concept="1TIwiD" id="1eaQRpkCugu">
@@ -119,6 +118,13 @@
     <node concept="PrWs8" id="46cQNHkcdIt" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="7OSI$xj4w2P" role="1TKVEi">
+      <property role="IQ2ns" value="9023166673230889141" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="facilities" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="46cQNHkcdIw" resolve="Facility" />
+    </node>
   </node>
   <node concept="PlHQZ" id="46cQNHkcdIw">
     <property role="EcuMT" value="4723391157066849184" />
@@ -126,12 +132,11 @@
     <node concept="PrWs8" id="46cQNHkcdIx" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="46cQNHkcdJj" role="1TKVEi">
-      <property role="IQ2ns" value="4723391157066849235" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="0..n" />
+    <node concept="1TJgyj" id="7OSI$xj4xxh" role="1TKVEi">
+      <property role="IQ2ns" value="9023166673230895185" />
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="members" />
-      <ref role="20lvS9" node="46cQNHkcdJc" resolve="PersonPointer" />
+      <ref role="20lvS9" node="46cQNHkcdID" resolve="Person" />
     </node>
   </node>
   <node concept="1TIwiD" id="46cQNHkcdIz">
@@ -182,36 +187,12 @@
     <node concept="PrWs8" id="46cQNHkcdIN" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="46cQNHkcdJa" role="1TKVEi">
-      <property role="IQ2ns" value="4723391157066849226" />
-      <property role="20lmBu" value="aggregation" />
+    <node concept="1TJgyj" id="7OSI$xj4w2D" role="1TKVEi">
+      <property role="IQ2ns" value="9023166673230889129" />
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="committee" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="46cQNHkcdJ3" resolve="committeePointer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="46cQNHkcdJ3">
-    <property role="EcuMT" value="4723391157066849219" />
-    <property role="TrG5h" value="committeePointer" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="46cQNHkcdJ6" role="1TKVEi">
-      <property role="IQ2ns" value="4723391157066849222" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="pointer" />
-      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1eaQRpkCugu" resolve="Committee" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="46cQNHkcdJc">
-    <property role="EcuMT" value="4723391157066849228" />
-    <property role="TrG5h" value="PersonPointer" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="46cQNHkcdJd" role="1TKVEi">
-      <property role="IQ2ns" value="4723391157066849229" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="pointer" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="46cQNHkcdID" resolve="Person" />
     </node>
   </node>
 </model>
