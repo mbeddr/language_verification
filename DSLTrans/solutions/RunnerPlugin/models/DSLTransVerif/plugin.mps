@@ -2377,7 +2377,7 @@
                 <node concept="liA8E" id="6XxPrVIw4TY" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="6XxPrVIw56$" role="37wK5m">
-                    <property role="Xl_RC" value="xmlns:ecore=\&quot;http://www.eclipse.org/emf/2002/Ecore\&quot; name=\&quot;\&quot;&gt;\n" />
+                    <property role="Xl_RC" value="\txmlns:ecore=\&quot;http://www.eclipse.org/emf/2002/Ecore\&quot; name=\&quot;\&quot;&gt;\n" />
                   </node>
                 </node>
               </node>
@@ -2602,7 +2602,7 @@
                         <node concept="3cpWs3" id="6xRNLzYnRm0" role="3uHU7B">
                           <node concept="3cpWs3" id="6XxPrVIw8m0" role="3uHU7B">
                             <node concept="Xl_RD" id="6XxPrVIw7KJ" role="3uHU7B">
-                              <property role="Xl_RC" value="&lt;eClassifiers xsi:type=\&quot;ecore:EClass\&quot; name=\&quot;" />
+                              <property role="Xl_RC" value="  &lt;eClassifiers xsi:type=\&quot;ecore:EClass\&quot; name=\&quot;" />
                             </node>
                             <node concept="2OqwBi" id="6XxPrVIw9hL" role="3uHU7w">
                               <node concept="37vLTw" id="6XxPrVIw8YP" role="2Oq$k0">
@@ -2658,19 +2658,6 @@
                       </node>
                       <node concept="liA8E" id="33JK74xYcL$" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7nfep2iA6l_" role="3cqZAp">
-                  <node concept="2OqwBi" id="7nfep2iA7NE" role="3clFbG">
-                    <node concept="37vLTw" id="7nfep2iA6lz" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7rNOiA34xQw" resolve="writer" />
-                    </node>
-                    <node concept="liA8E" id="7nfep2iA8SC" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                      <node concept="Xl_RD" id="7nfep2iA8Yk" role="37wK5m">
-                        <property role="Xl_RC" value="\n" />
                       </node>
                     </node>
                   </node>
@@ -2880,7 +2867,7 @@
                                         </node>
                                         <node concept="3cpWs3" id="6XxPrVIwiLk" role="3uHU7B">
                                           <node concept="Xl_RD" id="6XxPrVIwhEf" role="3uHU7B">
-                                            <property role="Xl_RC" value="&lt;eStructuralFeatures xsi:type=\&quot;ecore:EReference\&quot; name=\&quot;" />
+                                            <property role="Xl_RC" value="\t&lt;eStructuralFeatures xsi:type=\&quot;ecore:EReference\&quot; name=\&quot;" />
                                           </node>
                                           <node concept="2OqwBi" id="6XxPrVIwkoI" role="3uHU7w">
                                             <node concept="37vLTw" id="6XxPrVIwk1$" role="2Oq$k0">
@@ -2999,7 +2986,7 @@
                                         </node>
                                         <node concept="3cpWs3" id="aubH6sqyFV" role="3uHU7B">
                                           <node concept="Xl_RD" id="aubH6sqyFW" role="3uHU7B">
-                                            <property role="Xl_RC" value="&lt;eStructuralFeatures xsi:type=\&quot;ecore:EReference\&quot; name=\&quot;" />
+                                            <property role="Xl_RC" value="\t&lt;eStructuralFeatures xsi:type=\&quot;ecore:EReference\&quot; name=\&quot;" />
                                           </node>
                                           <node concept="2OqwBi" id="aubH6sqyFX" role="3uHU7w">
                                             <node concept="37vLTw" id="aubH6sqyFY" role="2Oq$k0">
