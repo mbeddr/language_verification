@@ -18,7 +18,6 @@
     <use id="98a5ea16-05e8-4296-b548-cbaca3397fce" name="Persons" version="0" />
   </languages>
   <imports>
-    <import index="i9c9" ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
