@@ -2225,12 +2225,22 @@
             </node>
             <node concept="liA8E" id="46cQNHjYgu1" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String):void" resolve="setClassName" />
-              <node concept="2OqwBi" id="46cQNHjYgu4" role="37wK5m">
-                <node concept="37vLTw" id="46cQNHjYgu5" role="2Oq$k0">
-                  <ref role="3cqZAo" node="JP13Uteucr" resolve="applyClass" />
+              <node concept="2OqwBi" id="GW95CXvIas" role="37wK5m">
+                <node concept="2OqwBi" id="GW95CXvIat" role="2Oq$k0">
+                  <node concept="2OqwBi" id="GW95CXvIau" role="2Oq$k0">
+                    <node concept="37vLTw" id="GW95CXvPj5" role="2Oq$k0">
+                      <ref role="3cqZAo" node="JP13Uteucr" resolve="applyClass" />
+                    </node>
+                    <node concept="3TrEf2" id="GW95CXvIaw" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i3vy:28y$t0VJxVp" resolve="concept" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="GW95CXvIax" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tp25:2iMJRNxweHl" resolve="conceptDeclaration" />
+                  </node>
                 </node>
-                <node concept="3TrcHB" id="46cQNHjYpNN" role="2OqNvi">
-                  <ref role="3TsBF5" to="i3vy:2rexW9_gFeS" resolve="metamodelType" />
+                <node concept="3TrcHB" id="GW95CXvIay" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>

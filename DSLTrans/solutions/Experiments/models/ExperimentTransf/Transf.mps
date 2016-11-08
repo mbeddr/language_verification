@@ -292,9 +292,6 @@
           <node concept="2ik0NV" id="6PkVIr7qyVh" role="13z3mo">
             <property role="13z3e$" value="Any4" />
             <property role="13z3hU" value="A" />
-            <node concept="pBohH" id="46cQNHjQ7s4" role="pB8W9">
-              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
-            </node>
             <node concept="2ik0M_" id="5ti91Gmipsc" role="13z3hJ">
               <property role="TrG5h" value="nameA" />
               <node concept="13yNan" id="5ti91Gmipsr" role="2ik0Q0">
@@ -304,6 +301,9 @@
                 <ref role="355D3t" to="oqdb:6HyGJ_oty0z" resolve="A" />
                 <ref role="355D3u" to="oqdb:6HyGJ_oty0$" resolve="nameA" />
               </node>
+            </node>
+            <node concept="pBohH" id="7OSI$xj4P0k" role="pB8W9">
+              <ref role="35c_gD" to="oqdb:6HyGJ_oty0z" resolve="A" />
             </node>
           </node>
           <node concept="37mRI7" id="6PkVIr7qDG7" role="lGtFl">

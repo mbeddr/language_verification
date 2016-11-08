@@ -5,9 +5,11 @@
       <modulePath path="$PROJECT_DIR$/languages/DSLTrans/DSLTrans.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/PersonsAndFamilies/PersonsAndFamilies.mpl" folder="ExamplesFamiliesToPersons" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/simpleInputLanguage/simpleInputLanguage.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/simpleInputLanguage2/simpleInputLanguage2.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/simpleInputLanguage3/simpleInputLanguage3.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/simpleOutputLanguage/simpleOutputLanguage.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/transverif.core/transfverif.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.lib/DSLTrans.lib.msd" folder="" />
@@ -16,11 +18,16 @@
       <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf2/ExperimentTransf2.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf3/ExperimentTransf3.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf4/ExperimentTransf4.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExperimentTransf5/ExperimentTransf5.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/Experiments/ExperimentTransf.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/FamToPersonsEnd/FamToPersonsEnd.msd" folder="ExamplesFamiliesToPersons" />
       <modulePath path="$PROJECT_DIR$/solutions/RunnerPlugin/DSLTransVerif.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/inputFTP/inputFTP.msd" folder="ExamplesFamiliesToPersons" />
       <modulePath path="$PROJECT_DIR$/solutions/inputModel/inputModel.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/inputModel2/inputModel2.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/inputModel5/inputModel5.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/solutions/outputFTP/outputFTP.msd" folder="ExamplesFamiliesToPersons" />
       <modulePath path="$PROJECT_DIR$/solutions/outputModel/outputModel.msd" folder="examples" />
     </projectModules>
   </component>
