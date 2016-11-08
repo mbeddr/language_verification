@@ -831,6 +831,70 @@
               </node>
             </node>
             <node concept="3clFbH" id="7OSI$xj49VL" role="3cqZAp" />
+            <node concept="3cpWs8" id="7nfep2iANql" role="3cqZAp">
+              <node concept="3cpWsn" id="7nfep2iANqm" role="3cpWs9">
+                <property role="TrG5h" value="initpy3" />
+                <node concept="3uibUv" id="7nfep2iANqn" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="7nfep2iANyI" role="33vP2m">
+                  <node concept="1pGfFk" id="7nfep2iB78P" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <node concept="3cpWs3" id="7nfep2iB8wk" role="37wK5m">
+                      <node concept="Xl_RD" id="7nfep2iB8x6" role="3uHU7w">
+                        <property role="Xl_RC" value="__init__.py" />
+                      </node>
+                      <node concept="3cpWs3" id="7nfep2iB8be" role="3uHU7B">
+                        <node concept="37vLTw" id="7nfep2iB797" role="3uHU7B">
+                          <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                        </node>
+                        <node concept="37vLTw" id="7nfep2iB8wU" role="3uHU7w">
+                          <ref role="3cqZAo" node="75zsbcXeSoB" resolve="contractDir" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="SfApY" id="7nfep2iB8Pi" role="3cqZAp">
+              <node concept="3clFbS" id="7nfep2iB8Pj" role="SfCbr">
+                <node concept="3clFbF" id="7nfep2iB8Pk" role="3cqZAp">
+                  <node concept="2OqwBi" id="7nfep2iB8Pl" role="3clFbG">
+                    <node concept="37vLTw" id="7nfep2iB9uZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7nfep2iANqm" resolve="initpy3" />
+                    </node>
+                    <node concept="liA8E" id="7nfep2iB8Pn" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.createNewFile():boolean" resolve="createNewFile" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="7nfep2iB8Po" role="TEbGg">
+                <node concept="3cpWsn" id="7nfep2iB8Pp" role="TDEfY">
+                  <property role="TrG5h" value="e" />
+                  <node concept="3uibUv" id="7nfep2iB8Pq" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="7nfep2iB8Pr" role="TDEfX">
+                  <node concept="3clFbF" id="7nfep2iB8Ps" role="3cqZAp">
+                    <node concept="2OqwBi" id="7nfep2iB8Pt" role="3clFbG">
+                      <node concept="10M0yZ" id="7nfep2iB8Pu" role="2Oq$k0">
+                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      </node>
+                      <node concept="liA8E" id="7nfep2iB8Pv" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <node concept="Xl_RD" id="7nfep2iB8Pw" role="37wK5m">
+                          <property role="Xl_RC" value="Can't create file __init__.py file" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="7OSI$xj4a3p" role="3cqZAp" />
             <node concept="3clFbF" id="75zsbcXinxa" role="3cqZAp">
               <node concept="2OqwBi" id="75zsbcXiohv" role="3clFbG">
