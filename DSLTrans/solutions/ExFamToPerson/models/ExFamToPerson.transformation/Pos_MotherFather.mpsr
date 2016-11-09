@@ -22,6 +22,10 @@
         <child id="7049464676098553471" name="value" index="2ik0MU" />
         <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
+      <concept id="7049464676098553455" name="transfverif.core.structure.Concat" flags="ng" index="2ik0ME">
+        <child id="2796321687636254282" name="arg1" index="13yhA8" />
+        <child id="2796321687636254286" name="arg2" index="13yhAc" />
+      </concept>
       <concept id="7049464676098553454" name="transfverif.core.structure.AttributeRef" flags="ng" index="2ik0MF">
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
@@ -46,6 +50,7 @@
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
         <child id="2796321687635932077" name="attributes" index="13z3hJ" />
       </concept>
+      <concept id="2210469722644160506" name="transfverif.core.structure.ForceTraceability" flags="ng" index="1imNlU" />
       <concept id="3828633282163103586" name="transfverif.core.structure.DirectApplyLink" flags="ng" index="1jGXVd" />
       <concept id="3828633282163103567" name="transfverif.core.structure.DirectMatchLink" flags="ng" index="1jGXVw" />
       <concept id="3828633282163103461" name="transfverif.core.structure.ApplyClass" flags="ng" index="1jGXXa">
@@ -161,23 +166,37 @@
       <node concept="1jGXXa" id="4OZxLw4WaTw" role="1jGXX7">
         <property role="13z3e$" value="MotherFather_AMother" />
         <property role="13z3hU" value="Woman" />
-        <node concept="2ik0MC" id="4MaYa8s4Kcf" role="2ik0MI">
-          <property role="TrG5h" value="fullName" />
-          <node concept="2ik0MF" id="4MaYa8s4Kcn" role="2ik0MU">
-            <ref role="2ik0MN" node="4OZxLw4WaT8" resolve="firstName" />
-          </node>
-          <node concept="1y7Krt" id="4knEpdJWwof" role="1157Rj">
-            <ref role="355D3t" to="eh87:46cQNHkcdIJ" resolve="Woman" />
-            <ref role="355D3u" to="eh87:46cQNHkcdIE" resolve="fullName" />
-          </node>
-        </node>
         <node concept="pBohH" id="4knEpdJWwoa" role="pB8W9">
           <ref role="35c_gD" to="eh87:46cQNHkcdIJ" resolve="Woman" />
+        </node>
+        <node concept="2ik0MC" id="5EVMFxdSn9F" role="2ik0MI">
+          <property role="TrG5h" value="fullName" />
+          <node concept="1imNlU" id="5EVMFxdSn9J" role="1157Rj" />
+          <node concept="2ik0ME" id="5EVMFxdSnal" role="2ik0MU">
+            <node concept="2ik0MF" id="5EVMFxdSnau" role="13yhA8">
+              <ref role="2ik0MN" node="4OZxLw4WaSV" resolve="firstName" />
+            </node>
+            <node concept="2ik0MF" id="5EVMFxdSnax" role="13yhAc">
+              <ref role="2ik0MN" node="4OZxLw4WaSt" resolve="lastName" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1jGXXa" id="4OZxLw4WaTJ" role="1jGXX7">
         <property role="13z3e$" value="MotherFather_AFather" />
         <property role="13z3hU" value="Man" />
+        <node concept="2ik0MC" id="5EVMFxdSn9h" role="2ik0MI">
+          <property role="TrG5h" value="fullName" />
+          <node concept="1imNlU" id="5EVMFxdSn9n" role="1157Rj" />
+          <node concept="2ik0ME" id="5EVMFxdSna4" role="2ik0MU">
+            <node concept="2ik0MF" id="5EVMFxdSnad" role="13yhA8">
+              <ref role="2ik0MN" node="4OZxLw4WaT8" resolve="firstName" />
+            </node>
+            <node concept="2ik0MF" id="5EVMFxdSnag" role="13yhAc">
+              <ref role="2ik0MN" node="4OZxLw4WaSt" resolve="lastName" />
+            </node>
+          </node>
+        </node>
         <node concept="pBohH" id="4knEpdJWwoq" role="pB8W9">
           <ref role="35c_gD" to="eh87:46cQNHkcdIG" resolve="Man" />
         </node>
