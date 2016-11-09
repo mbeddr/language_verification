@@ -38,6 +38,30 @@
   <node concept="2ik09X" id="2EAnn9pgMkB">
     <property role="TrG5h" value="Families2PersonsContracts" />
     <property role="3GE5qa" value="contracts" />
+    <node concept="1NTnwR" id="6MxtMaGmsna" role="2ik09Z">
+      <ref role="1NTnwO" node="4MaYa8s4XdH" resolve="Neg_CityCompany" />
+    </node>
+    <node concept="1NTnwR" id="6MxtMaGmsni" role="2ik09Z">
+      <ref role="1NTnwO" node="4MaYa8s4Xhb" resolve="Neg_CountryCity" />
+    </node>
+    <node concept="1NTnwR" id="6MxtMaGmsns" role="2ik09Z">
+      <ref role="1NTnwO" node="4MaYa8s4Xk6" resolve="Neg_DaughterMother" />
+    </node>
+    <node concept="1NTnwR" id="6MxtMaGmsnC" role="2ik09Z">
+      <ref role="1NTnwO" node="4MaYa8s4Xhz" resolve="Neg_SchoolOrdFac" />
+    </node>
+    <node concept="1NTnwR" id="6MxtMaGmso6" role="2ik09Z">
+      <ref role="1NTnwO" node="4MaYa8s4Xj8" resolve="Pos_ChildSchool" />
+    </node>
+    <node concept="1NTnwR" id="6MxtMaGmsoo" role="2ik09Z">
+      <ref role="1NTnwO" node="1AcaMXhA0Gt" resolve="Pos_FourMembers" />
+    </node>
+    <node concept="1NTnwR" id="6MxtMaGmsoG" role="2ik09Z">
+      <ref role="1NTnwO" node="4OZxLw4WaSm" resolve="Pos_MotherFather" />
+    </node>
+    <node concept="1NTnwR" id="6MxtMaGmsp2" role="2ik09Z">
+      <ref role="1NTnwO" node="4MaYa8s4XkE" resolve="Pos_ParentCompany" />
+    </node>
     <node concept="pHN19" id="2EAnn9pgMkC" role="1y7jxr">
       <node concept="2V$Bhx" id="2EAnn9pgMkJ" role="2V$M_3">
         <property role="2V$B1T" value="05f6207f-0b7e-4413-bedb-09f3dfc58438" />
