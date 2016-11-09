@@ -20,6 +20,7 @@
         <child id="5898026252864033744" name="cities" index="3GeALK" />
       </concept>
       <concept id="5898026252864033709" name="PersonsAndFamilies.structure.Family" flags="ng" index="3GeAKd">
+        <property id="2210469722643833902" name="lastName" index="1in0UI" />
         <reference id="5898026252864033789" name="registeredIn" index="3GeALt" />
         <child id="5898026252864033775" name="daughters" index="3GeALf" />
         <child id="5898026252864033751" name="mothers" index="3GeALR" />
@@ -50,42 +51,43 @@
   <node concept="IaSpi" id="7OSI$xj4OWV">
     <node concept="3GeAKc" id="7OSI$xj4OWW" role="IaSpj">
       <property role="TrG5h" value="CountryA" />
+      <node concept="3GeAKe" id="GW95CXJOLp" role="3GeALK">
+        <property role="TrG5h" value="MyCity" />
+        <ref role="IakQc" node="GW95CXFWOs" resolve="bigBusiness" />
+        <node concept="3GeAKh" id="GW95CXJOLq" role="3GeALk">
+          <property role="TrG5h" value="MyNeighborhood" />
+        </node>
+      </node>
       <node concept="3GeAKb" id="GW95CXFWOs" role="3GeALF">
         <property role="TrG5h" value="bigBusiness" />
         <ref role="IakQ2" node="GW95CXFWOk" />
-        <ref role="IakQo" node="7OSI$xj4OWY" resolve="MyCity" />
+        <ref role="IakQo" node="GW95CXJOLp" resolve="MyCity" />
       </node>
       <node concept="3GeAKd" id="7OSI$xj4OWX" role="3GeALH">
         <property role="TrG5h" value="MyFamily" />
-        <ref role="3GeALt" node="7OSI$xj4OWZ" resolve="MyNeighborhood" />
+        <property role="1in0UI" value="theLastName" />
+        <ref role="3GeALt" node="GW95CXJOLq" resolve="MyNeighborhood" />
         <node concept="3GeAKj" id="GW95CXFWOq" role="3GeALf">
           <property role="3GeAL_" value="daughter" />
           <ref role="3Ge$Pi" node="7OSI$xj4OWX" resolve="MyFamily" />
-          <ref role="3Ge$Pk" node="7OSI$xj4OWY" resolve="MyCity" />
+          <ref role="3Ge$Pk" node="GW95CXJOLp" resolve="MyCity" />
         </node>
         <node concept="3GeAKj" id="GW95CXFWOo" role="3GeALW">
           <property role="3GeAL_" value="son" />
           <ref role="3Ge$Pi" node="7OSI$xj4OWX" resolve="MyFamily" />
-          <ref role="3Ge$Pk" node="7OSI$xj4OWY" resolve="MyCity" />
+          <ref role="3Ge$Pk" node="GW95CXJOLp" resolve="MyCity" />
         </node>
         <node concept="3GeAKi" id="GW95CXFWOm" role="3GeALT">
           <property role="3GeAL_" value="dad" />
           <ref role="3Ge$Pi" node="7OSI$xj4OWX" resolve="MyFamily" />
-          <ref role="3Ge$Pk" node="7OSI$xj4OWY" resolve="MyCity" />
           <ref role="IakQu" node="GW95CXFWOs" resolve="bigBusiness" />
+          <ref role="3Ge$Pk" node="GW95CXJOLp" resolve="MyCity" />
         </node>
         <node concept="3GeAKi" id="GW95CXFWOk" role="3GeALR">
           <property role="3GeAL_" value="mum" />
           <ref role="3Ge$Pi" node="7OSI$xj4OWX" resolve="MyFamily" />
-          <ref role="3Ge$Pk" node="7OSI$xj4OWY" resolve="MyCity" />
           <ref role="IakQu" node="GW95CXFWOs" resolve="bigBusiness" />
-        </node>
-      </node>
-      <node concept="3GeAKe" id="7OSI$xj4OWY" role="3GeALK">
-        <property role="TrG5h" value="MyCity" />
-        <ref role="IakQc" node="GW95CXFWOs" resolve="bigBusiness" />
-        <node concept="3GeAKh" id="7OSI$xj4OWZ" role="3GeALk">
-          <property role="TrG5h" value="MyNeighborhood" />
+          <ref role="3Ge$Pk" node="GW95CXJOLp" resolve="MyCity" />
         </node>
       </node>
     </node>

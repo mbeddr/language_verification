@@ -17,9 +17,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -98,7 +96,7 @@
       <property role="IQ2ns" value="9023166673230886864" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="isIn" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="57pZU2XSTeI" resolve="City" />
     </node>
   </node>
@@ -193,14 +191,14 @@
     <node concept="1TJgyj" id="57pZU2XSVbM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="family" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="5898026252864041714" />
       <ref role="20lvS9" node="57pZU2XSTeH" resolve="Family" />
     </node>
     <node concept="1TJgyj" id="57pZU2XSVbO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="livesIn" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="5898026252864041716" />
       <ref role="20lvS9" node="57pZU2XSTeI" resolve="City" />
     </node>
@@ -282,7 +280,7 @@
       <property role="IQ2ns" value="9023166673230889129" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="committee" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="1eaQRpkCugu" resolve="Committee" />
     </node>
   </node>
@@ -303,7 +301,7 @@
     <node concept="1TJgyj" id="2EaowSc4lSX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="townHalls" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="3065370308850572861" />
       <ref role="20lvS9" node="2EaowSc4lSU" resolve="TownHall" />
     </node>
@@ -318,11 +316,8 @@
       <property role="IQ2ns" value="4723391157066849212" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="persons" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="46cQNHkcdID" resolve="Person" />
-    </node>
-    <node concept="PrWs8" id="46cQNHkcdIr" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="46cQNHkcdIq">
@@ -345,9 +340,6 @@
     <property role="EcuMT" value="4723391157066849184" />
     <property role="TrG5h" value="Facility" />
     <property role="3GE5qa" value="Persons" />
-    <node concept="PrWs8" id="46cQNHkcdIx" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyj" id="7OSI$xj4xxh" role="1TKVEi">
       <property role="IQ2ns" value="9023166673230895185" />
       <property role="20lmBu" value="reference" />
@@ -403,15 +395,15 @@
     <node concept="1TJgyj" id="1eaQRpkCugr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="committee" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="1408179134779221019" />
       <ref role="20lvS9" node="1eaQRpkCugu" resolve="Committee" />
     </node>
     <node concept="1TJgyj" id="46cQNHkcdJ0" role="1TKVEi">
       <property role="IQ2ns" value="4723391157066849216" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="district" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20kJfa" value="districts" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="46cQNHkcdIq" resolve="District" />
     </node>
     <node concept="1TJgyj" id="7OSI$xj4w2H" role="1TKVEi">
