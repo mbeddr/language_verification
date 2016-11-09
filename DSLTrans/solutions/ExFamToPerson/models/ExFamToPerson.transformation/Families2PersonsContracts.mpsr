@@ -50,6 +50,9 @@
     <node concept="1NTnwR" id="6MxtMaGmsnC" role="2ik09Z">
       <ref role="1NTnwO" node="4MaYa8s4Xhz" resolve="Neg_SchoolOrdFac" />
     </node>
+    <node concept="1NTnwR" id="5EVMFxdMw_2" role="2ik09Z">
+      <ref role="1NTnwO" node="4MaYa8s4Xi3" resolve="Pos_AssocCity" />
+    </node>
     <node concept="1NTnwR" id="6MxtMaGmso6" role="2ik09Z">
       <ref role="1NTnwO" node="4MaYa8s4Xj8" resolve="Pos_ChildSchool" />
     </node>
