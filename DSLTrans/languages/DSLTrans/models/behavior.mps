@@ -2334,17 +2334,12 @@
                     </node>
                     <node concept="liA8E" id="7rNOiA3j7Ok" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                      <node concept="3cpWs3" id="7rNOiA3t6QN" role="37wK5m">
-                        <node concept="Xl_RD" id="7rNOiA3t821" role="3uHU7B">
-                          <property role="Xl_RC" value="\t\t" />
+                      <node concept="2OqwBi" id="7rNOiA3j7Ol" role="37wK5m">
+                        <node concept="2GrUjf" id="7rNOiA3j7Om" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="7rNOiA3j7Mz" resolve="assoc" />
                         </node>
-                        <node concept="2OqwBi" id="7rNOiA3j7Ol" role="3uHU7w">
-                          <node concept="2GrUjf" id="7rNOiA3j7Om" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="7rNOiA3j7Mz" resolve="assoc" />
-                          </node>
-                          <node concept="3TrcHB" id="7rNOiA3j7On" role="2OqNvi">
-                            <ref role="3TsBF5" to="i3vy:3QsrawRfIw3" resolve="typeName" />
-                          </node>
+                        <node concept="3TrcHB" id="7rNOiA3j7On" role="2OqNvi">
+                          <ref role="3TsBF5" to="i3vy:3QsrawRfIw3" resolve="typeName" />
                         </node>
                       </node>
                     </node>
@@ -2358,7 +2353,7 @@
                     <node concept="liA8E" id="7rNOiA3j7Or" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                       <node concept="Xl_RD" id="7rNOiA3j7Os" role="37wK5m">
-                        <property role="Xl_RC" value="\t\t\&quot;\&quot;\&quot;\n" />
+                        <property role="Xl_RC" value="\&quot;\&quot;\&quot;\n" />
                       </node>
                     </node>
                   </node>
