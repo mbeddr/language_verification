@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/DSLTrans/DSLTrans.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/languages/Module/Module.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="examples" />
       <modulePath path="$PROJECT_DIR$/languages/PersonsAndFamilies/PersonsAndFamilies.mpl" folder="ExamplesFamiliesToPersons" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
