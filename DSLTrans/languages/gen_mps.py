@@ -65,28 +65,6 @@ class GenMPSStructure():
 
 
     def load_child_node(self, node):
-    #     < node
-    #     concept = "1TJgyj"
-    #     id = "2EaowSc4lSX"
-    #     role = "1TKVEi" >
-    #     < property
-    #     role = "20lmBu"
-    #     value = "aggregation" / >
-    #     < property
-    #     role = "20kJfa"
-    #     value = "townHalls" / >
-    #     < property
-    #     role = "20lbJX"
-    #     value = "1..n" / >
-    #     < property
-    #     role = "IQ2ns"
-    #     value = "3065370308850572861" / >
-    #     < ref
-    #     role = "20lvS9"
-    #     node = "2EaowSc4lSU"
-    #     resolve = "TownHall" / >
-    #
-    # < / node >
 
         self.print_dbg("TAG")
 
@@ -102,30 +80,73 @@ class GenMPSStructure():
         rand_EcuMT = str(self.start_ecuMT)
         self.start_ecuMT += 5
 
-        self.print_out("""    <node concept="1TJgyj" id="{}" role="1TKVEi">""".format(mps_id))
+        type_string = "{http://www.w3.org/2001/XMLSchema-instance}type"
+        if node.attrib[type_string] == "ecore:EReference":
 
-        self.print_out("""        <node role="IQ2ns" value="{}">""".format(rand_EcuMT))
+            self.print_out("""    <node concept="1TJgyj" id="{}" role="1TKVEi">""".format(mps_id))
+
+            target_name = self.get_type(node.attrib["eType"])
+
+            if target_name == "string":
+                self.print_out("""        <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />""")
+            else:
+                target_id = self.name_id_map[target_name]
+                self.print_out(
+                    """        <ref role="20lvS9" node="{}" resolve="{}" />""".format(target_id, target_name))
+
+            self.print_out("""        <property role="IQ2ns" value="{}" />""".format(rand_EcuMT))
+
+            is_containment = False
+            try:
+                if node.attrib["containment"] == "true":
+                    is_containment = True
+                    self.print_out("""        <property role="20lmBu" value="aggregation" />""")
+            except KeyError:
+                self.print_out("""        <property role="20lmBu" value="reference" />""")
+
+            self.print_out("""        <property role="20kJfa" value="{}" />""".format(name))
+
+            lower_bound = "0"
+            upper_bound = "1"
+            try:
+                if node.attrib["lowerBound"] == "1":
+                    lower_bound = "1"
+            except KeyError:
+                pass
+
+            try:
+                if node.attrib["upperBound"] == "-1":
+                    upper_bound = "n"
+            except KeyError:
+                pass
+
+            if not is_containment and lower_bound == "0" and upper_bound == "n":
+                pass
+            else:
+                self.print_out("""        <property role="20lbJX" value="{}..{}" />""".format(lower_bound, upper_bound))
 
 
-        try:
-            if node.attrib["containment"] == "true":
-                self.print_out("""        <node role="20lmBu" value="aggregation">""")
-        except KeyError:
-            self.print_out("""        <node role="20lmBu" value="reference">""")
 
-        self.print_out("""        <node role="20kJfa" value="{}">""".format(name))
+            self.print_out("    </node>")
 
-        target_name = self.get_type(node.attrib["eType"])
+        elif node.attrib[type_string] == "ecore:EAttribute":
 
-        if target_name == "string":
-            self.print_out("""        <ref role="AX2Wp" node="tpck:fKAOsGN" resolve="string">""")
+            self.print_out("""    <node concept="1TJgyi" id="{}" role="1TKVEl">""".format(mps_id))
+
+            self.print_out("""      <property role="IQ2nx" value="{}" />""".format(rand_EcuMT))
+            self.print_out("""      <property role="TrG5h" value="{}" />""".format(name))
+
+
+            target_name = self.get_type(node.attrib["eType"])
+
+            if target_name == "string":
+                self.print_out("""      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />""")
+            else:
+                raise NotImplementedError()
+
+            self.print_out("    </node>")
         else:
-            target_id = self.name_id_map[target_name]
-            self.print_out("""        <ref role="20lvS9" node="{}" resolve="{}">""".format(target_id, target_name))
-
-        # self.print_out("""\t\t<node role="20lbJX" value="1..n">""")
-
-        self.print_out("    </node>")
+            raise NotImplementedError()
 
 
 
@@ -199,9 +220,9 @@ class GenMPSStructure():
             attrib_val = node.attrib[attrib]
             self.print_dbg(attrib + " : " + attrib_val)
 
-        # for child in node:
-        #     self.print_dbg("CHILD:")
-        #     self.load_child_node(child)
+        for child in node:
+            self.print_dbg("CHILD:")
+            self.load_child_node(child)
 
 
 
@@ -209,7 +230,9 @@ class GenMPSStructure():
 
 #main
 
-tree = ET.parse('Module.ecore')
+files = ["Module.ecore", "Persons_Extended.ecore"]
+
+tree = ET.parse(files[0])
 root = tree.getroot()
 
 genMPS = GenMPSStructure()
