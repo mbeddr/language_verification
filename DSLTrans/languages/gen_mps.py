@@ -157,6 +157,7 @@ class GenMPSStructure():
         self.print_out("""    <property role="EcuMT" value="{}" />""".format(rand_EcuMT))
         self.print_out("""    <property role="TrG5h" value="{}" />""".format(class_name))
 
+        base_classes = []
         interface_classes = []
 
         if "eSuperTypes" in node.attrib.keys():
@@ -168,27 +169,25 @@ class GenMPSStructure():
             base_classes = [cl for cl in supertypes if not self.is_abstract_map[cl]]
             interface_classes = [cl for cl in supertypes if self.is_abstract_map[cl]]
 
-            if base_classes:
-                base_name = base_classes[0]
-                base_id = self.name_id_map[base_name]
-                self.print_out("""    <ref role="1TJDcQ" node="{}" resolve="{}" />""".format(base_id, base_name))
-
-
-
-
-        else:
+        if base_classes:
+            base_name = base_classes[0]
+            base_id = self.name_id_map[base_name]
+            self.print_out("""    <ref role="1TJDcQ" node="{}" resolve="{}" />""".format(base_id, base_name))
+        elif not is_abstract:
             self.print_out("""    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />""")
 
-        implements_id = self.get_mps_id()
-        if not is_abstract:
-            self.print_out("""\t<node concept="PrWs8" id="{}" role="PzmwI" >""".format(implements_id))
-            self.print_out("""\t\t<ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />""")
+
+        for ic_name in interface_classes:
+            implements_id = self.get_mps_id()
+            ic_id = self.name_id_map[ic_name]
+
+            role = "PzmwI"
+            if is_abstract:
+                role = "PrDN$"
+
+            self.print_out("""\t<node concept="PrWs8" id="{}" role="{}" >""".format(implements_id, role))
+            self.print_out("""\t\t<ref role="PrY4T" node="{}" resolve="{}" />""".format(ic_id, ic_name))
             self.print_out("""\t</node>""")
-        # elif len(interface_classes) > 0:
-        #     for ic in interface_classes:
-        #         self.print_out("""\t<node concept="PrWs8" id="{}" role="PzmwI" >""".format(implements_id))
-        #         self.print_out("""\t\t<ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />""")
-        #         self.print_out("""\t</node>""")
 
 
         self.print_dbg("NODE:")
