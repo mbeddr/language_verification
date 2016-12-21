@@ -2,8 +2,8 @@
 <model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
+    <import index="b6kg" ref="r:09755222-e7cd-474b-a0c9-bd85f7571aec(Families.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
@@ -16,9 +16,11 @@
       </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
+        <child id="6292131328146430401" name="property" index="1157Rq" />
       </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
       <concept id="7049464676098553455" name="transfverif.core.structure.Concat" flags="ng" index="2ik0ME">
         <child id="2796321687636254282" name="arg1" index="13yhA8" />
@@ -28,6 +30,7 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
@@ -37,12 +40,12 @@
       </concept>
       <concept id="2796321687636129109" name="transfverif.core.structure.MatchAttributeString" flags="ng" index="13yNan">
         <child id="4509618979300686935" name="atom" index="2F1HV6" />
-        <child id="2829711462939341608" name="property" index="1y79iX" />
       </concept>
       <concept id="2796321687636138754" name="transfverif.core.structure.StringVariableAtom" flags="ng" index="13yPN0" />
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+        <child id="2459688670039252697" name="concept" index="pB8W9" />
       </concept>
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
         <child id="2796321687635932077" name="attributes" index="13z3hJ" />
@@ -69,9 +72,13 @@
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -113,19 +120,27 @@
   </registry>
   <node concept="1jGXXK" id="4OZxLw4YJFi">
     <property role="TrG5h" value="Son2Man" />
+    <property role="3GE5qa" value="transformation" />
     <node concept="3GsvpM" id="4OZxLw4YJFj" role="2ik0Mo">
       <node concept="1jGXXa" id="4OZxLw4YJFk" role="1jGXX7">
         <property role="13z3e$" value="S2M_A" />
         <property role="13z3hU" value="Man" />
-        <node concept="2ik0MC" id="4OZxLw4YKLK" role="2ik0MI">
+        <node concept="pBohH" id="1UHaC1cWund" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdIG" resolve="Man" />
+        </node>
+        <node concept="2ik0MC" id="bEUHl5fs8x" role="2ik0MI">
           <property role="TrG5h" value="fullName" />
-          <node concept="2ik0ME" id="4OZxLw4YKLS" role="2ik0MU">
-            <node concept="2ik0MF" id="4OZxLw4YKM1" role="13yhA8">
-              <ref role="2ik0MN" node="4OZxLw4YKLz" resolve="firstName" />
+          <node concept="2ik0ME" id="bEUHl5fs8K" role="2ik0MU">
+            <node concept="2ik0MF" id="bEUHl5fs8T" role="13yhA8">
+              <ref role="2ik0MN" node="bEUHl5fs86" resolve="firstName" />
             </node>
-            <node concept="2ik0MF" id="4OZxLw4YKM4" role="13yhAc">
-              <ref role="2ik0MN" node="4OZxLw4YKLm" resolve="lastName" />
+            <node concept="2ik0MF" id="bEUHl5fs8W" role="13yhAc">
+              <ref role="2ik0MN" node="bEUHl5fs7I" resolve="lastName" />
             </node>
+          </node>
+          <node concept="1y7Krt" id="bEUHl5fs8_" role="1157Rj">
+            <ref role="355D3t" to="eh87:46cQNHkcdIG" resolve="Man" />
+            <ref role="355D3u" to="eh87:46cQNHkcdIE" resolve="fullName" />
           </node>
         </node>
       </node>
@@ -147,24 +162,34 @@
       <node concept="2ik0NV" id="4OZxLw4YJFm" role="13z3mo">
         <property role="13z3e$" value="S2M_F1" />
         <property role="13z3hU" value="Family" />
-        <node concept="2ik0M_" id="4OZxLw4YKLm" role="13z3hJ">
+        <node concept="pBohH" id="1UHaC1cWumH" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeH" resolve="Family" />
+        </node>
+        <node concept="2ik0M_" id="bEUHl5fs7I" role="13z3hJ">
           <property role="TrG5h" value="lastName" />
-          <node concept="13yNan" id="4OZxLw4YKLq" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4YKLw" role="2F1HV6" />
+          <node concept="13yNan" id="bEUHl5fs7X" role="2ik0Q0">
+            <node concept="13yPN0" id="bEUHl5fs83" role="2F1HV6" />
+          </node>
+          <node concept="1y7Krt" id="bEUHl5fs7M" role="1157Rq">
+            <ref role="355D3t" to="b6kg:57pZU2XSTeH" resolve="Family" />
+            <ref role="355D3u" to="b6kg:1UHaC1cWigI" resolve="lastName" />
           </node>
         </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4YJFn" role="13z3mo">
         <property role="13z3e$" value="S2M_C2" />
         <property role="13z3hU" value="Child" />
-        <node concept="2ik0M_" id="4OZxLw4YKLz" role="13z3hJ">
+        <node concept="pBohH" id="1UHaC1cWumX" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeN" resolve="Child" />
+        </node>
+        <node concept="2ik0M_" id="bEUHl5fs86" role="13z3hJ">
           <property role="TrG5h" value="firstName" />
-          <node concept="13yNan" id="4OZxLw4YKLB" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4YKLH" role="2F1HV6" />
-            <node concept="1y7Krt" id="28y$t0VJjzj" role="1y79iX">
-              <ref role="355D3t" to="yeb1:3QsrawRgNjr" resolve="AndContractFormula" />
-              <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
-            </node>
+          <node concept="13yNan" id="bEUHl5fs8o" role="2ik0Q0">
+            <node concept="13yPN0" id="bEUHl5fs8u" role="2F1HV6" />
+          </node>
+          <node concept="1y7Krt" id="bEUHl5fs8a" role="1157Rq">
+            <ref role="355D3t" to="b6kg:57pZU2XSTeN" resolve="Child" />
+            <ref role="355D3u" to="b6kg:57pZU2XSTf5" resolve="firstName" />
           </node>
         </node>
       </node>

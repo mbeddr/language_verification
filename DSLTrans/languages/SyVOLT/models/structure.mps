@@ -61,7 +61,7 @@
       <property role="20kJfa" value="contracts" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="7049464676098554042" />
-      <ref role="20lvS9" node="67kIGnNxbyT" resolve="AtomicContract" />
+      <ref role="20lvS9" node="2EAnn9pgMl4" resolve="AtomicContractPresenter" />
     </node>
     <node concept="1TJgyj" id="3QsrawRgNjM" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -80,15 +80,8 @@
     <node concept="PrWs8" id="3QsrawRgP9q" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="3QsrawRgP9$" role="1TKVEl">
-      <property role="TrG5h" value="inputLanguage" />
-      <property role="IQ2nx" value="4439542802417930852" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3QsrawRgP9A" role="1TKVEl">
-      <property role="TrG5h" value="outputLanguage" />
-      <property role="IQ2nx" value="4439542802417930854" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="PrWs8" id="46cQNHjPx5s" role="PzmwI">
+      <ref role="PrY4T" to="i3vy:2t59Tl5mye5" resolve="ILanguageScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="67kIGnNxbyT">
@@ -121,6 +114,9 @@
     </node>
     <node concept="PrWs8" id="4o$Qo1rTD3O" role="PzmwI">
       <ref role="PrY4T" to="i3vy:4o$Qo1rTD3$" resolve="AbstractMatcherApplier" />
+    </node>
+    <node concept="PrWs8" id="2EAnn9pgMlf" role="PzmwI">
+      <ref role="PrY4T" node="2EAnn9pgMl4" resolve="AtomicContractPresenter" />
     </node>
   </node>
   <node concept="1TIwiD" id="3QsrawRgGyd">
@@ -315,6 +311,48 @@
       <property role="TrG5h" value="backwardInPre" />
       <property role="IQ2nx" value="2186611055801906619" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="KrNvFhIi$L">
+    <property role="EcuMT" value="872517429970413873" />
+    <property role="TrG5h" value="VerificationConfig" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Config" />
+    <property role="3GE5qa" value="Config" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="KrNvFhIi$M" role="1TKVEl">
+      <property role="IQ2nx" value="872517429970413874" />
+      <property role="TrG5h" value="syvoltEnginePath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="KrNvFhIi$R" role="1TKVEl">
+      <property role="IQ2nx" value="872517429970413879" />
+      <property role="TrG5h" value="syvoltBackendPath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="KrNvFhX86L" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2EAnn9pgMl4">
+    <property role="EcuMT" value="3073246541432169796" />
+    <property role="3GE5qa" value="Elements" />
+    <property role="TrG5h" value="AtomicContractPresenter" />
+  </node>
+  <node concept="1TIwiD" id="2EAnn9pgMl5">
+    <property role="EcuMT" value="3073246541432169797" />
+    <property role="3GE5qa" value="Elements" />
+    <property role="TrG5h" value="AtomicContractPointer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2EAnn9pgMl6" role="1TKVEi">
+      <property role="IQ2ns" value="3073246541432169798" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67kIGnNxbyT" resolve="AtomicContract" />
+    </node>
+    <node concept="PrWs8" id="2EAnn9pgMl8" role="PzmwI">
+      <ref role="PrY4T" node="2EAnn9pgMl4" resolve="AtomicContractPresenter" />
     </node>
   </node>
 </model>

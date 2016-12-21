@@ -320,61 +320,56 @@
       </node>
       <node concept="3F0ifn" id="55KrseX17cs" role="3EZMnx" />
       <node concept="2iRkQZ" id="55KrseX0e$X" role="2iSdaV" />
-      <node concept="3EZMnI" id="55KrseX0e$J" role="3EZMnx">
-        <node concept="2iRfu4" id="55KrseX0e$K" role="2iSdaV" />
-        <node concept="3F0ifn" id="55KrseX0e$G" role="3EZMnx">
-          <property role="3F0ifm" value="Contract Set" />
-          <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
-          <node concept="Vb9p2" id="55KrseX1652" role="3F10Kt" />
-          <node concept="VechU" id="55KrseX168s" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="55KrseX0e$S" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="3XFhqQ" id="55KrseX0l2I" role="3EZMnx" />
-        <node concept="3F0ifn" id="55KrseX17io" role="3EZMnx">
-          <property role="3F0ifm" value="|" />
-        </node>
-        <node concept="3F0ifn" id="55KrseX0l3w" role="3EZMnx">
-          <property role="3F0ifm" value="Input Language: " />
-          <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
-          <node concept="Vb9p2" id="55KrseX169p" role="3F10Kt" />
-          <node concept="VechU" id="55KrseX16cO" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="3QsrawRgEa6" role="3EZMnx">
-          <ref role="1NtTu8" to="yeb1:3QsrawRgP9$" resolve="inputLanguage" />
-        </node>
-        <node concept="3XFhqQ" id="3QsrawRgPbH" role="3EZMnx" />
-        <node concept="3F0ifn" id="55KrseX0l4E" role="3EZMnx">
-          <property role="3F0ifm" value="|" />
-        </node>
-        <node concept="VSNWy" id="55KrseX15ic" role="3F10Kt">
-          <property role="1lJzqX" value="16" />
-        </node>
-        <node concept="3F0ifn" id="3QsrawRgPcz" role="3EZMnx">
-          <property role="3F0ifm" value="Output Language: " />
-          <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
-          <node concept="Vb9p2" id="3QsrawRgPeT" role="3F10Kt" />
-          <node concept="VechU" id="3QsrawRgPgA" role="3F10Kt">
-            <property role="Vb096" value="DARK_GREEN" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="3QsrawRgPd1" role="3EZMnx">
-          <ref role="1NtTu8" to="yeb1:3QsrawRgP9A" resolve="outputLanguage" />
-        </node>
-        <node concept="3F0ifn" id="3QsrawRgPgW" role="3EZMnx">
-          <property role="3F0ifm" value="|" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="55KrseX17fa" role="3EZMnx">
         <node concept="VSNWy" id="3QsrawRhbdA" role="3F10Kt">
           <property role="1lJzqX" value="6" />
         </node>
       </node>
+      <node concept="3EZMnI" id="55KrseX0e$J" role="3EZMnx">
+        <node concept="2iRfu4" id="55KrseX0e$K" role="2iSdaV" />
+        <node concept="3F0A7n" id="55KrseX0e$S" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3XFhqQ" id="55KrseX0l34" role="3EZMnx" />
+        <node concept="3F0ifn" id="55KrseX17io" role="3EZMnx">
+          <property role="3F0ifm" value="|" />
+        </node>
+        <node concept="3EZMnI" id="2t59Tl5mfrQ" role="3EZMnx">
+          <node concept="2iRkQZ" id="2t59Tl5mfrR" role="2iSdaV" />
+          <node concept="3EZMnI" id="2t59Tl5mftE" role="3EZMnx">
+            <node concept="2iRfu4" id="2t59Tl5mftF" role="2iSdaV" />
+            <node concept="3F0ifn" id="2t59Tl5mftN" role="3EZMnx">
+              <property role="3F0ifm" value="Input Language: " />
+              <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
+              <node concept="Vb9p2" id="2t59Tl5mftO" role="3F10Kt" />
+              <node concept="VechU" id="2t59Tl5mftP" role="3F10Kt">
+                <property role="Vb096" value="DARK_GREEN" />
+              </node>
+            </node>
+            <node concept="3F1sOY" id="46cQNHjPxb0" role="3EZMnx">
+              <ref role="1NtTu8" to="i3vy:2t59Tl5m1Ze" resolve="inputLanguage" />
+            </node>
+          </node>
+          <node concept="3EZMnI" id="2t59Tl5mfue" role="3EZMnx">
+            <node concept="2iRfu4" id="2t59Tl5mfuf" role="2iSdaV" />
+            <node concept="3F0ifn" id="2t59Tl5mfuq" role="3EZMnx">
+              <property role="3F0ifm" value="Ouput Language: " />
+              <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
+              <node concept="Vb9p2" id="2t59Tl5mfur" role="3F10Kt" />
+              <node concept="VechU" id="2t59Tl5mfus" role="3F10Kt">
+                <property role="Vb096" value="DARK_GREEN" />
+              </node>
+            </node>
+            <node concept="3F1sOY" id="46cQNHjPxbe" role="3EZMnx">
+              <ref role="1NtTu8" to="i3vy:2t59Tl5m1Zh" resolve="outputLanguage" />
+            </node>
+          </node>
+        </node>
+        <node concept="VSNWy" id="55KrseX15ic" role="3F10Kt">
+          <property role="1lJzqX" value="16" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="46cQNHjPjwd" role="3EZMnx" />
       <node concept="gc7cB" id="55KrseX0MXK" role="3EZMnx">
         <node concept="3VJUX4" id="55KrseX0MXM" role="3YsKMw">
           <node concept="3clFbS" id="55KrseX0MXO" role="2VODD2">
@@ -396,11 +391,7 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="3QsrawRhIa2" role="3EZMnx">
-        <node concept="VSNWy" id="3QsrawRhIa3" role="3F10Kt">
-          <property role="1lJzqX" value="6" />
-        </node>
-      </node>
+      <node concept="3F0ifn" id="2EAnn9phmEU" role="3EZMnx" />
       <node concept="3F0ifn" id="3QsrawRgSkR" role="3EZMnx">
         <property role="3F0ifm" value="Atomic Contracts:" />
         <node concept="Veino" id="3QsrawRgSkS" role="3F10Kt">
@@ -416,6 +407,7 @@
         <ref role="1NtTu8" to="yeb1:67kIGnNxbyU" resolve="contracts" />
         <node concept="2iRkQZ" id="3QsrawRgQfa" role="2czzBx" />
       </node>
+      <node concept="3F0ifn" id="2EAnn9phg2G" role="3EZMnx" />
       <node concept="3F0ifn" id="3QsrawRgS91" role="3EZMnx">
         <property role="3F0ifm" value="Contract Composition:" />
         <node concept="Veino" id="3QsrawRgS92" role="3F10Kt">
@@ -431,11 +423,7 @@
         <ref role="1NtTu8" to="yeb1:3QsrawRgNjM" resolve="formulae" />
         <node concept="2iRkQZ" id="3QsrawRgQjx" role="2czzBx" />
       </node>
-      <node concept="3F0ifn" id="3QsrawRhhNp" role="3EZMnx">
-        <node concept="VSNWy" id="3QsrawRhhNq" role="3F10Kt">
-          <property role="1lJzqX" value="6" />
-        </node>
-      </node>
+      <node concept="3F0ifn" id="2EAnn9phg9f" role="3EZMnx" />
       <node concept="3F0ifn" id="3QsrawRgSdF" role="3EZMnx">
         <property role="3F0ifm" value="Element Binding:" />
         <node concept="Veino" id="3QsrawRgSdG" role="3F10Kt">
@@ -1544,6 +1532,59 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="KrNvFhIi_3">
+    <property role="3GE5qa" value="Config" />
+    <ref role="1XX52x" to="yeb1:KrNvFhIi$L" resolve="VerificationConfig" />
+    <node concept="3EZMnI" id="KrNvFhIi_5" role="2wV5jI">
+      <node concept="3F0ifn" id="KrNvFhIi_c" role="3EZMnx">
+        <property role="3F0ifm" value="Config File:" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="Vb9p2" id="KrNvFhK4wv" role="3F10Kt">
+          <property role="Vbekb" value="BOLD" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="KrNvFhX8vx" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="KrNvFhIi_i" role="3EZMnx">
+        <property role="3F0ifm" value="SyVOLT Engine Path:" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="pVoyu" id="KrNvFhK4rW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="KrNvFhIi_v" role="3EZMnx">
+        <ref role="1NtTu8" to="yeb1:KrNvFhIi$M" resolve="syvoltEnginePath" />
+      </node>
+      <node concept="3F0ifn" id="KrNvFhIi_D" role="3EZMnx">
+        <property role="3F0ifm" value="SyVOLT Backend Path:" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+        <node concept="pVoyu" id="KrNvFhInWv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="KrNvFhInVJ" role="3EZMnx">
+        <ref role="1NtTu8" to="yeb1:KrNvFhIi$R" resolve="syvoltBackendPath" />
+      </node>
+      <node concept="l2Vlx" id="KrNvFhIi_8" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2EAnn9pgMls">
+    <property role="3GE5qa" value="Elements" />
+    <ref role="1XX52x" to="yeb1:2EAnn9pgMl5" resolve="AtomicContractPointer" />
+    <node concept="3EZMnI" id="2EAnn9pgMlL" role="2wV5jI">
+      <node concept="2iRfu4" id="2EAnn9pgMlM" role="2iSdaV" />
+      <node concept="1iCGBv" id="2EAnn9pgMlu" role="3EZMnx">
+        <ref role="1NtTu8" to="yeb1:2EAnn9pgMl6" resolve="pointer" />
+        <node concept="1sVBvm" id="2EAnn9pgMlw" role="1sWHZn">
+          <node concept="3F0A7n" id="2EAnn9pgMlB" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>

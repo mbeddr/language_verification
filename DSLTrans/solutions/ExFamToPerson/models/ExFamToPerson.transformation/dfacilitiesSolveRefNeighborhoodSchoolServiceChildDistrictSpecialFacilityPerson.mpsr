@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
   <persistence version="9" />
-  <imports />
+  <imports>
+    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="b6kg" ref="r:09755222-e7cd-474b-a0c9-bd85f7571aec(Families.structure)" implicit="true" />
+  </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
@@ -17,12 +21,14 @@
       </concept>
       <concept id="7049464676098553440" name="transfverif.core.structure.MatchAttribute" flags="ng" index="2ik0M_">
         <child id="7049464676098553669" name="value" index="2ik0Q0" />
+        <child id="6292131328146430401" name="property" index="1157Rq" />
       </concept>
       <concept id="7049464676098553442" name="transfverif.core.structure.StringLiteralAtom" flags="ng" index="2ik0MB">
         <property id="7049464676098553445" name="atom" index="2ik0Mw" />
       </concept>
       <concept id="7049464676098553453" name="transfverif.core.structure.ApplyAttribute" flags="ng" index="2ik0MC">
         <child id="7049464676098553471" name="value" index="2ik0MU" />
+        <child id="6292131328146430408" name="property" index="1157Rj" />
       </concept>
       <concept id="7049464676098553455" name="transfverif.core.structure.Concat" flags="ng" index="2ik0ME">
         <child id="2796321687636254282" name="arg1" index="13yhA8" />
@@ -32,6 +38,7 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
         <reference id="2796321687636315576" name="target" index="13xwDU" />
@@ -43,6 +50,7 @@
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+        <child id="2459688670039252697" name="concept" index="pB8W9" />
       </concept>
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
         <child id="2796321687635932077" name="attributes" index="13z3hJ" />
@@ -57,6 +65,7 @@
         <child id="7049464676098553424" name="applyLinks" index="2ik0Ml" />
         <child id="3828633282163103464" name="applyClasses" index="1jGXX7" />
       </concept>
+      <concept id="2829711462939369800" name="transfverif.core.structure.TVPropIDRefExpression" flags="ng" index="1y7Krt" />
     </language>
     <language id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans">
       <concept id="3828633282163103455" name="DSLTrans.structure.Rule" flags="ng" index="1jGXXK">
@@ -67,8 +76,18 @@
       <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
       <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -110,29 +129,43 @@
   </registry>
   <node concept="1jGXXK" id="4OZxLw4ZfIS">
     <property role="TrG5h" value="dfacilitiesSolveRefNeighborhoodSchoolServiceChildDistrictSpecialFacilityPerson" />
+    <property role="3GE5qa" value="transformation" />
     <node concept="3GsvpM" id="4OZxLw4ZfIT" role="2ik0Mo">
       <node concept="1jGXXa" id="4OZxLw4ZfIU" role="1jGXX7">
         <property role="13z3e$" value="SF_District" />
         <property role="13z3hU" value="District" />
+        <node concept="pBohH" id="1UHaC1cWuEt" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdIq" resolve="District" />
+        </node>
       </node>
       <node concept="1jGXXa" id="4OZxLw4ZfIV" role="1jGXX7">
         <property role="13z3e$" value="SF_Person" />
         <property role="13z3hU" value="Person" />
+        <node concept="pBohH" id="1UHaC1cWuEy" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdID" resolve="Person" />
+        </node>
       </node>
       <node concept="1jGXXa" id="4OZxLw4ZfIW" role="1jGXX7">
         <property role="13z3e$" value="SF_SF" />
         <property role="13z3hU" value="SpecialFacility" />
-        <node concept="2ik0MC" id="4OZxLw4ZfIX" role="2ik0MI">
+        <node concept="pBohH" id="1UHaC1cWuEB" role="pB8W9">
+          <ref role="35c_gD" to="eh87:46cQNHkcdIz" resolve="SpecialFacility" />
+        </node>
+        <node concept="2ik0MC" id="bEUHl5fsd0" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="2ik0ME" id="4OZxLw4ZfIY" role="2ik0MU">
-            <node concept="2ik0M$" id="4OZxLw4ZfIZ" role="13yhA8">
-              <node concept="2ik0MB" id="4OZxLw4ZfJ0" role="2ik0My">
+          <node concept="2ik0ME" id="bEUHl5fsdi" role="2ik0MU">
+            <node concept="2ik0M$" id="bEUHl5fsdr" role="13yhA8">
+              <node concept="2ik0MB" id="bEUHl5fsdt" role="2ik0My">
                 <property role="2ik0Mw" value="SpecFacForSchool" />
               </node>
             </node>
-            <node concept="2ik0MF" id="4OZxLw4ZfJ1" role="13yhAc">
-              <ref role="2ik0MN" node="4OZxLw4ZfJ7" resolve="name" />
+            <node concept="2ik0MF" id="bEUHl5fsdx" role="13yhAc">
+              <ref role="2ik0MN" node="bEUHl5fscw" resolve="name" />
             </node>
+          </node>
+          <node concept="1y7Krt" id="bEUHl5fsd6" role="1157Rj">
+            <ref role="355D3t" to="eh87:46cQNHkcdIz" resolve="SpecialFacility" />
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -271,24 +304,40 @@
       <node concept="2ik0NV" id="4OZxLw4ZfJ5" role="13z3mo">
         <property role="13z3e$" value="SF_Neigh" />
         <property role="13z3hU" value="Neighborhood" />
+        <node concept="pBohH" id="1UHaC1cWuE8" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeL" resolve="Neighborhood" />
+        </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4ZfJ6" role="13z3mo">
         <property role="13z3e$" value="SF_School" />
         <property role="13z3hU" value="School" />
-        <node concept="2ik0M_" id="4OZxLw4ZfJ7" role="13z3hJ">
+        <node concept="2ik0M_" id="bEUHl5fscw" role="13z3hJ">
           <property role="TrG5h" value="name" />
-          <node concept="13yNan" id="4OZxLw4ZfJ8" role="2ik0Q0">
-            <node concept="13yPN0" id="4OZxLw4ZfJ9" role="2F1HV6" />
+          <node concept="13yNan" id="bEUHl5fscR" role="2ik0Q0">
+            <node concept="13yPN0" id="bEUHl5fscX" role="2F1HV6" />
           </node>
+          <node concept="1y7Krt" id="bEUHl5fscG" role="1157Rq">
+            <ref role="355D3t" to="b6kg:57pZU2XSTeK" resolve="School" />
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+        <node concept="pBohH" id="1UHaC1cWuEd" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeK" resolve="School" />
         </node>
       </node>
       <node concept="2ik0NV" id="4OZxLw4ZfJa" role="13z3mo">
         <property role="13z3e$" value="SF_Child" />
         <property role="13z3hU" value="Child" />
+        <node concept="pBohH" id="GW95CXIlyD" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeN" resolve="Child" />
+        </node>
       </node>
       <node concept="2ik0Md" id="4OZxLw4ZfJb" role="13z3mo">
         <property role="13z3e$" value="SF_Service" />
         <property role="13z3hU" value="Service" />
+        <node concept="pBohH" id="GW95CXJwvW" role="pB8W9">
+          <ref role="35c_gD" to="b6kg:57pZU2XSTeJ" resolve="Service" />
+        </node>
       </node>
       <node concept="1jGXVw" id="4OZxLw4ZfJc" role="13z3mp">
         <property role="aCCiF" value="schools" />
