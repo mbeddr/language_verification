@@ -110,6 +110,12 @@
     <node concept="PrWs8" id="1eaQRpkCugv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="3e_V7IvrHps" role="1TKVEi">
+      <property role="IQ2ns" value="3721640682791556700" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="townHalls" />
+      <ref role="20lvS9" node="2EaowSc4lSU" resolve="TownHall" />
+    </node>
   </node>
   <node concept="1TIwiD" id="46cQNHkcdIq">
     <property role="EcuMT" value="4723391157066849178" />

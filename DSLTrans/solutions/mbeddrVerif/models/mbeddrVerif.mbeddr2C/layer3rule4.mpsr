@@ -6,6 +6,7 @@
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
         <property id="4439542802417641475" name="typeName" index="aCCiF" />
+        <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
@@ -31,6 +32,7 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="6271065208731828696" name="transfverif.core.structure.TVLinkIdRefExpression" flags="ng" index="2AKGPc" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
         <reference id="2796321687636315576" name="target" index="13xwDU" />
@@ -383,20 +385,23 @@
           </node>
         </node>
       </node>
-      <node concept="1jGXVd" id="5a$qMY50kR3" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJIL_c" role="2ik0Ml">
         <property role="aCCiF" value="contents" />
         <ref role="13xwDP" node="3dPnTp7RIbo" />
         <ref role="13xwDU" node="3dPnTp7RIc4" />
+        <node concept="2AKGPc" id="KLF0RJIL_d" role="1vfT9s" />
       </node>
-      <node concept="1jGXVd" id="5a$qMY50kR5" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJILAS" role="2ik0Ml">
         <property role="aCCiF" value="type" />
         <ref role="13xwDP" node="3dPnTp7RIc4" />
         <ref role="13xwDU" node="3dPnTp7RIdV" />
+        <node concept="2AKGPc" id="KLF0RJILAT" role="1vfT9s" />
       </node>
-      <node concept="1jGXVd" id="5a$qMY50kR8" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJILA$" role="2ik0Ml">
         <property role="aCCiF" value="typeDef" />
         <ref role="13xwDP" node="3dPnTp7RIdV" />
         <ref role="13xwDU" node="3dPnTp7RIdZ" />
+        <node concept="2AKGPc" id="KLF0RJILA_" role="1vfT9s" />
       </node>
     </node>
     <node concept="3GsvpN" id="3dPnTp7RI9Z" role="2ik0Mu">
@@ -470,20 +475,23 @@
         <property role="13z3hU" value="AtomicComponent" />
         <property role="13z3e$" value="AC" />
       </node>
-      <node concept="1jGXVw" id="3dPnTp7RIaf" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQfV" role="13z3mp">
         <property role="aCCiF" value="contents" />
         <ref role="13xwDP" node="3dPnTp7RIa0" />
         <ref role="13xwDU" node="3dPnTp7RIa4" />
+        <node concept="2AKGPc" id="5s7j9jLPQfW" role="1vfT9s" />
       </node>
-      <node concept="1jGXVw" id="3dPnTp7RIag" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQgx" role="13z3mp">
         <property role="aCCiF" value="contents" />
-        <ref role="13xwDU" node="3dPnTp7RIa5" />
         <ref role="13xwDP" node="3dPnTp7RIa4" />
+        <ref role="13xwDU" node="3dPnTp7RIa5" />
+        <node concept="2AKGPc" id="5s7j9jLPQgy" role="1vfT9s" />
       </node>
-      <node concept="1jGXVw" id="3dPnTp7RIah" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQgz" role="13z3mp">
         <property role="aCCiF" value="component" />
         <ref role="13xwDP" node="3dPnTp7RIa5" />
         <ref role="13xwDU" node="3dPnTp7RIa9" />
+        <node concept="2AKGPc" id="5s7j9jLPQg$" role="1vfT9s" />
       </node>
       <node concept="37mRI7" id="2K9dotEHH_M" role="lGtFl">
         <node concept="37mRIm" id="2K9dotEHH_N" role="37mRID">

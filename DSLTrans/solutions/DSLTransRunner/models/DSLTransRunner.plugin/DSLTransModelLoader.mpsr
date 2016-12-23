@@ -2137,12 +2137,22 @@
             </node>
             <node concept="liA8E" id="4mULXgbAvGS" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~Association.setAssociationName(java.lang.String):void" resolve="setAssociationName" />
-              <node concept="2OqwBi" id="4mULXgbAznn" role="37wK5m">
-                <node concept="37vLTw" id="4mULXgbAzeG" role="2Oq$k0">
-                  <ref role="3cqZAo" node="JP13Ute_T2" resolve="applyAssoc" />
+              <node concept="2OqwBi" id="3e_V7Ivrfpn" role="37wK5m">
+                <node concept="2OqwBi" id="3e_V7IvrdC6" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4mULXgbAznn" role="2Oq$k0">
+                    <node concept="37vLTw" id="4mULXgbAzeG" role="2Oq$k0">
+                      <ref role="3cqZAo" node="JP13Ute_T2" resolve="applyAssoc" />
+                    </node>
+                    <node concept="3TrEf2" id="3e_V7Ivrdda" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i3vy:1pRobD9ifbA" resolve="link" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3e_V7IvreQZ" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tp25:2iMJRNx_non" resolve="linkDeclaration" />
+                  </node>
                 </node>
-                <node concept="3TrcHB" id="4mULXgbAzv9" role="2OqNvi">
-                  <ref role="3TsBF5" to="i3vy:3QsrawRfIw3" resolve="typeName" />
+                <node concept="3TrcHB" id="3e_V7IvrgiM" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>
@@ -3362,12 +3372,22 @@
             </node>
             <node concept="liA8E" id="1NdVp2rU5v6" role="2OqNvi">
               <ref role="37wK5l" to="gnwr:~Association.setAssociationName(java.lang.String):void" resolve="setAssociationName" />
-              <node concept="2OqwBi" id="1NdVp2rU5G9" role="37wK5m">
-                <node concept="37vLTw" id="1NdVp2rU5$9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1NdVp2rU3KF" resolve="association" />
+              <node concept="2OqwBi" id="3e_V7Ivr7Nn" role="37wK5m">
+                <node concept="2OqwBi" id="3e_V7Ivr0UU" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1NdVp2rU5G9" role="2Oq$k0">
+                    <node concept="37vLTw" id="1NdVp2rU5$9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1NdVp2rU3KF" resolve="association" />
+                    </node>
+                    <node concept="3TrEf2" id="3e_V7Ivr0uD" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i3vy:1pRobD9ifbA" resolve="link" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="3e_V7Ivr7jb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tp25:2iMJRNx_non" resolve="linkDeclaration" />
+                  </node>
                 </node>
-                <node concept="3TrcHB" id="1NdVp2rU5Us" role="2OqNvi">
-                  <ref role="3TsBF5" to="i3vy:3QsrawRfIw3" resolve="typeName" />
+                <node concept="3TrcHB" id="3e_V7Ivr8qG" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
             </node>

@@ -6,6 +6,7 @@
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
         <property id="4439542802417641475" name="typeName" index="aCCiF" />
+        <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
@@ -31,6 +32,7 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="6271065208731828696" name="transfverif.core.structure.TVLinkIdRefExpression" flags="ng" index="2AKGPc" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
         <reference id="2796321687636315576" name="target" index="13xwDU" />
@@ -509,20 +511,23 @@
           </node>
         </node>
       </node>
-      <node concept="1jGXVd" id="3dPnTp7RIiD" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJILAs" role="2ik0Ml">
         <property role="aCCiF" value="contents" />
         <ref role="13xwDP" node="3dPnTp7RIg_" />
         <ref role="13xwDU" node="3dPnTp7RIgH" />
+        <node concept="2AKGPc" id="KLF0RJILAt" role="1vfT9s" />
       </node>
-      <node concept="1jGXVd" id="3dPnTp7RIiF" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJIL_I" role="2ik0Ml">
         <property role="aCCiF" value="type" />
         <ref role="13xwDP" node="3dPnTp7RIgH" />
         <ref role="13xwDU" node="3dPnTp7RIgN" />
+        <node concept="2AKGPc" id="KLF0RJIL_J" role="1vfT9s" />
       </node>
-      <node concept="1jGXVd" id="3dPnTp7RIiI" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJILAA" role="2ik0Ml">
         <property role="aCCiF" value="body" />
-        <ref role="13xwDU" node="3dPnTp7RIgU" />
         <ref role="13xwDP" node="3dPnTp7RIgH" />
+        <ref role="13xwDU" node="3dPnTp7RIgU" />
+        <node concept="2AKGPc" id="KLF0RJILAB" role="1vfT9s" />
       </node>
       <node concept="37mRI7" id="6eqHMW6S50b" role="lGtFl">
         <node concept="37mRIm" id="6eqHMW6S50c" role="37mRID">
@@ -774,15 +779,17 @@
           </node>
         </node>
       </node>
-      <node concept="1jGXVw" id="3dPnTp7RIiw" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQiF" role="13z3mp">
         <property role="aCCiF" value="contents" />
-        <ref role="13xwDU" node="3dPnTp7RIgo" />
         <ref role="13xwDP" node="3dPnTp7RIgj" />
+        <ref role="13xwDU" node="3dPnTp7RIgo" />
+        <node concept="2AKGPc" id="5s7j9jLPQiG" role="1vfT9s" />
       </node>
-      <node concept="1jGXVw" id="3dPnTp7RIi_" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQh9" role="13z3mp">
         <property role="aCCiF" value="contents" />
         <ref role="13xwDP" node="3dPnTp7RIgo" />
         <ref role="13xwDU" node="3dPnTp7RIgw" />
+        <node concept="2AKGPc" id="5s7j9jLPQha" role="1vfT9s" />
       </node>
       <node concept="37mRI7" id="6eqHMW6S4ZT" role="lGtFl">
         <node concept="37mRIm" id="6eqHMW6S4ZU" role="37mRID">

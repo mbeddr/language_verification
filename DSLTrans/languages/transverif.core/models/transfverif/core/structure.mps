@@ -370,9 +370,6 @@
       <property role="IQ2ns" value="2796321687636315576" />
       <ref role="20lvS9" node="2rexW9_gFeP" resolve="Class" />
     </node>
-    <node concept="PrWs8" id="28y$t0VJj$4" role="PrDN$">
-      <ref role="PrY4T" node="3QsrawRfIw0" resolve="LinkType" />
-    </node>
   </node>
   <node concept="PlHQZ" id="2rexW9_i8R$">
     <property role="3GE5qa" value="Links" />
@@ -386,6 +383,13 @@
     <property role="3GE5qa" value="Links" />
     <property role="TrG5h" value="LinkType" />
     <property role="EcuMT" value="4439542802417641472" />
+    <node concept="1TJgyj" id="1pRobD9ifbA" role="1TKVEi">
+      <property role="IQ2ns" value="1618868944272683750" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="link" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5s7j9jLLo7o" resolve="TVLinkIdRefExpression" />
+    </node>
     <node concept="1TJgyi" id="3QsrawRfIw3" role="1TKVEl">
       <property role="TrG5h" value="typeName" />
       <property role="IQ2nx" value="4439542802417641475" />
@@ -486,6 +490,12 @@
     <node concept="PrWs8" id="1UHaC1cXxZV" role="PzmwI">
       <ref role="PrY4T" node="1UHaC1cXxZT" resolve="TVPropReference" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5s7j9jLLo7o">
+    <property role="EcuMT" value="6271065208731828696" />
+    <property role="3GE5qa" value="Util" />
+    <property role="TrG5h" value="TVLinkIdRefExpression" />
+    <ref role="1TJDcQ" to="tp25:2iMJRNx_nol" resolve="LinkIdRefExpression" />
   </node>
 </model>
 

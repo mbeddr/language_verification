@@ -9,6 +9,7 @@
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
         <property id="4439542802417641475" name="typeName" index="aCCiF" />
+        <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
@@ -16,6 +17,7 @@
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
+      <concept id="6271065208731828696" name="transfverif.core.structure.TVLinkIdRefExpression" flags="ng" index="2AKGPc" />
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
         <reference id="2796321687636315576" name="target" index="13xwDU" />
@@ -44,6 +46,10 @@
       <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -75,10 +81,14 @@
           <ref role="35c_gD" to="eh87:1eaQRpkCugu" resolve="Committee" />
         </node>
       </node>
-      <node concept="1jGXVd" id="4OZxLw4ZfGt" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJIL$2" role="2ik0Ml">
         <property role="aCCiF" value="committee" />
         <ref role="13xwDP" node="4OZxLw4ZfGr" />
         <ref role="13xwDU" node="4OZxLw4ZfGs" />
+        <node concept="2AKGPc" id="KLF0RJIL$3" role="1vfT9s">
+          <ref role="359W_E" to="eh87:46cQNHkcdIM" resolve="Association" />
+          <ref role="359W_F" to="eh87:7OSI$xj4w2D" resolve="committee" />
+        </node>
       </node>
     </node>
     <node concept="3GsvpN" id="4OZxLw4ZfGu" role="2ik0Mu">
@@ -96,15 +106,23 @@
           <ref role="35c_gD" to="b6kg:57pZU2XSTeF" resolve="Company" />
         </node>
       </node>
-      <node concept="1jGXVw" id="4OZxLw4ZfGx" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQj1" role="13z3mp">
         <property role="aCCiF" value="companies" />
-        <ref role="13xwDU" node="4OZxLw4ZfGw" />
         <ref role="13xwDP" node="4OZxLw4ZfGv" />
+        <ref role="13xwDU" node="4OZxLw4ZfGw" />
+        <node concept="2AKGPc" id="5s7j9jLPQj2" role="1vfT9s">
+          <ref role="359W_E" to="b6kg:57pZU2XSTeI" resolve="City" />
+          <ref role="359W_F" to="b6kg:7OSI$xj4vv4" resolve="companies" />
+        </node>
       </node>
-      <node concept="1jGXVw" id="4OZxLw4ZfGB" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQjr" role="13z3mp">
         <property role="aCCiF" value="isIn" />
         <ref role="13xwDP" node="4OZxLw4ZfGw" />
         <ref role="13xwDU" node="4OZxLw4ZfGv" />
+        <node concept="2AKGPc" id="5s7j9jLPQjs" role="1vfT9s">
+          <ref role="359W_E" to="b6kg:57pZU2XSTeF" resolve="Company" />
+          <ref role="359W_F" to="b6kg:7OSI$xj4vvg" resolve="isIn" />
+        </node>
       </node>
     </node>
     <node concept="1jGXV2" id="4OZxLw4ZfGy" role="2udmAx">

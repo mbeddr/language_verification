@@ -5,12 +5,13 @@
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
   </languages>
   <imports>
-    <import index="oqdb" ref="r:f423ea52-17a3-4af5-a991-70c01d00f018(simpleInputLanguage.structure)" implicit="true" />
+    <import index="oqdb" ref="r:f423ea52-17a3-4af5-a991-70c01d00f018(simpleInputLanguage.structure)" />
   </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
         <property id="4439542802417641475" name="typeName" index="aCCiF" />
+        <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
@@ -34,6 +35,7 @@
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
+      <concept id="6271065208731828696" name="transfverif.core.structure.TVLinkIdRefExpression" flags="ng" index="2AKGPc" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
@@ -500,15 +502,17 @@
               <ref role="35c_gD" to="oqdb:Dn$Lr8cmLE" resolve="B" />
             </node>
           </node>
-          <node concept="1jGXVd" id="4mULXgbBjGs" role="2ik0Ml">
+          <node concept="1jGXVd" id="KLF0RJIL$M" role="2ik0Ml">
             <property role="aCCiF" value="cs" />
             <ref role="13xwDP" node="4mULXgbBjGn" />
             <ref role="13xwDU" node="4mULXgbB7Jj" />
+            <node concept="2AKGPc" id="KLF0RJIL$N" role="1vfT9s" />
           </node>
-          <node concept="1jGXVd" id="4HOlOngngzm" role="2ik0Ml">
+          <node concept="1jGXVd" id="KLF0RJILAm" role="2ik0Ml">
             <property role="aCCiF" value="bs" />
             <ref role="13xwDP" node="4mULXgbBjGn" />
             <ref role="13xwDU" node="2IH$1p8bqja" />
+            <node concept="2AKGPc" id="KLF0RJILAn" role="1vfT9s" />
           </node>
         </node>
         <node concept="3GsvpN" id="4mULXgbB7IW" role="2ik0Mu">

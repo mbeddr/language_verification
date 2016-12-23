@@ -15,6 +15,7 @@
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
         <property id="4439542802417641475" name="typeName" index="aCCiF" />
+        <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
@@ -43,6 +44,7 @@
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
+      <concept id="6271065208731828696" name="transfverif.core.structure.TVLinkIdRefExpression" flags="ng" index="2AKGPc" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
@@ -110,6 +112,10 @@
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -246,10 +252,14 @@
               <ref role="35c_gD" to="eh87:2EaowSc4lSU" resolve="TownHall" />
             </node>
           </node>
-          <node concept="1jGXVd" id="10d1GjX9rXm" role="2ik0Ml">
+          <node concept="1jGXVd" id="KLF0RJILze" role="2ik0Ml">
             <property role="aCCiF" value="townHalls" />
-            <ref role="13xwDU" node="10d1GjX9rqn" />
             <ref role="13xwDP" node="10d1GjX9rqd" />
+            <ref role="13xwDU" node="10d1GjX9rqn" />
+            <node concept="2AKGPc" id="KLF0RJILzf" role="1vfT9s">
+              <ref role="359W_E" to="eh87:2EaowSc4lST" resolve="Community" />
+              <ref role="359W_F" to="eh87:2EaowSc4lSX" resolve="townHalls" />
+            </node>
           </node>
         </node>
         <node concept="3GsvpN" id="10d1GjX9rqq" role="2ik0Mu">
@@ -268,10 +278,14 @@
               <ref role="35c_gD" to="b6kg:57pZU2XSTeI" resolve="City" />
             </node>
           </node>
-          <node concept="1jGXVw" id="10d1GjX9rWk" role="13z3mp">
+          <node concept="1jGXVw" id="5s7j9jLPQfP" role="13z3mp">
             <property role="aCCiF" value="cities" />
-            <ref role="13xwDU" node="10d1GjX9rqx" />
             <ref role="13xwDP" node="10d1GjX9rqs" />
+            <ref role="13xwDU" node="10d1GjX9rqx" />
+            <node concept="2AKGPc" id="5s7j9jLPQfQ" role="1vfT9s">
+              <ref role="359W_E" to="b6kg:57pZU2XSTeG" resolve="Country" />
+              <ref role="359W_F" to="b6kg:57pZU2XSTfg" resolve="cities" />
+            </node>
           </node>
         </node>
         <node concept="1jGXV2" id="10d1GjX9rXo" role="2udmAx">

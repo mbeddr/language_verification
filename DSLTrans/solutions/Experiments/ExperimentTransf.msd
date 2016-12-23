@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7(DSLTrans)</dependency>
+    <dependency reexport="false">443933c7-2e65-4840-9493-341bfee78b6f(simpleInputLanguage)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7:DSLTrans" version="0" />
@@ -40,6 +41,7 @@
     <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
+    <module reference="443933c7-2e65-4840-9493-341bfee78b6f(simpleInputLanguage)" version="0" />
     <module reference="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8(transfverif.core)" version="0" />
   </dependencyVersions>
 </solution>

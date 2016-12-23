@@ -6,6 +6,7 @@
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
         <property id="4439542802417641475" name="typeName" index="aCCiF" />
+        <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
@@ -20,6 +21,7 @@
         <reference id="7049464676098553462" name="matchAttribute" index="2ik0MN" />
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
+      <concept id="6271065208731828696" name="transfverif.core.structure.TVLinkIdRefExpression" flags="ng" index="2AKGPc" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
@@ -156,20 +158,23 @@
         <property role="13z3e$" value="VoidType" />
         <property role="13z3hU" value="VoidType" />
       </node>
-      <node concept="1jGXVd" id="4v3zQDeycgz" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJIL$o" role="2ik0Ml">
         <property role="aCCiF" value="type" />
         <ref role="13xwDP" node="4v3zQDeycfL" />
         <ref role="13xwDU" node="4v3zQDeycgj" />
+        <node concept="2AKGPc" id="KLF0RJIL$p" role="1vfT9s" />
       </node>
-      <node concept="1jGXVd" id="5NeRAQ8XSEu" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJIL$G" role="2ik0Ml">
         <property role="aCCiF" value="argTypes" />
         <ref role="13xwDP" node="4v3zQDeycgj" />
         <ref role="13xwDU" node="5NeRAQ8XSE1" />
+        <node concept="2AKGPc" id="KLF0RJIL$H" role="1vfT9s" />
       </node>
-      <node concept="1jGXVd" id="5NeRAQ8XSEx" role="2ik0Ml">
+      <node concept="1jGXVd" id="KLF0RJIL$Y" role="2ik0Ml">
         <property role="aCCiF" value="baseType" />
         <ref role="13xwDP" node="5NeRAQ8XSE1" />
         <ref role="13xwDU" node="5NeRAQ8XSEf" />
+        <node concept="2AKGPc" id="KLF0RJIL$Z" role="1vfT9s" />
       </node>
       <node concept="37mRI7" id="2K9dotEBcj_" role="lGtFl">
         <node concept="37mRIm" id="2K9dotEBcjA" role="37mRID">

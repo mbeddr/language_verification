@@ -9,6 +9,7 @@
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
         <property id="4439542802417641475" name="typeName" index="aCCiF" />
+        <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
@@ -16,6 +17,7 @@
       </concept>
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
+      <concept id="6271065208731828696" name="transfverif.core.structure.TVLinkIdRefExpression" flags="ng" index="2AKGPc" />
       <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
         <property id="1722780940080858386" name="counter" index="KJs$L" />
       </concept>
@@ -45,6 +47,10 @@
       <concept id="2186611055801906832" name="SyVOLT.structure.ContractBackwardLink" flags="ng" index="2lmX6V" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -117,15 +123,23 @@
           <ref role="35c_gD" to="b6kg:57pZU2XSTeO" resolve="Member" />
         </node>
       </node>
-      <node concept="1jGXVw" id="4MaYa8s4Xkt" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQi9" role="13z3mp">
         <property role="aCCiF" value="daughters" />
         <ref role="13xwDP" node="4MaYa8s4Xkb" />
         <ref role="13xwDU" node="4MaYa8s4Xkg" />
+        <node concept="2AKGPc" id="5s7j9jLPQia" role="1vfT9s">
+          <ref role="359W_E" to="b6kg:57pZU2XSTeH" resolve="Family" />
+          <ref role="359W_F" to="b6kg:57pZU2XSTfJ" resolve="daughters" />
+        </node>
       </node>
-      <node concept="1jGXVw" id="4MaYa8s4Xky" role="13z3mp">
+      <node concept="1jGXVw" id="5s7j9jLPQhN" role="13z3mp">
         <property role="aCCiF" value="mothers" />
         <ref role="13xwDP" node="4MaYa8s4Xkb" />
         <ref role="13xwDU" node="4MaYa8s4Xko" />
+        <node concept="2AKGPc" id="5s7j9jLPQhO" role="1vfT9s">
+          <ref role="359W_E" to="b6kg:57pZU2XSTeH" resolve="Family" />
+          <ref role="359W_F" to="b6kg:57pZU2XSTfn" resolve="mothers" />
+        </node>
       </node>
       <node concept="37mRI7" id="3Xb94j8DdhD" role="lGtFl">
         <node concept="37mRIm" id="3Xb94j8DdhE" role="37mRID">

@@ -14,6 +14,7 @@
       <concept id="745225989410352234" name="simpleInputLanguage.structure.B" flags="ng" index="32pJXW">
         <property id="3147330139975971709" name="nameB" index="1zy6dF" />
       </concept>
+      <concept id="745225989410070317" name="simpleInputLanguage.structure.A" flags="ng" index="32uCKV" />
     </language>
   </registry>
   <node concept="N59bq" id="6HyGJ_ot$fA">
@@ -22,5 +23,6 @@
       <property role="1zy6dF" value="nameOfB" />
     </node>
   </node>
+  <node concept="32uCKV" id="3e_V7Ivqx3K" />
 </model>
 
