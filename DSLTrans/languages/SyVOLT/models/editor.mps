@@ -353,7 +353,7 @@
           <node concept="3EZMnI" id="2t59Tl5mfue" role="3EZMnx">
             <node concept="2iRfu4" id="2t59Tl5mfuf" role="2iSdaV" />
             <node concept="3F0ifn" id="2t59Tl5mfuq" role="3EZMnx">
-              <property role="3F0ifm" value="Ouput Language: " />
+              <property role="3F0ifm" value="Output Language: " />
               <ref role="1k5W1q" to="r4b4:5aaBiRoxxTB" resolve="important" />
               <node concept="Vb9p2" id="2t59Tl5mfur" role="3F10Kt" />
               <node concept="VechU" id="2t59Tl5mfus" role="3F10Kt">
@@ -779,6 +779,9 @@
       </node>
       <node concept="3F1sOY" id="2t59Tl5l0vk" role="3EZMnx">
         <ref role="1NtTu8" to="yeb1:2t59Tl5l0uc" resolve="arg2" />
+      </node>
+      <node concept="3F0ifn" id="6$igfY83ebc" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
       </node>
     </node>
   </node>
@@ -1586,6 +1589,19 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6$igfY848wi">
+    <property role="3GE5qa" value="ContractFormulae" />
+    <ref role="1XX52x" to="yeb1:6$igfY83rGa" resolve="AtomicContractPointerInSet" />
+    <node concept="1iCGBv" id="6$igfY848wk" role="2wV5jI">
+      <ref role="1NtTu8" to="yeb1:2EAnn9pgMl6" resolve="pointer" />
+      <node concept="1sVBvm" id="6$igfY848wm" role="1sWHZn">
+        <node concept="3F0A7n" id="6$igfY848wt" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>

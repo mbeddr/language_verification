@@ -109,8 +109,8 @@
       <property role="IQ2ns" value="4439542802417895572" />
       <ref role="20lvS9" node="1TopMIb0Vqg" resolve="ContractBackwardLink" />
     </node>
-    <node concept="PrWs8" id="3QsrawRgNjF" role="PzmwI">
-      <ref role="PrY4T" node="3QsrawRgNjk" resolve="ContractFormula" />
+    <node concept="PrWs8" id="6$igfY83eb1" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="4o$Qo1rTD3O" role="PzmwI">
       <ref role="PrY4T" to="i3vy:4o$Qo1rTD3$" resolve="AbstractMatcherApplier" />
@@ -205,8 +205,8 @@
     <property role="34LRSv" value="Same Pre Element" />
     <property role="EcuMT" value="4439542802417923317" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3QsrawRgNNt" role="PzmwI">
-      <ref role="PrY4T" to="i3vy:2rexW9_i8R$" resolve="MatchLink" />
+    <node concept="PrWs8" id="6$igfY85OJ0" role="PzmwI">
+      <ref role="PrY4T" to="i3vy:2rexW9_i8QQ" resolve="Link" />
     </node>
     <node concept="PrWs8" id="3QsrawRgOM_" role="PzmwI">
       <ref role="PrY4T" node="3QsrawRgOMo" resolve="SameElement" />
@@ -218,8 +218,8 @@
     <property role="34LRSv" value="Same Post Element" />
     <property role="EcuMT" value="4439542802417925338" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3QsrawRgNNr" role="PzmwI">
-      <ref role="PrY4T" to="i3vy:3QsrawRgGyC" resolve="ApplyLink" />
+    <node concept="PrWs8" id="6$igfY85OJ4" role="PzmwI">
+      <ref role="PrY4T" to="i3vy:2rexW9_i8QQ" resolve="Link" />
     </node>
     <node concept="PrWs8" id="3QsrawRgOMt" role="PzmwI">
       <ref role="PrY4T" node="3QsrawRgOMo" resolve="SameElement" />
@@ -353,6 +353,22 @@
     </node>
     <node concept="PrWs8" id="2EAnn9pgMl8" role="PzmwI">
       <ref role="PrY4T" node="2EAnn9pgMl4" resolve="AtomicContractPresenter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6$igfY83rGa">
+    <property role="EcuMT" value="7571185389806664458" />
+    <property role="3GE5qa" value="ContractFormulae" />
+    <property role="TrG5h" value="AtomicContractPointerInSet" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6$igfY84Efz" role="1TKVEi">
+      <property role="IQ2ns" value="7571185389806986211" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="pointer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="67kIGnNxbyT" resolve="AtomicContract" />
+    </node>
+    <node concept="PrWs8" id="6$igfY86lJB" role="PzmwI">
+      <ref role="PrY4T" node="3QsrawRgNjk" resolve="ContractFormula" />
     </node>
   </node>
 </model>
