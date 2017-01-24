@@ -1597,7 +1597,7 @@
     <property role="3GE5qa" value="ContractFormulae" />
     <ref role="1XX52x" to="yeb1:6$igfY83rGa" resolve="AtomicContractPointerInSet" />
     <node concept="1iCGBv" id="6$igfY848wk" role="2wV5jI">
-      <ref role="1NtTu8" to="yeb1:2EAnn9pgMl6" resolve="pointer" />
+      <ref role="1NtTu8" to="yeb1:6$igfY84Efz" resolve="pointer" />
       <node concept="1sVBvm" id="6$igfY848wm" role="1sWHZn">
         <node concept="3F0A7n" id="6$igfY848wt" role="2wV5jI">
           <property role="1Intyy" value="true" />
