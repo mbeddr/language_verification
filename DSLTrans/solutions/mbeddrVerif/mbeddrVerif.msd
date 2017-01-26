@@ -10,7 +10,9 @@
     <dependency reexport="false">8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:fa60053e-0db8-4831-b11d-d5b8f6d2e5c5:C" version="0" />
     <language slang="l:4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7:DSLTrans" version="0" />
+    <language slang="l:51863a59-6a4f-4b17-bcd7-fa1c4098852f:Module" version="0" />
     <language slang="l:69eded0a-1bc3-427e-9a48-e8713d355d49:SyVOLT" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
