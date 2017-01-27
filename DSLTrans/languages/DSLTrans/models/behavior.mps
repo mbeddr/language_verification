@@ -15,13 +15,16 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="dz2p" ref="b387285c-3448-452c-b3bb-a3f8de8eaf08/java:com.sun.tools.internal.ws.wsdl.document.jaxws(JDK-tools/)" />
     <import index="dz2q" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:com.sun.tools.internal.ws.wsdl.document.jaxws(DSLTrans.lib/)" />
+    <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" />
+    <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" />
+    <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
-    <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -147,6 +150,7 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
@@ -6180,15 +6184,65 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1j60nTi$JHD" role="3cqZAp">
-              <node concept="2OqwBi" id="1j60nTi$KrI" role="3clFbG">
-                <node concept="37vLTw" id="1j60nTi$JHB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1j60nTizHG3" resolve="writer" />
+            <node concept="2Gpval" id="1zsJfreb6rH" role="3cqZAp">
+              <node concept="2GrKxI" id="1zsJfreb6rJ" role="2Gsz3X">
+                <property role="TrG5h" value="contractFormula" />
+              </node>
+              <node concept="2OqwBi" id="1zsJfreb8Rb" role="2GsD0m">
+                <node concept="2OqwBi" id="1zsJfreb801" role="2Oq$k0">
+                  <node concept="13iPFW" id="1zsJfreb7GN" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1zsJfreb8pG" role="2OqNvi">
+                    <ref role="3Tt5mk" to="rr4f:4knEpdJWV$A" resolve="contracts" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="1j60nTi$L5e" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                  <node concept="Xl_RD" id="1j60nTi$Lg$" role="37wK5m">
-                    <property role="Xl_RC" value="\t\tself.if_then_contracts = []\n" />
+                <node concept="3Tsc0h" id="1zsJfreb9cl" role="2OqNvi">
+                  <ref role="3TtcxE" to="yeb1:3QsrawRgNjM" resolve="formulae" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="1zsJfreb6rN" role="2LFqv$">
+                <node concept="3clFbF" id="1j60nTi$JHD" role="3cqZAp">
+                  <node concept="2OqwBi" id="1j60nTi$KrI" role="3clFbG">
+                    <node concept="37vLTw" id="1j60nTi$JHB" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1j60nTizHG3" resolve="writer" />
+                    </node>
+                    <node concept="liA8E" id="1j60nTi$L5e" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                      <node concept="Xl_RD" id="1j60nTi$Lg$" role="37wK5m">
+                        <property role="Xl_RC" value="\t\tself.if_then_contracts = [" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1zsJfrebUxk" role="3cqZAp">
+                  <node concept="2OqwBi" id="1zsJfrebVlu" role="3clFbG">
+                    <node concept="37vLTw" id="1zsJfrebUxi" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1j60nTizHG3" resolve="writer" />
+                    </node>
+                    <node concept="liA8E" id="1zsJfrebVKD" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                      <node concept="2OqwBi" id="1zsJfrebXdA" role="37wK5m">
+                        <node concept="13iPFW" id="1zsJfrebWjn" role="2Oq$k0" />
+                        <node concept="2qgKlT" id="1zsJfrebYrO" role="2OqNvi">
+                          <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                          <node concept="2GrUjf" id="1zsJfrebYHo" role="37wK5m">
+                            <ref role="2Gs0qQ" node="1zsJfreb6rJ" resolve="contractFormula" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="1zsJfreb9pK" role="3cqZAp">
+                  <node concept="2OqwBi" id="1zsJfreb9pL" role="3clFbG">
+                    <node concept="37vLTw" id="1zsJfreb9pM" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1j60nTizHG3" resolve="writer" />
+                    </node>
+                    <node concept="liA8E" id="1zsJfreb9pN" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                      <node concept="Xl_RD" id="1zsJfreb9pO" role="37wK5m">
+                        <property role="Xl_RC" value="],\n" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -6348,7 +6402,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1j60nTizD1p" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="75zsbcX697x" role="3clF46">
         <property role="TrG5h" value="transformationPath" />
@@ -6361,6 +6414,303 @@
       <node concept="37vLTG" id="2oAj9sJE$oE" role="3clF46">
         <property role="TrG5h" value="contractPath" />
         <node concept="17QB3L" id="2oAj9sJE_3C" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="1zsJfrebbnj" role="13h7CS">
+      <property role="TrG5h" value="buildFormulaReversePolish" />
+      <node concept="3Tm6S6" id="1zsJfrebd7$" role="1B3o_S" />
+      <node concept="17QB3L" id="1zsJfrebd7J" role="3clF45" />
+      <node concept="3clFbS" id="1zsJfrebbnm" role="3clF47">
+        <node concept="3cpWs8" id="1zsJfrebd9F" role="3cqZAp">
+          <node concept="3cpWsn" id="1zsJfrebd9I" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="17QB3L" id="1zsJfrebd9E" role="1tU5fm" />
+            <node concept="Xl_RD" id="1zsJfrebda$" role="33vP2m">
+              <property role="Xl_RC" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1zsJfreb$0U" role="3cqZAp">
+          <node concept="3clFbS" id="1zsJfreb$0W" role="3clFbx">
+            <node concept="3clFbF" id="1zsJfreb$vy" role="3cqZAp">
+              <node concept="37vLTI" id="1zsJfreb_8B" role="3clFbG">
+                <node concept="37vLTw" id="1zsJfreb$vw" role="37vLTJ">
+                  <ref role="3cqZAo" node="1zsJfrebd9I" resolve="res" />
+                </node>
+                <node concept="3cpWs3" id="1zsJfrebDts" role="37vLTx">
+                  <node concept="Xl_RD" id="1zsJfrebDDB" role="3uHU7w">
+                    <property role="Xl_RC" value=",\&quot;AND\&quot;" />
+                  </node>
+                  <node concept="3cpWs3" id="1zsJfrebCGo" role="3uHU7B">
+                    <node concept="3cpWs3" id="1zsJfrebC2g" role="3uHU7B">
+                      <node concept="BsUDl" id="1zsJfrebAdl" role="3uHU7B">
+                        <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                        <node concept="2OqwBi" id="1zsJfrebAys" role="37wK5m">
+                          <node concept="1PxgMI" id="1zsJfrebAlt" role="2Oq$k0">
+                            <ref role="1m5ApE" to="yeb1:3QsrawRgNjr" resolve="AndContractFormula" />
+                            <node concept="37vLTw" id="1zsJfrebAdH" role="1m5AlR">
+                              <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="1zsJfrebAUs" role="2OqNvi">
+                            <ref role="3Tt5mk" to="yeb1:2t59Tl5l0u6" resolve="arg1" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="1zsJfrebC9u" role="3uHU7w">
+                        <property role="Xl_RC" value="," />
+                      </node>
+                    </node>
+                    <node concept="BsUDl" id="1zsJfrebCNN" role="3uHU7w">
+                      <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                      <node concept="2OqwBi" id="1zsJfrebCNO" role="37wK5m">
+                        <node concept="1PxgMI" id="1zsJfrebCNP" role="2Oq$k0">
+                          <ref role="1m5ApE" to="yeb1:3QsrawRgNjr" resolve="AndContractFormula" />
+                          <node concept="37vLTw" id="1zsJfrebCNQ" role="1m5AlR">
+                            <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="1zsJfrebD5j" role="2OqNvi">
+                          <ref role="3Tt5mk" to="yeb1:2t59Tl5l0uc" resolve="arg2" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1zsJfreb$co" role="3clFbw">
+            <node concept="37vLTw" id="1zsJfreb$1l" role="2Oq$k0">
+              <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+            </node>
+            <node concept="1mIQ4w" id="1zsJfreb$qg" role="2OqNvi">
+              <node concept="chp4Y" id="1zsJfreb$sv" role="cj9EA">
+                <ref role="cht4Q" to="yeb1:3QsrawRgNjr" resolve="AndContractFormula" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="1zsJfrebEMK" role="3eNLev">
+            <node concept="3clFbS" id="1zsJfrebEMM" role="3eOfB_">
+              <node concept="3clFbF" id="1zsJfrebF7g" role="3cqZAp">
+                <node concept="37vLTI" id="1zsJfrebF7h" role="3clFbG">
+                  <node concept="37vLTw" id="1zsJfrebF7i" role="37vLTJ">
+                    <ref role="3cqZAo" node="1zsJfrebd9I" resolve="res" />
+                  </node>
+                  <node concept="3cpWs3" id="1zsJfrebF7j" role="37vLTx">
+                    <node concept="Xl_RD" id="1zsJfrebF7k" role="3uHU7w">
+                      <property role="Xl_RC" value=",\&quot;OR\&quot;" />
+                    </node>
+                    <node concept="3cpWs3" id="1zsJfrebF7l" role="3uHU7B">
+                      <node concept="3cpWs3" id="1zsJfrebF7m" role="3uHU7B">
+                        <node concept="BsUDl" id="1zsJfrebF7n" role="3uHU7B">
+                          <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                          <node concept="2OqwBi" id="1zsJfrebF7o" role="37wK5m">
+                            <node concept="1PxgMI" id="1zsJfrebF7p" role="2Oq$k0">
+                              <ref role="1m5ApE" to="yeb1:3QsrawRgNjr" resolve="AndContractFormula" />
+                              <node concept="37vLTw" id="1zsJfrebF7q" role="1m5AlR">
+                                <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="1zsJfrebF7r" role="2OqNvi">
+                              <ref role="3Tt5mk" to="yeb1:2t59Tl5l0u6" resolve="arg1" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="1zsJfrebF7s" role="3uHU7w">
+                          <property role="Xl_RC" value="," />
+                        </node>
+                      </node>
+                      <node concept="BsUDl" id="1zsJfrebF7t" role="3uHU7w">
+                        <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                        <node concept="2OqwBi" id="1zsJfrebF7u" role="37wK5m">
+                          <node concept="1PxgMI" id="1zsJfrebF7v" role="2Oq$k0">
+                            <ref role="1m5ApE" to="yeb1:3QsrawRgNjr" resolve="AndContractFormula" />
+                            <node concept="37vLTw" id="1zsJfrebF7w" role="1m5AlR">
+                              <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="1zsJfrebF7x" role="2OqNvi">
+                            <ref role="3Tt5mk" to="yeb1:2t59Tl5l0uc" resolve="arg2" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1zsJfrebEWZ" role="3eO9$A">
+              <node concept="37vLTw" id="1zsJfrebEX0" role="2Oq$k0">
+                <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+              </node>
+              <node concept="1mIQ4w" id="1zsJfrebEX1" role="2OqNvi">
+                <node concept="chp4Y" id="1zsJfrebF09" role="cj9EA">
+                  <ref role="cht4Q" to="yeb1:3QsrawRgNju" resolve="OrContractFormula" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="1zsJfrebG2c" role="3eNLev">
+            <node concept="3clFbS" id="1zsJfrebG2e" role="3eOfB_">
+              <node concept="3clFbF" id="1zsJfrebGq7" role="3cqZAp">
+                <node concept="37vLTI" id="1zsJfrebGq8" role="3clFbG">
+                  <node concept="37vLTw" id="1zsJfrebGq9" role="37vLTJ">
+                    <ref role="3cqZAo" node="1zsJfrebd9I" resolve="res" />
+                  </node>
+                  <node concept="3cpWs3" id="1zsJfrebGqa" role="37vLTx">
+                    <node concept="Xl_RD" id="1zsJfrebGqb" role="3uHU7w">
+                      <property role="Xl_RC" value=",\&quot;IMPL\&quot;" />
+                    </node>
+                    <node concept="3cpWs3" id="1zsJfrebGqc" role="3uHU7B">
+                      <node concept="3cpWs3" id="1zsJfrebGqd" role="3uHU7B">
+                        <node concept="BsUDl" id="1zsJfrebGqe" role="3uHU7B">
+                          <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                          <node concept="2OqwBi" id="1zsJfrebGqf" role="37wK5m">
+                            <node concept="1PxgMI" id="1zsJfrebGqg" role="2Oq$k0">
+                              <ref role="1m5ApE" to="yeb1:3QsrawRgNjz" resolve="ImplicationContractFormula" />
+                              <node concept="37vLTw" id="1zsJfrebGqh" role="1m5AlR">
+                                <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="1zsJfrebGqi" role="2OqNvi">
+                              <ref role="3Tt5mk" to="yeb1:2t59Tl5l0u6" resolve="arg1" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="1zsJfrebGqj" role="3uHU7w">
+                          <property role="Xl_RC" value="," />
+                        </node>
+                      </node>
+                      <node concept="BsUDl" id="1zsJfrebGqk" role="3uHU7w">
+                        <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                        <node concept="2OqwBi" id="1zsJfrebGql" role="37wK5m">
+                          <node concept="1PxgMI" id="1zsJfrebGqm" role="2Oq$k0">
+                            <ref role="1m5ApE" to="yeb1:3QsrawRgNjz" resolve="ImplicationContractFormula" />
+                            <node concept="37vLTw" id="1zsJfrebGqn" role="1m5AlR">
+                              <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="1zsJfrebGqo" role="2OqNvi">
+                            <ref role="3Tt5mk" to="yeb1:2t59Tl5l0uc" resolve="arg2" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1zsJfrebGdA" role="3eO9$A">
+              <node concept="37vLTw" id="1zsJfrebGdB" role="2Oq$k0">
+                <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+              </node>
+              <node concept="1mIQ4w" id="1zsJfrebGdC" role="2OqNvi">
+                <node concept="chp4Y" id="1zsJfrebGj0" role="cj9EA">
+                  <ref role="cht4Q" to="yeb1:3QsrawRgNjz" resolve="ImplicationContractFormula" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="1zsJfrebHdm" role="3eNLev">
+            <node concept="3clFbS" id="1zsJfrebHdn" role="3eOfB_">
+              <node concept="3clFbF" id="1zsJfrebHdo" role="3cqZAp">
+                <node concept="37vLTI" id="1zsJfrebHdp" role="3clFbG">
+                  <node concept="37vLTw" id="1zsJfrebHdq" role="37vLTJ">
+                    <ref role="3cqZAo" node="1zsJfrebd9I" resolve="res" />
+                  </node>
+                  <node concept="3cpWs3" id="1zsJfrebHdr" role="37vLTx">
+                    <node concept="Xl_RD" id="1zsJfrebHds" role="3uHU7w">
+                      <property role="Xl_RC" value=",\&quot;NOT\&quot;" />
+                    </node>
+                    <node concept="BsUDl" id="1zsJfrebHd_" role="3uHU7B">
+                      <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                      <node concept="2OqwBi" id="1zsJfrebHdA" role="37wK5m">
+                        <node concept="1PxgMI" id="1zsJfrebHdB" role="2Oq$k0">
+                          <ref role="1m5ApE" to="yeb1:3QsrawRgNjA" resolve="NotContractFormula" />
+                          <node concept="37vLTw" id="1zsJfrebHdC" role="1m5AlR">
+                            <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="1zsJfrebHXO" role="2OqNvi">
+                          <ref role="3Tt5mk" to="yeb1:2t59Tl5l0uf" resolve="arg" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1zsJfrebHdE" role="3eO9$A">
+              <node concept="37vLTw" id="1zsJfrebHdF" role="2Oq$k0">
+                <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+              </node>
+              <node concept="1mIQ4w" id="1zsJfrebHdG" role="2OqNvi">
+                <node concept="chp4Y" id="1zsJfrebHvx" role="cj9EA">
+                  <ref role="cht4Q" to="yeb1:3QsrawRgNjA" resolve="NotContractFormula" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="1zsJfrecBPI" role="3eNLev">
+            <node concept="2OqwBi" id="1zsJfrecCk$" role="3eO9$A">
+              <node concept="37vLTw" id="1zsJfrecC6e" role="2Oq$k0">
+                <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+              </node>
+              <node concept="1mIQ4w" id="1zsJfrecCBs" role="2OqNvi">
+                <node concept="chp4Y" id="1zsJfrecCDH" role="cj9EA">
+                  <ref role="cht4Q" to="yeb1:6$igfY83rGa" resolve="AtomicContractPointerInSet" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="1zsJfrecBPK" role="3eOfB_">
+              <node concept="3clFbF" id="1zsJfrecDQ$" role="3cqZAp">
+                <node concept="37vLTI" id="1zsJfrecEM9" role="3clFbG">
+                  <node concept="37vLTw" id="1zsJfrecDQz" role="37vLTJ">
+                    <ref role="3cqZAo" node="1zsJfrebd9I" resolve="res" />
+                  </node>
+                  <node concept="3cpWs3" id="1zsJfrefekP" role="37vLTx">
+                    <node concept="3cpWs3" id="1zsJfrefcBR" role="3uHU7B">
+                      <node concept="Xl_RD" id="1zsJfrefcQ5" role="3uHU7B">
+                        <property role="Xl_RC" value="\&quot;" />
+                      </node>
+                      <node concept="2OqwBi" id="1zsJfredKWK" role="3uHU7w">
+                        <node concept="2OqwBi" id="1zsJfredKgP" role="2Oq$k0">
+                          <node concept="1PxgMI" id="1zsJfredIOR" role="2Oq$k0">
+                            <ref role="1m5ApE" to="yeb1:6$igfY83rGa" resolve="AtomicContractPointerInSet" />
+                            <node concept="37vLTw" id="1zsJfredIqX" role="1m5AlR">
+                              <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                            </node>
+                          </node>
+                          <node concept="3TrEf2" id="1zsJfredKyZ" role="2OqNvi">
+                            <ref role="3Tt5mk" to="yeb1:6$igfY84Efz" resolve="pointer" />
+                          </node>
+                        </node>
+                        <node concept="3TrcHB" id="1zsJfredLjT" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="1zsJfrefeJr" role="3uHU7w">
+                      <property role="Xl_RC" value="\&quot;" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1zsJfrebEbM" role="3cqZAp">
+          <node concept="37vLTw" id="1zsJfrebErd" role="3cqZAk">
+            <ref role="3cqZAo" node="1zsJfrebd9I" resolve="res" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1zsJfrebz3E" role="3clF46">
+        <property role="TrG5h" value="formula" />
+        <node concept="3Tqbb2" id="1zsJfrebz3D" role="1tU5fm">
+          <ref role="ehGHo" to="yeb1:3QsrawRgNjk" resolve="ContractFormula" />
+        </node>
       </node>
     </node>
     <node concept="13hLZK" id="2t59Tl5mnuk" role="13h7CW">

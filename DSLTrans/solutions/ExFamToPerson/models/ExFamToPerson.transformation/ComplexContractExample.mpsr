@@ -15,7 +15,12 @@
     </language>
     <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
       <concept id="4439542802417925338" name="SyVOLT.structure.SamePostElement" flags="ng" index="aRP1M" />
+      <concept id="4439542802417923299" name="SyVOLT.structure.ImplicationContractFormula" flags="ng" index="aRPxb" />
+      <concept id="4439542802417923302" name="SyVOLT.structure.NotContractFormula" flags="ng" index="aRPxe" />
       <concept id="4439542802417923317" name="SyVOLT.structure.SamePreElement" flags="ng" index="aRPxt" />
+      <concept id="4439542802417923288" name="SyVOLT.structure.UnaryContractFormula" flags="ng" index="aRPxK">
+        <child id="2829711462938969999" name="arg" index="1y4i0q" />
+      </concept>
       <concept id="4439542802417923291" name="SyVOLT.structure.AndContractFormula" flags="ng" index="aRPxN" />
       <concept id="4439542802417923285" name="SyVOLT.structure.BinaryContractFormula" flags="ng" index="aRPxX">
         <child id="2829711462938969990" name="arg1" index="1y4i0j" />
@@ -77,12 +82,19 @@
       <ref role="13xwDP" node="4MaYa8s4Xio" />
       <ref role="13xwDU" node="4MaYa8s4Xio" />
     </node>
-    <node concept="aRPxN" id="6$igfY86oh4" role="aRPxq">
-      <node concept="3x7ZJP" id="6$igfY86oha" role="1y4i0j">
+    <node concept="aRPxN" id="1zsJfrefbM5" role="aRPxq">
+      <node concept="3x7ZJP" id="1zsJfrefbMb" role="1y4i0j">
         <ref role="3x0ecs" node="4MaYa8s4XdH" resolve="Neg_CityCompany" />
       </node>
-      <node concept="3x7ZJP" id="6$igfY86ohd" role="1y4i0p">
-        <ref role="3x0ecs" node="4MaYa8s4Xj8" resolve="Pos_ChildSchool" />
+      <node concept="aRPxb" id="1zsJfrefoEy" role="1y4i0p">
+        <node concept="3x7ZJP" id="1zsJfrefoED" role="1y4i0j">
+          <ref role="3x0ecs" node="4OZxLw4WaSm" resolve="Pos_MotherFather" />
+        </node>
+        <node concept="aRPxe" id="1zsJfrefoEL" role="1y4i0p">
+          <node concept="3x7ZJP" id="1zsJfrefoEQ" role="1y4i0q">
+            <ref role="3x0ecs" node="1AcaMXhA0Gt" resolve="Pos_FourMembers" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
