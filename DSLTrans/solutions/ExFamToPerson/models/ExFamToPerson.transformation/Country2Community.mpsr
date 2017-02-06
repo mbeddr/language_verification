@@ -2,8 +2,8 @@
 <model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
     <import index="b6kg" ref="r:09755222-e7cd-474b-a0c9-bd85f7571aec(Families.structure)" implicit="true" />
+    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
@@ -38,93 +38,30 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
-      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
-        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
-        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
-        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
-        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
-      </concept>
-      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
-        <child id="8963411245960991904" name="entries" index="37mRID" />
-      </concept>
-      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
-        <property id="8963411245960998400" name="key" index="37mO49" />
-        <child id="8963411245960998404" name="value" index="37mO4d" />
-      </concept>
-    </language>
   </registry>
-  <node concept="1jGXXK" id="3RdW_rChosp">
+  <node concept="1jGXXK" id="6B2mdJKjQ9U">
     <property role="TrG5h" value="Country2Community" />
-    <property role="3GE5qa" value="transformation" />
-    <node concept="3GsvpM" id="3RdW_rChosq" role="2ik0Mo">
-      <node concept="1jGXXa" id="3dPnTp7RIL9" role="1jGXX7">
-        <property role="13z3e$" value="C2C_A1" />
-        <property role="13z3hU" value="Community" />
-        <node concept="pBohH" id="1UHaC1cWigs" role="pB8W9">
-          <ref role="35c_gD" to="eh87:2EaowSc4lST" resolve="Community" />
-        </node>
-      </node>
-      <node concept="37mRI7" id="3Xb94j8Bm3o" role="lGtFl">
-        <node concept="37mRIm" id="3Xb94j8Bm3p" role="37mRID">
-          <property role="37mO49" value="3707974967264996425" />
-          <node concept="gqqVs" id="3Xb94j8Bm3n" role="37mO4d">
-            <property role="gqqTZ" value="12.000100135803223" />
-            <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="497.0" />
-            <property role="gqqTy" value="57.0" />
-            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3GsvpN" id="3RdW_rChosr" role="2ik0Mu">
-      <node concept="2ik0NV" id="3dPnTp7RIL7" role="13z3mo">
-        <property role="13z3e$" value="C2C_M1" />
+    <property role="3GE5qa" value="transformation.01-Country2Community_CreationRule" />
+    <node concept="3GsvpN" id="6B2mdJKjQ9V" role="2ik0Mu">
+      <node concept="2ik0NV" id="6B2mdJKjQ9W" role="13z3mo">
+        <property role="13z3e$" value="1.0.m.0Country" />
         <property role="13z3hU" value="Country" />
-        <node concept="pBohH" id="1UHaC1cWign" role="pB8W9">
+        <node concept="pBohH" id="6B2mdJKjQ9X" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeG" resolve="Country" />
         </node>
       </node>
-      <node concept="37mRI7" id="3Xb94j8Bm3j" role="lGtFl">
-        <node concept="37mRIm" id="3Xb94j8Bm3k" role="37mRID">
-          <property role="37mO49" value="3707974967264996423" />
-          <node concept="gqqVs" id="3Xb94j8Bm3i" role="37mO4d">
-            <property role="gqqTZ" value="12.000100135803223" />
-            <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="513.0" />
-            <property role="gqqTy" value="57.0" />
-            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          </node>
-        </node>
-      </node>
     </node>
-    <node concept="37mRI7" id="3Xb94j8Bm3g" role="lGtFl">
-      <node concept="37mRIm" id="3Xb94j8Bm3h" role="37mRID">
-        <property role="37mO49" value="4453482061617268507" />
-        <node concept="gqqVs" id="3Xb94j8Bm3f" role="37mO4d">
-          <property role="gqqTZ" value="12.0" />
-          <property role="gqqTW" value="12.0" />
-          <property role="gqqTX" value="594.0" />
-          <property role="gqqTy" value="137.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
-      <node concept="37mRIm" id="3Xb94j8Bm3m" role="37mRID">
-        <property role="37mO49" value="4453482061617268506" />
-        <node concept="gqqVs" id="3Xb94j8Bm3l" role="37mO4d">
-          <property role="gqqTZ" value="12.0" />
-          <property role="gqqTW" value="165.0" />
-          <property role="gqqTX" value="560.0" />
-          <property role="gqqTy" value="183.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+    <node concept="3GsvpM" id="6B2mdJKjQ9Y" role="2ik0Mo">
+      <node concept="1jGXXa" id="6B2mdJKjQ9Z" role="1jGXX7">
+        <property role="13z3e$" value="1.0.a.0Community" />
+        <property role="13z3hU" value="Community" />
+        <node concept="pBohH" id="6B2mdJKjQa0" role="pB8W9">
+          <ref role="35c_gD" to="eh87:2EaowSc4lST" resolve="Community" />
         </node>
       </node>
     </node>

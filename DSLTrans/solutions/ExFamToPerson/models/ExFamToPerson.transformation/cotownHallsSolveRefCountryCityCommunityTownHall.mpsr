@@ -2,8 +2,8 @@
 <model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
     <import index="b6kg" ref="r:09755222-e7cd-474b-a0c9-bd85f7571aec(Families.structure)" implicit="true" />
+    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
@@ -63,66 +63,66 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="4OZxLw4ZfEk">
+  <node concept="1jGXXK" id="6B2mdJKjQeT">
     <property role="TrG5h" value="cotownHallsSolveRefCountryCityCommunityTownHall" />
-    <property role="3GE5qa" value="transformation" />
-    <node concept="3GsvpM" id="4OZxLw4ZfEl" role="2ik0Mo">
-      <node concept="1jGXXa" id="4OZxLw4ZfE_" role="1jGXX7">
-        <property role="13z3e$" value="CCCTH_Comm" />
-        <property role="13z3hU" value="Community" />
-        <node concept="pBohH" id="1UHaC1cWuDa" role="pB8W9">
-          <ref role="35c_gD" to="eh87:2EaowSc4lST" resolve="Community" />
-        </node>
-      </node>
-      <node concept="1jGXXa" id="4OZxLw4ZfEB" role="1jGXX7">
-        <property role="13z3e$" value="CCCTH_TownHall" />
-        <property role="13z3hU" value="TownHall" />
-        <node concept="pBohH" id="1UHaC1cWuDf" role="pB8W9">
-          <ref role="35c_gD" to="eh87:2EaowSc4lSU" resolve="TownHall" />
-        </node>
-      </node>
-      <node concept="1jGXVd" id="KLF0RJIL_u" role="2ik0Ml">
-        <property role="aCCiF" value="townHalls" />
-        <ref role="13xwDP" node="4OZxLw4ZfE_" />
-        <ref role="13xwDU" node="4OZxLw4ZfEB" />
-        <node concept="2AKGPc" id="KLF0RJIL_v" role="1vfT9s">
-          <ref role="359W_E" to="eh87:2EaowSc4lST" resolve="Community" />
-          <ref role="359W_F" to="eh87:2EaowSc4lSX" resolve="townHalls" />
-        </node>
-      </node>
-    </node>
-    <node concept="3GsvpN" id="4OZxLw4ZfEo" role="2ik0Mu">
-      <node concept="2ik0NV" id="4OZxLw4ZfEq" role="13z3mo">
-        <property role="13z3e$" value="CCCTH_Country" />
+    <property role="3GE5qa" value="transformation.13-cotownHallsSolveRef" />
+    <node concept="3GsvpN" id="6B2mdJKjQeU" role="2ik0Mu">
+      <node concept="2ik0NV" id="6B2mdJKjQeV" role="13z3mo">
+        <property role="13z3e$" value="13.0.m.0Country" />
         <property role="13z3hU" value="Country" />
-        <node concept="pBohH" id="1UHaC1cWuD0" role="pB8W9">
+        <node concept="pBohH" id="6B2mdJKjQeW" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeG" resolve="Country" />
         </node>
       </node>
-      <node concept="2ik0NV" id="4OZxLw4ZfEv" role="13z3mo">
-        <property role="13z3e$" value="CCCTH_City" />
+      <node concept="2ik0NV" id="6B2mdJKjQeX" role="13z3mo">
+        <property role="13z3e$" value="13.0.m.1City" />
         <property role="13z3hU" value="City" />
-        <node concept="pBohH" id="1UHaC1cWuD5" role="pB8W9">
+        <node concept="pBohH" id="6B2mdJKjQeY" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeI" resolve="City" />
         </node>
       </node>
-      <node concept="1jGXVw" id="5s7j9jLPQhF" role="13z3mp">
+      <node concept="1jGXVw" id="6B2mdJKjQf0" role="13z3mp">
         <property role="aCCiF" value="cities" />
-        <ref role="13xwDP" node="4OZxLw4ZfEq" />
-        <ref role="13xwDU" node="4OZxLw4ZfEv" />
-        <node concept="2AKGPc" id="5s7j9jLPQhG" role="1vfT9s">
+        <ref role="13xwDP" node="6B2mdJKjQeV" />
+        <ref role="13xwDU" node="6B2mdJKjQeX" />
+        <node concept="2AKGPc" id="6B2mdJKjQeZ" role="1vfT9s">
           <ref role="359W_E" to="b6kg:57pZU2XSTeG" resolve="Country" />
           <ref role="359W_F" to="b6kg:57pZU2XSTfg" resolve="cities" />
         </node>
       </node>
     </node>
-    <node concept="1jGXV2" id="4OZxLw4ZfEG" role="2udmAx">
-      <ref role="13xwDP" node="4OZxLw4ZfE_" />
-      <ref role="13xwDU" node="4OZxLw4ZfEq" />
+    <node concept="3GsvpM" id="6B2mdJKjQf1" role="2ik0Mo">
+      <node concept="1jGXXa" id="6B2mdJKjQf2" role="1jGXX7">
+        <property role="13z3e$" value="13.0.a.0Community" />
+        <property role="13z3hU" value="Community" />
+        <node concept="pBohH" id="6B2mdJKjQf3" role="pB8W9">
+          <ref role="35c_gD" to="eh87:2EaowSc4lST" resolve="Community" />
+        </node>
+      </node>
+      <node concept="1jGXXa" id="6B2mdJKjQf5" role="1jGXX7">
+        <property role="13z3e$" value="13.0.a.1TownHall" />
+        <property role="13z3hU" value="TownHall" />
+        <node concept="pBohH" id="6B2mdJKjQf6" role="pB8W9">
+          <ref role="35c_gD" to="eh87:2EaowSc4lSU" resolve="TownHall" />
+        </node>
+      </node>
+      <node concept="1jGXVd" id="6B2mdJKjQf9" role="2ik0Ml">
+        <property role="aCCiF" value="townHalls" />
+        <ref role="13xwDP" node="6B2mdJKjQf2" />
+        <ref role="13xwDU" node="6B2mdJKjQf5" />
+        <node concept="2AKGPc" id="6B2mdJKjQf8" role="1vfT9s">
+          <ref role="359W_E" to="eh87:2EaowSc4lST" resolve="Community" />
+          <ref role="359W_F" to="eh87:2EaowSc4lSX" resolve="townHalls" />
+        </node>
+      </node>
     </node>
-    <node concept="1jGXV2" id="4OZxLw4ZfEI" role="2udmAx">
-      <ref role="13xwDP" node="4OZxLw4ZfEB" />
-      <ref role="13xwDU" node="4OZxLw4ZfEv" />
+    <node concept="1jGXV2" id="6B2mdJKjQfa" role="2udmAx">
+      <ref role="13xwDP" node="6B2mdJKjQf2" />
+      <ref role="13xwDU" node="6B2mdJKjQeV" />
+    </node>
+    <node concept="1jGXV2" id="6B2mdJKjQfb" role="2udmAx">
+      <ref role="13xwDP" node="6B2mdJKjQf5" />
+      <ref role="13xwDU" node="6B2mdJKjQeX" />
     </node>
   </node>
 </model>

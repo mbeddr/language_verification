@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
+<model ref="r:3f83a3cc-6d45-4f54-9d3f-7ab7bb0b8de1(mbeddrVerif.mbeddr2Ctrans)" content="root">
   <persistence version="9" />
   <imports />
   <registry>
@@ -35,50 +35,32 @@
       </concept>
     </language>
   </registry>
-  <node concept="2ik09X" id="2EAnn9pgMkB">
-    <property role="TrG5h" value="Families2PersonsContracts" />
+  <node concept="2ik09X" id="6B2mdJKjRi3">
     <property role="3GE5qa" value="contracts" />
-    <node concept="1NTnwR" id="6MxtMaGmsna" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4XdH" resolve="Neg_CityCompany" />
-    </node>
-    <node concept="1NTnwR" id="6MxtMaGmsni" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xhb" resolve="Neg_CountryCity" />
-    </node>
-    <node concept="1NTnwR" id="6MxtMaGmsns" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xk6" resolve="Neg_DaughterMother" />
-    </node>
-    <node concept="1NTnwR" id="6MxtMaGmsnC" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xhz" resolve="Neg_SchoolOrdFac" />
-    </node>
-    <node concept="1NTnwR" id="5EVMFxdMw_2" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xi3" resolve="Pos_AssocCity" />
-    </node>
-    <node concept="1NTnwR" id="6MxtMaGmso6" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xj8" resolve="Pos_ChildSchool" />
-    </node>
-    <node concept="1NTnwR" id="6MxtMaGmsoo" role="2ik09Z">
-      <ref role="1NTnwO" node="1AcaMXhA0Gt" resolve="Pos_FourMembers" />
-    </node>
-    <node concept="1NTnwR" id="6MxtMaGmsoG" role="2ik09Z">
-      <ref role="1NTnwO" node="4OZxLw4WaSm" resolve="Pos_MotherFather" />
-    </node>
-    <node concept="1NTnwR" id="6MxtMaGmsp2" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4XkE" resolve="Pos_ParentCompany" />
-    </node>
-    <node concept="pHN19" id="2EAnn9pgMkC" role="1y7jxr">
-      <node concept="2V$Bhx" id="2EAnn9pgMkJ" role="2V$M_3">
-        <property role="2V$B1T" value="05f6207f-0b7e-4413-bedb-09f3dfc58438" />
-        <property role="2V$B1Q" value="Families" />
+    <property role="TrG5h" value="mbeddr2C_optimized_blinksContracts" />
+    <node concept="pHN19" id="6B2mdJKjRi4" role="1y7jxr">
+      <node concept="2V$Bhx" id="6B2mdJKjRi5" role="2V$M_3">
+        <property role="2V$B1T" value="51863a59-6a4f-4b17-bcd7-fa1c4098852f" />
+        <property role="2V$B1Q" value="Module" />
       </node>
     </node>
-    <node concept="pHN19" id="2EAnn9pgMkO" role="1y7jx4">
-      <node concept="2V$Bhx" id="2EAnn9pgMkV" role="2V$M_3">
-        <property role="2V$B1T" value="98a5ea16-05e8-4296-b548-cbaca3397fce" />
-        <property role="2V$B1Q" value="Persons" />
+    <node concept="pHN19" id="6B2mdJKjRi6" role="1y7jx4">
+      <node concept="2V$Bhx" id="6B2mdJKjRi7" role="2V$M_3">
+        <property role="2V$B1T" value="fa60053e-0db8-4831-b11d-d5b8f6d2e5c5" />
+        <property role="2V$B1Q" value="C" />
       </node>
     </node>
-    <node concept="1NTnwR" id="2EAnn9phfmN" role="2ik09Z">
-      <ref role="1NTnwO" node="4MaYa8s4Xly" resolve="Pos_TownHallComm" />
+    <node concept="1NTnwR" id="6B2mdJKjRJy" role="2ik09Z">
+      <ref role="1NTnwO" node="6B2mdJKjRJx" resolve="AssignmentInstance1" />
+    </node>
+    <node concept="1NTnwR" id="6B2mdJKjRLw" role="2ik09Z">
+      <ref role="1NTnwO" node="6B2mdJKjRLv" resolve="AssignmentInstance2" />
+    </node>
+    <node concept="1NTnwR" id="6B2mdJKjRNu" role="2ik09Z">
+      <ref role="1NTnwO" node="6B2mdJKjRNt" resolve="AssignmentInstance3" />
+    </node>
+    <node concept="1NTnwR" id="6B2mdJKjRQM" role="2ik09Z">
+      <ref role="1NTnwO" node="6B2mdJKjRQL" resolve="Simpler" />
     </node>
   </node>
 </model>

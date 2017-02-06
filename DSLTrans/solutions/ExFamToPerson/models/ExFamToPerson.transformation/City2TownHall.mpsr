@@ -2,9 +2,9 @@
 <model ref="r:470cef18-84c8-4ea0-95e8-8b13224de362(ExFamToPerson.transformation)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="b6kg" ref="r:09755222-e7cd-474b-a0c9-bd85f7571aec(Families.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="eh87" ref="r:15dee58e-563f-4196-8a47-d4d7681d9078(Persons.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
@@ -78,6 +78,10 @@
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
       </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -85,219 +89,90 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
-      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
-        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
-        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
-        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
-        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
-      </concept>
-      <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
-        <child id="4767615435799372763" name="labels" index="3ul5Gx" />
-      </concept>
-      <concept id="2319506556913310727" name="de.itemis.mps.editor.diagram.layout.structure.Point" flags="ng" index="2VclrF">
-        <property id="2319506556913310861" name="x" index="2Vclpx" />
-        <property id="2319506556913310863" name="y" index="2Vclpz" />
-      </concept>
-      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
-        <child id="8963411245960991904" name="entries" index="37mRID" />
-      </concept>
-      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
-        <property id="8963411245960998400" name="key" index="37mO49" />
-        <child id="8963411245960998404" name="value" index="37mO4d" />
-      </concept>
-      <concept id="4767615435799372731" name="de.itemis.mps.editor.diagram.layout.structure.Layout_EdgeLabel" flags="ng" index="3ul5H1">
-        <property id="4767615435799372759" name="type" index="3ul5GH" />
-        <child id="4767615435799372761" name="position" index="3ul5Gz" />
-      </concept>
-      <concept id="3253043142928125505" name="de.itemis.mps.editor.diagram.layout.structure.RelativePosition" flags="ng" index="3wpmZ1">
-        <child id="3253043142928125557" name="referencePoint" index="3wpmZP" />
-        <child id="3253043142928125559" name="offset" index="3wpmZR" />
-      </concept>
-    </language>
   </registry>
-  <node concept="1jGXXK" id="4OZxLw4YKM7">
+  <node concept="1jGXXK" id="6B2mdJKjQbX">
     <property role="TrG5h" value="City2TownHall" />
-    <property role="3GE5qa" value="transformation" />
-    <node concept="3GsvpM" id="4OZxLw4YKM8" role="2ik0Mo">
-      <node concept="1jGXXa" id="4OZxLw4YKMf" role="1jGXX7">
-        <property role="13z3e$" value="C2TH_TH" />
-        <property role="13z3hU" value="TownHall" />
-        <node concept="pBohH" id="1UHaC1cWifp" role="pB8W9">
-          <ref role="35c_gD" to="eh87:2EaowSc4lSU" resolve="TownHall" />
-        </node>
-        <node concept="2ik0MC" id="bEUHl5frVU" role="2ik0MI">
-          <property role="TrG5h" value="name1" />
-          <node concept="2ik0ME" id="bEUHl5frW9" role="2ik0MU">
-            <node concept="2ik0MF" id="bEUHl5frWi" role="13yhA8">
-              <ref role="2ik0MN" node="bEUHl5frUY" resolve="name" />
-            </node>
-            <node concept="2ik0M$" id="bEUHl5frWl" role="13yhAc">
-              <node concept="2ik0MB" id="bEUHl5frWn" role="2ik0My">
-                <property role="2ik0Mw" value="_TownHall" />
-              </node>
-            </node>
-          </node>
-          <node concept="1y7Krt" id="bEUHl5frVY" role="1157Rj">
-            <ref role="355D3t" to="eh87:2EaowSc4lSU" resolve="TownHall" />
-            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="1jGXXa" id="4OZxLw4YKMh" role="1jGXX7">
-        <property role="13z3e$" value="C2TH_C" />
-        <property role="13z3hU" value="Committee" />
-        <node concept="pBohH" id="1UHaC1cWifD" role="pB8W9">
-          <ref role="35c_gD" to="eh87:1eaQRpkCugu" resolve="Committee" />
-        </node>
-        <node concept="2ik0MC" id="bEUHl5frWL" role="2ik0MI">
-          <property role="TrG5h" value="name2" />
-          <node concept="2ik0ME" id="bEUHl5frX0" role="2ik0MU">
-            <node concept="2ik0MF" id="bEUHl5frX9" role="13yhA8">
-              <ref role="2ik0MN" node="bEUHl5frUY" resolve="name" />
-            </node>
-            <node concept="2ik0M$" id="bEUHl5frXc" role="13yhAc">
-              <node concept="2ik0MB" id="bEUHl5frXe" role="2ik0My">
-                <property role="2ik0Mw" value="_Committee" />
-              </node>
-            </node>
-          </node>
-          <node concept="1y7Krt" id="bEUHl5frWP" role="1157Rj">
-            <ref role="355D3t" to="eh87:1eaQRpkCugu" resolve="Committee" />
-            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="1jGXVd" id="KLF0RJILyY" role="2ik0Ml">
-        <property role="aCCiF" value="committee" />
-        <ref role="13xwDP" node="4OZxLw4YKMf" />
-        <ref role="13xwDU" node="4OZxLw4YKMh" />
-        <node concept="2AKGPc" id="3e_V7IvphQi" role="1vfT9s" />
-      </node>
-      <node concept="37mRI7" id="67G_aiEznOC" role="lGtFl">
-        <node concept="37mRIm" id="67G_aiEznOD" role="37mRID">
-          <property role="37mO49" value="5566316201685748879" />
-          <node concept="gqqVs" id="67G_aiEznOB" role="37mO4d">
-            <property role="gqqTZ" value="12.000100135803223" />
-            <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="678.0" />
-            <property role="gqqTy" value="60.0" />
-            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          </node>
-        </node>
-        <node concept="37mRIm" id="67G_aiEznOF" role="37mRID">
-          <property role="37mO49" value="5566316201685748881" />
-          <node concept="gqqVs" id="67G_aiEznOE" role="37mO4d">
-            <property role="gqqTZ" value="862.0003051757812" />
-            <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="690.0" />
-            <property role="gqqTy" value="60.0" />
-            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          </node>
-        </node>
-        <node concept="37mRIm" id="67G_aiEznOH" role="37mRID">
-          <property role="37mO49" value="5566316201685975942" />
-          <node concept="2VclpC" id="67G_aiEznOG" role="37mO4d">
-            <node concept="3ul5H1" id="67G_aiEznOI" role="3ul5Gx">
-              <property role="3ul5GH" value="label" />
-              <node concept="3wpmZ1" id="67G_aiEznOJ" role="3ul5Gz">
-                <node concept="2VclrF" id="67G_aiEznOK" role="3wpmZR">
-                  <property role="2Vclpx" value="-35.999616622924805" />
-                  <property role="2Vclpz" value="-17.999950408935547" />
-                </node>
-                <node concept="2VclrF" id="67G_aiEznOL" role="3wpmZP">
-                  <property role="2Vclpx" value="775.9998998641968" />
-                  <property role="2Vclpz" value="42.0" />
-                </node>
-              </node>
-            </node>
-            <node concept="3ul5H1" id="67G_aiEznOM" role="3ul5Gx">
-              <property role="3ul5GH" value="startRole" />
-              <node concept="3wpmZ1" id="67G_aiEznON" role="3ul5Gz">
-                <node concept="2VclrF" id="67G_aiEznOO" role="3wpmZR">
-                  <property role="2Vclpx" value="0.0" />
-                  <property role="2Vclpz" value="0.0" />
-                </node>
-                <node concept="2VclrF" id="67G_aiEznOP" role="3wpmZP">
-                  <property role="2Vclpx" value="704.4851812384353" />
-                  <property role="2Vclpz" value="42.0" />
-                </node>
-              </node>
-            </node>
-            <node concept="3ul5H1" id="67G_aiEznOQ" role="3ul5Gx">
-              <property role="3ul5GH" value="endRole" />
-              <node concept="3wpmZ1" id="67G_aiEznOR" role="3ul5Gz">
-                <node concept="2VclrF" id="67G_aiEznOS" role="3wpmZR">
-                  <property role="2Vclpx" value="0.0" />
-                  <property role="2Vclpz" value="0.0" />
-                </node>
-                <node concept="2VclrF" id="67G_aiEznOT" role="3wpmZP">
-                  <property role="2Vclpx" value="834.7866964286004" />
-                  <property role="2Vclpz" value="42.0" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3GsvpN" id="4OZxLw4YKMb" role="2ik0Mu">
-      <node concept="2ik0NV" id="4OZxLw4YKMd" role="13z3mo">
-        <property role="13z3e$" value="C2TH_City" />
+    <property role="3GE5qa" value="transformation.06-City2TownHall_CreationRule" />
+    <node concept="3GsvpN" id="6B2mdJKjQbY" role="2ik0Mu">
+      <node concept="2ik0NV" id="6B2mdJKjQbZ" role="13z3mo">
+        <property role="13z3e$" value="6.0.m.0City" />
         <property role="13z3hU" value="City" />
-        <node concept="pBohH" id="46cQNHk819H" role="pB8W9">
+        <node concept="pBohH" id="6B2mdJKjQc0" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeI" resolve="City" />
         </node>
-        <node concept="2ik0M_" id="bEUHl5frUY" role="13z3hJ">
+        <node concept="2ik0M_" id="6B2mdJKjQc1" role="13z3hJ">
           <property role="TrG5h" value="name" />
-          <node concept="13yNan" id="bEUHl5frVd" role="2ik0Q0">
-            <node concept="13yPN0" id="bEUHl5frVj" role="2F1HV6" />
+          <node concept="13yNan" id="6B2mdJKjQc2" role="2ik0Q0">
+            <node concept="13yPN0" id="6B2mdJKjQc3" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="bEUHl5frV2" role="1157Rq">
+          <node concept="1y7Krt" id="6B2mdJKjQc4" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeI" resolve="City" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
-      <node concept="37mRI7" id="67G_aiEznOz" role="lGtFl">
-        <node concept="37mRIm" id="67G_aiEznO$" role="37mRID">
-          <property role="37mO49" value="5566316201685748877" />
-          <node concept="gqqVs" id="67G_aiEznOy" role="37mO4d">
-            <property role="gqqTZ" value="12.000100135803223" />
-            <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="438.0" />
-            <property role="gqqTy" value="60.0" />
-            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+    </node>
+    <node concept="3GsvpM" id="6B2mdJKjQc5" role="2ik0Mo">
+      <node concept="1jGXXa" id="6B2mdJKjQc6" role="1jGXX7">
+        <property role="13z3e$" value="6.0.a.0TownHall" />
+        <property role="13z3hU" value="TownHall" />
+        <node concept="pBohH" id="6B2mdJKjQc7" role="pB8W9">
+          <ref role="35c_gD" to="eh87:2EaowSc4lSU" resolve="TownHall" />
+        </node>
+        <node concept="2ik0MC" id="6B2mdJKjQc8" role="2ik0MI">
+          <property role="TrG5h" value="name" />
+          <node concept="1y7Krt" id="6B2mdJKjQc9" role="1157Rj">
+            <ref role="355D3t" to="eh87:2EaowSc4lSU" resolve="TownHall" />
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="2ik0ME" id="6B2mdJKjQca" role="2ik0MU">
+            <node concept="2ik0MF" id="6B2mdJKjQcb" role="13yhA8">
+              <ref role="2ik0MN" node="6B2mdJKjQc1" resolve="name" />
+            </node>
+            <node concept="2ik0M$" id="6B2mdJKjQcc" role="13yhAc">
+              <node concept="2ik0MB" id="6B2mdJKjQcd" role="2ik0My">
+                <property role="2ik0Mw" value=" TownHall" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
-    </node>
-    <node concept="37mRI7" id="67G_aiEznOw" role="lGtFl">
-      <node concept="37mRIm" id="67G_aiEznOx" role="37mRID">
-        <property role="37mO49" value="5566316201685748875" />
-        <node concept="gqqVs" id="67G_aiEznOv" role="37mO4d">
-          <property role="gqqTZ" value="31.000100135803223" />
-          <property role="gqqTW" value="138.0" />
-          <property role="gqqTX" value="490.0" />
-          <property role="gqqTy" value="115.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+      <node concept="1jGXXa" id="6B2mdJKjQcf" role="1jGXX7">
+        <property role="13z3e$" value="6.0.a.1Committee" />
+        <property role="13z3hU" value="Committee" />
+        <node concept="pBohH" id="6B2mdJKjQcg" role="pB8W9">
+          <ref role="35c_gD" to="eh87:1eaQRpkCugu" resolve="Committee" />
+        </node>
+        <node concept="2ik0MC" id="6B2mdJKjQch" role="2ik0MI">
+          <property role="TrG5h" value="name" />
+          <node concept="1y7Krt" id="6B2mdJKjQci" role="1157Rj">
+            <ref role="355D3t" to="eh87:1eaQRpkCugu" resolve="Committee" />
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="2ik0ME" id="6B2mdJKjQcj" role="2ik0MU">
+            <node concept="2ik0MF" id="6B2mdJKjQck" role="13yhA8">
+              <ref role="2ik0MN" node="6B2mdJKjQc1" resolve="name" />
+            </node>
+            <node concept="2ik0M$" id="6B2mdJKjQcl" role="13yhAc">
+              <node concept="2ik0MB" id="6B2mdJKjQcm" role="2ik0My">
+                <property role="2ik0Mw" value=" TownHall Committee" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="37mRIm" id="67G_aiEznOA" role="37mRID">
-        <property role="37mO49" value="5566316201685748872" />
-        <node concept="gqqVs" id="67G_aiEznO_" role="37mO4d">
-          <property role="gqqTZ" value="12.000100135803223" />
-          <property role="gqqTW" value="397.0" />
-          <property role="gqqTX" value="1916.0" />
-          <property role="gqqTy" value="164.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+      <node concept="1jGXVd" id="6B2mdJKjQcp" role="2ik0Ml">
+        <property role="aCCiF" value="committee" />
+        <ref role="13xwDP" node="6B2mdJKjQc6" />
+        <ref role="13xwDU" node="6B2mdJKjQcf" />
+        <node concept="2AKGPc" id="6B2mdJKjQco" role="1vfT9s">
+          <ref role="359W_E" to="eh87:2EaowSc4lSU" resolve="TownHall" />
+          <ref role="359W_F" to="eh87:1eaQRpkCugr" resolve="committee" />
         </node>
       </node>
     </node>

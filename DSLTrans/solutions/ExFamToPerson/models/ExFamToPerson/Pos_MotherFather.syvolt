@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syvolt:TransformationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:syvolt="http://syvolt/2.0">
+  <hasProperty name="Pos_MotherFather">
+    <match>
+      <class xsi:type="syvolt:AnyMatchClass" className="Member">
+        <attribute attributeName="firstName"/>
+      </class>
+      <class xsi:type="syvolt:AnyMatchClass" className="Family">
+        <attribute attributeName="lastName"/>
+      </class>
+      <class xsi:type="syvolt:AnyMatchClass" className="Member">
+        <attribute attributeName="firstName"/>
+      </class>
+      <association xsi:type="syvolt:PositiveMatchAssociation" associationName="mothers" source="//@hasProperty.0/@match.0/@class.1" target="//@hasProperty.0/@match.0/@class.2"/>
+      <association xsi:type="syvolt:PositiveMatchAssociation" associationName="fathers" source="//@hasProperty.0/@match.0/@class.1" target="//@hasProperty.0/@match.0/@class.0"/>
+    </match>
+    <apply>
+      <class className="Man">
+        <attribute attributeName="fullName">
+          <attributeValue xsi:type="syvolt:Concat">
+            <leftTerm xsi:type="syvolt:AttributeRef" attributeRef="//@hasProperty.0/@match.0/@class.0/@attribute.0"/>
+            <rightTerm xsi:type="syvolt:AttributeRef" attributeRef="//@hasProperty.0/@match.0/@class.1/@attribute.0"/>
+          </attributeValue>
+        </attribute>
+      </class>
+      <class className="Community"/>
+      <class className="Woman">
+        <attribute attributeName="fullName">
+          <attributeValue xsi:type="syvolt:Concat">
+            <leftTerm xsi:type="syvolt:AttributeRef" attributeRef="//@hasProperty.0/@match.0/@class.2/@attribute.0"/>
+            <rightTerm xsi:type="syvolt:AttributeRef" attributeRef="//@hasProperty.0/@match.0/@class.1/@attribute.0"/>
+          </attributeValue>
+        </attribute>
+      </class>
+      <association associationName="persons" source="//@hasProperty.0/@apply/@class.1" target="//@hasProperty.0/@apply/@class.0"/>
+      <association associationName="persons" source="//@hasProperty.0/@apply/@class.1" target="//@hasProperty.0/@apply/@class.2"/>
+    </apply>
+    <backwards xsi:type="syvolt:Trace" targetClass="//@hasProperty.0/@apply/@class.0" sourceClass="//@hasProperty.0/@match.0/@class.0"/>
+    <backwards xsi:type="syvolt:Trace" targetClass="//@hasProperty.0/@apply/@class.2" sourceClass="//@hasProperty.0/@match.0/@class.2"/>
+  </hasProperty>
+</syvolt:TransformationModel>
