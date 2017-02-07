@@ -4,13 +4,20 @@
   <imports />
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
+      <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
+        <reference id="2796321687636315575" name="source" index="13xwDP" />
+        <reference id="2796321687636315576" name="target" index="13xwDU" />
+      </concept>
       <concept id="2829711462939370373" name="transfverif.core.structure.ILanguageScopeProvider" flags="ng" index="1y7Kgg">
         <child id="2829711462939238353" name="outputLanguage" index="1y7jx4" />
         <child id="2829711462939238350" name="inputLanguage" index="1y7jxr" />
       </concept>
     </language>
     <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
+      <concept id="4439542802417925338" name="SyVOLT.structure.SamePostElement" flags="ng" index="aRP1M" />
+      <concept id="4439542802417923317" name="SyVOLT.structure.SamePreElement" flags="ng" index="aRPxt" />
       <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X">
+        <child id="4439542802417929364" name="sameElements" index="aRM0W" />
         <child id="7049464676098554042" name="contracts" index="2ik09Z" />
       </concept>
       <concept id="3073246541432169797" name="SyVOLT.structure.AtomicContractPointer" flags="ng" index="1NTnwR">
@@ -79,6 +86,14 @@
     </node>
     <node concept="1NTnwR" id="6B2mdJKjQnF" role="2ik09Z">
       <ref role="1NTnwO" node="6B2mdJKjQnE" resolve="Pos_TownHallComm" />
+    </node>
+    <node concept="aRP1M" id="5q$IzLsnb9G" role="aRM0W">
+      <ref role="13xwDP" node="6B2mdJKjQmU" />
+      <ref role="13xwDU" node="6B2mdJKjQma" />
+    </node>
+    <node concept="aRPxt" id="aBKqw9O3bz" role="aRM0W">
+      <ref role="13xwDP" node="6B2mdJKjQk6" />
+      <ref role="13xwDU" node="6B2mdJKjQkm" />
     </node>
   </node>
 </model>
