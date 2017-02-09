@@ -1370,40 +1370,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Gpval" id="4HOlOngiWAL" role="3cqZAp">
-                  <node concept="2GrKxI" id="4HOlOngiWAM" role="2Gsz3X">
-                    <property role="TrG5h" value="contl" />
-                  </node>
-                  <node concept="37vLTw" id="4HOlOngiWAN" role="2GsD0m">
-                    <ref role="3cqZAo" node="4HOlOngiWAE" resolve="references" />
-                  </node>
-                  <node concept="3clFbS" id="4HOlOngiWAO" role="2LFqv$">
-                    <node concept="3clFbF" id="4HOlOngiWAP" role="3cqZAp">
-                      <node concept="2OqwBi" id="4HOlOngiWAQ" role="3clFbG">
-                        <node concept="10M0yZ" id="4HOlOngiWAR" role="2Oq$k0">
-                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                        </node>
-                        <node concept="liA8E" id="4HOlOngiWAS" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                          <node concept="3cpWs3" id="4HOlOngiWAT" role="37wK5m">
-                            <node concept="2OqwBi" id="4HOlOngiWAU" role="3uHU7w">
-                              <node concept="2GrUjf" id="4HOlOngiWAV" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="4HOlOngiWAM" resolve="contl" />
-                              </node>
-                              <node concept="liA8E" id="4HOlOngiWAW" role="2OqNvi">
-                                <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="4HOlOngiWAX" role="3uHU7B">
-                              <property role="Xl_RC" value="-----&gt; " />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbF" id="4HOlOngiWAY" role="3cqZAp">
                   <node concept="2OqwBi" id="4HOlOngiWAZ" role="3clFbG">
                     <node concept="2JrnkZ" id="4HOlOngiWB0" role="2Oq$k0">
