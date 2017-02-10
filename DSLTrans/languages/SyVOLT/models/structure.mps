@@ -369,5 +369,14 @@
       <ref role="PrY4T" node="3QsrawRgNjk" resolve="ContractFormula" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6wr_uVaA9GW">
+    <property role="EcuMT" value="7501754457149446972" />
+    <property role="3GE5qa" value="ContractFormulae" />
+    <property role="TrG5h" value="EmptyContract" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6wr_uVaA9GX" role="PzmwI">
+      <ref role="PrY4T" node="3QsrawRgNjk" resolve="ContractFormula" />
+    </node>
+  </node>
 </model>
 

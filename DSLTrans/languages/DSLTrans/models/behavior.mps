@@ -6043,7 +6043,7 @@
                 <node concept="liA8E" id="1j60nTi$Aiz" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$AsW" role="37wK5m">
-                    <property role="Xl_RC" value="\t\tself.atomic_contracts = [" />
+                    <property role="Xl_RC" value="\t\tself.atomic_contracts = [\n" />
                   </node>
                 </node>
               </node>
@@ -6072,7 +6072,7 @@
                     <node concept="liA8E" id="1j60nTi$D3M" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                       <node concept="Xl_RD" id="1j60nTi$DeB" role="37wK5m">
-                        <property role="Xl_RC" value="\&quot;" />
+                        <property role="Xl_RC" value="\t\t\t\&quot;" />
                       </node>
                     </node>
                   </node>
@@ -6160,7 +6160,7 @@
                     <node concept="liA8E" id="1j60nTi$G5U" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                       <node concept="Xl_RD" id="1j60nTi$G5V" role="37wK5m">
-                        <property role="Xl_RC" value="\&quot;," />
+                        <property role="Xl_RC" value="\&quot;,\n" />
                       </node>
                     </node>
                   </node>
@@ -6176,11 +6176,25 @@
                 <node concept="liA8E" id="1j60nTi$IKY" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1j60nTi$IWz" role="37wK5m">
-                    <property role="Xl_RC" value="]\n" />
+                    <property role="Xl_RC" value="\t\t]\n" />
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="6wr_uVaAOEM" role="3cqZAp">
+              <node concept="2OqwBi" id="6wr_uVaAOEN" role="3clFbG">
+                <node concept="37vLTw" id="6wr_uVaAOEO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1j60nTizHG3" resolve="writer" />
+                </node>
+                <node concept="liA8E" id="6wr_uVaAOEP" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                  <node concept="Xl_RD" id="6wr_uVaAOEQ" role="37wK5m">
+                    <property role="Xl_RC" value="\t\tself.if_then_contracts = [\n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6wr_uVaAOcz" role="3cqZAp" />
             <node concept="2Gpval" id="1zsJfreb6rH" role="3cqZAp">
               <node concept="2GrKxI" id="1zsJfreb6rJ" role="2Gsz3X">
                 <property role="TrG5h" value="contractFormula" />
@@ -6205,7 +6219,7 @@
                     <node concept="liA8E" id="1j60nTi$L5e" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                       <node concept="Xl_RD" id="1j60nTi$Lg$" role="37wK5m">
-                        <property role="Xl_RC" value="\t\tself.if_then_contracts = [" />
+                        <property role="Xl_RC" value="\t\t\t[" />
                       </node>
                     </node>
                   </node>
@@ -6244,6 +6258,20 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="6wr_uVaARX0" role="3cqZAp">
+              <node concept="2OqwBi" id="6wr_uVaARX1" role="3clFbG">
+                <node concept="37vLTw" id="6wr_uVaARX2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1j60nTizHG3" resolve="writer" />
+                </node>
+                <node concept="liA8E" id="6wr_uVaARX3" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                  <node concept="Xl_RD" id="6wr_uVaARX4" role="37wK5m">
+                    <property role="Xl_RC" value="\t\t]\n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6wr_uVaAR28" role="3cqZAp" />
             <node concept="3clFbH" id="1j60nTi$NRU" role="3cqZAp" />
             <node concept="3clFbF" id="1j60nTi$M1q" role="3cqZAp">
               <node concept="2OqwBi" id="1j60nTi$MK1" role="3clFbG">
@@ -6557,26 +6585,31 @@
                   </node>
                   <node concept="3cpWs3" id="1zsJfrebGqa" role="37vLTx">
                     <node concept="Xl_RD" id="1zsJfrebGqb" role="3uHU7w">
-                      <property role="Xl_RC" value=",\&quot;IMPL\&quot;" />
+                      <property role="Xl_RC" value="]" />
                     </node>
                     <node concept="3cpWs3" id="1zsJfrebGqc" role="3uHU7B">
                       <node concept="3cpWs3" id="1zsJfrebGqd" role="3uHU7B">
-                        <node concept="BsUDl" id="1zsJfrebGqe" role="3uHU7B">
-                          <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
-                          <node concept="2OqwBi" id="1zsJfrebGqf" role="37wK5m">
-                            <node concept="1PxgMI" id="1zsJfrebGqg" role="2Oq$k0">
-                              <ref role="1m5ApE" to="yeb1:3QsrawRgNjz" resolve="ImplicationContractFormula" />
-                              <node concept="37vLTw" id="1zsJfrebGqh" role="1m5AlR">
-                                <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                        <node concept="3cpWs3" id="6wr_uVaBCok" role="3uHU7B">
+                          <node concept="Xl_RD" id="6wr_uVaBCDm" role="3uHU7B">
+                            <property role="Xl_RC" value="[" />
+                          </node>
+                          <node concept="BsUDl" id="1zsJfrebGqe" role="3uHU7w">
+                            <ref role="37wK5l" node="1zsJfrebbnj" resolve="buildFormulaReversePolish" />
+                            <node concept="2OqwBi" id="1zsJfrebGqf" role="37wK5m">
+                              <node concept="1PxgMI" id="1zsJfrebGqg" role="2Oq$k0">
+                                <ref role="1m5ApE" to="yeb1:3QsrawRgNjz" resolve="ImplicationContractFormula" />
+                                <node concept="37vLTw" id="1zsJfrebGqh" role="1m5AlR">
+                                  <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+                                </node>
                               </node>
-                            </node>
-                            <node concept="3TrEf2" id="1zsJfrebGqi" role="2OqNvi">
-                              <ref role="3Tt5mk" to="yeb1:2t59Tl5l0u6" resolve="arg1" />
+                              <node concept="3TrEf2" id="1zsJfrebGqi" role="2OqNvi">
+                                <ref role="3Tt5mk" to="yeb1:2t59Tl5l0u6" resolve="arg1" />
+                              </node>
                             </node>
                           </node>
                         </node>
                         <node concept="Xl_RD" id="1zsJfrebGqj" role="3uHU7w">
-                          <property role="Xl_RC" value="," />
+                          <property role="Xl_RC" value="], [" />
                         </node>
                       </node>
                       <node concept="BsUDl" id="1zsJfrebGqk" role="3uHU7w">
@@ -6691,6 +6724,30 @@
                     <node concept="Xl_RD" id="1zsJfrefeJr" role="3uHU7w">
                       <property role="Xl_RC" value="\&quot;" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="6wr_uVaBDwP" role="3eNLev">
+            <node concept="2OqwBi" id="6wr_uVaBDwQ" role="3eO9$A">
+              <node concept="37vLTw" id="6wr_uVaBDwR" role="2Oq$k0">
+                <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
+              </node>
+              <node concept="1mIQ4w" id="6wr_uVaBDwS" role="2OqNvi">
+                <node concept="chp4Y" id="6wr_uVaBDX8" role="cj9EA">
+                  <ref role="cht4Q" to="yeb1:6wr_uVaA9GW" resolve="EmptyContract" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6wr_uVaBDwU" role="3eOfB_">
+              <node concept="3clFbF" id="6wr_uVaBDwV" role="3cqZAp">
+                <node concept="37vLTI" id="6wr_uVaBDwW" role="3clFbG">
+                  <node concept="37vLTw" id="6wr_uVaBDwX" role="37vLTJ">
+                    <ref role="3cqZAo" node="1zsJfrebd9I" resolve="res" />
+                  </node>
+                  <node concept="Xl_RD" id="6wr_uVaBDx0" role="37vLTx">
+                    <property role="Xl_RC" value="\&quot;EmptyContract\&quot;" />
                   </node>
                 </node>
               </node>

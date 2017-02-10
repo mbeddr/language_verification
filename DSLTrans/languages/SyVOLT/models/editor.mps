@@ -2095,5 +2095,15 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6wr_uVaA9H7">
+    <property role="3GE5qa" value="ContractFormulae" />
+    <ref role="1XX52x" to="yeb1:6wr_uVaA9GW" resolve="EmptyContract" />
+    <node concept="3EZMnI" id="6wr_uVaA9H9" role="2wV5jI">
+      <node concept="2iRfu4" id="6wr_uVaA9Ha" role="2iSdaV" />
+      <node concept="3F0ifn" id="6wr_uVaA9Hn" role="3EZMnx">
+        <property role="3F0ifm" value="empty" />
+      </node>
+    </node>
+  </node>
 </model>
 
