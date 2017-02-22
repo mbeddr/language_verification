@@ -6,6 +6,9 @@
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
     <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="d81c" ref="r:65190c73-ffca-4146-9494-0a5bd7b92a9e(Module.structure)" implicit="true" />
+    <import index="yn5m" ref="r:5b782313-374b-42f0-8614-34e6ae62a7bf(C.structure)" implicit="true" />
+  </imports>
 </model>
 

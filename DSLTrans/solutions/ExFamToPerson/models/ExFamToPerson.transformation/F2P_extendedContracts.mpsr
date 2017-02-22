@@ -14,11 +14,21 @@
       </concept>
     </language>
     <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
-      <concept id="4439542802417925338" name="SyVOLT.structure.SamePostElement" flags="ng" index="aRP1M" />
+      <concept id="4439542802417923299" name="SyVOLT.structure.ImplicationContractFormula" flags="ng" index="aRPxb" />
       <concept id="4439542802417923317" name="SyVOLT.structure.SamePreElement" flags="ng" index="aRPxt" />
+      <concept id="4439542802417923291" name="SyVOLT.structure.AndContractFormula" flags="ng" index="aRPxN" />
+      <concept id="4439542802417923285" name="SyVOLT.structure.BinaryContractFormula" flags="ng" index="aRPxX">
+        <child id="2829711462938969990" name="arg1" index="1y4i0j" />
+        <child id="2829711462938969996" name="arg2" index="1y4i0p" />
+      </concept>
       <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X">
         <child id="4439542802417929364" name="sameElements" index="aRM0W" />
+        <child id="4439542802417923314" name="formulae" index="aRPxq" />
         <child id="7049464676098554042" name="contracts" index="2ik09Z" />
+      </concept>
+      <concept id="7501754457149446972" name="SyVOLT.structure.EmptyContract" flags="ng" index="2ywKVi" />
+      <concept id="7571185389806664458" name="SyVOLT.structure.AtomicContractPointerInSet" flags="ng" index="3x7ZJP">
+        <reference id="7571185389806986211" name="pointer" index="3x0ecs" />
       </concept>
       <concept id="3073246541432169797" name="SyVOLT.structure.AtomicContractPointer" flags="ng" index="1NTnwR">
         <reference id="3073246541432169798" name="pointer" index="1NTnwO" />
@@ -87,17 +97,33 @@
     <node concept="1NTnwR" id="6B2mdJKjQnF" role="2ik09Z">
       <ref role="1NTnwO" node="6B2mdJKjQnE" resolve="Pos_TownHallComm" />
     </node>
-    <node concept="aRP1M" id="5q$IzLsnb9G" role="aRM0W">
-      <ref role="13xwDU" node="6B2mdJKjQma" />
-      <ref role="13xwDP" node="6B2mdJKjQn1" />
+    <node concept="aRPxt" id="6wr_uVa_aFY" role="aRM0W">
+      <ref role="13xwDP" node="6B2mdJKjQlQ" />
+      <ref role="13xwDU" node="6B2mdJKjQmE" />
     </node>
-    <node concept="aRP1M" id="aBKqwaqHNm" role="aRM0W">
-      <ref role="13xwDP" node="6B2mdJKjQn3" />
-      <ref role="13xwDU" node="6B2mdJKjQm8" />
+    <node concept="aRPxb" id="6wr_uVa_njc" role="aRPxq">
+      <node concept="3x7ZJP" id="6wr_uVa_njm" role="1y4i0j">
+        <ref role="3x0ecs" node="6B2mdJKjQki" resolve="Neg_CountryCity" />
+      </node>
+      <node concept="aRPxN" id="6wr_uVa_njp" role="1y4i0p">
+        <node concept="3x7ZJP" id="6wr_uVa_njw" role="1y4i0j">
+          <ref role="3x0ecs" node="6B2mdJKjQk2" resolve="Neg_CityCompany" />
+        </node>
+        <node concept="3x7ZJP" id="6wr_uVa_njz" role="1y4i0p">
+          <ref role="3x0ecs" node="6B2mdJKjQku" resolve="Neg_SchoolOrdFac" />
+        </node>
+      </node>
     </node>
-    <node concept="aRPxt" id="aBKqw9O3bz" role="aRM0W">
-      <ref role="13xwDP" node="6B2mdJKjQk6" />
-      <ref role="13xwDU" node="6B2mdJKjQkm" />
+    <node concept="aRPxb" id="6wr_uVaAICE" role="aRPxq">
+      <node concept="2ywKVi" id="6wr_uVaAICT" role="1y4i0j" />
+      <node concept="aRPxN" id="6wr_uVaAICW" role="1y4i0p">
+        <node concept="3x7ZJP" id="6wr_uVaAID3" role="1y4i0j">
+          <ref role="3x0ecs" node="6B2mdJKjQlK" resolve="Pos_FourMembers" />
+        </node>
+        <node concept="3x7ZJP" id="6wr_uVaAID6" role="1y4i0p">
+          <ref role="3x0ecs" node="6B2mdJKjQmw" resolve="Pos_MotherFather" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -50,17 +50,8 @@
         <property role="2V$B1Q" value="C" />
       </node>
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjRJy" role="2ik09Z">
+    <node concept="1NTnwR" id="6RB1Vty8PzV" role="2ik09Z">
       <ref role="1NTnwO" node="6B2mdJKjRJx" resolve="AssignmentInstance1" />
-    </node>
-    <node concept="1NTnwR" id="6B2mdJKjRLw" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjRLv" resolve="AssignmentInstance2" />
-    </node>
-    <node concept="1NTnwR" id="6B2mdJKjRNu" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjRNt" resolve="AssignmentInstance3" />
-    </node>
-    <node concept="1NTnwR" id="6B2mdJKjRQM" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjRQL" resolve="Simpler" />
     </node>
   </node>
 </model>
