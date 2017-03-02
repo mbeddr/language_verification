@@ -13,11 +13,12 @@
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
     <import index="gnwr" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans(DSLTrans.lib/)" implicit="true" />
-    <import index="935o" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.transformer.exceptions(DSLTrans.lib/)" implicit="true" />
+    <import index="8062" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.transformer.exceptions(DSLTrans.lib/)" implicit="true" />
+    <import index="fnwj" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.metamodel(DSLTrans.lib/)" implicit="true" />
     <import index="fodd" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.metamodel(DSLTrans.lib/)" implicit="true" />
-    <import index="qyt2" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.transformer(DSLTrans.lib/)" implicit="true" />
+    <import index="g6ag" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.transformer(DSLTrans.lib/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
-    <import index="fzpi" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.model(DSLTrans.lib/)" implicit="true" />
+    <import index="pe7c" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.model(DSLTrans.lib/)" implicit="true" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -826,17 +827,17 @@
           <node concept="TDmWw" id="2GbRIwA6KIc" role="TEbGg">
             <node concept="3cpWsn" id="2GbRIwA6KIe" role="TDEfY">
               <property role="TrG5h" value="ex" />
-              <node concept="3uibUv" id="2GbRIwA6L9u" role="1tU5fm">
-                <ref role="3uigEE" to="935o:~MissingFeatureException" resolve="MissingFeatureException" />
+              <node concept="3uibUv" id="4eDb$ET0hdM" role="1tU5fm">
+                <ref role="3uigEE" to="8062:~MissingFeatureException" resolve="MissingFeatureException" />
               </node>
             </node>
             <node concept="3clFbS" id="2GbRIwA6KIi" role="TDEfX">
-              <node concept="3clFbF" id="46cQNHjIBsu" role="3cqZAp">
-                <node concept="2OqwBi" id="46cQNHjIBDJ" role="3clFbG">
-                  <node concept="37vLTw" id="46cQNHjIBst" role="2Oq$k0">
+              <node concept="3clFbF" id="4eDb$ET0ho7" role="3cqZAp">
+                <node concept="2OqwBi" id="4eDb$ET0h_O" role="3clFbG">
+                  <node concept="37vLTw" id="4eDb$ET0ho5" role="2Oq$k0">
                     <ref role="3cqZAo" node="2GbRIwA6KIe" resolve="ex" />
                   </node>
-                  <node concept="liA8E" id="46cQNHjICaR" role="2OqNvi">
+                  <node concept="liA8E" id="4eDb$ET0i9N" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
                   </node>
                 </node>
@@ -970,8 +971,8 @@
           <node concept="3cpWs8" id="1eaQRpk_uPr" role="8Wnug">
             <node concept="3cpWsn" id="1eaQRpk_uPs" role="3cpWs9">
               <property role="TrG5h" value="md" />
-              <node concept="3uibUv" id="1eaQRpk_uPt" role="1tU5fm">
-                <ref role="3uigEE" to="fodd:~MetaModelDatabase" resolve="MetaModelDatabase" />
+              <node concept="3uibUv" id="4eDb$ET0ioc" role="1tU5fm">
+                <ref role="3uigEE" to="fnwj:~MetaModelDatabase" resolve="MetaModelDatabase" />
               </node>
               <node concept="2OqwBi" id="1eaQRpk_tUM" role="33vP2m">
                 <node concept="37vLTw" id="1eaQRpk_ss8" role="2Oq$k0">
@@ -999,8 +1000,8 @@
               <node concept="3cpWs8" id="1eaQRpkAm7S" role="3cqZAp">
                 <node concept="3cpWsn" id="1eaQRpkAm7T" role="3cpWs9">
                   <property role="TrG5h" value="me" />
-                  <node concept="3uibUv" id="1eaQRpkAm7U" role="1tU5fm">
-                    <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
+                  <node concept="3uibUv" id="4eDb$ET0itS" role="1tU5fm">
+                    <ref role="3uigEE" to="fnwj:~MetaEntity" resolve="MetaEntity" />
                   </node>
                   <node concept="2OqwBi" id="1eaQRpkAj0S" role="33vP2m">
                     <node concept="37vLTw" id="1eaQRpkAiz7" role="2Oq$k0">
@@ -1020,7 +1021,7 @@
                 <property role="35gtTG" value="info" />
                 <node concept="3cpWs3" id="1eaQRpkArpQ" role="34bqiv">
                   <node concept="2OqwBi" id="1eaQRpkArtB" role="3uHU7w">
-                    <node concept="37vLTw" id="1eaQRpkArsj" role="2Oq$k0">
+                    <node concept="37vLTw" id="4eDb$ET0iwG" role="2Oq$k0">
                       <ref role="3cqZAo" node="1eaQRpkAm7T" resolve="me" />
                     </node>
                     <node concept="liA8E" id="1eaQRpkArxj" role="2OqNvi">
@@ -1060,12 +1061,12 @@
           <node concept="3cpWsn" id="5cBD0WxB6pi" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="tP" />
-            <node concept="3uibUv" id="5cBD0WxB6pk" role="1tU5fm">
-              <ref role="3uigEE" to="qyt2:~TransformerProcessor" resolve="TransformerProcessor" />
+            <node concept="3uibUv" id="4eDb$ET0gp8" role="1tU5fm">
+              <ref role="3uigEE" to="g6ag:~TransformerProcessor" resolve="TransformerProcessor" />
             </node>
             <node concept="2ShNRf" id="5cBD0WxB6pt" role="33vP2m">
               <node concept="1pGfFk" id="5cBD0WxB6pu" role="2ShVmc">
-                <ref role="37wK5l" to="qyt2:~TransformerProcessor.&lt;init&gt;(dsltrans.io.PersistenceLayer,dsltrans.model.InstanceDatabaseManager)" resolve="TransformerProcessor" />
+                <ref role="37wK5l" to="g6ag:~TransformerProcessor.&lt;init&gt;(dsltransEngine.io.PersistenceLayer,dsltransEngine.model.InstanceDatabaseManager)" resolve="TransformerProcessor" />
                 <node concept="37vLTw" id="5cBD0WxB6pm" role="37wK5m">
                   <ref role="3cqZAo" node="5cBD0WxB6pe" resolve="persistence" />
                 </node>
@@ -1102,7 +1103,7 @@
                   <ref role="3cqZAo" node="5cBD0WxB6pi" resolve="tP" />
                 </node>
                 <node concept="liA8E" id="5cBD0WxB8KY" role="2OqNvi">
-                  <ref role="37wK5l" to="qyt2:~TransformerProcessor.LoadModel(dsltrans.TransformationModel):void" resolve="LoadModel" />
+                  <ref role="37wK5l" to="g6ag:~TransformerProcessor.LoadModel(dsltrans.TransformationModel):void" resolve="LoadModel" />
                   <node concept="37vLTw" id="1eaQRpk$NHx" role="37wK5m">
                     <ref role="3cqZAo" node="1eaQRpk$Lcf" resolve="dsltransTransformation" />
                   </node>
@@ -1131,7 +1132,7 @@
                   <ref role="3cqZAo" node="5cBD0WxB6pi" resolve="tP" />
                 </node>
                 <node concept="liA8E" id="5cBD0WxBd6k" role="2OqNvi">
-                  <ref role="37wK5l" to="qyt2:~TransformerProcessor.Execute():void" resolve="Execute" />
+                  <ref role="37wK5l" to="g6ag:~TransformerProcessor.Execute():void" resolve="Execute" />
                 </node>
               </node>
             </node>
@@ -1226,7 +1227,7 @@
                       <ref role="3cqZAo" node="4HOlOnfV3H8" resolve="transformResult" />
                     </node>
                     <node concept="liA8E" id="gTuKPSc6bI" role="2OqNvi">
-                      <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceEntities():java.util.List" resolve="getInstanceEntities" />
+                      <ref role="37wK5l" to="pe7c:~InstanceDatabase.getInstanceEntities():java.util.List" resolve="getInstanceEntities" />
                     </node>
                   </node>
                   <node concept="liA8E" id="gTuKPSc6Ck" role="2OqNvi">
@@ -1259,7 +1260,7 @@
                       <ref role="3cqZAo" node="4HOlOnfV3H8" resolve="transformResult" />
                     </node>
                     <node concept="liA8E" id="4mULXgbB2zZ" role="2OqNvi">
-                      <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceRelations():java.util.List" resolve="getInstanceRelations" />
+                      <ref role="37wK5l" to="pe7c:~InstanceDatabase.getInstanceRelations():java.util.List" resolve="getInstanceRelations" />
                     </node>
                   </node>
                   <node concept="liA8E" id="4mULXgbB3hI" role="2OqNvi">
@@ -1289,7 +1290,7 @@
                       <ref role="3cqZAo" node="4HOlOnfV3H8" resolve="transformResult" />
                     </node>
                     <node concept="liA8E" id="2IH$1p89S72" role="2OqNvi">
-                      <ref role="37wK5l" to="fzpi:~InstanceDatabase.getInstanceAttributes():java.util.List" resolve="getInstanceAttributes" />
+                      <ref role="37wK5l" to="pe7c:~InstanceDatabase.getInstanceAttributes():java.util.List" resolve="getInstanceAttributes" />
                     </node>
                   </node>
                   <node concept="liA8E" id="2IH$1p89S73" role="2OqNvi">

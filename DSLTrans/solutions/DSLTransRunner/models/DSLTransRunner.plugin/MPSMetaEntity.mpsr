@@ -4,7 +4,7 @@
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
-    <import index="fodd" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.metamodel(DSLTrans.lib/)" implicit="true" />
+    <import index="fnwj" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.metamodel(DSLTrans.lib/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -171,8 +171,8 @@
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="5cBD0WxCEhF" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
-        <node concept="3uibUv" id="5cBD0WxCEhG" role="11_B2D">
-          <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
+        <node concept="3uibUv" id="4eDb$ESVYf_" role="11_B2D">
+          <ref role="3uigEE" to="fnwj:~MetaEntity" resolve="MetaEntity" />
         </node>
       </node>
       <node concept="3Tm6S6" id="5cBD0WxCEhH" role="1B3o_S" />
@@ -244,8 +244,8 @@
             <node concept="2ShNRf" id="5cBD0WxCG6L" role="37vLTx">
               <node concept="1pGfFk" id="5cBD0WxCG6M" role="2ShVmc">
                 <ref role="37wK5l" to="33ny:~LinkedList.&lt;init&gt;()" resolve="LinkedList" />
-                <node concept="3uibUv" id="5cBD0WxCG6K" role="1pMfVU">
-                  <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
+                <node concept="3uibUv" id="4eDb$ESWghz" role="1pMfVU">
+                  <ref role="3uigEE" to="fnwj:~MetaEntity" resolve="MetaEntity" />
                 </node>
               </node>
             </node>
@@ -393,8 +393,8 @@
       <node concept="3Tm1VV" id="5cBD0WxCCUw" role="1B3o_S" />
       <node concept="3uibUv" id="5cBD0WxCCUy" role="3clF45">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
-        <node concept="3uibUv" id="5cBD0WxCCUz" role="11_B2D">
-          <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
+        <node concept="3uibUv" id="4eDb$ESWh5T" role="11_B2D">
+          <ref role="3uigEE" to="fnwj:~MetaEntity" resolve="MetaEntity" />
         </node>
       </node>
       <node concept="3clFbS" id="5cBD0WxCCU$" role="3clF47">
@@ -415,8 +415,8 @@
       <node concept="10P_77" id="5cBD0WxCCUE" role="3clF45" />
       <node concept="37vLTG" id="5cBD0WxCCUF" role="3clF46">
         <property role="TrG5h" value="entity" />
-        <node concept="3uibUv" id="5cBD0WxCCUG" role="1tU5fm">
-          <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
+        <node concept="3uibUv" id="4eDb$ESWhJb" role="1tU5fm">
+          <ref role="3uigEE" to="fnwj:~MetaEntity" resolve="MetaEntity" />
         </node>
       </node>
       <node concept="3clFbS" id="5cBD0WxCCUH" role="3clF47">
@@ -441,8 +441,8 @@
             <property role="TrG5h" value="iter" />
             <node concept="3uibUv" id="5cBD0WxCK6G" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~Iterator" resolve="Iterator" />
-              <node concept="3uibUv" id="5cBD0WxCK6H" role="11_B2D">
-                <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
+              <node concept="3uibUv" id="4eDb$ESWhYK" role="11_B2D">
+                <ref role="3uigEE" to="fnwj:~MetaEntity" resolve="MetaEntity" />
               </node>
             </node>
             <node concept="2OqwBi" id="5cBD0WxCK6I" role="33vP2m">
@@ -472,8 +472,8 @@
               <node concept="3cpWsn" id="5cBD0WxCK6Q" role="3cpWs9">
                 <property role="3TUv4t" value="false" />
                 <property role="TrG5h" value="meta" />
-                <node concept="3uibUv" id="5cBD0WxCK6S" role="1tU5fm">
-                  <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
+                <node concept="3uibUv" id="4eDb$ESWikN" role="1tU5fm">
+                  <ref role="3uigEE" to="fnwj:~MetaEntity" resolve="MetaEntity" />
                 </node>
                 <node concept="2OqwBi" id="5cBD0WxCK7c" role="33vP2m">
                   <node concept="37vLTw" id="5cBD0WxCK7b" role="2Oq$k0">
@@ -551,8 +551,8 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="5cBD0WxCCNr" role="1B3o_S" />
-    <node concept="3uibUv" id="5cBD0WxCCOh" role="EKbjA">
-      <ref role="3uigEE" to="fodd:~MetaEntity" resolve="MetaEntity" />
+    <node concept="3uibUv" id="4eDb$ESWgrR" role="EKbjA">
+      <ref role="3uigEE" to="fnwj:~MetaEntity" resolve="MetaEntity" />
     </node>
   </node>
 </model>

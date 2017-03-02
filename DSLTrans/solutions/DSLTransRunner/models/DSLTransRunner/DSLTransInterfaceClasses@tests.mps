@@ -12,15 +12,17 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="lusk" ref="r:3e3702a1-b935-454e-a3d0-91767f8fc9bd(DSLTransRunner.plugin)" />
-    <import index="fodd" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.metamodel(DSLTrans.lib/)" />
-    <import index="fzpi" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.model(DSLTrans.lib/)" />
+    <import index="pe7c" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.model(DSLTrans.lib/)" />
+    <import index="fnwj" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.metamodel(DSLTrans.lib/)" />
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="i3vy" ref="r:0417d1c4-5477-4a5b-8e7d-ca8313acdc32(transfverif.core.structure)" implicit="true" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
+    <import index="fodd" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.metamodel(DSLTrans.lib/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="fzpi" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans.model(DSLTrans.lib/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -578,8 +580,8 @@
         <node concept="3cpWs8" id="3SN6lk6kpDU" role="3cqZAp">
           <node concept="3cpWsn" id="3SN6lk6kpDV" role="3cpWs9">
             <property role="TrG5h" value="mm_db" />
-            <node concept="3uibUv" id="3SN6lk6kpDW" role="1tU5fm">
-              <ref role="3uigEE" to="fodd:~MetaModelDatabase" resolve="MetaModelDatabase" />
+            <node concept="3uibUv" id="4eDb$ET7d3C" role="1tU5fm">
+              <ref role="3uigEE" to="fnwj:~MetaModelDatabase" resolve="MetaModelDatabase" />
             </node>
             <node concept="2OqwBi" id="3SN6lk6kq6J" role="33vP2m">
               <node concept="37vLTw" id="3SN6lk6kq65" role="2Oq$k0">
@@ -602,7 +604,7 @@
                 <ref role="3cqZAo" node="3SN6lk6kpDV" resolve="mm_db" />
               </node>
               <node concept="liA8E" id="3SN6lk6kE1C" role="2OqNvi">
-                <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaEntities():java.util.List" resolve="getMetaEntities" />
+                <ref role="37wK5l" to="fnwj:~MetaModelDatabase.getMetaEntities():java.util.List" resolve="getMetaEntities" />
               </node>
             </node>
             <node concept="liA8E" id="3SN6lk6kE1D" role="2OqNvi">
@@ -617,7 +619,7 @@
                 <ref role="3cqZAo" node="3SN6lk6kpDV" resolve="mm_db" />
               </node>
               <node concept="liA8E" id="3SN6lk6kFwx" role="2OqNvi">
-                <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaRelations():java.util.List" resolve="getMetaRelations" />
+                <ref role="37wK5l" to="fnwj:~MetaModelDatabase.getMetaRelations():java.util.List" resolve="getMetaRelations" />
               </node>
             </node>
             <node concept="liA8E" id="3SN6lk6kFwy" role="2OqNvi">
@@ -638,7 +640,7 @@
                 <ref role="3cqZAo" node="3SN6lk6kpDV" resolve="mm_db" />
               </node>
               <node concept="liA8E" id="3SN6lk6kYD1" role="2OqNvi">
-                <ref role="37wK5l" to="fodd:~MetaModelDatabase.getMetaAttributes():java.util.List" resolve="getMetaAttributes" />
+                <ref role="37wK5l" to="fnwj:~MetaModelDatabase.getMetaAttributes():java.util.List" resolve="getMetaAttributes" />
               </node>
             </node>
             <node concept="liA8E" id="3SN6lk6kYD2" role="2OqNvi">
@@ -654,8 +656,8 @@
             <node concept="3cpWsn" id="1eaQRpkyPNe" role="3cpWs9">
               <property role="TrG5h" value="listMR" />
               <node concept="_YKpA" id="1eaQRpkyPN7" role="1tU5fm">
-                <node concept="3uibUv" id="1eaQRpkyQea" role="_ZDj9">
-                  <ref role="3uigEE" to="fodd:~MetaRelation" resolve="MetaRelation" />
+                <node concept="3uibUv" id="4eDb$ET7dQR" role="_ZDj9">
+                  <ref role="3uigEE" to="fnwj:~MetaRelation" resolve="MetaRelation" />
                 </node>
               </node>
               <node concept="2OqwBi" id="1eaQRpkyQEM" role="33vP2m">
@@ -729,8 +731,8 @@
           <node concept="3cpWs8" id="1eaQRpkwSKb" role="8Wnug">
             <node concept="3cpWsn" id="1eaQRpkwSKc" role="3cpWs9">
               <property role="TrG5h" value="m_db" />
-              <node concept="3uibUv" id="1eaQRpkx01U" role="1tU5fm">
-                <ref role="3uigEE" to="fzpi:~InstanceDatabase" resolve="InstanceDatabase" />
+              <node concept="3uibUv" id="4eDb$ET7dRR" role="1tU5fm">
+                <ref role="3uigEE" to="pe7c:~InstanceDatabase" resolve="InstanceDatabase" />
               </node>
               <node concept="2OqwBi" id="1eaQRpkwTq7" role="33vP2m">
                 <node concept="37vLTw" id="1eaQRpkwTpt" role="2Oq$k0">
