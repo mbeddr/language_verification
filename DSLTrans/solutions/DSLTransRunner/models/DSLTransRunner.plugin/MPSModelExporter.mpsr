@@ -265,8 +265,8 @@
       <node concept="3uibUv" id="3SN6lk6in81" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~NoSuchMethodException" resolve="NoSuchMethodException" />
       </node>
-      <node concept="3uibUv" id="4eDb$ESW457" role="Sfmx6">
-        <ref role="3uigEE" to="8062:~UnsuportedMetamodelException" resolve="UnsuportedMetamodelException" />
+      <node concept="3uibUv" id="3CMEdmh8pCc" role="Sfmx6">
+        <ref role="3uigEE" to="8062:~UnsupportedMetamodelException" resolve="UnsupportedMetamodelException" />
       </node>
       <node concept="3clFbS" id="3SN6lk6in83" role="3clF47">
         <node concept="3clFbH" id="1eaQRpk$WVp" role="3cqZAp" />
