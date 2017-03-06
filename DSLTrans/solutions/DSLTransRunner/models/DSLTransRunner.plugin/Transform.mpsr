@@ -148,7 +148,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
-      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -542,92 +541,125 @@
           </node>
         </node>
         <node concept="3clFbH" id="2EVdxuSUF_s" role="3cqZAp" />
-        <node concept="3cpWs8" id="2EVdxuSUGRl" role="3cqZAp">
-          <node concept="3cpWsn" id="2EVdxuSUGRm" role="3cpWs9">
-            <property role="TrG5h" value="inputModelroot" />
-            <node concept="3uibUv" id="2EVdxuSUGRn" role="1tU5fm">
+        <node concept="3cpWs8" id="4$_7SKLMeXA" role="3cqZAp">
+          <node concept="3cpWsn" id="4$_7SKLMeXB" role="3cpWs9">
+            <property role="TrG5h" value="inputModelRoot" />
+            <node concept="3uibUv" id="4$_7SKLMeXC" role="1tU5fm">
               <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
             </node>
-            <node concept="2OqwBi" id="2EVdxuSUJ8I" role="33vP2m">
-              <node concept="2OqwBi" id="2EVdxuSUGRp" role="2Oq$k0">
-                <node concept="2OqwBi" id="2EVdxuSUGRq" role="2Oq$k0">
-                  <node concept="37vLTw" id="19DBC2fKPc1" role="2Oq$k0">
-                    <ref role="3cqZAo" node="19DBC2fKO7o" resolve="inputModule" />
+            <node concept="10Nm6u" id="4$_7SKLMgmw" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="SfApY" id="4$_7SKLM6TX" role="3cqZAp">
+          <node concept="3clFbS" id="4$_7SKLM6TZ" role="SfCbr">
+            <node concept="3clFbF" id="4$_7SKLMhXZ" role="3cqZAp">
+              <node concept="37vLTI" id="4$_7SKLMi$Q" role="3clFbG">
+                <node concept="2OqwBi" id="4$_7SKLMjXh" role="37vLTx">
+                  <node concept="2OqwBi" id="4$_7SKLMji7" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4$_7SKLMiN8" role="2Oq$k0">
+                      <node concept="37vLTw" id="4$_7SKLMiDZ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="19DBC2fKO7o" resolve="inputModule" />
+                      </node>
+                      <node concept="liA8E" id="4$_7SKLMj4E" role="2OqNvi">
+                        <ref role="37wK5l" to="lui2:~SModule.getModelRoots():java.lang.Iterable" resolve="getModelRoots" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4$_7SKLMjIt" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="2EVdxuSUGRs" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModule.getModelRoots():java.lang.Iterable" resolve="getModelRoots" />
+                  <node concept="liA8E" id="4$_7SKLMkiz" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
                   </node>
                 </node>
-                <node concept="liA8E" id="2EVdxuSUGRt" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                <node concept="37vLTw" id="4$_7SKLMhXX" role="37vLTJ">
+                  <ref role="3cqZAo" node="4$_7SKLMeXB" resolve="inputModelRoot" />
                 </node>
               </node>
-              <node concept="liA8E" id="2EVdxuSUJdI" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+            </node>
+          </node>
+          <node concept="TDmWw" id="4$_7SKLM6U0" role="TEbGg">
+            <node concept="3cpWsn" id="4$_7SKLM6U2" role="TDEfY">
+              <property role="TrG5h" value="exception" />
+              <node concept="3uibUv" id="4$_7SKLM7X3" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~NullPointerException" resolve="NullPointerException" />
               </node>
+            </node>
+            <node concept="3clFbS" id="4$_7SKLM6U6" role="TDEfX" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4$_7SKLMm8v" role="3cqZAp" />
+        <node concept="1X3_iC" id="4$_7SKLOV69" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="4$_7SKLMp5F" role="8Wnug">
+            <node concept="3cpWsn" id="4$_7SKLMp5G" role="3cpWs9">
+              <property role="TrG5h" value="outputModelRoot" />
+              <node concept="3uibUv" id="4$_7SKLMp5H" role="1tU5fm">
+                <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
+              </node>
+              <node concept="10Nm6u" id="4$_7SKLMsdh" role="33vP2m" />
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="4$_7SKLOV6a" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="SfApY" id="4$_7SKLM9Zl" role="8Wnug">
+            <node concept="3clFbS" id="4$_7SKLM9Zm" role="SfCbr">
+              <node concept="3clFbF" id="4$_7SKLMssU" role="3cqZAp">
+                <node concept="37vLTI" id="4$_7SKLMsNh" role="3clFbG">
+                  <node concept="37vLTw" id="4$_7SKLMssS" role="37vLTJ">
+                    <ref role="3cqZAo" node="4$_7SKLMp5G" resolve="outputModelRoot" />
+                  </node>
+                  <node concept="2OqwBi" id="4$_7SKLMrAR" role="37vLTx">
+                    <node concept="2OqwBi" id="4$_7SKLMqYC" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4$_7SKLMqtl" role="2Oq$k0">
+                        <node concept="37vLTw" id="4$_7SKLMqnM" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2EVdxuSUFN6" resolve="outputModule" />
+                        </node>
+                        <node concept="liA8E" id="4$_7SKLMqJq" role="2OqNvi">
+                          <ref role="37wK5l" to="lui2:~SModule.getModelRoots():java.lang.Iterable" resolve="getModelRoots" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="4$_7SKLMrmi" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4$_7SKLMrXZ" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="TDmWw" id="4$_7SKLM9Zx" role="TEbGg">
+              <node concept="3cpWsn" id="4$_7SKLM9Zy" role="TDEfY">
+                <property role="TrG5h" value="exception" />
+                <node concept="3uibUv" id="4$_7SKLM9Zz" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~NullPointerException" resolve="NullPointerException" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="4$_7SKLM9Z$" role="TDEfX" />
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="2EVdxuSUHOO" role="3cqZAp" />
-        <node concept="3cpWs8" id="2EaowSc67_u" role="3cqZAp">
-          <node concept="3cpWsn" id="2EaowSc67_v" role="3cpWs9">
-            <property role="TrG5h" value="outputModelroot" />
-            <node concept="3uibUv" id="2EaowSc67_w" role="1tU5fm">
-              <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
-            </node>
-            <node concept="2OqwBi" id="2EaowSc67Xy" role="33vP2m">
-              <node concept="2OqwBi" id="2EaowSc67Ni" role="2Oq$k0">
-                <node concept="2OqwBi" id="2EaowSc67Ix" role="2Oq$k0">
-                  <node concept="37vLTw" id="2EVdxuSUHHK" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2EVdxuSUFN6" resolve="outputModule" />
-                  </node>
-                  <node concept="liA8E" id="2EaowSc67L8" role="2OqNvi">
-                    <ref role="37wK5l" to="lui2:~SModule.getModelRoots():java.lang.Iterable" resolve="getModelRoots" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="2EaowSc67UX" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
-                </node>
-              </node>
-              <node concept="liA8E" id="2EaowSc682u" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+        <node concept="3clFbJ" id="4$_7SKLMvCg" role="3cqZAp">
+          <node concept="3clFbS" id="4$_7SKLMvCi" role="3clFbx">
+            <node concept="34ab3g" id="4$_7SKLMzlW" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="Xl_RD" id="4$_7SKLMzlX" role="34bqiv">
+                <property role="Xl_RC" value="Could not detect input model root!" />
               </node>
             </node>
+            <node concept="3cpWs6" id="4$_7SKLMzEa" role="3cqZAp" />
           </node>
-        </node>
-        <node concept="3clFbH" id="2EaowSc684j" role="3cqZAp" />
-        <node concept="1X3_iC" id="2EVdxuSWGcR" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="2EaowSc69MG" role="8Wnug">
-            <node concept="3cpWsn" id="2EaowSc69MH" role="3cpWs9">
-              <property role="TrG5h" value="outModel" />
-              <node concept="3uibUv" id="2EaowSc69MI" role="1tU5fm">
-                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-              </node>
-              <node concept="2OqwBi" id="2EaowSc69Xk" role="33vP2m">
-                <node concept="37vLTw" id="2EaowSc69Ww" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2EaowSc67_v" resolve="outputModelroot" />
-                </node>
-                <node concept="liA8E" id="2EaowSc69ZV" role="2OqNvi">
-                  <ref role="37wK5l" to="dush:~ModelRoot.createModel(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="createModel" />
-                  <node concept="3cpWs3" id="2EaowSc6adB" role="37wK5m">
-                    <node concept="Xl_RD" id="2EaowSc6aeM" role="3uHU7w">
-                      <property role="Xl_RC" value="_output" />
-                    </node>
-                    <node concept="2OqwBi" id="2EaowSc6a7D" role="3uHU7B">
-                      <node concept="2OqwBi" id="2EaowSc6a1J" role="2Oq$k0">
-                        <node concept="2WthIp" id="2EaowSc6a1M" role="2Oq$k0" />
-                        <node concept="3gHZIF" id="2EaowSc6a1O" role="2OqNvi">
-                          <ref role="2WH_rO" node="2EaowSc3SRE" resolve="theTransformation" />
-                        </node>
-                      </node>
-                      <node concept="LkI2h" id="2EaowSc6aaf" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
+          <node concept="17R0WA" id="4$_7SKLMxxX" role="3clFbw">
+            <node concept="37vLTw" id="4$_7SKLMwAO" role="3uHU7B">
+              <ref role="3cqZAo" node="4$_7SKLMeXB" resolve="inputModelRoot" />
             </node>
+            <node concept="10Nm6u" id="4$_7SKLMy93" role="3uHU7w" />
           </node>
         </node>
         <node concept="3clFbH" id="2EVdxuSTc2s" role="3cqZAp" />
@@ -707,6 +739,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4$_7SKLM$eu" role="3cqZAp" />
         <node concept="3cpWs8" id="3SN6lk6j39N" role="3cqZAp">
           <node concept="3cpWsn" id="3SN6lk6j39O" role="3cpWs9">
             <property role="TrG5h" value="inputModel" />
@@ -716,8 +749,8 @@
             <node concept="2OqwBi" id="3SN6lk6j3qX" role="33vP2m">
               <node concept="2OqwBi" id="3SN6lk6j3qY" role="2Oq$k0">
                 <node concept="2OqwBi" id="3SN6lk6j3qZ" role="2Oq$k0">
-                  <node concept="37vLTw" id="3SN6lk6j3r0" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2EVdxuSUGRm" resolve="inputModelroot" />
+                  <node concept="37vLTw" id="4$_7SKLMzRP" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4$_7SKLMeXB" resolve="inputModelRoot" />
                   </node>
                   <node concept="liA8E" id="3SN6lk6j3r1" role="2OqNvi">
                     <ref role="37wK5l" to="dush:~ModelRoot.getModels():java.lang.Iterable" resolve="getModels" />
@@ -1053,6 +1086,16 @@
           </node>
           <node concept="9aQIb" id="5IFgV5LbE_Y" role="9aQIa">
             <node concept="3clFbS" id="5IFgV5LbE_Z" role="9aQI4">
+              <node concept="3clFbF" id="_zILkPfItZ" role="3cqZAp">
+                <node concept="2OqwBi" id="_zILkPfIKN" role="3clFbG">
+                  <node concept="37vLTw" id="_zILkPfItX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4HOlOnfV3H8" resolve="transformResult" />
+                  </node>
+                  <node concept="liA8E" id="_zILkPfJ6F" role="2OqNvi">
+                    <ref role="37wK5l" to="pe7c:~InstanceDatabase.dump():void" resolve="dump" />
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="2IH$1p82Rx8" role="3cqZAp">
                 <node concept="2OqwBi" id="2IH$1p82Rx5" role="3clFbG">
                   <node concept="10M0yZ" id="2IH$1p82Rx6" role="2Oq$k0">

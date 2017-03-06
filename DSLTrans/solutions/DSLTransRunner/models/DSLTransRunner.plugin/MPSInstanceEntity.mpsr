@@ -127,7 +127,7 @@
           <node concept="2OqwBi" id="3SN6lk6hDWT" role="3cqZAk">
             <node concept="Xjq3P" id="3SN6lk6hDWU" role="2Oq$k0" />
             <node concept="liA8E" id="3SN6lk6hDWV" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="pe7c:~InstanceEntity.toString():java.lang.String" resolve="toString" />
             </node>
           </node>
         </node>
