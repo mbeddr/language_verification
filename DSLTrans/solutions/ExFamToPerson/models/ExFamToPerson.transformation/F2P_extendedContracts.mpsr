@@ -4,31 +4,14 @@
   <imports />
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
-      <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
-        <reference id="2796321687636315575" name="source" index="13xwDP" />
-        <reference id="2796321687636315576" name="target" index="13xwDU" />
-      </concept>
       <concept id="2829711462939370373" name="transfverif.core.structure.ILanguageScopeProvider" flags="ng" index="1y7Kgg">
         <child id="2829711462939238353" name="outputLanguage" index="1y7jx4" />
         <child id="2829711462939238350" name="inputLanguage" index="1y7jxr" />
       </concept>
     </language>
     <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
-      <concept id="4439542802417923299" name="SyVOLT.structure.ImplicationContractFormula" flags="ng" index="aRPxb" />
-      <concept id="4439542802417923317" name="SyVOLT.structure.SamePreElement" flags="ng" index="aRPxt" />
-      <concept id="4439542802417923291" name="SyVOLT.structure.AndContractFormula" flags="ng" index="aRPxN" />
-      <concept id="4439542802417923285" name="SyVOLT.structure.BinaryContractFormula" flags="ng" index="aRPxX">
-        <child id="2829711462938969990" name="arg1" index="1y4i0j" />
-        <child id="2829711462938969996" name="arg2" index="1y4i0p" />
-      </concept>
       <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X">
-        <child id="4439542802417929364" name="sameElements" index="aRM0W" />
-        <child id="4439542802417923314" name="formulae" index="aRPxq" />
         <child id="7049464676098554042" name="contracts" index="2ik09Z" />
-      </concept>
-      <concept id="7501754457149446972" name="SyVOLT.structure.EmptyContract" flags="ng" index="2ywKVi" />
-      <concept id="7571185389806664458" name="SyVOLT.structure.AtomicContractPointerInSet" flags="ng" index="3x7ZJP">
-        <reference id="7571185389806986211" name="pointer" index="3x0ecs" />
       </concept>
       <concept id="3073246541432169797" name="SyVOLT.structure.AtomicContractPointer" flags="ng" index="1NTnwR">
         <reference id="3073246541432169798" name="pointer" index="1NTnwO" />
@@ -52,78 +35,50 @@
       </concept>
     </language>
   </registry>
-  <node concept="2ik09X" id="6B2mdJKjQ9O">
+  <node concept="2ik09X" id="bblaM$uyVd">
     <property role="3GE5qa" value="contracts" />
     <property role="TrG5h" value="F2P_extendedContracts" />
-    <node concept="pHN19" id="6B2mdJKjQ9P" role="1y7jxr">
-      <node concept="2V$Bhx" id="6B2mdJKjQ9Q" role="2V$M_3">
+    <node concept="pHN19" id="bblaM$uyVe" role="1y7jxr">
+      <node concept="2V$Bhx" id="bblaM$uyVf" role="2V$M_3">
         <property role="2V$B1T" value="05f6207f-0b7e-4413-bedb-09f3dfc58438" />
         <property role="2V$B1Q" value="Families" />
       </node>
     </node>
-    <node concept="pHN19" id="6B2mdJKjQ9R" role="1y7jx4">
-      <node concept="2V$Bhx" id="6B2mdJKjQ9S" role="2V$M_3">
+    <node concept="pHN19" id="bblaM$uyVg" role="1y7jx4">
+      <node concept="2V$Bhx" id="bblaM$uyVh" role="2V$M_3">
         <property role="2V$B1T" value="98a5ea16-05e8-4296-b548-cbaca3397fce" />
         <property role="2V$B1Q" value="Persons" />
       </node>
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQk3" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQk2" resolve="Neg_CityCompany" />
+    <node concept="1NTnwR" id="bblaM$uz6s" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz6r" resolve="Neg_CityCompany" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQkj" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQki" resolve="Neg_CountryCity" />
+    <node concept="1NTnwR" id="bblaM$uz6G" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz6F" resolve="Neg_CountryCity" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQkv" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQku" resolve="Neg_SchoolOrdFac" />
+    <node concept="1NTnwR" id="bblaM$uz6S" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz6R" resolve="Neg_SchoolOrdFac" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQkD" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQkC" resolve="Pos_AssocCity" />
+    <node concept="1NTnwR" id="bblaM$uz72" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz71" resolve="Pos_AssocCity" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQl7" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQl6" resolve="Pos_ChildSchool" />
+    <node concept="1NTnwR" id="bblaM$uz7w" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz7v" resolve="Pos_ChildSchool" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQlv" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQlu" resolve="Pos_DaughterMother" />
+    <node concept="1NTnwR" id="bblaM$uz7S" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz7R" resolve="Pos_DaughterMother" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQlL" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQlK" resolve="Pos_FourMembers" />
+    <node concept="1NTnwR" id="bblaM$uz8a" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz89" resolve="Pos_FourMembers" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQmx" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQmw" resolve="Pos_MotherFather" />
+    <node concept="1NTnwR" id="bblaM$uz8U" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz8T" resolve="Pos_MotherFather" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQnj" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQni" resolve="Pos_ParentCompany" />
+    <node concept="1NTnwR" id="bblaM$uz9G" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uz9F" resolve="Pos_ParentCompany" />
     </node>
-    <node concept="1NTnwR" id="6B2mdJKjQnF" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjQnE" resolve="Pos_TownHallComm" />
-    </node>
-    <node concept="aRPxt" id="6wr_uVa_aFY" role="aRM0W">
-      <ref role="13xwDP" node="6B2mdJKjQlQ" />
-      <ref role="13xwDU" node="6B2mdJKjQmE" />
-    </node>
-    <node concept="aRPxb" id="6wr_uVa_njc" role="aRPxq">
-      <node concept="3x7ZJP" id="6wr_uVa_njm" role="1y4i0j">
-        <ref role="3x0ecs" node="6B2mdJKjQki" resolve="Neg_CountryCity" />
-      </node>
-      <node concept="aRPxN" id="6wr_uVa_njp" role="1y4i0p">
-        <node concept="3x7ZJP" id="6wr_uVa_njw" role="1y4i0j">
-          <ref role="3x0ecs" node="6B2mdJKjQk2" resolve="Neg_CityCompany" />
-        </node>
-        <node concept="3x7ZJP" id="6wr_uVa_njz" role="1y4i0p">
-          <ref role="3x0ecs" node="6B2mdJKjQku" resolve="Neg_SchoolOrdFac" />
-        </node>
-      </node>
-    </node>
-    <node concept="aRPxb" id="6wr_uVaAICE" role="aRPxq">
-      <node concept="2ywKVi" id="6wr_uVaAICT" role="1y4i0j" />
-      <node concept="aRPxN" id="6wr_uVaAICW" role="1y4i0p">
-        <node concept="3x7ZJP" id="6wr_uVaAID3" role="1y4i0j">
-          <ref role="3x0ecs" node="6B2mdJKjQlK" resolve="Pos_FourMembers" />
-        </node>
-        <node concept="3x7ZJP" id="6wr_uVaAID6" role="1y4i0p">
-          <ref role="3x0ecs" node="6B2mdJKjQmw" resolve="Pos_MotherFather" />
-        </node>
-      </node>
+    <node concept="1NTnwR" id="bblaM$uza4" role="2ik09Z">
+      <ref role="1NTnwO" node="bblaM$uza3" resolve="Pos_TownHallComm" />
     </node>
   </node>
 </model>
