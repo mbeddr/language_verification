@@ -325,6 +325,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="bblaM$ulR0" role="3cqZAp" />
         <node concept="2Gpval" id="10d1GjXbQrA" role="3cqZAp">
           <node concept="2GrKxI" id="10d1GjXbQrC" role="2Gsz3X">
             <property role="TrG5h" value="layer" />
@@ -557,6 +558,57 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="6wjchODxt$z" role="3cqZAp" />
+                <node concept="3clFbF" id="6wjchODxGAd" role="3cqZAp">
+                  <node concept="2OqwBi" id="6wjchODxHKG" role="3clFbG">
+                    <node concept="10M0yZ" id="6wjchODxGE3" role="2Oq$k0">
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    </node>
+                    <node concept="liA8E" id="6wjchODxIhA" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="Xl_RD" id="6wjchODxIEK" role="37wK5m">
+                        <property role="Xl_RC" value="Previous sources: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Gpval" id="6wjchODxr9l" role="3cqZAp">
+                  <node concept="2GrKxI" id="6wjchODxr9m" role="2Gsz3X">
+                    <property role="TrG5h" value="source" />
+                  </node>
+                  <node concept="3clFbS" id="6wjchODxr9n" role="2LFqv$">
+                    <node concept="3clFbF" id="6wjchODxJbz" role="3cqZAp">
+                      <node concept="2OqwBi" id="6wjchODxJAN" role="3clFbG">
+                        <node concept="10M0yZ" id="6wjchODxJbI" role="2Oq$k0">
+                          <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                        </node>
+                        <node concept="liA8E" id="6wjchODxK1h" role="2OqNvi">
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <node concept="2OqwBi" id="6wjchODxKEo" role="37wK5m">
+                            <node concept="2GrUjf" id="6wjchODxKqJ" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="6wjchODxr9m" resolve="source" />
+                            </node>
+                            <node concept="liA8E" id="6wjchODxLh2" role="2OqNvi">
+                              <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="6wjchODxBBv" role="2GsD0m">
+                    <node concept="37vLTw" id="6wjchODxBBw" role="2Oq$k0">
+                      <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
+                    </node>
+                    <node concept="liA8E" id="6wjchODxBBx" role="2OqNvi">
+                      <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource():org.eclipse.emf.common.util.EList" resolve="getPreviousSource" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="6wjchODxsuL" role="3cqZAp" />
+                <node concept="3clFbH" id="6wjchODxqkb" role="3cqZAp" />
                 <node concept="3cpWs8" id="4mULXgb_3fE" role="3cqZAp">
                   <node concept="3cpWsn" id="4mULXgb_3fF" role="3cpWs9">
                     <property role="TrG5h" value="rules" />
@@ -1279,6 +1331,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="bblaM$ug9A" role="3cqZAp" />
         <node concept="3clFbJ" id="2Ub285OrUpD" role="3cqZAp">
           <node concept="3clFbS" id="2Ub285OrUpF" role="3clFbx">
             <node concept="3clFbF" id="2Ub285OrVjR" role="3cqZAp">
@@ -1313,6 +1366,7 @@
           </node>
           <node concept="9aQIb" id="2Ub285OrWdE" role="9aQIa">
             <node concept="3clFbS" id="2Ub285OrWdF" role="9aQI4">
+              <node concept="3clFbH" id="bblaM$uiDm" role="3cqZAp" />
               <node concept="3cpWs8" id="gTuKPSaXue" role="3cqZAp">
                 <node concept="3cpWsn" id="gTuKPSaXuf" role="3cpWs9">
                   <property role="TrG5h" value="previousSources" />
@@ -1373,6 +1427,7 @@
                   <ref role="3cqZAo" node="gTuKPSaXuf" resolve="previousSources" />
                 </node>
               </node>
+              <node concept="3clFbH" id="bblaM$uiQw" role="3cqZAp" />
             </node>
           </node>
         </node>
