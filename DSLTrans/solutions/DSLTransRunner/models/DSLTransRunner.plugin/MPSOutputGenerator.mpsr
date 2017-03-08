@@ -201,9 +201,6 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
-      <concept id="1226591481394" name="jetbrains.mps.baseLanguage.collections.structure.RemoveSetElementOperation" flags="nn" index="2mzaWJ">
-        <child id="1226591501988" name="argument" index="2mzfYT" />
-      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -1008,8 +1005,8 @@
                         <node concept="37vLTw" id="2iPyb8mR7Pq" role="2Oq$k0">
                           <ref role="3cqZAo" node="5xV4zUM2YVs" resolve="untreatedContaimentRels" />
                         </node>
-                        <node concept="2mzaWJ" id="2iPyb8mR9PX" role="2OqNvi">
-                          <node concept="2GrUjf" id="2iPyb8mR9Vx" role="2mzfYT">
+                        <node concept="3dhRuq" id="4nDuXWVoQRi" role="2OqNvi">
+                          <node concept="2GrUjf" id="4nDuXWVoRYq" role="25WWJ7">
                             <ref role="2Gs0qQ" node="2IH$1p83r2V" resolve="rel" />
                           </node>
                         </node>
