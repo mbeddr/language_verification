@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="05f6207f-0b7e-4413-bedb-09f3dfc58438" name="Families" version="0" />
+    <use id="98a5ea16-05e8-4296-b548-cbaca3397fce" name="Persons" version="0" />
   </languages>
   <imports />
   <registry>
@@ -42,7 +43,9 @@
       <concept id="5898026252864033714" name="Families.structure.Parent" flags="ng" index="3GeAKi">
         <reference id="9023166673230886870" name="worksIn" index="IakQu" />
       </concept>
-      <concept id="5898026252864033715" name="Families.structure.Child" flags="ng" index="3GeAKj" />
+      <concept id="5898026252864033715" name="Families.structure.Child" flags="ng" index="3GeAKj">
+        <reference id="3721640682791239730" name="goesTo" index="2GNYL9" />
+      </concept>
       <concept id="5898026252864033716" name="Families.structure.Member" flags="ng" index="3GeAKk">
         <property id="5898026252864033733" name="firstName" index="3GeAL_" />
         <reference id="5898026252864041714" name="family" index="3Ge$Pi" />
@@ -60,6 +63,7 @@
         <property role="3GeAL_" value="Bentley Jr." />
         <ref role="3Ge$Pk" node="19DBC2fIj_r" resolve="Montreal" />
         <ref role="3Ge$Pi" node="19DBC2fIj_q" resolve="Oakes" />
+        <ref role="2GNYL9" node="19DBC2fIj_z" resolve="Montreal High" />
       </node>
       <node concept="3GeAKi" id="19DBC2fIj_x" role="3GeALT">
         <property role="3GeAL_" value="Bentley" />
