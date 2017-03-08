@@ -213,7 +213,7 @@
       </node>
     </node>
     <node concept="1jGXV7" id="bblaM$uz2i" role="3k6lfD">
-      <property role="TrG5h" value="dfacilitiesSolveRef" />
+      <property role="TrG5h" value="dfacilitiesSolveRefOrd" />
       <node concept="1jGXVs" id="bblaM$uz2j" role="1o0q1e">
         <ref role="3k6leo" node="bblaM$uz1T" resolve="acommitteeSolveRef" />
       </node>
@@ -222,9 +222,9 @@
       </node>
     </node>
     <node concept="1jGXV7" id="bblaM$uz31" role="3k6lfD">
-      <property role="TrG5h" value="dfacilitiesSolveRef" />
+      <property role="TrG5h" value="dfacilitiesSolveRefSpecial" />
       <node concept="1jGXVs" id="bblaM$uz32" role="1o0q1e">
-        <ref role="3k6leo" node="bblaM$uz2i" resolve="dfacilitiesSolveRef" />
+        <ref role="3k6leo" node="bblaM$uz2i" resolve="dfacilitiesSolveRefOrd" />
       </node>
       <node concept="1v6VTO" id="bblaM$uz3J" role="1jGXV4">
         <ref role="1v6VTP" node="bblaM$uz33" resolve="dfacilitiesSolveRefNeighborhoodSchoolServiceChildDistrictSpecialFacilityPerson" />

@@ -16,7 +16,6 @@
         <child id="2796321687635931738" name="matchClasses" index="13z3mo" />
         <child id="2796321687635931739" name="matchLinks" index="13z3mp" />
       </concept>
-      <concept id="7049464676098553416" name="transfverif.core.structure.ExistsMatchClass" flags="ng" index="2ik0Md" />
       <concept id="7049464676098553441" name="transfverif.core.structure.ApplyAttributeString" flags="ng" index="2ik0M$">
         <child id="7049464676098553447" name="atom" index="2ik0My" />
       </concept>
@@ -128,10 +127,9 @@
           </node>
         </node>
       </node>
-      <node concept="2ik0Md" id="bblaM$uz3d" role="13z3mo">
+      <node concept="2ik0NV" id="10HNW9OTT6C" role="13z3mo">
         <property role="13z3e$" value="19.0.m.2Service" />
-        <property role="13z3hU" value="Service" />
-        <node concept="pBohH" id="bblaM$uz3e" role="pB8W9">
+        <node concept="pBohH" id="10HNW9OTT6R" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeJ" resolve="Service" />
         </node>
       </node>
@@ -154,7 +152,7 @@
       <node concept="1jGXVw" id="bblaM$uz3k" role="13z3mp">
         <property role="aCCiF" value="special" />
         <ref role="13xwDP" node="bblaM$uz37" />
-        <ref role="13xwDU" node="bblaM$uz3d" />
+        <ref role="13xwDU" node="10HNW9OTT6C" />
         <node concept="2AKGPc" id="bblaM$uz3j" role="1vfT9s">
           <ref role="359W_E" to="b6kg:57pZU2XSTeK" resolve="School" />
           <ref role="359W_F" to="b6kg:57pZU2XSTfU" resolve="special" />

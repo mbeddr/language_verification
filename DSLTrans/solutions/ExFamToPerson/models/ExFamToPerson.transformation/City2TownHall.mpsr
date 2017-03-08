@@ -175,6 +175,14 @@
           <ref role="359W_F" to="eh87:1eaQRpkCugr" resolve="committee" />
         </node>
       </node>
+      <node concept="1jGXVd" id="10HNW9P2QX6" role="2ik0Ml">
+        <ref role="13xwDP" node="bblaM$uyXC" />
+        <ref role="13xwDU" node="bblaM$uyXv" />
+        <node concept="2AKGPc" id="10HNW9P2QX7" role="1vfT9s">
+          <ref role="359W_E" to="eh87:1eaQRpkCugu" resolve="Committee" />
+          <ref role="359W_F" to="eh87:3e_V7IvrHps" resolve="townHalls" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
