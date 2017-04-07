@@ -8,8 +8,6 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="cjlg" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#d4280a54-f6df-4383-aa41-d1b2bffa7eb1(jetbrains.mps.lang.project.modules/module.com.mbeddr.core.base@project_stub)" />
-    <import index="8yv3" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#9e24fcdc-a232-4d24-8c95-1f525946191a(jetbrains.mps.lang.project.modules/module.com.mbeddr.core.base.pluginSolution@project_stub)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">

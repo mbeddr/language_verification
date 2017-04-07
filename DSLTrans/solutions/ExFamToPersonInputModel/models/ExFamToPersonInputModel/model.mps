@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="05f6207f-0b7e-4413-bedb-09f3dfc58438" name="Families" version="0" />
-    <use id="98a5ea16-05e8-4296-b548-cbaca3397fce" name="Persons" version="0" />
   </languages>
   <imports />
   <registry>

@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -149,7 +148,7 @@
                           <ref role="3cqZAo" node="7WHccuL0Puf" resolve="it" />
                         </node>
                         <node concept="3Tsc0h" id="5sWEzBwv7cw" role="2OqNvi">
-                          <ref role="3TtcxE" to="rr4f:6JhS3QZMbfk" />
+                          <ref role="3TtcxE" to="rr4f:6JhS3QZMbfk" resolve="layer" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="5sWEzBwv6Vw" role="2LFqv$">
@@ -162,7 +161,7 @@
                               <ref role="2Gs0qQ" node="5sWEzBwv6Vs" resolve="layer" />
                             </node>
                             <node concept="3Tsc0h" id="5sWEzBwv7D1" role="2OqNvi">
-                              <ref role="3TtcxE" to="rr4f:3ky2qXA$ttF" />
+                              <ref role="3TtcxE" to="rr4f:3ky2qXA$ttF" resolve="rulePresenter" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="5sWEzBwv7nP" role="2LFqv$">

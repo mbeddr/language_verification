@@ -134,7 +134,7 @@
                           <ref role="3cqZAo" node="7WHccuL0PZ_" resolve="iso" />
                         </node>
                         <node concept="3TrEf2" id="4KZuhCZdAk2" role="2OqNvi">
-                          <ref role="3Tt5mk" to="yeb1:4KZuhCZcXJe" />
+                          <ref role="3Tt5mk" to="yeb1:4KZuhCZcXJe" resolve="fullContract" />
                         </node>
                       </node>
                     </node>
@@ -178,7 +178,7 @@
                           <ref role="3cqZAo" node="4KZuhCZjjrj" resolve="conn" />
                         </node>
                         <node concept="3TrEf2" id="4KZuhCZmqgp" role="2OqNvi">
-                          <ref role="3Tt5mk" to="yeb1:4KZuhCZjjnC" />
+                          <ref role="3Tt5mk" to="yeb1:4KZuhCZjjnC" resolve="fullContract" />
                         </node>
                       </node>
                     </node>
@@ -222,7 +222,7 @@
                           <ref role="3cqZAo" node="4KZuhCZjjtz" resolve="complete" />
                         </node>
                         <node concept="3TrEf2" id="4KZuhCZmq2K" role="2OqNvi">
-                          <ref role="3Tt5mk" to="yeb1:4KZuhCZjjnE" />
+                          <ref role="3Tt5mk" to="yeb1:4KZuhCZjjnE" resolve="fullContract" />
                         </node>
                       </node>
                     </node>
