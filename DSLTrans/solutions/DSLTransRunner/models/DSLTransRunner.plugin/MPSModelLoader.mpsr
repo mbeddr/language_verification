@@ -617,6 +617,78 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="2E3wzVJl73P" role="3cqZAp" />
+            <node concept="3clFbJ" id="2E3wzVJl7_O" role="3cqZAp">
+              <node concept="3clFbS" id="2E3wzVJl7_Q" role="3clFbx">
+                <node concept="YS8fn" id="2E3wzVJlaVF" role="3cqZAp">
+                  <node concept="2ShNRf" id="2E3wzVJlb2a" role="YScLw">
+                    <node concept="1pGfFk" id="2E3wzVJlkFi" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                      <node concept="3cpWs3" id="2E3wzVJln3Y" role="37wK5m">
+                        <node concept="2OqwBi" id="2E3wzVJlnr7" role="3uHU7w">
+                          <node concept="37vLTw" id="2E3wzVJlncJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1eaQRpkqMgp" resolve="prop" />
+                          </node>
+                          <node concept="liA8E" id="2E3wzVJlnF3" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="2E3wzVJlkND" role="3uHU7B">
+                          <property role="Xl_RC" value="Couldn't create MPSMetaAttribute attribute: " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="17R0WA" id="2E3wzVJl9ud" role="3clFbw">
+                <node concept="37vLTw" id="2E3wzVJl7O6" role="3uHU7B">
+                  <ref role="3cqZAo" node="1eaQRpkqNcy" resolve="anAttr" />
+                </node>
+                <node concept="10Nm6u" id="2E3wzVJl9$P" role="3uHU7w" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="2E3wzVJo1Qh" role="3cqZAp" />
+            <node concept="3clFbJ" id="2E3wzVJo2m2" role="3cqZAp">
+              <node concept="3clFbS" id="2E3wzVJo2m3" role="3clFbx">
+                <node concept="YS8fn" id="2E3wzVJo2m4" role="3cqZAp">
+                  <node concept="2ShNRf" id="2E3wzVJo2m5" role="YScLw">
+                    <node concept="1pGfFk" id="2E3wzVJo2m6" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;(java.lang.String)" resolve="IllegalArgumentException" />
+                      <node concept="3cpWs3" id="2E3wzVJo2m7" role="37wK5m">
+                        <node concept="2OqwBi" id="2E3wzVJo2m8" role="3uHU7w">
+                          <node concept="37vLTw" id="2E3wzVJo2m9" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1eaQRpkqMgp" resolve="prop" />
+                          </node>
+                          <node concept="liA8E" id="2E3wzVJo2ma" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SProperty.getName():java.lang.String" resolve="getName" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="2E3wzVJo2mb" role="3uHU7B">
+                          <property role="Xl_RC" value="Couldn't get property, attribute: " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="17R0WA" id="2E3wzVJo2mc" role="3clFbw">
+                <node concept="10Nm6u" id="2E3wzVJo2me" role="3uHU7w" />
+                <node concept="2OqwBi" id="2E3wzVJo2Xf" role="3uHU7B">
+                  <node concept="37vLTw" id="2E3wzVJo2Xg" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1eaQRpkp0nN" resolve="conceptInstance" />
+                  </node>
+                  <node concept="liA8E" id="2E3wzVJo2Xh" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getProperty(org.jetbrains.mps.openapi.language.SProperty):java.lang.String" resolve="getProperty" />
+                    <node concept="37vLTw" id="2E3wzVJo2Xi" role="37wK5m">
+                      <ref role="3cqZAo" node="1eaQRpkqMgp" resolve="prop" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2E3wzVJo2Gn" role="3cqZAp" />
+            <node concept="3clFbH" id="2E3wzVJo269" role="3cqZAp" />
             <node concept="3cpWs8" id="1eaQRpkrnAg" role="3cqZAp">
               <node concept="3cpWsn" id="1eaQRpkrnAf" role="3cpWs9">
                 <property role="3TUv4t" value="false" />

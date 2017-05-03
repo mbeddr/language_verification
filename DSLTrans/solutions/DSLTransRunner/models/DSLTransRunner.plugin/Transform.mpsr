@@ -136,16 +136,20 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
@@ -297,6 +301,9 @@
                   <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />
                 </node>
               </node>
+              <node concept="chp4Y" id="4BQJTXe8$bu" role="3oSUPX">
+                <ref role="cht4Q" to="tp25:nJmxU5cSyN" resolve="ModulePointer" />
+              </node>
             </node>
           </node>
         </node>
@@ -315,6 +322,9 @@
                 <node concept="3TrEf2" id="19DBC2fKyGR" role="2OqNvi">
                   <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />
                 </node>
+              </node>
+              <node concept="chp4Y" id="4BQJTXe8$oW" role="3oSUPX">
+                <ref role="cht4Q" to="tp25:nJmxU5cSyN" resolve="ModulePointer" />
               </node>
             </node>
           </node>
@@ -455,15 +465,15 @@
         <node concept="3clFbH" id="19DBC2fL1Ci" role="3cqZAp" />
         <node concept="3clFbJ" id="19DBC2fLnof" role="3cqZAp">
           <node concept="3clFbS" id="19DBC2fLnoh" role="3clFbx">
-            <node concept="34ab3g" id="19DBC2fLqKp" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="Xl_RD" id="19DBC2fLqKr" role="34bqiv">
+            <node concept="RRSsy" id="4BQJTXe8$Aq" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="Xl_RD" id="19DBC2fLqKr" role="RRSoy">
                 <property role="Xl_RC" value="Could not detect input and output modules!" />
               </node>
             </node>
-            <node concept="34ab3g" id="19DBC2fLrhP" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="3cpWs3" id="19DBC2fLvo8" role="34bqiv">
+            <node concept="RRSsy" id="4BQJTXe8$Eh" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="3cpWs3" id="19DBC2fLvo8" role="RRSoy">
                 <node concept="2OqwBi" id="19DBC2fLvMz" role="3uHU7w">
                   <node concept="37vLTw" id="19DBC2fLvxI" role="2Oq$k0">
                     <ref role="3cqZAo" node="19DBC2fKsBX" resolve="inputModPointer" />
@@ -492,9 +502,9 @@
                 </node>
               </node>
             </node>
-            <node concept="34ab3g" id="19DBC2fLwsY" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="3cpWs3" id="19DBC2fLwsZ" role="34bqiv">
+            <node concept="RRSsy" id="4BQJTXe8$OV" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="3cpWs3" id="19DBC2fLwsZ" role="RRSoy">
                 <node concept="2OqwBi" id="19DBC2fLwt0" role="3uHU7w">
                   <node concept="37vLTw" id="19DBC2fLxm9" role="2Oq$k0">
                     <ref role="3cqZAo" node="19DBC2fKx3H" resolve="outputModPointer" />
@@ -647,9 +657,9 @@
         <node concept="3clFbH" id="2EVdxuSUHOO" role="3cqZAp" />
         <node concept="3clFbJ" id="4$_7SKLMvCg" role="3cqZAp">
           <node concept="3clFbS" id="4$_7SKLMvCi" role="3clFbx">
-            <node concept="34ab3g" id="4$_7SKLMzlW" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="Xl_RD" id="4$_7SKLMzlX" role="34bqiv">
+            <node concept="RRSsy" id="4BQJTXe8$Z_" role="3cqZAp">
+              <property role="RRSoG" value="error" />
+              <node concept="Xl_RD" id="4$_7SKLMzlX" role="RRSoy">
                 <property role="Xl_RC" value="Could not detect input model root!" />
               </node>
             </node>

@@ -1451,7 +1451,7 @@
                             <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                           </node>
                           <node concept="liA8E" id="6c0MEL_TNQ6" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println():void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
                             <node concept="Xl_RD" id="6c0MEL_TNT3" role="37wK5m">
                               <property role="Xl_RC" value="Are you adding a rootable concept to a non-root element?" />
                             </node>
