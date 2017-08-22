@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:925945ae-ac3e-4779-951b-60cf01b7a67d(migrationData)">
+  <persistence version="9" />
+  <languages />
+  <imports>
+    <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" implicit="true" />
+    <import index="4jls" ref="r:ff76a61e-645e-4013-bb2c-d4522c02861f(DSLTrans.editor)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="3017733173184487099" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationDataEntity" flags="ng" index="ZsZFI">
+        <reference id="3017733173184487105" name="generatedMenu" index="ZsZEk" />
+        <reference id="3017733173184487102" name="conceptNode" index="ZsZFF" />
+      </concept>
+      <concept id="3017733173184487098" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationData" flags="ng" index="ZsZFJ">
+        <child id="3017733173184487121" name="entities" index="ZsZE4" />
+      </concept>
+    </language>
+    <language id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util">
+      <concept id="7417095922908669705" name="jetbrains.mps.lang.migration.util.structure.StepData" flags="ng" index="2z5JpS">
+        <property id="1973338949477451252" name="script" index="3qqn2_" />
+        <child id="7417095922908725798" name="data" index="2z5Xdn" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2z5JpS" id="2fNeFtxOwzL">
+    <property role="3qqn2_" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)/8" />
+    <node concept="ZsZFJ" id="3Sp89lohdar" role="2z5Xdn">
+      <node concept="ZsZFI" id="3Sp89lohdaF" role="ZsZE4">
+        <ref role="ZsZFF" to="rr4f:2uM0u1SErYk" resolve="RulePointer" />
+        <ref role="ZsZEk" to="4jls:3Sp89lohda_" resolve="RulePointer_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="3Sp89lohdaV" role="ZsZE4">
+        <ref role="ZsZFF" to="rr4f:3ky2qXA$ttN" resolve="PreviousLayer" />
+        <ref role="ZsZEk" to="4jls:3Sp89lohdaP" resolve="PreviousLayer_SmartReference" />
+      </node>
+    </node>
+  </node>
+  <node concept="2z5JpS" id="2fNeFtxOwzM">
+    <property role="3qqn2_" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)/8" />
+    <node concept="ZsZFJ" id="2fNeFtxOwzg" role="2z5Xdn">
+      <node concept="ZsZFI" id="2fNeFtxOwzw" role="ZsZE4">
+        <ref role="ZsZFF" to="rr4f:3ky2qXA$ttN" resolve="PreviousLayer" />
+        <ref role="ZsZEk" to="4jls:2fNeFtxOwzq" resolve="PreviousLayer_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="2fNeFtxOwzK" role="ZsZE4">
+        <ref role="ZsZFF" to="rr4f:2uM0u1SErYk" resolve="RulePointer" />
+        <ref role="ZsZEk" to="4jls:2fNeFtxOwzE" resolve="RulePointer_SmartReference" />
+      </node>
+    </node>
+  </node>
+</model>
+

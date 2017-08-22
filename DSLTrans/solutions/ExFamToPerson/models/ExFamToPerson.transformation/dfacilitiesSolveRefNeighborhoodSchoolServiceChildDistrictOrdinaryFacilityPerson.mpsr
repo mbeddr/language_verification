@@ -51,6 +51,7 @@
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
+        <property id="1408179134775268660" name="allowInheritance" index="17VOT2" />
         <child id="2459688670039252697" name="concept" index="pB8W9" />
       </concept>
       <concept id="2796321687635931742" name="transfverif.core.structure.MatchClass" flags="ng" index="13z3ms">
@@ -212,6 +213,7 @@
       <node concept="1jGXXa" id="bblaM$uz2R" role="1jGXX7">
         <property role="13z3e$" value="18.0.a.2Person" />
         <property role="13z3hU" value="Person" />
+        <property role="17VOT2" value="true" />
         <node concept="pBohH" id="bblaM$uz2S" role="pB8W9">
           <ref role="35c_gD" to="eh87:46cQNHkcdIG" resolve="Man" />
         </node>
