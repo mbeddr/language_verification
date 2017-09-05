@@ -24,6 +24,7 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -37,23 +38,23 @@
   </registry>
   <node concept="1TIwiD" id="3TSFmgZFJ3e">
     <property role="EcuMT" value="4501538473633575118" />
-    <property role="TrG5h" value="A" />
+    <property role="TrG5h" value="Manager" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2I8MTI6EULU" role="1TKVEi">
-      <property role="IQ2ns" value="3136981009303317626" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="friend" />
-      <ref role="20lvS9" node="3TSFmgZFJ3f" resolve="B" />
-    </node>
     <node concept="PrWs8" id="2I8MTI6EULW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2uv6OXJVbOm" role="1TKVEi">
+      <property role="IQ2ns" value="2855030716770336022" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="employees" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3TSFmgZFJ3f" resolve="Employee" />
     </node>
   </node>
   <node concept="1TIwiD" id="3TSFmgZFJ3f">
     <property role="EcuMT" value="4501538473633575119" />
-    <property role="TrG5h" value="B" />
-    <property role="19KtqR" value="true" />
+    <property role="TrG5h" value="Employee" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2I8MTI6EULY" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -61,7 +62,7 @@
   </node>
   <node concept="1TIwiD" id="3TSFmgZFJ3g">
     <property role="EcuMT" value="4501538473633575120" />
-    <property role="TrG5h" value="C" />
+    <property role="TrG5h" value="Result" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2I8MTI6F67g" role="PzmwI">
