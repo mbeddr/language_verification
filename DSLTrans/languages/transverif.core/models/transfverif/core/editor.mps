@@ -280,9 +280,6 @@
     <ref role="1XX52x" to="i3vy:67kIGnNxbpx" resolve="ApplyAttributeString" />
     <node concept="3EZMnI" id="2rexW9_hSEE" role="2wV5jI">
       <node concept="2iRfu4" id="2rexW9_hSEF" role="2iSdaV" />
-      <node concept="3F0ifn" id="2rexW9_hSEB" role="3EZMnx">
-        <property role="3F0ifm" value="(String)" />
-      </node>
       <node concept="3F1sOY" id="2rexW9_hSEN" role="3EZMnx">
         <ref role="1NtTu8" to="i3vy:67kIGnNxbpB" resolve="atom" />
       </node>
@@ -293,7 +290,7 @@
     <ref role="1XX52x" to="i3vy:67kIGnNxbpI" resolve="AttributeRef" />
     <node concept="3EZMnI" id="2rexW9_hES4" role="2wV5jI">
       <node concept="3F0ifn" id="2rexW9_hESj" role="3EZMnx">
-        <property role="3F0ifm" value="(Reference to)" />
+        <property role="3F0ifm" value="(Ref. to)" />
       </node>
       <node concept="1iCGBv" id="5paAjb8wClB" role="3EZMnx">
         <ref role="1NtTu8" to="i3vy:67kIGnNxbpQ" resolve="matchAttribute" />
@@ -427,9 +424,6 @@
     <property role="3GE5qa" value="Attributes" />
     <ref role="1XX52x" to="i3vy:2rexW9_hrll" resolve="MatchAttributeString" />
     <node concept="3EZMnI" id="3QsrawRf5uB" role="2wV5jI">
-      <node concept="3F0ifn" id="3QsrawRf5uK" role="3EZMnx">
-        <property role="3F0ifm" value="(String)" />
-      </node>
       <node concept="2iRfu4" id="3QsrawRf5uC" role="2iSdaV" />
       <node concept="3F1sOY" id="2rexW9_hRrp" role="3EZMnx">
         <ref role="1NtTu8" to="i3vy:3UloD6l$VLn" resolve="atom" />
@@ -441,9 +435,6 @@
     <ref role="1XX52x" to="i3vy:67kIGnNxbpy" resolve="StringLiteralAtom" />
     <node concept="3EZMnI" id="2rexW9_hICB" role="2wV5jI">
       <node concept="2iRfu4" id="2rexW9_hICC" role="2iSdaV" />
-      <node concept="3F0ifn" id="2rexW9_hICK" role="3EZMnx">
-        <property role="3F0ifm" value="(atom)" />
-      </node>
       <node concept="3F0A7n" id="2rexW9_hrlF" role="3EZMnx">
         <ref role="1NtTu8" to="i3vy:67kIGnNxbp_" resolve="atom" />
       </node>
