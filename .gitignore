@@ -1,6 +1,9 @@
 # -----------------------------------------------------------
 # General
 
+#local log file for MPS
+**/nohup.out
+
 #MPS Settings
 **/.mps/workspace.xml
 
