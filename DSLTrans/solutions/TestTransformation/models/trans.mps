@@ -129,8 +129,8 @@
     <property role="TrG5h" value="TestTrans" />
     <node concept="1jGXV7" id="2WTetLZkp7V" role="3k6lfD">
       <property role="TrG5h" value="L1" />
-      <node concept="1v6VTO" id="2uv6OXJWbpf" role="1jGXV4">
-        <ref role="1v6VTP" node="2I8MTI6GHzp" resolve="ManagerAndOneEmployee" />
+      <node concept="1v6VTO" id="5KNQWN9GsVp" role="1jGXV4">
+        <ref role="1v6VTP" node="5KNQWN9GqGI" resolve="OneManagerAndTheirEmployees" />
       </node>
     </node>
     <node concept="pHN19" id="3TSFmgZFLM_" role="1y7jx4">
@@ -476,6 +476,160 @@
           </node>
         </node>
         <node concept="pBohH" id="2I8MTI6GHAe" role="pB8W9">
+          <ref role="35c_gD" to="r24g:3TSFmgZFJ3f" resolve="Employee" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1jGXXK" id="2uv6OXJWbrS">
+    <property role="TrG5h" value="OneManagerOneEmployee" />
+    <node concept="3GsvpM" id="2uv6OXJWbrT" role="2ik0Mo">
+      <property role="KJs$L" value="0" />
+      <node concept="1jGXXa" id="2uv6OXJWbrU" role="1jGXX7">
+        <property role="13z3e$" value="ApplyClass-aaacacf6" />
+        <node concept="2ik0MC" id="2uv6OXJWbrV" role="2ik0MI">
+          <property role="TrG5h" value="CAttribute-960b5639" />
+          <node concept="1y7Krt" id="2uv6OXJWbrW" role="1157Rj">
+            <ref role="355D3t" to="r24g:3TSFmgZFJ3g" resolve="Result" />
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="2ik0ME" id="2uv6OXJWbrX" role="2ik0MU">
+            <node concept="2ik0MF" id="2uv6OXJWbrY" role="13yhA8">
+              <ref role="2ik0MN" node="2uv6OXJWbu3" resolve="TheManagerName" />
+            </node>
+            <node concept="2ik0ME" id="2uv6OXJWbrZ" role="13yhAc">
+              <node concept="2ik0M$" id="2uv6OXJWbs0" role="13yhA8">
+                <node concept="2ik0MB" id="2uv6OXJWbs1" role="2ik0My">
+                  <property role="2ik0Mw" value="x - u" />
+                </node>
+              </node>
+              <node concept="2ik0MF" id="2uv6OXJWbs2" role="13yhAc">
+                <ref role="2ik0MN" node="2uv6OXJWbv6" resolve="TheEmployeeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pBohH" id="2uv6OXJWbs3" role="pB8W9">
+          <ref role="35c_gD" to="r24g:3TSFmgZFJ3g" resolve="Result" />
+        </node>
+      </node>
+    </node>
+    <node concept="3GsvpN" id="2uv6OXJWbs4" role="2ik0Mu">
+      <property role="KJs$L" value="0" />
+      <node concept="2ik0Md" id="2uv6OXJWbth" role="13z3mo">
+        <property role="13z3e$" value="Manager" />
+        <node concept="2ik0M_" id="2uv6OXJWbu3" role="13z3hJ">
+          <property role="TrG5h" value="TheManagerName" />
+          <node concept="1y7Krt" id="2uv6OXJWbu4" role="1157Rq">
+            <ref role="355D3t" to="r24g:3TSFmgZFJ3e" resolve="Manager" />
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="13yNan" id="2uv6OXJWbuf" role="2ik0Q0">
+            <node concept="13yPN0" id="2uv6OXJWbwj" role="2F1HV6" />
+          </node>
+        </node>
+        <node concept="pBohH" id="2uv6OXJWbtw" role="pB8W9">
+          <ref role="35c_gD" to="r24g:3TSFmgZFJ3e" resolve="Manager" />
+        </node>
+      </node>
+      <node concept="2ik0Md" id="2uv6OXJWbuG" role="13z3mo">
+        <property role="13z3e$" value="Employee" />
+        <node concept="2ik0M_" id="2uv6OXJWbv6" role="13z3hJ">
+          <property role="TrG5h" value="TheEmployeeName" />
+          <node concept="1y7Krt" id="2uv6OXJWbv7" role="1157Rq">
+            <ref role="355D3t" to="r24g:3TSFmgZFJ3f" resolve="Employee" />
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="13yNan" id="2uv6OXJWbvi" role="2ik0Q0">
+            <node concept="13yPN0" id="2uv6OXJWbvo" role="2F1HV6" />
+          </node>
+        </node>
+        <node concept="pBohH" id="2uv6OXJWbv1" role="pB8W9">
+          <ref role="35c_gD" to="r24g:3TSFmgZFJ3f" resolve="Employee" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="2uv6OXJWbvB" role="13z3mp">
+        <ref role="13xwDP" node="2uv6OXJWbth" />
+        <ref role="13xwDU" node="2uv6OXJWbuG" />
+        <node concept="2AKGPc" id="2uv6OXJWbvC" role="1vfT9s">
+          <ref role="359W_E" to="r24g:3TSFmgZFJ3e" resolve="Manager" />
+          <ref role="359W_F" to="r24g:2uv6OXJVbOm" resolve="employees" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1jGXXK" id="5KNQWN9GqGI">
+    <property role="TrG5h" value="OneManagerAndTheirEmployees" />
+    <node concept="3GsvpM" id="5KNQWN9GqGJ" role="2ik0Mo">
+      <property role="KJs$L" value="0" />
+      <node concept="1jGXXa" id="5KNQWN9GqGK" role="1jGXX7">
+        <property role="13z3e$" value="ApplyClass-aaacacf6" />
+        <node concept="2ik0MC" id="5KNQWN9GqGL" role="2ik0MI">
+          <property role="TrG5h" value="CAttribute-960b5639" />
+          <node concept="1y7Krt" id="5KNQWN9GqGM" role="1157Rj">
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+            <ref role="355D3t" to="r24g:3TSFmgZFJ3g" resolve="Result" />
+          </node>
+          <node concept="2ik0ME" id="5KNQWN9GqGN" role="2ik0MU">
+            <node concept="2ik0MF" id="5KNQWN9GqGO" role="13yhA8">
+              <ref role="2ik0MN" node="5KNQWN9GqHV" resolve="managerName" />
+            </node>
+            <node concept="2ik0ME" id="5KNQWN9GqGP" role="13yhAc">
+              <node concept="2ik0M$" id="5KNQWN9GqGQ" role="13yhA8">
+                <node concept="2ik0MB" id="5KNQWN9GqGR" role="2ik0My">
+                  <property role="2ik0Mw" value=" - " />
+                </node>
+              </node>
+              <node concept="2ik0MF" id="5KNQWN9GqGS" role="13yhAc">
+                <ref role="2ik0MN" node="5KNQWN9GqH2" resolve="employeeName" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pBohH" id="5KNQWN9GqGT" role="pB8W9">
+          <ref role="35c_gD" to="r24g:3TSFmgZFJ3g" resolve="Result" />
+        </node>
+      </node>
+    </node>
+    <node concept="3GsvpN" id="5KNQWN9GqGU" role="2ik0Mu">
+      <property role="KJs$L" value="0" />
+      <node concept="1jGXVw" id="5KNQWN9GsVL" role="13z3mp">
+        <ref role="13xwDP" node="5KNQWN9GqHB" />
+        <ref role="13xwDU" node="5KNQWN9GqH1" />
+        <node concept="2AKGPc" id="5KNQWN9GsVN" role="1vfT9s">
+          <ref role="359W_E" to="r24g:3TSFmgZFJ3e" resolve="Manager" />
+          <ref role="359W_F" to="r24g:2uv6OXJVbOm" resolve="employees" />
+        </node>
+      </node>
+      <node concept="2ik0Md" id="5KNQWN9GqHB" role="13z3mo">
+        <property role="13z3e$" value="ManagerExists" />
+        <node concept="2ik0M_" id="5KNQWN9GqHV" role="13z3hJ">
+          <property role="TrG5h" value="managerName" />
+          <node concept="1y7Krt" id="5KNQWN9GqHW" role="1157Rq">
+            <ref role="355D3t" to="r24g:3TSFmgZFJ3e" resolve="Manager" />
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="13yNan" id="5KNQWN9GqI7" role="2ik0Q0">
+            <node concept="13yPN0" id="5KNQWN9GqId" role="2F1HV6" />
+          </node>
+        </node>
+        <node concept="pBohH" id="5KNQWN9GqHQ" role="pB8W9">
+          <ref role="35c_gD" to="r24g:3TSFmgZFJ3e" resolve="Manager" />
+        </node>
+      </node>
+      <node concept="2ik0NV" id="5KNQWN9GqH1" role="13z3mo">
+        <property role="13z3e$" value="EmployeeAny" />
+        <node concept="2ik0M_" id="5KNQWN9GqH2" role="13z3hJ">
+          <property role="TrG5h" value="employeeName" />
+          <node concept="1y7Krt" id="5KNQWN9GqH3" role="1157Rq">
+            <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
+            <ref role="355D3t" to="r24g:3TSFmgZFJ3f" resolve="Employee" />
+          </node>
+          <node concept="13yNan" id="5KNQWN9GqH4" role="2ik0Q0">
+            <node concept="13yPN0" id="5KNQWN9GqH5" role="2F1HV6" />
+          </node>
+        </node>
+        <node concept="pBohH" id="5KNQWN9GqH6" role="pB8W9">
           <ref role="35c_gD" to="r24g:3TSFmgZFJ3f" resolve="Employee" />
         </node>
       </node>
