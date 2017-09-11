@@ -11,14 +11,8 @@
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="tz6t" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.ecore.xmi.impl(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="roop" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.ecore.resource(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="iuoz" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.ecore(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
-    <import index="hu10" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.common.util(de.itemis.mps.editor.diagram.runtime/)" />
-    <import index="hulx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.emf.ecore.resource.impl(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="yeb1" ref="r:aaf953a6-0871-489c-8719-75c800e17f1f(SyVOLT.structure)" />
@@ -86,10 +80,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
-        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
-        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
-      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -118,10 +108,6 @@
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
-      </concept>
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -177,9 +163,6 @@
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
-      </concept>
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
@@ -284,18 +267,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -2571,399 +2544,7 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="xkd1MZwinq" role="3clF47">
-        <node concept="1X3_iC" id="6XxPrVIvDtw" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="xkd1MZwq5j" role="8Wnug">
-            <node concept="3cpWsn" id="xkd1MZwq5k" role="3cpWs9">
-              <property role="TrG5h" value="resourceSet" />
-              <node concept="3uibUv" id="xkd1MZwq5l" role="1tU5fm">
-                <ref role="3uigEE" to="roop:~ResourceSet" resolve="ResourceSet" />
-              </node>
-              <node concept="2ShNRf" id="xkd1MZwq8w" role="33vP2m">
-                <node concept="1pGfFk" id="xkd1MZwua7" role="2ShVmc">
-                  <ref role="37wK5l" to="hulx:~ResourceSetImpl.&lt;init&gt;()" resolve="ResourceSetImpl" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvE34" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="xkd1MZwwpX" role="8Wnug">
-            <node concept="2OqwBi" id="xkd1MZwx_8" role="3clFbG">
-              <node concept="2OqwBi" id="xkd1MZwwVP" role="2Oq$k0">
-                <node concept="2OqwBi" id="xkd1MZwwxt" role="2Oq$k0">
-                  <node concept="37vLTw" id="xkd1MZwwpV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="xkd1MZwq5k" resolve="resourceSet" />
-                  </node>
-                  <node concept="liA8E" id="xkd1MZwwOp" role="2OqNvi">
-                    <ref role="37wK5l" to="roop:~ResourceSet.getResourceFactoryRegistry():org.eclipse.emf.ecore.resource.Resource$Factory$Registry" resolve="getResourceFactoryRegistry" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="xkd1MZwxkO" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap():java.util.Map" resolve="getExtensionToFactoryMap" />
-                </node>
-              </node>
-              <node concept="liA8E" id="xkd1MZwyzm" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-                <node concept="Xl_RD" id="xkd1MZwyIj" role="37wK5m">
-                  <property role="Xl_RC" value="ecore" />
-                </node>
-                <node concept="2ShNRf" id="xkd1MZwz5Q" role="37wK5m">
-                  <node concept="1pGfFk" id="xkd1MZwJdQ" role="2ShVmc">
-                    <ref role="37wK5l" to="tz6t:~EcoreResourceFactoryImpl.&lt;init&gt;()" resolve="EcoreResourceFactoryImpl" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvEY3" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="xkd1MZwCCy" role="8Wnug">
-            <node concept="2OqwBi" id="xkd1MZwDVj" role="3clFbG">
-              <node concept="2OqwBi" id="xkd1MZwDfB" role="2Oq$k0">
-                <node concept="2OqwBi" id="xkd1MZwCMS" role="2Oq$k0">
-                  <node concept="37vLTw" id="xkd1MZwCCw" role="2Oq$k0">
-                    <ref role="3cqZAo" node="xkd1MZwq5k" resolve="resourceSet" />
-                  </node>
-                  <node concept="liA8E" id="xkd1MZwD8b" role="2OqNvi">
-                    <ref role="37wK5l" to="roop:~ResourceSet.getResourceFactoryRegistry():org.eclipse.emf.ecore.resource.Resource$Factory$Registry" resolve="getResourceFactoryRegistry" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="xkd1MZwDEZ" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~Resource$Factory$Registry.getExtensionToFactoryMap():java.util.Map" resolve="getExtensionToFactoryMap" />
-                </node>
-              </node>
-              <node concept="liA8E" id="xkd1MZwEVU" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-                <node concept="Xl_RD" id="xkd1MZwF79" role="37wK5m">
-                  <property role="Xl_RC" value="xmi" />
-                </node>
-                <node concept="2ShNRf" id="xkd1MZwFyA" role="37wK5m">
-                  <node concept="1pGfFk" id="xkd1MZwIzr" role="2ShVmc">
-                    <ref role="37wK5l" to="tz6t:~XMIResourceFactoryImpl.&lt;init&gt;()" resolve="XMIResourceFactoryImpl" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="xkd1MZwJic" role="3cqZAp" />
-        <node concept="1X3_iC" id="3glPWev4uu_" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="3glPWev2F4x" role="8Wnug">
-            <node concept="3cpWsn" id="3glPWev2F4y" role="3cpWs9">
-              <property role="TrG5h" value="dummyFile" />
-              <node concept="3uibUv" id="3glPWev2F4z" role="1tU5fm">
-                <ref role="3uigEE" to="guwi:~File" resolve="File" />
-              </node>
-              <node concept="2ShNRf" id="3glPWev2Fza" role="33vP2m">
-                <node concept="1pGfFk" id="3glPWev2Lvq" role="2ShVmc">
-                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                  <node concept="Xl_RD" id="3glPWev2L_K" role="37wK5m">
-                    <property role="Xl_RC" value="dummy.ecore" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="3glPWev4u6D" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="3glPWev2MoS" role="8Wnug">
-            <node concept="3cpWsn" id="3glPWev2MoT" role="3cpWs9">
-              <property role="TrG5h" value="inputLanguageFile" />
-              <node concept="3uibUv" id="3glPWev2MoU" role="1tU5fm">
-                <ref role="3uigEE" to="guwi:~File" resolve="File" />
-              </node>
-              <node concept="2ShNRf" id="3glPWev2MoV" role="33vP2m">
-                <node concept="1pGfFk" id="3glPWev2MoW" role="2ShVmc">
-                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                  <node concept="2OqwBi" id="3glPWev2Otp" role="37wK5m">
-                    <node concept="37vLTw" id="3glPWev2N2S" role="2Oq$k0">
-                      <ref role="3cqZAo" node="xkd1MZwiuS" resolve="language" />
-                    </node>
-                    <node concept="liA8E" id="3glPWev2OEZ" role="2OqNvi">
-                      <ref role="37wK5l" to="c17a:~SLanguage.getQualifiedName():java.lang.String" resolve="getQualifiedName" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="3glPWev2LCI" role="3cqZAp" />
-        <node concept="SfApY" id="3glPWev2UlG" role="3cqZAp">
-          <node concept="3clFbS" id="3glPWev2UlI" role="SfCbr">
-            <node concept="1X3_iC" id="3glPWev4tWf" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3glPWev2xEa" role="8Wnug">
-                <node concept="2YIFZM" id="3glPWev2zvp" role="3clFbG">
-                  <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                  <ref role="37wK5l" to="eoo2:~Files.copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption...):java.nio.file.Path" resolve="copy" />
-                  <node concept="2OqwBi" id="3glPWev2Rkn" role="37wK5m">
-                    <node concept="37vLTw" id="3glPWev2R0S" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3glPWev2F4y" resolve="dummyFile" />
-                    </node>
-                    <node concept="liA8E" id="3glPWev30hC" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.toPath():java.nio.file.Path" resolve="toPath" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="3glPWev2TkL" role="37wK5m">
-                    <node concept="37vLTw" id="3glPWev2SZH" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3glPWev2MoT" resolve="inputLanguageFile" />
-                    </node>
-                    <node concept="liA8E" id="3glPWev2TVX" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.toPath():java.nio.file.Path" resolve="toPath" />
-                    </node>
-                  </node>
-                  <node concept="Rm8GO" id="3glPWev2BY4" role="37wK5m">
-                    <ref role="1Px2BO" to="eoo2:~StandardCopyOption" resolve="StandardCopyOption" />
-                    <ref role="Rm8GQ" to="eoo2:~StandardCopyOption.REPLACE_EXISTING" resolve="REPLACE_EXISTING" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="3glPWev2UlH" role="3cqZAp" />
-          </node>
-          <node concept="TDmWw" id="3glPWev2UlJ" role="TEbGg">
-            <node concept="3cpWsn" id="3glPWev2UlL" role="TDEfY">
-              <property role="TrG5h" value="ex" />
-              <node concept="3uibUv" id="3glPWev2Vgo" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="3glPWev2UlP" role="TDEfX" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvFPd" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="xkd1MZwJFh" role="8Wnug">
-            <node concept="3cpWsn" id="xkd1MZwJFi" role="3cpWs9">
-              <property role="TrG5h" value="myMetaModel" />
-              <node concept="3uibUv" id="xkd1MZwJFj" role="1tU5fm">
-                <ref role="3uigEE" to="roop:~Resource" resolve="Resource" />
-              </node>
-              <node concept="2OqwBi" id="xkd1MZwJZP" role="33vP2m">
-                <node concept="37vLTw" id="xkd1MZwJRm" role="2Oq$k0">
-                  <ref role="3cqZAo" node="xkd1MZwq5k" resolve="resourceSet" />
-                </node>
-                <node concept="liA8E" id="xkd1MZwKiN" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~ResourceSet.getResource(org.eclipse.emf.common.util.URI,boolean):org.eclipse.emf.ecore.resource.Resource" resolve="getResource" />
-                  <node concept="2YIFZM" id="xkd1MZwKVJ" role="37wK5m">
-                    <ref role="37wK5l" to="hu10:~URI.createFileURI(java.lang.String):org.eclipse.emf.common.util.URI" resolve="createFileURI" />
-                    <ref role="1Pybhc" to="hu10:~URI" resolve="URI" />
-                    <node concept="Xl_RD" id="xkd1MZwL7P" role="37wK5m">
-                      <property role="Xl_RC" value="./dummy.ecore" />
-                    </node>
-                  </node>
-                  <node concept="3clFbT" id="xkd1MZwLrb" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="3glPWev1hFt" role="3cqZAp" />
-        <node concept="1X3_iC" id="6XxPrVIvGl6" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="3glPWev1oYv" role="8Wnug">
-            <node concept="3cpWsn" id="3glPWev1oYw" role="3cpWs9">
-              <property role="TrG5h" value="packageEMF" />
-              <node concept="3uibUv" id="3glPWev1oYx" role="1tU5fm">
-                <ref role="3uigEE" to="iuoz:~EPackage" resolve="EPackage" />
-              </node>
-              <node concept="1eOMI4" id="3glPWev1pij" role="33vP2m">
-                <node concept="10QFUN" id="3glPWev1pig" role="1eOMHV">
-                  <node concept="3uibUv" id="3glPWev1psj" role="10QFUM">
-                    <ref role="3uigEE" to="iuoz:~EPackage" resolve="EPackage" />
-                  </node>
-                  <node concept="2OqwBi" id="3glPWev1qDg" role="10QFUP">
-                    <node concept="2OqwBi" id="3glPWev1pO3" role="2Oq$k0">
-                      <node concept="37vLTw" id="3glPWev1pBY" role="2Oq$k0">
-                        <ref role="3cqZAo" node="xkd1MZwJFi" resolve="myMetaModel" />
-                      </node>
-                      <node concept="liA8E" id="3glPWev1q74" role="2OqNvi">
-                        <ref role="37wK5l" to="roop:~Resource.getContents():org.eclipse.emf.common.util.EList" resolve="getContents" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="3glPWev1st5" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
-                      <node concept="3cmrfG" id="3glPWev1sFV" role="37wK5m">
-                        <property role="3cmrfH" value="0" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvGl7" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3glPWev2ql6" role="8Wnug">
-            <node concept="2OqwBi" id="3glPWev2qRu" role="3clFbG">
-              <node concept="37vLTw" id="3glPWev2ql4" role="2Oq$k0">
-                <ref role="3cqZAo" node="3glPWev1oYw" resolve="packageEMF" />
-              </node>
-              <node concept="liA8E" id="3glPWev2rEE" role="2OqNvi">
-                <ref role="37wK5l" to="iuoz:~ENamedElement.setName(java.lang.String):void" resolve="setName" />
-                <node concept="Xl_RD" id="3glPWev2rRD" role="37wK5m">
-                  <property role="Xl_RC" value="test" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvGl8" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3glPWev1thF" role="8Wnug">
-            <node concept="2OqwBi" id="3glPWev1uhT" role="3clFbG">
-              <node concept="2OqwBi" id="3glPWev1t_U" role="2Oq$k0">
-                <node concept="37vLTw" id="3glPWev1thD" role="2Oq$k0">
-                  <ref role="3cqZAo" node="xkd1MZwq5k" resolve="resourceSet" />
-                </node>
-                <node concept="liA8E" id="3glPWev1u0m" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~ResourceSet.getPackageRegistry():org.eclipse.emf.ecore.EPackage$Registry" resolve="getPackageRegistry" />
-                </node>
-              </node>
-              <node concept="liA8E" id="3glPWev1vnN" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-                <node concept="Xl_RD" id="3glPWev1v_5" role="37wK5m">
-                  <property role="Xl_RC" value="http://eclipse.org" />
-                </node>
-                <node concept="37vLTw" id="3glPWev1w8c" role="37wK5m">
-                  <ref role="3cqZAo" node="3glPWev1oYw" resolve="packageEMF" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="3glPWev2kyK" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="3glPWev1xt5" role="8Wnug">
-            <node concept="3cpWsn" id="3glPWev1xt6" role="3cpWs9">
-              <property role="TrG5h" value="myModel" />
-              <node concept="3uibUv" id="3glPWev1xt7" role="1tU5fm">
-                <ref role="3uigEE" to="roop:~Resource" resolve="Resource" />
-              </node>
-              <node concept="2OqwBi" id="3glPWev1y27" role="33vP2m">
-                <node concept="37vLTw" id="3glPWev1xQ5" role="2Oq$k0">
-                  <ref role="3cqZAo" node="xkd1MZwq5k" resolve="resourceSet" />
-                </node>
-                <node concept="liA8E" id="3glPWev1yl6" role="2OqNvi">
-                  <ref role="37wK5l" to="roop:~ResourceSet.getResource(org.eclipse.emf.common.util.URI,boolean):org.eclipse.emf.ecore.resource.Resource" resolve="getResource" />
-                  <node concept="2YIFZM" id="3glPWev1yHM" role="37wK5m">
-                    <ref role="1Pybhc" to="hu10:~URI" resolve="URI" />
-                    <ref role="37wK5l" to="hu10:~URI.createURI(java.lang.String):org.eclipse.emf.common.util.URI" resolve="createURI" />
-                    <node concept="Xl_RD" id="3glPWev1yTR" role="37wK5m">
-                      <property role="Xl_RC" value="./univModel.xmi" />
-                    </node>
-                  </node>
-                  <node concept="3clFbT" id="3glPWev1_SB" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvGl9" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="3glPWev1_Zf" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvGla" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="3glPWev1Ao6" role="8Wnug">
-            <node concept="3SKdUq" id="3glPWev1Ao8" role="3SKWNk">
-              <property role="3SKdUp" value="change metamodel" />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvGlb" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="3glPWev1A_x" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvGlc" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="3glPWev1COd" role="8Wnug">
-            <node concept="3cpWsn" id="3glPWev1COe" role="3cpWs9">
-              <property role="TrG5h" value="theCoreFactory" />
-              <node concept="3uibUv" id="3glPWev1COf" role="1tU5fm">
-                <ref role="3uigEE" to="iuoz:~EcoreFactory" resolve="EcoreFactory" />
-              </node>
-              <node concept="10M0yZ" id="3glPWev1Dei" role="33vP2m">
-                <ref role="1PxDUh" to="iuoz:~EcoreFactory" resolve="EcoreFactory" />
-                <ref role="3cqZAo" to="iuoz:~EcoreFactory.eINSTANCE" resolve="eINSTANCE" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvGld" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="3glPWev1Dfx" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6XxPrVIvGle" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="3glPWev1EcZ" role="8Wnug">
-            <node concept="3cpWsn" id="3glPWev1Ed0" role="3cpWs9">
-              <property role="TrG5h" value="adultclass" />
-              <node concept="3uibUv" id="3glPWev1Ed1" role="1tU5fm">
-                <ref role="3uigEE" to="iuoz:~EClass" resolve="EClass" />
-              </node>
-              <node concept="2OqwBi" id="3glPWev1ET$" role="33vP2m">
-                <node concept="37vLTw" id="3glPWev1EBL" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3glPWev1COe" resolve="theCoreFactory" />
-                </node>
-                <node concept="liA8E" id="3glPWev1FtX" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EcoreFactory.createEClass():org.eclipse.emf.ecore.EClass" resolve="createEClass" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="3glPWev4zrA" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3glPWev1G2J" role="8Wnug">
-            <node concept="2OqwBi" id="3glPWev1K0Y" role="3clFbG">
-              <node concept="2OqwBi" id="3glPWev1Ip$" role="2Oq$k0">
-                <node concept="37vLTw" id="3glPWev1HVq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3glPWev1oYw" resolve="packageEMF" />
-                </node>
-                <node concept="liA8E" id="3glPWev1Jsn" role="2OqNvi">
-                  <ref role="37wK5l" to="iuoz:~EPackage.getEClassifiers():org.eclipse.emf.common.util.EList" resolve="getEClassifiers" />
-                </node>
-              </node>
-              <node concept="liA8E" id="3glPWev1Mc4" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
-                <node concept="37vLTw" id="3glPWev1My6" role="37wK5m">
-                  <ref role="3cqZAo" node="3glPWev1Ed0" resolve="adultclass" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="KrNvFi2V4a" role="3cqZAp" />
         <node concept="3clFbH" id="KrNvFi2Nop" role="3cqZAp" />
         <node concept="3cpWs8" id="6XxPrVIvQSO" role="3cqZAp">
           <node concept="3cpWsn" id="6XxPrVIvQSP" role="3cpWs9">
@@ -3127,9 +2708,7 @@
                 <node concept="3cpWs8" id="33JK74xXZgR" role="3cqZAp">
                   <node concept="3cpWsn" id="33JK74xXZgS" role="3cpWs9">
                     <property role="TrG5h" value="superTypes" />
-                    <node concept="3uibUv" id="33JK74xXZgT" role="1tU5fm">
-                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                    </node>
+                    <node concept="17QB3L" id="2iu562Hm8RC" role="1tU5fm" />
                     <node concept="Xl_RD" id="33JK74xXZqG" role="33vP2m">
                       <property role="Xl_RC" value="" />
                     </node>
@@ -3917,50 +3496,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3glPWev1QEC" role="3cqZAp" />
-        <node concept="SfApY" id="3glPWev1Rii" role="3cqZAp">
-          <node concept="3clFbS" id="3glPWev1Rik" role="SfCbr">
-            <node concept="1X3_iC" id="6XxPrVIvV6X" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3glPWev1NxK" role="8Wnug">
-                <node concept="2OqwBi" id="3glPWev1NXx" role="3clFbG">
-                  <node concept="37vLTw" id="3glPWev1NxI" role="2Oq$k0">
-                    <ref role="3cqZAo" node="xkd1MZwJFi" resolve="myMetaModel" />
-                  </node>
-                  <node concept="liA8E" id="3glPWev1Ol8" role="2OqNvi">
-                    <ref role="37wK5l" to="roop:~Resource.save(java.util.Map):void" resolve="save" />
-                    <node concept="10Nm6u" id="3glPWev1OzB" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3glPWev2lib" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3glPWev1PdS" role="8Wnug">
-                <node concept="2OqwBi" id="3glPWev1PEh" role="3clFbG">
-                  <node concept="37vLTw" id="3glPWev1PdQ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3glPWev1xt6" resolve="myModel" />
-                  </node>
-                  <node concept="liA8E" id="3glPWev1QbM" role="2OqNvi">
-                    <ref role="37wK5l" to="roop:~Resource.save(java.util.Map):void" resolve="save" />
-                    <node concept="10Nm6u" id="3glPWev1Qwv" role="37wK5m" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="3glPWev1SbS" role="3cqZAp" />
-          </node>
-          <node concept="TDmWw" id="3glPWev1Ril" role="TEbGg">
-            <node concept="3cpWsn" id="3glPWev1Rin" role="TDEfY">
-              <property role="TrG5h" value="ex" />
-              <node concept="3uibUv" id="3glPWev1RHo" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="3glPWev1Rir" role="TDEfX" />
-          </node>
-        </node>
       </node>
       <node concept="3Tm1VV" id="xkd1MZwids" role="1B3o_S" />
       <node concept="3cqZAl" id="xkd1MZwinh" role="3clF45" />
