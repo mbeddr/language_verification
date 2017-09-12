@@ -24,6 +24,7 @@
       <concept id="5898026252864033709" name="Families.structure.Family" flags="ng" index="3GeAKd">
         <property id="2210469722643833902" name="lastName" index="1in0UI" />
         <reference id="5898026252864033789" name="registeredIn" index="3GeALt" />
+        <child id="5898026252864033751" name="mothers" index="3GeALR" />
         <child id="5898026252864033753" name="fathers" index="3GeALT" />
         <child id="5898026252864033756" name="sons" index="3GeALW" />
       </concept>
@@ -69,6 +70,17 @@
         <ref role="3Ge$Pk" node="19DBC2fIj_r" resolve="Montreal" />
         <ref role="IakQu" node="19DBC2fIj_v" resolve="McGill University" />
         <ref role="3Ge$Pi" node="19DBC2fIj_q" resolve="Oakes" />
+      </node>
+    </node>
+    <node concept="3GeAKd" id="7BhJlZBw872" role="3GeALH">
+      <property role="TrG5h" value="Test" />
+      <property role="1in0UI" value="Test" />
+      <ref role="3GeALt" node="19DBC2fIj_s" resolve="Plateau" />
+      <node concept="3GeAKi" id="7BhJlZBw877" role="3GeALR">
+        <property role="3GeAL_" value="Mrs" />
+        <ref role="IakQu" node="19DBC2fIj_v" resolve="McGill University" />
+        <ref role="3Ge$Pi" node="7BhJlZBw872" resolve="Test" />
+        <ref role="3Ge$Pk" node="19DBC2fIj_r" resolve="Montreal" />
       </node>
     </node>
     <node concept="3GeAKe" id="19DBC2fIj_r" role="3GeALK">
