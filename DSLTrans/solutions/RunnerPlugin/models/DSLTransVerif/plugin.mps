@@ -1238,29 +1238,63 @@
             <ref role="3cqZAo" node="4knEpdJZYti" resolve="rules" />
           </node>
           <node concept="3clFbS" id="1j60nTiC65Z" role="2LFqv$">
-            <node concept="3clFbF" id="1j60nTiC9pR" role="3cqZAp">
-              <node concept="2OqwBi" id="1j60nTiC9xb" role="3clFbG">
-                <node concept="2GrUjf" id="1j60nTiC9pQ" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="1j60nTiC65V" resolve="rule" />
+            <node concept="3cpWs8" id="4zXRLIjTsK6" role="3cqZAp">
+              <node concept="3cpWsn" id="4zXRLIjTsK9" role="3cpWs9">
+                <property role="TrG5h" value="success" />
+                <node concept="10P_77" id="4zXRLIjTsK4" role="1tU5fm" />
+                <node concept="2OqwBi" id="2epYeObvaKW" role="33vP2m">
+                  <node concept="2GrUjf" id="2epYeObvaKX" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="1j60nTiC65V" resolve="rule" />
+                  </node>
+                  <node concept="2qgKlT" id="2epYeObvaKY" role="2OqNvi">
+                    <ref role="37wK5l" to="70if:7rNOiA33qpT" resolve="generateTextGen" />
+                    <node concept="2OqwBi" id="2epYeObvaKZ" role="37wK5m">
+                      <node concept="2GrUjf" id="2epYeObvaL0" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="1j60nTiC65V" resolve="rule" />
+                      </node>
+                      <node concept="3TrcHB" id="2epYeObvaL1" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs3" id="2epYeObvaL2" role="37wK5m">
+                      <node concept="37vLTw" id="2epYeObvaL3" role="3uHU7w">
+                        <ref role="3cqZAo" node="75zsbcXeRoT" resolve="transformationDir" />
+                      </node>
+                      <node concept="37vLTw" id="2epYeObvaL4" role="3uHU7B">
+                        <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="2qgKlT" id="1j60nTiCab0" role="2OqNvi">
-                  <ref role="37wK5l" to="70if:7rNOiA33qpT" resolve="generateTextGen" />
-                  <node concept="2OqwBi" id="1j60nTiCOsa" role="37wK5m">
-                    <node concept="2GrUjf" id="1j60nTiCOeu" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="1j60nTiC65V" resolve="rule" />
-                    </node>
-                    <node concept="3TrcHB" id="1j60nTiCPbG" role="2OqNvi">
-                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4zXRLIjTv65" role="3cqZAp">
+              <node concept="3clFbS" id="4zXRLIjTv67" role="3clFbx">
+                <node concept="3clFbF" id="4zXRLIjTvFv" role="3cqZAp">
+                  <node concept="2YIFZM" id="4zXRLIjTvTj" role="3clFbG">
+                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                    <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                    <node concept="10Nm6u" id="4zXRLIjTw1z" role="37wK5m" />
+                    <node concept="3cpWs3" id="4zXRLIjTyH3" role="37wK5m">
+                      <node concept="2OqwBi" id="4zXRLIjTz0q" role="3uHU7w">
+                        <node concept="2GrUjf" id="4zXRLIjTyOj" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="1j60nTiC65V" resolve="rule" />
+                        </node>
+                        <node concept="3TrcHB" id="4zXRLIjT$iI" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="4zXRLIjTwil" role="3uHU7B">
+                        <property role="Xl_RC" value="Error: Could not generate rule " />
+                      </node>
                     </node>
                   </node>
-                  <node concept="3cpWs3" id="75zsbcXiyJb" role="37wK5m">
-                    <node concept="37vLTw" id="75zsbcXfifS" role="3uHU7w">
-                      <ref role="3cqZAo" node="75zsbcXeRoT" resolve="transformationDir" />
-                    </node>
-                    <node concept="37vLTw" id="5PBkhXSeBRM" role="3uHU7B">
-                      <ref role="3cqZAo" node="75zsbcX5XfD" resolve="syvoltBackendPath" />
-                    </node>
-                  </node>
+                </node>
+                <node concept="3cpWs6" id="4zXRLIjVWvb" role="3cqZAp" />
+              </node>
+              <node concept="3fqX7Q" id="4zXRLIjTvnp" role="3clFbw">
+                <node concept="37vLTw" id="4zXRLIjTvus" role="3fr31v">
+                  <ref role="3cqZAo" node="4zXRLIjTsK9" resolve="success" />
                 </node>
               </node>
             </node>
@@ -2527,7 +2561,7 @@
   <node concept="tC5Ba" id="7rNOiA32LVQ">
     <property role="TrG5h" value="runnerGroup" />
     <node concept="ftmFs" id="7rNOiA32MpX" role="ftER_">
-      <node concept="tCFHf" id="7rNOiA32Mq0" role="ftvYc">
+      <node concept="tCFHf" id="4zXRLIjUHWf" role="ftvYc">
         <ref role="tCJdB" node="7rNOiA32K_F" resolve="RunnerAction" />
       </node>
     </node>
