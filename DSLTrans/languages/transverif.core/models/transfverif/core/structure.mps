@@ -388,11 +388,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5s7j9jLLo7o" resolve="TVLinkIdRefExpression" />
     </node>
-    <node concept="1TJgyi" id="3QsrawRfIw3" role="1TKVEl">
-      <property role="TrG5h" value="typeName" />
-      <property role="IQ2nx" value="4439542802417641475" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="PlHQZ" id="3QsrawRgGyC">
     <property role="3GE5qa" value="Links" />
