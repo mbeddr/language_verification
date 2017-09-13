@@ -8,7 +8,6 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
         <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
@@ -59,39 +58,38 @@
       </concept>
     </language>
   </registry>
-  <node concept="2ik09W" id="bblaM$uz6F">
+  <node concept="2ik09W" id="4zXRLIk6MRH">
     <property role="TrG5h" value="Neg_CountryCity" />
     <property role="3GE5qa" value="contracts" />
-    <node concept="aREg_" id="bblaM$uz6H" role="aREgB">
-      <node concept="2ik0NV" id="bblaM$uz6J" role="13z3mo">
+    <node concept="aREg_" id="4zXRLIk6MRJ" role="aREgB">
+      <node concept="2ik0NV" id="4zXRLIk6MRL" role="13z3mo">
         <property role="13z3e$" value="0.2.m.0Country" />
         <property role="13z3hU" value="Country" />
-        <node concept="pBohH" id="bblaM$uz6K" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MRM" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeG" resolve="Country" />
         </node>
       </node>
-      <node concept="2ik0NV" id="bblaM$uz6L" role="13z3mo">
+      <node concept="2ik0NV" id="4zXRLIk6MRN" role="13z3mo">
         <property role="13z3e$" value="0.2.m.1City" />
         <property role="13z3hU" value="City" />
-        <node concept="pBohH" id="bblaM$uz6M" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MRO" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeI" resolve="City" />
         </node>
       </node>
-      <node concept="1jGXVw" id="bblaM$uz6O" role="13z3mp">
-        <property role="aCCiF" value="cities" />
-        <ref role="13xwDP" node="bblaM$uz6J" />
-        <ref role="13xwDU" node="bblaM$uz6L" />
-        <node concept="2AKGPc" id="bblaM$uz6N" role="1vfT9s">
-          <ref role="359W_E" to="b6kg:57pZU2XSTeG" resolve="Country" />
+      <node concept="1jGXVw" id="4zXRLIk6MRQ" role="13z3mp">
+        <ref role="13xwDP" node="4zXRLIk6MRL" />
+        <ref role="13xwDU" node="4zXRLIk6MRN" />
+        <node concept="2AKGPc" id="4zXRLIk6MRP" role="1vfT9s">
           <ref role="359W_F" to="b6kg:57pZU2XSTfg" resolve="cities" />
+          <ref role="359W_E" to="b6kg:57pZU2XSTeG" resolve="Country" />
         </node>
       </node>
     </node>
-    <node concept="aREgA" id="bblaM$uz6I" role="aREgT">
-      <node concept="1jGXXa" id="bblaM$uz6P" role="1jGXX7">
+    <node concept="aREgA" id="4zXRLIk6MRK" role="aREgT">
+      <node concept="1jGXXa" id="4zXRLIk6MRR" role="1jGXX7">
         <property role="13z3e$" value="0.2.a.0Association" />
         <property role="13z3hU" value="Association" />
-        <node concept="pBohH" id="bblaM$uz6Q" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MRS" role="pB8W9">
           <ref role="35c_gD" to="eh87:46cQNHkcdIM" resolve="Association" />
         </node>
       </node>

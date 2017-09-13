@@ -8,7 +8,6 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
         <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
@@ -89,82 +88,80 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="bblaM$uyVu">
+  <node concept="1jGXXK" id="4zXRLIk6MHq">
     <property role="TrG5h" value="Father2Man" />
     <property role="3GE5qa" value="transformation.02-Father2Man_CreationRule" />
-    <node concept="3GsvpN" id="bblaM$uyVv" role="2ik0Mu">
-      <node concept="2ik0NV" id="bblaM$uyVw" role="13z3mo">
+    <node concept="3GsvpN" id="4zXRLIk6MHr" role="2ik0Mu">
+      <node concept="2ik0NV" id="4zXRLIk6MHs" role="13z3mo">
         <property role="13z3e$" value="2.0.m.0Parent" />
         <property role="13z3hU" value="Parent" />
-        <node concept="pBohH" id="bblaM$uyVx" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MHt" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeM" resolve="Parent" />
         </node>
-        <node concept="2ik0M_" id="bblaM$uyVy" role="13z3hJ">
+        <node concept="2ik0M_" id="4zXRLIk6MHu" role="13z3hJ">
           <property role="TrG5h" value="firstName" />
-          <node concept="13yNan" id="bblaM$uyVz" role="2ik0Q0">
-            <node concept="13yPN0" id="bblaM$uyV$" role="2F1HV6" />
+          <node concept="13yNan" id="4zXRLIk6MHv" role="2ik0Q0">
+            <node concept="13yPN0" id="4zXRLIk6MHw" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="bblaM$uyV_" role="1157Rq">
+          <node concept="1y7Krt" id="4zXRLIk6MHx" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeM" resolve="Parent" />
             <ref role="355D3u" to="b6kg:57pZU2XSTf5" resolve="firstName" />
           </node>
         </node>
       </node>
-      <node concept="2ik0Md" id="bblaM$uyVA" role="13z3mo">
+      <node concept="2ik0Md" id="4zXRLIk6MHy" role="13z3mo">
         <property role="13z3e$" value="2.0.m.1Family" />
         <property role="13z3hU" value="Family" />
-        <node concept="pBohH" id="bblaM$uyVB" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MHz" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeH" resolve="Family" />
         </node>
-        <node concept="2ik0M_" id="bblaM$uyVC" role="13z3hJ">
+        <node concept="2ik0M_" id="4zXRLIk6MH$" role="13z3hJ">
           <property role="TrG5h" value="lastName" />
-          <node concept="13yNan" id="bblaM$uyVD" role="2ik0Q0">
-            <node concept="13yPN0" id="bblaM$uyVE" role="2F1HV6" />
+          <node concept="13yNan" id="4zXRLIk6MH_" role="2ik0Q0">
+            <node concept="13yPN0" id="4zXRLIk6MHA" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="bblaM$uyVF" role="1157Rq">
+          <node concept="1y7Krt" id="4zXRLIk6MHB" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeH" resolve="Family" />
             <ref role="355D3u" to="b6kg:1UHaC1cWigI" resolve="lastName" />
           </node>
         </node>
       </node>
-      <node concept="1jGXVw" id="bblaM$uyVH" role="13z3mp">
-        <property role="aCCiF" value="family" />
-        <ref role="13xwDP" node="bblaM$uyVw" />
-        <ref role="13xwDU" node="bblaM$uyVA" />
-        <node concept="2AKGPc" id="bblaM$uyVG" role="1vfT9s">
-          <ref role="359W_E" to="b6kg:57pZU2XSTeM" resolve="Parent" />
+      <node concept="1jGXVw" id="4zXRLIk6MHD" role="13z3mp">
+        <ref role="13xwDP" node="4zXRLIk6MHs" />
+        <ref role="13xwDU" node="4zXRLIk6MHy" />
+        <node concept="2AKGPc" id="4zXRLIk6MHC" role="1vfT9s">
           <ref role="359W_F" to="b6kg:57pZU2XSVbM" resolve="family" />
+          <ref role="359W_E" to="b6kg:57pZU2XSTeM" resolve="Parent" />
         </node>
       </node>
-      <node concept="1jGXVw" id="bblaM$uyVJ" role="13z3mp">
-        <property role="aCCiF" value="fathers" />
-        <ref role="13xwDP" node="bblaM$uyVA" />
-        <ref role="13xwDU" node="bblaM$uyVw" />
-        <node concept="2AKGPc" id="bblaM$uyVI" role="1vfT9s">
-          <ref role="359W_E" to="b6kg:57pZU2XSTeH" resolve="Family" />
+      <node concept="1jGXVw" id="4zXRLIk6MHF" role="13z3mp">
+        <ref role="13xwDP" node="4zXRLIk6MHy" />
+        <ref role="13xwDU" node="4zXRLIk6MHs" />
+        <node concept="2AKGPc" id="4zXRLIk6MHE" role="1vfT9s">
           <ref role="359W_F" to="b6kg:57pZU2XSTfp" resolve="fathers" />
+          <ref role="359W_E" to="b6kg:57pZU2XSTeH" resolve="Family" />
         </node>
       </node>
     </node>
-    <node concept="3GsvpM" id="bblaM$uyVK" role="2ik0Mo">
-      <node concept="1jGXXa" id="bblaM$uyVL" role="1jGXX7">
+    <node concept="3GsvpM" id="4zXRLIk6MHG" role="2ik0Mo">
+      <node concept="1jGXXa" id="4zXRLIk6MHH" role="1jGXX7">
         <property role="13z3e$" value="2.0.a.0Man" />
         <property role="13z3hU" value="Man" />
-        <node concept="pBohH" id="bblaM$uyVM" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MHI" role="pB8W9">
           <ref role="35c_gD" to="eh87:46cQNHkcdIG" resolve="Man" />
         </node>
-        <node concept="2ik0MC" id="bblaM$uyVN" role="2ik0MI">
+        <node concept="2ik0MC" id="4zXRLIk6MHJ" role="2ik0MI">
           <property role="TrG5h" value="fullName" />
-          <node concept="1y7Krt" id="bblaM$uyVO" role="1157Rj">
+          <node concept="1y7Krt" id="4zXRLIk6MHK" role="1157Rj">
             <ref role="355D3t" to="eh87:46cQNHkcdIG" resolve="Man" />
             <ref role="355D3u" to="eh87:46cQNHkcdIE" resolve="fullName" />
           </node>
-          <node concept="2ik0ME" id="bblaM$uyVP" role="2ik0MU">
-            <node concept="2ik0MF" id="bblaM$uyVQ" role="13yhA8">
-              <ref role="2ik0MN" node="bblaM$uyVy" resolve="firstName" />
+          <node concept="2ik0ME" id="4zXRLIk6MHL" role="2ik0MU">
+            <node concept="2ik0MF" id="4zXRLIk6MHM" role="13yhA8">
+              <ref role="2ik0MN" node="4zXRLIk6MHu" resolve="firstName" />
             </node>
-            <node concept="2ik0MF" id="bblaM$uyVR" role="13yhAc">
-              <ref role="2ik0MN" node="bblaM$uyVC" resolve="lastName" />
+            <node concept="2ik0MF" id="4zXRLIk6MHN" role="13yhAc">
+              <ref role="2ik0MN" node="4zXRLIk6MH$" resolve="lastName" />
             </node>
           </node>
         </node>

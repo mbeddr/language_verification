@@ -8,7 +8,6 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
         <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
@@ -25,7 +24,6 @@
       <concept id="2796321687635932085" name="transfverif.core.structure.Class" flags="ng" index="13z3hR">
         <property id="2796321687635932262" name="ID" index="13z3e$" />
         <property id="2796321687635932088" name="metamodelType" index="13z3hU" />
-        <property id="1408179134775268660" name="allowInheritance" index="17VOT2" />
         <child id="2459688670039252697" name="concept" index="pB8W9" />
       </concept>
       <concept id="3828633282163103597" name="transfverif.core.structure.BackwardLink" flags="ng" index="1jGXV2" />
@@ -64,101 +62,95 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="bblaM$uz17">
+  <node concept="1jGXXK" id="4zXRLIk6MN3">
     <property role="TrG5h" value="tworkersSolveRefCompanyParentCityTownHallPerson" />
     <property role="3GE5qa" value="transformation.15-tworkersSolveRef" />
-    <node concept="3GsvpN" id="bblaM$uz18" role="2ik0Mu">
-      <node concept="2ik0NV" id="bblaM$uz19" role="13z3mo">
+    <node concept="3GsvpN" id="4zXRLIk6MN4" role="2ik0Mu">
+      <node concept="2ik0NV" id="4zXRLIk6MN5" role="13z3mo">
         <property role="13z3e$" value="15.0.m.0Company" />
         <property role="13z3hU" value="Company" />
-        <node concept="pBohH" id="bblaM$uz1a" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MN6" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeF" resolve="Company" />
         </node>
       </node>
-      <node concept="2ik0NV" id="bblaM$uz1b" role="13z3mo">
+      <node concept="2ik0NV" id="4zXRLIk6MN7" role="13z3mo">
         <property role="13z3e$" value="15.0.m.1Parent" />
         <property role="13z3hU" value="Parent" />
-        <node concept="pBohH" id="bblaM$uz1c" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MN8" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeM" resolve="Parent" />
         </node>
       </node>
-      <node concept="2ik0NV" id="bblaM$uz1d" role="13z3mo">
+      <node concept="2ik0NV" id="4zXRLIk6MN9" role="13z3mo">
         <property role="13z3e$" value="15.0.m.2City" />
         <property role="13z3hU" value="City" />
-        <node concept="pBohH" id="bblaM$uz1e" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MNa" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeI" resolve="City" />
         </node>
       </node>
-      <node concept="1jGXVw" id="bblaM$uz1g" role="13z3mp">
-        <property role="aCCiF" value="employees" />
-        <ref role="13xwDP" node="bblaM$uz19" />
-        <ref role="13xwDU" node="bblaM$uz1b" />
-        <node concept="2AKGPc" id="bblaM$uz1f" role="1vfT9s">
-          <ref role="359W_E" to="b6kg:57pZU2XSTeF" resolve="Company" />
+      <node concept="1jGXVw" id="4zXRLIk6MNc" role="13z3mp">
+        <ref role="13xwDP" node="4zXRLIk6MN5" />
+        <ref role="13xwDU" node="4zXRLIk6MN7" />
+        <node concept="2AKGPc" id="4zXRLIk6MNb" role="1vfT9s">
           <ref role="359W_F" to="b6kg:7OSI$xj4vva" resolve="employees" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="bblaM$uz1i" role="13z3mp">
-        <property role="aCCiF" value="livesIn" />
-        <ref role="13xwDP" node="bblaM$uz1b" />
-        <ref role="13xwDU" node="bblaM$uz1d" />
-        <node concept="2AKGPc" id="bblaM$uz1h" role="1vfT9s">
-          <ref role="359W_E" to="b6kg:57pZU2XSTeM" resolve="Parent" />
-          <ref role="359W_F" to="b6kg:57pZU2XSVbO" resolve="livesIn" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="bblaM$uz1k" role="13z3mp">
-        <property role="aCCiF" value="companies" />
-        <ref role="13xwDP" node="bblaM$uz1d" />
-        <ref role="13xwDU" node="bblaM$uz19" />
-        <node concept="2AKGPc" id="bblaM$uz1j" role="1vfT9s">
-          <ref role="359W_E" to="b6kg:57pZU2XSTeI" resolve="City" />
-          <ref role="359W_F" to="b6kg:7OSI$xj4vv4" resolve="companies" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="bblaM$uz1m" role="13z3mp">
-        <property role="aCCiF" value="isIn" />
-        <ref role="13xwDP" node="bblaM$uz19" />
-        <ref role="13xwDU" node="bblaM$uz1d" />
-        <node concept="2AKGPc" id="bblaM$uz1l" role="1vfT9s">
           <ref role="359W_E" to="b6kg:57pZU2XSTeF" resolve="Company" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="4zXRLIk6MNe" role="13z3mp">
+        <ref role="13xwDP" node="4zXRLIk6MN7" />
+        <ref role="13xwDU" node="4zXRLIk6MN9" />
+        <node concept="2AKGPc" id="4zXRLIk6MNd" role="1vfT9s">
+          <ref role="359W_F" to="b6kg:57pZU2XSVbO" resolve="livesIn" />
+          <ref role="359W_E" to="b6kg:57pZU2XSTeM" resolve="Parent" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="4zXRLIk6MNg" role="13z3mp">
+        <ref role="13xwDP" node="4zXRLIk6MN9" />
+        <ref role="13xwDU" node="4zXRLIk6MN5" />
+        <node concept="2AKGPc" id="4zXRLIk6MNf" role="1vfT9s">
+          <ref role="359W_F" to="b6kg:7OSI$xj4vv4" resolve="companies" />
+          <ref role="359W_E" to="b6kg:57pZU2XSTeI" resolve="City" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="4zXRLIk6MNi" role="13z3mp">
+        <ref role="13xwDP" node="4zXRLIk6MN5" />
+        <ref role="13xwDU" node="4zXRLIk6MN9" />
+        <node concept="2AKGPc" id="4zXRLIk6MNh" role="1vfT9s">
           <ref role="359W_F" to="b6kg:7OSI$xj4vvg" resolve="isIn" />
+          <ref role="359W_E" to="b6kg:57pZU2XSTeF" resolve="Company" />
         </node>
       </node>
     </node>
-    <node concept="3GsvpM" id="bblaM$uz1n" role="2ik0Mo">
-      <node concept="1jGXXa" id="bblaM$uz1o" role="1jGXX7">
+    <node concept="3GsvpM" id="4zXRLIk6MNj" role="2ik0Mo">
+      <node concept="1jGXXa" id="4zXRLIk6MNk" role="1jGXX7">
         <property role="13z3e$" value="15.0.a.0TownHall" />
         <property role="13z3hU" value="TownHall" />
-        <node concept="pBohH" id="bblaM$uz1p" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MNl" role="pB8W9">
           <ref role="35c_gD" to="eh87:2EaowSc4lSU" resolve="TownHall" />
         </node>
       </node>
-      <node concept="1jGXXa" id="bblaM$uz1r" role="1jGXX7">
+      <node concept="1jGXXa" id="4zXRLIk6MNn" role="1jGXX7">
         <property role="13z3e$" value="15.0.a.1Person" />
         <property role="13z3hU" value="Person" />
-        <property role="17VOT2" value="true" />
-        <node concept="pBohH" id="bblaM$uz1s" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MNo" role="pB8W9">
           <ref role="35c_gD" to="eh87:46cQNHkcdID" resolve="Person" />
         </node>
       </node>
-      <node concept="1jGXVd" id="bblaM$uz1v" role="2ik0Ml">
-        <property role="aCCiF" value="workers" />
-        <ref role="13xwDP" node="bblaM$uz1o" />
-        <ref role="13xwDU" node="bblaM$uz1r" />
-        <node concept="2AKGPc" id="bblaM$uz1u" role="1vfT9s">
-          <ref role="359W_E" to="eh87:2EaowSc4lSU" resolve="TownHall" />
+      <node concept="1jGXVd" id="4zXRLIk6MNr" role="2ik0Ml">
+        <ref role="13xwDP" node="4zXRLIk6MNk" />
+        <ref role="13xwDU" node="4zXRLIk6MNn" />
+        <node concept="2AKGPc" id="4zXRLIk6MNq" role="1vfT9s">
           <ref role="359W_F" to="eh87:7OSI$xj4w2H" resolve="workers" />
+          <ref role="359W_E" to="eh87:2EaowSc4lSU" resolve="TownHall" />
         </node>
       </node>
     </node>
-    <node concept="1jGXV2" id="bblaM$uz1w" role="2udmAx">
-      <ref role="13xwDP" node="bblaM$uz1r" />
-      <ref role="13xwDU" node="bblaM$uz1b" />
+    <node concept="1jGXV2" id="4zXRLIk6MNs" role="2udmAx">
+      <ref role="13xwDP" node="4zXRLIk6MNn" />
+      <ref role="13xwDU" node="4zXRLIk6MN7" />
     </node>
-    <node concept="1jGXV2" id="bblaM$uz1x" role="2udmAx">
-      <ref role="13xwDP" node="bblaM$uz1o" />
-      <ref role="13xwDU" node="bblaM$uz1d" />
+    <node concept="1jGXV2" id="4zXRLIk6MNt" role="2udmAx">
+      <ref role="13xwDP" node="4zXRLIk6MNk" />
+      <ref role="13xwDU" node="4zXRLIk6MN9" />
     </node>
   </node>
 </model>

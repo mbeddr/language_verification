@@ -9,7 +9,6 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
         <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
@@ -95,92 +94,83 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="bblaM$uyXm">
+  <node concept="1jGXXK" id="4zXRLIk6MJi">
     <property role="TrG5h" value="City2TownHall" />
     <property role="3GE5qa" value="transformation.06-City2TownHall_CreationRule" />
-    <node concept="3GsvpN" id="bblaM$uyXn" role="2ik0Mu">
-      <node concept="2ik0NV" id="bblaM$uyXo" role="13z3mo">
+    <node concept="3GsvpN" id="4zXRLIk6MJj" role="2ik0Mu">
+      <node concept="2ik0NV" id="4zXRLIk6MJk" role="13z3mo">
         <property role="13z3e$" value="6.0.m.0City" />
         <property role="13z3hU" value="City" />
-        <node concept="pBohH" id="bblaM$uyXp" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MJl" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeI" resolve="City" />
         </node>
-        <node concept="2ik0M_" id="bblaM$uyXq" role="13z3hJ">
+        <node concept="2ik0M_" id="4zXRLIk6MJm" role="13z3hJ">
           <property role="TrG5h" value="name" />
-          <node concept="13yNan" id="bblaM$uyXr" role="2ik0Q0">
-            <node concept="13yPN0" id="bblaM$uyXs" role="2F1HV6" />
+          <node concept="13yNan" id="4zXRLIk6MJn" role="2ik0Q0">
+            <node concept="13yPN0" id="4zXRLIk6MJo" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="bblaM$uyXt" role="1157Rq">
+          <node concept="1y7Krt" id="4zXRLIk6MJp" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeI" resolve="City" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="3GsvpM" id="bblaM$uyXu" role="2ik0Mo">
-      <node concept="1jGXXa" id="bblaM$uyXv" role="1jGXX7">
+    <node concept="3GsvpM" id="4zXRLIk6MJq" role="2ik0Mo">
+      <node concept="1jGXXa" id="4zXRLIk6MJr" role="1jGXX7">
         <property role="13z3e$" value="6.0.a.0TownHall" />
         <property role="13z3hU" value="TownHall" />
-        <node concept="pBohH" id="bblaM$uyXw" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MJs" role="pB8W9">
           <ref role="35c_gD" to="eh87:2EaowSc4lSU" resolve="TownHall" />
         </node>
-        <node concept="2ik0MC" id="bblaM$uyXx" role="2ik0MI">
+        <node concept="2ik0MC" id="4zXRLIk6MJt" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="1y7Krt" id="bblaM$uyXy" role="1157Rj">
+          <node concept="1y7Krt" id="4zXRLIk6MJu" role="1157Rj">
             <ref role="355D3t" to="eh87:2EaowSc4lSU" resolve="TownHall" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
-          <node concept="2ik0ME" id="bblaM$uyXz" role="2ik0MU">
-            <node concept="2ik0MF" id="bblaM$uyX$" role="13yhA8">
-              <ref role="2ik0MN" node="bblaM$uyXq" resolve="name" />
+          <node concept="2ik0ME" id="4zXRLIk6MJv" role="2ik0MU">
+            <node concept="2ik0MF" id="4zXRLIk6MJw" role="13yhA8">
+              <ref role="2ik0MN" node="4zXRLIk6MJm" resolve="name" />
             </node>
-            <node concept="2ik0M$" id="bblaM$uyX_" role="13yhAc">
-              <node concept="2ik0MB" id="bblaM$uyXA" role="2ik0My">
+            <node concept="2ik0M$" id="4zXRLIk6MJx" role="13yhAc">
+              <node concept="2ik0MB" id="4zXRLIk6MJy" role="2ik0My">
                 <property role="2ik0Mw" value=" TownHall" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXXa" id="bblaM$uyXC" role="1jGXX7">
+      <node concept="1jGXXa" id="4zXRLIk6MJ$" role="1jGXX7">
         <property role="13z3e$" value="6.0.a.1Committee" />
         <property role="13z3hU" value="Committee" />
-        <node concept="pBohH" id="bblaM$uyXD" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MJ_" role="pB8W9">
           <ref role="35c_gD" to="eh87:1eaQRpkCugu" resolve="Committee" />
         </node>
-        <node concept="2ik0MC" id="bblaM$uyXE" role="2ik0MI">
+        <node concept="2ik0MC" id="4zXRLIk6MJA" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="1y7Krt" id="bblaM$uyXF" role="1157Rj">
+          <node concept="1y7Krt" id="4zXRLIk6MJB" role="1157Rj">
             <ref role="355D3t" to="eh87:1eaQRpkCugu" resolve="Committee" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
-          <node concept="2ik0ME" id="bblaM$uyXG" role="2ik0MU">
-            <node concept="2ik0MF" id="bblaM$uyXH" role="13yhA8">
-              <ref role="2ik0MN" node="bblaM$uyXq" resolve="name" />
+          <node concept="2ik0ME" id="4zXRLIk6MJC" role="2ik0MU">
+            <node concept="2ik0MF" id="4zXRLIk6MJD" role="13yhA8">
+              <ref role="2ik0MN" node="4zXRLIk6MJm" resolve="name" />
             </node>
-            <node concept="2ik0M$" id="bblaM$uyXI" role="13yhAc">
-              <node concept="2ik0MB" id="bblaM$uyXJ" role="2ik0My">
+            <node concept="2ik0M$" id="4zXRLIk6MJE" role="13yhAc">
+              <node concept="2ik0MB" id="4zXRLIk6MJF" role="2ik0My">
                 <property role="2ik0Mw" value=" TownHall Committee" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXVd" id="bblaM$uyXM" role="2ik0Ml">
-        <property role="aCCiF" value="committee" />
-        <ref role="13xwDP" node="bblaM$uyXv" />
-        <ref role="13xwDU" node="bblaM$uyXC" />
-        <node concept="2AKGPc" id="bblaM$uyXL" role="1vfT9s">
-          <ref role="359W_E" to="eh87:2EaowSc4lSU" resolve="TownHall" />
+      <node concept="1jGXVd" id="4zXRLIk6MJI" role="2ik0Ml">
+        <ref role="13xwDP" node="4zXRLIk6MJr" />
+        <ref role="13xwDU" node="4zXRLIk6MJ$" />
+        <node concept="2AKGPc" id="4zXRLIk6MJH" role="1vfT9s">
           <ref role="359W_F" to="eh87:1eaQRpkCugr" resolve="committee" />
-        </node>
-      </node>
-      <node concept="1jGXVd" id="10HNW9P2QX6" role="2ik0Ml">
-        <ref role="13xwDP" node="bblaM$uyXC" />
-        <ref role="13xwDU" node="bblaM$uyXv" />
-        <node concept="2AKGPc" id="10HNW9P2QX7" role="1vfT9s">
-          <ref role="359W_E" to="eh87:1eaQRpkCugu" resolve="Committee" />
-          <ref role="359W_F" to="eh87:3e_V7IvrHps" resolve="townHalls" />
+          <ref role="359W_E" to="eh87:2EaowSc4lSU" resolve="TownHall" />
         </node>
       </node>
     </node>

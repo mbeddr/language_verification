@@ -70,43 +70,43 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="bblaM$uyVj">
+  <node concept="1jGXXK" id="4zXRLIk6MHf">
     <property role="TrG5h" value="Country2Community" />
     <property role="3GE5qa" value="transformation.01-Country2Community_CreationRule" />
-    <node concept="3GsvpN" id="bblaM$uyVk" role="2ik0Mu">
-      <node concept="2ik0NV" id="bblaM$uyVl" role="13z3mo">
+    <node concept="3GsvpN" id="4zXRLIk6MHg" role="2ik0Mu">
+      <node concept="2ik0NV" id="4zXRLIk6MHh" role="13z3mo">
         <property role="13z3e$" value="1.0.m.0Country" />
         <property role="13z3hU" value="Country" />
-        <node concept="2ik0M_" id="bblaM$xgX9" role="13z3hJ">
-          <property role="TrG5h" value="MatchAttributea740d844" />
-          <node concept="13yNan" id="bblaM$xgXd" role="2ik0Q0">
-            <node concept="13yPN0" id="bblaM$xgXj" role="2F1HV6" />
-          </node>
-          <node concept="1y7Krt" id="bblaM$xgXm" role="1157Rq">
+        <node concept="2ik0M_" id="4zXRLIk6Ns7" role="13z3hJ">
+          <property role="TrG5h" value="CountryName" />
+          <node concept="1y7Krt" id="4zXRLIk6Ns8" role="1157Rq">
             <ref role="355D3t" to="b6kg:57pZU2XSTeG" resolve="Country" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
+          <node concept="13yNan" id="4zXRLIk6Nsj" role="2ik0Q0">
+            <node concept="13yPN0" id="4zXRLIk6Nsp" role="2F1HV6" />
+          </node>
         </node>
-        <node concept="pBohH" id="bblaM$uyVm" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MHi" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeG" resolve="Country" />
         </node>
       </node>
     </node>
-    <node concept="3GsvpM" id="bblaM$uyVn" role="2ik0Mo">
-      <node concept="1jGXXa" id="bblaM$uyVo" role="1jGXX7">
+    <node concept="3GsvpM" id="4zXRLIk6MHj" role="2ik0Mo">
+      <node concept="1jGXXa" id="4zXRLIk6MHk" role="1jGXX7">
         <property role="13z3e$" value="1.0.a.0Community" />
         <property role="13z3hU" value="Community" />
-        <node concept="2ik0MC" id="bblaM$xgXx" role="2ik0MI">
-          <property role="TrG5h" value="ApplyAttribute2c53e44b" />
-          <node concept="2ik0MF" id="bblaM$xgX_" role="2ik0MU">
-            <ref role="2ik0MN" node="bblaM$xgX9" resolve="MatchAttributea740d844" />
-          </node>
-          <node concept="1y7Krt" id="bblaM$xgXC" role="1157Rj">
+        <node concept="2ik0MC" id="4zXRLIk6NrY" role="2ik0MI">
+          <property role="TrG5h" value="CommunityName" />
+          <node concept="1y7Krt" id="4zXRLIk6NrZ" role="1157Rj">
             <ref role="355D3t" to="eh87:2EaowSc4lST" resolve="Community" />
             <ref role="355D3u" to="tpck:h0TrG11" resolve="name" />
           </node>
+          <node concept="2ik0MF" id="4zXRLIk6Nsv" role="2ik0MU">
+            <ref role="2ik0MN" node="4zXRLIk6Ns7" resolve="CountryName" />
+          </node>
         </node>
-        <node concept="pBohH" id="bblaM$uyVp" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MHl" role="pB8W9">
           <ref role="35c_gD" to="eh87:2EaowSc4lST" resolve="Community" />
         </node>
       </node>

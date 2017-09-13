@@ -8,7 +8,6 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
         <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
@@ -63,47 +62,46 @@
       </concept>
     </language>
   </registry>
-  <node concept="2ik09W" id="bblaM$uza3">
+  <node concept="2ik09W" id="4zXRLIk6MV5">
     <property role="TrG5h" value="Pos_TownHallComm" />
     <property role="3GE5qa" value="contracts" />
-    <node concept="aREg_" id="bblaM$uza5" role="aREgB">
-      <node concept="2ik0NV" id="bblaM$uza7" role="13z3mo">
+    <node concept="aREg_" id="4zXRLIk6MV7" role="aREgB">
+      <node concept="2ik0NV" id="4zXRLIk6MV9" role="13z3mo">
         <property role="13z3e$" value="0.10.m.0City" />
         <property role="13z3hU" value="City" />
-        <node concept="pBohH" id="bblaM$uza8" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MVa" role="pB8W9">
           <ref role="35c_gD" to="b6kg:57pZU2XSTeI" resolve="City" />
         </node>
       </node>
     </node>
-    <node concept="aREgA" id="bblaM$uza6" role="aREgT">
-      <node concept="1jGXXa" id="bblaM$uza9" role="1jGXX7">
+    <node concept="aREgA" id="4zXRLIk6MV8" role="aREgT">
+      <node concept="1jGXXa" id="4zXRLIk6MVb" role="1jGXX7">
         <property role="13z3e$" value="0.10.a.0TownHall" />
         <property role="13z3hU" value="TownHall" />
-        <node concept="pBohH" id="bblaM$uzaa" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MVc" role="pB8W9">
           <ref role="35c_gD" to="eh87:2EaowSc4lSU" resolve="TownHall" />
         </node>
       </node>
-      <node concept="1jGXXa" id="bblaM$uzab" role="1jGXX7">
+      <node concept="1jGXXa" id="4zXRLIk6MVd" role="1jGXX7">
         <property role="13z3e$" value="0.10.a.1Committee" />
         <property role="13z3hU" value="Committee" />
-        <node concept="pBohH" id="bblaM$uzac" role="pB8W9">
+        <node concept="pBohH" id="4zXRLIk6MVe" role="pB8W9">
           <ref role="35c_gD" to="eh87:1eaQRpkCugu" resolve="Committee" />
         </node>
       </node>
-      <node concept="1jGXVd" id="bblaM$uzae" role="2ik0Ml">
-        <property role="aCCiF" value="committee" />
-        <ref role="13xwDP" node="bblaM$uza9" />
-        <ref role="13xwDU" node="bblaM$uzab" />
-        <node concept="2AKGPc" id="bblaM$uzad" role="1vfT9s">
-          <ref role="359W_E" to="eh87:2EaowSc4lSU" resolve="TownHall" />
+      <node concept="1jGXVd" id="4zXRLIk6MVg" role="2ik0Ml">
+        <ref role="13xwDP" node="4zXRLIk6MVb" />
+        <ref role="13xwDU" node="4zXRLIk6MVd" />
+        <node concept="2AKGPc" id="4zXRLIk6MVf" role="1vfT9s">
           <ref role="359W_F" to="eh87:1eaQRpkCugr" resolve="committee" />
+          <ref role="359W_E" to="eh87:2EaowSc4lSU" resolve="TownHall" />
         </node>
       </node>
     </node>
-    <node concept="2lmX6V" id="bblaM$uzag" role="aREgW">
+    <node concept="2lmX6V" id="4zXRLIk6MVi" role="aREgW">
       <property role="2lmXag" value="false" />
-      <ref role="13xwDP" node="bblaM$uza9" />
-      <ref role="13xwDU" node="bblaM$uza7" />
+      <ref role="13xwDP" node="4zXRLIk6MVb" />
+      <ref role="13xwDU" node="4zXRLIk6MV9" />
     </node>
   </node>
 </model>
