@@ -118,20 +118,14 @@
       <node concept="1v6VTO" id="4zXRLIk6MJJ" role="1jGXV4">
         <ref role="1v6VTP" node="4zXRLIk6MJi" resolve="City2TownHall" />
       </node>
-    </node>
-    <node concept="1jGXV7" id="4zXRLIk6MJK" role="3k6lfD">
-      <property role="TrG5h" value="CityCompany2Association_CreationRule" />
-      <node concept="1jGXVs" id="4zXRLIk6MJL" role="1o0q1e">
-        <ref role="3k6leo" node="4zXRLIk6MJg" resolve="City2TownHall_CreationRule" />
-      </node>
       <node concept="1v6VTO" id="4zXRLIk6MKd" role="1jGXV4">
         <ref role="1v6VTP" node="4zXRLIk6MJM" resolve="CityCompany2Association" />
       </node>
     </node>
     <node concept="1jGXV7" id="4zXRLIk6MKe" role="3k6lfD">
       <property role="TrG5h" value="Neighborhood2District_CreationRule" />
-      <node concept="1jGXVs" id="4zXRLIk6MKf" role="1o0q1e">
-        <ref role="3k6leo" node="4zXRLIk6MJK" resolve="CityCompany2Association_CreationRule" />
+      <node concept="1jGXVs" id="4zXRLIk6NVh" role="1o0q1e">
+        <ref role="3k6leo" node="4zXRLIk6MJg" resolve="City2TownHall_CreationRule" />
       </node>
       <node concept="1v6VTO" id="4zXRLIk6MKz" role="1jGXV4">
         <ref role="1v6VTP" node="4zXRLIk6MKg" resolve="Neighborhood2District" />
@@ -181,20 +175,17 @@
       <node concept="1v6VTO" id="4zXRLIk6MMx" role="1jGXV4">
         <ref role="1v6VTP" node="4zXRLIk6MMe" resolve="cotownHallsSolveRefCountryCityCommunityTownHall" />
       </node>
-    </node>
-    <node concept="1jGXV7" id="4zXRLIk6MMy" role="3k6lfD">
-      <property role="TrG5h" value="coassociationsSolveRef" />
-      <node concept="1jGXVs" id="4zXRLIk6MMz" role="1o0q1e">
-        <ref role="3k6leo" node="4zXRLIk6MMc" resolve="cotownHallsSolveRef" />
-      </node>
       <node concept="1v6VTO" id="4zXRLIk6MN0" role="1jGXV4">
         <ref role="1v6VTP" node="4zXRLIk6MM$" resolve="coassociationsSolveRefCountryCityCompanyCommunityAssociation" />
+      </node>
+      <node concept="1v6VTO" id="4zXRLIk6MOd" role="1jGXV4">
+        <ref role="1v6VTP" node="4zXRLIk6MNR" resolve="acommitteeSolveRefCompanyCityAssociationCommittee" />
       </node>
     </node>
     <node concept="1jGXV7" id="4zXRLIk6MN1" role="3k6lfD">
       <property role="TrG5h" value="tworkersSolveRef" />
-      <node concept="1jGXVs" id="4zXRLIk6MN2" role="1o0q1e">
-        <ref role="3k6leo" node="4zXRLIk6MMy" resolve="coassociationsSolveRef" />
+      <node concept="1jGXVs" id="4zXRLIk6NU2" role="1o0q1e">
+        <ref role="3k6leo" node="4zXRLIk6MMc" resolve="cotownHallsSolveRef" />
       </node>
       <node concept="1v6VTO" id="4zXRLIk6MNu" role="1jGXV4">
         <ref role="1v6VTP" node="4zXRLIk6MN3" resolve="tworkersSolveRefCompanyParentCityTownHallPerson" />
@@ -209,19 +200,10 @@
         <ref role="1v6VTP" node="4zXRLIk6MNx" resolve="tdistrictsSolveRefCityNeighborhoodTownHallDistrict" />
       </node>
     </node>
-    <node concept="1jGXV7" id="4zXRLIk6MNP" role="3k6lfD">
-      <property role="TrG5h" value="acommitteeSolveRef" />
-      <node concept="1jGXVs" id="4zXRLIk6MNQ" role="1o0q1e">
-        <ref role="3k6leo" node="4zXRLIk6MNv" resolve="tdistrictsSolveRef" />
-      </node>
-      <node concept="1v6VTO" id="4zXRLIk6MOd" role="1jGXV4">
-        <ref role="1v6VTP" node="4zXRLIk6MNR" resolve="acommitteeSolveRefCompanyCityAssociationCommittee" />
-      </node>
-    </node>
     <node concept="1jGXV7" id="4zXRLIk6MOe" role="3k6lfD">
       <property role="TrG5h" value="dfacilitiesSolveRef" />
-      <node concept="1jGXVs" id="4zXRLIk6MOf" role="1o0q1e">
-        <ref role="3k6leo" node="4zXRLIk6MNP" resolve="acommitteeSolveRef" />
+      <node concept="1jGXVs" id="4zXRLIk6NT8" role="1o0q1e">
+        <ref role="3k6leo" node="4zXRLIk6MNv" resolve="tdistrictsSolveRef" />
       </node>
       <node concept="1v6VTO" id="4zXRLIk6MOW" role="1jGXV4">
         <ref role="1v6VTP" node="4zXRLIk6MOg" resolve="dfacilitiesSolveRefNeighborhoodSchoolServiceChildDistrictOrdinaryFacilityPerson" />

@@ -66,7 +66,7 @@
       <ref role="1NTnwO" node="4zXRLIk6MSx" resolve="Pos_ChildSchool" />
     </node>
     <node concept="1NTnwR" id="4zXRLIk6MSU" role="2ik09Z">
-      <ref role="1NTnwO" node="4zXRLIk6MST" resolve="Pos_DaughterMother" />
+      <ref role="1NTnwO" node="4zXRLIk6MST" resolve="Neg_DaughterMother" />
     </node>
     <node concept="1NTnwR" id="4zXRLIk6MTc" role="2ik09Z">
       <ref role="1NTnwO" node="4zXRLIk6MTb" resolve="Pos_FourMembers" />
