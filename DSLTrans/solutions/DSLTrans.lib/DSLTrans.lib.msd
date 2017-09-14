@@ -4,7 +4,7 @@
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="dsltrans_engine.jar" />
     </modelRoot>
-    <modelRoot contentPath="${mps_home}/lib" type="java_classes">
+    <modelRoot contentPath="${platform_lib}" type="java_classes">
       <sourceRoot location="mps-editor-runtime.jar" />
     </modelRoot>
   </models>
