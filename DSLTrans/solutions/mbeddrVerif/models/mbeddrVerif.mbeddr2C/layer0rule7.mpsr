@@ -8,7 +8,6 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
         <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
@@ -96,89 +95,88 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="6B2mdJKjRkj">
+  <node concept="1jGXXK" id="2wkftwbtHV9">
     <property role="TrG5h" value="layer0rule7" />
     <property role="3GE5qa" value="transformation.01-layer0" />
-    <node concept="3GsvpN" id="6B2mdJKjRkk" role="2ik0Mu">
-      <node concept="2ik0NV" id="6B2mdJKjRkl" role="13z3mo">
+    <node concept="3GsvpN" id="2wkftwbtHVa" role="2ik0Mu">
+      <node concept="2ik0NV" id="2wkftwbtHVb" role="13z3mo">
         <property role="13z3e$" value="layer0rule7class0AtomicComponent" />
         <property role="13z3hU" value="AtomicComponent" />
-        <node concept="pBohH" id="6B2mdJKjRkm" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtHVc" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5ghT" resolve="AtomicComponent" />
         </node>
-        <node concept="2ik0M_" id="6B2mdJKjRkn" role="13z3hJ">
+        <node concept="2ik0M_" id="2wkftwbtHVd" role="13z3hJ">
           <property role="TrG5h" value="name" />
-          <node concept="13yNan" id="6B2mdJKjRko" role="2ik0Q0">
-            <node concept="13yPN0" id="6B2mdJKjRkp" role="2F1HV6" />
+          <node concept="13yNan" id="2wkftwbtHVe" role="2ik0Q0">
+            <node concept="13yPN0" id="2wkftwbtHVf" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="6B2mdJKjRkq" role="1157Rq">
+          <node concept="1y7Krt" id="2wkftwbtHVg" role="1157Rq">
             <ref role="355D3t" to="d81c:3ZmgaQ5ghT" resolve="AtomicComponent" />
             <ref role="355D3u" to="d81c:3ZmgaQ5gj7" resolve="name" />
           </node>
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRkr" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtHVh" role="13z3mo">
         <property role="13z3e$" value="layer0rule7class1ImplementationModule" />
         <property role="13z3hU" value="ImplementationModule" />
-        <node concept="pBohH" id="6B2mdJKjRks" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtHVi" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5ghE" resolve="ImplementationModule" />
         </node>
-        <node concept="2ik0M_" id="6B2mdJKjRkt" role="13z3hJ">
+        <node concept="2ik0M_" id="2wkftwbtHVj" role="13z3hJ">
           <property role="TrG5h" value="name" />
-          <node concept="13yNan" id="6B2mdJKjRku" role="2ik0Q0">
-            <node concept="13yPN0" id="6B2mdJKjRkv" role="2F1HV6" />
+          <node concept="13yNan" id="2wkftwbtHVk" role="2ik0Q0">
+            <node concept="13yPN0" id="2wkftwbtHVl" role="2F1HV6" />
           </node>
-          <node concept="1y7Krt" id="6B2mdJKjRkw" role="1157Rq">
+          <node concept="1y7Krt" id="2wkftwbtHVm" role="1157Rq">
             <ref role="355D3t" to="d81c:3ZmgaQ5ghE" resolve="ImplementationModule" />
             <ref role="355D3u" to="d81c:3ZmgaQ5gj7" resolve="name" />
           </node>
         </node>
       </node>
-      <node concept="1jGXVw" id="6B2mdJKjRky" role="13z3mp">
-        <property role="aCCiF" value="contents" />
-        <ref role="13xwDP" node="6B2mdJKjRkr" />
-        <ref role="13xwDU" node="6B2mdJKjRkl" />
-        <node concept="2AKGPc" id="6B2mdJKjRkx" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5ghE" resolve="ImplementationModule" />
+      <node concept="1jGXVw" id="2wkftwbtHVo" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtHVh" />
+        <ref role="13xwDU" node="2wkftwbtHVb" />
+        <node concept="2AKGPc" id="2wkftwbtHVn" role="1vfT9s">
           <ref role="359W_F" to="d81c:3ZmgaQ5giR" resolve="contents" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5ghE" resolve="ImplementationModule" />
         </node>
       </node>
     </node>
-    <node concept="3GsvpM" id="6B2mdJKjRkz" role="2ik0Mo">
-      <node concept="1jGXXa" id="6B2mdJKjRk$" role="1jGXX7">
+    <node concept="3GsvpM" id="2wkftwbtHVp" role="2ik0Mo">
+      <node concept="1jGXXa" id="2wkftwbtHVq" role="1jGXX7">
         <property role="13z3e$" value="layer0rule7class2StructDeclaration" />
         <property role="13z3hU" value="StructDeclaration" />
-        <node concept="pBohH" id="6B2mdJKjRk_" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtHVr" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
         </node>
-        <node concept="2ik0MC" id="6B2mdJKjRkA" role="2ik0MI">
+        <node concept="2ik0MC" id="2wkftwbtHVs" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="1y7Krt" id="6B2mdJKjRkB" role="1157Rj">
+          <node concept="1y7Krt" id="2wkftwbtHVt" role="1157Rj">
             <ref role="355D3t" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
             <ref role="355D3u" to="yn5m:3ZmgaQ53n0" resolve="name" />
           </node>
-          <node concept="2ik0ME" id="6B2mdJKjRkC" role="2ik0MU">
-            <node concept="2ik0MF" id="6B2mdJKjRkD" role="13yhA8">
-              <ref role="2ik0MN" node="6B2mdJKjRkt" resolve="name" />
+          <node concept="2ik0ME" id="2wkftwbtHVu" role="2ik0MU">
+            <node concept="2ik0MF" id="2wkftwbtHVv" role="13yhA8">
+              <ref role="2ik0MN" node="2wkftwbtHVj" resolve="name" />
             </node>
-            <node concept="2ik0ME" id="6B2mdJKjRkE" role="13yhAc">
-              <node concept="2ik0M$" id="6B2mdJKjRkF" role="13yhA8">
-                <node concept="2ik0MB" id="6B2mdJKjRkG" role="2ik0My">
+            <node concept="2ik0ME" id="2wkftwbtHVw" role="13yhAc">
+              <node concept="2ik0M$" id="2wkftwbtHVx" role="13yhA8">
+                <node concept="2ik0MB" id="2wkftwbtHVy" role="2ik0My">
                   <property role="2ik0Mw" value="_" />
                 </node>
               </node>
-              <node concept="2ik0ME" id="6B2mdJKjRkH" role="13yhAc">
-                <node concept="2ik0MF" id="6B2mdJKjRkI" role="13yhA8">
-                  <ref role="2ik0MN" node="6B2mdJKjRkn" resolve="name" />
+              <node concept="2ik0ME" id="2wkftwbtHVz" role="13yhAc">
+                <node concept="2ik0MF" id="2wkftwbtHV$" role="13yhA8">
+                  <ref role="2ik0MN" node="2wkftwbtHVd" resolve="name" />
                 </node>
-                <node concept="2ik0ME" id="6B2mdJKjRkJ" role="13yhAc">
-                  <node concept="2ik0M$" id="6B2mdJKjRkK" role="13yhA8">
-                    <node concept="2ik0MB" id="6B2mdJKjRkL" role="2ik0My">
+                <node concept="2ik0ME" id="2wkftwbtHV_" role="13yhAc">
+                  <node concept="2ik0M$" id="2wkftwbtHVA" role="13yhA8">
+                    <node concept="2ik0MB" id="2wkftwbtHVB" role="2ik0My">
                       <property role="2ik0Mw" value="__" />
                     </node>
                   </node>
-                  <node concept="2ik0M$" id="6B2mdJKjRkM" role="13yhAc">
-                    <node concept="2ik0MB" id="6B2mdJKjRkN" role="2ik0My">
+                  <node concept="2ik0M$" id="2wkftwbtHVC" role="13yhAc">
+                    <node concept="2ik0MB" id="2wkftwbtHVD" role="2ik0My">
                       <property role="2ik0Mw" value="cdata" />
                     </node>
                   </node>
@@ -188,48 +186,46 @@
           </node>
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRkO" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtHVF" role="1jGXX7">
         <property role="13z3e$" value="layer0rule7class3Member" />
         <property role="13z3hU" value="Member" />
-        <node concept="pBohH" id="6B2mdJKjRkP" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtHVG" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53m9" resolve="Member" />
         </node>
-        <node concept="2ik0MC" id="6B2mdJKjRkQ" role="2ik0MI">
+        <node concept="2ik0MC" id="2wkftwbtHVH" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="1y7Krt" id="6B2mdJKjRkR" role="1157Rj">
+          <node concept="1y7Krt" id="2wkftwbtHVI" role="1157Rj">
             <ref role="355D3t" to="yn5m:3ZmgaQ53m9" resolve="Member" />
             <ref role="355D3u" to="yn5m:3ZmgaQ53n0" resolve="name" />
           </node>
-          <node concept="2ik0M$" id="6B2mdJKjRkS" role="2ik0MU">
-            <node concept="2ik0MB" id="6B2mdJKjRkT" role="2ik0My">
+          <node concept="2ik0M$" id="2wkftwbtHVJ" role="2ik0MU">
+            <node concept="2ik0MB" id="2wkftwbtHVK" role="2ik0My">
               <property role="2ik0Mw" value="aMemberSoTheStructIsNotEmpty" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRkU" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtHVL" role="1jGXX7">
         <property role="13z3e$" value="layer0rule7class4Int32Type" />
         <property role="13z3hU" value="Int32Type" />
-        <node concept="pBohH" id="6B2mdJKjRkV" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtHVM" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53lZ" resolve="Int32Type" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRkX" role="2ik0Ml">
-        <property role="aCCiF" value="members" />
-        <ref role="13xwDP" node="6B2mdJKjRk$" />
-        <ref role="13xwDU" node="6B2mdJKjRkO" />
-        <node concept="2AKGPc" id="6B2mdJKjRkW" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
+      <node concept="1jGXVd" id="2wkftwbtHVO" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtHVq" />
+        <ref role="13xwDU" node="2wkftwbtHVF" />
+        <node concept="2AKGPc" id="2wkftwbtHVN" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nf" resolve="members" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRkZ" role="2ik0Ml">
-        <property role="aCCiF" value="type" />
-        <ref role="13xwDP" node="6B2mdJKjRkO" />
-        <ref role="13xwDU" node="6B2mdJKjRkU" />
-        <node concept="2AKGPc" id="6B2mdJKjRkY" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53m9" resolve="Member" />
+      <node concept="1jGXVd" id="2wkftwbtHVQ" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtHVF" />
+        <ref role="13xwDU" node="2wkftwbtHVL" />
+        <node concept="2AKGPc" id="2wkftwbtHVP" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53n1" resolve="type" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53m9" resolve="Member" />
         </node>
       </node>
     </node>

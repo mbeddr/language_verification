@@ -21,7 +21,7 @@
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
@@ -35,23 +35,35 @@
       </concept>
     </language>
   </registry>
-  <node concept="2ik09X" id="6B2mdJKjRi3">
+  <node concept="2ik09X" id="2wkftwbtHSS">
     <property role="3GE5qa" value="contracts" />
     <property role="TrG5h" value="mbeddr2C_optimized_blinksContracts" />
-    <node concept="pHN19" id="6B2mdJKjRi4" role="1y7jxr">
-      <node concept="2V$Bhx" id="6B2mdJKjRi5" role="2V$M_3">
+    <node concept="pHN19" id="2wkftwbtHST" role="1y7jxr">
+      <node concept="2V$Bhx" id="2wkftwbtHSU" role="2V$M_3">
         <property role="2V$B1T" value="51863a59-6a4f-4b17-bcd7-fa1c4098852f" />
         <property role="2V$B1Q" value="Module" />
       </node>
     </node>
-    <node concept="pHN19" id="6B2mdJKjRi6" role="1y7jx4">
-      <node concept="2V$Bhx" id="6B2mdJKjRi7" role="2V$M_3">
+    <node concept="pHN19" id="2wkftwbtHSV" role="1y7jx4">
+      <node concept="2V$Bhx" id="2wkftwbtHSW" role="2V$M_3">
         <property role="2V$B1T" value="fa60053e-0db8-4831-b11d-d5b8f6d2e5c5" />
         <property role="2V$B1Q" value="C" />
       </node>
     </node>
-    <node concept="1NTnwR" id="6RB1Vty8PzV" role="2ik09Z">
-      <ref role="1NTnwO" node="6B2mdJKjRJx" resolve="AssignmentInstance1" />
+    <node concept="1NTnwR" id="2wkftwbtImN" role="2ik09Z">
+      <ref role="1NTnwO" node="2wkftwbtImM" resolve="AssignmentInstance" />
+    </node>
+    <node concept="1NTnwR" id="2wkftwbtIoL" role="2ik09Z">
+      <ref role="1NTnwO" node="2wkftwbtIoK" resolve="AssignmentInstance" />
+    </node>
+    <node concept="1NTnwR" id="2wkftwbtIqJ" role="2ik09Z">
+      <ref role="1NTnwO" node="2wkftwbtIqI" resolve="AssignmentInstance" />
+    </node>
+    <node concept="1NTnwR" id="2wkftwbtIu3" role="2ik09Z">
+      <ref role="1NTnwO" node="2wkftwbtIu2" resolve="Simpler" />
+    </node>
+    <node concept="1NTnwR" id="2wkftwbtIvL" role="2ik09Z">
+      <ref role="1NTnwO" node="2wkftwbtIvK" resolve="VerySimple" />
     </node>
   </node>
 </model>

@@ -13,9 +13,9 @@
     <import index="70if" ref="r:9109930e-6a35-42eb-9296-670068affeb2(DSLTrans.behavior)" implicit="true" />
     <import index="gnwr" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans(DSLTrans.lib/)" implicit="true" />
     <import index="8062" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.transformer.exceptions(DSLTrans.lib/)" implicit="true" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
     <import index="g6ag" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.transformer(DSLTrans.lib/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" implicit="true" />
     <import index="pe7c" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltransEngine.model(DSLTrans.lib/)" implicit="true" />
   </imports>
   <registry>
@@ -843,6 +843,26 @@
               </node>
             </node>
             <node concept="3clFbS" id="2GbRIwA6KIi" role="TDEfX">
+              <node concept="3clFbF" id="3TA$43Fv8yy" role="3cqZAp">
+                <node concept="2YIFZM" id="3TA$43Fv8DE" role="3clFbG">
+                  <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                  <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                  <node concept="10Nm6u" id="3TA$43Fv8VN" role="37wK5m" />
+                  <node concept="3cpWs3" id="3TA$43Fv9Xz" role="37wK5m">
+                    <node concept="2OqwBi" id="3TA$43FvahY" role="3uHU7w">
+                      <node concept="37vLTw" id="3TA$43Fva2B" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2GbRIwA6KIe" resolve="ex" />
+                      </node>
+                      <node concept="liA8E" id="3TA$43FvaWA" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="3TA$43Fv8W9" role="3uHU7B">
+                      <property role="Xl_RC" value="Error: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="4eDb$ET0ho7" role="3cqZAp">
                 <node concept="2OqwBi" id="4eDb$ET0h_O" role="3clFbG">
                   <node concept="37vLTw" id="4eDb$ET0ho5" role="2Oq$k0">
@@ -853,6 +873,7 @@
                   </node>
                 </node>
               </node>
+              <node concept="3cpWs6" id="3TA$43FweQ1" role="3cqZAp" />
             </node>
           </node>
         </node>

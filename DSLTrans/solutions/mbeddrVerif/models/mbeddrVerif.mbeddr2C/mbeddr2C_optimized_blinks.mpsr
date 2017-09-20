@@ -29,7 +29,7 @@
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
         <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
@@ -43,191 +43,203 @@
       </concept>
     </language>
   </registry>
-  <node concept="3k6lfM" id="6B2mdJKjRhY">
+  <node concept="3k6lfM" id="2wkftwbtHSN">
     <property role="TrG5h" value="mbeddr2C_optimized_blinks" />
     <property role="3GE5qa" value="transformation" />
-    <ref role="ET12P" node="6B2mdJKjRi3" resolve="mbeddr2C_optimized_blinksContracts" />
-    <node concept="pHN19" id="6B2mdJKjRhZ" role="1y7jxr">
-      <node concept="2V$Bhx" id="6B2mdJKjRi0" role="2V$M_3">
+    <ref role="ET12P" node="2wkftwbtHSS" resolve="mbeddr2C_optimized_blinksContracts" />
+    <node concept="pHN19" id="2wkftwbtHSO" role="1y7jxr">
+      <node concept="2V$Bhx" id="2wkftwbtHSP" role="2V$M_3">
         <property role="2V$B1T" value="51863a59-6a4f-4b17-bcd7-fa1c4098852f" />
         <property role="2V$B1Q" value="Module" />
       </node>
     </node>
-    <node concept="pHN19" id="6B2mdJKjRi1" role="1y7jx4">
-      <node concept="2V$Bhx" id="6B2mdJKjRi2" role="2V$M_3">
+    <node concept="pHN19" id="2wkftwbtHSQ" role="1y7jx4">
+      <node concept="2V$Bhx" id="2wkftwbtHSR" role="2V$M_3">
         <property role="2V$B1T" value="fa60053e-0db8-4831-b11d-d5b8f6d2e5c5" />
         <property role="2V$B1Q" value="C" />
       </node>
     </node>
-    <node concept="1jGXV7" id="6B2mdJKjRi8" role="3k6lfD">
+    <node concept="1jGXV7" id="2wkftwbtHSX" role="3k6lfD">
       <property role="TrG5h" value="layer0" />
-      <node concept="1v6VTO" id="6B2mdJKjRio" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRi9" resolve="layer0rule0" />
+      <node concept="1v6VTO" id="2wkftwbtHTd" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHSY" resolve="layer0rule0" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRiV" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRip" resolve="layer0rule1" />
+      <node concept="1v6VTO" id="2wkftwbtHTK" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHTe" resolve="layer0rule1" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRjp" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRiW" resolve="layer0rule2" />
+      <node concept="1v6VTO" id="2wkftwbtHUe" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHTL" resolve="layer0rule2" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRjy" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRjq" resolve="layer0rule3" />
+      <node concept="1v6VTO" id="2wkftwbtHUn" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHUf" resolve="layer0rule3" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRjF" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRjz" resolve="layer0rule4" />
+      <node concept="1v6VTO" id="2wkftwbtHUw" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHUo" resolve="layer0rule4" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRki" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRjG" resolve="layer0rule6" />
+      <node concept="1v6VTO" id="2wkftwbtHV8" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHUx" resolve="layer0rule6" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRl0" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRkj" resolve="layer0rule7" />
+      <node concept="1v6VTO" id="2wkftwbtHVR" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHV9" resolve="layer0rule7" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRlB" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRl1" resolve="layer0rule8" />
+      <node concept="1v6VTO" id="2wkftwbtHWv" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHVS" resolve="layer0rule8" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRm1" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRlC" resolve="layer0rule9" />
+      <node concept="1v6VTO" id="2wkftwbtHWU" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHWw" resolve="layer0rule9" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRmj" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRm2" resolve="layer0rule10" />
+      <node concept="1v6VTO" id="2wkftwbtHXd" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHWV" resolve="layer0rule10" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRnd" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRmk" resolve="layer0rule11" />
+      <node concept="1v6VTO" id="2wkftwbtHY8" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHXe" resolve="layer0rule11" />
       </node>
     </node>
-    <node concept="1jGXV7" id="6B2mdJKjRne" role="3k6lfD">
+    <node concept="1jGXV7" id="2wkftwbtHY9" role="3k6lfD">
       <property role="TrG5h" value="layer1" />
-      <node concept="1jGXVs" id="6B2mdJKjRnf" role="1o0q1e">
-        <ref role="3k6leo" node="6B2mdJKjRi8" resolve="layer0" />
+      <node concept="1jGXVs" id="2wkftwbtHYa" role="1o0q1e">
+        <ref role="3k6leo" node="2wkftwbtHSX" resolve="layer0" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRnz" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRng" resolve="layer1rule0" />
+      <node concept="1v6VTO" id="2wkftwbtHYu" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHYb" resolve="layer1rule0" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRnR" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRn$" resolve="layer1rule1" />
+      <node concept="1v6VTO" id="2wkftwbtHYM" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHYv" resolve="layer1rule1" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRob" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRnS" resolve="layer1rule2" />
+      <node concept="1v6VTO" id="2wkftwbtHZ6" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHYN" resolve="layer1rule2" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRov" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRoc" resolve="layer1rule3" />
+      <node concept="1v6VTO" id="2wkftwbtHZq" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHZ7" resolve="layer1rule3" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRoR" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRow" resolve="layer1rule4" />
+      <node concept="1v6VTO" id="2wkftwbtHZM" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHZr" resolve="layer1rule4" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRpb" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRoS" resolve="layer1rule5" />
+      <node concept="1v6VTO" id="2wkftwbtI06" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtHZN" resolve="layer1rule5" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRpv" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRpc" resolve="layer1rule6" />
+      <node concept="1v6VTO" id="2wkftwbtI0q" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI07" resolve="layer1rule6" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRpN" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRpw" resolve="layer1rule7" />
+      <node concept="1v6VTO" id="2wkftwbtI0I" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI0r" resolve="layer1rule7" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRq7" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRpO" resolve="layer1rule8" />
+      <node concept="1v6VTO" id="2wkftwbtI12" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI0J" resolve="layer1rule8" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRqp" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRq8" resolve="layer1rule9" />
+      <node concept="1v6VTO" id="2wkftwbtI1m" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI13" resolve="layer1rule9" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRqK" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRqq" resolve="layer1rule10" />
+      <node concept="1v6VTO" id="2wkftwbtI1K" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI1n" resolve="layer1rule10" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRrc" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRqL" resolve="layer1rule11" />
+      <node concept="1v6VTO" id="2wkftwbtI2c" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI1L" resolve="layer1rule11" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRrE" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRrd" resolve="layer1rule12" />
+      <node concept="1v6VTO" id="2wkftwbtI2G" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI2d" resolve="layer1rule12" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRrW" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRrF" resolve="layer1rule13" />
+      <node concept="1v6VTO" id="2wkftwbtI2Y" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI2H" resolve="layer1rule13" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRse" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRrX" resolve="layer1rule14" />
+      <node concept="1v6VTO" id="2wkftwbtI3g" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI2Z" resolve="layer1rule14" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRsA" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRsf" resolve="layer1rule15" />
+      <node concept="1v6VTO" id="2wkftwbtI3E" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI3h" resolve="layer1rule15" />
       </node>
     </node>
-    <node concept="1jGXV7" id="6B2mdJKjRsB" role="3k6lfD">
+    <node concept="1jGXV7" id="2wkftwbtI3F" role="3k6lfD">
       <property role="TrG5h" value="layer2" />
-      <node concept="1jGXVs" id="6B2mdJKjRsC" role="1o0q1e">
-        <ref role="3k6leo" node="6B2mdJKjRne" resolve="layer1" />
+      <node concept="1jGXVs" id="2wkftwbtI3G" role="1o0q1e">
+        <ref role="3k6leo" node="2wkftwbtHY9" resolve="layer1" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRsT" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRsD" resolve="layer2rule1" />
+      <node concept="1v6VTO" id="2wkftwbtI3Y" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI3H" resolve="layer2rule1" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRtb" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRsU" resolve="layer2rule2" />
+      <node concept="1v6VTO" id="2wkftwbtI4g" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI3Z" resolve="layer2rule2" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRt$" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRtc" resolve="layer2rule3" />
+      <node concept="1v6VTO" id="2wkftwbtI4F" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI4h" resolve="layer2rule3" />
       </node>
     </node>
-    <node concept="1jGXV7" id="6B2mdJKjRt_" role="3k6lfD">
+    <node concept="1jGXV7" id="2wkftwbtI4G" role="3k6lfD">
       <property role="TrG5h" value="layer3" />
-      <node concept="1jGXVs" id="6B2mdJKjRtA" role="1o0q1e">
-        <ref role="3k6leo" node="6B2mdJKjRsB" resolve="layer2" />
+      <node concept="1jGXVs" id="2wkftwbtI4H" role="1o0q1e">
+        <ref role="3k6leo" node="2wkftwbtI3F" resolve="layer2" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRud" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRtB" resolve="layer3rule0" />
+      <node concept="1v6VTO" id="2wkftwbtI5m" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI4I" resolve="layer3rule0" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRuR" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRue" resolve="layer3rule1" />
+      <node concept="1v6VTO" id="2wkftwbtI60" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI5n" resolve="layer3rule1" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRvI" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRuS" resolve="layer3rule2" />
+      <node concept="1v6VTO" id="2wkftwbtI6R" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI61" resolve="layer3rule2" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRwR" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRvJ" resolve="layer3rule3" />
+      <node concept="1v6VTO" id="2wkftwbtI80" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI6S" resolve="layer3rule3" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRxS" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRwS" resolve="layer3rule4" />
+      <node concept="1v6VTO" id="2wkftwbtI91" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI81" resolve="layer3rule4" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRyv" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRxT" resolve="layer3rule5" />
+      <node concept="1v6VTO" id="2wkftwbtI9C" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI92" resolve="layer3rule5" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjTrq" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjSQt" resolve="layer3rule4copy" />
+      <node concept="1v6VTO" id="2wkftwbtIak" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtI9D" resolve="layer3rule4copy" />
       </node>
     </node>
-    <node concept="1jGXV7" id="6B2mdJKjRzc" role="3k6lfD">
+    <node concept="1jGXV7" id="2wkftwbtIal" role="3k6lfD">
       <property role="TrG5h" value="layer4" />
-      <node concept="1jGXVs" id="6B2mdJKjRzd" role="1o0q1e">
-        <ref role="3k6leo" node="6B2mdJKjRt_" resolve="layer3" />
+      <node concept="1jGXVs" id="2wkftwbtIam" role="1o0q1e">
+        <ref role="3k6leo" node="2wkftwbtI4G" resolve="layer3" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjR$7" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRze" resolve="layer4rule0" />
+      <node concept="1v6VTO" id="2wkftwbtIbh" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIan" resolve="layer4rule0" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjR$J" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjR$8" resolve="layer4rule1" />
+      <node concept="1v6VTO" id="2wkftwbtIbV" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIbi" resolve="layer4rule1" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjR_o" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjR$K" resolve="layer4rule2" />
+      <node concept="1v6VTO" id="2wkftwbtIcA" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIbW" resolve="layer4rule2" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRAz" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjR_p" resolve="layer4rule3" />
+      <node concept="1v6VTO" id="2wkftwbtIdM" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIcB" resolve="layer4rule3" />
       </node>
     </node>
-    <node concept="1jGXV7" id="6B2mdJKjRA$" role="3k6lfD">
+    <node concept="1jGXV7" id="2wkftwbtIdN" role="3k6lfD">
       <property role="TrG5h" value="layer5" />
-      <node concept="1jGXVs" id="6B2mdJKjRA_" role="1o0q1e">
-        <ref role="3k6leo" node="6B2mdJKjRzc" resolve="layer4" />
+      <node concept="1jGXVs" id="2wkftwbtIdO" role="1o0q1e">
+        <ref role="3k6leo" node="2wkftwbtIal" resolve="layer4" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRCR" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRAA" resolve="layer5rule1" />
+      <node concept="1v6VTO" id="2wkftwbtIeW" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIdP" resolve="layer5rule0" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRDj" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRCS" resolve="layer5rule2" />
+      <node concept="1v6VTO" id="2wkftwbtIhe" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIeX" resolve="layer5rule1" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRDR" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRDk" resolve="layer5rule3" />
+      <node concept="1v6VTO" id="2wkftwbtIhE" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIhf" resolve="layer5rule2" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRF6" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRDS" resolve="layer5rule4" />
+      <node concept="1v6VTO" id="2wkftwbtIie" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIhF" resolve="layer5rule3" />
       </node>
-      <node concept="1v6VTO" id="6B2mdJKjRFO" role="1jGXV4">
-        <ref role="1v6VTP" node="6B2mdJKjRF7" resolve="layer5rule5" />
+      <node concept="1v6VTO" id="2wkftwbtIju" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIif" resolve="layer5rule4" />
+      </node>
+      <node concept="1v6VTO" id="2wkftwbtIke" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIjv" resolve="layer5rule5" />
+      </node>
+    </node>
+    <node concept="1jGXV7" id="2wkftwbtIkf" role="3k6lfD">
+      <property role="TrG5h" value="layer6" />
+      <node concept="1jGXVs" id="2wkftwbtIkg" role="1o0q1e">
+        <ref role="3k6leo" node="2wkftwbtIdN" resolve="layer5" />
+      </node>
+      <node concept="1v6VTO" id="2wkftwbtIkE" role="1jGXV4">
+        <ref role="1v6VTP" node="2wkftwbtIkh" resolve="layer6rule0" />
       </node>
     </node>
   </node>

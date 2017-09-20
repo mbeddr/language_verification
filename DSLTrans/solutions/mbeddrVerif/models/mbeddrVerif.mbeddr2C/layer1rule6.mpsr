@@ -8,7 +8,6 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
         <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
@@ -63,66 +62,64 @@
       </concept>
     </language>
   </registry>
-  <node concept="1jGXXK" id="6B2mdJKjRpc">
+  <node concept="1jGXXK" id="2wkftwbtI07">
     <property role="TrG5h" value="layer1rule6" />
     <property role="3GE5qa" value="transformation.02-layer1" />
-    <node concept="3GsvpN" id="6B2mdJKjRpd" role="2ik0Mu">
-      <node concept="2ik0NV" id="6B2mdJKjRpe" role="13z3mo">
+    <node concept="3GsvpN" id="2wkftwbtI08" role="2ik0Mu">
+      <node concept="2ik0NV" id="2wkftwbtI09" role="13z3mo">
         <property role="13z3e$" value="layer1rule6class0ClientServerInterface" />
         <property role="13z3hU" value="ClientServerInterface" />
-        <node concept="pBohH" id="6B2mdJKjRpf" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtI0a" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5ghI" resolve="ClientServerInterface" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRpg" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtI0b" role="13z3mo">
         <property role="13z3e$" value="layer1rule6class5ImplementationModule" />
         <property role="13z3hU" value="ImplementationModule" />
-        <node concept="pBohH" id="6B2mdJKjRph" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtI0c" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5ghE" resolve="ImplementationModule" />
         </node>
       </node>
-      <node concept="1jGXVw" id="6B2mdJKjRpj" role="13z3mp">
-        <property role="aCCiF" value="contents" />
-        <ref role="13xwDP" node="6B2mdJKjRpg" />
-        <ref role="13xwDU" node="6B2mdJKjRpe" />
-        <node concept="2AKGPc" id="6B2mdJKjRpi" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5ghE" resolve="ImplementationModule" />
+      <node concept="1jGXVw" id="2wkftwbtI0e" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtI0b" />
+        <ref role="13xwDU" node="2wkftwbtI09" />
+        <node concept="2AKGPc" id="2wkftwbtI0d" role="1vfT9s">
           <ref role="359W_F" to="d81c:3ZmgaQ5giR" resolve="contents" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5ghE" resolve="ImplementationModule" />
         </node>
       </node>
     </node>
-    <node concept="3GsvpM" id="6B2mdJKjRpk" role="2ik0Mo">
-      <node concept="1jGXXa" id="6B2mdJKjRpl" role="1jGXX7">
+    <node concept="3GsvpM" id="2wkftwbtI0f" role="2ik0Mo">
+      <node concept="1jGXXa" id="2wkftwbtI0g" role="1jGXX7">
         <property role="13z3e$" value="layer1rule6class1StructDeclaration" />
         <property role="13z3hU" value="StructDeclaration" />
-        <node concept="pBohH" id="6B2mdJKjRpm" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtI0h" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRpo" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtI0j" role="1jGXX7">
         <property role="13z3e$" value="layer1rule6class2StructType" />
         <property role="13z3hU" value="StructType" />
-        <node concept="pBohH" id="6B2mdJKjRpp" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtI0k" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mp" resolve="StructType" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRps" role="2ik0Ml">
-        <property role="aCCiF" value="struct" />
-        <ref role="13xwDP" node="6B2mdJKjRpo" />
-        <ref role="13xwDU" node="6B2mdJKjRpl" />
-        <node concept="2AKGPc" id="6B2mdJKjRpr" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53mp" resolve="StructType" />
+      <node concept="1jGXVd" id="2wkftwbtI0n" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtI0j" />
+        <ref role="13xwDU" node="2wkftwbtI0g" />
+        <node concept="2AKGPc" id="2wkftwbtI0m" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nJ" resolve="struct" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53mp" resolve="StructType" />
         </node>
       </node>
     </node>
-    <node concept="1jGXV2" id="6B2mdJKjRpt" role="2udmAx">
-      <ref role="13xwDP" node="6B2mdJKjRpo" />
-      <ref role="13xwDU" node="6B2mdJKjRpg" />
+    <node concept="1jGXV2" id="2wkftwbtI0o" role="2udmAx">
+      <ref role="13xwDP" node="2wkftwbtI0j" />
+      <ref role="13xwDU" node="2wkftwbtI0b" />
     </node>
-    <node concept="1jGXV2" id="6B2mdJKjRpu" role="2udmAx">
-      <ref role="13xwDP" node="6B2mdJKjRpl" />
-      <ref role="13xwDU" node="6B2mdJKjRpe" />
+    <node concept="1jGXV2" id="2wkftwbtI0p" role="2udmAx">
+      <ref role="13xwDP" node="2wkftwbtI0g" />
+      <ref role="13xwDU" node="2wkftwbtI09" />
     </node>
   </node>
 </model>
