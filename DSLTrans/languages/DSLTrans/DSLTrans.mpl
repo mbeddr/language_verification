@@ -31,6 +31,7 @@
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7(DSLTrans)" version="0" />
         <module reference="31554378-4100-4b01-9074-0c0b4c7f8712(DSLTrans#7049464676098566932)" version="0" />
+        <module reference="3224dd6b-ae86-46ab-b51c-b024552634a5(DSLTrans.lib)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
@@ -108,6 +109,9 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8(transfverif.core)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">3224dd6b-ae86-46ab-b51c-b024552634a5(DSLTrans.lib)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8(transfverif.core)</extendedLanguage>
   </extendedLanguages>

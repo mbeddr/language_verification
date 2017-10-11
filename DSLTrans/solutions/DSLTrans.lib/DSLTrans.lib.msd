@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="DSLTrans.lib" uuid="3224dd6b-ae86-46ab-b51c-b024552634a5" moduleVersion="0" compileInMPS="true">
+<solution name="DSLTrans.lib" uuid="3224dd6b-ae86-46ab-b51c-b024552634a5" moduleVersion="0" pluginKind="PLUGIN_CORE" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="dsltrans_engine.jar" />
     </modelRoot>
-    <modelRoot contentPath="${mps_home}/lib" type="java_classes">
+    <modelRoot contentPath="${platform_lib}" type="java_classes">
       <sourceRoot location="mps-editor-runtime.jar" />
     </modelRoot>
   </models>
