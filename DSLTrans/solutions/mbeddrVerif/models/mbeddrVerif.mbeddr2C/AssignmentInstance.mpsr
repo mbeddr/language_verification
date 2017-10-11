@@ -8,7 +8,6 @@
   <registry>
     <language id="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" name="transfverif.core">
       <concept id="4439542802417641472" name="transfverif.core.structure.LinkType" flags="ng" index="aCCiC">
-        <property id="4439542802417641475" name="typeName" index="aCCiF" />
         <child id="1618868944272683750" name="link" index="1vfT9s" />
       </concept>
       <concept id="7049464676098553413" name="transfverif.core.structure.AbstractMatcher" flags="ng" index="2ik0M0">
@@ -87,453 +86,430 @@
       </concept>
     </language>
   </registry>
-  <node concept="2ik09W" id="6B2mdJKjRJx">
-    <property role="TrG5h" value="AssignmentInstance1" />
+  <node concept="2ik09W" id="2wkftwbtImM">
+    <property role="TrG5h" value="AssignmentInstance" />
     <property role="3GE5qa" value="contracts" />
-    <node concept="aREg_" id="6B2mdJKjRJz" role="aREgB">
-      <node concept="2ik0NV" id="6B2mdJKjRJ_" role="13z3mo">
+    <node concept="aREg_" id="2wkftwbtImO" role="aREgB">
+      <node concept="2ik0NV" id="2wkftwbtImQ" role="13z3mo">
         <property role="13z3e$" value="0.1.m.0AssemblyConnector" />
         <property role="13z3hU" value="AssemblyConnector" />
-        <node concept="pBohH" id="6B2mdJKjRJA" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtImR" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5gi9" resolve="AssemblyConnector" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRJB" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtImS" role="13z3mo">
         <property role="13z3e$" value="0.1.m.1InstancePortRef" />
         <property role="13z3hU" value="InstancePortRef" />
-        <node concept="pBohH" id="6B2mdJKjRJC" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtImT" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRJD" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtImU" role="13z3mo">
         <property role="13z3e$" value="0.1.m.2ComponentInstance" />
         <property role="13z3hU" value="ComponentInstance" />
-        <node concept="pBohH" id="6B2mdJKjRJE" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtImV" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5gi8" resolve="ComponentInstance" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRJF" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtImW" role="13z3mo">
         <property role="13z3e$" value="0.1.m.3RequiredPort" />
         <property role="13z3hU" value="RequiredPort" />
-        <node concept="pBohH" id="6B2mdJKjRJG" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtImX" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5ghX" resolve="RequiredPort" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRJH" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtImY" role="13z3mo">
         <property role="13z3e$" value="0.1.m.4AtomicComponent" />
         <property role="13z3hU" value="AtomicComponent" />
-        <node concept="pBohH" id="6B2mdJKjRJI" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtImZ" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5ghT" resolve="AtomicComponent" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRJJ" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtIn0" role="13z3mo">
         <property role="13z3e$" value="0.1.m.5InstancePortRef" />
         <property role="13z3hU" value="InstancePortRef" />
-        <node concept="pBohH" id="6B2mdJKjRJK" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtIn1" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRJL" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtIn2" role="13z3mo">
         <property role="13z3e$" value="0.1.m.6ComponentInstance" />
         <property role="13z3hU" value="ComponentInstance" />
-        <node concept="pBohH" id="6B2mdJKjRJM" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtIn3" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5gi8" resolve="ComponentInstance" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRJN" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtIn4" role="13z3mo">
         <property role="13z3e$" value="0.1.m.7ProvidedPort" />
         <property role="13z3hU" value="ProvidedPort" />
-        <node concept="pBohH" id="6B2mdJKjRJO" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtIn5" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5ghV" resolve="ProvidedPort" />
         </node>
       </node>
-      <node concept="2ik0NV" id="6B2mdJKjRJP" role="13z3mo">
+      <node concept="2ik0NV" id="2wkftwbtIn6" role="13z3mo">
         <property role="13z3e$" value="0.1.m.8AtomicComponent" />
         <property role="13z3hU" value="AtomicComponent" />
-        <node concept="pBohH" id="6B2mdJKjRJQ" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtIn7" role="pB8W9">
           <ref role="35c_gD" to="d81c:3ZmgaQ5ghT" resolve="AtomicComponent" />
         </node>
       </node>
-      <node concept="1jGXVw" id="6B2mdJKjRJS" role="13z3mp">
-        <property role="aCCiF" value="source" />
-        <ref role="13xwDP" node="6B2mdJKjRJ_" />
-        <ref role="13xwDU" node="6B2mdJKjRJB" />
-        <node concept="2AKGPc" id="6B2mdJKjRJR" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5gi9" resolve="AssemblyConnector" />
+      <node concept="1jGXVw" id="2wkftwbtIn9" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtImQ" />
+        <ref role="13xwDU" node="2wkftwbtImS" />
+        <node concept="2AKGPc" id="2wkftwbtIn8" role="1vfT9s">
           <ref role="359W_F" to="d81c:3ZmgaQ5gjE" resolve="source" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="6B2mdJKjRJU" role="13z3mp">
-        <property role="aCCiF" value="instance" />
-        <ref role="13xwDP" node="6B2mdJKjRJB" />
-        <ref role="13xwDU" node="6B2mdJKjRJD" />
-        <node concept="2AKGPc" id="6B2mdJKjRJT" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
-          <ref role="359W_F" to="d81c:3ZmgaQ5gjH" resolve="instance" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="6B2mdJKjRJW" role="13z3mp">
-        <property role="aCCiF" value="port" />
-        <ref role="13xwDP" node="6B2mdJKjRJB" />
-        <ref role="13xwDU" node="6B2mdJKjRJF" />
-        <node concept="2AKGPc" id="6B2mdJKjRJV" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
-          <ref role="359W_F" to="d81c:3ZmgaQ5gjI" resolve="port" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="6B2mdJKjRJY" role="13z3mp">
-        <property role="aCCiF" value="component" />
-        <ref role="13xwDP" node="6B2mdJKjRJD" />
-        <ref role="13xwDU" node="6B2mdJKjRJH" />
-        <node concept="2AKGPc" id="6B2mdJKjRJX" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5gi8" resolve="ComponentInstance" />
-          <ref role="359W_F" to="d81c:3ZmgaQ5gjC" resolve="component" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="6B2mdJKjRK0" role="13z3mp">
-        <property role="aCCiF" value="contents" />
-        <ref role="13xwDP" node="6B2mdJKjRJH" />
-        <ref role="13xwDU" node="6B2mdJKjRJF" />
-        <node concept="2AKGPc" id="6B2mdJKjRJZ" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5ghT" resolve="AtomicComponent" />
-          <ref role="359W_F" to="d81c:3ZmgaQ5gjd" resolve="contents" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="6B2mdJKjRK2" role="13z3mp">
-        <property role="aCCiF" value="target" />
-        <ref role="13xwDP" node="6B2mdJKjRJ_" />
-        <ref role="13xwDU" node="6B2mdJKjRJJ" />
-        <node concept="2AKGPc" id="6B2mdJKjRK1" role="1vfT9s">
           <ref role="359W_E" to="d81c:3ZmgaQ5gi9" resolve="AssemblyConnector" />
-          <ref role="359W_F" to="d81c:3ZmgaQ5gjF" resolve="target" />
         </node>
       </node>
-      <node concept="1jGXVw" id="6B2mdJKjRK4" role="13z3mp">
-        <property role="aCCiF" value="instance" />
-        <ref role="13xwDP" node="6B2mdJKjRJJ" />
-        <ref role="13xwDU" node="6B2mdJKjRJL" />
-        <node concept="2AKGPc" id="6B2mdJKjRK3" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
+      <node concept="1jGXVw" id="2wkftwbtInb" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtImS" />
+        <ref role="13xwDU" node="2wkftwbtImU" />
+        <node concept="2AKGPc" id="2wkftwbtIna" role="1vfT9s">
           <ref role="359W_F" to="d81c:3ZmgaQ5gjH" resolve="instance" />
-        </node>
-      </node>
-      <node concept="1jGXVw" id="6B2mdJKjRK6" role="13z3mp">
-        <property role="aCCiF" value="port" />
-        <ref role="13xwDP" node="6B2mdJKjRJJ" />
-        <ref role="13xwDU" node="6B2mdJKjRJN" />
-        <node concept="2AKGPc" id="6B2mdJKjRK5" role="1vfT9s">
           <ref role="359W_E" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="2wkftwbtInd" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtImS" />
+        <ref role="13xwDU" node="2wkftwbtImW" />
+        <node concept="2AKGPc" id="2wkftwbtInc" role="1vfT9s">
           <ref role="359W_F" to="d81c:3ZmgaQ5gjI" resolve="port" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
         </node>
       </node>
-      <node concept="1jGXVw" id="6B2mdJKjRK8" role="13z3mp">
-        <property role="aCCiF" value="component" />
-        <ref role="13xwDP" node="6B2mdJKjRJL" />
-        <ref role="13xwDU" node="6B2mdJKjRJP" />
-        <node concept="2AKGPc" id="6B2mdJKjRK7" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5gi8" resolve="ComponentInstance" />
+      <node concept="1jGXVw" id="2wkftwbtInf" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtImU" />
+        <ref role="13xwDU" node="2wkftwbtImY" />
+        <node concept="2AKGPc" id="2wkftwbtIne" role="1vfT9s">
           <ref role="359W_F" to="d81c:3ZmgaQ5gjC" resolve="component" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5gi8" resolve="ComponentInstance" />
         </node>
       </node>
-      <node concept="1jGXVw" id="6B2mdJKjRKa" role="13z3mp">
-        <property role="aCCiF" value="contents" />
-        <ref role="13xwDP" node="6B2mdJKjRJP" />
-        <ref role="13xwDU" node="6B2mdJKjRJN" />
-        <node concept="2AKGPc" id="6B2mdJKjRK9" role="1vfT9s">
-          <ref role="359W_E" to="d81c:3ZmgaQ5ghT" resolve="AtomicComponent" />
+      <node concept="1jGXVw" id="2wkftwbtInh" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtImY" />
+        <ref role="13xwDU" node="2wkftwbtImW" />
+        <node concept="2AKGPc" id="2wkftwbtIng" role="1vfT9s">
           <ref role="359W_F" to="d81c:3ZmgaQ5gjd" resolve="contents" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5ghT" resolve="AtomicComponent" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="2wkftwbtInj" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtImQ" />
+        <ref role="13xwDU" node="2wkftwbtIn0" />
+        <node concept="2AKGPc" id="2wkftwbtIni" role="1vfT9s">
+          <ref role="359W_F" to="d81c:3ZmgaQ5gjF" resolve="target" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5gi9" resolve="AssemblyConnector" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="2wkftwbtInl" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtIn0" />
+        <ref role="13xwDU" node="2wkftwbtIn2" />
+        <node concept="2AKGPc" id="2wkftwbtInk" role="1vfT9s">
+          <ref role="359W_F" to="d81c:3ZmgaQ5gjH" resolve="instance" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="2wkftwbtInn" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtIn0" />
+        <ref role="13xwDU" node="2wkftwbtIn4" />
+        <node concept="2AKGPc" id="2wkftwbtInm" role="1vfT9s">
+          <ref role="359W_F" to="d81c:3ZmgaQ5gjI" resolve="port" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5gia" resolve="InstancePortRef" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="2wkftwbtInp" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtIn2" />
+        <ref role="13xwDU" node="2wkftwbtIn6" />
+        <node concept="2AKGPc" id="2wkftwbtIno" role="1vfT9s">
+          <ref role="359W_F" to="d81c:3ZmgaQ5gjC" resolve="component" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5gi8" resolve="ComponentInstance" />
+        </node>
+      </node>
+      <node concept="1jGXVw" id="2wkftwbtInr" role="13z3mp">
+        <ref role="13xwDP" node="2wkftwbtIn6" />
+        <ref role="13xwDU" node="2wkftwbtIn4" />
+        <node concept="2AKGPc" id="2wkftwbtInq" role="1vfT9s">
+          <ref role="359W_F" to="d81c:3ZmgaQ5gjd" resolve="contents" />
+          <ref role="359W_E" to="d81c:3ZmgaQ5ghT" resolve="AtomicComponent" />
         </node>
       </node>
     </node>
-    <node concept="aREgA" id="6B2mdJKjRJ$" role="aREgT">
-      <node concept="1jGXXa" id="6B2mdJKjRKb" role="1jGXX7">
+    <node concept="aREgA" id="2wkftwbtImP" role="aREgT">
+      <node concept="1jGXXa" id="2wkftwbtIns" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.0GenericDotExpression" />
         <property role="13z3hU" value="GenericDotExpression" />
-        <node concept="pBohH" id="6B2mdJKjRKc" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtInt" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53m$" resolve="GenericDotExpression" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKd" role="1jGXX7">
-        <property role="13z3e$" value="0.1.a.1GlobalVarRef" />
-        <property role="13z3hU" value="GlobalVarRef" />
-        <node concept="pBohH" id="6B2mdJKjRKe" role="pB8W9">
+      <node concept="1jGXXa" id="2wkftwbtInu" role="1jGXX7">
+        <property role="13z3e$" value="0.1.a.1GlobarRefExpr" />
+        <property role="13z3hU" value="GlobarRefExpr" />
+        <node concept="pBohH" id="2wkftwbtInv" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mB" resolve="GlobalVarRef" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKf" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtInw" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.2GlobalVariableDeclaration" />
         <property role="13z3hU" value="GlobalVariableDeclaration" />
-        <node concept="pBohH" id="6B2mdJKjRKg" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtInx" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mz" resolve="GlobalVariableDeclaration" />
         </node>
-        <node concept="2ik0MC" id="6B2mdJKjRKh" role="2ik0MI">
+        <node concept="2ik0MC" id="2wkftwbtIny" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="1y7Krt" id="6B2mdJKjRKi" role="1157Rj">
+          <node concept="1y7Krt" id="2wkftwbtInz" role="1157Rj">
             <ref role="355D3t" to="yn5m:3ZmgaQ53mz" resolve="GlobalVariableDeclaration" />
             <ref role="355D3u" to="yn5m:3ZmgaQ53n0" resolve="name" />
           </node>
-          <node concept="2ik0ME" id="6B2mdJKjRKj" role="2ik0MU">
-            <node concept="2F1_2q" id="6B2mdJKjRKk" role="13yhA8" />
-            <node concept="2ik0M$" id="6B2mdJKjRKl" role="13yhAc">
-              <node concept="2ik0MB" id="6B2mdJKjRKm" role="2ik0My">
+          <node concept="2ik0ME" id="2wkftwbtIn$" role="2ik0MU">
+            <node concept="2F1_2q" id="2wkftwbtIn_" role="13yhA8" />
+            <node concept="2ik0M$" id="2wkftwbtInA" role="13yhAc">
+              <node concept="2ik0MB" id="2wkftwbtInB" role="2ik0My">
                 <property role="2ik0Mw" value="__instance" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKn" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtInC" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.3ReferenceExpr" />
         <property role="13z3hU" value="ReferenceExpr" />
-        <node concept="pBohH" id="6B2mdJKjRKo" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtInD" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mE" resolve="ReferenceExpr" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKp" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtInE" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.4GenericMemberRef" />
         <property role="13z3hU" value="GenericMemberRef" />
-        <node concept="pBohH" id="6B2mdJKjRKq" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtInF" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mA" resolve="GenericMemberRef" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKr" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtInG" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.5GlobalVariableDeclaration" />
         <property role="13z3hU" value="GlobalVariableDeclaration" />
-        <node concept="pBohH" id="6B2mdJKjRKs" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtInH" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mz" resolve="GlobalVariableDeclaration" />
         </node>
-        <node concept="2ik0MC" id="6B2mdJKjRKt" role="2ik0MI">
+        <node concept="2ik0MC" id="2wkftwbtInI" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="1y7Krt" id="6B2mdJKjRKu" role="1157Rj">
+          <node concept="1y7Krt" id="2wkftwbtInJ" role="1157Rj">
             <ref role="355D3t" to="yn5m:3ZmgaQ53mz" resolve="GlobalVariableDeclaration" />
             <ref role="355D3u" to="yn5m:3ZmgaQ53n0" resolve="name" />
           </node>
-          <node concept="2ik0ME" id="6B2mdJKjRKv" role="2ik0MU">
-            <node concept="2F1_2q" id="6B2mdJKjRKw" role="13yhA8" />
-            <node concept="2ik0M$" id="6B2mdJKjRKx" role="13yhAc">
-              <node concept="2ik0MB" id="6B2mdJKjRKy" role="2ik0My">
+          <node concept="2ik0ME" id="2wkftwbtInK" role="2ik0MU">
+            <node concept="2F1_2q" id="2wkftwbtInL" role="13yhA8" />
+            <node concept="2ik0M$" id="2wkftwbtInM" role="13yhAc">
+              <node concept="2ik0MB" id="2wkftwbtInN" role="2ik0My">
                 <property role="2ik0Mw" value="__ops" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKz" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtInO" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.6GlobalVarRef" />
         <property role="13z3hU" value="GlobalVarRef" />
-        <node concept="pBohH" id="6B2mdJKjRK$" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtInP" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mB" resolve="GlobalVarRef" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRK_" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtInQ" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.7AssignmentExpr" />
         <property role="13z3hU" value="AssignmentExpr" />
-        <node concept="pBohH" id="6B2mdJKjRKA" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtInR" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mu" resolve="AssignmentExpr" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKB" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtInS" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.8StructDeclaration" />
         <property role="13z3hU" value="StructDeclaration" />
-        <node concept="pBohH" id="6B2mdJKjRKC" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtInT" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
         </node>
-        <node concept="2ik0MC" id="6B2mdJKjRKD" role="2ik0MI">
+        <node concept="2ik0MC" id="2wkftwbtInU" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="1y7Krt" id="6B2mdJKjRKE" role="1157Rj">
+          <node concept="1y7Krt" id="2wkftwbtInV" role="1157Rj">
             <ref role="355D3t" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
             <ref role="355D3u" to="yn5m:3ZmgaQ53n0" resolve="name" />
           </node>
-          <node concept="2ik0ME" id="6B2mdJKjRKF" role="2ik0MU">
-            <node concept="2F1_2q" id="6B2mdJKjRKG" role="13yhA8" />
-            <node concept="2ik0M$" id="6B2mdJKjRKH" role="13yhAc">
-              <node concept="2ik0MB" id="6B2mdJKjRKI" role="2ik0My">
+          <node concept="2ik0ME" id="2wkftwbtInW" role="2ik0MU">
+            <node concept="2F1_2q" id="2wkftwbtInX" role="13yhA8" />
+            <node concept="2ik0M$" id="2wkftwbtInY" role="13yhAc">
+              <node concept="2ik0MB" id="2wkftwbtInZ" role="2ik0My">
                 <property role="2ik0Mw" value="__cdata" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKJ" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtIo0" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.9Member" />
         <property role="13z3hU" value="Member" />
-        <node concept="pBohH" id="6B2mdJKjRKK" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtIo1" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53m9" resolve="Member" />
         </node>
-        <node concept="2ik0MC" id="6B2mdJKjRKL" role="2ik0MI">
+        <node concept="2ik0MC" id="2wkftwbtIo2" role="2ik0MI">
           <property role="TrG5h" value="name" />
-          <node concept="1y7Krt" id="6B2mdJKjRKM" role="1157Rj">
+          <node concept="1y7Krt" id="2wkftwbtIo3" role="1157Rj">
             <ref role="355D3t" to="yn5m:3ZmgaQ53m9" resolve="Member" />
             <ref role="355D3u" to="yn5m:3ZmgaQ53n0" resolve="name" />
           </node>
-          <node concept="2ik0ME" id="6B2mdJKjRKN" role="2ik0MU">
-            <node concept="2F1_2q" id="6B2mdJKjRKO" role="13yhA8" />
-            <node concept="2ik0M$" id="6B2mdJKjRKP" role="13yhAc">
-              <node concept="2ik0MB" id="6B2mdJKjRKQ" role="2ik0My">
+          <node concept="2ik0ME" id="2wkftwbtIo4" role="2ik0MU">
+            <node concept="2F1_2q" id="2wkftwbtIo5" role="13yhA8" />
+            <node concept="2ik0M$" id="2wkftwbtIo6" role="13yhAc">
+              <node concept="2ik0MB" id="2wkftwbtIo7" role="2ik0My">
                 <property role="2ik0Mw" value="__ops" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKR" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtIo8" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.10TypeDefType" />
         <property role="13z3hU" value="TypeDefType" />
-        <node concept="pBohH" id="6B2mdJKjRKS" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtIo9" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53my" resolve="TypeDefType" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKT" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtIoa" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.11TypeDef" />
         <property role="13z3hU" value="TypeDef" />
-        <node concept="pBohH" id="6B2mdJKjRKU" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtIob" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mx" resolve="TypeDef" />
         </node>
       </node>
-      <node concept="1jGXXa" id="6B2mdJKjRKV" role="1jGXX7">
+      <node concept="1jGXXa" id="2wkftwbtIoc" role="1jGXX7">
         <property role="13z3e$" value="0.1.a.12StructType" />
         <property role="13z3hU" value="StructType" />
-        <node concept="pBohH" id="6B2mdJKjRKW" role="pB8W9">
+        <node concept="pBohH" id="2wkftwbtIod" role="pB8W9">
           <ref role="35c_gD" to="yn5m:3ZmgaQ53mp" resolve="StructType" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRKY" role="2ik0Ml">
-        <property role="aCCiF" value="left" />
-        <ref role="13xwDP" node="6B2mdJKjRK_" />
-        <ref role="13xwDU" node="6B2mdJKjRKb" />
-        <node concept="2AKGPc" id="6B2mdJKjRKX" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53mu" resolve="AssignmentExpr" />
+      <node concept="1jGXVd" id="2wkftwbtIof" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtInQ" />
+        <ref role="13xwDU" node="2wkftwbtIns" />
+        <node concept="2AKGPc" id="2wkftwbtIoe" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nC" resolve="left" />
-        </node>
-      </node>
-      <node concept="1jGXVd" id="6B2mdJKjRL0" role="2ik0Ml">
-        <property role="aCCiF" value="right" />
-        <ref role="13xwDP" node="6B2mdJKjRK_" />
-        <ref role="13xwDU" node="6B2mdJKjRKn" />
-        <node concept="2AKGPc" id="6B2mdJKjRKZ" role="1vfT9s">
           <ref role="359W_E" to="yn5m:3ZmgaQ53mu" resolve="AssignmentExpr" />
+        </node>
+      </node>
+      <node concept="1jGXVd" id="2wkftwbtIoh" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtInQ" />
+        <ref role="13xwDU" node="2wkftwbtInC" />
+        <node concept="2AKGPc" id="2wkftwbtIog" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nD" resolve="right" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53mu" resolve="AssignmentExpr" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRL2" role="2ik0Ml">
-        <property role="aCCiF" value="expression" />
-        <ref role="13xwDP" node="6B2mdJKjRKb" />
-        <ref role="13xwDU" node="6B2mdJKjRKz" />
-        <node concept="2AKGPc" id="6B2mdJKjRL1" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53m$" resolve="GenericDotExpression" />
+      <node concept="1jGXVd" id="2wkftwbtIoj" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtIns" />
+        <ref role="13xwDU" node="2wkftwbtInO" />
+        <node concept="2AKGPc" id="2wkftwbtIoi" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nR" resolve="expression" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53m$" resolve="GenericDotExpression" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRL4" role="2ik0Ml">
-        <property role="aCCiF" value="target" />
-        <ref role="13xwDP" node="6B2mdJKjRKb" />
-        <ref role="13xwDU" node="6B2mdJKjRKp" />
-        <node concept="2AKGPc" id="6B2mdJKjRL3" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53m$" resolve="GenericDotExpression" />
+      <node concept="1jGXVd" id="2wkftwbtIol" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtIns" />
+        <ref role="13xwDU" node="2wkftwbtInE" />
+        <node concept="2AKGPc" id="2wkftwbtIok" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53o4" resolve="target" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53m$" resolve="GenericDotExpression" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRL6" role="2ik0Ml">
-        <property role="aCCiF" value="expression" />
-        <ref role="13xwDP" node="6B2mdJKjRKn" />
-        <ref role="13xwDU" node="6B2mdJKjRKd" />
-        <node concept="2AKGPc" id="6B2mdJKjRL5" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53mE" resolve="ReferenceExpr" />
+      <node concept="1jGXVd" id="2wkftwbtIon" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtInC" />
+        <ref role="13xwDU" node="2wkftwbtInu" />
+        <node concept="2AKGPc" id="2wkftwbtIom" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nR" resolve="expression" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53mE" resolve="ReferenceExpr" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRL8" role="2ik0Ml">
-        <property role="aCCiF" value="var" />
-        <ref role="13xwDP" node="6B2mdJKjRKz" />
-        <ref role="13xwDU" node="6B2mdJKjRKf" />
-        <node concept="2AKGPc" id="6B2mdJKjRL7" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53mB" resolve="GlobalVarRef" />
+      <node concept="1jGXVd" id="2wkftwbtIop" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtInO" />
+        <ref role="13xwDU" node="2wkftwbtInw" />
+        <node concept="2AKGPc" id="2wkftwbtIoo" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53o8" resolve="var" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53mB" resolve="GlobalVarRef" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRLa" role="2ik0Ml">
-        <property role="aCCiF" value="member" />
-        <ref role="13xwDP" node="6B2mdJKjRKp" />
-        <ref role="13xwDU" node="6B2mdJKjRKJ" />
-        <node concept="2AKGPc" id="6B2mdJKjRL9" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53mA" resolve="GenericMemberRef" />
+      <node concept="1jGXVd" id="2wkftwbtIor" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtInE" />
+        <ref role="13xwDU" node="2wkftwbtIo0" />
+        <node concept="2AKGPc" id="2wkftwbtIoq" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53o6" resolve="member" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53mA" resolve="GenericMemberRef" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRLc" role="2ik0Ml">
-        <property role="aCCiF" value="members" />
-        <ref role="13xwDP" node="6B2mdJKjRKB" />
-        <ref role="13xwDU" node="6B2mdJKjRKJ" />
-        <node concept="2AKGPc" id="6B2mdJKjRLb" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
+      <node concept="1jGXVd" id="2wkftwbtIot" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtInS" />
+        <ref role="13xwDU" node="2wkftwbtIo0" />
+        <node concept="2AKGPc" id="2wkftwbtIos" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nf" resolve="members" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53m3" resolve="StructDeclaration" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRLe" role="2ik0Ml">
-        <property role="aCCiF" value="var" />
-        <ref role="13xwDP" node="6B2mdJKjRKd" />
-        <ref role="13xwDU" node="6B2mdJKjRKr" />
-        <node concept="2AKGPc" id="6B2mdJKjRLd" role="1vfT9s">
+      <node concept="1jGXVd" id="2wkftwbtIov" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtInu" />
+        <ref role="13xwDU" node="2wkftwbtInG" />
+        <node concept="2AKGPc" id="2wkftwbtIou" role="1vfT9s">
           <ref role="359W_E" to="yn5m:3ZmgaQ53mB" resolve="GlobalVarRef" />
           <ref role="359W_F" to="yn5m:3ZmgaQ53o8" resolve="var" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRLg" role="2ik0Ml">
-        <property role="aCCiF" value="type" />
-        <ref role="13xwDP" node="6B2mdJKjRKf" />
-        <ref role="13xwDU" node="6B2mdJKjRKR" />
-        <node concept="2AKGPc" id="6B2mdJKjRLf" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53mz" resolve="GlobalVariableDeclaration" />
+      <node concept="1jGXVd" id="2wkftwbtIox" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtInw" />
+        <ref role="13xwDU" node="2wkftwbtIo8" />
+        <node concept="2AKGPc" id="2wkftwbtIow" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53n1" resolve="type" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53mz" resolve="GlobalVariableDeclaration" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRLi" role="2ik0Ml">
-        <property role="aCCiF" value="typeDef" />
-        <ref role="13xwDP" node="6B2mdJKjRKR" />
-        <ref role="13xwDU" node="6B2mdJKjRKT" />
-        <node concept="2AKGPc" id="6B2mdJKjRLh" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53my" resolve="TypeDefType" />
+      <node concept="1jGXVd" id="2wkftwbtIoz" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtIo8" />
+        <ref role="13xwDU" node="2wkftwbtIoa" />
+        <node concept="2AKGPc" id="2wkftwbtIoy" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nY" resolve="typeDef" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53my" resolve="TypeDefType" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRLk" role="2ik0Ml">
-        <property role="aCCiF" value="original" />
-        <ref role="13xwDP" node="6B2mdJKjRKT" />
-        <ref role="13xwDU" node="6B2mdJKjRKV" />
-        <node concept="2AKGPc" id="6B2mdJKjRLj" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53mx" resolve="TypeDef" />
+      <node concept="1jGXVd" id="2wkftwbtIo_" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtIoa" />
+        <ref role="13xwDU" node="2wkftwbtIoc" />
+        <node concept="2AKGPc" id="2wkftwbtIo$" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nW" resolve="original" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53mx" resolve="TypeDef" />
         </node>
       </node>
-      <node concept="1jGXVd" id="6B2mdJKjRLm" role="2ik0Ml">
-        <property role="aCCiF" value="struct" />
-        <ref role="13xwDP" node="6B2mdJKjRKV" />
-        <ref role="13xwDU" node="6B2mdJKjRKB" />
-        <node concept="2AKGPc" id="6B2mdJKjRLl" role="1vfT9s">
-          <ref role="359W_E" to="yn5m:3ZmgaQ53mp" resolve="StructType" />
+      <node concept="1jGXVd" id="2wkftwbtIoB" role="2ik0Ml">
+        <ref role="13xwDP" node="2wkftwbtIoc" />
+        <ref role="13xwDU" node="2wkftwbtInS" />
+        <node concept="2AKGPc" id="2wkftwbtIoA" role="1vfT9s">
           <ref role="359W_F" to="yn5m:3ZmgaQ53nJ" resolve="struct" />
+          <ref role="359W_E" to="yn5m:3ZmgaQ53mp" resolve="StructType" />
         </node>
       </node>
     </node>
-    <node concept="2lmX6V" id="6B2mdJKjRLo" role="aREgW">
+    <node concept="2lmX6V" id="2wkftwbtIoD" role="aREgW">
       <property role="2lmXag" value="false" />
-      <ref role="13xwDP" node="6B2mdJKjRKf" />
-      <ref role="13xwDU" node="6B2mdJKjRJD" />
+      <ref role="13xwDP" node="2wkftwbtInw" />
+      <ref role="13xwDU" node="2wkftwbtImU" />
     </node>
-    <node concept="2lmX6V" id="6B2mdJKjRLq" role="aREgW">
+    <node concept="2lmX6V" id="2wkftwbtIoF" role="aREgW">
       <property role="2lmXag" value="false" />
-      <ref role="13xwDP" node="6B2mdJKjRKB" />
-      <ref role="13xwDU" node="6B2mdJKjRJH" />
+      <ref role="13xwDP" node="2wkftwbtInS" />
+      <ref role="13xwDU" node="2wkftwbtImY" />
     </node>
-    <node concept="2lmX6V" id="6B2mdJKjRLs" role="aREgW">
+    <node concept="2lmX6V" id="2wkftwbtIoH" role="aREgW">
       <property role="2lmXag" value="false" />
-      <ref role="13xwDP" node="6B2mdJKjRKr" />
-      <ref role="13xwDU" node="6B2mdJKjRJL" />
+      <ref role="13xwDP" node="2wkftwbtInG" />
+      <ref role="13xwDU" node="2wkftwbtIn2" />
     </node>
-    <node concept="2lmX6V" id="6B2mdJKjRLu" role="aREgW">
+    <node concept="2lmX6V" id="2wkftwbtIoJ" role="aREgW">
       <property role="2lmXag" value="false" />
-      <ref role="13xwDP" node="6B2mdJKjRKJ" />
-      <ref role="13xwDU" node="6B2mdJKjRJF" />
+      <ref role="13xwDP" node="2wkftwbtIo0" />
+      <ref role="13xwDU" node="2wkftwbtImW" />
     </node>
   </node>
 </model>
