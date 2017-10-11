@@ -753,5 +753,41 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="4RxZxFTq0mJ">
+    <property role="3GE5qa" value="Elements" />
+    <ref role="1XX52x" to="i3vy:4RxZxFTlaF7" resolve="NegativeMatchClass" />
+    <node concept="3EZMnI" id="4RxZxFTq0mK" role="2wV5jI">
+      <node concept="2iRkQZ" id="4RxZxFTq0mL" role="2iSdaV" />
+      <node concept="3EZMnI" id="4RxZxFTq0mM" role="3EZMnx">
+        <node concept="2iRfu4" id="4RxZxFTq0mN" role="2iSdaV" />
+        <node concept="3F0A7n" id="4RxZxFTq0mO" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:2rexW9_gFhA" resolve="ID" />
+        </node>
+        <node concept="3F0ifn" id="4RxZxFTq0mP" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="3F1sOY" id="4RxZxFTq0mQ" role="3EZMnx">
+          <ref role="1NtTu8" to="i3vy:28y$t0VJxVp" resolve="concept" />
+        </node>
+        <node concept="PMmxH" id="4RxZxFTq0mR" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="3F0ifn" id="4RxZxFTq0mZ" role="3EZMnx">
+          <property role="3F0ifm" value=")" />
+          <node concept="VSNWy" id="4RxZxFTq0n0" role="3F10Kt">
+            <property role="1lJzqX" value="10" />
+          </node>
+          <node concept="VechU" id="4RxZxFTq0n1" role="3F10Kt">
+            <property role="Vb096" value="black" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4RxZxFTq0n2" role="3EZMnx" />
+      <node concept="3F2HdR" id="4RxZxFTq0n3" role="3EZMnx">
+        <ref role="1NtTu8" to="i3vy:2rexW9_gFeH" resolve="attributes" />
+        <node concept="2iRkQZ" id="4RxZxFTq0n4" role="2czzBx" />
+      </node>
+    </node>
+  </node>
 </model>
 
