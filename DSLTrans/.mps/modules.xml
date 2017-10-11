@@ -10,7 +10,9 @@
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/test.TestLang/TestLang.mpl" folder="examples.test" />
       <modulePath path="$PROJECT_DIR$/languages/transverif.core/transfverif.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.build/DSLTrans.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.lib/DSLTrans.lib.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/DSLTransImport/DSLTransImport.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTransRunner/DSLTransRunner.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPerson/ExFamToPerson.msd" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPersonInputModel/ExFamToPersonInputModel.msd" folder="examples.FTP" />
