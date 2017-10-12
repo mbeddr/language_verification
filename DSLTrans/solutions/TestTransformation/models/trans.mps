@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
-    <use id="54dfa720-0ab9-4d0b-8bfa-c068891c843e" name="TestLang" version="0" />
   </languages>
   <imports>
     <import index="r24g" ref="r:2130a189-211f-4744-b4c2-ea9dcaf302d0(TestLang.structure)" implicit="true" />
@@ -129,8 +128,8 @@
     <property role="TrG5h" value="TestTrans" />
     <node concept="1jGXV7" id="2WTetLZkp7V" role="3k6lfD">
       <property role="TrG5h" value="L1" />
-      <node concept="1v6VTO" id="5KNQWN9GsVp" role="1jGXV4">
-        <ref role="1v6VTP" node="5KNQWN9GqGI" resolve="OneManagerAndTheirEmployees" />
+      <node concept="1v6VTO" id="2epYeObrU$R" role="1jGXV4">
+        <ref role="1v6VTP" node="2I8MTI6F66p" resolve="ManagersTimesEmployees" />
       </node>
     </node>
     <node concept="pHN19" id="3TSFmgZFLM_" role="1y7jx4">
