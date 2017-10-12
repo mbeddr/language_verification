@@ -2,12 +2,14 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/ATOM/ATOM.mpl" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/languages/C/C.mpl" folder="examples.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/DSLTrans/DSLTrans.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/languages/Module/Module.mpl" folder="examples.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/languages/PetriNet/PetriNet.mpl" folder="examples.PetriNet2XML" />
+      <modulePath path="$PROJECT_DIR$/languages/RSS/RSS.mpl" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/XML/XML.mpl" folder="examples.PetriNet2XML" />
       <modulePath path="$PROJECT_DIR$/languages/test.TestLang/TestLang.mpl" folder="examples.test" />
@@ -20,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPersonInputModel/ExFamToPersonInputModel.msd" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPersonOutputModel/ExFamToPersonOutputModel.msd" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/solutions/PetriNet2XML/PetriNet2XML.msd" folder="examples.PetriNet2XML" />
+      <modulePath path="$PROJECT_DIR$/solutions/RSS2ATOM/RSS2ATOM.msd" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/solutions/RunnerPlugin/DSLTransVerif.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestInput/TestInput.msd" folder="examples.test" />
       <modulePath path="$PROJECT_DIR$/solutions/TestOutput/TestOutput.msd" folder="examples.test" />
