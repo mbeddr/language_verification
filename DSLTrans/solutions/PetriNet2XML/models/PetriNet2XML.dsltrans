@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<dsltrans:TransformationModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dsltrans="http://dsltrans/2.0">
+  <source xsi:type="dsltrans:FilePort" name="maininput" filePathURI="IN">
+    <metaModelId metaModelName="PetriNet"/>
+  </source>
+  <source xsi:type="dsltrans:Sequential" name="Main_CreationRule" previousSource="//@source.0">
+    <metaModelId metaModelURI="XML.ecore" metaModelName="XML"/>
+    <hasRule description="Main">
+      <match>
+        <class xsi:type="dsltrans:AnyMatchClass" className="PetriNet" packageName="PetriNet">
+          <attribute attributeName="name"/>
+        </class>
+      </match>
+      <apply>
+        <class className="Root" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Text" packageName="XML">
+          <attribute attributeName="value">
+            <attributeValue xsi:type="dsltrans:AttributeRef" attributeRef="//@source.1/@hasRule.0/@match.0/@class.0/@attribute.0"/>
+          </attribute>
+        </class>
+        <association associationName="children" source="//@source.1/@hasRule.0/@apply/@class.0" target="//@source.1/@hasRule.0/@apply/@class.1"/>
+        <association associationName="children" source="//@source.1/@hasRule.0/@apply/@class.2" target="//@source.1/@hasRule.0/@apply/@class.3"/>
+        <association associationName="children" source="//@source.1/@hasRule.0/@apply/@class.5" target="//@source.1/@hasRule.0/@apply/@class.6"/>
+        <association associationName="children" source="//@source.1/@hasRule.0/@apply/@class.6" target="//@source.1/@hasRule.0/@apply/@class.7"/>
+      </apply>
+    </hasRule>
+  </source>
+  <source xsi:type="dsltrans:Sequential" name="Place_CreationRule" previousSource="//@source.1">
+    <metaModelId metaModelURI="XML.ecore" metaModelName="XML"/>
+    <hasRule description="Place">
+      <match>
+        <class xsi:type="dsltrans:AnyMatchClass" className="Place" packageName="PetriNet">
+          <attribute attributeName="name"/>
+        </class>
+      </match>
+      <apply>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Text" packageName="XML">
+          <attribute attributeName="value">
+            <attributeValue xsi:type="dsltrans:AttributeRef" attributeRef="//@source.2/@hasRule.0/@match.0/@class.0/@attribute.0"/>
+          </attribute>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <association associationName="children" source="//@source.2/@hasRule.0/@apply/@class.0" target="//@source.2/@hasRule.0/@apply/@class.1"/>
+        <association associationName="children" source="//@source.2/@hasRule.0/@apply/@class.2" target="//@source.2/@hasRule.0/@apply/@class.3"/>
+        <association associationName="children" source="//@source.2/@hasRule.0/@apply/@class.3" target="//@source.2/@hasRule.0/@apply/@class.4"/>
+      </apply>
+    </hasRule>
+  </source>
+  <source xsi:type="dsltrans:Sequential" name="Transition_CreationRule" previousSource="//@source.2">
+    <metaModelId metaModelURI="XML.ecore" metaModelName="XML"/>
+    <hasRule description="Transition">
+      <match>
+        <class xsi:type="dsltrans:AnyMatchClass" className="Transition" packageName="PetriNet"/>
+      </match>
+      <apply>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <association associationName="children" source="//@source.3/@hasRule.0/@apply/@class.0" target="//@source.3/@hasRule.0/@apply/@class.1"/>
+      </apply>
+    </hasRule>
+  </source>
+  <source xsi:type="dsltrans:Sequential" name="PlaceToTransArc_CreationRule" previousSource="//@source.3">
+    <metaModelId metaModelURI="XML.ecore" metaModelName="XML"/>
+    <hasRule description="PlaceToTransArc">
+      <match>
+        <class xsi:type="dsltrans:AnyMatchClass" className="PlaceToTransArc" packageName="PetriNet"/>
+      </match>
+      <apply>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <association associationName="children" source="//@source.4/@hasRule.0/@apply/@class.0" target="//@source.4/@hasRule.0/@apply/@class.1"/>
+      </apply>
+    </hasRule>
+  </source>
+  <source xsi:type="dsltrans:Sequential" name="TransToPlaceArc_CreationRule" previousSource="//@source.4">
+    <metaModelId metaModelURI="XML.ecore" metaModelName="XML"/>
+    <hasRule description="TransToPlaceArc">
+      <match>
+        <class xsi:type="dsltrans:AnyMatchClass" className="TransToPlaceArc" packageName="PetriNet"/>
+      </match>
+      <apply>
+        <class className="Element" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="ApplyAttribute">
+            <attributeValue xsi:type="dsltrans:Atom" value="solveRef"/>
+          </attribute>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <class className="Attribute" packageName="XML">
+          <attribute attributeName="name"/>
+          <attribute attributeName="value"/>
+        </class>
+        <association associationName="children" source="//@source.5/@hasRule.0/@apply/@class.0" target="//@source.5/@hasRule.0/@apply/@class.1"/>
+      </apply>
+    </hasRule>
+  </source>
+</dsltrans:TransformationModel>
