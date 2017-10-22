@@ -6951,8 +6951,8 @@
                               <node concept="37vLTw" id="1zsJfrebF7q" role="1m5AlR">
                                 <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
                               </node>
-                              <node concept="chp4Y" id="2fNeFtxOAcp" role="3oSUPX">
-                                <ref role="cht4Q" to="yeb1:3QsrawRgNjr" resolve="AndContractFormula" />
+                              <node concept="chp4Y" id="4gc2EoZzpH5" role="3oSUPX">
+                                <ref role="cht4Q" to="yeb1:3QsrawRgNju" resolve="OrContractFormula" />
                               </node>
                             </node>
                             <node concept="3TrEf2" id="1zsJfrebF7r" role="2OqNvi">
@@ -6971,8 +6971,8 @@
                             <node concept="37vLTw" id="1zsJfrebF7w" role="1m5AlR">
                               <ref role="3cqZAo" node="1zsJfrebz3E" resolve="formula" />
                             </node>
-                            <node concept="chp4Y" id="2fNeFtxOAct" role="3oSUPX">
-                              <ref role="cht4Q" to="yeb1:3QsrawRgNjr" resolve="AndContractFormula" />
+                            <node concept="chp4Y" id="4gc2EoZzpQF" role="3oSUPX">
+                              <ref role="cht4Q" to="yeb1:3QsrawRgNju" resolve="OrContractFormula" />
                             </node>
                           </node>
                           <node concept="3TrEf2" id="1zsJfrebF7x" role="2OqNvi">
