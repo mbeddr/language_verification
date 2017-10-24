@@ -34,6 +34,9 @@
       <concept id="7049464676098553406" name="transfverif.core.structure.AnyMatchClass" flags="ng" index="2ik0NV" />
       <concept id="2459688670039315901" name="transfverif.core.structure.TVConceptIDRefExpression" flags="ng" index="pBohH" />
       <concept id="6271065208731828696" name="transfverif.core.structure.TVLinkIdRefExpression" flags="ng" index="2AKGPc" />
+      <concept id="1722780940080858385" name="transfverif.core.structure.Countable" flags="ng" index="KJs$M">
+        <property id="1722780940080858386" name="counter" index="KJs$L" />
+      </concept>
       <concept id="2796321687636315574" name="transfverif.core.structure.Link" flags="ng" index="13xwDO">
         <reference id="2796321687636315575" name="source" index="13xwDP" />
         <reference id="2796321687636315576" name="target" index="13xwDU" />
@@ -90,7 +93,29 @@
       <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
     </language>
     <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
-      <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X" />
+      <concept id="4439542802417895565" name="SyVOLT.structure.PreCondition" flags="ng" index="aREg_" />
+      <concept id="4439542802417895566" name="SyVOLT.structure.PostCondition" flags="ng" index="aREgA" />
+      <concept id="4439542802417925338" name="SyVOLT.structure.SamePostElement" flags="ng" index="aRP1M" />
+      <concept id="4439542802417923299" name="SyVOLT.structure.ImplicationContractFormula" flags="ng" index="aRPxb" />
+      <concept id="4439542802417923285" name="SyVOLT.structure.BinaryContractFormula" flags="ng" index="aRPxX">
+        <child id="2829711462938969990" name="arg1" index="1y4i0j" />
+        <child id="2829711462938969996" name="arg2" index="1y4i0p" />
+      </concept>
+      <concept id="7049464676098554041" name="SyVOLT.structure.AtomicContract" flags="ng" index="2ik09W">
+        <child id="4439542802417895567" name="preCondition" index="aREgB" />
+        <child id="4439542802417895569" name="postCondition" index="aREgT" />
+      </concept>
+      <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X">
+        <child id="4439542802417929364" name="sameElements" index="aRM0W" />
+        <child id="4439542802417923314" name="formulae" index="aRPxq" />
+        <child id="7049464676098554042" name="contracts" index="2ik09Z" />
+      </concept>
+      <concept id="7571185389806664458" name="SyVOLT.structure.AtomicContractPointerInSet" flags="ng" index="3x7ZJP">
+        <reference id="7571185389806986211" name="pointer" index="3x0ecs" />
+      </concept>
+      <concept id="3073246541432169797" name="SyVOLT.structure.AtomicContractPointer" flags="ng" index="1NTnwR">
+        <reference id="3073246541432169798" name="pointer" index="1NTnwO" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
@@ -212,6 +237,27 @@
         <property role="2V$B1T" value="8963bc53-cf92-45e3-b842-752065fffbe9" />
         <property role="2V$B1Q" value="ATOM" />
       </node>
+    </node>
+    <node concept="1NTnwR" id="5$dZVybeI9M" role="2ik09Z">
+      <ref role="1NTnwO" node="5$dZVybeI8z" resolve="ChannelProduction" />
+    </node>
+    <node concept="1NTnwR" id="5FfQJKblUdb" role="2ik09Z">
+      <ref role="1NTnwO" node="5FfQJKblUci" resolve="Entry" />
+    </node>
+    <node concept="1NTnwR" id="5FfQJKblUdo" role="2ik09Z">
+      <ref role="1NTnwO" node="5$dZVybcRvf" resolve="EntryContent" />
+    </node>
+    <node concept="aRPxb" id="5FfQJKblUcs" role="aRPxq">
+      <node concept="3x7ZJP" id="5FfQJKblUcH" role="1y4i0j">
+        <ref role="3x0ecs" node="5FfQJKblUci" resolve="Entry" />
+      </node>
+      <node concept="3x7ZJP" id="5FfQJKblUcK" role="1y4i0p">
+        <ref role="3x0ecs" node="5$dZVybcRvf" resolve="EntryContent" />
+      </node>
+    </node>
+    <node concept="aRP1M" id="5FfQJKblUcN" role="aRM0W">
+      <ref role="13xwDP" node="5FfQJKblUcA" />
+      <ref role="13xwDU" node="5$dZVybcRvk" />
     </node>
   </node>
   <node concept="1jGXXK" id="4jYIdECX4eq">
@@ -806,6 +852,102 @@
     <node concept="1jGXV2" id="4jYIdECX4hR" role="2udmAx">
       <ref role="13xwDP" node="4jYIdECX4hJ" />
       <ref role="13xwDU" node="4jYIdECX4hG" />
+    </node>
+  </node>
+  <node concept="2ik09W" id="5$dZVybcRvf">
+    <property role="3GE5qa" value="contracts" />
+    <property role="TrG5h" value="EntryContent" />
+    <node concept="aREg_" id="5$dZVybcRvg" role="aREgB">
+      <property role="KJs$L" value="0" />
+    </node>
+    <node concept="aREgA" id="5$dZVybcRvi" role="aREgT">
+      <property role="KJs$L" value="0" />
+      <node concept="1jGXXa" id="5$dZVybcRvk" role="1jGXX7">
+        <property role="13z3e$" value="EntryC" />
+        <node concept="pBohH" id="5$dZVybemK4" role="pB8W9">
+          <ref role="35c_gD" to="6hcn:4jYIdECV5Bn" resolve="Entry" />
+        </node>
+      </node>
+      <node concept="1jGXXa" id="5$dZVybemKy" role="1jGXX7">
+        <property role="13z3e$" value="Content" />
+        <node concept="pBohH" id="5$dZVybemKA" role="pB8W9">
+          <ref role="35c_gD" to="6hcn:4jYIdECV5Bp" resolve="Content" />
+        </node>
+      </node>
+      <node concept="1jGXVd" id="5$dZVybeDEh" role="2ik0Ml">
+        <ref role="13xwDP" node="5$dZVybcRvk" />
+        <ref role="13xwDU" node="5$dZVybemKy" />
+        <node concept="2AKGPc" id="5$dZVybeDEi" role="1vfT9s">
+          <ref role="359W_E" to="6hcn:4jYIdECV5Bn" resolve="Entry" />
+          <ref role="359W_F" to="6hcn:4jYIdECV5BT" resolve="content" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ik09W" id="5$dZVybeI8z">
+    <property role="3GE5qa" value="contracts" />
+    <property role="TrG5h" value="ChannelProduction" />
+    <node concept="aREg_" id="5$dZVybeI8$" role="aREgB">
+      <property role="KJs$L" value="0" />
+      <node concept="2ik0NV" id="5$dZVybeI8A" role="13z3mo">
+        <property role="13z3e$" value="Channel" />
+        <node concept="pBohH" id="5$dZVybeI8C" role="pB8W9">
+          <ref role="35c_gD" to="8hjr:4jYIdECUZMd" resolve="Channel" />
+        </node>
+      </node>
+    </node>
+    <node concept="aREgA" id="5$dZVybeI8H" role="aREgT">
+      <property role="KJs$L" value="0" />
+      <node concept="1jGXVd" id="5$dZVybeI9j" role="2ik0Ml">
+        <ref role="13xwDP" node="5$dZVybeI8J" />
+        <ref role="13xwDU" node="5$dZVybeI8Z" />
+        <node concept="2AKGPc" id="5$dZVybeI9k" role="1vfT9s">
+          <ref role="359W_E" to="6hcn:4jYIdECV5Bm" resolve="ATOM" />
+          <ref role="359W_F" to="6hcn:4jYIdECV5BK" resolve="entrie" />
+        </node>
+      </node>
+      <node concept="1jGXVd" id="5$dZVybeI9w" role="2ik0Ml">
+        <ref role="13xwDP" node="5$dZVybeI8J" />
+        <ref role="13xwDU" node="5$dZVybeI98" />
+        <node concept="2AKGPc" id="5$dZVybeI9x" role="1vfT9s">
+          <ref role="359W_E" to="6hcn:4jYIdECV5Bm" resolve="ATOM" />
+          <ref role="359W_F" to="6hcn:4jYIdECV5BG" resolve="generator" />
+        </node>
+      </node>
+      <node concept="1jGXXa" id="5$dZVybeI8J" role="1jGXX7">
+        <property role="13z3e$" value="ATOM" />
+        <node concept="pBohH" id="5$dZVybeI8L" role="pB8W9">
+          <ref role="35c_gD" to="6hcn:4jYIdECV5Bm" resolve="ATOM" />
+        </node>
+      </node>
+      <node concept="1jGXXa" id="5$dZVybeI8Z" role="1jGXX7">
+        <property role="13z3e$" value="EntryCP" />
+        <node concept="pBohH" id="5$dZVybeI93" role="pB8W9">
+          <ref role="35c_gD" to="6hcn:4jYIdECV5Bn" resolve="Entry" />
+        </node>
+      </node>
+      <node concept="1jGXXa" id="5$dZVybeI98" role="1jGXX7">
+        <property role="13z3e$" value="Generator" />
+        <node concept="pBohH" id="5$dZVybeI9e" role="pB8W9">
+          <ref role="35c_gD" to="6hcn:4jYIdECV5Bu" resolve="Generator" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2ik09W" id="5FfQJKblUci">
+    <property role="3GE5qa" value="contracts" />
+    <property role="TrG5h" value="Entry" />
+    <node concept="aREg_" id="5FfQJKblUcy" role="aREgB">
+      <property role="KJs$L" value="0" />
+    </node>
+    <node concept="aREgA" id="5FfQJKblUc$" role="aREgT">
+      <property role="KJs$L" value="0" />
+      <node concept="1jGXXa" id="5FfQJKblUcA" role="1jGXX7">
+        <property role="13z3e$" value="Entry" />
+        <node concept="pBohH" id="5FfQJKblUcC" role="pB8W9">
+          <ref role="35c_gD" to="6hcn:4jYIdECV5Bn" resolve="Entry" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
