@@ -136,9 +136,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -425,9 +425,9 @@
       <ref role="1N5Vy1" to="rr4f:2uM0u1SErYl" resolve="pointer" />
       <node concept="3dgokm" id="2l_LApadM9c" role="1N6uqs">
         <node concept="3clFbS" id="2l_LApadM9d" role="2VODD2">
-          <node concept="34ab3g" id="55Vcbxz74ij" role="3cqZAp">
-            <property role="35gtTG" value="info" />
-            <node concept="3cpWs3" id="55Vcbxz79TK" role="34bqiv">
+          <node concept="RRSsy" id="62wMgPJB428" role="3cqZAp">
+            <property role="RRSoG" value="info" />
+            <node concept="3cpWs3" id="55Vcbxz79TK" role="RRSoy">
               <node concept="2OqwBi" id="55Vcbxz7bx4" role="3uHU7w">
                 <node concept="3kakTB" id="55Vcbxz7aXU" role="2Oq$k0" />
                 <node concept="2qgKlT" id="55Vcbxz7cjQ" role="2OqNvi">
@@ -439,9 +439,9 @@
               </node>
             </node>
           </node>
-          <node concept="34ab3g" id="55Vcbxz7dxz" role="3cqZAp">
-            <property role="35gtTG" value="info" />
-            <node concept="3cpWs3" id="55Vcbxz7m3Y" role="34bqiv">
+          <node concept="RRSsy" id="62wMgPJB5vq" role="3cqZAp">
+            <property role="RRSoG" value="info" />
+            <node concept="3cpWs3" id="55Vcbxz7m3Y" role="RRSoy">
               <node concept="2OqwBi" id="55Vcbxz7mUz" role="3uHU7w">
                 <node concept="2rP1CM" id="55Vcbxz7m4c" role="2Oq$k0" />
                 <node concept="2qgKlT" id="55Vcbxz7ngS" role="2OqNvi">
@@ -453,7 +453,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="55Vcbxz8P3o" role="3cqZAp" />
           <node concept="3clFbH" id="55Vcbxz8Q1Q" role="3cqZAp" />
           <node concept="3cpWs8" id="4PE1wcLCObd" role="3cqZAp">
             <node concept="3cpWsn" id="4PE1wcLCObe" role="3cpWs9">
