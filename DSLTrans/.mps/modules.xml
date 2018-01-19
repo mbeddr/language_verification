@@ -9,12 +9,10 @@
       <modulePath path="$PROJECT_DIR$/languages/Kiltera/Kiltera.mpl" folder="examples.UML2Kiltera" />
       <modulePath path="$PROJECT_DIR$/languages/Module/Module.mpl" folder="examples.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="examples.FTP" />
-      <modulePath path="$PROJECT_DIR$/languages/PetriNet/PetriNet.mpl" folder="examples.PetriNet2XML" />
       <modulePath path="$PROJECT_DIR$/languages/RSS/RSS.mpl" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TestLang/TestLang.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/UMLRT/UMLRT.mpl" folder="examples.UML2Kiltera" />
-      <modulePath path="$PROJECT_DIR$/languages/XML/XML.mpl" folder="examples.PetriNet2XML" />
-      <modulePath path="$PROJECT_DIR$/languages/test.TestLang/TestLang.mpl" folder="examples.test" />
       <modulePath path="$PROJECT_DIR$/languages/transverif.core/transfverif.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.build/DSLTrans.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.lib/DSLTrans.lib.msd" folder="" />
@@ -23,7 +21,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPerson/ExFamToPerson.msd" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPersonInputModel/ExFamToPersonInputModel.msd" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPersonOutputModel/ExFamToPersonOutputModel.msd" folder="examples.FTP" />
-      <modulePath path="$PROJECT_DIR$/solutions/PetriNet2XML/PetriNet2XML.msd" folder="examples.PetriNet2XML" />
       <modulePath path="$PROJECT_DIR$/solutions/RSS2ATOM/RSS2ATOM.msd" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/solutions/RunnerPlugin/DSLTransVerif.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestInput/TestInput.msd" folder="examples.test" />

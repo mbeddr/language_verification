@@ -104,12 +104,14 @@
       <concept id="7049464676098554041" name="SyVOLT.structure.AtomicContract" flags="ng" index="2ik09W">
         <child id="4439542802417895567" name="preCondition" index="aREgB" />
         <child id="4439542802417895569" name="postCondition" index="aREgT" />
+        <child id="4439542802417895572" name="traceLinks" index="aREgW" />
       </concept>
       <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X">
         <child id="4439542802417929364" name="sameElements" index="aRM0W" />
         <child id="4439542802417923314" name="formulae" index="aRPxq" />
         <child id="7049464676098554042" name="contracts" index="2ik09Z" />
       </concept>
+      <concept id="2186611055801906832" name="SyVOLT.structure.ContractBackwardLink" flags="ng" index="2lmX6V" />
       <concept id="7571185389806664458" name="SyVOLT.structure.AtomicContractPointerInSet" flags="ng" index="3x7ZJP">
         <reference id="7571185389806986211" name="pointer" index="3x0ecs" />
       </concept>
@@ -932,6 +934,10 @@
           <ref role="35c_gD" to="6hcn:4jYIdECV5Bu" resolve="Generator" />
         </node>
       </node>
+    </node>
+    <node concept="2lmX6V" id="6tft9IKW2Mz" role="aREgW">
+      <ref role="13xwDP" node="5$dZVybeI8J" />
+      <ref role="13xwDU" node="5$dZVybeI8A" />
     </node>
   </node>
   <node concept="2ik09W" id="5FfQJKblUci">
