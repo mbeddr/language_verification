@@ -13,7 +13,7 @@ The DSLTrans language is provided in the 'DSLTrans' plugin, such that transforma
 
 SyVOLT Contract Verification
 ----------------------------
-The 'DSLTrans' plugin also provides the ability to build structural contracts to be verified on DSLTrans transformations. These contacts can be used to prove the existence of relations between elements in the input model and elements produced in the output model. Again, multiple examples are seen in the repository.
+The 'DSLTrans' plugin also provides the ability to build structural contracts to be verified on DSLTrans transformations. These contacts can be used to prove the existence of relations between elements in the input model and elements produced in the output model. Multiple examples are seen in the repository and related work can be found at https://github.com/levilucio/SyVOLT.
 
 Running the contract verification system requires the SyVOLT engine, as found at https://github.com/levilucio/SyVOLT. Note that the path of the SyVOLT engine must be set in the ContractSet containing the contracts for your transformation.
 
