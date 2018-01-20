@@ -122,12 +122,16 @@
         <child id="4439542802417895572" name="traceLinks" index="aREgW" />
       </concept>
       <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X">
+        <child id="6199913431428015452" name="config" index="20uy4Q" />
         <child id="4439542802417929364" name="sameElements" index="aRM0W" />
         <child id="4439542802417923314" name="formulae" index="aRPxq" />
         <child id="7049464676098554042" name="contracts" index="2ik09Z" />
       </concept>
       <concept id="2186611055801906832" name="SyVOLT.structure.ContractBackwardLink" flags="ng" index="2lmX6V">
         <property id="2186611055801906619" name="backwardInPre" index="2lmXag" />
+      </concept>
+      <concept id="872517429970413873" name="SyVOLT.structure.VerificationConfig" flags="ng" index="3tCIjb">
+        <property id="872517429970413874" name="syvoltEnginePath" index="3tCIj8" />
       </concept>
       <concept id="7571185389806664458" name="SyVOLT.structure.AtomicContractPointerInSet" flags="ng" index="3x7ZJP">
         <reference id="7571185389806986211" name="pointer" index="3x0ecs" />
@@ -700,6 +704,9 @@
     <node concept="aRP1M" id="4gc2EoZz1t2" role="aRM0W">
       <ref role="13xwDP" node="4gc2EoZyZf5" />
       <ref role="13xwDU" node="4gc2EoZyZgt" />
+    </node>
+    <node concept="3tCIjb" id="5oax6Fmxpet" role="20uy4Q">
+      <property role="3tCIj8" value="~/Projects/SyVOLT" />
     </node>
   </node>
   <node concept="1jGXXK" id="7e1hl__h$Rk">

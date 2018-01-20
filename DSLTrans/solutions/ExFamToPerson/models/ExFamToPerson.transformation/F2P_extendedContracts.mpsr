@@ -11,7 +11,11 @@
     </language>
     <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
       <concept id="7049464676098554040" name="SyVOLT.structure.ContractSet" flags="ng" index="2ik09X">
+        <child id="6199913431428015452" name="config" index="20uy4Q" />
         <child id="7049464676098554042" name="contracts" index="2ik09Z" />
+      </concept>
+      <concept id="872517429970413873" name="SyVOLT.structure.VerificationConfig" flags="ng" index="3tCIjb">
+        <property id="872517429970413874" name="syvoltEnginePath" index="3tCIj8" />
       </concept>
       <concept id="3073246541432169797" name="SyVOLT.structure.AtomicContractPointer" flags="ng" index="1NTnwR">
         <reference id="3073246541432169798" name="pointer" index="1NTnwO" />
@@ -79,6 +83,9 @@
     </node>
     <node concept="1NTnwR" id="4zXRLIk6MV6" role="2ik09Z">
       <ref role="1NTnwO" node="4zXRLIk6MV5" resolve="Pos_TownHallComm" />
+    </node>
+    <node concept="3tCIjb" id="5oax6FmsmXS" role="20uy4Q">
+      <property role="3tCIj8" value="~/Projects/SyVOLT" />
     </node>
   </node>
 </model>
