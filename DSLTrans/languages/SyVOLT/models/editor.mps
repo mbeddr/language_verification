@@ -240,6 +240,21 @@
               <ref role="1NtTu8" to="i3vy:2t59Tl5m1Zh" resolve="outputLanguage" />
             </node>
           </node>
+          <node concept="3F0ifn" id="5oax6Fmsnkt" role="3EZMnx" />
+          <node concept="3EZMnI" id="5oax6FmsalN" role="3EZMnx">
+            <node concept="2iRfu4" id="5oax6FmsalO" role="2iSdaV" />
+            <node concept="3F0ifn" id="5oax6FmsalP" role="3EZMnx">
+              <property role="3F0ifm" value="Config: " />
+              <node concept="Vb9p2" id="5oax6FmsalQ" role="3F10Kt" />
+              <node concept="VechU" id="5oax6FmsalR" role="3F10Kt">
+                <property role="Vb096" value="DARK_GREEN" />
+              </node>
+            </node>
+            <node concept="3F1sOY" id="5oax6FmsalS" role="3EZMnx">
+              <ref role="1NtTu8" to="yeb1:5oax6Fmsals" resolve="config" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5oax6Fmsal_" role="3EZMnx" />
         </node>
         <node concept="VSNWy" id="55KrseX15ic" role="3F10Kt">
           <property role="1lJzqX" value="16" />
@@ -861,16 +876,6 @@
     <property role="3GE5qa" value="Config" />
     <ref role="1XX52x" to="yeb1:KrNvFhIi$L" resolve="VerificationConfig" />
     <node concept="3EZMnI" id="KrNvFhIi_5" role="2wV5jI">
-      <node concept="3F0ifn" id="KrNvFhIi_c" role="3EZMnx">
-        <property role="3F0ifm" value="Config File:" />
-        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-        <node concept="Vb9p2" id="KrNvFhK4wv" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
-        </node>
-      </node>
-      <node concept="3F0A7n" id="KrNvFhX8vx" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
       <node concept="3F0ifn" id="KrNvFhIi_i" role="3EZMnx">
         <property role="3F0ifm" value="SyVOLT Engine Path:" />
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
@@ -880,16 +885,6 @@
       </node>
       <node concept="3F0A7n" id="KrNvFhIi_v" role="3EZMnx">
         <ref role="1NtTu8" to="yeb1:KrNvFhIi$M" resolve="syvoltEnginePath" />
-      </node>
-      <node concept="3F0ifn" id="KrNvFhIi_D" role="3EZMnx">
-        <property role="3F0ifm" value="SyVOLT Backend Path:" />
-        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-        <node concept="pVoyu" id="KrNvFhInWv" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0A7n" id="KrNvFhInVJ" role="3EZMnx">
-        <ref role="1NtTu8" to="yeb1:KrNvFhIi$R" resolve="syvoltBackendPath" />
       </node>
       <node concept="l2Vlx" id="KrNvFhIi_8" role="2iSdaV" />
     </node>

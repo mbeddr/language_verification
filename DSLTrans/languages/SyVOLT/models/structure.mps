@@ -75,6 +75,12 @@
       <property role="IQ2ns" value="4439542802417929364" />
       <ref role="20lvS9" node="3QsrawRgOMo" resolve="SameElement" />
     </node>
+    <node concept="1TJgyj" id="5oax6Fmsals" role="1TKVEi">
+      <property role="IQ2ns" value="6199913431428015452" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="config" />
+      <ref role="20lvS9" node="KrNvFhIi$L" resolve="VerificationConfig" />
+    </node>
     <node concept="PrWs8" id="3QsrawRgP9q" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -321,11 +327,6 @@
     <node concept="1TJgyi" id="KrNvFhIi$M" role="1TKVEl">
       <property role="IQ2nx" value="872517429970413874" />
       <property role="TrG5h" value="syvoltEnginePath" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="KrNvFhIi$R" role="1TKVEl">
-      <property role="IQ2nx" value="872517429970413879" />
-      <property role="TrG5h" value="syvoltBackendPath" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="KrNvFhX86L" role="PzmwI">

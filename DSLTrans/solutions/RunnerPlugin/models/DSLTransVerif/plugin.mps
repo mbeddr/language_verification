@@ -60,6 +60,7 @@
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -120,6 +121,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -228,10 +230,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
-        <property id="559557797393021807" name="stereotype" index="BaGAP" />
-        <property id="559557797393017702" name="name" index="BaHAW" />
-      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -301,14 +299,242 @@
   </registry>
   <node concept="2DaZZR" id="7rNOiA32K_E" />
   <node concept="sE7Ow" id="7rNOiA32K_F">
-    <property role="TrG5h" value="RunnerAction" />
+    <property role="TrG5h" value="VerifyAction" />
     <property role="2uzpH1" value="Verify Transformation" />
     <property role="ngHcd" value="V" />
-    <property role="1WHSii" value="Verifies the transformation in this model using the contracts" />
+    <property role="1WHSii" value="Verifies the transformation in this model using the contracts specified" />
     <property role="fJN8o" value="true" />
     <node concept="tnohg" id="7rNOiA32K_G" role="tncku">
       <node concept="3clFbS" id="7rNOiA32K_H" role="2VODD2">
-        <node concept="3clFbH" id="75zsbcXh6oB" role="3cqZAp" />
+        <node concept="3clFbH" id="5oax6FmsB6o" role="3cqZAp" />
+        <node concept="3SKdUt" id="5oax6FmsRrP" role="3cqZAp">
+          <node concept="3SKdUq" id="5oax6FmsRrR" role="3SKWNk">
+            <property role="3SKdUp" value="first get the transformation" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4knEpdJZMIc" role="3cqZAp">
+          <node concept="3cpWsn" id="4knEpdJZMIf" role="3cpWs9">
+            <property role="TrG5h" value="transf" />
+            <node concept="3Tqbb2" id="4knEpdJZMIa" role="1tU5fm">
+              <ref role="ehGHo" to="rr4f:6JhS3QZMbff" resolve="Transformation" />
+            </node>
+            <node concept="2OqwBi" id="4knEpdJZR8R" role="33vP2m">
+              <node concept="2OqwBi" id="4knEpdJZOG2" role="2Oq$k0">
+                <node concept="2OqwBi" id="4knEpdJZNNU" role="2Oq$k0">
+                  <node concept="2WthIp" id="4knEpdJZNxG" role="2Oq$k0" />
+                  <node concept="3gHZIF" id="4knEpdJZOiv" role="2OqNvi">
+                    <ref role="2WH_rO" node="7rNOiA3vFOG" resolve="currentModel" />
+                  </node>
+                </node>
+                <node concept="2SmgA7" id="4knEpdJZOUV" role="2OqNvi">
+                  <node concept="chp4Y" id="4knEpdJZPa8" role="1dBWTz">
+                    <ref role="cht4Q" to="rr4f:6JhS3QZMbff" resolve="Transformation" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="4knEpdJZVyx" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5oax6FmsMXX" role="3cqZAp" />
+        <node concept="3clFbJ" id="5oax6FmsZyA" role="3cqZAp">
+          <node concept="3clFbS" id="5oax6FmsZyC" role="3clFbx">
+            <node concept="3clFbF" id="5oax6Fmt6Zk" role="3cqZAp">
+              <node concept="2YIFZM" id="5oax6Fmt6Zl" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <node concept="10Nm6u" id="5oax6Fmt6Zm" role="37wK5m" />
+                <node concept="Xl_RD" id="5oax6Fmt6Zp" role="37wK5m">
+                  <property role="Xl_RC" value="Error: Can't find the transformation!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5oax6Fmt6Zq" role="3cqZAp" />
+          </node>
+          <node concept="17R0WA" id="5oax6Fmt5Ob" role="3clFbw">
+            <node concept="10Nm6u" id="5oax6Fmt6SY" role="3uHU7w" />
+            <node concept="37vLTw" id="5oax6Fmt3Uk" role="3uHU7B">
+              <ref role="3cqZAo" node="4knEpdJZMIf" resolve="transf" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5oax6FmsEWW" role="3cqZAp" />
+        <node concept="3cpWs8" id="5oax6FmteUl" role="3cqZAp">
+          <node concept="3cpWsn" id="5oax6FmteUo" role="3cpWs9">
+            <property role="TrG5h" value="contractSet" />
+            <node concept="3Tqbb2" id="5oax6FmteUj" role="1tU5fm">
+              <ref role="ehGHo" to="yeb1:67kIGnNxbyS" resolve="ContractSet" />
+            </node>
+            <node concept="2OqwBi" id="5oax6Fmtkrp" role="33vP2m">
+              <node concept="37vLTw" id="5oax6Fmtk55" role="2Oq$k0">
+                <ref role="3cqZAo" node="4knEpdJZMIf" resolve="transf" />
+              </node>
+              <node concept="3TrEf2" id="5oax6FmtkPn" role="2OqNvi">
+                <ref role="3Tt5mk" to="rr4f:4knEpdJWV$A" resolve="contracts" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5oax6Fmtp$T" role="3cqZAp">
+          <node concept="3clFbS" id="5oax6Fmtp$V" role="3clFbx">
+            <node concept="3clFbF" id="5oax6Fmtx0C" role="3cqZAp">
+              <node concept="2YIFZM" id="5oax6Fmtx0D" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <node concept="10Nm6u" id="5oax6Fmtx0E" role="37wK5m" />
+                <node concept="Xl_RD" id="5oax6Fmtx0F" role="37wK5m">
+                  <property role="Xl_RC" value="Error: Must have set of contracts to verify!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5oax6Fmtx0G" role="3cqZAp" />
+          </node>
+          <node concept="17R0WA" id="5oax6FmtvPd" role="3clFbw">
+            <node concept="10Nm6u" id="5oax6FmtwUi" role="3uHU7w" />
+            <node concept="37vLTw" id="5oax6FmttXx" role="3uHU7B">
+              <ref role="3cqZAo" node="5oax6FmteUo" resolve="contractSet" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5oax6Fmtykb" role="3cqZAp" />
+        <node concept="3cpWs8" id="5oax6FmtSGG" role="3cqZAp">
+          <node concept="3cpWsn" id="5oax6FmtSGJ" role="3cpWs9">
+            <property role="TrG5h" value="config" />
+            <node concept="3Tqbb2" id="5oax6FmtSGE" role="1tU5fm">
+              <ref role="ehGHo" to="yeb1:KrNvFhIi$L" resolve="VerificationConfig" />
+            </node>
+            <node concept="2OqwBi" id="5oax6FmtXOT" role="33vP2m">
+              <node concept="37vLTw" id="5oax6FmtXu_" role="2Oq$k0">
+                <ref role="3cqZAo" node="5oax6FmteUo" resolve="contractSet" />
+              </node>
+              <node concept="3TrEf2" id="5oax6FmtYeR" role="2OqNvi">
+                <ref role="3Tt5mk" to="yeb1:5oax6Fmsals" resolve="config" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5oax6Fmu30y" role="3cqZAp">
+          <node concept="3clFbS" id="5oax6Fmu30z" role="3clFbx">
+            <node concept="3clFbF" id="5oax6Fmu30$" role="3cqZAp">
+              <node concept="2YIFZM" id="5oax6Fmu30_" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <node concept="10Nm6u" id="5oax6Fmu30A" role="37wK5m" />
+                <node concept="Xl_RD" id="5oax6Fmu30B" role="37wK5m">
+                  <property role="Xl_RC" value="Error: Couldn't access config in contract set!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5oax6Fmu30C" role="3cqZAp" />
+          </node>
+          <node concept="17R0WA" id="5oax6Fmu30D" role="3clFbw">
+            <node concept="10Nm6u" id="5oax6Fmu30E" role="3uHU7w" />
+            <node concept="37vLTw" id="5oax6Fmu7rV" role="3uHU7B">
+              <ref role="3cqZAo" node="5oax6FmtSGJ" resolve="config" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5oax6Fmu8Tu" role="3cqZAp" />
+        <node concept="3cpWs8" id="5oax6Fmu9qz" role="3cqZAp">
+          <node concept="3cpWsn" id="5oax6Fmu9qA" role="3cpWs9">
+            <property role="TrG5h" value="syvoltEnginePath" />
+            <node concept="17QB3L" id="5oax6Fmu9qx" role="1tU5fm" />
+            <node concept="2OqwBi" id="5oax6Fmu$44" role="33vP2m">
+              <node concept="37vLTw" id="5oax6FmuzrY" role="2Oq$k0">
+                <ref role="3cqZAo" node="5oax6FmtSGJ" resolve="config" />
+              </node>
+              <node concept="3TrcHB" id="5oax6Fmu_bR" role="2OqNvi">
+                <ref role="3TsBF5" to="yeb1:KrNvFhIi$M" resolve="syvoltEnginePath" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5oax6FmuHzf" role="3cqZAp">
+          <node concept="3clFbS" id="5oax6FmuHzg" role="3clFbx">
+            <node concept="3clFbF" id="5oax6FmuHzh" role="3cqZAp">
+              <node concept="2YIFZM" id="5oax6FmuHzi" role="3clFbG">
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <node concept="10Nm6u" id="5oax6FmuHzj" role="37wK5m" />
+                <node concept="Xl_RD" id="5oax6FmuHzk" role="37wK5m">
+                  <property role="Xl_RC" value="Error: Must set path to SyVOLT engine in verif config!" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5oax6FmuHzl" role="3cqZAp" />
+          </node>
+          <node concept="22lmx$" id="5oax6FmuMbl" role="3clFbw">
+            <node concept="3clFbC" id="5oax6FmuQI4" role="3uHU7w">
+              <node concept="3cmrfG" id="5oax6FmuRmc" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="2OqwBi" id="5oax6FmuND3" role="3uHU7B">
+                <node concept="37vLTw" id="5oax6FmuNhB" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5oax6Fmu9qA" resolve="syvoltEnginePath" />
+                </node>
+                <node concept="liA8E" id="5oax6FmuO53" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                </node>
+              </node>
+            </node>
+            <node concept="17R0WA" id="5oax6FmuHzm" role="3uHU7B">
+              <node concept="37vLTw" id="5oax6FmuM3Q" role="3uHU7B">
+                <ref role="3cqZAo" node="5oax6Fmu9qA" resolve="syvoltEnginePath" />
+              </node>
+              <node concept="10Nm6u" id="5oax6FmuHzn" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5oax6FmvByC" role="3cqZAp" />
+        <node concept="3clFbJ" id="5oax6FmvUwT" role="3cqZAp">
+          <node concept="3clFbS" id="5oax6FmvUwV" role="3clFbx">
+            <node concept="3clFbF" id="5oax6Fmw4qG" role="3cqZAp">
+              <node concept="37vLTI" id="5oax6Fmw5Er" role="3clFbG">
+                <node concept="3cpWs3" id="5oax6Fmw8hi" role="37vLTx">
+                  <node concept="2OqwBi" id="5oax6Fmw8Or" role="3uHU7w">
+                    <node concept="37vLTw" id="5oax6Fmw8sa" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5oax6Fmu9qA" resolve="syvoltEnginePath" />
+                    </node>
+                    <node concept="liA8E" id="5oax6Fmw9ks" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                      <node concept="3cmrfG" id="5oax6Fmw9$A" role="37wK5m">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2YIFZM" id="5oax6Fmw5Zf" role="3uHU7B">
+                    <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+                    <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                    <node concept="Xl_RD" id="5oax6Fmw66s" role="37wK5m">
+                      <property role="Xl_RC" value="user.home" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5oax6Fmw4qE" role="37vLTJ">
+                  <ref role="3cqZAo" node="5oax6Fmu9qA" resolve="syvoltEnginePath" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5oax6Fmw0Nh" role="3clFbw">
+            <node concept="37vLTw" id="5oax6FmvZj0" role="2Oq$k0">
+              <ref role="3cqZAo" node="5oax6Fmu9qA" resolve="syvoltEnginePath" />
+            </node>
+            <node concept="liA8E" id="5oax6Fmw2Ho" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+              <node concept="3cpWs3" id="5oax6Fmw3Mf" role="37wK5m">
+                <node concept="10M0yZ" id="5oax6Fmw4cp" role="3uHU7w">
+                  <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
+                  <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="Xl_RD" id="5oax6Fmw2Tv" role="3uHU7B">
+                  <property role="Xl_RC" value="~" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5oax6FmtaoX" role="3cqZAp" />
         <node concept="3cpWs8" id="75zsbcXh96n" role="3cqZAp">
           <node concept="3cpWsn" id="75zsbcXh96l" role="3cpWs9">
             <property role="3TUv4t" value="true" />
@@ -411,48 +637,16 @@
           </node>
         </node>
         <node concept="3clFbH" id="75zsbcXePRM" role="3cqZAp" />
-        <node concept="3cpWs8" id="75zsbcX5VUz" role="3cqZAp">
-          <node concept="3cpWsn" id="75zsbcX5VUA" role="3cpWs9">
-            <property role="TrG5h" value="syvoltEnginePath" />
-            <node concept="17QB3L" id="75zsbcX5VUx" role="1tU5fm" />
-            <node concept="2OqwBi" id="75zsbcX5WEN" role="33vP2m">
-              <node concept="3TrcHB" id="75zsbcXeYz6" role="2OqNvi">
-                <ref role="3TsBF5" to="yeb1:KrNvFhIi$M" resolve="syvoltEnginePath" />
-              </node>
-              <node concept="2OqwBi" id="75zsbcX5WEO" role="2Oq$k0">
-                <node concept="2OqwBi" id="75zsbcX5WEP" role="2Oq$k0">
-                  <node concept="BaHAS" id="75zsbcX5WEQ" role="2Oq$k0">
-                    <property role="BaHAW" value="DSLTransVerif.config" />
-                    <property role="BaGAP" value="" />
-                  </node>
-                  <node concept="2RRcyG" id="75zsbcX5WER" role="2OqNvi">
-                    <ref role="2RRcyH" to="yeb1:KrNvFhIi$L" resolve="VerificationConfig" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="75zsbcX5WES" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="75zsbcX5XfA" role="3cqZAp">
           <node concept="3cpWsn" id="75zsbcX5XfD" role="3cpWs9">
             <property role="TrG5h" value="syvoltBackendPath" />
             <node concept="17QB3L" id="75zsbcX5Xf$" role="1tU5fm" />
-            <node concept="2OqwBi" id="75zsbcX5Y35" role="33vP2m">
-              <node concept="3TrcHB" id="75zsbcXf1p1" role="2OqNvi">
-                <ref role="3TsBF5" to="yeb1:KrNvFhIi$R" resolve="syvoltBackendPath" />
+            <node concept="3cpWs3" id="5oax6FmuhS7" role="33vP2m">
+              <node concept="Xl_RD" id="5oax6FmuiPk" role="3uHU7w">
+                <property role="Xl_RC" value="/tmp/" />
               </node>
-              <node concept="2OqwBi" id="75zsbcX5Y36" role="2Oq$k0">
-                <node concept="2OqwBi" id="75zsbcX5Y37" role="2Oq$k0">
-                  <node concept="BaHAS" id="75zsbcX5Y38" role="2Oq$k0">
-                    <property role="BaHAW" value="DSLTransVerif.config" />
-                    <property role="BaGAP" value="" />
-                  </node>
-                  <node concept="2RRcyG" id="75zsbcX5Y39" role="2OqNvi">
-                    <ref role="2RRcyH" to="yeb1:KrNvFhIi$L" resolve="VerificationConfig" />
-                  </node>
-                </node>
-                <node concept="1uHKPH" id="75zsbcX5Y3a" role="2OqNvi" />
+              <node concept="37vLTw" id="5oax6Fmugvy" role="3uHU7B">
+                <ref role="3cqZAo" node="5oax6Fmu9qA" resolve="syvoltEnginePath" />
               </node>
             </node>
           </node>
@@ -956,30 +1150,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="75zsbcX5VpL" role="3cqZAp" />
-        <node concept="3cpWs8" id="4knEpdJZMIc" role="3cqZAp">
-          <node concept="3cpWsn" id="4knEpdJZMIf" role="3cpWs9">
-            <property role="TrG5h" value="transf" />
-            <node concept="3Tqbb2" id="4knEpdJZMIa" role="1tU5fm">
-              <ref role="ehGHo" to="rr4f:6JhS3QZMbff" resolve="Transformation" />
-            </node>
-            <node concept="2OqwBi" id="4knEpdJZR8R" role="33vP2m">
-              <node concept="2OqwBi" id="4knEpdJZOG2" role="2Oq$k0">
-                <node concept="2OqwBi" id="4knEpdJZNNU" role="2Oq$k0">
-                  <node concept="2WthIp" id="4knEpdJZNxG" role="2Oq$k0" />
-                  <node concept="3gHZIF" id="4knEpdJZOiv" role="2OqNvi">
-                    <ref role="2WH_rO" node="7rNOiA3vFOG" resolve="currentModel" />
-                  </node>
-                </node>
-                <node concept="2SmgA7" id="4knEpdJZOUV" role="2OqNvi">
-                  <node concept="chp4Y" id="4knEpdJZPa8" role="1dBWTz">
-                    <ref role="cht4Q" to="rr4f:6JhS3QZMbff" resolve="Transformation" />
-                  </node>
-                </node>
-              </node>
-              <node concept="1uHKPH" id="4knEpdJZVyx" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="2l_LApakuI3" role="3cqZAp" />
         <node concept="3SKdUt" id="6XxPrVIxKtn" role="3cqZAp">
           <node concept="3SKdUq" id="6XxPrVIxKtp" role="3SKWNk">
@@ -1958,8 +2128,8 @@
                 </node>
                 <node concept="3cpWs3" id="2EAnn9pe0Va" role="3uHU7B">
                   <node concept="3cpWs3" id="2EAnn9pdZ_2" role="3uHU7B">
-                    <node concept="37vLTw" id="2EAnn9pe0ot" role="3uHU7B">
-                      <ref role="3cqZAo" node="75zsbcX5VUA" resolve="syvoltEnginePath" />
+                    <node concept="37vLTw" id="5oax6Fmv2GG" role="3uHU7B">
+                      <ref role="3cqZAo" node="5oax6Fmu9qA" resolve="syvoltEnginePath" />
                     </node>
                     <node concept="Xl_RD" id="2EAnn9pe0uO" role="3uHU7w">
                       <property role="Xl_RC" value=":" />
@@ -2559,10 +2729,10 @@
     </node>
   </node>
   <node concept="tC5Ba" id="7rNOiA32LVQ">
-    <property role="TrG5h" value="runnerGroup" />
+    <property role="TrG5h" value="verifyGroup" />
     <node concept="ftmFs" id="7rNOiA32MpX" role="ftER_">
       <node concept="tCFHf" id="4zXRLIjUHWf" role="ftvYc">
-        <ref role="tCJdB" node="7rNOiA32K_F" resolve="RunnerAction" />
+        <ref role="tCJdB" node="7rNOiA32K_F" resolve="VerifyAction" />
       </node>
     </node>
     <node concept="tT9cl" id="7rNOiA32Mq2" role="2f5YQi">
