@@ -18,6 +18,7 @@
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <import index="2k9e" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="70if" ref="r:9109930e-6a35-42eb-9296-670068affeb2(DSLTrans.behavior)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -2478,6 +2479,19 @@
             </node>
           </node>
           <node concept="3clFbH" id="3fk8yMwv9Ij" role="3cqZAp" />
+          <node concept="3clFbJ" id="496qG6lNHcd" role="3cqZAp">
+            <node concept="3clFbS" id="496qG6lNHcf" role="3clFbx">
+              <node concept="3cpWs6" id="496qG6lNJHC" role="3cqZAp">
+                <node concept="10Nm6u" id="496qG6lNKhW" role="3cqZAk" />
+              </node>
+            </node>
+            <node concept="17R0WA" id="496qG6lNIvZ" role="3clFbw">
+              <node concept="10Nm6u" id="496qG6lNJ6O" role="3uHU7w" />
+              <node concept="37vLTw" id="496qG6lNHP7" role="3uHU7B">
+                <ref role="3cqZAo" node="T5xF$249pa" resolve="lang" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbH" id="3TSFmgZGQrd" role="3cqZAp" />
           <node concept="2Gpval" id="T5xF$24b3R" role="3cqZAp">
             <node concept="2GrKxI" id="T5xF$24b3T" role="2Gsz3X">

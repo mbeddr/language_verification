@@ -86,6 +86,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -5625,6 +5626,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="496qG6lMu02" role="3cqZAp">
+          <node concept="3clFbS" id="496qG6lMu04" role="3clFbx">
+            <node concept="3clFbF" id="496qG6lMDDs" role="3cqZAp">
+              <node concept="2YIFZM" id="496qG6lMKT7" role="3clFbG">
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <node concept="10Nm6u" id="496qG6lMOtb" role="37wK5m" />
+                <node concept="Xl_RD" id="496qG6lMLsf" role="37wK5m">
+                  <property role="Xl_RC" value="Error: Input language not set in transformation" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="496qG6lMv8t" role="3clFbw">
+            <node concept="10Nm6u" id="496qG6lMvEr" role="3uHU7w" />
+            <node concept="37vLTw" id="496qG6lNct7" role="3uHU7B">
+              <ref role="3cqZAo" node="3fk8yMwwAxc" resolve="inputLang" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="496qG6lNbKq" role="3cqZAp" />
         <node concept="3cpWs6" id="2epYeObrNgv" role="3cqZAp">
           <node concept="37vLTw" id="3fk8yMwwDuv" role="3cqZAk">
             <ref role="3cqZAo" node="3fk8yMwwAxc" resolve="inputLang" />
@@ -5664,6 +5686,27 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="496qG6lNcBy" role="3cqZAp">
+          <node concept="3clFbS" id="496qG6lNcBz" role="3clFbx">
+            <node concept="3clFbF" id="496qG6lNcB$" role="3cqZAp">
+              <node concept="2YIFZM" id="496qG6lNcB_" role="3clFbG">
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <node concept="10Nm6u" id="496qG6lNcBA" role="37wK5m" />
+                <node concept="Xl_RD" id="496qG6lNcBB" role="37wK5m">
+                  <property role="Xl_RC" value="Error: Output language not set in transformation" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="17R0WA" id="496qG6lNcBC" role="3clFbw">
+            <node concept="10Nm6u" id="496qG6lNcBD" role="3uHU7w" />
+            <node concept="37vLTw" id="496qG6lNcZu" role="3uHU7B">
+              <ref role="3cqZAo" node="3fk8yMwwEtL" resolve="outputLang" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="496qG6lNcBl" role="3cqZAp" />
         <node concept="3cpWs6" id="2epYeObrQLa" role="3cqZAp">
           <node concept="37vLTw" id="3fk8yMwwGA7" role="3cqZAk">
             <ref role="3cqZAo" node="3fk8yMwwEtL" resolve="outputLang" />
