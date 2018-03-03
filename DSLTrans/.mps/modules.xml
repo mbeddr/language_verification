@@ -5,10 +5,12 @@
       <modulePath path="$PROJECT_DIR$/languages/ATOM/ATOM.mpl" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/languages/C/C.mpl" folder="examples.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/DSLTrans/DSLTrans.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Factory/Factory.mpl" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/languages/Kiltera/Kiltera.mpl" folder="examples.UML2Kiltera" />
       <modulePath path="$PROJECT_DIR$/languages/Module/Module.mpl" folder="examples.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="examples.FTP" />
+      <modulePath path="$PROJECT_DIR$/languages/PetriNet/PetriNet.mpl" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/languages/RSS/RSS.mpl" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/TestLang/TestLang.mpl" folder="" />
@@ -27,6 +29,9 @@
       <modulePath path="$PROJECT_DIR$/solutions/TestOutput/TestOutput.msd" folder="examples.test" />
       <modulePath path="$PROJECT_DIR$/solutions/TestTransformation/TestTransformation.msd" folder="examples.test" />
       <modulePath path="$PROJECT_DIR$/solutions/UML2Kiltera/UML2Kiltera.msd" folder="examples.UML2Kiltera" />
+      <modulePath path="$PROJECT_DIR$/solutions/fact2PNInput/fact2PNInput.msd" folder="examples.fact2PN" />
+      <modulePath path="$PROJECT_DIR$/solutions/fact2PNOutput/fact2PNOutput.msd" folder="examples.fact2PN" />
+      <modulePath path="$PROJECT_DIR$/solutions/fact2PNTrans/fact2PNTrans.msd" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="examples.mbeddr" />
     </projectModules>
   </component>
