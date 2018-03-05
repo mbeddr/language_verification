@@ -99,6 +99,7 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
@@ -208,13 +209,26 @@
       <node concept="QB0g5" id="7OSI$xj3Lzz" role="QCWH9">
         <node concept="3clFbS" id="7OSI$xj3Lz$" role="2VODD2">
           <node concept="3cpWs6" id="7OSI$xj3O18" role="3cqZAp">
-            <node concept="3fqX7Q" id="7OSI$xj3PZt" role="3cqZAk">
-              <node concept="2OqwBi" id="7OSI$xj3PZv" role="3fr31v">
-                <node concept="1Wqviy" id="7OSI$xj3PZw" role="2Oq$k0" />
-                <node concept="liA8E" id="7OSI$xj3PZx" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                  <node concept="Xl_RD" id="7OSI$xj3PZy" role="37wK5m">
-                    <property role="Xl_RC" value="_" />
+            <node concept="1Wc70l" id="$BZ7xTzZku" role="3cqZAk">
+              <node concept="3fqX7Q" id="$BZ7xTzZwa" role="3uHU7w">
+                <node concept="2OqwBi" id="$BZ7xT$0at" role="3fr31v">
+                  <node concept="1Wqviy" id="$BZ7xTzZET" role="2Oq$k0" />
+                  <node concept="liA8E" id="$BZ7xT$0yY" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <node concept="Xl_RD" id="$BZ7xT$0In" role="37wK5m">
+                      <property role="Xl_RC" value="-" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="7OSI$xj3PZt" role="3uHU7B">
+                <node concept="2OqwBi" id="7OSI$xj3PZv" role="3fr31v">
+                  <node concept="1Wqviy" id="7OSI$xj3PZw" role="2Oq$k0" />
+                  <node concept="liA8E" id="7OSI$xj3PZx" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <node concept="Xl_RD" id="7OSI$xj3PZy" role="37wK5m">
+                      <property role="Xl_RC" value="_" />
+                    </node>
                   </node>
                 </node>
               </node>
