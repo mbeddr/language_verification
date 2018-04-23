@@ -144,13 +144,13 @@
     <node concept="1jGXV7" id="3WL7QBBOxG7" role="3k6lfD">
       <property role="TrG5h" value="fact2PNPos" />
       <node concept="1v6VTO" id="3WL7QBBOxG9" role="1jGXV4">
-        <ref role="1v6VTP" node="XQYIHin2m2" resolve="1-Factory2PNPos" />
+        <ref role="1v6VTP" node="XQYIHin2m2" resolve="1Factory2PNPos" />
       </node>
     </node>
     <node concept="1jGXV7" id="3WL7QBBOxGf" role="3k6lfD">
       <property role="TrG5h" value="fact2PNNeg" />
       <node concept="1v6VTO" id="3WL7QBBOxGl" role="1jGXV4">
-        <ref role="1v6VTP" node="496qG6lOmHI" resolve="2-Factory2PNNeg" />
+        <ref role="1v6VTP" node="496qG6lOmHI" resolve="2Factory2PNNeg" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJt" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxG7" resolve="fact2PNPos" />
@@ -159,7 +159,7 @@
     <node concept="1jGXV7" id="3WL7QBBOxGo" role="3k6lfD">
       <property role="TrG5h" value="Assem2Trans" />
       <node concept="1v6VTO" id="3WL7QBBOxGu" role="1jGXV4">
-        <ref role="1v6VTP" node="3WL7QBBOn_y" resolve="4-Assembler2Transition" />
+        <ref role="1v6VTP" node="3WL7QBBOn_y" resolve="4Assembler2Transition" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJv" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxGf" resolve="fact2PNNeg" />
@@ -168,7 +168,7 @@
     <node concept="1jGXV7" id="3WL7QBBOxGw" role="3k6lfD">
       <property role="TrG5h" value="Term2Trans" />
       <node concept="1v6VTO" id="3WL7QBBOxGE" role="1jGXV4">
-        <ref role="1v6VTP" node="3WL7QBBOnAu" resolve="5-Terminator2Transition" />
+        <ref role="1v6VTP" node="3WL7QBBOnAu" resolve="5Terminator2Transition" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJx" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxGo" resolve="Assem2Trans" />
@@ -177,7 +177,7 @@
     <node concept="1jGXV7" id="3WL7QBBOxGH" role="3k6lfD">
       <property role="TrG5h" value="Gen2Trans" />
       <node concept="1v6VTO" id="3WL7QBBOxGT" role="1jGXV4">
-        <ref role="1v6VTP" node="3WL7QBBOnAY" resolve="6-Generator2Transition" />
+        <ref role="1v6VTP" node="3WL7QBBOnAY" resolve="6Generator2Transition" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJz" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxGw" resolve="Term2Trans" />
@@ -186,7 +186,7 @@
     <node concept="1jGXV7" id="3WL7QBBOxGW" role="3k6lfD">
       <property role="TrG5h" value="Conv2Place" />
       <node concept="1v6VTO" id="3WL7QBBOxHa" role="1jGXV4">
-        <ref role="1v6VTP" node="3WL7QBBOwWs" resolve="7-Conveyor2Place" />
+        <ref role="1v6VTP" node="3WL7QBBOwWs" resolve="7Conveyor2Place" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJ_" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxGH" resolve="Gen2Trans" />
@@ -195,7 +195,7 @@
     <node concept="1jGXV7" id="3WL7QBBOxHd" role="3k6lfD">
       <property role="TrG5h" value="TPArcGen" />
       <node concept="1v6VTO" id="3WL7QBBOxHt" role="1jGXV4">
-        <ref role="1v6VTP" node="3WL7QBBOwZI" resolve="20-Input2TPArc-Generator" />
+        <ref role="1v6VTP" node="3WL7QBBOwZI" resolve="20Input2TPArcGenerator" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJB" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxGW" resolve="Conv2Place" />
@@ -204,7 +204,7 @@
     <node concept="1jGXV7" id="3WL7QBBOxHw" role="3k6lfD">
       <property role="TrG5h" value="TPArcAssem" />
       <node concept="1v6VTO" id="3WL7QBBOxHM" role="1jGXV4">
-        <ref role="1v6VTP" node="3WL7QBBOx4O" resolve="21-Input2TPArc-Assembler" />
+        <ref role="1v6VTP" node="3WL7QBBOx4O" resolve="21Input2TPArcAssembler" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJD" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxHd" resolve="TPArcGen" />
@@ -213,7 +213,7 @@
     <node concept="1jGXV7" id="3WL7QBBOxHP" role="3k6lfD">
       <property role="TrG5h" value="TPArcTerm" />
       <node concept="1v6VTO" id="3WL7QBBOxI9" role="1jGXV4">
-        <ref role="1v6VTP" node="3WL7QBBOx60" resolve="22-Input2TPArc-Terminator" />
+        <ref role="1v6VTP" node="3WL7QBBOx60" resolve="22Input2TPArcTerminator" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJF" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxHw" resolve="TPArcAssem" />
@@ -222,7 +222,7 @@
     <node concept="1jGXV7" id="3WL7QBBOxIc" role="3k6lfD">
       <property role="TrG5h" value="Output2PTArc" />
       <node concept="1v6VTO" id="3WL7QBBOxIy" role="1jGXV4">
-        <ref role="1v6VTP" node="3WL7QBBOx7q" resolve="30-Output2PTArc" />
+        <ref role="1v6VTP" node="3WL7QBBOx7q" resolve="30Output2PTArc" />
       </node>
       <node concept="1jGXVs" id="3WL7QBBOxJH" role="1o0q1e">
         <ref role="3k6leo" node="3WL7QBBOxHP" resolve="TPArcTerm" />
@@ -276,7 +276,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="XQYIHin2m2">
-    <property role="TrG5h" value="1-Factory2PNPos" />
+    <property role="TrG5h" value="1Factory2PNPos" />
     <node concept="3GsvpM" id="XQYIHin2m3" role="2ik0Mo">
       <property role="KJs$L" value="0" />
       <node concept="1jGXXa" id="496qG6lOmGO" role="1jGXX7">
@@ -331,7 +331,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="496qG6lOmHI">
-    <property role="TrG5h" value="2-Factory2PNNeg" />
+    <property role="TrG5h" value="2Factory2PNNeg" />
     <node concept="3GsvpM" id="496qG6lOmHJ" role="2ik0Mo">
       <property role="KJs$L" value="0" />
       <node concept="1jGXXa" id="496qG6lOmIh" role="1jGXX7">
@@ -476,7 +476,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="3WL7QBBOn_y">
-    <property role="TrG5h" value="4-Assembler2Transition" />
+    <property role="TrG5h" value="4Assembler2Transition" />
     <node concept="3GsvpM" id="3WL7QBBOn_z" role="2ik0Mo">
       <property role="KJs$L" value="0" />
       <node concept="1jGXXa" id="3WL7QBBOnA2" role="1jGXX7">
@@ -517,7 +517,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="3WL7QBBOnAu">
-    <property role="TrG5h" value="5-Terminator2Transition" />
+    <property role="TrG5h" value="5Terminator2Transition" />
     <node concept="3GsvpM" id="3WL7QBBOnAv" role="2ik0Mo">
       <property role="KJs$L" value="0" />
       <node concept="1jGXXa" id="3WL7QBBOnAw" role="1jGXX7">
@@ -558,7 +558,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="3WL7QBBOnAY">
-    <property role="TrG5h" value="6-Generator2Transition" />
+    <property role="TrG5h" value="6Generator2Transition" />
     <node concept="1jGXV2" id="3WL7QBBOwBx" role="2udmAx">
       <ref role="13xwDP" node="3WL7QBBOnDb" />
       <ref role="13xwDU" node="3WL7QBBOnBG" />
@@ -753,7 +753,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="3WL7QBBOwWs">
-    <property role="TrG5h" value="7-Conveyor2Place" />
+    <property role="TrG5h" value="7Conveyor2Place" />
     <node concept="1jGXV2" id="3WL7QBBOwZG" role="2udmAx">
       <ref role="13xwDP" node="3WL7QBBOwZg" />
       <ref role="13xwDU" node="3WL7QBBOwXL" />
@@ -846,7 +846,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="3WL7QBBOwZI">
-    <property role="TrG5h" value="20-Input2TPArc-Generator" />
+    <property role="TrG5h" value="20Input2TPArcGenerator" />
     <node concept="1jGXV2" id="3WL7QBBOx4F" role="2udmAx">
       <ref role="13xwDP" node="3WL7QBBOx3J" />
       <ref role="13xwDU" node="3WL7QBBOx0E" />
@@ -997,7 +997,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="3WL7QBBOx4O">
-    <property role="TrG5h" value="21-Input2TPArc-Assembler" />
+    <property role="TrG5h" value="21Input2TPArcAssembler" />
     <node concept="1jGXV2" id="3WL7QBBOx4P" role="2udmAx">
       <ref role="13xwDU" node="3WL7QBBOx5i" />
       <ref role="13xwDP" node="3WL7QBBOx4T" />
@@ -1140,7 +1140,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="3WL7QBBOx60">
-    <property role="TrG5h" value="22-Input2TPArc-Terminator" />
+    <property role="TrG5h" value="22Input2TPArcTerminator" />
     <node concept="1jGXV2" id="3WL7QBBOx61" role="2udmAx">
       <ref role="13xwDU" node="3WL7QBBOx6u" />
       <ref role="13xwDP" node="3WL7QBBOx65" />
@@ -1283,7 +1283,7 @@
     </node>
   </node>
   <node concept="1jGXXK" id="3WL7QBBOx7q">
-    <property role="TrG5h" value="30-Output2PTArc" />
+    <property role="TrG5h" value="30Output2PTArc" />
     <node concept="1jGXV2" id="3WL7QBBOx7r" role="2udmAx">
       <ref role="13xwDP" node="3WL7QBBOx7v" />
       <ref role="13xwDU" node="3WL7QBBOx7P" />

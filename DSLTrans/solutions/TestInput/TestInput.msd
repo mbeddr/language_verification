@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language slang="l:54dfa720-0ab9-4d0b-8bfa-c068891c843e:test.TestLang" version="0" />
+    <language slang="l:54dfa720-0ab9-4d0b-8bfa-c068891c843e:TestLang" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="PetriNet#1114353846426743113" uuid="c9ba0879-3bcd-4475-8baa-623b307ac0b5" reflective-queries="true">
+    <generator alias="main" namespace="PetriNet#1114353846426743113" uuid="c9ba0879-3bcd-4475-8baa-623b307ac0b5">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />

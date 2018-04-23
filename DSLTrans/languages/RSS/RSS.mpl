@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="RSS#4971614287940025482" uuid="9be0fb90-87d0-463c-a170-1ad43d46d830" reflective-queries="true">
+    <generator alias="main" namespace="RSS#4971614287940025482" uuid="9be0fb90-87d0-463c-a170-1ad43d46d830">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />

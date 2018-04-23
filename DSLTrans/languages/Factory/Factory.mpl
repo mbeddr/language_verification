@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="Factory#4808199998060362949" uuid="e76cf5e3-b28a-4c5e-b82c-c5a050f5cdfc" reflective-queries="true">
+    <generator alias="main" namespace="Factory#4808199998060362949" uuid="e76cf5e3-b28a-4c5e-b82c-c5a050f5cdfc">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />

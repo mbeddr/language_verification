@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="Kiltera#8323009836610857255" uuid="5a152d45-81e2-4340-8d5d-0a5be672005a" reflective-queries="true">
+    <generator alias="main" namespace="Kiltera#8323009836610857255" uuid="5a152d45-81e2-4340-8d5d-0a5be672005a">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />

@@ -4,6 +4,9 @@
     <modelRoot contentPath="${platform_lib}" type="java_classes">
       <sourceRoot location="mps-editor-runtime.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/dsltrans_engine.jar!" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/dsltrans_engine.jar" />
