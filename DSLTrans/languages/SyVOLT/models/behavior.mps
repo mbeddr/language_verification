@@ -5891,13 +5891,8 @@
                           <node concept="3cpWs3" id="4KZuhCZjkUX" role="3uHU7B">
                             <node concept="3cpWs3" id="4KZuhCZjkUY" role="3uHU7B">
                               <node concept="3cpWs3" id="4KZuhCZjkUZ" role="3uHU7B">
-                                <node concept="3cpWs3" id="4KZuhCZjkV0" role="3uHU7B">
-                                  <node concept="37vLTw" id="4OZxLw4Jwbu" role="3uHU7B">
-                                    <ref role="3cqZAo" node="4OZxLw4HVD7" resolve="equationStr" />
-                                  </node>
-                                  <node concept="Xl_RD" id="4KZuhCZjkV2" role="3uHU7w">
-                                    <property role="Xl_RC" value="((" />
-                                  </node>
+                                <node concept="Xl_RD" id="4KZuhCZjkV2" role="3uHU7B">
+                                  <property role="Xl_RC" value="((" />
                                 </node>
                                 <node concept="3EllGN" id="4KZuhCZjkV3" role="3uHU7w">
                                   <node concept="37vLTw" id="4OZxLw4JNVh" role="3ElVtu">
@@ -6182,13 +6177,8 @@
                           <node concept="3cpWs3" id="3QsrawRiRdG" role="3uHU7B">
                             <node concept="3cpWs3" id="3QsrawRiQra" role="3uHU7B">
                               <node concept="3cpWs3" id="3QsrawRiOVW" role="3uHU7B">
-                                <node concept="3cpWs3" id="3QsrawRiOOA" role="3uHU7B">
-                                  <node concept="37vLTw" id="4OZxLw4UuWx" role="3uHU7B">
-                                    <ref role="3cqZAo" node="4OZxLw4UjwY" resolve="equationStr" />
-                                  </node>
-                                  <node concept="Xl_RD" id="3QsrawRiOP0" role="3uHU7w">
-                                    <property role="Xl_RC" value="((" />
-                                  </node>
+                                <node concept="Xl_RD" id="3QsrawRiOP0" role="3uHU7B">
+                                  <property role="Xl_RC" value="((" />
                                 </node>
                                 <node concept="3EllGN" id="1QRVvnZKMog" role="3uHU7w">
                                   <node concept="37vLTw" id="1QRVvnZKMoh" role="3ElVtu">
