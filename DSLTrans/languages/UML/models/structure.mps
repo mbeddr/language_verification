@@ -59,6 +59,11 @@
     <property role="EcuMT" value="3439933368897554297" />
     <property role="TrG5h" value="Property" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="70E6l2u5R5J" role="1TKVEl">
+      <property role="IQ2nx" value="8082300315310190959" />
+      <property role="TrG5h" value="isComplex" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="2YX6iLC9GtU" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
