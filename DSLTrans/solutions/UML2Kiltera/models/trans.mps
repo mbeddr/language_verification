@@ -4,8 +4,6 @@
   <languages>
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
     <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
-    <use id="40905d03-c8d0-4f66-9f23-94150dc8cfc6" name="UMLRT" version="0" />
-    <use id="e3ae5684-3018-40da-9ccf-f209fa47fbd7" name="Kiltera" version="0" />
   </languages>
   <imports>
     <import index="9ywn" ref="r:0076f083-d95d-46b6-abb5-847440b11fb6(UMLRT.structure)" implicit="true" />

@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
-    <use id="8963bc53-cf92-45e3-b842-752065fffbe9" name="ATOM" version="0" />
-    <use id="6c5e6d43-57a0-4c7f-900e-3ac3bbd866c1" name="RSS" version="0" />
     <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
   </languages>
   <imports>

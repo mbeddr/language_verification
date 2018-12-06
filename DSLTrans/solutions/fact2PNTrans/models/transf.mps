@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7" name="DSLTrans" version="0" />
-    <use id="b492799d-c019-4f38-8636-0a5d98384714" name="Factory" version="0" />
-    <use id="e122b43d-f6f9-4a28-94a1-deba4c176b79" name="PetriNet" version="0" />
     <use id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT" version="0" />
   </languages>
   <imports>

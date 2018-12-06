@@ -305,12 +305,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1gVO38YjI2" role="3bR37C">
-          <node concept="3bR9La" id="1gVO38YjI3" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1gVO38YjI4" role="3bR37C">
           <node concept="3bR9La" id="1gVO38YjI5" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -327,6 +321,12 @@
           <node concept="3bR9La" id="2RiTPj9R31U" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5ysJ42DkDPG" resolve="DSLTrans" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4zX0u0fzeMb" role="3bR37C">
+          <node concept="3bR9La" id="4zX0u0fzeMc" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
           </node>
         </node>
       </node>
@@ -415,6 +415,12 @@
         </node>
         <node concept="1E0d5M" id="2RiTPj9SvtU" role="1E1XAP">
           <ref role="1E0d5P" node="2RiTPj9Svi6" resolve="DSLTrans.lib" />
+        </node>
+        <node concept="1SiIV0" id="4zX0u0fzeMm" role="3bR37C">
+          <node concept="3bR9La" id="4zX0u0fzeMn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
         </node>
       </node>
       <node concept="1E1JtA" id="5ysJ42DkDJI" role="2G$12L">

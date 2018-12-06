@@ -12,8 +12,6 @@
   </dependencies>
   <languageVersions>
     <language slang="l:4e1e6c63-3ef5-4d3d-b04d-0e2974d639e7:DSLTrans" version="0" />
-    <language slang="l:b492799d-c019-4f38-8636-0a5d98384714:Factory" version="0" />
-    <language slang="l:e122b43d-f6f9-4a28-94a1-deba4c176b79:PetriNet" version="0" />
     <language slang="l:69eded0a-1bc3-427e-9a48-e8713d355d49:SyVOLT" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="6" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />

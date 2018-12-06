@@ -250,7 +250,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="property" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="1UHaC1cXxZT" resolve="TVPropReference" />
+      <ref role="20lvS9" node="2t59Tl5my58" resolve="TVPropIDRefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="67kIGnNxbpI">
