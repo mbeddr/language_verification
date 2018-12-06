@@ -10,15 +10,12 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
-    <import index="2k9e" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
     <import index="rr4f" ref="r:e6ea4d34-7fff-417a-87e2-663a394fa47b(DSLTrans.structure)" />
-    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="70if" ref="r:9109930e-6a35-42eb-9296-670068affeb2(DSLTrans.behavior)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -1605,7 +1602,7 @@
                       <node concept="3clFbF" id="6qKv_DVU2qb" role="3cqZAp">
                         <node concept="2OqwBi" id="6qKv_DVU2Qv" role="3clFbG">
                           <node concept="1PxgMI" id="6qKv_DVU2_B" role="2Oq$k0">
-                            <node concept="chp4Y" id="6qKv_DVU2BX" role="3oSUPX">
+                            <node concept="chp4Y" id="4zX0u0fsIwV" role="3oSUPX">
                               <ref role="cht4Q" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
                             </node>
                             <node concept="37vLTw" id="6qKv_DVU2qa" role="1m5AlR">
@@ -1943,7 +1940,7 @@
                       <node concept="3clFbF" id="2l_LApa6c8_" role="3cqZAp">
                         <node concept="2OqwBi" id="64k2f6hX_A6" role="3clFbG">
                           <node concept="1PxgMI" id="64k2f6hX_A7" role="2Oq$k0">
-                            <node concept="chp4Y" id="64k2f6hX_A8" role="3oSUPX">
+                            <node concept="chp4Y" id="4zX0u0fsIxE" role="3oSUPX">
                               <ref role="cht4Q" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
                             </node>
                             <node concept="37vLTw" id="64k2f6hX_A9" role="1m5AlR">
@@ -2238,7 +2235,7 @@
                       <node concept="3clFbF" id="2l_LApa60Qn" role="3cqZAp">
                         <node concept="2OqwBi" id="64k2f6hX_fI" role="3clFbG">
                           <node concept="1PxgMI" id="64k2f6hX_fJ" role="2Oq$k0">
-                            <node concept="chp4Y" id="64k2f6hX_fK" role="3oSUPX">
+                            <node concept="chp4Y" id="4zX0u0fsIy4" role="3oSUPX">
                               <ref role="cht4Q" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
                             </node>
                             <node concept="37vLTw" id="64k2f6hX_fL" role="1m5AlR">
@@ -2529,7 +2526,7 @@
                   </node>
                   <node concept="TSZUe" id="T5xF$24msb" role="2OqNvi">
                     <node concept="1PxgMI" id="T5xF$24HMd" role="25WWJ7">
-                      <node concept="chp4Y" id="T5xF$24TrP" role="3oSUPX">
+                      <node concept="chp4Y" id="4zX0u0fsIyo" role="3oSUPX">
                         <ref role="cht4Q" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
                       </node>
                       <node concept="2OqwBi" id="T5xF$24D5x" role="1m5AlR">
