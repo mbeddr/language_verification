@@ -351,7 +351,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5cBD0WxCQJY" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="2OqwBi" id="5cBD0WxCQLa" role="37wK5m">
                         <node concept="37vLTw" id="5cBD0WxCQL9" role="2Oq$k0">
                           <ref role="3cqZAo" node="5cBD0WxCQJL" resolve="mr" />
@@ -474,7 +474,7 @@
                           <ref role="37wK5l" node="5cBD0WxCQJo" resolve="getSource" />
                         </node>
                         <node concept="liA8E" id="5cBD0WxCQKJ" role="2OqNvi">
-                          <ref role="37wK5l" to="fnwj:~MetaEntity.print():java.lang.String" resolve="print" />
+                          <ref role="37wK5l" to="fnwj:~MetaEntity.print()" resolve="print" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="5cBD0WxCQKK" role="3uHU7w">
@@ -494,7 +494,7 @@
                     <ref role="37wK5l" node="5cBD0WxCQJv" resolve="getTarget" />
                   </node>
                   <node concept="liA8E" id="5cBD0WxCQKP" role="2OqNvi">
-                    <ref role="37wK5l" to="fnwj:~MetaEntity.print():java.lang.String" resolve="print" />
+                    <ref role="37wK5l" to="fnwj:~MetaEntity.print()" resolve="print" />
                   </node>
                 </node>
               </node>
@@ -511,7 +511,7 @@
                       <ref role="37wK5l" node="5cBD0WxCQJo" resolve="getSource" />
                     </node>
                     <node concept="liA8E" id="5cBD0WxCQKY" role="2OqNvi">
-                      <ref role="37wK5l" to="fnwj:~MetaEntity.print():java.lang.String" resolve="print" />
+                      <ref role="37wK5l" to="fnwj:~MetaEntity.print()" resolve="print" />
                     </node>
                   </node>
                   <node concept="Xl_RD" id="5cBD0WxCQKZ" role="3uHU7w">
@@ -531,7 +531,7 @@
                 <ref role="37wK5l" node="5cBD0WxCQJv" resolve="getTarget" />
               </node>
               <node concept="liA8E" id="5cBD0WxCQL4" role="2OqNvi">
-                <ref role="37wK5l" to="fnwj:~MetaEntity.print():java.lang.String" resolve="print" />
+                <ref role="37wK5l" to="fnwj:~MetaEntity.print()" resolve="print" />
               </node>
             </node>
           </node>

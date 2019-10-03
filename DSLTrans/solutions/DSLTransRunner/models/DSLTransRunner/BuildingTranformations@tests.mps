@@ -2,8 +2,8 @@
 <model ref="r:8a036373-2b5a-4ed7-be8d-70fd21f0feee(DSLTransRunner.BuildingTranformations@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
   </languages>
   <imports>
     <import index="gnwr" ref="3224dd6b-ae86-46ab-b51c-b024552634a5/java:dsltrans(DSLTrans.lib/)" />
@@ -102,7 +102,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="4YDsaJSJZDq" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createTransformationModel():dsltrans.TransformationModel" resolve="createTransformationModel" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createTransformationModel()" resolve="createTransformationModel" />
               </node>
             </node>
           </node>
@@ -120,7 +120,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="4YDsaJSJZFp" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMetaModelIdentifier():dsltrans.MetaModelIdentifier" resolve="createMetaModelIdentifier" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMetaModelIdentifier()" resolve="createMetaModelIdentifier" />
               </node>
             </node>
           </node>
@@ -131,7 +131,7 @@
               <ref role="3cqZAo" node="4YDsaJSJZFd" resolve="input_mm_id" />
             </node>
             <node concept="liA8E" id="4YDsaJSK0Mp" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelName(java.lang.String):void" resolve="setMetaModelName" />
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelName(java.lang.String)" resolve="setMetaModelName" />
               <node concept="Xl_RD" id="aET4b_iik2" role="37wK5m">
                 <property role="Xl_RC" value="bla" />
               </node>
@@ -144,7 +144,7 @@
               <ref role="3cqZAo" node="4YDsaJSJZFd" resolve="input_mm_id" />
             </node>
             <node concept="liA8E" id="4YDsaJSJZFv" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelURI(java.lang.String):void" resolve="setMetaModelURI" />
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelURI(java.lang.String)" resolve="setMetaModelURI" />
               <node concept="Xl_RD" id="4YDsaJSJZFm" role="37wK5m">
                 <property role="Xl_RC" value="Input/Metamodel/URI" />
               </node>
@@ -164,7 +164,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV7d" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMetaModelIdentifier():dsltrans.MetaModelIdentifier" resolve="createMetaModelIdentifier" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMetaModelIdentifier()" resolve="createMetaModelIdentifier" />
               </node>
             </node>
           </node>
@@ -175,7 +175,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5p" resolve="output_mm_id" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7g" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelName(java.lang.String):void" resolve="setMetaModelName" />
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelName(java.lang.String)" resolve="setMetaModelName" />
               <node concept="Xl_RD" id="5cBD0WxAV5v" role="37wK5m">
                 <property role="Xl_RC" value="Output Metamodel" />
               </node>
@@ -188,7 +188,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5p" resolve="output_mm_id" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7j" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelURI(java.lang.String):void" resolve="setMetaModelURI" />
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelURI(java.lang.String)" resolve="setMetaModelURI" />
               <node concept="Xl_RD" id="5cBD0WxAV5y" role="37wK5m">
                 <property role="Xl_RC" value="Output/Metamodel/URI" />
               </node>
@@ -208,7 +208,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV7m" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createFilePort():dsltrans.FilePort" resolve="createFilePort" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createFilePort()" resolve="createFilePort" />
               </node>
             </node>
           </node>
@@ -219,7 +219,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7p" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~FilePort.setFilePathURI(java.lang.String):void" resolve="setFilePathURI" />
+              <ref role="37wK5l" to="gnwr:~FilePort.setFilePathURI(java.lang.String)" resolve="setFilePathURI" />
               <node concept="Xl_RD" id="5cBD0WxAV5D" role="37wK5m">
                 <property role="Xl_RC" value="Input/Model/URI" />
               </node>
@@ -232,7 +232,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7s" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier):void" resolve="setMetaModelId" />
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier)" resolve="setMetaModelId" />
               <node concept="37vLTw" id="5cBD0WxAV5G" role="37wK5m">
                 <ref role="3cqZAo" node="4YDsaJSJZFd" resolve="input_mm_id" />
               </node>
@@ -245,7 +245,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7v" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String):void" resolve="setName" />
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String)" resolve="setName" />
               <node concept="Xl_RD" id="5cBD0WxAV5J" role="37wK5m">
                 <property role="Xl_RC" value="inputModel" />
               </node>
@@ -265,7 +265,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV7y" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createSequential():dsltrans.Sequential" resolve="createSequential" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createSequential()" resolve="createSequential" />
               </node>
             </node>
           </node>
@@ -276,7 +276,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7_" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Layer.setDescription(java.lang.String):void" resolve="setDescription" />
+              <ref role="37wK5l" to="gnwr:~Layer.setDescription(java.lang.String)" resolve="setDescription" />
               <node concept="Xl_RD" id="5cBD0WxAV5Q" role="37wK5m">
                 <property role="Xl_RC" value="first layer" />
               </node>
@@ -289,7 +289,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7C" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String):void" resolve="setName" />
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String)" resolve="setName" />
               <node concept="Xl_RD" id="5cBD0WxAV5T" role="37wK5m">
                 <property role="Xl_RC" value="firstLayer" />
               </node>
@@ -302,7 +302,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7F" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier):void" resolve="setMetaModelId" />
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier)" resolve="setMetaModelId" />
               <node concept="37vLTw" id="5cBD0WxAV5W" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV5p" resolve="output_mm_id" />
               </node>
@@ -315,7 +315,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7I" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Layer.setOutputFilePathURI(java.lang.String):void" resolve="setOutputFilePathURI" />
+              <ref role="37wK5l" to="gnwr:~Layer.setOutputFilePathURI(java.lang.String)" resolve="setOutputFilePathURI" />
               <node concept="Xl_RD" id="5cBD0WxAV5Z" role="37wK5m">
                 <property role="Xl_RC" value="Output/Model/URI" />
               </node>
@@ -330,11 +330,11 @@
                 <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV7L" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource():org.eclipse.emf.common.util.EList" resolve="getPreviousSource" />
+                <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource()" resolve="getPreviousSource" />
               </node>
             </node>
             <node concept="liA8E" id="5cBD0WxAV63" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="5cBD0WxAV64" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
               </node>
@@ -349,11 +349,11 @@
                 <ref role="3cqZAo" node="4YDsaJSJZDk" resolve="transformation" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV7O" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource()" resolve="getSource" />
               </node>
             </node>
             <node concept="liA8E" id="5cBD0WxAV68" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="5cBD0WxAV69" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV5z" resolve="inputFilePort" />
               </node>
@@ -367,11 +367,11 @@
                 <ref role="3cqZAo" node="4YDsaJSJZDk" resolve="transformation" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV7R" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource()" resolve="getSource" />
               </node>
             </node>
             <node concept="liA8E" id="5cBD0WxAV6d" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="5cBD0WxAV6e" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
               </node>
@@ -391,7 +391,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV7U" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createRule():dsltrans.Rule" resolve="createRule" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createRule()" resolve="createRule" />
               </node>
             </node>
           </node>
@@ -402,7 +402,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV6f" resolve="rule" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV7X" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Rule.setDescription(java.lang.String):void" resolve="setDescription" />
+              <ref role="37wK5l" to="gnwr:~Rule.setDescription(java.lang.String)" resolve="setDescription" />
               <node concept="Xl_RD" id="5cBD0WxAV6l" role="37wK5m">
                 <property role="Xl_RC" value="First Rule" />
               </node>
@@ -422,7 +422,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV80" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMatchModel():dsltrans.MatchModel" resolve="createMatchModel" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMatchModel()" resolve="createMatchModel" />
               </node>
             </node>
           </node>
@@ -440,7 +440,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV83" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAnyMatchClass():dsltrans.AnyMatchClass" resolve="createAnyMatchClass" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAnyMatchClass()" resolve="createAnyMatchClass" />
               </node>
             </node>
           </node>
@@ -451,7 +451,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV6q" resolve="matchA" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV86" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String):void" resolve="setClassName" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String)" resolve="setClassName" />
               <node concept="Xl_RD" id="5cBD0WxAV6w" role="37wK5m">
                 <property role="Xl_RC" value="ClassA" />
               </node>
@@ -464,7 +464,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV6q" resolve="matchA" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV89" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String):void" resolve="setPackageName" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String)" resolve="setPackageName" />
               <node concept="Xl_RD" id="5cBD0WxAV6z" role="37wK5m">
                 <property role="Xl_RC" value="samplenamespace" />
               </node>
@@ -479,11 +479,11 @@
                 <ref role="3cqZAo" node="5cBD0WxAV6m" resolve="matchModel" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV8c" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                <ref role="37wK5l" to="gnwr:~MatchModel.getClass_()" resolve="getClass_" />
               </node>
             </node>
             <node concept="liA8E" id="5cBD0WxAV6B" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="5cBD0WxAV6C" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV6q" resolve="matchA" />
               </node>
@@ -498,11 +498,11 @@
                 <ref role="3cqZAo" node="5cBD0WxAV6f" resolve="rule" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV8f" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~Rule.getMatch():org.eclipse.emf.common.util.EList" resolve="getMatch" />
+                <ref role="37wK5l" to="gnwr:~Rule.getMatch()" resolve="getMatch" />
               </node>
             </node>
             <node concept="liA8E" id="5cBD0WxAV6G" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="5cBD0WxAV6H" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV6m" resolve="matchModel" />
               </node>
@@ -522,7 +522,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV8i" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyModel():dsltrans.ApplyModel" resolve="createApplyModel" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyModel()" resolve="createApplyModel" />
               </node>
             </node>
           </node>
@@ -540,7 +540,7 @@
                 <ref role="3cqZAo" node="4YDsaJSJZtC" resolve="factory" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV8l" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyClass():dsltrans.ApplyClass" resolve="createApplyClass" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyClass()" resolve="createApplyClass" />
               </node>
             </node>
           </node>
@@ -552,7 +552,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV6M" resolve="applyClass" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV8o" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String):void" resolve="setClassName" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String)" resolve="setClassName" />
               <node concept="Xl_RD" id="5cBD0WxAV6S" role="37wK5m">
                 <property role="Xl_RC" value="ClassA" />
               </node>
@@ -565,7 +565,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV6M" resolve="applyClass" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV8r" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String):void" resolve="setPackageName" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String)" resolve="setPackageName" />
               <node concept="Xl_RD" id="5cBD0WxAV6V" role="37wK5m">
                 <property role="Xl_RC" value="samplenamespace" />
               </node>
@@ -580,11 +580,11 @@
                 <ref role="3cqZAo" node="5cBD0WxAV6I" resolve="applyModel" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV8u" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_()" resolve="getClass_" />
               </node>
             </node>
             <node concept="liA8E" id="5cBD0WxAV6Z" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="5cBD0WxAV70" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV6M" resolve="applyClass" />
               </node>
@@ -598,7 +598,7 @@
               <ref role="3cqZAo" node="5cBD0WxAV6f" resolve="rule" />
             </node>
             <node concept="liA8E" id="5cBD0WxAV8x" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Rule.setApply(dsltrans.ApplyModel):void" resolve="setApply" />
+              <ref role="37wK5l" to="gnwr:~Rule.setApply(dsltrans.ApplyModel)" resolve="setApply" />
               <node concept="37vLTw" id="5cBD0WxAV73" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV6I" resolve="applyModel" />
               </node>
@@ -613,11 +613,11 @@
                 <ref role="3cqZAo" node="5cBD0WxAV5K" resolve="firstLayer" />
               </node>
               <node concept="liA8E" id="5cBD0WxAV8$" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~Layer.getHasRule():org.eclipse.emf.common.util.EList" resolve="getHasRule" />
+                <ref role="37wK5l" to="gnwr:~Layer.getHasRule()" resolve="getHasRule" />
               </node>
             </node>
             <node concept="liA8E" id="5cBD0WxAV77" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="5cBD0WxAV78" role="37wK5m">
                 <ref role="3cqZAo" node="5cBD0WxAV6f" resolve="rule" />
               </node>

@@ -282,7 +282,7 @@
               <ref role="3cqZAo" node="5cBD0WxCO7P" resolve="defaultValue" />
             </node>
             <node concept="liA8E" id="5cBD0WxCO9F" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
             </node>
           </node>
         </node>
@@ -344,7 +344,7 @@
               <ref role="3cqZAo" node="5cBD0WxCO96" resolve="me" />
             </node>
             <node concept="liA8E" id="5cBD0WxCO9K" role="2OqNvi">
-              <ref role="37wK5l" to="fnwj:~MetaEntity.isSubTypeOf(dsltransEngine.metamodel.MetaEntity):boolean" resolve="isSubTypeOf" />
+              <ref role="37wK5l" to="fnwj:~MetaEntity.isSubTypeOf(dsltransEngine.metamodel.MetaEntity)" resolve="isSubTypeOf" />
               <node concept="2OqwBi" id="5cBD0WxCO9k" role="37wK5m">
                 <node concept="Xjq3P" id="5cBD0WxCO9l" role="2Oq$k0" />
                 <node concept="liA8E" id="5cBD0WxCO9m" role="2OqNvi">

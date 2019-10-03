@@ -118,7 +118,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -212,15 +212,15 @@
                 <node concept="2OqwBi" id="5wIv5flMJnc" role="3uHU7w">
                   <node concept="2OqwBi" id="5wIv5flMIrb" role="2Oq$k0">
                     <node concept="2YIFZM" id="5wIv5flMI68" role="2Oq$k0">
-                      <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+                      <ref role="37wK5l" to="33ny:~UUID.randomUUID()" resolve="randomUUID" />
                       <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
                     </node>
                     <node concept="liA8E" id="5wIv5flMJ29" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="33ny:~UUID.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="5wIv5flMK3v" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                     <node concept="3cmrfG" id="5wIv5flMKb$" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -289,14 +289,14 @@
                   <node concept="2OqwBi" id="7Xy2jZS46KQ" role="2Oq$k0">
                     <node concept="2YIFZM" id="7Xy2jZS46KR" role="2Oq$k0">
                       <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
-                      <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+                      <ref role="37wK5l" to="33ny:~UUID.randomUUID()" resolve="randomUUID" />
                     </node>
                     <node concept="liA8E" id="7Xy2jZS46KS" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="33ny:~UUID.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7Xy2jZS46KT" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                     <node concept="3cmrfG" id="7Xy2jZS46KU" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -360,15 +360,15 @@
                 <node concept="2OqwBi" id="7Xy2jZS44KW" role="3uHU7w">
                   <node concept="2OqwBi" id="7Xy2jZS43q7" role="2Oq$k0">
                     <node concept="2YIFZM" id="7Xy2jZS43q8" role="2Oq$k0">
-                      <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+                      <ref role="37wK5l" to="33ny:~UUID.randomUUID()" resolve="randomUUID" />
                       <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
                     </node>
                     <node concept="liA8E" id="7Xy2jZS43q9" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="33ny:~UUID.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7Xy2jZS45Bq" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                     <node concept="3cmrfG" id="7Xy2jZS45F_" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -499,14 +499,14 @@
                   <node concept="2OqwBi" id="7Xy2jZS4cdN" role="2Oq$k0">
                     <node concept="2YIFZM" id="7Xy2jZS4cdO" role="2Oq$k0">
                       <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
-                      <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+                      <ref role="37wK5l" to="33ny:~UUID.randomUUID()" resolve="randomUUID" />
                     </node>
                     <node concept="liA8E" id="7Xy2jZS4cdP" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="33ny:~UUID.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7Xy2jZS4cdQ" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                     <node concept="3cmrfG" id="7Xy2jZS4cdR" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
@@ -591,15 +591,15 @@
                 <node concept="2OqwBi" id="7Xy2jZS4e_T" role="3uHU7w">
                   <node concept="2OqwBi" id="7Xy2jZS4e_U" role="2Oq$k0">
                     <node concept="2YIFZM" id="7Xy2jZS4e_V" role="2Oq$k0">
-                      <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+                      <ref role="37wK5l" to="33ny:~UUID.randomUUID()" resolve="randomUUID" />
                       <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
                     </node>
                     <node concept="liA8E" id="7Xy2jZS4e_W" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+                      <ref role="37wK5l" to="33ny:~UUID.toString()" resolve="toString" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7Xy2jZS4e_X" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                    <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
                     <node concept="3cmrfG" id="7Xy2jZS4e_Y" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>

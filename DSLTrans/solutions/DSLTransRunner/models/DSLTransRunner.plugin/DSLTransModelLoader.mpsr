@@ -154,11 +154,8 @@
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -212,10 +209,18 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -282,8 +287,28 @@
         </node>
         <node concept="3clFbH" id="4nDuXWVBnA1" role="3cqZAp" />
         <node concept="3SKdUt" id="4nDuXWVBKel" role="3cqZAp">
-          <node concept="3SKdUq" id="4nDuXWVBKen" role="3SKWNk">
-            <property role="3SKdUp" value="used to remove traceabiltiy attributes after generation" />
+          <node concept="1PaTwC" id="6gbS2yFoJUw" role="3ndbpf">
+            <node concept="3oM_SD" id="6gbS2yFoJUx" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUy" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUz" role="1PaTwD">
+              <property role="3oM_SC" value="remove" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJU$" role="1PaTwD">
+              <property role="3oM_SC" value="traceabiltiy" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJU_" role="1PaTwD">
+              <property role="3oM_SC" value="attributes" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUA" role="1PaTwD">
+              <property role="3oM_SC" value="after" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUB" role="1PaTwD">
+              <property role="3oM_SC" value="generation" />
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="4nDuXWVBpny" role="3cqZAp">
@@ -335,7 +360,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="10d1GjXbAcE" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createTransformationModel():dsltrans.TransformationModel" resolve="createTransformationModel" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createTransformationModel()" resolve="createTransformationModel" />
               </node>
             </node>
           </node>
@@ -374,11 +399,11 @@
                 <ref role="3cqZAo" node="10d1GjXb_Ml" resolve="dsltransTransformation" />
               </node>
               <node concept="liA8E" id="10d1GjXbADr" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+                <ref role="37wK5l" to="gnwr:~TransformationModel.getSource()" resolve="getSource" />
               </node>
             </node>
             <node concept="liA8E" id="10d1GjXbBuz" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="2Ub285OrQKS" role="37wK5m">
                 <ref role="3cqZAo" node="2Ub285OrQ9W" resolve="inputPort" />
               </node>
@@ -442,11 +467,11 @@
                     <ref role="3cqZAo" node="10d1GjXb_Ml" resolve="dsltransTransformation" />
                   </node>
                   <node concept="liA8E" id="2Ub285Os4_9" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+                    <ref role="37wK5l" to="gnwr:~TransformationModel.getSource()" resolve="getSource" />
                   </node>
                 </node>
                 <node concept="liA8E" id="2Ub285Os4_a" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="2Ub285Os4Sn" role="37wK5m">
                     <ref role="3cqZAo" node="2Ub285OrRTb" resolve="dsltransLayer" />
                   </node>
@@ -522,7 +547,7 @@
               <ref role="3cqZAo" node="5IFgV5KQGZQ" resolve="dsltransTransformation" />
             </node>
             <node concept="liA8E" id="7YIyNGbFhEz" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource():org.eclipse.emf.common.util.EList" resolve="getSource" />
+              <ref role="37wK5l" to="gnwr:~TransformationModel.getSource()" resolve="getSource" />
             </node>
           </node>
           <node concept="3clFbS" id="7YIyNGbFfD_" role="2LFqv$">
@@ -555,14 +580,14 @@
                           <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                         </node>
                         <node concept="liA8E" id="5IFgV5KX1X0" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="3cpWs3" id="5IFgV5KX44G" role="37wK5m">
                             <node concept="2OqwBi" id="5IFgV5KXbPg" role="3uHU7w">
                               <node concept="37vLTw" id="5IFgV5KXb8B" role="2Oq$k0">
                                 <ref role="3cqZAo" node="5IFgV5KX4Ov" resolve="fpi" />
                               </node>
                               <node concept="liA8E" id="5IFgV5KXc$Q" role="2OqNvi">
-                                <ref role="37wK5l" to="8ieb:~FilePortImpl.getFilePathURI():java.lang.String" resolve="getFilePathURI" />
+                                <ref role="37wK5l" to="8ieb:~FilePortImpl.getFilePathURI()" resolve="getFilePathURI" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="5IFgV5KX2DU" role="3uHU7B">
@@ -607,7 +632,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
                     <node concept="liA8E" id="2IH$1p84hkg" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="3cpWs3" id="7YIyNGbFhW6" role="37wK5m">
                         <node concept="Xl_RD" id="7YIyNGbFhQH" role="3uHU7B">
                           <property role="Xl_RC" value="  - Layer: " />
@@ -617,7 +642,7 @@
                             <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
                           </node>
                           <node concept="liA8E" id="7YIyNGbFiDU" role="2OqNvi">
-                            <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                            <ref role="37wK5l" to="gnwr:~AbstractSource.getName()" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -632,7 +657,7 @@
                       <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                     </node>
                     <node concept="liA8E" id="6wjchODxIhA" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="6wjchODxIEK" role="37wK5m">
                         <property role="Xl_RC" value="Previous sources: " />
                       </node>
@@ -651,13 +676,13 @@
                           <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                         </node>
                         <node concept="liA8E" id="6wjchODxK1h" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="2OqwBi" id="6wjchODxKEo" role="37wK5m">
                             <node concept="2GrUjf" id="6wjchODxKqJ" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="6wjchODxr9m" resolve="source" />
                             </node>
                             <node concept="liA8E" id="6wjchODxLh2" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~AbstractSource.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="gnwr:~AbstractSource.getName()" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -669,7 +694,7 @@
                       <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
                     </node>
                     <node concept="liA8E" id="6wjchODxBBx" role="2OqNvi">
-                      <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource():org.eclipse.emf.common.util.EList" resolve="getPreviousSource" />
+                      <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource()" resolve="getPreviousSource" />
                     </node>
                   </node>
                 </node>
@@ -689,7 +714,7 @@
                         <ref role="3cqZAo" node="gTuKPS9PYt" resolve="lay2" />
                       </node>
                       <node concept="liA8E" id="4mULXgb_435" role="2OqNvi">
-                        <ref role="37wK5l" to="gnwr:~Layer.getHasRule():org.eclipse.emf.common.util.EList" resolve="getHasRule" />
+                        <ref role="37wK5l" to="gnwr:~Layer.getHasRule()" resolve="getHasRule" />
                       </node>
                     </node>
                   </node>
@@ -701,7 +726,7 @@
                       <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
                     <node concept="liA8E" id="2IH$1p84l_V" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                       <node concept="Xl_RD" id="4mULXgb_q6L" role="37wK5m">
                         <property role="Xl_RC" value="  Rules" />
                       </node>
@@ -723,14 +748,14 @@
                           <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                         </node>
                         <node concept="liA8E" id="2IH$1p84noy" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="3cpWs3" id="4mULXgb_7iC" role="37wK5m">
                             <node concept="2OqwBi" id="4mULXgb_7FG" role="3uHU7w">
                               <node concept="2GrUjf" id="4mULXgb_7pv" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
                               </node>
                               <node concept="liA8E" id="4mULXgb_bBG" role="2OqNvi">
-                                <ref role="37wK5l" to="gnwr:~Rule.getDescription():java.lang.String" resolve="getDescription" />
+                                <ref role="37wK5l" to="gnwr:~Rule.getDescription()" resolve="getDescription" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="4mULXgb_7a$" role="3uHU7B">
@@ -752,11 +777,11 @@
                               <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
                             </node>
                             <node concept="liA8E" id="4mULXgb_MFv" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~Rule.getMatch():org.eclipse.emf.common.util.EList" resolve="getMatch" />
+                              <ref role="37wK5l" to="gnwr:~Rule.getMatch()" resolve="getMatch" />
                             </node>
                           </node>
                           <node concept="liA8E" id="4mULXgb_S5V" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.get(int):java.lang.Object" resolve="get" />
+                            <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
                             <node concept="3cmrfG" id="4mULXgb_SeC" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
@@ -771,7 +796,7 @@
                           <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                         </node>
                         <node concept="liA8E" id="2IH$1p84rzJ" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="3cpWs3" id="4mULXgb_VRL" role="37wK5m">
                             <node concept="2OqwBi" id="4mULXgb_Wev" role="3uHU7w">
                               <node concept="2OqwBi" id="4mULXgb_W0h" role="2Oq$k0">
@@ -779,11 +804,11 @@
                                   <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
                                 </node>
                                 <node concept="liA8E" id="4mULXgb_W4p" role="2OqNvi">
-                                  <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                                  <ref role="37wK5l" to="gnwr:~MatchModel.getClass_()" resolve="getClass_" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="4mULXgb_WSc" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="4mULXgb_VAD" role="3uHU7B">
@@ -802,7 +827,7 @@
                           <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
                         </node>
                         <node concept="liA8E" id="2IH$1p87FAS" role="2OqNvi">
-                          <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                          <ref role="37wK5l" to="gnwr:~MatchModel.getClass_()" resolve="getClass_" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="2IH$1p87DEX" role="2LFqv$">
@@ -813,14 +838,14 @@
                               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                             </node>
                             <node concept="liA8E" id="2IH$1p87IEb" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                               <node concept="3cpWs3" id="2IH$1p87IEc" role="37wK5m">
                                 <node concept="2OqwBi" id="2IH$1p87Yj$" role="3uHU7w">
                                   <node concept="2GrUjf" id="2IH$1p87PGu" role="2Oq$k0">
                                     <ref role="2Gs0qQ" node="2IH$1p87DET" resolve="cla" />
                                   </node>
                                   <node concept="liA8E" id="5IFgV5KQBX6" role="2OqNvi">
-                                    <ref role="37wK5l" to="gnwr:~AbstractClass.getClassName():java.lang.String" resolve="getClassName" />
+                                    <ref role="37wK5l" to="gnwr:~AbstractClass.getClassName()" resolve="getClassName" />
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="2IH$1p87IEi" role="3uHU7B">
@@ -839,7 +864,7 @@
                               <ref role="2Gs0qQ" node="2IH$1p87DET" resolve="cla" />
                             </node>
                             <node concept="liA8E" id="2IH$1p8dYCN" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~MatchClass.getAttribute():org.eclipse.emf.common.util.EList" resolve="getAttribute" />
+                              <ref role="37wK5l" to="gnwr:~MatchClass.getAttribute()" resolve="getAttribute" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="2IH$1p8dWHz" role="2LFqv$">
@@ -850,14 +875,14 @@
                                   <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                 </node>
                                 <node concept="liA8E" id="2IH$1p8e2yi" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                   <node concept="3cpWs3" id="2IH$1p8e476" role="37wK5m">
                                     <node concept="2OqwBi" id="5IFgV5KVrGk" role="3uHU7w">
                                       <node concept="2GrUjf" id="5IFgV5KVrai" role="2Oq$k0">
                                         <ref role="2Gs0qQ" node="2IH$1p8dWHv" resolve="attr" />
                                       </node>
                                       <node concept="liA8E" id="5IFgV5KVs8L" role="2OqNvi">
-                                        <ref role="37wK5l" to="gnwr:~Attribute.getAttributeName():java.lang.String" resolve="getAttributeName" />
+                                        <ref role="37wK5l" to="gnwr:~Attribute.getAttributeName()" resolve="getAttributeName" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="2IH$1p8e2NW" role="3uHU7B">
@@ -878,7 +903,7 @@
                           <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                         </node>
                         <node concept="liA8E" id="2IH$1p84x$B" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="3cpWs3" id="4mULXgb_X3K" role="37wK5m">
                             <node concept="Xl_RD" id="4mULXgb_X3Q" role="3uHU7B">
                               <property role="Xl_RC" value="        Number of match associations: " />
@@ -889,11 +914,11 @@
                                   <ref role="3cqZAo" node="4mULXgb_MiM" resolve="match" />
                                 </node>
                                 <node concept="liA8E" id="4mULXgb_XFx" role="2OqNvi">
-                                  <ref role="37wK5l" to="gnwr:~MatchModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                                  <ref role="37wK5l" to="gnwr:~MatchModel.getAssociation()" resolve="getAssociation" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="4mULXgbA4kN" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                               </node>
                             </node>
                           </node>
@@ -911,7 +936,7 @@
                             <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
                           </node>
                           <node concept="liA8E" id="4mULXgbA5XD" role="2OqNvi">
-                            <ref role="37wK5l" to="gnwr:~Rule.getApply():dsltrans.ApplyModel" resolve="getApply" />
+                            <ref role="37wK5l" to="gnwr:~Rule.getApply()" resolve="getApply" />
                           </node>
                         </node>
                       </node>
@@ -923,7 +948,7 @@
                           <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                         </node>
                         <node concept="liA8E" id="2IH$1p84BBK" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="3cpWs3" id="4mULXgbA69w" role="37wK5m">
                             <node concept="2OqwBi" id="4mULXgbAaIW" role="3uHU7w">
                               <node concept="2OqwBi" id="4mULXgbAavM" role="2Oq$k0">
@@ -931,11 +956,11 @@
                                   <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
                                 </node>
                                 <node concept="liA8E" id="4mULXgbAa$o" role="2OqNvi">
-                                  <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                                  <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_()" resolve="getClass_" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="4mULXgbAbqL" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="4mULXgbA69A" role="3uHU7B">
@@ -954,7 +979,7 @@
                           <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
                         </node>
                         <node concept="liA8E" id="2IH$1p891jL" role="2OqNvi">
-                          <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                          <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_()" resolve="getClass_" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="2IH$1p88iXd" role="2LFqv$">
@@ -965,14 +990,14 @@
                               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                             </node>
                             <node concept="liA8E" id="2IH$1p88iXh" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                               <node concept="3cpWs3" id="2IH$1p88iXi" role="37wK5m">
                                 <node concept="2OqwBi" id="2IH$1p88iXj" role="3uHU7w">
                                   <node concept="2GrUjf" id="2IH$1p88iXk" role="2Oq$k0">
                                     <ref role="2Gs0qQ" node="2IH$1p88iX9" resolve="cla" />
                                   </node>
                                   <node concept="liA8E" id="5IFgV5KQEzK" role="2OqNvi">
-                                    <ref role="37wK5l" to="gnwr:~AbstractClass.getClassName():java.lang.String" resolve="getClassName" />
+                                    <ref role="37wK5l" to="gnwr:~AbstractClass.getClassName()" resolve="getClassName" />
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="2IH$1p88iXm" role="3uHU7B">
@@ -991,7 +1016,7 @@
                               <ref role="2Gs0qQ" node="2IH$1p88iX9" resolve="cla" />
                             </node>
                             <node concept="liA8E" id="5IFgV5KVu$2" role="2OqNvi">
-                              <ref role="37wK5l" to="gnwr:~ApplyClass.getAttribute():org.eclipse.emf.common.util.EList" resolve="getAttribute" />
+                              <ref role="37wK5l" to="gnwr:~ApplyClass.getAttribute()" resolve="getAttribute" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="5IFgV5KVu$3" role="2LFqv$">
@@ -1002,14 +1027,14 @@
                                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                 </node>
                                 <node concept="liA8E" id="5IFgV5KVu$7" role="2OqNvi">
-                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                   <node concept="3cpWs3" id="5IFgV5KVu$8" role="37wK5m">
                                     <node concept="2OqwBi" id="5IFgV5KVu$9" role="3uHU7w">
                                       <node concept="2GrUjf" id="5IFgV5KV$iL" role="2Oq$k0">
                                         <ref role="2Gs0qQ" node="5IFgV5KVuzZ" resolve="attr" />
                                       </node>
                                       <node concept="liA8E" id="5IFgV5KVu$b" role="2OqNvi">
-                                        <ref role="37wK5l" to="gnwr:~Attribute.getAttributeName():java.lang.String" resolve="getAttributeName" />
+                                        <ref role="37wK5l" to="gnwr:~Attribute.getAttributeName()" resolve="getAttributeName" />
                                       </node>
                                     </node>
                                     <node concept="Xl_RD" id="5IFgV5KVu$c" role="3uHU7B">
@@ -1031,7 +1056,7 @@
                           <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                         </node>
                         <node concept="liA8E" id="2IH$1p84HOC" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="3cpWs3" id="4mULXgbA69C" role="37wK5m">
                             <node concept="Xl_RD" id="4mULXgbA69D" role="3uHU7B">
                               <property role="Xl_RC" value="        Number of apply associations: " />
@@ -1042,11 +1067,11 @@
                                   <ref role="3cqZAo" node="4mULXgbA5si" resolve="apply" />
                                 </node>
                                 <node concept="liA8E" id="4mULXgbA69H" role="2OqNvi">
-                                  <ref role="37wK5l" to="gnwr:~ApplyModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                                  <ref role="37wK5l" to="gnwr:~ApplyModel.getAssociation()" resolve="getAssociation" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="4mULXgbA69I" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                               </node>
                             </node>
                           </node>
@@ -1060,7 +1085,7 @@
                           <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                         </node>
                         <node concept="liA8E" id="2IH$1p84NS$" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                           <node concept="3cpWs3" id="4mULXgbBaa7" role="37wK5m">
                             <node concept="2OqwBi" id="4mULXgbBaNY" role="3uHU7w">
                               <node concept="2OqwBi" id="4mULXgbBajc" role="2Oq$k0">
@@ -1068,11 +1093,11 @@
                                   <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
                                 </node>
                                 <node concept="liA8E" id="4mULXgbBawA" role="2OqNvi">
-                                  <ref role="37wK5l" to="gnwr:~Rule.getBackwards():org.eclipse.emf.common.util.EList" resolve="getBackwards" />
+                                  <ref role="37wK5l" to="gnwr:~Rule.getBackwards()" resolve="getBackwards" />
                                 </node>
                               </node>
                               <node concept="liA8E" id="4mULXgbBcWQ" role="2OqNvi">
-                                <ref role="37wK5l" to="33ny:~List.size():int" resolve="size" />
+                                <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
                               </node>
                             </node>
                             <node concept="Xl_RD" id="4mULXgbB9CW" role="3uHU7B">
@@ -1091,7 +1116,7 @@
                           <ref role="2Gs0qQ" node="4mULXgb_6Ib" resolve="rule" />
                         </node>
                         <node concept="liA8E" id="2IH$1p859$j" role="2OqNvi">
-                          <ref role="37wK5l" to="gnwr:~Rule.getBackwards():org.eclipse.emf.common.util.EList" resolve="getBackwards" />
+                          <ref role="37wK5l" to="gnwr:~Rule.getBackwards()" resolve="getBackwards" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="2IH$1p858mI" role="2LFqv$">
@@ -1102,7 +1127,7 @@
                               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                             </node>
                             <node concept="liA8E" id="2IH$1p85cjO" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                               <node concept="3cpWs3" id="2IH$1p85dnq" role="37wK5m">
                                 <node concept="2OqwBi" id="2IH$1p878fB" role="3uHU7w">
                                   <node concept="2OqwBi" id="2IH$1p85dIh" role="2Oq$k0">
@@ -1110,11 +1135,11 @@
                                       <ref role="2Gs0qQ" node="2IH$1p858mE" resolve="back" />
                                     </node>
                                     <node concept="liA8E" id="2IH$1p85enJ" role="2OqNvi">
-                                      <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.getSourceClass():dsltrans.PositiveMatchClass" resolve="getSourceClass" />
+                                      <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.getSourceClass()" resolve="getSourceClass" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="5IFgV5KT6hL" role="2OqNvi">
-                                    <ref role="37wK5l" to="gnwr:~AbstractClass.getClassName():java.lang.String" resolve="getClassName" />
+                                    <ref role="37wK5l" to="gnwr:~AbstractClass.getClassName()" resolve="getClassName" />
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="2IH$1p85czH" role="3uHU7B">
@@ -1131,7 +1156,7 @@
                               <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                             </node>
                             <node concept="liA8E" id="2IH$1p85w1_" role="2OqNvi">
-                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                               <node concept="3cpWs3" id="2IH$1p85w1A" role="37wK5m">
                                 <node concept="2OqwBi" id="2IH$1p85Hxv" role="3uHU7w">
                                   <node concept="2OqwBi" id="2IH$1p85w1C" role="2Oq$k0">
@@ -1139,11 +1164,11 @@
                                       <ref role="2Gs0qQ" node="2IH$1p858mE" resolve="back" />
                                     </node>
                                     <node concept="liA8E" id="2IH$1p85EJZ" role="2OqNvi">
-                                      <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.getTargetClass():dsltrans.ApplyClass" resolve="getTargetClass" />
+                                      <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.getTargetClass()" resolve="getTargetClass" />
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="5IFgV5KT90d" role="2OqNvi">
-                                    <ref role="37wK5l" to="gnwr:~AbstractClass.getClassName():java.lang.String" resolve="getClassName" />
+                                    <ref role="37wK5l" to="gnwr:~AbstractClass.getClassName()" resolve="getClassName" />
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="2IH$1p85w1G" role="3uHU7B">
@@ -1173,7 +1198,7 @@
                         <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                       </node>
                       <node concept="liA8E" id="5IFgV5KQ$uQ" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                         <node concept="Xl_RD" id="5IFgV5KQ$SO" role="37wK5m">
                           <property role="Xl_RC" value="Error when printing transformation: " />
                         </node>
@@ -1186,7 +1211,7 @@
                         <ref role="3cqZAo" node="gTuKPSaqnY" resolve="e" />
                       </node>
                       <node concept="liA8E" id="5IFgV5KQBxX" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
                       </node>
                     </node>
                   </node>
@@ -1220,7 +1245,7 @@
                 <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AbstractSourcesTrace" />
               </node>
               <node concept="liA8E" id="2Ub285Os8ep" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object)" resolve="containsKey" />
                 <node concept="37vLTw" id="2Ub285Os8eq" role="37wK5m">
                   <ref role="3cqZAo" node="2Ub285OrYu9" resolve="layer" />
                 </node>
@@ -1234,7 +1259,7 @@
                   <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AbstractSourcesTrace" />
                 </node>
                 <node concept="liA8E" id="2Ub285Os8Om" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="37vLTw" id="2Ub285Os8On" role="37wK5m">
                     <ref role="3cqZAo" node="2Ub285OrYu9" resolve="layer" />
                   </node>
@@ -1258,14 +1283,14 @@
                 <ref role="3cqZAo" node="2Ub285OsoUd" resolve="layer2AbstractSourcesTrace" />
               </node>
               <node concept="liA8E" id="2Ub285Os0WI" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                 <node concept="37vLTw" id="2Ub285Os18z" role="37wK5m">
                   <ref role="3cqZAo" node="2Ub285OrYu9" resolve="layer" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="2Ub285Os6Dt" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="2Ub285Os6RR" role="37wK5m">
                 <ref role="3cqZAo" node="2Ub285OrYH_" resolve="dsltransLayer" />
               </node>
@@ -1322,7 +1347,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="10d1GjXbPK4" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createSequential():dsltrans.Sequential" resolve="createSequential" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createSequential()" resolve="createSequential" />
               </node>
             </node>
           </node>
@@ -1333,7 +1358,7 @@
               <ref role="3cqZAo" node="10d1GjXbPww" resolve="dsltransLayer" />
             </node>
             <node concept="liA8E" id="10d1GjXbT80" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String):void" resolve="setName" />
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String)" resolve="setName" />
               <node concept="2OqwBi" id="10d1GjXbTiI" role="37wK5m">
                 <node concept="37vLTw" id="10d1GjXbTck" role="2Oq$k0">
                   <ref role="3cqZAo" node="10d1GjXbP6K" resolve="layer" />
@@ -1351,7 +1376,7 @@
               <ref role="3cqZAo" node="10d1GjXbPww" resolve="dsltransLayer" />
             </node>
             <node concept="liA8E" id="10d1GjXbU3S" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Layer.setDescription(java.lang.String):void" resolve="setDescription" />
+              <ref role="37wK5l" to="gnwr:~Layer.setDescription(java.lang.String)" resolve="setDescription" />
               <node concept="2OqwBi" id="10d1GjXbUeo" role="37wK5m">
                 <node concept="37vLTw" id="10d1GjXbU8b" role="2Oq$k0">
                   <ref role="3cqZAo" node="10d1GjXbP6K" resolve="layer" />
@@ -1369,7 +1394,7 @@
               <ref role="3cqZAo" node="10d1GjXbPww" resolve="dsltransLayer" />
             </node>
             <node concept="liA8E" id="10d1GjXbVg3" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier):void" resolve="setMetaModelId" />
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier)" resolve="setMetaModelId" />
               <node concept="1rXfSq" id="10d1GjXbVoj" role="37wK5m">
                 <ref role="37wK5l" node="10d1GjXbJsq" resolve="createMMID" />
                 <node concept="37vLTw" id="10d1GjXc0AS" role="37wK5m">
@@ -1385,7 +1410,7 @@
               <ref role="3cqZAo" node="10d1GjXbPww" resolve="dsltransLayer" />
             </node>
             <node concept="liA8E" id="10d1GjXc0fM" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Layer.setOutputFilePathURI(java.lang.String):void" resolve="setOutputFilePathURI" />
+              <ref role="37wK5l" to="gnwr:~Layer.setOutputFilePathURI(java.lang.String)" resolve="setOutputFilePathURI" />
               <node concept="2OqwBi" id="10d1GjXc0M3" role="37wK5m">
                 <node concept="37vLTw" id="10d1GjXc0FK" role="2Oq$k0">
                   <ref role="3cqZAo" node="10d1GjXbXu9" resolve="outputModel" />
@@ -1407,11 +1432,11 @@
                     <ref role="3cqZAo" node="10d1GjXbPww" resolve="dsltransLayer" />
                   </node>
                   <node concept="liA8E" id="2Ub285OrVuk" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource():org.eclipse.emf.common.util.EList" resolve="getPreviousSource" />
+                    <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource()" resolve="getPreviousSource" />
                   </node>
                 </node>
                 <node concept="liA8E" id="2Ub285OrVVr" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="2Ub285OrW2y" role="37wK5m">
                     <ref role="3cqZAo" node="2Ub285OrR4E" resolve="inputPort" />
                   </node>
@@ -1447,7 +1472,7 @@
                       <ref role="3cqZAo" node="2Ub285Osn7z" resolve="layer2AbstractSourcesTrace" />
                     </node>
                     <node concept="liA8E" id="gTuKPSb6R2" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                       <node concept="2OqwBi" id="gTuKPSb7DH" role="37wK5m">
                         <node concept="2OqwBi" id="gTuKPSb7fm" role="2Oq$k0">
                           <node concept="37vLTw" id="gTuKPSb6R3" role="2Oq$k0">
@@ -1477,11 +1502,11 @@
                           <ref role="3cqZAo" node="10d1GjXbPww" resolve="dsltransLayer" />
                         </node>
                         <node concept="liA8E" id="2Ub285Osf8I" role="2OqNvi">
-                          <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource():org.eclipse.emf.common.util.EList" resolve="getPreviousSource" />
+                          <ref role="37wK5l" to="gnwr:~Layer.getPreviousSource()" resolve="getPreviousSource" />
                         </node>
                       </node>
                       <node concept="liA8E" id="2Ub285OsfUa" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                        <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                         <node concept="2GrUjf" id="2Ub285Osg0i" role="37wK5m">
                           <ref role="2Gs0qQ" node="2Ub285OsewX" resolve="source" />
                         </node>
@@ -1515,11 +1540,11 @@
                     <ref role="3cqZAo" node="10d1GjXbPww" resolve="dsltransLayer" />
                   </node>
                   <node concept="liA8E" id="2Ub285OsC8q" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~Layer.getHasRule():org.eclipse.emf.common.util.EList" resolve="getHasRule" />
+                    <ref role="37wK5l" to="gnwr:~Layer.getHasRule()" resolve="getHasRule" />
                   </node>
                 </node>
                 <node concept="liA8E" id="2Ub285OsC_H" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2GrUjf" id="2Ub285OsCFS" role="37wK5m">
                     <ref role="2Gs0qQ" node="2Ub285OszvT" resolve="rule" />
                   </node>
@@ -1629,7 +1654,7 @@
                       <ref role="3cqZAo" node="2Ub285OsI_T" resolve="rules" />
                     </node>
                     <node concept="liA8E" id="2Ub285OsP1j" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                      <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                       <node concept="1rXfSq" id="2Ub285OsSmd" role="37wK5m">
                         <ref role="37wK5l" node="2Ub285OsQsc" resolve="createRule" />
                         <node concept="1eOMI4" id="2Ub285OsSJo" role="37wK5m">
@@ -1689,7 +1714,7 @@
                         <ref role="3cqZAo" node="2Ub285OsI_T" resolve="rules" />
                       </node>
                       <node concept="liA8E" id="2Ub285OsWxZ" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                        <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                         <node concept="1rXfSq" id="2Ub285OsWy0" role="37wK5m">
                           <ref role="37wK5l" node="2Ub285OsQsc" resolve="createRule" />
                           <node concept="37vLTw" id="2Ub285OsXaB" role="37wK5m">
@@ -1830,7 +1855,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="2Ub285Ot2hm" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createRule():dsltrans.Rule" resolve="createRule" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createRule()" resolve="createRule" />
               </node>
             </node>
           </node>
@@ -1841,7 +1866,7 @@
               <ref role="3cqZAo" node="2Ub285Ot1q2" resolve="dsltransRule" />
             </node>
             <node concept="liA8E" id="2Ub285Ot4ik" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Rule.setDescription(java.lang.String):void" resolve="setDescription" />
+              <ref role="37wK5l" to="gnwr:~Rule.setDescription(java.lang.String)" resolve="setDescription" />
               <node concept="2OqwBi" id="2Ub285Ot4u6" role="37wK5m">
                 <node concept="37vLTw" id="2Ub285Ot4mP" role="2Oq$k0">
                   <ref role="3cqZAo" node="2Ub285OsR5Z" resolve="rule" />
@@ -1862,11 +1887,11 @@
                     <ref role="3cqZAo" node="2Ub285Ot1q2" resolve="dsltransRule" />
                   </node>
                   <node concept="liA8E" id="2Ub285OtdPz" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~Rule.getMatch():org.eclipse.emf.common.util.EList" resolve="getMatch" />
+                    <ref role="37wK5l" to="gnwr:~Rule.getMatch()" resolve="getMatch" />
                   </node>
                 </node>
                 <node concept="liA8E" id="2Ub285OteiO" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="1rXfSq" id="2Ub285Otp9j" role="37wK5m">
                     <ref role="37wK5l" node="2Ub285Otiz$" resolve="createMatchModel" />
                     <node concept="2OqwBi" id="2Ub285Otpoq" role="37wK5m">
@@ -1906,7 +1931,7 @@
               <ref role="3cqZAo" node="2Ub285Ot1q2" resolve="dsltransRule" />
             </node>
             <node concept="liA8E" id="1NdVp2rUpNj" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Rule.setApply(dsltrans.ApplyModel):void" resolve="setApply" />
+              <ref role="37wK5l" to="gnwr:~Rule.setApply(dsltrans.ApplyModel)" resolve="setApply" />
               <node concept="1rXfSq" id="1NdVp2rUwMM" role="37wK5m">
                 <ref role="37wK5l" node="1NdVp2rUs5n" resolve="createApplyModel" />
                 <node concept="2OqwBi" id="1NdVp2rUx0M" role="37wK5m">
@@ -1947,11 +1972,11 @@
                     <ref role="3cqZAo" node="2Ub285Ot1q2" resolve="dsltransRule" />
                   </node>
                   <node concept="liA8E" id="JP13UteXtt" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~Rule.getBackwards():org.eclipse.emf.common.util.EList" resolve="getBackwards" />
+                    <ref role="37wK5l" to="gnwr:~Rule.getBackwards()" resolve="getBackwards" />
                   </node>
                 </node>
                 <node concept="liA8E" id="JP13UteYfg" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="1rXfSq" id="JP13Utf5fS" role="37wK5m">
                     <ref role="37wK5l" node="JP13Utf0E_" resolve="createBackwardAssoc" />
                     <node concept="2GrUjf" id="JP13Utf5nJ" role="37wK5m">
@@ -2007,7 +2032,7 @@
                 <ref role="3cqZAo" node="JP13Utf2X0" resolve="matchClass2matchClassTrace" />
               </node>
               <node concept="liA8E" id="2GbRIwA5K1z" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                 <node concept="2OqwBi" id="2GbRIwA5K1$" role="37wK5m">
                   <node concept="37vLTw" id="2GbRIwA5K1_" role="2Oq$k0">
                     <ref role="3cqZAo" node="JP13Utf1XE" resolve="backward" />
@@ -2055,7 +2080,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="2GbRIwA5qf$" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createPositiveBackwardRestriction():dsltrans.PositiveBackwardRestriction" resolve="createPositiveBackwardRestriction" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createPositiveBackwardRestriction()" resolve="createPositiveBackwardRestriction" />
               </node>
             </node>
           </node>
@@ -2066,7 +2091,7 @@
               <ref role="3cqZAo" node="2GbRIwA5kSI" resolve="dsltransAssociation" />
             </node>
             <node concept="liA8E" id="2GbRIwA5uaD" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.setSourceClass(dsltrans.PositiveMatchClass):void" resolve="setSourceClass" />
+              <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.setSourceClass(dsltrans.PositiveMatchClass)" resolve="setSourceClass" />
               <node concept="1eOMI4" id="2GbRIwA5P8W" role="37wK5m">
                 <node concept="10QFUN" id="2GbRIwA5P8T" role="1eOMHV">
                   <node concept="3uibUv" id="2GbRIwA5PhS" role="10QFUM">
@@ -2086,13 +2111,13 @@
               <ref role="3cqZAo" node="2GbRIwA5kSI" resolve="dsltransAssociation" />
             </node>
             <node concept="liA8E" id="2GbRIwA5kT0" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.setTargetClass(dsltrans.ApplyClass):void" resolve="setTargetClass" />
+              <ref role="37wK5l" to="gnwr:~AbstractTemporalRelation.setTargetClass(dsltrans.ApplyClass)" resolve="setTargetClass" />
               <node concept="2OqwBi" id="2GbRIwA5kT1" role="37wK5m">
                 <node concept="37vLTw" id="2GbRIwA5kT2" role="2Oq$k0">
                   <ref role="3cqZAo" node="JP13Utf40O" resolve="applyClass2applyClassTrace" />
                 </node>
                 <node concept="liA8E" id="2GbRIwA5kT3" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                   <node concept="2OqwBi" id="2GbRIwA5R33" role="37wK5m">
                     <node concept="37vLTw" id="2GbRIwA5QU9" role="2Oq$k0">
                       <ref role="3cqZAo" node="JP13Utf1XE" resolve="backward" />
@@ -2168,7 +2193,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="1NdVp2rUyiD" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyModel():dsltrans.ApplyModel" resolve="createApplyModel" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyModel()" resolve="createApplyModel" />
               </node>
             </node>
           </node>
@@ -2209,7 +2234,7 @@
                   <ref role="3cqZAo" node="JP13UteMyz" resolve="applyClass2applyClassTrace" />
                 </node>
                 <node concept="liA8E" id="JP13UteGSJ" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="2GrUjf" id="JP13UteHc9" role="37wK5m">
                     <ref role="2Gs0qQ" node="1NdVp2rUykx" resolve="applyClass" />
                   </node>
@@ -2226,11 +2251,11 @@
                     <ref role="3cqZAo" node="1NdVp2rUy0F" resolve="dsltransApplyModel" />
                   </node>
                   <node concept="liA8E" id="1NdVp2rUykQ" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                    <ref role="37wK5l" to="gnwr:~ApplyModel.getClass_()" resolve="getClass_" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1NdVp2rUykR" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="1NdVp2rUykS" role="37wK5m">
                     <ref role="3cqZAo" node="1NdVp2rUykB" resolve="dsltransApplyClass" />
                   </node>
@@ -2276,11 +2301,11 @@
                     <ref role="3cqZAo" node="1NdVp2rUy0F" resolve="dsltransApplyModel" />
                   </node>
                   <node concept="liA8E" id="1NdVp2rUyl9" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~ApplyModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                    <ref role="37wK5l" to="gnwr:~ApplyModel.getAssociation()" resolve="getAssociation" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1NdVp2rUyla" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="1NdVp2rUylb" role="37wK5m">
                     <ref role="3cqZAo" node="1NdVp2rUyl0" resolve="dsltransAssoc" />
                   </node>
@@ -2352,7 +2377,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="2GbRIwA5iRv" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyAssociation():dsltrans.ApplyAssociation" resolve="createApplyAssociation" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyAssociation()" resolve="createApplyAssociation" />
               </node>
             </node>
           </node>
@@ -2363,13 +2388,13 @@
               <ref role="3cqZAo" node="2GbRIwA5a_1" resolve="dsltransAssociation" />
             </node>
             <node concept="liA8E" id="2GbRIwA5a__" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~ApplyAssociation.setSource(dsltrans.ApplyClass):void" resolve="setSource" />
+              <ref role="37wK5l" to="gnwr:~ApplyAssociation.setSource(dsltrans.ApplyClass)" resolve="setSource" />
               <node concept="2OqwBi" id="2GbRIwA5a_A" role="37wK5m">
                 <node concept="37vLTw" id="2GbRIwA5k8s" role="2Oq$k0">
                   <ref role="3cqZAo" node="JP13UteBzC" resolve="applyClass2applyClassTrace" />
                 </node>
                 <node concept="liA8E" id="2GbRIwA5a_C" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                   <node concept="2OqwBi" id="2GbRIwA5a_D" role="37wK5m">
                     <node concept="37vLTw" id="2GbRIwA5kAn" role="2Oq$k0">
                       <ref role="3cqZAo" node="JP13Ute_T2" resolve="applyAssoc" />
@@ -2389,13 +2414,13 @@
               <ref role="3cqZAo" node="2GbRIwA5a_1" resolve="dsltransAssociation" />
             </node>
             <node concept="liA8E" id="2GbRIwA5a_J" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~ApplyAssociation.setTarget(dsltrans.ApplyClass):void" resolve="setTarget" />
+              <ref role="37wK5l" to="gnwr:~ApplyAssociation.setTarget(dsltrans.ApplyClass)" resolve="setTarget" />
               <node concept="2OqwBi" id="2GbRIwA5a_K" role="37wK5m">
                 <node concept="37vLTw" id="2GbRIwA5kqk" role="2Oq$k0">
                   <ref role="3cqZAo" node="JP13UteBzC" resolve="applyClass2applyClassTrace" />
                 </node>
                 <node concept="liA8E" id="2GbRIwA5a_M" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                   <node concept="2OqwBi" id="2GbRIwA5a_N" role="37wK5m">
                     <node concept="37vLTw" id="2GbRIwA5kLH" role="2Oq$k0">
                       <ref role="3cqZAo" node="JP13Ute_T2" resolve="applyAssoc" />
@@ -2415,7 +2440,7 @@
               <ref role="3cqZAo" node="2GbRIwA5a_1" resolve="dsltransAssociation" />
             </node>
             <node concept="liA8E" id="4mULXgbAvGS" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Association.setAssociationName(java.lang.String):void" resolve="setAssociationName" />
+              <ref role="37wK5l" to="gnwr:~Association.setAssociationName(java.lang.String)" resolve="setAssociationName" />
               <node concept="2OqwBi" id="3e_V7Ivrfpn" role="37wK5m">
                 <node concept="2OqwBi" id="3e_V7IvrdC6" role="2Oq$k0">
                   <node concept="2OqwBi" id="4mULXgbAznn" role="2Oq$k0">
@@ -2484,7 +2509,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="JP13UtfhZP" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyClass():dsltrans.ApplyClass" resolve="createApplyClass" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyClass()" resolve="createApplyClass" />
               </node>
             </node>
           </node>
@@ -2495,7 +2520,7 @@
               <ref role="3cqZAo" node="JP13Utf77A" resolve="dsltransApplyClass" />
             </node>
             <node concept="liA8E" id="JP13Utf78b" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setAllowInheritance(boolean):void" resolve="setAllowInheritance" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setAllowInheritance(boolean)" resolve="setAllowInheritance" />
               <node concept="2OqwBi" id="2GbRIwA7o_0" role="37wK5m">
                 <node concept="37vLTw" id="2GbRIwA7otJ" role="2Oq$k0">
                   <ref role="3cqZAo" node="JP13Uteucr" resolve="applyClass" />
@@ -2513,7 +2538,7 @@
               <ref role="3cqZAo" node="JP13Utf77A" resolve="dsltransApplyClass" />
             </node>
             <node concept="liA8E" id="46cQNHjYgu1" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String):void" resolve="setClassName" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String)" resolve="setClassName" />
               <node concept="2OqwBi" id="GW95CXvIas" role="37wK5m">
                 <node concept="2OqwBi" id="GW95CXvIat" role="2Oq$k0">
                   <node concept="2OqwBi" id="GW95CXvIau" role="2Oq$k0">
@@ -2542,7 +2567,7 @@
               <ref role="3cqZAo" node="JP13Utf77A" resolve="dsltransApplyClass" />
             </node>
             <node concept="liA8E" id="JP13Utf78n" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setId(java.lang.String):void" resolve="setId" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setId(java.lang.String)" resolve="setId" />
               <node concept="2OqwBi" id="JP13Utf78o" role="37wK5m">
                 <node concept="37vLTw" id="JP13UtfjeZ" role="2Oq$k0">
                   <ref role="3cqZAo" node="JP13Uteucr" resolve="applyClass" />
@@ -2560,7 +2585,7 @@
               <ref role="3cqZAo" node="JP13Utf77A" resolve="dsltransApplyClass" />
             </node>
             <node concept="liA8E" id="JP13Utf78u" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String):void" resolve="setPackageName" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String)" resolve="setPackageName" />
               <node concept="Xl_RD" id="JP13Utf78v" role="37wK5m" />
             </node>
           </node>
@@ -2604,11 +2629,11 @@
                     <ref role="3cqZAo" node="JP13Utf77A" resolve="dsltransApplyClass" />
                   </node>
                   <node concept="liA8E" id="JP13Utf78G" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~ApplyClass.getAttribute():org.eclipse.emf.common.util.EList" resolve="getAttribute" />
+                    <ref role="37wK5l" to="gnwr:~ApplyClass.getAttribute()" resolve="getAttribute" />
                   </node>
                 </node>
                 <node concept="liA8E" id="JP13Utf78H" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="JP13Utf78I" role="37wK5m">
                     <ref role="3cqZAo" node="JP13Utf78$" resolve="dsltransAttribute" />
                   </node>
@@ -2666,18 +2691,99 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="4nDuXWV$7_7" role="3clF47">
         <node concept="3SKdUt" id="4nDuXWVrC2f" role="3cqZAp">
-          <node concept="3SKdUq" id="4nDuXWVrC2h" role="3SKWNk">
-            <property role="3SKdUp" value="create the ApplyAttribute attribute for each apply class" />
+          <node concept="1PaTwC" id="6gbS2yFoJUC" role="3ndbpf">
+            <node concept="3oM_SD" id="6gbS2yFoJUD" role="1PaTwD">
+              <property role="3oM_SC" value="create" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUE" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUF" role="1PaTwD">
+              <property role="3oM_SC" value="ApplyAttribute" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUG" role="1PaTwD">
+              <property role="3oM_SC" value="attribute" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUH" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUI" role="1PaTwD">
+              <property role="3oM_SC" value="each" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUJ" role="1PaTwD">
+              <property role="3oM_SC" value="apply" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUK" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="4nDuXWVrVOr" role="3cqZAp">
-          <node concept="3SKdUq" id="4nDuXWVrVOt" role="3SKWNk">
-            <property role="3SKdUp" value="(the traceability attribute)" />
+          <node concept="1PaTwC" id="6gbS2yFoJUL" role="3ndbpf">
+            <node concept="3oM_SD" id="6gbS2yFoJUM" role="1PaTwD">
+              <property role="3oM_SC" value="(the" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUN" role="1PaTwD">
+              <property role="3oM_SC" value="traceability" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUO" role="1PaTwD">
+              <property role="3oM_SC" value="attribute)" />
+            </node>
           </node>
         </node>
         <node concept="3SKdUt" id="4nDuXWVrFxq" role="3cqZAp">
-          <node concept="3SKdUq" id="4nDuXWVrFxs" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Make this more selective, based on if the apply class appears in a later backward link" />
+          <node concept="1PaTwC" id="6gbS2yFoJUP" role="3ndbpf">
+            <node concept="3oM_SD" id="6gbS2yFoJUQ" role="1PaTwD">
+              <property role="3oM_SC" value="TODO:" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUR" role="1PaTwD">
+              <property role="3oM_SC" value="Make" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUS" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUT" role="1PaTwD">
+              <property role="3oM_SC" value="more" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUU" role="1PaTwD">
+              <property role="3oM_SC" value="selective," />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUV" role="1PaTwD">
+              <property role="3oM_SC" value="based" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUW" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUX" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUY" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJUZ" role="1PaTwD">
+              <property role="3oM_SC" value="apply" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJV0" role="1PaTwD">
+              <property role="3oM_SC" value="class" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJV1" role="1PaTwD">
+              <property role="3oM_SC" value="appears" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJV2" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJV3" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJV4" role="1PaTwD">
+              <property role="3oM_SC" value="later" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJV5" role="1PaTwD">
+              <property role="3oM_SC" value="backward" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJV6" role="1PaTwD">
+              <property role="3oM_SC" value="link" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="3md1xfg8FBr" role="3cqZAp">
@@ -2877,7 +2983,7 @@
               <ref role="3cqZAo" node="4nDuXWVBkFE" resolve="applyClasses" />
             </node>
             <node concept="liA8E" id="4nDuXWVB_Ut" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~HashSet.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~HashSet.add(java.lang.Object)" resolve="add" />
               <node concept="37vLTw" id="4nDuXWVBONA" role="37wK5m">
                 <ref role="3cqZAo" node="4nDuXWV$aBU" resolve="applyClass" />
               </node>
@@ -2935,7 +3041,7 @@
                             <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                           </node>
                           <node concept="liA8E" id="4nDuXWVKrib" role="2OqNvi">
-                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                            <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                             <node concept="3cpWs3" id="4nDuXWVKszX" role="37wK5m">
                               <node concept="2OqwBi" id="4nDuXWVKsWe" role="3uHU7w">
                                 <node concept="2GrUjf" id="4nDuXWVKsFg" role="2Oq$k0">
@@ -2984,7 +3090,7 @@
                       <node concept="2yIwOk" id="4BQJTXe6qkF" role="2OqNvi" />
                     </node>
                     <node concept="liA8E" id="4nDuXWVNtRE" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                       <node concept="35c_gC" id="4nDuXWVNxyC" role="37wK5m">
                         <ref role="35c_gD" to="i3vy:1UHaC1cXxZU" resolve="ForceTraceability" />
                       </node>
@@ -3018,7 +3124,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="JP13UtfwuO" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyAttribute():dsltrans.ApplyAttribute" resolve="createApplyAttribute" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createApplyAttribute()" resolve="createApplyAttribute" />
               </node>
             </node>
           </node>
@@ -3031,7 +3137,7 @@
                   <ref role="3cqZAo" node="JP13UtfwuK" resolve="dsltransAttr" />
                 </node>
                 <node concept="liA8E" id="JP13UtfwuS" role="2OqNvi">
-                  <ref role="37wK5l" to="gnwr:~Attribute.setAttributeName(java.lang.String):void" resolve="setAttributeName" />
+                  <ref role="37wK5l" to="gnwr:~Attribute.setAttributeName(java.lang.String)" resolve="setAttributeName" />
                   <node concept="2OqwBi" id="46cQNHjWOBK" role="37wK5m">
                     <node concept="2OqwBi" id="5ti91Gmjv33" role="2Oq$k0">
                       <node concept="1PxgMI" id="5ti91GmjuCA" role="2Oq$k0">
@@ -3099,7 +3205,7 @@
                     <ref role="3cqZAo" node="JP13UtfwuK" resolve="dsltransAttr" />
                   </node>
                   <node concept="liA8E" id="5ti91GmjzKx" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~Attribute.setAttributeName(java.lang.String):void" resolve="setAttributeName" />
+                    <ref role="37wK5l" to="gnwr:~Attribute.setAttributeName(java.lang.String)" resolve="setAttributeName" />
                     <node concept="Xl_RD" id="5ti91Gmj$hD" role="37wK5m">
                       <property role="Xl_RC" value="ApplyAttribute" />
                     </node>
@@ -3117,7 +3223,7 @@
                   <ref role="3cqZAo" node="JP13UtfwuK" resolve="dsltransAttr" />
                 </node>
                 <node concept="liA8E" id="JP13Utfwv1" role="2OqNvi">
-                  <ref role="37wK5l" to="gnwr:~ApplyAttribute.setAttributeValue(dsltrans.Term):void" resolve="setAttributeValue" />
+                  <ref role="37wK5l" to="gnwr:~ApplyAttribute.setAttributeValue(dsltrans.Term)" resolve="setAttributeValue" />
                   <node concept="1rXfSq" id="JP13Utfwv2" role="37wK5m">
                     <ref role="37wK5l" node="JP13UtfCzI" resolve="createAttrValue" />
                     <node concept="2OqwBi" id="JP13UtfKwM" role="37wK5m">
@@ -3361,7 +3467,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="2GbRIwA4XB1" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAttributeRef():dsltrans.AttributeRef" resolve="createAttributeRef" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAttributeRef()" resolve="createAttributeRef" />
               </node>
             </node>
           </node>
@@ -3376,7 +3482,7 @@
                 <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
               </node>
               <node concept="liA8E" id="2IH$1p8c34M" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="3cpWs3" id="2IH$1p8cbOo" role="37wK5m">
                   <node concept="Xl_RD" id="2IH$1p8c6sT" role="3uHU7B">
                     <property role="Xl_RC" value="MatchAttr2matchAttrTrace: " />
@@ -3386,7 +3492,7 @@
                       <ref role="3cqZAo" node="JP13UtgkG4" resolve="matchAttr2matchAttrTrace" />
                     </node>
                     <node concept="liA8E" id="2IH$1p8cXcj" role="2OqNvi">
-                      <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                      <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                       <node concept="2OqwBi" id="2IH$1p8cXck" role="37wK5m">
                         <node concept="37vLTw" id="2IH$1p8cXcl" role="2Oq$k0">
                           <ref role="3cqZAo" node="JP13Utgjyq" resolve="applyAttrValue" />
@@ -3408,13 +3514,13 @@
               <ref role="3cqZAo" node="2GbRIwA4Xjg" resolve="dsltransAttrRef" />
             </node>
             <node concept="liA8E" id="2GbRIwA54HE" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AttributeRef.setAttributeRef(dsltrans.Attribute):void" resolve="setAttributeRef" />
+              <ref role="37wK5l" to="gnwr:~AttributeRef.setAttributeRef(dsltrans.Attribute)" resolve="setAttributeRef" />
               <node concept="2OqwBi" id="2GbRIwA557c" role="37wK5m">
                 <node concept="37vLTw" id="2GbRIwA54RU" role="2Oq$k0">
                   <ref role="3cqZAo" node="JP13UtgkG4" resolve="matchAttr2matchAttrTrace" />
                 </node>
                 <node concept="liA8E" id="2GbRIwA56e_" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                  <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                   <node concept="2OqwBi" id="2GbRIwA56EY" role="37wK5m">
                     <node concept="37vLTw" id="2GbRIwA56uy" role="2Oq$k0">
                       <ref role="3cqZAo" node="JP13Utgjyq" resolve="applyAttrValue" />
@@ -3493,7 +3599,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="2GbRIwA69Kj" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createConcat():dsltrans.Concat" resolve="createConcat" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createConcat()" resolve="createConcat" />
               </node>
             </node>
           </node>
@@ -3504,7 +3610,7 @@
               <ref role="3cqZAo" node="2GbRIwA69u4" resolve="concat" />
             </node>
             <node concept="liA8E" id="2GbRIwA6dgQ" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Concat.setLeftTerm(dsltrans.Term):void" resolve="setLeftTerm" />
+              <ref role="37wK5l" to="gnwr:~Concat.setLeftTerm(dsltrans.Term)" resolve="setLeftTerm" />
               <node concept="1rXfSq" id="2GbRIwA6drg" role="37wK5m">
                 <ref role="37wK5l" node="JP13UtfCzI" resolve="createAttrValue" />
                 <node concept="2OqwBi" id="2GbRIwA6dIr" role="37wK5m">
@@ -3528,7 +3634,7 @@
               <ref role="3cqZAo" node="2GbRIwA69u4" resolve="concat" />
             </node>
             <node concept="liA8E" id="2GbRIwA6igP" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Concat.setRightTerm(dsltrans.Term):void" resolve="setRightTerm" />
+              <ref role="37wK5l" to="gnwr:~Concat.setRightTerm(dsltrans.Term)" resolve="setRightTerm" />
               <node concept="1rXfSq" id="2GbRIwA6irc" role="37wK5m">
                 <ref role="37wK5l" node="JP13UtfCzI" resolve="createAttrValue" />
                 <node concept="2OqwBi" id="2GbRIwA6iIp" role="37wK5m">
@@ -3578,7 +3684,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="JP13Utg1O2" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAtom():dsltrans.Atom" resolve="createAtom" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAtom()" resolve="createAtom" />
               </node>
             </node>
           </node>
@@ -3589,7 +3695,7 @@
               <ref role="3cqZAo" node="JP13Utg1NY" resolve="atom" />
             </node>
             <node concept="liA8E" id="JP13Utg1O6" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String):void" resolve="setValue" />
+              <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String)" resolve="setValue" />
               <node concept="2OqwBi" id="JP13Utg1O7" role="37wK5m">
                 <node concept="3TrcHB" id="JP13Utg1Oe" role="2OqNvi">
                   <ref role="3TsBF5" to="i3vy:67kIGnNxbp_" resolve="atom" />
@@ -3671,7 +3777,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="1NdVp2rQ1VS" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMatchModel():dsltrans.MatchModel" resolve="createMatchModel" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMatchModel()" resolve="createMatchModel" />
               </node>
             </node>
           </node>
@@ -3712,7 +3818,7 @@
                   <ref role="3cqZAo" node="2Ub285OtjMt" resolve="matchClass2matchClassTrace" />
                 </node>
                 <node concept="liA8E" id="1NdVp2rQdk5" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="2GrUjf" id="1NdVp2rQdDt" role="37wK5m">
                     <ref role="2Gs0qQ" node="1NdVp2rQ6Up" resolve="matchClass" />
                   </node>
@@ -3729,11 +3835,11 @@
                     <ref role="3cqZAo" node="1NdVp2rQ1bW" resolve="dsltransMatchModel" />
                   </node>
                   <node concept="liA8E" id="1NdVp2rQ8ap" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~MatchModel.getClass_():org.eclipse.emf.common.util.EList" resolve="getClass_" />
+                    <ref role="37wK5l" to="gnwr:~MatchModel.getClass_()" resolve="getClass_" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1NdVp2rQ8VP" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="1NdVp2rQbAi" role="37wK5m">
                     <ref role="3cqZAo" node="1NdVp2rQbhI" resolve="dsltransMatchClass" />
                   </node>
@@ -3779,11 +3885,11 @@
                     <ref role="3cqZAo" node="1NdVp2rQ1bW" resolve="dsltransMatchModel" />
                   </node>
                   <node concept="liA8E" id="1NdVp2rTUMi" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~MatchModel.getAssociation():org.eclipse.emf.common.util.EList" resolve="getAssociation" />
+                    <ref role="37wK5l" to="gnwr:~MatchModel.getAssociation()" resolve="getAssociation" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1NdVp2rTVfV" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="1NdVp2rTVs4" role="37wK5m">
                     <ref role="3cqZAo" node="1NdVp2rTNeA" resolve="dsltransAssoc" />
                   </node>
@@ -3861,7 +3967,7 @@
                       <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
                     </node>
                     <node concept="liA8E" id="1NdVp2rU9SR" role="2OqNvi">
-                      <ref role="37wK5l" to="gnwr:~DsltransFactory.createPositiveIndirectAssociation():dsltrans.PositiveIndirectAssociation" resolve="createPositiveIndirectAssociation" />
+                      <ref role="37wK5l" to="gnwr:~DsltransFactory.createPositiveIndirectAssociation()" resolve="createPositiveIndirectAssociation" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="1NdVp2rU9r3" role="37vLTJ">
@@ -3907,7 +4013,7 @@
                 <ref role="3cqZAo" node="1NdVp2rTRYF" resolve="matchClass2matchClassTrace" />
               </node>
               <node concept="liA8E" id="1NdVp2rUcF1" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                 <node concept="2OqwBi" id="1NdVp2rUdey" role="37wK5m">
                   <node concept="37vLTw" id="1NdVp2rUd23" role="2Oq$k0">
                     <ref role="3cqZAo" node="1NdVp2rTQyh" resolve="association" />
@@ -3935,7 +4041,7 @@
                         <node concept="2NL2c5" id="2ad_0W40HOM" role="2OqNvi" />
                       </node>
                       <node concept="liA8E" id="2ad_0W40IP5" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="2ad_0W40B91" role="3uHU7B">
@@ -3973,7 +4079,7 @@
                         <node concept="2NL2c5" id="2ad_0W40NBL" role="2OqNvi" />
                       </node>
                       <node concept="liA8E" id="2ad_0W40NBM" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="2ad_0W40NBN" role="3uHU7B">
@@ -4003,7 +4109,7 @@
                 <ref role="3cqZAo" node="1NdVp2rTRYF" resolve="matchClass2matchClassTrace" />
               </node>
               <node concept="liA8E" id="2ad_0W40Xft" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object)" resolve="get" />
                 <node concept="2OqwBi" id="2ad_0W40Xfu" role="37wK5m">
                   <node concept="37vLTw" id="2ad_0W40Xfv" role="2Oq$k0">
                     <ref role="3cqZAo" node="1NdVp2rTQyh" resolve="association" />
@@ -4031,7 +4137,7 @@
                         <node concept="2NL2c5" id="2ad_0W40XfE" role="2OqNvi" />
                       </node>
                       <node concept="liA8E" id="2ad_0W40XfF" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="2ad_0W40XfG" role="3uHU7B">
@@ -4069,7 +4175,7 @@
                         <node concept="2NL2c5" id="2ad_0W40XfV" role="2OqNvi" />
                       </node>
                       <node concept="liA8E" id="2ad_0W40XfW" role="2OqNvi">
-                        <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
+                        <ref role="37wK5l" to="c17a:~SNamedElement.getName()" resolve="getName" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="2ad_0W40XfX" role="3uHU7B">
@@ -4095,7 +4201,7 @@
               <ref role="3cqZAo" node="1NdVp2rTYgw" resolve="dsltransAssociation" />
             </node>
             <node concept="liA8E" id="1NdVp2rUdQv" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~MatchAssociation.setSource(dsltrans.MatchClass):void" resolve="setSource" />
+              <ref role="37wK5l" to="gnwr:~MatchAssociation.setSource(dsltrans.MatchClass)" resolve="setSource" />
               <node concept="37vLTw" id="2ad_0W41618" role="37wK5m">
                 <ref role="3cqZAo" node="2ad_0W409Ge" resolve="mc" />
               </node>
@@ -4108,7 +4214,7 @@
               <ref role="3cqZAo" node="1NdVp2rTYgw" resolve="dsltransAssociation" />
             </node>
             <node concept="liA8E" id="1NdVp2rUhA9" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~MatchAssociation.setTarget(dsltrans.MatchClass):void" resolve="setTarget" />
+              <ref role="37wK5l" to="gnwr:~MatchAssociation.setTarget(dsltrans.MatchClass)" resolve="setTarget" />
               <node concept="37vLTw" id="2ad_0W416II" role="37wK5m">
                 <ref role="3cqZAo" node="2ad_0W40Xfp" resolve="mc2" />
               </node>
@@ -4165,7 +4271,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="1NdVp2rU548" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createPositiveMatchAssociation():dsltrans.PositiveMatchAssociation" resolve="createPositiveMatchAssociation" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createPositiveMatchAssociation()" resolve="createPositiveMatchAssociation" />
               </node>
             </node>
           </node>
@@ -4176,7 +4282,7 @@
               <ref role="3cqZAo" node="1NdVp2rU4Mq" resolve="dsltransAssoc" />
             </node>
             <node concept="liA8E" id="1NdVp2rU5v6" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Association.setAssociationName(java.lang.String):void" resolve="setAssociationName" />
+              <ref role="37wK5l" to="gnwr:~Association.setAssociationName(java.lang.String)" resolve="setAssociationName" />
               <node concept="2OqwBi" id="3e_V7Ivr7Nn" role="37wK5m">
                 <node concept="2OqwBi" id="3e_V7Ivr0UU" role="2Oq$k0">
                   <node concept="2OqwBi" id="1NdVp2rU5G9" role="2Oq$k0">
@@ -4242,7 +4348,7 @@
                     <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
                   </node>
                   <node concept="liA8E" id="1NdVp2rUl_y" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~DsltransFactory.createAnyMatchClass():dsltrans.AnyMatchClass" resolve="createAnyMatchClass" />
+                    <ref role="37wK5l" to="gnwr:~DsltransFactory.createAnyMatchClass()" resolve="createAnyMatchClass" />
                   </node>
                 </node>
               </node>
@@ -4270,7 +4376,7 @@
                       <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
                     </node>
                     <node concept="liA8E" id="1NdVp2rUlBK" role="2OqNvi">
-                      <ref role="37wK5l" to="gnwr:~DsltransFactory.createExistsMatchClass():dsltrans.ExistsMatchClass" resolve="createExistsMatchClass" />
+                      <ref role="37wK5l" to="gnwr:~DsltransFactory.createExistsMatchClass()" resolve="createExistsMatchClass" />
                     </node>
                   </node>
                 </node>
@@ -4308,7 +4414,7 @@
               <ref role="3cqZAo" node="1NdVp2rQlPB" resolve="dsltransMatchClass" />
             </node>
             <node concept="liA8E" id="1NdVp2rTlwW" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setAllowInheritance(boolean):void" resolve="setAllowInheritance" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setAllowInheritance(boolean)" resolve="setAllowInheritance" />
               <node concept="2OqwBi" id="2GbRIwA68X1" role="37wK5m">
                 <node concept="37vLTw" id="2GbRIwA68PH" role="2Oq$k0">
                   <ref role="3cqZAo" node="1NdVp2rQhbm" resolve="matchClass" />
@@ -4326,7 +4432,7 @@
               <ref role="3cqZAo" node="1NdVp2rQlPB" resolve="dsltransMatchClass" />
             </node>
             <node concept="liA8E" id="46cQNHjYC8X" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String):void" resolve="setClassName" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setClassName(java.lang.String)" resolve="setClassName" />
               <node concept="2OqwBi" id="46cQNHk0J8_" role="37wK5m">
                 <node concept="2OqwBi" id="46cQNHk0Ia6" role="2Oq$k0">
                   <node concept="2OqwBi" id="46cQNHjYC8Y" role="2Oq$k0">
@@ -4354,7 +4460,7 @@
               <ref role="3cqZAo" node="1NdVp2rQlPB" resolve="dsltransMatchClass" />
             </node>
             <node concept="liA8E" id="1NdVp2rSceE" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setId(java.lang.String):void" resolve="setId" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setId(java.lang.String)" resolve="setId" />
               <node concept="2OqwBi" id="1NdVp2rScqB" role="37wK5m">
                 <node concept="37vLTw" id="1NdVp2rTqt0" role="2Oq$k0">
                   <ref role="3cqZAo" node="1NdVp2rQhbm" resolve="matchClass" />
@@ -4372,7 +4478,7 @@
               <ref role="3cqZAo" node="1NdVp2rQlPB" resolve="dsltransMatchClass" />
             </node>
             <node concept="liA8E" id="1NdVp2rSepA" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String):void" resolve="setPackageName" />
+              <ref role="37wK5l" to="gnwr:~AbstractClass.setPackageName(java.lang.String)" resolve="setPackageName" />
               <node concept="Xl_RD" id="1NdVp2rSfh6" role="37wK5m" />
             </node>
           </node>
@@ -4403,11 +4509,11 @@
                     <ref role="3cqZAo" node="1NdVp2rQlPB" resolve="dsltransMatchClass" />
                   </node>
                   <node concept="liA8E" id="1NdVp2rS$dh" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~MatchClass.getAttribute():org.eclipse.emf.common.util.EList" resolve="getAttribute" />
+                    <ref role="37wK5l" to="gnwr:~MatchClass.getAttribute()" resolve="getAttribute" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1NdVp2rS$YP" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="37vLTw" id="1NdVp2rS_op" role="37wK5m">
                     <ref role="3cqZAo" node="1NdVp2rSvQK" resolve="dsltransAttribute" />
                   </node>
@@ -4420,7 +4526,7 @@
                   <ref role="3cqZAo" node="1NdVp2rSoFw" resolve="matchAttr2matchAttrTrace" />
                 </node>
                 <node concept="liA8E" id="1NdVp2rSBa1" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object)" resolve="put" />
                   <node concept="2GrUjf" id="1NdVp2rSBtm" role="37wK5m">
                     <ref role="2Gs0qQ" node="1NdVp2rSj29" resolve="matchAttr" />
                   </node>
@@ -4491,7 +4597,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="1NdVp2rSDQ4" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMatchAttribute():dsltrans.MatchAttribute" resolve="createMatchAttribute" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMatchAttribute()" resolve="createMatchAttribute" />
               </node>
             </node>
           </node>
@@ -4502,7 +4608,7 @@
               <ref role="3cqZAo" node="1NdVp2rSD$s" resolve="dsltransAttr" />
             </node>
             <node concept="liA8E" id="1NdVp2rSEbN" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~Attribute.setAttributeName(java.lang.String):void" resolve="setAttributeName" />
+              <ref role="37wK5l" to="gnwr:~Attribute.setAttributeName(java.lang.String)" resolve="setAttributeName" />
               <node concept="2OqwBi" id="46cQNHjVkhZ" role="37wK5m">
                 <node concept="2OqwBi" id="46cQNHjVi3H" role="2Oq$k0">
                   <node concept="2OqwBi" id="46cQNHjVgxG" role="2Oq$k0">
@@ -4532,7 +4638,7 @@
                   <ref role="3cqZAo" node="1NdVp2rSD$s" resolve="dsltransAttr" />
                 </node>
                 <node concept="liA8E" id="1NdVp2rSFzQ" role="2OqNvi">
-                  <ref role="37wK5l" to="gnwr:~MatchAttribute.setAttributeValue(dsltrans.MatchAttributeValue):void" resolve="setAttributeValue" />
+                  <ref role="37wK5l" to="gnwr:~MatchAttribute.setAttributeValue(dsltrans.MatchAttributeValue)" resolve="setAttributeValue" />
                   <node concept="1rXfSq" id="1NdVp2rSJT$" role="37wK5m">
                     <ref role="37wK5l" node="1NdVp2rSIbZ" resolve="createMatchAttrValue" />
                     <node concept="2OqwBi" id="1NdVp2rSK8f" role="37wK5m">
@@ -4679,7 +4785,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="1NdVp2rTfN6" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAtom():dsltrans.Atom" resolve="createAtom" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createAtom()" resolve="createAtom" />
               </node>
             </node>
           </node>
@@ -4692,7 +4798,7 @@
                   <ref role="3cqZAo" node="1NdVp2rTfxE" resolve="atom" />
                 </node>
                 <node concept="liA8E" id="1NdVp2rTgaL" role="2OqNvi">
-                  <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String):void" resolve="setValue" />
+                  <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String)" resolve="setValue" />
                   <node concept="2OqwBi" id="1NdVp2rTiaE" role="37wK5m">
                     <node concept="1eOMI4" id="1NdVp2rThAx" role="2Oq$k0">
                       <node concept="10QFUN" id="1NdVp2rThAu" role="1eOMHV">
@@ -4740,7 +4846,7 @@
                     <ref role="3cqZAo" node="1NdVp2rTfxE" resolve="atom" />
                   </node>
                   <node concept="liA8E" id="2IH$1p8l6bs" role="2OqNvi">
-                    <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String):void" resolve="setValue" />
+                    <ref role="37wK5l" to="gnwr:~Atom.setValue(java.lang.String)" resolve="setValue" />
                     <node concept="Xl_RD" id="2IH$1p8ld8l" role="37wK5m" />
                   </node>
                 </node>
@@ -4802,7 +4908,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="10d1GjXbEpZ" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createFilePort():dsltrans.FilePort" resolve="createFilePort" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createFilePort()" resolve="createFilePort" />
               </node>
             </node>
           </node>
@@ -4813,7 +4919,7 @@
               <ref role="3cqZAo" node="10d1GjXbClw" resolve="fp" />
             </node>
             <node concept="liA8E" id="10d1GjXbEI$" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~FilePort.setFilePathURI(java.lang.String):void" resolve="setFilePathURI" />
+              <ref role="37wK5l" to="gnwr:~FilePort.setFilePathURI(java.lang.String)" resolve="setFilePathURI" />
               <node concept="2OqwBi" id="10d1GjXbGIb" role="37wK5m">
                 <node concept="37vLTw" id="10d1GjXbFA2" role="2Oq$k0">
                   <ref role="3cqZAo" node="10d1GjXbBZu" resolve="inputModule" />
@@ -4831,7 +4937,7 @@
               <ref role="3cqZAo" node="10d1GjXbClw" resolve="fp" />
             </node>
             <node concept="liA8E" id="10d1GjXbHYY" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String):void" resolve="setName" />
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setName(java.lang.String)" resolve="setName" />
               <node concept="2OqwBi" id="10d1GjXbI8d" role="37wK5m">
                 <node concept="37vLTw" id="10d1GjXbI8e" role="2Oq$k0">
                   <ref role="3cqZAo" node="10d1GjXbBZu" resolve="inputModule" />
@@ -4849,7 +4955,7 @@
               <ref role="3cqZAo" node="10d1GjXbClw" resolve="fp" />
             </node>
             <node concept="liA8E" id="10d1GjXbIZp" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier):void" resolve="setMetaModelId" />
+              <ref role="37wK5l" to="gnwr:~AbstractSource.setMetaModelId(dsltrans.MetaModelIdentifier)" resolve="setMetaModelId" />
               <node concept="1rXfSq" id="10d1GjXbMhu" role="37wK5m">
                 <ref role="37wK5l" node="10d1GjXbJsq" resolve="createMMID" />
                 <node concept="37vLTw" id="10d1GjXbMq1" role="37wK5m">
@@ -4900,7 +5006,7 @@
                 <ref role="3cqZAo" node="10d1GjXbD2t" resolve="factory" />
               </node>
               <node concept="liA8E" id="10d1GjXbKin" role="2OqNvi">
-                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMetaModelIdentifier():dsltrans.MetaModelIdentifier" resolve="createMetaModelIdentifier" />
+                <ref role="37wK5l" to="gnwr:~DsltransFactory.createMetaModelIdentifier()" resolve="createMetaModelIdentifier" />
               </node>
             </node>
           </node>
@@ -4911,7 +5017,7 @@
               <ref role="3cqZAo" node="10d1GjXbK2W" resolve="id" />
             </node>
             <node concept="liA8E" id="10d1GjXbL3L" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelName(java.lang.String):void" resolve="setMetaModelName" />
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelName(java.lang.String)" resolve="setMetaModelName" />
               <node concept="2OqwBi" id="10d1GjXbLea" role="37wK5m">
                 <node concept="37vLTw" id="10d1GjXbL80" role="2Oq$k0">
                   <ref role="3cqZAo" node="10d1GjXbJEW" resolve="inputLanguage" />
@@ -4929,7 +5035,7 @@
               <ref role="3cqZAo" node="10d1GjXbK2W" resolve="id" />
             </node>
             <node concept="liA8E" id="10d1GjXbLSO" role="2OqNvi">
-              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelURI(java.lang.String):void" resolve="setMetaModelURI" />
+              <ref role="37wK5l" to="gnwr:~MetaModelIdentifier.setMetaModelURI(java.lang.String)" resolve="setMetaModelURI" />
               <node concept="2OqwBi" id="10d1GjXbM3j" role="37wK5m">
                 <node concept="37vLTw" id="10d1GjXbLX3" role="2Oq$k0">
                   <ref role="3cqZAo" node="10d1GjXbJEW" resolve="inputLanguage" />

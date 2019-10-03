@@ -446,7 +446,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="5cBD0WxCK6M" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.iterator():java.util.Iterator" resolve="iterator" />
+                <ref role="37wK5l" to="33ny:~List.iterator()" resolve="iterator" />
               </node>
             </node>
           </node>
@@ -457,7 +457,7 @@
               <ref role="3cqZAo" node="5cBD0WxCK6E" resolve="iter" />
             </node>
             <node concept="liA8E" id="5cBD0WxCK78" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+              <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
             </node>
           </node>
           <node concept="3clFbS" id="5cBD0WxCK6P" role="2LFqv$">
@@ -473,7 +473,7 @@
                     <ref role="3cqZAo" node="5cBD0WxCK6E" resolve="iter" />
                   </node>
                   <node concept="liA8E" id="5cBD0WxCK7d" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                    <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
                   </node>
                 </node>
               </node>

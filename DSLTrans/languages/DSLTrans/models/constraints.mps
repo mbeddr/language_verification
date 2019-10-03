@@ -2,6 +2,7 @@
 <model ref="r:887432b7-4153-4b84-97fd-6b5d991c4e1e(DSLTrans.constraints)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -92,11 +93,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -170,6 +168,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -214,7 +220,7 @@
                 <node concept="2OqwBi" id="$BZ7xT$0at" role="3fr31v">
                   <node concept="1Wqviy" id="$BZ7xTzZET" role="2Oq$k0" />
                   <node concept="liA8E" id="$BZ7xT$0yY" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                     <node concept="Xl_RD" id="$BZ7xT$0In" role="37wK5m">
                       <property role="Xl_RC" value="-" />
                     </node>
@@ -225,7 +231,7 @@
                 <node concept="2OqwBi" id="7OSI$xj3PZv" role="3fr31v">
                   <node concept="1Wqviy" id="7OSI$xj3PZw" role="2Oq$k0" />
                   <node concept="liA8E" id="7OSI$xj3PZx" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                     <node concept="Xl_RD" id="7OSI$xj3PZy" role="37wK5m">
                       <property role="Xl_RC" value="_" />
                     </node>
@@ -279,8 +285,25 @@
           </node>
           <node concept="3clFbH" id="4f0ZYd7jluC" role="3cqZAp" />
           <node concept="3SKdUt" id="4f0ZYd7lb4D" role="3cqZAp">
-            <node concept="3SKdUq" id="4f0ZYd7lb4F" role="3SKWNk">
-              <property role="3SKdUp" value="try to get the containing layer" />
+            <node concept="1PaTwC" id="6gbS2yFoJOb" role="3ndbpf">
+              <node concept="3oM_SD" id="6gbS2yFoJOc" role="1PaTwD">
+                <property role="3oM_SC" value="try" />
+              </node>
+              <node concept="3oM_SD" id="6gbS2yFoJOd" role="1PaTwD">
+                <property role="3oM_SC" value="to" />
+              </node>
+              <node concept="3oM_SD" id="6gbS2yFoJOe" role="1PaTwD">
+                <property role="3oM_SC" value="get" />
+              </node>
+              <node concept="3oM_SD" id="6gbS2yFoJOf" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="6gbS2yFoJOg" role="1PaTwD">
+                <property role="3oM_SC" value="containing" />
+              </node>
+              <node concept="3oM_SD" id="6gbS2yFoJOh" role="1PaTwD">
+                <property role="3oM_SC" value="layer" />
+              </node>
             </node>
           </node>
           <node concept="3cpWs8" id="4f0ZYd7kbAL" role="3cqZAp">
@@ -329,8 +352,37 @@
             <node concept="3clFbS" id="4f0ZYd7ju0a" role="2LFqv$">
               <node concept="3clFbH" id="4f0ZYd7lbAx" role="3cqZAp" />
               <node concept="3SKdUt" id="4f0ZYd7lc5c" role="3cqZAp">
-                <node concept="3SKdUq" id="4f0ZYd7lc5e" role="3SKWNk">
-                  <property role="3SKdUp" value="stop if we find this node, or the containing layer" />
+                <node concept="1PaTwC" id="6gbS2yFoJOi" role="3ndbpf">
+                  <node concept="3oM_SD" id="6gbS2yFoJOj" role="1PaTwD">
+                    <property role="3oM_SC" value="stop" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOk" role="1PaTwD">
+                    <property role="3oM_SC" value="if" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOl" role="1PaTwD">
+                    <property role="3oM_SC" value="we" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOm" role="1PaTwD">
+                    <property role="3oM_SC" value="find" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOn" role="1PaTwD">
+                    <property role="3oM_SC" value="this" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOo" role="1PaTwD">
+                    <property role="3oM_SC" value="node," />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOp" role="1PaTwD">
+                    <property role="3oM_SC" value="or" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOq" role="1PaTwD">
+                    <property role="3oM_SC" value="the" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOr" role="1PaTwD">
+                    <property role="3oM_SC" value="containing" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOs" role="1PaTwD">
+                    <property role="3oM_SC" value="layer" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbJ" id="4f0ZYd7ju$Z" role="3cqZAp">
@@ -356,8 +408,28 @@
               </node>
               <node concept="3clFbH" id="4f0ZYd7lcIr" role="3cqZAp" />
               <node concept="3SKdUt" id="4f0ZYd7lcY5" role="3cqZAp">
-                <node concept="3SKdUq" id="4f0ZYd7lcY7" role="3SKWNk">
-                  <property role="3SKdUp" value="add this layer to the valid list" />
+                <node concept="1PaTwC" id="6gbS2yFoJOt" role="3ndbpf">
+                  <node concept="3oM_SD" id="6gbS2yFoJOu" role="1PaTwD">
+                    <property role="3oM_SC" value="add" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOv" role="1PaTwD">
+                    <property role="3oM_SC" value="this" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOw" role="1PaTwD">
+                    <property role="3oM_SC" value="layer" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOx" role="1PaTwD">
+                    <property role="3oM_SC" value="to" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOy" role="1PaTwD">
+                    <property role="3oM_SC" value="the" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJOz" role="1PaTwD">
+                    <property role="3oM_SC" value="valid" />
+                  </node>
+                  <node concept="3oM_SD" id="6gbS2yFoJO$" role="1PaTwD">
+                    <property role="3oM_SC" value="list" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbF" id="4f0ZYd7jvAL" role="3cqZAp">

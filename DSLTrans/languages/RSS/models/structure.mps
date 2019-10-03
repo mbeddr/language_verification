@@ -2,7 +2,7 @@
 <model ref="r:25dcb0ca-8d83-4265-b987-5c86bb6298fe(RSS.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -47,8 +47,8 @@
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMm" role="1TKVEi">
       <property role="20kJfa" value="channel" />
-      <property role="20lbJX" value="1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025494" />
       <ref role="20lvS9" node="4jYIdECUZMd" resolve="Channel" />
     </node>
@@ -134,42 +134,38 @@
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMA" role="1TKVEi">
       <property role="20kJfa" value="rss" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4971614287940025510" />
       <ref role="20lvS9" node="4jYIdECUZMc" resolve="RSS" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMB" role="1TKVEi">
       <property role="20kJfa" value="image" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025511" />
       <ref role="20lvS9" node="4jYIdECUZMf" resolve="Image" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMC" role="1TKVEi">
       <property role="20kJfa" value="textInput" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025512" />
       <ref role="20lvS9" node="4jYIdECUZMg" resolve="TextInput" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMD" role="1TKVEi">
       <property role="20kJfa" value="cloud" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025513" />
       <ref role="20lvS9" node="4jYIdECUZMh" resolve="Cloud" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZME" role="1TKVEi">
       <property role="20kJfa" value="category" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025514" />
       <ref role="20lvS9" node="4jYIdECUZMi" resolve="Category" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMF" role="1TKVEi">
       <property role="20kJfa" value="items" />
-      <property role="20lbJX" value="0..n" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025515" />
       <ref role="20lvS9" node="4jYIdECUZMe" resolve="Item" />
     </node>
@@ -215,28 +211,25 @@
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMN" role="1TKVEi">
       <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025523" />
       <ref role="20lvS9" node="4jYIdECUZMk" resolve="Source" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMO" role="1TKVEi">
       <property role="20kJfa" value="enclosure" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025524" />
       <ref role="20lvS9" node="4jYIdECUZMj" resolve="Enclosure" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMP" role="1TKVEi">
       <property role="20kJfa" value="category" />
-      <property role="20lbJX" value="0..1" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="4971614287940025525" />
       <ref role="20lvS9" node="4jYIdECUZMi" resolve="Category" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMQ" role="1TKVEi">
       <property role="20kJfa" value="channel" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4971614287940025526" />
       <ref role="20lvS9" node="4jYIdECUZMd" resolve="Channel" />
     </node>
@@ -277,7 +270,7 @@
     </node>
     <node concept="1TJgyj" id="4jYIdECUZMX" role="1TKVEi">
       <property role="20kJfa" value="channel" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4971614287940025533" />
       <ref role="20lvS9" node="4jYIdECUZMd" resolve="Channel" />
     </node>
@@ -308,7 +301,7 @@
     </node>
     <node concept="1TJgyj" id="4jYIdECUZN2" role="1TKVEi">
       <property role="20kJfa" value="channel" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4971614287940025538" />
       <ref role="20lvS9" node="4jYIdECUZMd" resolve="Channel" />
     </node>
@@ -344,7 +337,7 @@
     </node>
     <node concept="1TJgyj" id="4jYIdECUZN8" role="1TKVEi">
       <property role="20kJfa" value="channel" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4971614287940025544" />
       <ref role="20lvS9" node="4jYIdECUZMd" resolve="Channel" />
     </node>
@@ -365,13 +358,13 @@
     </node>
     <node concept="1TJgyj" id="4jYIdECUZNb" role="1TKVEi">
       <property role="20kJfa" value="channel" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4971614287940025547" />
       <ref role="20lvS9" node="4jYIdECUZMd" resolve="Channel" />
     </node>
     <node concept="1TJgyj" id="4jYIdECUZNc" role="1TKVEi">
       <property role="20kJfa" value="items" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4971614287940025548" />
       <ref role="20lvS9" node="4jYIdECUZMe" resolve="Item" />
     </node>

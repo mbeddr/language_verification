@@ -2,7 +2,7 @@
 <model ref="r:8446dc0d-dfe2-4433-9645-7abdefe22762(SyVOLT.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -220,7 +220,7 @@
               <property role="3F0ifm" value="Input Language: " />
               <node concept="Vb9p2" id="2t59Tl5mftO" role="3F10Kt" />
               <node concept="VechU" id="2t59Tl5mftP" role="3F10Kt">
-                <property role="Vb096" value="DARK_GREEN" />
+                <property role="Vb096" value="g1_qRwE/darkGreen" />
               </node>
             </node>
             <node concept="3F1sOY" id="46cQNHjPxb0" role="3EZMnx">
@@ -233,7 +233,7 @@
               <property role="3F0ifm" value="Output Language: " />
               <node concept="Vb9p2" id="2t59Tl5mfur" role="3F10Kt" />
               <node concept="VechU" id="2t59Tl5mfus" role="3F10Kt">
-                <property role="Vb096" value="DARK_GREEN" />
+                <property role="Vb096" value="g1_qRwE/darkGreen" />
               </node>
             </node>
             <node concept="3F1sOY" id="46cQNHjPxbe" role="3EZMnx">
@@ -247,7 +247,7 @@
               <property role="3F0ifm" value="Config: " />
               <node concept="Vb9p2" id="5oax6FmsalQ" role="3F10Kt" />
               <node concept="VechU" id="5oax6FmsalR" role="3F10Kt">
-                <property role="Vb096" value="DARK_GREEN" />
+                <property role="Vb096" value="g1_qRwE/darkGreen" />
               </node>
             </node>
             <node concept="3F1sOY" id="5oax6FmsalS" role="3EZMnx">
@@ -265,7 +265,7 @@
       <node concept="3F0ifn" id="3QsrawRgSkR" role="3EZMnx">
         <property role="3F0ifm" value="Atomic Contracts:" />
         <node concept="Veino" id="3QsrawRgSkS" role="3F10Kt">
-          <property role="Vb096" value="orange" />
+          <property role="Vb096" value="fLwANPp/orange" />
         </node>
       </node>
       <node concept="3F0ifn" id="3QsrawRgSkT" role="3EZMnx">
@@ -281,7 +281,7 @@
       <node concept="3F0ifn" id="3QsrawRgS91" role="3EZMnx">
         <property role="3F0ifm" value="Contract Composition:" />
         <node concept="Veino" id="3QsrawRgS92" role="3F10Kt">
-          <property role="Vb096" value="orange" />
+          <property role="Vb096" value="fLwANPp/orange" />
         </node>
       </node>
       <node concept="3F0ifn" id="3QsrawRgS93" role="3EZMnx">
@@ -297,7 +297,7 @@
       <node concept="3F0ifn" id="3QsrawRgSdF" role="3EZMnx">
         <property role="3F0ifm" value="Element Binding:" />
         <node concept="Veino" id="3QsrawRgSdG" role="3F10Kt">
-          <property role="Vb096" value="orange" />
+          <property role="Vb096" value="fLwANPp/orange" />
         </node>
       </node>
       <node concept="3F0ifn" id="3QsrawRgSdH" role="3EZMnx">
@@ -333,7 +333,7 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
           <node concept="Veino" id="3QsrawRh0U7" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
           </node>
         </node>
         <node concept="3F0ifn" id="3QsrawRh3Kd" role="3EZMnx">
@@ -350,7 +350,7 @@
         <node concept="3F0ifn" id="5paAjb8wudZ" role="3EZMnx">
           <property role="3F0ifm" value="Trace Links" />
           <node concept="Veino" id="5paAjb8wue0" role="3F10Kt">
-            <property role="Vb096" value="yellow" />
+            <property role="Vb096" value="fLwANPq/yellow" />
           </node>
         </node>
         <node concept="3F0ifn" id="5paAjb8wue1" role="3EZMnx">
@@ -374,7 +374,7 @@
       <node concept="3F0ifn" id="2rexW9_gY4i" role="3EZMnx">
         <property role="3F0ifm" value="Precondition" />
         <node concept="Veino" id="2rexW9_gY6p" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="2rexW9_gY8d" role="3EZMnx">
@@ -388,7 +388,7 @@
           <property role="1lJzqX" value="10" />
         </node>
         <node concept="Veino" id="2rexW9_gYeA" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3F2HdR" id="2rexW9_gY4u" role="3EZMnx">
@@ -406,7 +406,7 @@
           <property role="1lJzqX" value="10" />
         </node>
         <node concept="Veino" id="2rexW9_gYgl" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3F2HdR" id="2rexW9_gY4D" role="3EZMnx">
@@ -423,7 +423,7 @@
       <node concept="3F0ifn" id="2rexW9_gYhm" role="3EZMnx">
         <property role="3F0ifm" value="Postcondition" />
         <node concept="Veino" id="2rexW9_gYhn" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="2rexW9_gYho" role="3EZMnx">
@@ -437,7 +437,7 @@
           <property role="1lJzqX" value="10" />
         </node>
         <node concept="Veino" id="2rexW9_gYhs" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3F2HdR" id="2rexW9_gYht" role="3EZMnx">
@@ -455,7 +455,7 @@
           <property role="1lJzqX" value="10" />
         </node>
         <node concept="Veino" id="2rexW9_gYhz" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3F2HdR" id="2rexW9_gYh$" role="3EZMnx">
@@ -854,16 +854,16 @@
         <node concept="3F0ifn" id="1TopMIb0VrM" role="3EZMnx">
           <property role="3F0ifm" value="Precondition includes traces:" />
           <node concept="VechU" id="1TopMIb1ENa" role="3F10Kt">
-            <property role="Vb096" value="darkGray" />
+            <property role="Vb096" value="fLJRk5B/darkGray" />
           </node>
           <node concept="Vb9p2" id="1TopMIb1EOU" role="3F10Kt">
-            <property role="Vbekb" value="BOLD_ITALIC" />
+            <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
           </node>
         </node>
         <node concept="3F0A7n" id="1TopMIb0Vw5" role="3EZMnx">
           <ref role="1NtTu8" to="yeb1:1TopMIb0VmV" resolve="backwardInPre" />
           <node concept="VechU" id="1TopMIb1SEi" role="3F10Kt">
-            <property role="Vb096" value="blue" />
+            <property role="Vb096" value="fLwANPu/blue" />
           </node>
         </node>
         <node concept="VSNWy" id="1TopMIb1LW2" role="3F10Kt">

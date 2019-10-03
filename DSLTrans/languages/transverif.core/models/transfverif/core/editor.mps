@@ -2,7 +2,7 @@
 <model ref="r:26bfa5ed-98c1-4c2f-8a82-27d8031a06dd(transfverif.core.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -243,7 +243,7 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="1eaQRpkwfzh" role="3F10Kt">
-            <property role="Vb096" value="black" />
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
           </node>
         </node>
         <node concept="3F0A7n" id="1eaQRpkwfzi" role="3EZMnx">
@@ -252,10 +252,10 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="1eaQRpkwfzk" role="3F10Kt">
-            <property role="Vb096" value="DARK_BLUE" />
+            <property role="Vb096" value="g1_eI4o/darkBlue" />
           </node>
           <node concept="Vb9p2" id="1eaQRpkwfzl" role="3F10Kt">
-            <property role="Vbekb" value="BOLD_ITALIC" />
+            <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
           </node>
         </node>
         <node concept="3F0ifn" id="1eaQRpkwfzm" role="3EZMnx">
@@ -264,7 +264,7 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="1eaQRpkwfzo" role="3F10Kt">
-            <property role="Vb096" value="black" />
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
           </node>
         </node>
       </node>
@@ -585,7 +585,7 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="6PkVIr7pZd3" role="3F10Kt">
-            <property role="Vb096" value="black" />
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
           </node>
         </node>
         <node concept="3F0A7n" id="6PkVIr7pZd4" role="3EZMnx">
@@ -594,10 +594,10 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="6PkVIr7pZd6" role="3F10Kt">
-            <property role="Vb096" value="DARK_BLUE" />
+            <property role="Vb096" value="g1_eI4o/darkBlue" />
           </node>
           <node concept="Vb9p2" id="6PkVIr7pZd7" role="3F10Kt">
-            <property role="Vbekb" value="BOLD_ITALIC" />
+            <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
           </node>
         </node>
         <node concept="3F0ifn" id="6PkVIr7pZd8" role="3EZMnx">
@@ -606,7 +606,7 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="6PkVIr7pZda" role="3F10Kt">
-            <property role="Vb096" value="black" />
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
           </node>
         </node>
       </node>
@@ -642,7 +642,7 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="6PkVIr7pZdV" role="3F10Kt">
-            <property role="Vb096" value="black" />
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
           </node>
         </node>
         <node concept="3F0A7n" id="6PkVIr7pZdW" role="3EZMnx">
@@ -651,10 +651,10 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="6PkVIr7pZdY" role="3F10Kt">
-            <property role="Vb096" value="DARK_BLUE" />
+            <property role="Vb096" value="g1_eI4o/darkBlue" />
           </node>
           <node concept="Vb9p2" id="6PkVIr7pZdZ" role="3F10Kt">
-            <property role="Vbekb" value="BOLD_ITALIC" />
+            <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
           </node>
         </node>
         <node concept="3F0ifn" id="6PkVIr7pZe0" role="3EZMnx">
@@ -663,7 +663,7 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="6PkVIr7pZe2" role="3F10Kt">
-            <property role="Vb096" value="black" />
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
           </node>
         </node>
       </node>
@@ -778,7 +778,7 @@
             <property role="1lJzqX" value="10" />
           </node>
           <node concept="VechU" id="4RxZxFTq0n1" role="3F10Kt">
-            <property role="Vb096" value="black" />
+            <property role="Vb096" value="6cZGtrcKCoS/black" />
           </node>
         </node>
       </node>

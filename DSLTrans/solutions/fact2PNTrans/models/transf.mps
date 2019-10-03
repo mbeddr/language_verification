@@ -102,19 +102,22 @@
       <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
       <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
     </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
+      </concept>
+    </language>
     <language id="69eded0a-1bc3-427e-9a48-e8713d355d49" name="SyVOLT">
       <concept id="2186611055801906832" name="SyVOLT.structure.ContractBackwardLink" flags="ng" index="2lmX6V" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
-      </concept>
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="2469893808086079682" name="jetbrains.mps.lang.smodel.structure.LanguageIdentityBySourceModule" flags="ng" index="PFCIn">
-        <child id="2469893808086079721" name="moduleReference" index="PFCIW" />
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
@@ -245,31 +248,27 @@
       </node>
     </node>
     <node concept="pHN19" id="496qG6lNUwE" role="1y7jxr">
-      <node concept="PFCIn" id="496qG6lNUwM" role="2V$M_3">
-        <node concept="20RdaH" id="496qG6lNUwL" role="PFCIW">
-          <property role="20Rdg5" value="b492799d-c019-4f38-8636-0a5d98384714" />
-          <property role="20Rdg7" value="Factory" />
-        </node>
+      <node concept="2V$Bhx" id="6gbS2yFoK3J" role="2V$M_3">
+        <property role="2V$B1T" value="b492799d-c019-4f38-8636-0a5d98384714" />
+        <property role="2V$B1Q" value="Factory" />
       </node>
     </node>
     <node concept="pHN19" id="496qG6lNUwS" role="1y7jx4">
-      <node concept="PFCIn" id="496qG6lNUx0" role="2V$M_3">
-        <node concept="20RdaH" id="496qG6lNUwZ" role="PFCIW">
-          <property role="20Rdg5" value="e122b43d-f6f9-4a28-94a1-deba4c176b79" />
-          <property role="20Rdg7" value="PetriNet" />
-        </node>
+      <node concept="2V$Bhx" id="6gbS2yFoK3K" role="2V$M_3">
+        <property role="2V$B1T" value="e122b43d-f6f9-4a28-94a1-deba4c176b79" />
+        <property role="2V$B1Q" value="PetriNet" />
       </node>
     </node>
     <node concept="37shsh" id="3WL7QBBOxFJ" role="ABjci">
-      <node concept="20RdaH" id="3WL7QBBOxFQ" role="37shsm">
-        <property role="20Rdg5" value="bb7b5c92-b835-4ffd-8fb5-455ceedb7087" />
-        <property role="20Rdg7" value="fact2PNInput" />
+      <node concept="1dCxOk" id="6gbS2yFoK3T" role="37shsm">
+        <property role="1XxBO9" value="fact2PNInput" />
+        <property role="1XweGW" value="bb7b5c92-b835-4ffd-8fb5-455ceedb7087" />
       </node>
     </node>
     <node concept="37shsh" id="3WL7QBBOxFV" role="AAzOf">
-      <node concept="20RdaH" id="3WL7QBBOxG2" role="37shsm">
-        <property role="20Rdg5" value="7b888724-b2f8-4514-b500-35633c143723" />
-        <property role="20Rdg7" value="fact2PNOutput" />
+      <node concept="1dCxOk" id="6gbS2yFoK3U" role="37shsm">
+        <property role="1XxBO9" value="fact2PNOutput" />
+        <property role="1XweGW" value="7b888724-b2f8-4514-b500-35633c143723" />
       </node>
     </node>
   </node>

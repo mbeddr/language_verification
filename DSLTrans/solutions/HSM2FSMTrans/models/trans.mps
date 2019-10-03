@@ -104,15 +104,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
-      </concept>
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="2469893808086079682" name="jetbrains.mps.lang.smodel.structure.LanguageIdentityBySourceModule" flags="ng" index="PFCIn">
-        <child id="2469893808086079721" name="moduleReference" index="PFCIW" />
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
@@ -140,19 +137,15 @@
     <property role="3GE5qa" value="transformation" />
     <ref role="ET12P" node="7mpd$NOeIuP" resolve="HSM2FSMContracts" />
     <node concept="pHN19" id="52i3VQXHW03" role="1y7jxr">
-      <node concept="PFCIn" id="52i3VQXHW0b" role="2V$M_3">
-        <node concept="20RdaH" id="52i3VQXHW0a" role="PFCIW">
-          <property role="20Rdg5" value="b7a96fa4-1d19-4dc9-934a-47fbf3a33233" />
-          <property role="20Rdg7" value="HSM2FSM" />
-        </node>
+      <node concept="2V$Bhx" id="6gbS2yFoK3B" role="2V$M_3">
+        <property role="2V$B1T" value="b7a96fa4-1d19-4dc9-934a-47fbf3a33233" />
+        <property role="2V$B1Q" value="HSM2FSM" />
       </node>
     </node>
     <node concept="pHN19" id="52i3VQXHW0h" role="1y7jx4">
-      <node concept="PFCIn" id="52i3VQXHW0p" role="2V$M_3">
-        <node concept="20RdaH" id="52i3VQXHW0o" role="PFCIW">
-          <property role="20Rdg5" value="b7a96fa4-1d19-4dc9-934a-47fbf3a33233" />
-          <property role="20Rdg7" value="HSM2FSM" />
-        </node>
+      <node concept="2V$Bhx" id="6gbS2yFoK3C" role="2V$M_3">
+        <property role="2V$B1T" value="b7a96fa4-1d19-4dc9-934a-47fbf3a33233" />
+        <property role="2V$B1Q" value="HSM2FSM" />
       </node>
     </node>
   </node>
@@ -1858,19 +1851,15 @@
     <property role="3GE5qa" value="contracts" />
     <property role="TrG5h" value="HSM2FSMContracts" />
     <node concept="pHN19" id="7mpd$NOeIuQ" role="1y7jxr">
-      <node concept="PFCIn" id="7mpd$NOeIuY" role="2V$M_3">
-        <node concept="20RdaH" id="7mpd$NOeIuX" role="PFCIW">
-          <property role="20Rdg5" value="b7a96fa4-1d19-4dc9-934a-47fbf3a33233" />
-          <property role="20Rdg7" value="HSM2FSM" />
-        </node>
+      <node concept="2V$Bhx" id="6gbS2yFoK3D" role="2V$M_3">
+        <property role="2V$B1T" value="b7a96fa4-1d19-4dc9-934a-47fbf3a33233" />
+        <property role="2V$B1Q" value="HSM2FSM" />
       </node>
     </node>
     <node concept="pHN19" id="7mpd$NOeIv4" role="1y7jx4">
-      <node concept="PFCIn" id="7mpd$NOeIvc" role="2V$M_3">
-        <node concept="20RdaH" id="7mpd$NOeIvb" role="PFCIW">
-          <property role="20Rdg5" value="b7a96fa4-1d19-4dc9-934a-47fbf3a33233" />
-          <property role="20Rdg7" value="HSM2FSM" />
-        </node>
+      <node concept="2V$Bhx" id="6gbS2yFoK3E" role="2V$M_3">
+        <property role="2V$B1T" value="b7a96fa4-1d19-4dc9-934a-47fbf3a33233" />
+        <property role="2V$B1Q" value="HSM2FSM" />
       </node>
     </node>
     <node concept="1NTnwR" id="7mpd$NOeQUk" role="2ik09Z">

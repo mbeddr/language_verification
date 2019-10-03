@@ -2,7 +2,7 @@
 <model ref="r:034c0489-baf8-405b-929d-07a6f30efccd(PetriNet.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -51,16 +51,16 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="XQYIHimN5q" role="1TKVEi">
       <property role="IQ2ns" value="1114353846426743130" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="elems" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3WL7QBBOz82" resolve="NodeConnector" />
     </node>
     <node concept="1TJgyj" id="XQYIHimN5s" role="1TKVEi">
       <property role="IQ2ns" value="1114353846426743132" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="arcs" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3WL7QBBOz81" resolve="ArcConnector" />
     </node>
     <node concept="1TJgyi" id="XQYIHimN5v" role="1TKVEl">
@@ -82,9 +82,8 @@
     </node>
     <node concept="1TJgyj" id="XQYIHimN5A" role="1TKVEi">
       <property role="IQ2ns" value="1114353846426743142" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="net" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XQYIHimN5b" resolve="PetriNet" />
     </node>
   </node>
@@ -121,9 +120,8 @@
     </node>
     <node concept="1TJgyj" id="XQYIHimN5G" role="1TKVEi">
       <property role="IQ2ns" value="1114353846426743148" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="net" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XQYIHimN5b" resolve="PetriNet" />
     </node>
   </node>
@@ -137,16 +135,14 @@
     </node>
     <node concept="1TJgyj" id="XQYIHimN5I" role="1TKVEi">
       <property role="IQ2ns" value="1114353846426743150" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="input" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XQYIHimN5g" resolve="Transition" />
     </node>
     <node concept="1TJgyj" id="XQYIHimN5K" role="1TKVEi">
       <property role="IQ2ns" value="1114353846426743152" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="output" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XQYIHimN5d" resolve="Place" />
     </node>
   </node>
@@ -160,16 +156,14 @@
     </node>
     <node concept="1TJgyj" id="XQYIHimN5N" role="1TKVEi">
       <property role="IQ2ns" value="1114353846426743155" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="input" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XQYIHimN5d" resolve="Place" />
     </node>
     <node concept="1TJgyj" id="XQYIHimN5P" role="1TKVEi">
       <property role="IQ2ns" value="1114353846426743157" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="output" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XQYIHimN5g" resolve="Transition" />
     </node>
   </node>
@@ -179,9 +173,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3WL7QBBOz85" role="1TKVEi">
       <property role="IQ2ns" value="4553455237969621509" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="arc" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XQYIHimN5j" resolve="Arc" />
     </node>
   </node>
@@ -191,9 +184,8 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3WL7QBBOz83" role="1TKVEi">
       <property role="IQ2ns" value="4553455237969621507" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="node" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="XQYIHimN5c" resolve="Node" />
     </node>
   </node>

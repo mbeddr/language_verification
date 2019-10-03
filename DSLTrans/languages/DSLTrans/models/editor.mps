@@ -2,7 +2,7 @@
 <model ref="r:ff76a61e-645e-4013-bb2c-d4522c02861f(DSLTrans.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -53,9 +53,7 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
-      </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
       <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
@@ -263,7 +261,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -325,7 +323,7 @@
                   <ref role="3cqZAo" node="6r5nwsxLGmx" resolve="comboBox" />
                 </node>
                 <node concept="liA8E" id="6r5nwsxLGmF" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComboBox.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                  <ref role="37wK5l" to="dxuu:~JComboBox.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                   <node concept="2ShNRf" id="6r5nwsxLGmG" role="37wK5m">
                     <node concept="YeOm9" id="6r5nwsxLGmH" role="2ShVmc">
                       <node concept="1Y3b0j" id="6r5nwsxLGmI" role="YeSDq">
@@ -365,7 +363,7 @@
                                         <ref role="3cqZAo" node="6r5nwsxLGmN" resolve="p0" />
                                       </node>
                                       <node concept="liA8E" id="6r5nwsxLGn0" role="2OqNvi">
-                                        <ref role="37wK5l" to="33ny:~EventObject.getSource():java.lang.Object" resolve="getSource" />
+                                        <ref role="37wK5l" to="33ny:~EventObject.getSource()" resolve="getSource" />
                                       </node>
                                     </node>
                                   </node>
@@ -384,7 +382,7 @@
                                         <ref role="3cqZAo" node="6r5nwsxLGmR" resolve="combo" />
                                       </node>
                                       <node concept="liA8E" id="6r5nwsxLGn9" role="2OqNvi">
-                                        <ref role="37wK5l" to="dxuu:~JComboBox.getSelectedItem():java.lang.Object" resolve="getSelectedItem" />
+                                        <ref role="37wK5l" to="dxuu:~JComboBox.getSelectedItem()" resolve="getSelectedItem" />
                                       </node>
                                     </node>
                                   </node>
@@ -399,15 +397,15 @@
                                       <node concept="2OqwBi" id="6r5nwsxLGnr" role="2Oq$k0">
                                         <node concept="1Q80Hx" id="6r5nwsxLGns" role="2Oq$k0" />
                                         <node concept="liA8E" id="6r5nwsxLGnt" role="2OqNvi">
-                                          <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                          <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="6r5nwsxLGnu" role="2OqNvi">
-                                        <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                                        <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater()" resolve="getUpdater" />
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="6r5nwsxLGnv" role="2OqNvi">
-                                      <ref role="37wK5l" to="22ra:~Updater.setInitialEditorHints(java.lang.String[]):boolean" resolve="setInitialEditorHints" />
+                                      <ref role="37wK5l" to="22ra:~Updater.setInitialEditorHints(java.lang.String[])" resolve="setInitialEditorHints" />
                                       <node concept="2ShNRf" id="6r5nwsxLGnw" role="37wK5m">
                                         <node concept="3g6Rrh" id="6r5nwsxLGnx" role="2ShVmc">
                                           <node concept="17QB3L" id="6r5nwsxLGny" role="3g7fb8" />
@@ -427,7 +425,7 @@
                                       <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                     </node>
                                     <node concept="liA8E" id="6r5nwsxLGng" role="2OqNvi">
-                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                       <node concept="Xl_RD" id="6r5nwsxLGnh" role="37wK5m">
                                         <property role="Xl_RC" value="its graphical" />
                                       </node>
@@ -440,7 +438,7 @@
                                   <ref role="3cqZAo" node="6r5nwsxLGn2" resolve="selectedOption" />
                                 </node>
                                 <node concept="liA8E" id="6r5nwsxLGnk" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="Xl_RD" id="6r5nwsxLGnl" role="37wK5m">
                                     <property role="Xl_RC" value="Graphical" />
                                   </node>
@@ -456,7 +454,7 @@
                                         <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                       </node>
                                       <node concept="liA8E" id="6r5nwsxLGnB" role="2OqNvi">
-                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                         <node concept="Xl_RD" id="6r5nwsxLGnC" role="37wK5m">
                                           <property role="Xl_RC" value="its Textual" />
                                         </node>
@@ -469,7 +467,7 @@
                                     <ref role="3cqZAo" node="6r5nwsxLGn2" resolve="selectedOption" />
                                   </node>
                                   <node concept="liA8E" id="6r5nwsxLGnF" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                     <node concept="Xl_RD" id="6r5nwsxLGnG" role="37wK5m">
                                       <property role="Xl_RC" value="Textual" />
                                     </node>
@@ -494,15 +492,15 @@
                     <node concept="2OqwBi" id="6r5nwsxLGnQ" role="2Oq$k0">
                       <node concept="1Q80Hx" id="6r5nwsxLGnR" role="2Oq$k0" />
                       <node concept="liA8E" id="6r5nwsxLGnS" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                       </node>
                     </node>
                     <node concept="liA8E" id="6r5nwsxLGnT" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                      <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater()" resolve="getUpdater" />
                     </node>
                   </node>
                   <node concept="liA8E" id="6r5nwsxLGnU" role="2OqNvi">
-                    <ref role="37wK5l" to="22ra:~Updater.update():void" resolve="update" />
+                    <ref role="37wK5l" to="22ra:~Updater.update()" resolve="update" />
                   </node>
                 </node>
               </node>
@@ -533,7 +531,7 @@
               <property role="3F0ifm" value="Input Language: " />
               <node concept="Vb9p2" id="2t59Tl5mftO" role="3F10Kt" />
               <node concept="VechU" id="2t59Tl5mftP" role="3F10Kt">
-                <property role="Vb096" value="DARK_GREEN" />
+                <property role="Vb096" value="g1_qRwE/darkGreen" />
               </node>
             </node>
             <node concept="3F1sOY" id="2t59Tl5m21j" role="3EZMnx">
@@ -546,7 +544,7 @@
               <property role="3F0ifm" value="Ouput Language: " />
               <node concept="Vb9p2" id="2t59Tl5mfur" role="3F10Kt" />
               <node concept="VechU" id="2t59Tl5mfus" role="3F10Kt">
-                <property role="Vb096" value="DARK_GREEN" />
+                <property role="Vb096" value="g1_qRwE/darkGreen" />
               </node>
             </node>
             <node concept="3F1sOY" id="2t59Tl5mfuz" role="3EZMnx">
@@ -558,7 +556,7 @@
             <node concept="3F0ifn" id="2EaowSc461T" role="3EZMnx">
               <property role="3F0ifm" value="Input Model: " />
               <node concept="VechU" id="2EaowSc4cvc" role="3F10Kt">
-                <property role="Vb096" value="blue" />
+                <property role="Vb096" value="fLwANPu/blue" />
               </node>
             </node>
             <node concept="3F1sOY" id="2EaowSc462W" role="3EZMnx">
@@ -572,7 +570,7 @@
             <node concept="3F0ifn" id="2EaowSc464S" role="3EZMnx">
               <property role="3F0ifm" value="Ouput Model: " />
               <node concept="VechU" id="2EaowSc4cwZ" role="3F10Kt">
-                <property role="Vb096" value="blue" />
+                <property role="Vb096" value="fLwANPu/blue" />
               </node>
             </node>
             <node concept="2iRfu4" id="2EaowSc464a" role="2iSdaV" />
@@ -590,7 +588,7 @@
               <property role="3F0ifm" value="Verified by: " />
               <node concept="Vb9p2" id="4knEpdJZrlq" role="3F10Kt" />
               <node concept="VechU" id="4knEpdJZrnJ" role="3F10Kt">
-                <property role="Vb096" value="gray" />
+                <property role="Vb096" value="fLJRk5_/gray" />
               </node>
             </node>
             <node concept="1iCGBv" id="4knEpdJWXXX" role="3EZMnx">
@@ -745,7 +743,7 @@
                     <ref role="3cqZAo" node="2Ki8Jutvn9e" resolve="comboBox" />
                   </node>
                   <node concept="liA8E" id="2Ki8Jutvn9o" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JComboBox.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
+                    <ref role="37wK5l" to="dxuu:~JComboBox.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
                     <node concept="2ShNRf" id="2Ki8Jutvn9p" role="37wK5m">
                       <node concept="YeOm9" id="2Ki8Jutvn9q" role="2ShVmc">
                         <node concept="1Y3b0j" id="2Ki8Jutvn9r" role="YeSDq">
@@ -785,7 +783,7 @@
                                           <ref role="3cqZAo" node="2Ki8Jutvn9w" resolve="p0" />
                                         </node>
                                         <node concept="liA8E" id="2Ki8Jutvn9H" role="2OqNvi">
-                                          <ref role="37wK5l" to="33ny:~EventObject.getSource():java.lang.Object" resolve="getSource" />
+                                          <ref role="37wK5l" to="33ny:~EventObject.getSource()" resolve="getSource" />
                                         </node>
                                       </node>
                                     </node>
@@ -804,7 +802,7 @@
                                           <ref role="3cqZAo" node="2Ki8Jutvn9$" resolve="combo" />
                                         </node>
                                         <node concept="liA8E" id="2Ki8Jutvn9Q" role="2OqNvi">
-                                          <ref role="37wK5l" to="dxuu:~JComboBox.getSelectedItem():java.lang.Object" resolve="getSelectedItem" />
+                                          <ref role="37wK5l" to="dxuu:~JComboBox.getSelectedItem()" resolve="getSelectedItem" />
                                         </node>
                                       </node>
                                     </node>
@@ -819,15 +817,15 @@
                                         <node concept="2OqwBi" id="2Ki8Jutvn9W" role="2Oq$k0">
                                           <node concept="1Q80Hx" id="2Ki8Jutvn9X" role="2Oq$k0" />
                                           <node concept="liA8E" id="2Ki8Jutvn9Y" role="2OqNvi">
-                                            <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                                            <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent()" resolve="getEditorComponent" />
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="2Ki8Jutvn9Z" role="2OqNvi">
-                                          <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                                          <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater()" resolve="getUpdater" />
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="2Ki8Jutvna0" role="2OqNvi">
-                                        <ref role="37wK5l" to="22ra:~Updater.setInitialEditorHints(java.lang.String[]):boolean" resolve="setInitialEditorHints" />
+                                        <ref role="37wK5l" to="22ra:~Updater.setInitialEditorHints(java.lang.String[])" resolve="setInitialEditorHints" />
                                         <node concept="2ShNRf" id="2Ki8Jutvna1" role="37wK5m">
                                           <node concept="3g6Rrh" id="2Ki8Jutvna2" role="2ShVmc">
                                             <node concept="17QB3L" id="2Ki8Jutvna3" role="3g7fb8" />
@@ -847,7 +845,7 @@
                                         <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
                                       </node>
                                       <node concept="liA8E" id="2Ki8Jutvna9" role="2OqNvi">
-                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                         <node concept="Xl_RD" id="2Ki8Jutvnaa" role="37wK5m">
                                           <property role="Xl_RC" value="its graphical" />
                                         </node>
@@ -860,7 +858,7 @@
                                     <ref role="3cqZAo" node="2Ki8Jutvn9J" resolve="selectedOption" />
                                   </node>
                                   <node concept="liA8E" id="2Ki8Jutvnad" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                     <node concept="Xl_RD" id="2Ki8Jutvnae" role="37wK5m">
                                       <property role="Xl_RC" value="Graphical" />
                                     </node>
@@ -876,7 +874,7 @@
                                           <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                         </node>
                                         <node concept="liA8E" id="2Ki8Jutvnal" role="2OqNvi">
-                                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                                          <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                                           <node concept="Xl_RD" id="2Ki8Jutvnam" role="37wK5m">
                                             <property role="Xl_RC" value="its Textual" />
                                           </node>
@@ -889,7 +887,7 @@
                                       <ref role="3cqZAo" node="2Ki8Jutvn9J" resolve="selectedOption" />
                                     </node>
                                     <node concept="liA8E" id="2Ki8Jutvnap" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                       <node concept="Xl_RD" id="2Ki8Jutvnaq" role="37wK5m">
                                         <property role="Xl_RC" value="Textual" />
                                       </node>
@@ -923,7 +921,7 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
           <node concept="Veino" id="3QsrawRh0Gm" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="hGRnIZc/lightBlue" />
           </node>
         </node>
         <node concept="3F0ifn" id="3QsrawRh3Vf" role="3EZMnx" />
@@ -936,7 +934,7 @@
         <node concept="3F0ifn" id="5paAjb8wudZ" role="3EZMnx">
           <property role="3F0ifm" value="Backward Links" />
           <node concept="Veino" id="5paAjb8wue0" role="3F10Kt">
-            <property role="Vb096" value="yellow" />
+            <property role="Vb096" value="fLwANPq/yellow" />
           </node>
         </node>
         <node concept="3F0ifn" id="5paAjb8wue1" role="3EZMnx">
@@ -960,7 +958,7 @@
       <node concept="3F0ifn" id="2rexW9_gY4i" role="3EZMnx">
         <property role="3F0ifm" value="Match Model" />
         <node concept="Veino" id="2rexW9_gY6p" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="2rexW9_gY8d" role="3EZMnx">
@@ -974,7 +972,7 @@
           <property role="1lJzqX" value="10" />
         </node>
         <node concept="Veino" id="2rexW9_gYeA" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3F2HdR" id="5$ec28U8XOG" role="3EZMnx">
@@ -1033,7 +1031,7 @@
           <property role="1lJzqX" value="10" />
         </node>
         <node concept="Veino" id="2rexW9_gYgl" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3F2HdR" id="5$ec28U8XX2" role="3EZMnx">
@@ -1091,7 +1089,7 @@
       <node concept="3F0ifn" id="2rexW9_gYhm" role="3EZMnx">
         <property role="3F0ifm" value="Apply Model" />
         <node concept="Veino" id="2rexW9_gYhn" role="3F10Kt">
-          <property role="Vb096" value="yellow" />
+          <property role="Vb096" value="fLwANPq/yellow" />
         </node>
       </node>
       <node concept="3F0ifn" id="2rexW9_gYho" role="3EZMnx">
@@ -1105,7 +1103,7 @@
           <property role="1lJzqX" value="10" />
         </node>
         <node concept="Veino" id="2rexW9_gYhs" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3F2HdR" id="5$ec28U8WA_" role="3EZMnx">
@@ -1164,7 +1162,7 @@
           <property role="1lJzqX" value="10" />
         </node>
         <node concept="Veino" id="2rexW9_gYhz" role="3F10Kt">
-          <property role="Vb096" value="green" />
+          <property role="Vb096" value="fLwANPr/green" />
         </node>
       </node>
       <node concept="3F2HdR" id="5$ec28U8Xf5" role="3EZMnx">
@@ -1228,7 +1226,7 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="Veino" id="2rexW9_h5rY" role="3F10Kt">
-          <property role="Vb096" value="LIGHT_BLUE" />
+          <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
       <node concept="3EZMnI" id="3QsrawRfw2K" role="3EZMnx">
@@ -1354,9 +1352,7 @@
         </node>
       </node>
       <node concept="2iRfu4" id="2uM0u1SErYO" role="2iSdaV" />
-      <node concept="Vb9p2" id="2uM0u1SEN$x" role="3F10Kt">
-        <property role="Vbekb" value="PLAIN" />
-      </node>
+      <node concept="Vb9p2" id="2uM0u1SEN$x" role="3F10Kt" />
     </node>
   </node>
   <node concept="3p36aQ" id="2fNeFtxOwzs">

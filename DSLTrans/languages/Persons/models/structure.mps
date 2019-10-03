@@ -49,24 +49,24 @@
     <property role="EcuMT" value="3065370308850572857" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2EaowSc4lSX" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="townHalls" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="IQ2ns" value="3065370308850572861" />
       <ref role="20lvS9" node="2EaowSc4lSU" resolve="TownHall" />
     </node>
     <node concept="1TJgyj" id="46cQNHkcdIP" role="1TKVEi">
       <property role="IQ2ns" value="4723391157066849205" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="associations" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="46cQNHkcdIM" resolve="Association" />
     </node>
     <node concept="1TJgyj" id="46cQNHkcdIW" role="1TKVEi">
       <property role="IQ2ns" value="4723391157066849212" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="persons" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="46cQNHkcdID" resolve="Person" />
     </node>
     <node concept="PrWs8" id="46cQNHkcdIr" role="PzmwI">
@@ -81,22 +81,21 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyj" id="1eaQRpkCugr" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="committee" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="1408179134779221019" />
       <ref role="20lvS9" node="1eaQRpkCugu" resolve="Committee" />
     </node>
     <node concept="1TJgyj" id="46cQNHkcdJ0" role="1TKVEi">
       <property role="IQ2ns" value="4723391157066849216" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="districts" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="46cQNHkcdIq" resolve="District" />
     </node>
     <node concept="1TJgyj" id="7OSI$xj4w2H" role="1TKVEi">
       <property role="IQ2ns" value="9023166673230889133" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="workers" />
       <ref role="20lvS9" node="46cQNHkcdID" resolve="Person" />
     </node>
@@ -110,7 +109,6 @@
     </node>
     <node concept="1TJgyj" id="3e_V7IvrHps" role="1TKVEi">
       <property role="IQ2ns" value="3721640682791556700" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="townHalls" />
       <ref role="20lvS9" node="2EaowSc4lSU" resolve="TownHall" />
     </node>
@@ -124,9 +122,9 @@
     </node>
     <node concept="1TJgyj" id="7OSI$xj4w2P" role="1TKVEi">
       <property role="IQ2ns" value="9023166673230889141" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="facilities" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="46cQNHkcdIw" resolve="Facility" />
     </node>
   </node>
@@ -138,7 +136,6 @@
     </node>
     <node concept="1TJgyj" id="7OSI$xj4xxh" role="1TKVEi">
       <property role="IQ2ns" value="9023166673230895185" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="members" />
       <ref role="20lvS9" node="46cQNHkcdID" resolve="Person" />
     </node>
@@ -193,9 +190,8 @@
     </node>
     <node concept="1TJgyj" id="7OSI$xj4w2D" role="1TKVEi">
       <property role="IQ2ns" value="9023166673230889129" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="committee" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1eaQRpkCugu" resolve="Committee" />
     </node>
   </node>

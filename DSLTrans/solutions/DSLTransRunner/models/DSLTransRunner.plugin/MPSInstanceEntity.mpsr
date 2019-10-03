@@ -75,11 +75,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
@@ -89,6 +86,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -127,7 +132,7 @@
           <node concept="2OqwBi" id="3SN6lk6hDWT" role="3cqZAk">
             <node concept="Xjq3P" id="3SN6lk6hDWU" role="2Oq$k0" />
             <node concept="liA8E" id="3SN6lk6hDWV" role="2OqNvi">
-              <ref role="37wK5l" to="pe7c:~InstanceEntity.toString():java.lang.String" resolve="toString" />
+              <ref role="37wK5l" to="pe7c:~InstanceEntity.toString()" resolve="toString" />
             </node>
           </node>
         </node>
@@ -149,8 +154,13 @@
       </node>
       <node concept="3clFbS" id="3SN6lk6hDX2" role="3clF47">
         <node concept="3SKdUt" id="3SN6lk6hDXt" role="3cqZAp">
-          <node concept="3SKdUq" id="3SN6lk6hDXs" role="3SKWNk">
-            <property role="3SKdUp" value="self check" />
+          <node concept="1PaTwC" id="6gbS2yFoJV7" role="3ndbpf">
+            <node concept="3oM_SD" id="6gbS2yFoJV8" role="1PaTwD">
+              <property role="3oM_SC" value="self" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJV9" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="3SN6lk6hDX3" role="3cqZAp">
@@ -169,8 +179,13 @@
           </node>
         </node>
         <node concept="3SKdUt" id="3SN6lk6hDXv" role="3cqZAp">
-          <node concept="3SKdUq" id="3SN6lk6hDXu" role="3SKWNk">
-            <property role="3SKdUp" value="null check" />
+          <node concept="1PaTwC" id="6gbS2yFoJVa" role="3ndbpf">
+            <node concept="3oM_SD" id="6gbS2yFoJVb" role="1PaTwD">
+              <property role="3oM_SC" value="null" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVc" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="3SN6lk6hDXa" role="3cqZAp">
@@ -189,21 +204,32 @@
           </node>
         </node>
         <node concept="3SKdUt" id="3SN6lk6hDXx" role="3cqZAp">
-          <node concept="3SKdUq" id="3SN6lk6hDXw" role="3SKWNk">
-            <property role="3SKdUp" value="type check and cast" />
+          <node concept="1PaTwC" id="6gbS2yFoJVd" role="3ndbpf">
+            <node concept="3oM_SD" id="6gbS2yFoJVe" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVf" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVg" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVh" role="1PaTwD">
+              <property role="3oM_SC" value="cast" />
+            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="3SN6lk6hDXh" role="3cqZAp">
           <node concept="3y3z36" id="3SN6lk6hDXi" role="3clFbw">
             <node concept="1rXfSq" id="3SN6lk6hDXj" role="3uHU7B">
-              <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+              <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
             </node>
             <node concept="2OqwBi" id="3SN6lk6hDXC" role="3uHU7w">
               <node concept="37vLTw" id="3SN6lk6hDXB" role="2Oq$k0">
                 <ref role="3cqZAo" node="3SN6lk6hDX0" resolve="o" />
               </node>
               <node concept="liA8E" id="3SN6lk6hDXD" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
               </node>
             </node>
           </node>
@@ -216,8 +242,28 @@
           </node>
         </node>
         <node concept="3SKdUt" id="3SN6lk6hDXz" role="3cqZAp">
-          <node concept="3SKdUq" id="3SN6lk6hDXy" role="3SKWNk">
-            <property role="3SKdUp" value="Field comparison (Not applicable for this example)" />
+          <node concept="1PaTwC" id="6gbS2yFoJVi" role="3ndbpf">
+            <node concept="3oM_SD" id="6gbS2yFoJVj" role="1PaTwD">
+              <property role="3oM_SC" value="Field" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVk" role="1PaTwD">
+              <property role="3oM_SC" value="comparison" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVl" role="1PaTwD">
+              <property role="3oM_SC" value="(Not" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVm" role="1PaTwD">
+              <property role="3oM_SC" value="applicable" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVn" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVo" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="6gbS2yFoJVp" role="1PaTwD">
+              <property role="3oM_SC" value="example)" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs6" id="3SN6lk6hDXo" role="3cqZAp">

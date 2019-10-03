@@ -2,7 +2,7 @@
 <model ref="r:5495fa22-c050-4806-b1f2-06d343955758(Persons.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
   </languages>
   <imports />
   <registry>

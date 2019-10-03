@@ -92,16 +92,19 @@
       <concept id="5868311001920805809" name="DSLTrans.structure.ApplyModel" flags="ng" index="3GsvpM" />
       <concept id="5868311001920805808" name="DSLTrans.structure.MatchModel" flags="ng" index="3GsvpN" />
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
+        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
+        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
       </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="2469893808086079682" name="jetbrains.mps.lang.smodel.structure.LanguageIdentityBySourceModule" flags="ng" index="PFCIn">
-        <child id="2469893808086079721" name="moduleReference" index="PFCIW" />
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
@@ -133,31 +136,27 @@
       </node>
     </node>
     <node concept="pHN19" id="3TSFmgZFLM_" role="1y7jx4">
-      <node concept="PFCIn" id="3TSFmgZFLMH" role="2V$M_3">
-        <node concept="20RdaH" id="3TSFmgZFLMG" role="PFCIW">
-          <property role="20Rdg5" value="54dfa720-0ab9-4d0b-8bfa-c068891c843e" />
-          <property role="20Rdg7" value="TestLang" />
-        </node>
+      <node concept="2V$Bhx" id="6gbS2yFoK3F" role="2V$M_3">
+        <property role="2V$B1T" value="54dfa720-0ab9-4d0b-8bfa-c068891c843e" />
+        <property role="2V$B1Q" value="TestLang" />
       </node>
     </node>
     <node concept="pHN19" id="3TSFmgZIIkQ" role="1y7jxr">
-      <node concept="PFCIn" id="3TSFmgZIIkY" role="2V$M_3">
-        <node concept="20RdaH" id="3TSFmgZIIkX" role="PFCIW">
-          <property role="20Rdg5" value="54dfa720-0ab9-4d0b-8bfa-c068891c843e" />
-          <property role="20Rdg7" value="TestLang" />
-        </node>
+      <node concept="2V$Bhx" id="6gbS2yFoK3G" role="2V$M_3">
+        <property role="2V$B1T" value="54dfa720-0ab9-4d0b-8bfa-c068891c843e" />
+        <property role="2V$B1Q" value="TestLang" />
       </node>
     </node>
     <node concept="37shsh" id="2WTetLZkp7z" role="ABjci">
-      <node concept="20RdaH" id="2WTetLZkp7E" role="37shsm">
-        <property role="20Rdg5" value="c059eaac-cda7-4efd-b18d-d5be832bd9e6" />
-        <property role="20Rdg7" value="TestInput" />
+      <node concept="1dCxOk" id="6gbS2yFoK3P" role="37shsm">
+        <property role="1XxBO9" value="TestInput" />
+        <property role="1XweGW" value="c059eaac-cda7-4efd-b18d-d5be832bd9e6" />
       </node>
     </node>
     <node concept="37shsh" id="2WTetLZkp7J" role="AAzOf">
-      <node concept="20RdaH" id="2WTetLZkp7Q" role="37shsm">
-        <property role="20Rdg5" value="4211da36-ff2c-46ef-b8a3-d96bc33a0d65" />
-        <property role="20Rdg7" value="TestOutput" />
+      <node concept="1dCxOk" id="6gbS2yFoK3Q" role="37shsm">
+        <property role="1XxBO9" value="TestOutput" />
+        <property role="1XweGW" value="4211da36-ff2c-46ef-b8a3-d96bc33a0d65" />
       </node>
     </node>
   </node>

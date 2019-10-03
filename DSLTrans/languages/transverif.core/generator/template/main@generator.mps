@@ -2,7 +2,7 @@
 <model ref="r:b0b9788e-e429-44f9-a1d9-a8a52d86cc3f(transfverif.core.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="3" />
   </languages>
   <imports />
   <registry>
