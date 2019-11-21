@@ -322,7 +322,6 @@
     </node>
     <node concept="1TJgyj" id="7e1hl__hqAn" role="1TKVEi">
       <property role="20kJfa" value="p" />
-      <property role="20lbJX" value="2..n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="IQ2ns" value="8323009836610857367" />
       <ref role="20lvS9" node="7e1hl__hq_w" resolve="Proc" />

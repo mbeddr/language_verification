@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/ATOM/ATOM.mpl" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/languages/C/C.mpl" folder="examples.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/DSLTrans/DSLTrans.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ER/ER.mpl" folder="examples.uml2er" />
       <modulePath path="$PROJECT_DIR$/languages/Factory/Factory.mpl" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/languages/HSM2FSM/HSM2FSM.mpl" folder="examples.hsm2fsm" />
@@ -14,6 +15,7 @@
       <modulePath path="$PROJECT_DIR$/languages/PetriNet/PetriNet.mpl" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/languages/RSS/RSS.mpl" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/languages/SyVOLT/SyVOLT.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/UML/UML.mpl" folder="examples.uml2er" />
       <modulePath path="$PROJECT_DIR$/languages/UMLRT/UMLRT.mpl" folder="examples.UML2Kiltera" />
       <modulePath path="$PROJECT_DIR$/languages/transverif.core/transfverif.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DSLTrans.build/DSLTrans.build.msd" folder="" />
@@ -29,6 +31,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/TestInput/TestInput.msd" folder="examples.test" />
       <modulePath path="$PROJECT_DIR$/solutions/TestOutput/TestOutput.msd" folder="examples.test" />
       <modulePath path="$PROJECT_DIR$/solutions/TestTransformation/TestTransformation.msd" folder="examples.test" />
+      <modulePath path="$PROJECT_DIR$/solutions/UML2ER/UML2ER.msd" folder="examples.uml2er" />
       <modulePath path="$PROJECT_DIR$/solutions/UML2Kiltera/UML2Kiltera.msd" folder="examples.UML2Kiltera" />
       <modulePath path="$PROJECT_DIR$/solutions/fact2PNInput/fact2PNInput.msd" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/solutions/fact2PNOutput/fact2PNOutput.msd" folder="examples.fact2PN" />
