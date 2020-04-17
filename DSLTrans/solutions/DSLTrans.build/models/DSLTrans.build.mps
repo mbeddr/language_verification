@@ -9,6 +9,21 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
+    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
+      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
+        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
+        <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
+    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
@@ -78,6 +93,7 @@
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
+        <child id="1359186315025500371" name="xml" index="20twgj" />
         <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
@@ -147,12 +163,12 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="5ysJ42DkE2s" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5ysJ42DkE4q" role="2Ry0An">
+            <node concept="2Ry0Ak" id="6ogg7ih44jx" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="5ysJ42DkE6w" role="2Ry0An">
-                <property role="2Ry0Am" value="Desktop" />
-                <node concept="2Ry0Ak" id="5ysJ42DkE7F" role="2Ry0An">
-                  <property role="2Ry0Am" value="MPS 2017.3" />
+              <node concept="2Ry0Ak" id="6ogg7ih44jM" role="2Ry0An">
+                <property role="2Ry0Am" value="Software" />
+                <node concept="2Ry0Ak" id="6ogg7ih44jZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="MPS 2019.3" />
                 </node>
               </node>
             </node>
@@ -223,7 +239,7 @@
       </node>
       <node concept="3_J27D" id="5ysJ42DkDJZ" role="m$_w8">
         <node concept="3Mxwew" id="5ysJ42DkDK0" role="3MwsjC">
-          <property role="3MwjfP" value="1.0.0" />
+          <property role="3MwjfP" value="1.0.1" />
         </node>
       </node>
       <node concept="m$f5U" id="5ysJ42DkDK1" role="m$_yh">
@@ -246,11 +262,20 @@
         <property role="2iUeEt" value="Bentley James Oakes" />
         <property role="2iUeEu" value="https://github.com/mbeddr/language_verification" />
       </node>
+      <node concept="2pNNFK" id="4OSXsDbz8hW" role="20twgj">
+        <property role="2pNNFO" value="idea-version" />
+        <node concept="2pNUuL" id="4OSXsDbz8io" role="2pNNFR">
+          <property role="2pNUuO" value="since-build" />
+          <node concept="2pMdtt" id="4OSXsDbz8ip" role="2pMdts">
+            <property role="2pMdty" value="181" />
+          </node>
+        </node>
+        <node concept="3o6iSG" id="4OSXsDbz8ig" role="3o6s8t" />
+      </node>
     </node>
     <node concept="2G$12M" id="5ysJ42DkDJV" role="3989C9">
       <property role="TrG5h" value="DSLTrans" />
       <node concept="1E1JtD" id="5ysJ42DkDJy" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="transfverif.core" />
         <property role="3LESm3" value="a2c7a1eb-b3b5-4bbb-819b-e25a3c6de3a8" />
         <property role="2GAjPV" value="false" />
@@ -269,6 +294,11 @@
           <node concept="3bR9La" id="5ysJ42DkDKb" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6ogg7ih3Ioh" role="3bR37C">
+          <node concept="3bR9La" id="6ogg7ih3IoF" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
         <node concept="1SiIV0" id="5ysJ42DkDKc" role="3bR37C">

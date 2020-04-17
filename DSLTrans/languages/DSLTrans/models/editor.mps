@@ -31,9 +31,6 @@
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="6046489571270834038" name="foldedCellModel" index="3EmGlc" />
       </concept>
-      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
-        <child id="1176795024817" name="cellProvider" index="3YsKMw" />
-      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="6089045305654894367" name="jetbrains.mps.lang.editor.structure.SubstituteMenuReference_Named" flags="ng" index="2kknPI">
@@ -119,7 +116,6 @@
       <concept id="6918029743850308467" name="jetbrains.mps.lang.editor.structure.QueryFunction_RefPresentation" flags="ig" index="1NMggl" />
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
-      <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="4307758654696938365" name="jetbrains.mps.lang.editor.structure.QueryFunction_SubstituteMenu_RefPresentation" flags="ig" index="1WAQ3h" />
       <concept id="4307758654696952957" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_SubstituteMenu_ReferencedNode" flags="ng" index="1WAUZh" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
@@ -526,14 +522,6 @@
         <node concept="3XFhqQ" id="55KrseX0l34" role="3EZMnx" />
         <node concept="3F0ifn" id="55KrseX17io" role="3EZMnx">
           <property role="3F0ifm" value=" |" />
-        </node>
-        <node concept="gc7cB" id="7i2woG2dYWV" role="3EZMnx">
-          <node concept="3VJUX4" id="7i2woG2dYWX" role="3YsKMw">
-            <node concept="3clFbS" id="7i2woG2dYWZ" role="2VODD2">
-              <node concept="3clFbH" id="7i2woG2dZT4" role="3cqZAp" />
-              <node concept="3cpWs6" id="7i2woG2dZ53" role="3cqZAp" />
-            </node>
-          </node>
         </node>
         <node concept="3EZMnI" id="2t59Tl5mfrQ" role="3EZMnx">
           <node concept="2iRkQZ" id="2t59Tl5mfrR" role="2iSdaV" />

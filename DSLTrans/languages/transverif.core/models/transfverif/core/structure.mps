@@ -474,10 +474,7 @@
     <property role="3GE5qa" value="Util" />
     <property role="TrG5h" value="ForceTraceability" />
     <property role="34LRSv" value="&lt;&lt;Apply Attribute&gt;&gt;" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1UHaC1cXxZV" role="PzmwI">
-      <ref role="PrY4T" node="1UHaC1cXxZT" resolve="TVPropReference" />
-    </node>
+    <ref role="1TJDcQ" node="2t59Tl5my58" resolve="TVPropIDRefExpression" />
   </node>
   <node concept="1TIwiD" id="5s7j9jLLo7o">
     <property role="EcuMT" value="6271065208731828696" />
