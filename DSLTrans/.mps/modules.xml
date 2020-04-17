@@ -3,12 +3,14 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/ATOM/ATOM.mpl" folder="examples.RSS2ATOM" />
+      <modulePath path="$PROJECT_DIR$/languages/AUTOSAR/AUTOSAR.mpl" folder="examples.industrial2AUTOSAR" />
       <modulePath path="$PROJECT_DIR$/languages/C/C.mpl" folder="examples.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/DSLTrans/DSLTrans.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ER/ER.mpl" folder="examples.uml2er" />
       <modulePath path="$PROJECT_DIR$/languages/Factory/Factory.mpl" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/languages/Families/Families.mpl" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/languages/HSM2FSM/HSM2FSM.mpl" folder="examples.hsm2fsm" />
+      <modulePath path="$PROJECT_DIR$/languages/Industrial/Industrial.mpl" folder="examples.industrial2AUTOSAR" />
       <modulePath path="$PROJECT_DIR$/languages/Kiltera/Kiltera.mpl" folder="examples.UML2Kiltera" />
       <modulePath path="$PROJECT_DIR$/languages/Module/Module.mpl" folder="examples.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/Persons/Persons.mpl" folder="examples.FTP" />
@@ -26,6 +28,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPersonInputModel/ExFamToPersonInputModel.msd" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/solutions/ExFamToPersonOutputModel/ExFamToPersonOutputModel.msd" folder="examples.FTP" />
       <modulePath path="$PROJECT_DIR$/solutions/HSM2FSMTrans/HSM2FSMTrans.msd" folder="examples.hsm2fsm" />
+      <modulePath path="$PROJECT_DIR$/solutions/Industrial2AUTOSAR/Industrial2AUTOSAR.msd" folder="examples.industrial2AUTOSAR" />
       <modulePath path="$PROJECT_DIR$/solutions/RSS2ATOM/RSS2ATOM.msd" folder="examples.RSS2ATOM" />
       <modulePath path="$PROJECT_DIR$/solutions/RunnerPlugin/DSLTransVerif.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestInput/TestInput.msd" folder="examples.test" />
@@ -37,6 +40,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/fact2PNOutput/fact2PNOutput.msd" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/solutions/fact2PNTrans/fact2PNTrans.msd" folder="examples.fact2PN" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddrVerif/mbeddrVerif.msd" folder="examples.mbeddr" />
+      <modulePath path="$PROJECT_DIR$/../../EcoreImport/solutions/EcoreImport/EcoreImport.msd" folder="" />
     </projectModules>
   </component>
 </project>
